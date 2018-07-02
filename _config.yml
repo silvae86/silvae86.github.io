@@ -13,12 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: An engineer's blog
+title: The caffeinated engineer
 email: joaorosilva@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I am João Rocha da Silva, Informatics Engineering professor at the Faculty of Engineering of the University of Porto, developer and (when the time allows...) researcher. This blog contains my personal notes about programming, sysadmin, and other stuff. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://silvae86.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: silvae86

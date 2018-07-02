@@ -5,6 +5,8 @@ date:   2018-07-02 16:36:07 +0100
 categories: jekyll install mac osx sysadmin mojave
 ---
 
+This short guide shows you how to install and run a Jekyll blog in your Mac. Mojave broke some things for me in Homebrew, so this addresses some possible issues that you may also face.
+
 ## Install XCode and components
 
 Before starting this:

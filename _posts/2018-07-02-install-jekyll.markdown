@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to install Jekyll using Homebrew, Mac OSX 10.14 Mojave Beta"
+title:  "How to install Jekyll using Homebrew, Mac OS X 10.14 Mojave Beta"
 date:   2018-07-02 16:36:07 +0100
 categories: jekyll install mac osx sysadmin mojave
 ---

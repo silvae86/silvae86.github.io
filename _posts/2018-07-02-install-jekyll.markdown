@@ -58,12 +58,21 @@ jekyll -v
 {% endhighlight %}
 
 ### cd to your blog directory
+
+{% highlight shell %}
 cd /my/blog/directory 
+{% endhighlight %}
 
 ### install dependencies
+
+{% highlight shell %}
 bundle install
+{% endhighlight %}
 
 ### serve blog with Jekyll and Bundler
+
+{% highlight shell %}
 bundle exec jekyll serve
+{% endhighlight %}
 
 

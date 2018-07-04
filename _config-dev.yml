@@ -28,7 +28,7 @@ theme: minima
 show_excerpts: true
 
 GH_ENV: gh_pages
-environment: production
+environment: development
 
 plugins:
   - jekyll-feed

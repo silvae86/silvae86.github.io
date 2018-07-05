@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "I just changed the battery on my Mid-2014 Macbook Pro Retina 13''! "
-date:   2018-07-05 00:58:00 +0100
+title:  "I just changed the battery on my Mid-2014 Macbook Pro Retina 13''"
+date:   2018-07-04 23:50:00 +0100
 categories: mac battery hardware diy
 ---
 
@@ -13,16 +13,16 @@ I followed this [video](https://www.youtube.com/watch?v=RqbclOdjcsw) for the ste
 
 ## The old battery
 
-![The old battery](/assets/images/post-images/2018-07-05-new-battery-for-my-macbook-pro-retina-13/1.jpg){:class="img-responsive"}
+![The old battery](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/1.jpg){:class="img-responsive"}
 
 ## Before and after
 
 I went from a 1000+ cycle battery to a new one, and it shows. Not only I got 2 more hours battery life (it is expected to increase after the first recharge cycles), but I am also more confident traveling with this laptop. 
 
-![Before](/assets/images/post-images/2018-07-05-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-04 at 21.03.52.png){:class="img-responsive"}
+![Before](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-04 at 21.03.52.png){:class="img-responsive"}
 
 
-![After](/assets/images/post-images/2018-07-05-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-05 at 00.50.50.png){:class="img-responsive"}
+![After](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-05 at 00.50.50.png){:class="img-responsive"}
 
 ## Final note
 

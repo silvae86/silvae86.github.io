@@ -8,6 +8,13 @@
       {{ site.title | escape }}
     </a>
 
+    <form action="/search.html" method="get">
+      <label for="search-box">Search</label>
+      <input type="text" id="search-box" name="query">
+      <input type="submit" value="search">
+    </form>
+
+
     {%- if page_paths -%}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />

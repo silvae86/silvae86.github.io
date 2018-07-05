@@ -55,8 +55,16 @@ function displaySearchResults(results, store) {
       });
     }
 
-    var results = idx.search(searchTerm); // Get lunr to perform a search
-    displaySearchResults(results, window.store); // We'll write this in the next section
+    if(!searchTerm || searchTerm.length === 0)
+    {
+      displaySearchResults([], window.store); 
+    }
+    else
+    {
+      var results = idx.search(searchTerm); // Get lunr to perform a search
+      displaySearchResults(results, window.store); // We'll write this in the next section
+    }
+    
 })();
 
   

@@ -1,11 +1,17 @@
 ---
 layout: search
 ---
-<form action="/search.html" method="get">
-  <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
-  <input type="submit" value="search">
-</form>
+
+<div class="search-container">
+    <div class="search-container">
+        <form action="/search.html" method="get">
+          <input type="text" placeholder="Search..." name="query" id="search-box">
+          <button type="submit">Search</button>
+        </form>
+    </div>
+  </div>
+
+<h2>Search Results</h2>
 
 <ul id="search-results"></ul>
 

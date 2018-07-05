@@ -32,10 +32,6 @@ environment: production
 
 plugins:
   - jekyll-feed
-  - jekyll-responsive-image
-
-responsive_image:
-  template: _includes/responsive-image.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

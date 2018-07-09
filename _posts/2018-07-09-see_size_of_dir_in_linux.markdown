@@ -5,7 +5,7 @@ date:   2018-07-09 15:01:00 +0100
 categories: sysadmin linux cli directory size
 ---
 
-## Checking the size of a directory in linux
+How to check the size of a directory in linux, in human-readable form.
 
 {% highlight shell %}
 du -sh .

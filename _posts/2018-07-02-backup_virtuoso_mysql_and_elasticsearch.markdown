@@ -9,13 +9,18 @@ MySQL, ElasticSearch and OpenLink Virtuoso are all dependencies of our research 
 
 ### Backup Script
 
-Generate public keys. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`). 
+This script is a basic template for backing up the data of all three servers.
 
-{% highlight shell %}
+{% highlight shell%}
 # Create backup directory with date timestamp
-BACKUP_DIR=$HOME/$(date +"%Y-%m-%d_%H-%M-%S") #get valid timestamp for the backup directory
-MYSQL_PASSWORD="MYSQL_PASSWORD" #enter your mysql password here
+##get valid timestamp for the backup directory
+BACKUP_DIR=$HOME/$(date +"%Y-%m-%d_%H-%M-%S") 
+###enter your mysql password here
+MYSQL_PASSWORD="MYSQL_PASSWORD" 
+
+###create timestamped backup directory in your home folder
 mkdir -p $BACKUP_DIR #create backup directory
+
 # ElasticSearch: 
 mkdir -p $BACKUP_DIR/elasticsearch/nodes
 sudo cp -r /var/lib/elasticsearch/elasticsearch/nodes/* $BACKUP_DIR/elasticsearch/nodes

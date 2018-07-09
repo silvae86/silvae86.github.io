@@ -30,7 +30,7 @@ mkdir -p $BACKUP_DIR/virtuoso/db
 sudo cp -r /usr/local/virtuoso-opensource/var/lib/virtuoso/db/* $BACKUP_DIR/virtuoso/db 
 
 #MySQL (backup all databases): 
-mysqldump --all-databases > $BACKUP_DIR/mysqlbackup$(date +"%Y-%m-%d_%H-%M-%S").sql -u root -p$MYSQL_PASSWORD
+mysqldump --all-databases > $BACKUP_DIR/mysqlbackup.sql -u root -p$MYSQL_PASSWORD
 {% endhighlight %}
 
 

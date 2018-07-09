@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to backup MySQL, OpenLink Virtuoso and ElasticSearch database data via command line in Linux"
-date:   2018-07-02 16:54:07 +0100
+date:   2018-07-09 15:12:00 +0100
 categories: sysadmin backup mysql virtuoso elasticsearch ubuntu
 ---
 

@@ -11,8 +11,9 @@ Here is a **temporary solution** to get you up and running with the latest Mac O
 
 ## Download a build later than 5.2.12 of Virtualbox 5
 
-Go [here](https://www.virtualbox.org/wiki/Testbuilds) and download the Virtualbox Development Snapshot version. [Direct link](https://www.virtualbox.org/download/testcase/VirtualBox-5.2.97-123220-OSX.dmg) for the one I got (5.2.97 at this time).
+Go [here](https://www.virtualbox.org/wiki/Testbuilds) and download the current Virtualbox **Testing version**. I got Virtualbox 5.2.15 at this time.
 
+[Credit @socratis](https://forums.virtualbox.org/viewtopic.php?f=39&t=88231&sid=b86cb900badf4eec6c7125bf89d966a6&p=425073#p425073)
 
 ## Disable System Integrity Protection (SIP)
 

@@ -6,7 +6,7 @@ permalink: /about/
 
 ![João Rocha da Silva](/assets/images/about/me.jpg){:class="float-left"}
 
-I hold a PhD in Informatics Engineering from the Faculty of Engineering of the University of Porto, where I also lecture. I specialize on research data management, working on FEUP's InfoLab building Dendro, a solution to help researchers describe and share their datasets in a clear and reusable way.
+I hold a PhD in Informatics Engineering from the Faculty of Engineering of the University of Porto, where I also lecture. I specialise on research data management, working on FEUP's InfoLab building Dendro, a solution to help researchers describe and share their datasets in a clear and reusable way.
 
 I have experience in many programming languages Javascript-NodeJS (7+ years), AngularJS, PHP with MVC frameworks, etc.) On the mobile side, I am an experienced freelancer iOS Developer with several Apps published on the App Store.
 

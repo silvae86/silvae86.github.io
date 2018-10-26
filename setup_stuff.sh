@@ -25,7 +25,7 @@
 if [ ! -f /usr/include ]
 then
     sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-fi 
+fi
 
 #install nvm
 \curl -sSL https://get.rvm.io | bash
@@ -60,7 +60,7 @@ bundle install
 bundle exec jekyll serve
 
 
-########################## JUNK 
+########################## JUNK
 
 # # brew install libxml2
 # # brew link libxml2 --force

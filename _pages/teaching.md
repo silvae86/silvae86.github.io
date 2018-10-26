@@ -1,27 +1,14 @@
 ---
 layout: page
 title: Teaching
-permalink: /teaching/
+include_in_menu: true
 ---
 
 ### Teaching
 
-I teach courses in both the Information Science and Informatics Engineering at FEUP.
+I teach courses in both the Information Science and Informatics Engineering at FEUP. I focus mostly on web development,  database and semantic web topics.
 
-## Dissertation supervision
 
-### Choosing your supervisor
-
-### Choosing a document template
-
-### Writing a good state of the art
-
-### Evaluation: the end goal of a Masters' dissertation
-
-### Writing a good dissertation report
-
-- [Tools of the trade](supervision/tools)
-- [What is a good dissertation structure?](supervision/dissertation_structure)
 
 <!--
 

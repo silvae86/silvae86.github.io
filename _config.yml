@@ -33,6 +33,20 @@ environment: production
 plugins:
   - jekyll-feed
 
+relative_permalinks: false
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+permalink: pretty
+
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
+    
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

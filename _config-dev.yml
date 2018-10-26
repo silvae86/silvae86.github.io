@@ -16,7 +16,7 @@
 title: The caffeinated engineer
 email: joaorosilva@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am João Rocha da Silva, Informatics Engineering professor at the Faculty of Engineering of the University of Porto, developer and (when the time allows...) researcher. This blog contains my personal notes about programming, sysadmin, and other stuff. 
+  I am João Rocha da Silva, Informatics Engineering professor at the Faculty of Engineering of the University of Porto, developer and (when the time allows...) researcher. This blog contains my personal notes about programming, sysadmin, and other stuff.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://silvae86.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: silvae86
@@ -32,6 +32,20 @@ environment: development
 
 plugins:
   - jekyll-feed
+
+relative_permalinks: false
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+permalink: pretty
+
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

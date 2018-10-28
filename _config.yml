@@ -30,11 +30,6 @@ show_excerpts: true
 GH_ENV: gh_pages
 environment: production
 
-plugins:
-  - jekyll-feed
-  - breadcrumbs
-  - jekyll-toc
-
 safe: false
 
 relative_permalinks: false

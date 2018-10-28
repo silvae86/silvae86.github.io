@@ -15,19 +15,27 @@ layout: search
 
 <ul id="search-results"></ul>
 
+{% assign indexed_stuff = site.pages | concat: site.posts %}
+
+<!-- {% for page in all_stuff %}
+ {{page.url}}
+{% endfor %} -->
+
 <script>
   window.store = {
-    {% for post in site.posts %}
-      "{{ post.url | slugify }}": {
-        "title": "{{ post.title | xml_escape }}",
-        "author": "{{ post.author | xml_escape }}",
-        "category": "{{ post.category | xml_escape }}",
-        "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-        "url": "{{ post.url | xml_escape }}"
-      }
+    {% for document in indexed_stuff %}
+      "{{ document.url | slugify }}":
+        {
+          "title": "{{ document.title | xml_escape }}",
+          "author": "{{ document.author | xml_escape }}",
+          "category": "{{ document.category | xml_escape }}",
+          "content": {{ document.content | strip_html | strip_newlines | jsonify }},
+          "url": "{{ document.url | xml_escape }}"
+        }
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
 </script>
+
 <script src="/js/lunr.js"></script>
 <script src="/js/search.js"></script>

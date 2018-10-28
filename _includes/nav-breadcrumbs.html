@@ -1,7 +1,7 @@
 {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
 {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
 
-{% if splitted_url_parts.size %}
+{% if splitted_url_parts.size > 0 %}
   <nav class="breadcrumbs bootstrap hidden-sm-down">
     <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
       <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">

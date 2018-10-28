@@ -33,6 +33,7 @@ environment: production
 plugins:
   - jekyll-feed
   - breadcrumbs
+  - jekyll-toc
 
 safe: false
 

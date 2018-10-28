@@ -16,8 +16,12 @@ nav.breadcrumbs.bootstrap {
    /* Additions: image integration */
 }
 
-nav.breadcrumbs.bootstrap ol {
+nav.breadcrumbs.bootstrap ol  {
    margin-left: 0
+}
+
+nav.breadcrumbs.bootstrap ol > li {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $sans-serif-font-family;
 }
 
 nav.breadcrumbs.bootstrap .breadcrumb {

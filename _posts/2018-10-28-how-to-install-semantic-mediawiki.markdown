@@ -5,7 +5,7 @@ date:   2018-10-28 16:54:07 +0100
 categories: sysadmin semantic mediawiki install
 ---
 
-# How to install Semantic MediaWiki on Ubuntu 18.04 LTS
+## How to install Semantic MediaWiki on Ubuntu 18.04 LTS
 
 Original repository with scripts for installation: https://github.com/silvae86/semanticmediawiki-install
 

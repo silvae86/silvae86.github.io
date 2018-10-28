@@ -231,17 +231,17 @@
   }
 }
 
-.post-meta {
+ul.post-list .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  border-radius: 2px;
+  padding:2px;
+  background-color: $grey-color-light;
 }
 
-.post-link {
+ul.post-list .post-link {
   display: block;
   @include relative-font-size(1.5);
 }
-
-
 
 /**
  * Posts

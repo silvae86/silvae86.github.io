@@ -39,7 +39,8 @@ ul, ol, dl, figure,
 /**
  * Sans serif titles
  */
-h1, h2, h3, h4, h5, h6, ul, ul, ol, dl, figure {
+// h1, h2, h3, h4, h5, h6, ul, ul, ol, dl, figure {
+h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: $spacing-unit / 2;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $sans-serif-font-family;
 }
@@ -256,7 +257,7 @@ table {
 /* Site header */
 
 .site-title {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $sans-serif-font-family;
+  font: $base-font-weight #{0.5*$base-font-size}/#{$base-line-height} $sans-serif-font-family;
 }
 
 /* Site footer */

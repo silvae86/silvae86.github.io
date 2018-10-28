@@ -5,7 +5,7 @@ permalink: /research/
 include_in_menu: true
 ---
 
-### Research
+## Research
 
 My main research interests are semantic web technologies and their practical applications
 to research data management, combining Information Science, Computer Science knowledge and solid engineering.
@@ -13,6 +13,10 @@ to research data management, combining Information Science, Computer Science kno
 I am particularly interested in graph database applications, database modelling, information
 system architectures, software quality and software testing. I apply my research to the design and construction of
 the research data repositories of the future.
+
+### Conference Papers
+
+### Journal Papers
 
 <!--
 

@@ -4,7 +4,11 @@
 
 @import "minima";
 
-/* Breadcrumbs css */ 
+/* Breadcrumbs css */
+
+nav {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $sans-serif-font-family;
+}
 
 nav.breadcrumbs.bootstrap {
    /* from Twitter Bootstrap 4 */

@@ -14,7 +14,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $serif-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -25,8 +25,6 @@ body {
   font-kerning: normal;
 }
 
-
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -35,9 +33,16 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $serif-font-family;
 }
 
-
+/**
+ * Sans serif titles
+ */
+h1, h2, h3, h4, h5, h6, ul, ul, ol, dl, figure {
+  margin-bottom: $spacing-unit / 2;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $sans-serif-font-family;
+}
 
 /**
  * `main` element
@@ -93,8 +98,6 @@ li {
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -248,4 +251,16 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+/* Site header */
+
+.site-title {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $sans-serif-font-family;
+}
+
+/* Site footer */
+
+footer.site-footer {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $sans-serif-font-family;
 }

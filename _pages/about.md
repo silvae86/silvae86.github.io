@@ -1,7 +1,9 @@
 ---
 layout: page
 title: About
+include_in_menu: true
 permalink: /about/
+crumbtitle: About
 ---
 
 ![João Rocha da Silva](/assets/images/about/me.jpg){:class="float-left"}

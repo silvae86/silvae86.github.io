@@ -5,7 +5,7 @@ date:   2018-07-10 15:34:00 +0100
 categories: sysadmin mojave beta vagrant virtualbox osx macos
 ---
 
-The new beta of Mac OS X Mojave is mostly stable and so far it has been a good experience... Apart from the [recent issues that i have faced](/sysadmin/mac/osx/mojave/beta/libxml2/2018/07/05/fixing-missing-headers-for-homebrew-in-mac-osx-mojave.html) with homebrew legacy libraries and this recent problem with Virtualbox, which loads a Kernel Extension that has not yet been approved by Apple.
+The new beta of Mac OS X Mojave is mostly stable and so far it has been a good experience... Apart from the [recent issues that i have faced](/sysadmin/mac/osx/mojave/beta/libxml2/2018/07/05/fixing-missing-headers-for-homebrew-in-mac-osx-mojave) with homebrew legacy libraries and this recent problem with Virtualbox, which loads a Kernel Extension that has not yet been approved by Apple.
 
 Here is a **temporary solution** to get you up and running with the latest Mac OS beta.
 
@@ -19,8 +19,8 @@ Go [here](https://www.virtualbox.org/wiki/Testbuilds) and download the current V
 
 Yes, yes, I also hate this, but has to be done until Apple refreshes the list of allowed Kernel Extensions to allow `VBoxDrv.kext` to load properly in Mojave.
 
-1. Reboot your Mac and hold Command + R (⌘ + R) before it boots. 
-2. Keep holding it until you see the progress bar 
+1. Reboot your Mac and hold Command + R (⌘ + R) before it boots.
+2. Keep holding it until you see the progress bar
 3. Wait for it to finish
 4. At the top menu, select Utilities -> Terminal
 5. Enter `csrutil disable`
@@ -31,7 +31,7 @@ After this is solved, do the same steps to re-enable SIP, but type `csrutil enab
 
 ## (Try to) Install Virtualbox
 
-Run the installer. 
+Run the installer.
 
 ![Installer Running](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 15.22.49.png){:class="img-responsive"}
 
@@ -101,8 +101,8 @@ if not plugins_to_install.empty?
 This caused issues:
 
 {% highlight shell %}
-Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long 
-Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long 
+Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long
+Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long
 Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long
 {% endhighlight %}
 

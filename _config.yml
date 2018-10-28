@@ -32,6 +32,9 @@ environment: production
 
 plugins:
   - jekyll-feed
+  - breadcrumbs
+
+safe: false
 
 relative_permalinks: false
 
@@ -45,8 +48,27 @@ permalink: pretty
 breadcrumbs:
   root:
     hide: false  # show breadcrumbs on root/home page
-    image: false # Show image or title text
-    
+    image: true # Show image or title text
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-debug
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

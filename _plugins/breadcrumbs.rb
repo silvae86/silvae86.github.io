@@ -1,5 +1,7 @@
 require_relative 'drops/breadcrumb_item.rb'
 
+puts "before .... "
+
 module Jekyll
   module Breadcrumbs
     @@config = {}
@@ -73,8 +75,8 @@ module Jekyll
 end
 
 Jekyll::Hooks.register :site, :pre_render do |site, payload|
-   Jekyll::Breadcrumbs::loadConfig(site)
-   Jekyll::Breadcrumbs::loadAddressCache(site)
+  Jekyll::Breadcrumbs::loadConfig(site)
+  Jekyll::Breadcrumbs::loadAddressCache(site)
 end
 
 Jekyll::Hooks.register [:pages, :documents], :pre_render do |side, payload|

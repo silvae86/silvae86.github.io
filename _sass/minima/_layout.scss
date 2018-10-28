@@ -24,6 +24,14 @@
   }
 }
 
+.nav-root-icon
+{
+      height: 1em;
+      display: inline-block;
+      padding-right: 5px;
+      vertical-align: text-top;
+}
+
 .search-container {
 
   input[type=text] {
@@ -43,7 +51,7 @@
     border: none;
     cursor: pointer;
   }
-  
+
   button:hover {
     background: #ccc;
   }

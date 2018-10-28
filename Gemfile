@@ -30,3 +30,6 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "jekyll-theme-hacker"
 gem "github-pages", group: :jekyll_plugins
+
+gem 'pry-byebug'
+gem 'jekyll-include-cache'

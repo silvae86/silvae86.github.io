@@ -33,25 +33,40 @@ If you want to read more about why I think LaTeX is the best choice for scientif
 
 #### Mendeley
 
-[Mendeley](https://www.mendeley.com/download-desktop/) is a reference manager that allows you to easily store all your references
+[Mendeley](https://www.mendeley.com/download-desktop/) is a reference manager that allows you to easily store all your references. It provides 3 main capabilities (in my opinion):
+
+1. **Cloud Synchronization**. If you work across several computers, Mendeley will sync your references database across them all, and you are not
+2. **"Automatic" bibliographic record fetching**. You can drag and drop the PDFs of your papers to the Mendeley app and it will try to automatically fetch the bibliographic record and fill in the bibliographic entry for you. It does not always work, though, so you need to keep an eye on the right sidebar of mendeley to check for wrong records.
+3. **Note-taking and highlighting**. You can take notes and highlight interesting parts of your PDFs directly in Mendeley. I do not recommend making all your highlighting in the app and instead use your favorite PDF editor (such as the Mac Preview). Why you ask? Because if you copy the PDF from your Mendeley Library into a pendrive, for example, the notes are not actually saved in the PDF but in Mendeley servers and overlaid over the PDF when you use the Mendeley app. If you do not want to keep your notes chained to Mendeley, use right-click -> "Open File Externally..." to launch the PDF reader, edit what you want and when you are finished Mendeley will sync the updated PDF to the cloud.
 
 #### Note-taking apps
 
 Throughout your dissertation you will most certainly produce a lot of records of your research activity: reading sheets, experiment results, personal thoughts, etc.
 
-To store these, you can use something so simple as Google Docs or Google Keep for flat notes, or a Wiki such as GitHub Wiki or a Dokuwiki.
+To store these, you can use something so simple as Google Docs or Google Keep for flat notes, or a Wiki such as GitHub Wiki or a Dokuwiki. I also added Mendeley here because while it is not a full-fledged wiki, it can be used to keep track of reading notes attached to your references. The free-text search of Mendeley will also index your notes, making it possible to find the reference you want by something you have written in your notes.
 
-|             | Search | Looks  | Structure | Installation | Dependencies |
-|-------------|--------|--------|-----------|--------------|--------------|
-| Google Keep | *****  | ***    | *         | *****        | *****        |
-| Google Docs | **     | ****   | *         | *****        | *****        |
-| Dokuwiki    | *****  | ****   | *****     | ***          | **           |
-| Github Wiki | ****   | *****  | ***       | ****         | *****        |
-| Mendeley    | *****  | *      | *         | *****        | **           |
+![Mendeley Notes](/assets/images/supervision/mendeley_notes.png){:class="img-center"}
+
+*Notes in the Mendeley interface*{:class="img-caption"}
+
+
+|             | Search | Looks  | Structure | Installation | Dependencies | Syntax        |
+|-------------|--------|--------|-----------|--------------|--------------|---------------|
+| Google Keep | *****  | ***    | *         | *****        | *****        | No Syntax     |
+| Google Docs | **     | ****   | *         | *****        | *****        | WYSIWYG       |
+| Dokuwiki    | *****  | ****   | *****     | ***          | **           | Dokuwiki      |
+| Github Wiki | ****   | *****  | ***       | ****         | *****        | Markdown      |
+| Mendeley    | *****  | *      | *         | *****        | **           | WYSIWYG (?)   |
 
 **Search**. It should be possible to retrieve your notes quickly with a search feature. In this case, Google Keep and Dokuwiki offer a fast querying interface to quickly find what you need. Google Docs buries the text in different documents, making it confusing to fetch what you need with a simple Ctrl+F.
 
-**Looks**. The overall aspect of your notes, as you make them. This is subjective, of course. In my op
+**Looks**. The overall aspect of your notes, as you make them. This is subjective, of course. In my opinion, the GitHub wiki is the best-looking of the bunch, with its online interface.
+
+**Structure**.
+
+### Cloud storage
+
+You can use external hard drives to store your dissertation and all related materials, but those can die at the worst possible moments. Use Google Drive, Dropbox, or any other cloud storage solution to keep regular backups. If you are afraid that someone can steal your work if your cloud provider gets hacked, just compress the stuff into a ZIP, 7z or RAR archive, and encrypt it with a strong key before you upload it to the cloud.
 
 ### Structure of the document
 
@@ -72,16 +87,16 @@ To store these, you can use something so simple as Google Docs or Google Keep fo
   Detail how you are going to develop a
 
 4. Implementation
-  In an Informatics Engineering dissertation
+  In an Informatics Engineering MSc dissertation, it is common to have to implement a prototype of some sort, in order to build a testbed for your approach. This can be an addition to an existing software solution---in which the technological stack will already be pre-defined---or a completely new piece of software, for which you will have to select the most appropriate technologies at every level of the tech stack.
 
 5. Evaluation
-  1. Experimental Scenario
-  2.
-
+  1. Experiment configuration
+  2. Results analysis
+  3. Conclusions and discussion
 
 ## General Tips
 
-For some tips about how to carry out a successful MSc dissertation, I have compiled a list of strongly opinionated articles (read at your own peril!).
+For some tips about how to carry out a successful MSc dissertation, I have compiled a list of opinionated articles (read at your own peril!).
 
 ### Choosing your topic
 
@@ -89,7 +104,7 @@ My advice is to look at the Curricular Units that you have enjoyed the most, and
 
 Also, please do not hurry to go into the industry. The final dissertation is a great opportunity for you to have a taste of a research environment and practices. It is a great way for you to do something you really like before you leave the academic environment and start your professional career. Industry is really cool too, don't get me wrong---but it is harder to do exploratory research work like you can in an academic environment. Also, you can often get a research scholarship with your Masters dissertation if it can contribute to a research project; talk with your potential supervisor to see what are the chances of that.
 
-### Your supervisor
+### The supervisor
 
 This is very personal, and is closely linked to the topic that you wish to follow. My only advice is to get in touch with your potential supervisors beforehand and try to get a feel for their research interests; try to see if they align with what you want to learn before the end of your course. Does this person have a good track record of supervisions? What is the opinion of the older students that were supervised by your potential supervisors? Be proactive and get in touch with everyone, do not wait until the last moment.
 

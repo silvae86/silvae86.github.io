@@ -64,7 +64,7 @@ To store these, you can use something so simple as Google Docs or Google Keep fo
 
 **Structure**.
 
-### Cloud storage
+#### Cloud storage
 
 You can use external hard drives to store your dissertation and all related materials, but those can die at the worst possible moments. Use Google Drive, Dropbox, or any other cloud storage solution to keep regular backups. If you are afraid that someone can steal your work if your cloud provider gets hacked, just compress the stuff into a ZIP, 7z or RAR archive, and encrypt it with a strong key before you upload it to the cloud.
 

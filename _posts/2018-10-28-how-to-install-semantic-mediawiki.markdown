@@ -83,11 +83,11 @@ mysql -u root -p${MYSQL_PASSWORD}
 ```bash
 mkdir -p Downloads
 cd Downloads
-sudo wget --progress=bar:force https://releases.wikimedia.org/mediawiki/1.27/mediawiki-1.27.1.tar.gz
-tar -xvzf ./mediawiki-1.27.1.tar.gz
+sudo wget --progress=bar:force https://releases.wikimedia.org/mediawiki/1.31/mediawiki-1.31.1.tar.gz
+tar -xvzf ./mediawiki-1.31.1.tar.gz
 sudo rm -rf /var/lib/mediawiki
 sudo mkdir -p /var/lib/mediawiki
-sudo mv mediawiki-1.27.1/* /var/lib/mediawiki
+sudo mv mediawiki-1.31.1/* /var/lib/mediawiki
 cd /var/www/html
 sudo ln -s /var/lib/mediawiki mediawiki
 cd -
@@ -188,8 +188,9 @@ composer update
 cd /var/www/html/mediawiki
 sudo mkdir -p ./extensions/SemanticMediaWiki
 sudo chmod ugo+rw ./extensions/SemanticMediaWiki
-sudo composer require mediawiki/semantic-media-wiki "~2.1" --update-no-dev
-sudo composer require mediawiki/semantic-result-formats "1.9.*"
+sudo composer require mediawiki/semantic-media-wiki "~3.0" --update-no-dev
+sudo composer require mediawiki/semantic-result-formats "3.0.0"
+composer update --no-dev
 php maintenance/update.php
 ```
 

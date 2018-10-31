@@ -188,7 +188,7 @@ composer update
 cd /var/www/html/mediawiki
 sudo mkdir -p ./extensions/SemanticMediaWiki
 sudo chmod ugo+rw ./extensions/SemanticMediaWiki
-sudo composer require mediawiki/semantic-media-wiki "~3.0" --update-no-dev
+sudo composer require mediawiki/semantic-media-wiki "3.0.0" --update-no-dev
 sudo composer require mediawiki/semantic-result-formats "3.0.0"
 composer update --no-dev
 php maintenance/update.php

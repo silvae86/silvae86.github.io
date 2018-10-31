@@ -16,7 +16,7 @@ For some tips about how to carry out a successful MSc dissertation, I have compi
 
 My advice is to look at the Curricular Units that you have enjoyed the most, and get in touch with the professors that lectured you in those units. If you can find common ground for collaboration in a research context, go for it!
 
-Also, please do not hurry to go into the industry. The final dissertation is a great opportunity for you to have a taste of a research environment and practices. It is a great way for you to do something you really like before you leave the academic environment and start your professional career. Industry is really cool too, don't get me wrong---but it is harder to do exploratory research work like you can in an academic environment. Also, you can often get a research scholarship with your Masters dissertation if it can contribute to a research project; talk with your potential supervisor to see what are the chances of that.
+The final dissertation is a great opportunity for you to have a taste of a research environment and practices. It is a great way for you to do something you really like before you leave the academic environment and start your professional career. Industry is really cool too, don't get me wrong---but it can be harder to do exploratory research work like you can in an academic environment. Also, since money is in many times a factor, you can often get a research scholarship with your Masters dissertation if it can contribute to a research project; talk with your potential supervisor to see what are the chances of that.
 
 ### The supervisor
 

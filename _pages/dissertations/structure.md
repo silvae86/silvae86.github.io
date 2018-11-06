@@ -3,7 +3,7 @@ layout: page
 title: Dissertation report structure
 ---
 
-## Is there a template?
+## Before you start: is there a template?
 
 Ask your supervisor if there is an established document template for the dissertation. In the case of FEUP's Masters in Informatics Engineering, the template is available at [Prof. João Correia Lopes' website](https://web.fe.up.pt/~jlopes/doku.php/teach/feupteses).
 

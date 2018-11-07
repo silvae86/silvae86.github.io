@@ -43,9 +43,9 @@ sudo apt-get -f purge linux-image-extra-4.4.0-1*
 # when you are finished, clean up everything
 sudo apt autoremove
 
-#update grub
+# update grub
 sudo update-grub2
-#reboot
+# reboot
 sudo reboot
 ```
 

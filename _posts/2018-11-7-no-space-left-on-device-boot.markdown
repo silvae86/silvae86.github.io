@@ -49,12 +49,12 @@ sudo update-grub2
 sudo reboot
 ```
 
-## If apt based solution does not work, pray and do this
+## If apt based solution does not work, pray and do this before the Clean Up step
 
 ### Delete old kernels besides this one
 
-**Modify the wildcarded versions according to your existing kernel!**
-
 ```bash
+cd /boot
+# **Modify the wildcarded versions according to your existing kernel!**
 sudo rm -rf vmlinuz-4.4.0-1* System.map-4.4.0-1* abi-4.4.0-1* initrd-4.4.0-1* config-4.4.0-1*
 ```

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Install Docker on Ubuntu 18"
-date:   2018-11-05 16:54:00 +0100
+date:   2018-11-05 16:54:00 +0200
 categories: install docker ubuntu 18
 ---
 

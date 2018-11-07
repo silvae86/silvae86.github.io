@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "No space left on device - Full /boot partition"
-date:   2018-11-05 15:17:00 +0100
+date:   2018-11-05 15:17:00 +0200
 categories: sysadmin boot no space left on device
 ---
 

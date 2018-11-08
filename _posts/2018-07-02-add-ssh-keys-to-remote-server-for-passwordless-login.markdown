@@ -5,11 +5,11 @@ date:   2018-07-02 16:54:07 +0100
 categories: sysadmin ssh keys
 ---
 
-SSH keys allow you to login into your SSH server without having to remember passwords and with much stronger security. It's like having a super long password that you never have to remember... Just keep your private keys in a safe place. 
+SSH keys allow you to login into your SSH server without having to remember passwords and with much stronger security. It's like having a super long password that you never have to remember... Just keep your private keys in a safe place.
 
 ## Generate Public and Private Keys
 
-Generate public keys. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`). 
+Generate public keys. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`).
 
 {% highlight shell %}
 ssh-keygen -f ~/.ssh/example.com-id
@@ -21,7 +21,7 @@ ssh-keygen -f ~/.ssh/example.com-id
 Your remote server needs to know your public key, so you need to send it there.
 
 {% highlight shell %}
-ssh-copy-id -i ~/ssh/example.com-id exampleuser@example.com #copy the public key to the target machine
+ssh-copy-id -i ~/.ssh/example.com-id.pub exampleuser@example.com #copy the public key to the target machine
 {% endhighlight %}
 
 ## Set appropriate permissions
@@ -44,11 +44,17 @@ vim ~/.ssh/config
 ### Example contents of the new file
 
 {% highlight shell %}
-Host example.com #alias of the machine into which you are logging in
+#alias of the machine into which you are logging in
+Host example.com
 
-HostName example.com #hostname or ip of the machine
-User exampleuser #the username with which you are logging in
-IdentityFile ~/.ssh/example.com-id #the private key, without "-pub"
+#hostname or ip of the machine
+HostName example.com
+
+#the username with which you are logging in
+User exampleuser
+
+#the private key, without "-pub"
+IdentityFile ~/.ssh/example.com-id 
 {% endhighlight %}
 
 
@@ -63,7 +69,7 @@ ssh example.com
 
 ### Save your keys and configuration file in a "safe place" for later
 
-You can login from other computers using the same public key without having to configure the server again. 
+You can login from other computers using the same public key without having to configure the server again.
 All you need is to copy:
 
  - The `~/.ssh/config` file

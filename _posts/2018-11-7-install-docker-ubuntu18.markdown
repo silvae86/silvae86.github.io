@@ -7,6 +7,8 @@ categories: install docker ubuntu 18
 
 # Installation Script
 
+Here is the "just copy and paste" installations script for Docker in Ubuntu. Enjoy.
+
 ```bash
 sudo apt-get update
 sudo apt-get install \

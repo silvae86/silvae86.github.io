@@ -12,8 +12,8 @@ Here is the "just copy and paste" installations script for Docker in Ubuntu. Enj
 ```bash
 
 # Install dependencies
-sudo apt-get update
-sudo apt-get install \
+sudo apt-get update -qq
+sudo apt-get install -qq -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -29,7 +29,7 @@ sudo add-apt-repository \
 sudo apt-get update
 
 # Install Docker
-sudo apt-get install -y docker-ce
+sudo apt-get install -y -qq docker-ce
 
 # Start Docker Daemon
 sudo service docker start
@@ -44,8 +44,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 source ~/.bashrc
 docker-compose --version
 echo "Done!"
-
 ```
+
 ## Checking if the service is running
 
 ```bash

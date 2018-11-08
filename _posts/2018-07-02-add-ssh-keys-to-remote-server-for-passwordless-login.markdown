@@ -21,7 +21,8 @@ ssh-keygen -f ~/.ssh/example.com-id
 Your remote server needs to know your public key, so you need to send it there.
 
 {% highlight shell %}
-ssh-copy-id -i ~/.ssh/example.com-id.pub exampleuser@example.com #copy the public key to the target machine
+#copy the public key to the target machine
+ssh-copy-id -i ~/.ssh/example.com-id.pub exampleuser@example.com
 {% endhighlight %}
 
 ## Set appropriate permissions
@@ -54,7 +55,7 @@ HostName example.com
 User exampleuser
 
 #the private key, without "-pub"
-IdentityFile ~/.ssh/example.com-id 
+IdentityFile ~/.ssh/example.com-id
 {% endhighlight %}
 
 

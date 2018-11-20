@@ -306,7 +306,15 @@ $wgDBname = "grupo1"; # (Before) $wgDBname = "demo";
 
 # Site secret
 $wgSecretKey = "a_very_long_key"; # (Before) $wgSecretKey = "another_very_long_key";
+
+# Turn off asynchronous job execution
+# This can dramatically slow down your wiki, but will help deal with those times when the
+# pages are not becoming part of their categories, property configurations are not being
+# quickly allocated, and other bugs caused by too many pending jobs in the SMW.
+$wgJobRunRate=2;
+$wgRunJobsAsync=false;
 ```
+
 
 ### Recreate MediaWiki database tables
 

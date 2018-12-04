@@ -315,6 +315,14 @@ $wgJobRunRate=2;
 $wgRunJobsAsync=false;
 ```
 
+# Enable Results Formats (for semantic queries with average and other aggregation operators)
+
+Semantic Formats Extension [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Result_Formats](here).
+
+```
+wfLoadExtension( 'SemanticResultFormats' );
+```
+
 
 ### Recreate MediaWiki database tables
 

@@ -320,6 +320,9 @@ $wgRunJobsAsync=false;
 Semantic Formats Extension [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Result_Formats](here).
 
 ```
+# As shown in the Extension page, these are the possible formats
+# average, bibtex, calendar, eventline, exhibit, googlebar, googlepie, graph, icalendar, jqplotbar, jqplotpie, max, min, outline, sum, timeline, vcard
+# by default, all but the following formats are enabled: 'exhibit', 'filtered', 'googlebar', 'googlepie' and 'excel'
 wfLoadExtension( 'SemanticResultFormats' );
 ```
 

@@ -48,11 +48,11 @@ Well, this needs no explanation.
 
 ## And where do I publish my own paper?
 
-{% include info.html content="It is advised to make a list of the relevant conferences in your area and their submission deadlines, so that you can organize your work properly!" %}
+{% include info.html content="It is a good idea to make a list of the relevant conferences in your area and their submission deadlines, so that you can plan your work and target a conference submission." %}
 
-Of course every Masters student should try to publish a research paper to get an excellent grade. But where??
+Of course every Masters student should try to publish a research paper to get an excellent grade. But where?
 
-After knowing which are the best conferences in his area, he looks for them at [WikiCFP](http://www.wikicfp.com/cfp/allcat) (they will be shown by categories).
+After knowing which are the best conferences in the dissertation topic, a student can look for the upcoming Calls For Papers, for example at [WikiCFP](http://www.wikicfp.com/cfp/allcat) (they will be shown by categories).
 
 The search function is somewhat hidden, so here it is:
 ![Wikicfp Search](/assets/images/post-images/2018-12-10-how-to-search-for-references-for-the-pdis-sota/wikicfp_search.png){:class="img-center"}

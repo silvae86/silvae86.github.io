@@ -1,3 +1,43 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+// Single side border-radius
+
+@mixin border-top-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+   -webkit-border-top-left-radius: $radius;
+   border-top-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+     -webkit-border-top-right-radius: $radius;
+     border-top-right-radius: $radius;
+     background-clip: padding-box;
+}
+@mixin border-bottom-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+   -webkit-border-bottom-left-radius: $radius;
+   border-bottom-left-radius: $radius;
+   background-clip: padding-box;
+}
+@mixin border-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+     -webkit-border-top-left-radius: $radius;
+     border-top-left-radius: $radius;
+     background-clip: padding-box;
+}
+
+// ==============
+// = END MIXINS =
+// ==============
 
 .svg-top-image {
     width: 30px;
@@ -23,6 +63,10 @@
     margin-left: auto;
     margin-right: auto;
     display:block;
+    width: 85%;
+}
+
+.fullwidth {
     width: 100%;
 }
 
@@ -69,4 +113,52 @@ pre {
     padding-right: 0;
     padding-left: 0;
   }
+}
+
+$info-alert-color:       	#00529B !default;
+$warning-alert-color: 		#9F6000 !default;
+$danger-alert-color:      	#721c24 !default;
+
+.alert
+{
+	padding: 2em 3em 2em 3em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border-width:3px;
+	border-style:solid;
+	@include border-radius(5px);
+}
+
+.alert-info
+{
+	background-color: lighten($info-alert-color, 60%);
+	color:$info-alert-color;
+	border-color: $info-alert-color;
+}
+
+.alert-warning
+{
+	background-color: lighten($warning-alert-color, 40%);
+	color:$warning-alert-color;
+	border-color: $warning-alert-color;
+}
+
+.alert-danger
+{
+	background-color: lighten($danger-alert-color, 40%);
+	color:$danger-alert-color;
+	border-color:$danger-alert-color;
+}
+
+.post-content a {
+	color: lighten(saturate($brand-color, 20%), 10%);
+	text-decoration: underline;
+}
+
+.share-buttons > a {
+	color:$grey-color-dark;
+}
+
+.share-buttons > a:hover {
+	color:$brand-color;
 }

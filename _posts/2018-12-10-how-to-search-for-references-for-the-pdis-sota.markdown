@@ -1,60 +1,64 @@
 ---
 layout: post
-title:  "How to search for references for PDIS"
+title:  "How to search for good references for a State of the Art"
 date:   2018-12-10 14:11:00 +0200
 categories: pdis research feup mieic
 ---
 
 ## How to search for good references
 
-For those who are doing the state of art in PDIS, I advise you to use the [http://portal.core.edu.au/conf-ranks/?search=Software+Engineering&by=all&source=CORE2018&sort=arank&page=1](CORE2018 Ranking) to find the best conferences in your area (order by ranking, the best are A *, then A, B, etc.). After seeing the best, look at the [ACM digital library](https://dl.acm.org/) or [IEEE Xplore](https://ieeexplore.ieee.org/) or just [Google Scholar](https://scholar.google.com) if all else fails!
+For those who are doing the state of art in PDIS, I advise you to use the [CORE2018 Ranking](http://portal.core.edu.au/conf-ranks/?search=Software+Engineering&by=all&source=CORE2018&sort=arank&page=1) to find the best conferences in your area (order by ranking, the best are A *, then A, B, etc.). Afterwards, look at the [ACM Digital Library](https://dl.acm.org/) or [IEEE Xplore](https://ieeexplore.ieee.org/) or just [Google Scholar](https://scholar.google.com) if all else fails!
 
-### Example
+We will follow a future Informatics Engineer, who wants to do good research for the state of the art of the dissertation.
 
-Nuno is interested in reading the latest publications related to Automatic Builds for his thesis. Go to CORE2018 and search for Software Engineering. Since he is a smart and busy engineering student, he wants to read the best ones first. 
+*(S)He is interested in reading the latest publications related to continuous integration, a topic within **Software Engineering**. Being a smart but very busy engineering student, (s)he wants to read the best ones first...*
 
-#### The CORE2018 Conference Ranking
+### The CORE2018 Conference Ranking
 
-He searches CORE2018 for Software Engineering, and then sorts by Ranking to see the A * conferences of Software Engineering at CORE2018:
+A good first step is to go to the [CORE2018 conference ranking](http://portal.core.edu.au/conf-ranks/) and search for "Software Engineering". Then, sort the results by Ranking to see the A* conferences of Software Engineering at CORE2018. The best ones are A*, followed by A, then B, etc.
 
-[click here](http://portal.core.edu.au/conf-ranks/?search=Software+Engineering&by=all&source=CORE2018&sort=arank&page=1)
+Here is [the result](http://portal.core.edu.au/conf-ranks/?search=Software+Engineering&by=all&source=CORE2018&sort=arank&page=1).
 
 
-#### IEEE Xplore
+### IEEE Xplore
 
-The best conferences are usually either IEEE or ACM, so it goes to IEEE Xplore and looks for the title and acronym of the conference "(International Conference on Software Engineering (ICSE)" in this case.) Copy-Paste in the IEEE Xplore search box gives this :
+The best conferences are usually either IEEE or ACM, so it goes to IEEE Xplore and looks for the title and acronym of the conference "(International Conference on Software Engineering (ICSE)" in this case.) Copy-Paste in the IEEE Xplore and....
 
-[click here](https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=2018%20IEEE%2FACM%2040th%20International%20Conference%20on%20Software%20Engineering)
+Here is [the result](https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=2018%20IEEE%2FACM%2040th%20International%20Conference%20on%20Software%20Engineering).
 
 In the case of IEEE Xplore, all papers should appear, but below the title appears the conference where the article was published.
 
 ![Ieee Xplore Conference Link](/assets/images/post-images/2018-12-10-how-to-search-for-references-for-the-pdis-sota/ieee_xplore_conference_link.png)
 
-He clicks on the link with the name of the conference and will give the list of all conference papers:
+By clicking on the link with the name of the conference, it is possible to get the compete [list of its papers](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8452039).
 
-[click here](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8452039)
+### ACM Digital Library
 
-#### ACM Digital Library
+If one cannot find anything in IEEE Xplore, the next option is the ACM Digital Library. In this case, since [http://www.icse-conferences.org/](ICSE) is a top conference, it will also be [there](https://dl.acm.org/citation.cfm?id=3183428&picked=prox).
 
-If you do not find it in IEEE Xplore, it does the same but in the ACM Digital Library. In this case, since ICSE is very good, also find it there:
+Clicking on the "Table of Contents" gives one access to the list of papers:
 
-[click here](https://dl.acm.org/citation.cfm?id=3183428&picked=prox)
+![Acm Dl Toc](/assets/images/post-images/2018-12-10-how-to-search-for-references-for-the-pdis-sota/acm_dl_toc.png){:class="img-center"}
 
-He clicks on the "Table of Contents" and has access to the list of papers:
+Because one sometimes needs to download the papers in PDF format, one should do this research inside the FEUP network, otherwise... no PDFs for anyone.
 
-![Acm Dl Toc](/assets/images/post-images/2018-12-10-how-to-search-for-references-for-the-pdis-sota/acm_dl_toc.png)
+### Google Scholar
 
-Because he wants to download the articles, he does his research inside the FEUP network, otherwise there are no PDFs for anyone.
+Well, this needs no explanation.
 
+## And where do I publish my own paper?
 
-### And where do I publish?
+{% include info.html content="It is advised to make a list of the relevant conferences in your area and their submission deadlines, so that you can organize your work properly!" %}
 
-Of course every Masters student should try to publish a research paper to get an excellent grade. But where?
+Of course every Masters student should try to publish a research paper to get an excellent grade. But where??
 
-After knowing which are the best conferences in your area, look for them at [WikiCFP](http://www.wikicfp.com/cfp/allcat).
+After knowing which are the best conferences in his area, he looks for them at [WikiCFP](http://www.wikicfp.com/cfp/allcat) (they will be shown by categories).
 
 The search function is somewhat hidden, so here it is:
+![Wikicfp Search](/assets/images/post-images/2018-12-10-how-to-search-for-references-for-the-pdis-sota/wikicfp_search.png){:class="img-center"}
 
-![Wikicfp Search](/assets/images/post-images/2018-12-10-how-to-search-for-references-for-the-pdis-sota/wikicfp_search.png)
+<!-- {% include danger.html content="It is advised to make a list of the relevant conferences in your area and their submission deadlines, so that you can organize your work properly" %} -->
+
+<!-- {% include warning.html content="It is advised to make a list of the relevant conferences in your area and their submission deadlines, so that you can organize your work properly" %} -->
 
 Good research!

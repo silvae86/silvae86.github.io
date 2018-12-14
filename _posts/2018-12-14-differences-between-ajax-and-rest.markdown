@@ -41,7 +41,19 @@ A not-RESTful architecture will not follow a specific convention of identifying 
 
 ### RESTful
 
-REST specifies, among other things, patterns for how your URLs should be created (using them to uniquely identify a ) and links CRUD to HTTP verbs over
+REST specifies, among other things, patterns for how your URLs should be created (using them to uniquely identify a resource in the system) and then links CRUD operations over that resource to HTTP verbs. Quoting from [this website on HTTP verbs in PHP](https://www.giorgiosironi.com/2010/04/http-verbs-in-php.html):
+
+> Of these methods, the more interesting ones due to their usage in RESTful applications are GET, POST, PUT and DELETE:
+> - GET is a safe, idempotent method and it is used to retrieve a resource.
+>
+> - POST is considered a catch-all method nowadays, but its intent is defining a subordinate resource to the current one. For instance, posting to a blog resource may create a new post.
+>
+> - PUT is the analogue of GET used to send a resource to the HTTP server.
+>
+> - DELETE is the analogue of GET used to, of course, delete a particular resource.
+
+Here is the same example, but RESTful:
+
 
 | HTTP verb | CRUD Operation | URL                                                               |
 | --------- | -------------- | ----------------------------------------------------------------- |

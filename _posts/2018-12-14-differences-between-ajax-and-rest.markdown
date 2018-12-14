@@ -24,7 +24,7 @@ Hello A Student,
 
 - One is the use of a set of technologies (Asynchrononous Javascript And XML) that is used to make _asynchronous_ requests (the browser / client does not know when the response arrives nor is it blocked waiting, but rather registers a handler that will be called when the response _eventually_ arrives) to the server and to process the answer of the client side to, for example, modify the HTML of a shopping list after adding something to the cart.
 
-- REST is an architecture standard for structuring for your applications.
+- REST is an architecture standard for structuring your applications, and is applied mainly on the server. It defines what endpoints are available on the server and how a client can interact with them.
 
 REST proposes, among other things, the use of URLs that identify each resource and the use of different HTTP verbs to act on this resource. Here is a practical example:
 

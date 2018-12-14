@@ -80,6 +80,7 @@ How cool is that?
 
 ## Reading links
 
+- [HTTP (LTW slides By André Restivo)](https://web.fe.up.pt/~arestivo/presentation/http)
 - [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming))
 - [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
 - [What exactly is RESTful programming?](https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)

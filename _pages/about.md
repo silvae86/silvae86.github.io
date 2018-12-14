@@ -6,6 +6,12 @@ permalink: /about/
 crumbtitle: About
 ---
 
+## Curriculum Vitae
+
+My [CV](https://github.com/silvae86/cv/raw/master/cv.pdf) is [open-source](https://github.com/silvae86/cv/), like my work and life philosophy.
+
+## About me
+
 ![João Rocha da Silva](/assets/images/about/me.jpg){:class="float-left"}
 
 I hold a PhD in Informatics Engineering from the Faculty of Engineering of the University of Porto, where I also lecture. I specialise on research data management, working on FEUP's InfoLab building Dendro, a solution to help researchers describe and share their datasets in a clear and reusable way.
@@ -27,6 +33,7 @@ Open Source Projects: [Click me](https://github.com/silvae86)
 I work at FEUP's Information Systems Laboratory, also known as [InfoLab](http://infolab.fe.up.pt/).
 
 It is at the [I123](https://sigarra.up.pt/feup/pt/instal_geral.espaco_view?pv_id=74570) Laboratory of the [Faculty of Engineering of the University of Porto](https://sigarra.up.pt/feup/pt/web_page.Inicial).
+
 
 ##  Classic Car Mechanics
 

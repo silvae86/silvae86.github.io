@@ -2,9 +2,10 @@
 
 // Define defaults for each variable.
 
-$sans-serif-font-family: -apple-system, 'M PLUS 1p', BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$serif-font-family: -apple-system, 'Sawarabi Mincho', Palatino, Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$monospace-font-family: 'Roboto Mono', monospace;
+$system_fonts: -apple-system, system-ui, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$sans-serif-font-family: "Work Sans Medium", sans-serif, $system_fonts;
+$serif-font-family: "Lora Regular", serif, $system_fonts;
+$monospace-font-family: "Roboto Mono Medium", monospace, $system_fonts;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -14,7 +15,7 @@ $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
-$brand-color:      #507786 !default;
+$brand-color:      #C21807 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;

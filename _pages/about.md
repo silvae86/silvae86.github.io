@@ -45,6 +45,10 @@ I used to have a 1987 Toyota Corolla AE86, also known as Hachi-Roku or literally
 
 I have a YouTube channel covering car mechanics and repairs. I called it Toyota Mechanics Video Guides, and you can check it out on YouTube: [Click me](https://www.youtube.com/channel/UCbjjlEagh5_nduX_u-SkvdQ).
 
+## Disclaimer
+
+This blog contains my personal notes about programming, sysadmin, and other stuff. All materials and opinions are my own and do not reflect any point of view of my employer.
+
 <!--
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)

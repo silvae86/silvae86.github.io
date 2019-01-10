@@ -16,7 +16,7 @@
 title: The caffeinated engineer
 email: joaorosilva@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I am João Rocha da Silva, Informatics Engineering professor at the Faculty of Engineering of the University of Porto, developer and (when the time allows...) researcher. This blog contains my personal notes about programming, sysadmin, and other stuff. All materials and opinions are my own and do not reflect any point of view of my employer.
+  João Rocha da Silva, Informatics Engineering professor at FEUP, developer and researcher.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://silvae86.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: silvae86

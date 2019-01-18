@@ -78,5 +78,24 @@ All you need is to copy:
 
 into your `~/.ssh` directory in the new machine.
 
+### Disable remote login using passwords
+
+{% highlight shell %}
+vim /etc/ssh/sshd_config
+{% endhighlight %}
+
+Search for the line below and uncomment `PasswordAuthentication No`
+
+{% highlight shell %}
+# Change to no to disable tunnelled clear text passwords
+#PasswordAuthentication no #change to PasswordAuthentication no without the hash
+{% endhighlight %}
+
+Restart the sshd service
+
+{% highlight shell %}
+sudo service ssh restart
+{% endhighlight %}
+
 #### Fair warning!
 Remember, if others also get these keys and configuration file they can log into your server!

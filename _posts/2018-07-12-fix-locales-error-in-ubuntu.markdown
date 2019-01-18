@@ -35,4 +35,3 @@ LANG=en_US.UTF-8
 {% endhighlight %}
 
 If it still fails, add the same lines to `/etc/default/locale`.
-

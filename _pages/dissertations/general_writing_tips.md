@@ -70,6 +70,10 @@ You may see that your images are not being positioned where you want in the docu
 
 It may work, but after a while it will not. Do not do it, let LaTex decide for you. Really, it's better.
 
+### "Read" your images in the text
+
+There is no point in putting an image in your document if you do not explain it to the reader. Make sure you refer it with  `~\ref{fig:image}` and explain it thouroughly. If you need, you can add several round circles with letters or numbers inside to the image, and use them to give a flow to your text.
+
 ## Non-breaking space before citations
 
 Use a tilde to apply a non-breaking space before the citations, so that they never stick to the word before them `~\cite{Meijer2018, Wilkinson2016,Orth2016}`

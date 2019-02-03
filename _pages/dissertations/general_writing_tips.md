@@ -89,3 +89,21 @@ this is a positive step in the right direction, something that some projects suc
 # correct
 this is a positive step in the right direction, something that some projects aim to set as the norm~\cite{Meijer2018, Wilkinson2016,Orth2016}.
 ```
+
+## Tables
+
+Tables should always have a table caption and a label so that they can be referenced using `Table~\{tab:tablename}`. Here is a complete table template:
+
+```
+\begin{table}[]
+\caption{A comparison of interesting alternatives for my work}
+\label{tab:comparison}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llllcll}
+\hline
+                     & Developer          & Language Support      & Environment & \multicolumn{1}{l}{Multi-User} & Visualization & License       \\ \hline
+Jupyter Notebook     & Jupyter            & Multi-Language        & Local       & No                             & ipywidgets    & Open Source  \\
+\end{tabular}%
+}
+\end{table}
+```

@@ -11,6 +11,10 @@ Here is a short list of tips to write a good dissertation report and research pa
 
 A good sentence should take at least one line and at most 2 and a half line in your document. Long sentences make the reader lose track of the ideas, while short sentences seem copied and pasted.
 
+## Don't spam `\par` in every paragraph
+
+LaTex detects a blank line between your paragraphs. There is no need to put `\par` before every single paragraph.
+
 ## Avoid excessive adjectives and some informal language
 
 > With this work, we hope to... → With this work, we will... ---- Faith in God or any other entity will not get your work published

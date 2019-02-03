@@ -22,6 +22,9 @@ The final dissertation is a great opportunity for you to have a taste of a resea
 
 This is closely linked to the topic that you wish to follow. My only advice is to get in touch with your potential supervisors beforehand and try to get a feel for their research interests and taught subjects: do they align with what you want to learn before the end of your course? Does this person have a good track record of supervisions? What is the opinion of the older students that were supervised by your potential supervisors? Be proactive and get in touch with everyone, do not wait until the last moment.
 
+
+## [Writing tips](/dissertations/general_writing_tips)
+
 ## [Useful tools](/dissertations/tools)
 
 ## [A suggested document structure](/dissertations/structure)

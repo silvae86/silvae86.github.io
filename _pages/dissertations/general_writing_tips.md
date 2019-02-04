@@ -112,7 +112,7 @@ this is a positive step in the right direction, something that some projects aim
 
 Tables should always have a table caption and a label so that they can be referenced using `Table~\{tab:tablename}`. Here is a complete table template:
 
-```
+```tex
 \begin{table}[]
 \caption{A comparison of interesting alternatives for my work}
 \label{tab:comparison}

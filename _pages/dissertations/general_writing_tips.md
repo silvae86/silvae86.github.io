@@ -15,6 +15,20 @@ A good sentence should take at least one line and at most 2 and a half line in y
 
 LaTex detects a blank line between your paragraphs. There is no need to put `\par` before every single paragraph.
 
+## Do not refer to sections or chapters
+
+As a rule of thumb, you should avoid these like the plague:
+
+> As we will see in Section Y, ....
+
+Do you really want your reader to click on the PDF cross-reference and jump 3 or 4 chapters of your dissertation to read the "more detailed explanation"?
+
+> As discussed in Chapter X,
+
+This is more acceptable, but keep it to the absolute minimum! 1 or two of these in an entire dissertation is enough.
+
+The trick is to keep your text flowing in such a way that you don't need these sort of links. If introducing something that you will only talk later, you should either make a very brief summarization of the topic that will be introduced later. If it is a very large explanation and you actually require the reader to know all about what you are talking about, maybe you need to bring the referred section or subsection to before the current one... 
+
 ## Avoid excessive adjectives and some informal language
 
 > With this work, we hope to... → With this work, we will... ---- Faith in God or any other entity will not get your work published

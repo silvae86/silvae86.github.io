@@ -21,8 +21,10 @@ There are only a few lines that need to be uncommented:
 "${distro_id}:${distro_codename}-updates"; // will enable automatic security updates
 Unattended-Upgrade::Automatic-Reboot "true"; // will enable automatic reboot after updates are concluded
 Unattended-Upgrade::Automatic-Reboot-Time "04:00"; // will set up 4AM as the reboot time
+Unattended-Upgrade::Remove-Unused-Kernel-Packages "true"; // will prevent your boot partition from getting filled of junk, which will block any and all updates at a point
 {% endhighlight %}
 
+Special attention should be given to the last line, which will enable the update to automatically clean up old kernel packages. Without it, you can find yourself with a full `boot` partition, which has the nasty ability to halt any and all updates! I have [faced this in the past](/sysadmin/boot/no/space/left/on/device/2018/11/05/no-space-left-on-device-boot/) and it can be a pain.
 
 ## My file contents
 

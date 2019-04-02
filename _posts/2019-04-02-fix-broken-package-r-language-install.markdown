@@ -5,7 +5,7 @@ date:   2019-04-02 15:30:00 +0100
 categories: ubuntu r-language apt-get sysadmin broken package
 ---
 
-I had an issue with install R on Ubuntu 16.04. Message was about some inability to install a dependency of 
+I had an issue with install R on Ubuntu 16.04. Message was about some inability to install a dependency of the main R package.
 
 ## Problem
 

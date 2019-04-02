@@ -9,13 +9,16 @@ Under the motto "With Data comes Responsibility", the RDA 13th plenary at the be
 
 ## Morning, 8:30-11:00
 
-Very interesting opening keynote by [Julia D. Stoyanovich](https://engineering.nyu.edu/faculty/julia-stoyanovich) on responsible data science.
+Very interesting opening keynote by [Julia D. Stoyanovich](https://engineering.nyu.edu/faculty/julia-stoyanovich) on responsible data science and bias against legally protected communities in machine learning algorithms. This is caused by lack of representation of certain groups in the data that powers these algorithms, among many other causes. Link to documentation [here](https://dataresponsibly.github.io/).
 
-Meeting with Ralph Mueller-Pfeffernkorn, showed me a link to the [MASI](https://masi.zih.tu-dresden.de/home) system, which extracts metadata automatically from files uploaded to the system, according to a pre-defined set of metadata schemas. It has modular ingestion capabilities.
+
+### Post-meeting
+
+Ralph Mueller-Pfefferkorn showed me the [MASI](https://masi.zih.tu-dresden.de/home) system, which extracts metadata automatically from files uploaded to the system, according to a pre-defined set of metadata schemas. It has modular ingestion capabilities for multiple file types.
 
 Another work in progress is an end-to-end data management [solution](https://www.staging.gerdi.org/?#/results?q=fish) being developed by the GeRDI.
 
-Link to documentation [here](https://dataresponsibly.github.io/).
+This is promising as a way to automatically extract metadata from resources deposited in Dendro.
 
 ## Morning Breakout 1 11:30-13:00
 

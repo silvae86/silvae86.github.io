@@ -14,11 +14,11 @@ Very interesting opening keynote by [Julia D. Stoyanovich](https://engineering.n
 
 ### Post-meeting
 
-Ralph Mueller-Pfefferkorn showed me the [MASI](https://masi.zih.tu-dresden.de/home) system, which extracts metadata automatically from files uploaded to the system, according to a pre-defined set of metadata schemas. It has modular ingestion capabilities for multiple file types.
+Ralph Mueller showed me the [MASI](https://masi.zih.tu-dresden.de/home) system, which extracts metadata automatically from files uploaded to the system, according to a pre-defined set of metadata schemas. It has modular ingestion capabilities for multiple file types.
 
 Another work in progress is an end-to-end data management [solution](https://www.staging.gerdi.org/?#/results?q=fish) being developed by the GeRDI.
 
-This is promising as a way to automatically extract metadata from resources deposited in Dendro.
+This is promising as a way to automatically extract metadata from resources deposited in our platform, [Dendro](https://github.com/feup-infolab/dendro).
 
 ## Morning Breakout 1 11:30-13:00
 
@@ -72,3 +72,15 @@ Mockups - [here](https://oblassers.github.io/dmap-mockups/#mockups) and [here](h
 How to integrated maDMP in a workflow where there is already data that needs to be added to the maDMP (reuse, build on existing work)? How to verify that data was actually produced according to a pre-specified maDMP? Pre-reserve PIDs for later automated verification of compliance?
 Integration between Dendro dataset deposit interface and maDMP creation tools.
 Formalisation of the Common DMP Model as OWL ontology in progress.
+
+## Afternoon Breakout 2 14:30-13:00
+
+What is a common definition of a Commons? An issue is that it lacks a common definition. Many groups have their own repositories, but these become silos.
+
+At the lowest layer, you have some sort of hardware. HPC, cloud, tape, etc. FAIR is at this layer. Interoperability, Identification, Data Citation, Metadata.
+
+After you have the data at the hardware, you need to build APIs. Build piping to connect the hardware to the upper layers. On top, you have identity management and Authorization and Authentication.
+
+On top, transformation layer with a data connection switchboard, which allows you to change data between formats. You need to have then queryability and findability. If you use Google, you are gonna use BigTable.
+
+Workspace is the Notebook kind of thing. Then on top you have the analytics modules to do the interesting stuff.

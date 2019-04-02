@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "RDA Research Data Alliance Plenary 13 at Philadelphia, Day 1"
+date:   2019-04-02 10:46:00 +0100
+categories: rda p13 plenary research data alliance
+---
+
+Under the motto "With Data comes Responsibility", the RDA 13th plenary at the beautiful city of Philadelphia.
+
+## Morning, 8:30-11:00
+
+Very interesting opening keynote by [Julia D. Stoyanovich](https://engineering.nyu.edu/faculty/julia-stoyanovich) on responsible data science.
+
+Meeting with Ralph Mueller-Pfeffernkorn, showed me a link to the [MASI](https://masi.zih.tu-dresden.de/home) system, which extracts metadata automatically from files uploaded to the system, according to a pre-defined set of metadata schemas. It has modular ingestion capabilities.
+
+Another work in progress is an end-to-end data management [solution](https://www.staging.gerdi.org/?#/results?q=fish) being developed by the GeRDI.
+
+Link to documentation [here](https://dataresponsibly.github.io/).
+
+## Morning Breakout 1 11:30-13:00
+
+**Collaborative Session Notes**: [here](https://docs.google.com/document/d/1-bySPMy3KNb5Ok6Pit129x7_ewTkwbmW5ARly9IdgfI/edit#heading=h.k62j0lm630l)
+
+Requirements were that users would:
+
+- Provide the minimum possible input
+- Import as much as possible from existing systems to help create maDMPs.
+
+Goal: get estimations and recommendations
+
+Goal: update DMP with real intormation by reusing (linking) info from other systems like GitHub.
+
+Porcesses help identify
+
+Tasks performed by stakeholders
+- ICT operator needs to provide costs of storage
+Systems needed to be put in replacement
+- is there a need for a repository?
+- Costing service
+concepts to be developed or agreerd
+- cost model for storage
+
+Processes are useful in deploying maDMPs
+Allow us to narrow down the focus of this WG
+
+Common model does not contain business logic
+
+Common model is an information carrier.
+
+### The model for maDMPs diagrams
+
+The model diagram is available on GitHub. See it below:
+
+![Mediawiki Setup Language](https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/docs/diagrams/RDA-DMP-Common-Model-Diagram-190325.png)
+
+Metadata is not about capturing the full metadata of the Dataset, but rather to link to the standard in which the metadata is represented, because there are many standards
+
+A FAQ on the model is [also available](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/docs)
+
+### Use cases for adoption
+
+DMPs - System integration Funders, Authentication & administration, Repositories, Repository Registries, IT Services.
+
+Mockups - [here](https://oblassers.github.io/dmap-mockups/#mockups) and [here](https://balsamiq.cloud/syaiodq/pmy3rqs/r58BE)
+
+
+### Further notes
+
+How to integrated maDMP in a workflow where there is already data that needs to be added to the maDMP (reuse, build on existing work)? How to verify that data was actually produced according to a pre-specified maDMP? Pre-reserve PIDs for later automated verification of compliance?
+Integration between Dendro dataset deposit interface and maDMP creation tools.
+Formalisation of the Common DMP Model as OWL ontology in progress.

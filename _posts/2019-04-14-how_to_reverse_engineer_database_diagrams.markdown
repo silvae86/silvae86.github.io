@@ -28,8 +28,24 @@ If you don't have it already, you can install Homebrew with the following comman
 Install GraphViz with the following command:
 
 ```sh
+brew install libtool
+brew link libtool
 brew install graphviz
+brew link --overwrite graphviz
 ```
+
+### Default location of GraphViz Executables
+
+By default, the dot executable should be:
+
+On Linux/Mac OS-X :
+
+* Firstly in: `/usr/local/bin/dot`
+* Then in: `/usr/bin/dot`
+
+You can also specify the environment variable `GRAPHVIZ_DOT` to set the exact location of your GraphViz executable.
+
+_(from the [GraphViz webpage](http://plantuml.com/graphviz-dot))_
 
 ### Install Schemacrawler as a command-line tool
 
@@ -82,13 +98,14 @@ cat db.sql | sqlite3 database.db
 Then, you run `schemacrawler` to generate a diagram of the database.
 
 ```sh
-  schemacrawler -server sqlite \
-    -database database.db \
-    -user -password \
-    -infolevel standard \
-    -command schema \
-    -outputformat png \
-    -outputfile OUTPUT_IMAGE_FILE.png
+schemacrawler -server sqlite \
+  -database database.db \
+  -user -password \
+  -infolevel standard \
+  -command schema \
+  -outputformat png \
+  -loglevel INFO \
+  -outputfile OUTPUT_IMAGE_FILE.png
 ```
 
 ## Changing how the diagrams look by editing the behaviour of SchemaCrawler

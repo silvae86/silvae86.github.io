@@ -135,3 +135,33 @@ schemacrawler.graph.graphviz.node.fontname=Consolas
 schemacrawler.graph.graphviz.edge.fontname=Consolas
 schemacrawler.graph.graphviz.edge.arrowsize=1.5
 ```
+
+
+## BONUS! Example of a script for generating diagrams
+
+This script was used by me for generating diagrams from the SQL scripts written by my students of Databases in the 2nd year of the Integrated Masters of Informatics Engineering at FEUP.
+
+```shell
+#!/usr/bin/env bash
+
+function diagram
+{
+    local database="$(pwd)/$1"
+    echo "database is $database"
+    local path="$(pwd)/$2"
+    echo "path is $path"
+    /bin/cp "$database" "/tmp/database.db"
+    /bin/ls -la "/tmp/database.db"
+    /bin/bash -c '/usr/local/bin/schemacrawler -server sqlite -database /tmp/database.db -user -password -loglevel info -command schema -outputformat png -outputfile /tmp/diagram.png'
+    /bin/cp "/tmp/diagram.png" "$path"
+}
+
+rm -rf database.db
+cat criar.sql | sqlite3 database.db && \
+	echo "Cria BD" && \
+cat povoar.sql | sqlite3 database.db && \
+	echo "Povoa BD"
+read WAIT
+diagram database.db diagram.png
+
+```

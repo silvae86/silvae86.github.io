@@ -26,3 +26,7 @@ devices/platform/i8042/serio1/serio2/inertia = 1
 ```
 
 These are my personal settings so far. Play with the values until you find the ones that suit your usage.
+
+3. Try out different configurations
+
+Adjust the values and run `sudo service sysfsutils restart` to try out the new values until you get it just right for yourself.

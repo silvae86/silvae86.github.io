@@ -173,3 +173,71 @@ read WAIT
 diagram database.db diagram.png
 
 ```
+
+### New version that runs queries and triggers also (Delivery 3)
+
+```shell
+#!/usr/bin/env bash
+
+function faz_diagrama
+{
+local database="$(pwd)/$1"
+echo "database is $database"
+local path="$(pwd)/$2"
+echo "path is $path"
+/bin/rm "/tmp/diagram.pdf"
+/bin/cp "$database" "/tmp/database.db"
+/bin/ls -la "/tmp/database.db"
+/bin/bash -c '/usr/local/bin/schemacrawler -server sqlite -database /tmp/database.db -user -password -loglevel info -command schema -outputformat pdf -outputfile /tmp/diagram.pdf'
+/bin/cp "/tmp/diagram.pdf" "$path"
+}
+
+function existe()
+{
+local ficheiro=$1
+[ -f "$ficheiro" ] || (echo "Ficheiro $ficheiro não existe!" && read ERROR)
+}
+
+function corre_queries
+{
+for (( i = 1; i <= 10; i++ )); do
+local file_path="./int${i}.sql"
+printf "\n---------Ficheiro Query ${file_path}---------\n\n"
+existe "$file_path" && \
+cat "$file_path" | sqlite3 database.db || (echo "Erro a correr query ${i}" && read ERROR)
+done
+}
+
+function testa_triggers
+{
+for (( i = 1; i <= 3; i++ )); do
+local file_path="./gatilho${i}_XXXXXX.sql"
+printf "\n---------Ficheiro Gatilho ${file_path}---------\n\n"
+
+( existe "./gatilho${i}_adiciona.sql" || existe "./gatilho${i}_verifica.sql" ] || existe "./gatilho${i}_remove.sql" ) && \
+cat "./gatilho${i}_adiciona.sql" | sqlite3 database.db && \
+cat "./gatilho${i}_verifica.sql" | sqlite3 database.db && \
+cat "./gatilho${i}_remove.sql" | sqlite3 database.db || (echo "Erro a correr trigger ${i}" && read ERROR)
+done
+}
+
+rm -rf database.db
+cat criar.sql | sqlite3 database.db && \
+echo "Cria BD" && \
+cat povoar.sql | sqlite3 database.db && \
+echo "Povoa BD"
+echo "Pressione qq tecla..."
+read WAIT
+
+corre_queries && \
+echo "Corre Queries Corretamente"
+read WAIT
+echo "Pressione qq tecla..."
+
+testa_triggers && \
+echo "Corre Triggers Corretamente"
+read ERROR
+
+faz_diagrama database.db diagram.pdf
+```
+

@@ -16,5 +16,8 @@ crumbtitle: ESIN
 
 - Assessment components: Exam 50% + Project 50%
 
+{% include_relative acknows.md %}
+
+
 
 

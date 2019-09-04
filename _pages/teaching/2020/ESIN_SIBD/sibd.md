@@ -14,3 +14,5 @@ crumbtitle: SIBD
 - [Official page](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=436868)
 
 - Assessment components: Exam 50% + Project 50%
+
+{% include_relative acknows.md %}

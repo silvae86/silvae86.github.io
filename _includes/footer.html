@@ -10,7 +10,7 @@
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
-              {{ site.author | escape }}
+              &copy; {{ site.author | escape }}
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
@@ -18,11 +18,17 @@
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
+			<li>
+				<a class="license-pill" href="https://creativecommons.org/licenses/by-sa/4.0/">
+					<img src="{{ '/assets/images/home/CC-By-SA_icon.svg' | relative_url }}" alt="Licensed under CC BY ShareAlike 4.0 License">
+				</a>
+			</li>
         </ul>
       </div>
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
+		
       </div>
 
       <div class="footer-col footer-col-3">

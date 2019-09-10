@@ -45,7 +45,10 @@ Let's explain it step by step:
 - `tmutil`:  command-line utility for managing Time Machine settings and operations
 - `setdestination`: sets the destination of your backups
 - `-ap`: `a` - Add destination, `-p` prompt for password in a blind input, so that the password to access the remote disk is not recorded in the Terminal history (you can use `history -c` to clear command history, by the way)
-afp://yourusername@your_capsule_ip/Capsule -> `yourusername` needs to be replaced with the username that you used when configuring the Time Capsule, `your_capsule_ip` has to be replaced with what you got in step 3, and `disk_name` has to be replaced with the name of your disk, that you got in step 4.
+- `afp://<<yourusername>>@<<your_capsule_ip>>/<<disk_name>>`: Connection string to indicate how to access the shared volume. 
+	- `yourusername` needs to be replaced with the username that you used when configuring the Time Capsule
+	- `your_capsule_ip` has to be replaced with what you got in step 3
+	- `disk_name` has to be replaced with the name of your disk, that you got in step 4.
 
 ### Run the command in Terminal
 

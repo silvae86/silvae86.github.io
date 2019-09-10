@@ -43,7 +43,7 @@ Here is some advice for a successful and fun experience during the course.
 
 ### Do the database right, before moving to code
 
-Without the proper foundation (a correct database schema) any code you write on top will not work properly. Finish and validate your database schema before starting to code.
+Without the proper foundation (a correct database schema) any code you write on top will not work properly. Finish and validate your database schema with your practical class professor before starting to code.
 
 ### Planning ahead
 

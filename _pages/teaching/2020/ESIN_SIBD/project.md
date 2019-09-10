@@ -14,7 +14,7 @@ The assignment should be done in groups of 2 elements. The constitution of these
 
 The theme of the website should also be proposed by the students and approved by the teacher.
 
-No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, etc...). If you reuse ANY code in your project you must write that in the README and explain in detail why and where you used it. It is better not to use anything at all and write everything from scratch.
+No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, etc...). You must write everything from scratch.
 
 
 ## Delivery

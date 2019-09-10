@@ -8,7 +8,7 @@ crumbtitle: ESIN
 
 ## Contents 
 
-{% include_relative plan.md %}
+{% include_relative common/plan.md %}
 
 ## Information
 
@@ -16,7 +16,7 @@ crumbtitle: ESIN
 
 - Assessment components: Exam 50% + Project 50%
 
-{% include_relative acknows.md %}
+{% include_relative common/acknows.md %}
 
 
 

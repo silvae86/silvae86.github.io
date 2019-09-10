@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ESIN SIBD Project Information
+title: Project Information
 include_in_menu: false
 permalink: /teaching/2020/ESIN_SIBD/project/
 crumbtitle: Project
@@ -55,6 +55,16 @@ In the professional world, all client requirements are broken down into smaller 
 
 Make the CSS simpler but cleaner (write less code and validate it as you go). If the website has so many issues that I cannot navigate it easily or even find all the features you implemented... your grade will suffer. Simple and working is always better than complex and buggy.
 
+### Learn to use Git
+
+[Git](https://web.fe.up.pt/~arestivo/presentation/git/#1) is a great way to keep track of code modifications within your team and merge changes into a clean, organized codebase. No more emailing ZIP files between your colleagues and copying and pasting the changes by hand!
+
+GitHub is a safe place to put your code while you are writing it, just make sure to create a private repository. They provide free Pro accounts for students and educators, so I think you should register [here](https://education.github.com/students). 
+
+BitBucket is also a great free alternative, with similar [benefits](https://bitbucket.org/product/education) for students and educators. Atlassian, the creators of BitBucket, provide a very nice and free GUI program, [SourceTree](https://www.sourcetreeapp.com), for working with any Git repository (not just BitBucket) if you do not wish to use the git command line. 
+
+Note: I am not in any way affiliated with these solutions nor do I get any benefit for promoting them. You are free to use them or not.
+
 ### Avoid caffeine
 
 Please do not wait until the last week to work seriously on the project. Coding (especially CSS) is not something you want to in all-nighter.
@@ -68,4 +78,6 @@ I will **not** accept complaints about this after the grades are published.
 ### Last-minute emails
 
 Do not wait until the last weekend before the delivery of the work to start emailing me questions about it. I have a personal life too and you may not get an answer in time.
+
+Good luck!
 

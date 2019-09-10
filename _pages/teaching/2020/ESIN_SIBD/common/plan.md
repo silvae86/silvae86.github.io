@@ -1,5 +1,3 @@
-
-
 | Week | Dates          | Theory Class                                                 | Practical Class                                              |
 | ---- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 1    | 8-13 Sept.     | ***No class since the school year starts after our schedule.*** | No practical class                                           |

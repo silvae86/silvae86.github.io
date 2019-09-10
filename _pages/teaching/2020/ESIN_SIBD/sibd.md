@@ -7,7 +7,7 @@ crumbtitle: SIBD
 
 ## Contents 
 
-{% include_relative plan.md %}
+{% include_relative common/plan.md %}
 
 ## Information
 
@@ -15,4 +15,4 @@ crumbtitle: SIBD
 
 - Assessment components: Exam 50% + Project 50%
 
-{% include_relative acknows.md %}
+{% include_relative common/acknows.md %}

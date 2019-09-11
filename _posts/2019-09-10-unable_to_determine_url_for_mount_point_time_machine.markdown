@@ -55,7 +55,7 @@ Let's explain it step by step:
 Your command should now be something like this. **Run it in Terminal**.
 
 {% highlight shell %}
-sudo tmutil setdestination -ap afp://joaorocha@192.168.1.65/Capsule
+sudo tmutil setdestination -ap afp://joaorocha@10.0.1.1/Capsule
 {% endhighlight %}
 
 ### Final Result

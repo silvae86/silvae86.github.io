@@ -1,6 +1,5 @@
 | Week | Dates          | Theory Class                                                 | Practical Class                                              |
 | ---- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-
 | 1    | 15-20 Sept.    | **Course Presentation**: Introduction to the web and databases<br />Entity Relationship Model: Entities, Attributes and Relationships<br /><br />Slides: [Presentation](https://web.fe.up.pt/~arestivo/presentation/sibd) \| [Entity Relationship](https://web.fe.up.pt/~arestivo/presentation/entityrelationship) | No practical class                                           |
 | 2    | 23-27 Sept.    | **Relational Model**: Relations, tuples, attributes and constraints. Conversion from the entity-relationship model.<br />Slides: [Relational Model](https://web.fe.up.pt/~arestivo/presentation/relationalmodel) | Entity Relationship <br/>[Exercises](https://www.fe.up.pt/~arestivo/page/exercises/entity-relationship/) |
 | 3    | 29 Sept-5 Oct. | **SQL**: Table creation. Data types and constraints. PostgreSQL.<br />Slides: [SQL Definition](https://web.fe.up.pt/~arestivo/presentation/sql-ddl) | Relational Model <br/>[Exercises](https://www.fe.up.pt/~arestivo/page/solutions/entity-relationship/) |

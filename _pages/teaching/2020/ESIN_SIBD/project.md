@@ -31,11 +31,18 @@ The only delivery will be the website itself:
 
 **Format of presentation**: The presentation will be carried out by the students and to the teachers of the practical classes. No slides are required, and only the working website should be presented.
 
+### Penalty for delays
+
+When students do not deliver their work within the deadline, those groups will be penalized with a subtraction of 2 points (out of the 10 total obtainable in the practical work component) **per day of delay**. Example: if you deliver your work 2 days late, your maximum grade will be 6 in the practical component of this subject.
+
+Practical works submitted 5 or more days after the deadline will not be considered and the group in question will receive a classification of zero. 
+
 ### Final checklist
 
 - Did you run your whole script on a blank database in the Server? does it run without errors? 
 - Did you validate your HTML and CSS? 
 - Do all your web pages render correctly in the browser, without 404 errors (use the browser inspector for this)
+- Does your ZIP file actually contain everything that is expected?
 
 ## Words of advice 
 

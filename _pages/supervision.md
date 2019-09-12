@@ -2,6 +2,7 @@
 layout: page
 title: Dissertations
 include_in_menu: true
+navorder: 3
 ---
 
 Based on my past MSc supervisions at FEUP---Information Science and Informatics Engineering---and on the materials made available at the [Dissertation Planning](https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=420041) curricular unit of FEUP, I have compiled a few quick guidelines for new MSc students who want to write a good dissertation.

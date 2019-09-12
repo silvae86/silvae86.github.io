@@ -1,9 +1,10 @@
 ---
 layout: page
-title: About
+title: About me
 include_in_menu: true
 permalink: /about/
-crumbtitle: About
+crumbtitle: About me
+navorder: 4
 ---
 
 ## Curriculum Vitae

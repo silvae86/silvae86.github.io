@@ -4,6 +4,7 @@ title: Teaching
 include_in_menu: true
 permalink: /teaching/
 crumbtitle: Teaching
+navorder: 1
 ---
 
 ### Teaching

@@ -15,4 +15,6 @@ crumbtitle: SIBD
 
 - Assessment components: Exam 50% + Project 50%
 
+{% include_relative common/contact.md %}
+
 {% include_relative common/acknows.md %}

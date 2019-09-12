@@ -30,25 +30,7 @@ the research data repositories of the future.
 
 ## Supervision of dissertations
 
-### 2019
-
--   Costa, Lázaro (2019-expected), "DendroShare: Partilha e citação 
-    de conjuntos de dados de investigação"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
-    \[Informatics Engineering, Final Grade: In progress\]
-
--   Freitas, Nuno (2019-expected), "ArchGraph, Design and conception 
-    of a vertical prototype for a semantic archives infrastructure"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
-    \[Informatics Engineering, Final Grade: In progress\]
-
--   Fukunaga, William (2019-expected), "Citation of subsets of dynamic data: A case 
-    study with the Dendro platform"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
-    \[Informatics Engineering, Final Grade: In progress\]
+### 2020
 
 -   Marques, Bruno (2019-expected), "Dendro Research Notebook: Interactive 
     Scientific Visualizations for e-Science"
@@ -56,16 +38,36 @@ the research data repositories of the future.
     University of Porto, Faculty of Engineering. 
     \[Informatics Engineering, Final Grade: In progress\]
 
+### 2019
+
+-   Costa, Lázaro (2019-expected), "DendroShare: Partilha e citação 
+    de conjuntos de dados de investigação"
+    Informatics Engineering MSc Dissertation. 
+    University of Porto, Faculty of Engineering. 
+    \[Informatics Engineering, Final Grade: 19/20\]
+
+-   Freitas, Nuno (2019-expected), "ArchGraph, Design and conception 
+    of a vertical prototype for a semantic archives infrastructure"
+    Informatics Engineering MSc Dissertation. 
+    University of Porto, Faculty of Engineering. 
+    \[Informatics Engineering, Final Grade: 18/20\]
+
+-   Fukunaga, William (2019-expected), "Citation of subsets of dynamic data: A case 
+    study with the Dendro platform"
+    Informatics Engineering MSc Dissertation. 
+    University of Porto, Faculty of Engineering. 
+    \[Informatics Engineering, Final Grade: 16/20\]
+
 -   Neto, Nuno (2019-expected), "Automatic testing and deployment 
     pipelines using Docker, Jenkins and Travis.ci"
     Informatics Engineering MSc Dissertation. 
     University of Porto, Faculty of Engineering. 
-    \[Informatics Engineering, Final Grade: In progress\]
+    \[Informatics Engineering, Final Grade: 18/20\]
 
 -   Oliveira, Raquel (2019-expected), "Classificação de conjuntos de dados 
     de investigação com base em seus registos de metadados" Information Science MSc dissertation.
     University of Porto, Faculty of Engineering. \[Information Science,
-    Final Grade: In progress\]
+    Final Grade: 16/20\]
 
 ### 2018
 -   Ferreira, Catarina (2018), "DataRep: Análise de soluções para

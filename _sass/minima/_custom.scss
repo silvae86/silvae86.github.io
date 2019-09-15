@@ -125,6 +125,7 @@ pre {
 $info-alert-color:       	#00529B !default;
 $warning-alert-color: 		#9F6000 !default;
 $danger-alert-color:      	#721c24 !default;
+$success-alert-color:      	#4C9A2A !default;
 
 .alert
 {
@@ -173,3 +174,11 @@ $danger-alert-color:      	#721c24 !default;
 .home_section {
 	margin-bottom:8em;
 }
+
+
+// Deliveries Green
+
+.delivery {
+	color: $success-alert-color;
+}
+

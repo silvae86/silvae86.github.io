@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Project Information
+title: ESIN/SIBD Project Information
 include_in_menu: false
 permalink: /teaching/2020/ESIN_SIBD/project/
-crumbtitle: Project
+crumbtitle: ESIN/SIBD Project
 ---
 
 ##  Objective
@@ -14,39 +14,67 @@ The assignment should be done in groups of 2 elements. The constitution of these
 
 The theme of the website should also be proposed by the students and approved by the teacher.
 
-No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, etc...). You must write everything from scratch.
+## Deliveries
 
+### Group formation
 
-## Delivery
+Students are expected to divide into groups of 2 (if the class has an odd number of students, a single 3-person group will be allowed).
 
-The only delivery will be the website itself:
+Students must register their groups in Moodle and validate their project topic with the professor of the practical class.
+
+**Date**: Practical class of Week 3  
+
+### First delivery
+
+The first delivery will be a small report (6 pages maximum), containing:
+
+- Description of your topic, in a similar way as you see in the exercises from the practical classes. 
+- UML diagram that represents the problem. The UML diagram should have at least 8 classes and cover as much of the UML language as possible (quantity &ne; quality).
+- Relational model of the database. As an indication, 10-12 tables is a healthy count.
+
+The document must be a single PDF file, submitted via Moodle. In the cover page students must write:
+
+- Name of the topic
+- Full name of all members of the group and institutional emails
+- Number of their practical class
+
+**Delivery date**: 3rd November 2019 at 23:59
+
+### Second delivery
+
+The second delivery will be the website itself:
 
 - SQL script to create the database.
 - All PHP, CSS, images and other files in a zipped file.
 - A README.txt file in the root folder containing data about the authors and how to install the project at the FEUP web server [gnomo.fe.up.pt](http://gnomo.fe.up.pt).
+- No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow etc...). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
 
-**Delivery date**: Before the last practical class of the semester. 
+**Delivery date**: 15rd December 2019 at 23:59
 
 **Presentation**: In the last practical class of the semester. 
 
 **Format of presentation**: The presentation will be carried out by the students and to the teachers of the practical classes. No slides are required, and only the working website should be presented.
 
-### Penalty for delays
+#### Final checklist
 
-When students do not deliver their work within the deadline, those groups will be penalized with a subtraction of 2 points (out of the 10 total obtainable in the practical work component) **per day of delay**. Example: if you deliver your work 2 days late, your maximum grade will be 6 in the practical component of this subject.
-
-Practical works submitted 5 or more days after the deadline will not be considered and the group in question will receive a classification of zero. 
-
-### Final checklist
+Here are some last minute checks to do before sending in your work.
 
 - Did you run your whole script on a blank database in the Server? does it run without errors? 
 - Did you validate your HTML and CSS? 
 - Do all your web pages render correctly in the browser, without 404 errors (use the browser inspector for this)
 - Does your ZIP file actually contain everything that is expected?
 
-## Words of advice 
+### Penalty for delays
 
-Here is some advice for a successful and fun experience during the course.
+When students do not deliver their work within the deadline, the whole group will receive a penalty of 20% **per day of delay**. Example: if you deliver a work 2 days late, your grade for that delivery will be multiplied by 60% and the result will be your final grade. 
+
+Deliveries submitted 5 or more days after the deadline will not be considered and the group in question will receive a classification of zero. 
+
+Important: Imagine something is missing from your submission package or report. If you submit a new version at a later time you will be penalized for delay over the entire work as if you had only submitted at the moment of the second submission. **Check and double-check your submissions to avoid undesirable situations**. 
+
+## Words of advice / FAQ
+
+Here is some advice and answers to common questions. For successful and fun experience during the course, read these carefully.
 
 ### Do the database right, before moving to code
 

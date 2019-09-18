@@ -24,7 +24,7 @@ Students must register their groups in Moodle and validate their project topic w
 
 **Date**: Practical class of Week 3  
 
-### First delivery
+### First delivery (30% of Project component)
 
 The first delivery will be a small report (6 pages maximum), containing:
 
@@ -40,7 +40,7 @@ The document must be a single PDF file, submitted via Moodle. In the cover page 
 
 **Delivery date**: 3rd November 2019 at 23:59
 
-### Second delivery
+### Second delivery (70% of Project component)
 
 The second delivery will be the website itself:
 

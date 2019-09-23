@@ -41,6 +41,9 @@ collections:
 
 permalink: pretty
 
+sass:
+    sass_dir: _sass
+
 breadcrumbs:
   root:
     hide: false  # show breadcrumbs on root/home page

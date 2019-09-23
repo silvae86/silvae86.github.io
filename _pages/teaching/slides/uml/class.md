@@ -3,363 +3,157 @@ layout: keynote
 title: Keynote on UML - Unified Modelling Language
 permalink: /teaching/slides/uml/uml1/
 ---
-
 {% highlight text %}
 {% raw %}
 name: uml
 class: middle, center
+template:inverse
 
 # UML 
 [Unified Modelling Language] 
 
-
 ## Class Diagrams
-
-by [João Rocha da Silva](mailto:joaorosilva@gmail.com), based on the [book](https://dl.acm.org/citation.cfm?id=1554749) by Ullman and Widom.
-
----
-## Agenda
-
-.pull-left[
-
-### Purpose 
-### Classes
-### Associations
-### Multiplicity
-### Generalization
-]
-.pull-right[
-### Aggregation
-### Composition
-### Ternary associations
-### Example: Car manufaturing company
-### Useful software
-### References
-]
-
-
+by [João Rocha da Silva](https://silvae86.github.io), based on the [book](https://dl.acm.org/citation.cfm?id=1554749) by Ullman and Widom.
 
 ---
-## Purpose of UML Class diagrams
-
-- Represent data models of information system at a high level
-
-- Programmers and system designers alike can understand
-
-- Often derived from the reality of a system as described by the client(usually in text format)
-
-- Can later be converted into a relational schema
-
----
-## Classes
-.left-column[
-  ## Purpose
-  ## Classes
-]
-.right-column[
-If your ideal slideshow creation workflow contains any of the following steps:
-
-- Just write what's on your mind
-
-- Do some basic styling
-
-- Easily collaborate with others
-
-- Share with and show to everyone
-
-Then remark might be perfect for your next.red[*] slideshow!
-
-.footnote[.red[*] You probably want to convert existing slideshows as well]
-]
----
-.left-column[
-  ## What is it?
-  ## Why use it?
-]
-.right-column[
-As the slideshow is expressed using Markdown, you may:
-
-- Focus on the content, expressing yourself in next to plain text not worrying what flashy graphics and disturbing effects to put where
-
-As the slideshow is actually an HTML document, you may:
-
-- Display it in any decent browser
-
-- Style it using regular CSS, just like any other HTML content
-
-- Use it offline!
-
-As the slideshow is contained in a plain file, you may:
-
-- Store it wherever you like; on your computer, hosted from your Dropbox, hosted on Github Pages alongside the stuff you're presenting...
-
-- Easily collaborate with others, keeping track of changes using your favourite SCM tool, like Git or Mercurial
-]
----
-template: inverse
-
-## How does it work, then?
----
-name: how
-
-.left-column[
-  ## How does it work?
-### - Markdown
-]
-.right-column[
-A Markdown-formatted chunk of text is transformed into individual slides by JavaScript running in the browser:
-
-```remark
-# Slide 1
-This is slide 1
-
----
-
-# Slide 2
-This is slide 2
-```
-
-.slides[
-  .first[
-  ### Slide 1
-  This is slide 1
-  ]
-  .second[
-  ### Slide 2
-  This is slide 2
-  ]
-]
-
-Regular Markdown rules apply with only a single exception:
-
-  - A line containing three dashes constitutes a new slide
-  (not a horizontal rule, `&lt;hr /&gt;`)
-
-Have a look at the [Markdown website](http://daringfireball.net/projects/markdown/) if you're not familiar with Markdown formatting.
-]
----
-.left-column[
-  ## How does it work?
-  ### - Markdown
-  ### - Inside HTML
-]
-.right-column[
-A simple HTML document is needed for hosting the styles, Markdown and the generated slides themselves:
-
-```xml
-<!DOCTYPE html>
-<html>
-  <head>
-    <style type="text/css">
-      /* Slideshow styles */
-    </style>
-  </head>
-  <body>
-*    <textarea id="source">
-      <!-- Slideshow Markdown -->
-    &lt;/textarea&gt;
-*    <script src="remark.js">
-    </script>
-    <script>
-*      var slideshow = remark.create();
-    </script>
-  </body>
-</html>
-```
-
-You may download remark to have your slideshow not depend on any online resources, or reference the [latest version](http://remarkjs.com/downloads/remark-latest.min.js) online directly.
-]
----
-template: inverse
-
-## Of course, Markdown can only go so far.
----
-.left-column[
-  ## Markdown extensions
-]
-.right-column[
-To help out with slide layout and formatting, a few Markdown extensions have been included:
-
-- Slide properties, for naming, styling and templating slides
-
-- Content classes, for styling specific content
-
-- Syntax highlighting, supporting a range of languages
-]
-
----
-.left-column[
-  ## Markdown extensions
-  ### - Slide properties
-]
-.right-column[
-Initial lines containing key-value pairs are extracted as slide properties:
-
-```remark
 name: agenda
 class: middle, center
 
-# Agenda
+## Agenda
+.index[
 
-The name of this slide is {{ name }}.
-```
+.indexpill[[Purpose](#purpose)]
 
-Slide properties serve multiple purposes:
+.indexpill[[Classes](#classes)]
 
-* Naming and styling slides using properties `name` and `class`
+.indexpill[[Attributes](#attributes)]
 
-* Using slides as templates using properties `template` and `layout`
+.indexpill[[Attributes](#attributes)]
 
-* Expansion of `{{ property }}` expressions to property values
+.indexpill[[Associations](#associations)]
 
-See the [complete list](https://github.com/gnab/remark/wiki/Markdown#slide-properties) of slide properties.
-]
----
-.left-column[
-  ## Markdown extensions
-  ### - Slide properties
-  ### - Content classes
-]
-.right-column[
-Any occurences of one or more dotted CSS class names followed by square brackets are replaced with the contents of the brackets with the specified classes applied:
+.indexpill[[Multiplicity](#multiplicity)]
 
-```remark
-.footnote[.red.bold[*] Important footnote]
-```
+.indexpill[[Generalization](#generalization)]
 
-Resulting HTML extract:
+.indexpill[[Aggregation](#aggregation)]
 
-```xml
-<span class="footnote">
-  <span class="red bold">*</span> Important footnote
-</span>
-```
-]
----
-.left-column[
-  ## Markdown extensions
-  ### - Slide properties
-  ### - Content classes
-  ### - Syntax Highlighting
-]
-.right-column[
-Code blocks can be syntax highlighted by specifying a language from the set of [supported languages](https://github.com/gnab/remark/wiki/Configuration#highlighting).
+.indexpill[[Composition](#composition)]
 
-Using [GFM](http://github.github.com/github-flavored-markdown/) fenced code blocks you can easily specify highlighting language:
+.indexpill[[Self-association](#selfassociation)]
 
-.pull-left[
-
-<pre><code>```javascript
-function add(a, b)
-  return a + b
-end
-```</code></pre>
-]
-.pull-right[
-
-<pre><code>```ruby
-def add(a, b)
-  a + b
-end
-```</code></pre>
+.indexpill[[N-ary associations](#nary_associations)]
 ]
 
-A number of highlighting [styles](https://github.com/gnab/remark/wiki/Configuration#highlighting) are available, including several well-known themes from different editors and IDEs.
+.index[
+
+.indexpill[[Example: Car showroom](#example)]
+
+.indexpill[[Useful software](#software)]
+
+.indexpill[[References](#references)]
 
 ]
 ---
-.left-column[
-  ## Presenter mode
-]
-.right-column[
-To help out with giving presentations, a presenter mode comprising the
-following features is provided:
+name: purpose
+## Purpose
 
-- Display of slide notes for the current slide, to help you remember
-  key points
+- To represent the data model of an information system
 
-- Display of upcoming slide, to let you know what's coming
+- Programmers and system designers alike can understand
 
-- Cloning of slideshow for viewing on extended display
-]
----
-.left-column[
-  ## Presenter mode
-  ### - Inline notes
-]
-.right-column[
-Just like three dashes separate slides,
-three question marks separate slide content from slide notes:
+- Often derived from the reality of a system as described by the client (usually in text)
 
-```
-Slide 1 content
+- Can later be converted into a relational schema
 
-*???
-
-Slide 1 notes
+.footnote[These slides will use the example of a furniture manufacturing company to illustrate the syntax of UML class diagrams.]
 
 ---
+name: classes
+## Classes
 
-Slide 2 content
+Classes are used to represent the main entities of the system. 
 
-*???
+Their syntax consists of a box with two main sections.
 
-Slide 2 notes
-```
+- The first section contains the **name** of the class 
+- The bottom will contain all the Class's [Attributes](#attributes), **one per line**.
 
-Slide notes are also treated as Markdown, and will be converted in the
-same manner slide content is.
+.center[.imglg[![Attributes](../diagrams/UMLDiagrams/Classes.png)]]
 
-Pressing __P__ will toggle presenter mode.
-]
+.footnote[Class names are always represented in the singular, as a class denotes a **type** of entity, instead of a **set** of all entities of a certain type.]
 
-Congratulations, you just toggled presenter mode!
-
-Now press __P__ to toggle it back off.
 ---
-.left-column[
-  ## Presenter mode
-  ### - Inline notes
-  ### - Cloned view
-]
-.right-column[
-Presenter mode of course makes no sense to the audience.
+name: Attributes
+## Attributes
 
-Creating a cloned view of your slideshow lets you:
+- Attributes represent characteristics of all objects of the Class. They have basic types like `integer`, `double`, `string`, etc.
 
-- Move the cloned view to the extended display visible to the audience
+- Attributes cannot be multi-valued; if you have an attribute that can have multiple values for an object of a class, that attribute is likely a Class and should be promoted to that.
 
-- Put the original slideshow in presenter mode
-
-- Navigate as usual, and the cloned view will automatically keep up with the original
-
-Pressing __C__ will open a cloned view of the current slideshow in a new
-browser window.
-]
 ---
-template: inverse
+name: generalization
+## Generalization
 
-## It's time to get started!
+- Used to extract the common characteristics of a set of classes. A **superclass** is extracted, containing the common attributes of all **subclasses**.
+
+- It is represented by an equilateral triangle pointing to the superclass and attached to it, with lines coming from it towards all subclasses.
+
+.center[.imgfull[![Attributes](../diagrams/UMLDiagrams/Generalization.png)]]
+
+.foonote[`Employee`s and `Customer`s are both `Person`s, so they have the attributes of a `Person`, as well as their own particular attributes]
+
 ---
-.left-column[
-  ## Getting started
-]
-.right-column[
-Getting up and running is done in only a few steps:
+name: associations
+## Associations
 
-1. Visit the [project site](http://github.com/gnab/remark)
+- Associations are binary relationships between classes. 
 
-2. Follow the steps in the Getting Started section
+- Represented by a line drawn between the two classses that we want to associate
 
-For more information on using remark, please check out the [wiki](https://github.com/gnab/remark/wiki) pages.
-]
+.center[.imglg[![Association](../diagrams/UMLDiagrams/Association.png)]]
+
 ---
-name: last-page
-template: inverse
+name: multiplicity
+## Multiplicity
 
-## That's all folks (for now)!
+---
+name: aggregation
+## Aggregation
 
-Slideshow created using [remark](http://github.com/gnab/remark).
+---
+name: composition
+## Composition
+
+---
+name: selfassociation
+## Self-Association
+
+---
+name: nary
+## N-Ary associations
+
+---
+name: nary_associations
+## N-Ary associations
+
+---
+name: attributeorclass
+## Attribute or Class? 
+
+It is not possible to establish 
+
+---
+name: example
+## Example: Car showroom
+
+---
+name: software
+## Useful software
+
+---
+name: references
+## References
 
 {% endraw %}
 {% endhighlight %}

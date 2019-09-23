@@ -1,0 +1,81 @@
+---
+---
+
+$monokai_dark: #272822 !default;
+$monokai_pink: #f92672 !default;
+$monokai_cyan: #66d9ef !default;
+$monokai_green: #a6e22e !default;
+$monokai_orange: #fd971f !default;
+
+// start content
+@charset "utf-8";
+
+.index {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:flex-start;
+	margin-top:3em;
+}
+
+.indexpill a {
+	display:inline;
+	background-color: $monokai_dark;
+	font-size:1.1em;
+	margin-left:1em;
+	margin-right:1em;	
+	padding:10px;
+}
+
+.indexpill a:hover{
+	background-color: $monokai_orange;
+	color:white;
+}
+
+$max_height: 600;
+$min_height: 150;
+
+@mixin scaledimage($scale) {
+	vertical-align: middle;   /* Only to align vertically */
+	min-width:($min_height*$scale/100) + 0px;
+	max-width:($max_height*$scale/100) + 0px;
+	line-width: ($scale * $max_height/100) + 0px;
+}
+
+@mixin scaledimagecontainer($scale) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+	width: $max_height + 0px;
+}
+
+.imgsm {
+	@include scaledimagecontainer(30)
+}
+
+.imgsm img {
+	@include scaledimage(30)
+}
+
+.imgmd {
+	@include scaledimagecontainer(60)
+}
+
+.imgmd img {
+	@include scaledimage(60)
+}
+
+.imglg {
+	@include scaledimagecontainer(80)
+}
+
+.imglg img {
+	@include scaledimage(80)
+}
+
+.imgfull {
+	@include scaledimagecontainer(100)
+}
+
+.imgfull img {
+	@include scaledimage(100)
+}

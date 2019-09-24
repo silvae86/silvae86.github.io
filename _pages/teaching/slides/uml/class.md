@@ -107,15 +107,19 @@ name: generalization
 name: associations
 ## Associations
 
-- Associations are binary relationships between classes. 
+- Associations are binary relationships between classes
 
 - Represented by a line drawn between the two classses that we want to associate
 
 .center[.imglg[![Association](../diagrams/UMLDiagrams/Association.png)]]
 
+At each end of the line we add the [multiplicity](#multiplicity) of the association.
+
 ---
 name: multiplicity
 ## Multiplicity
+
+
 
 ---
 name: aggregation

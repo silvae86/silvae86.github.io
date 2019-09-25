@@ -39,13 +39,16 @@ $min_height: 150;
 	vertical-align: middle;   /* Only to align vertically */
 	min-width:($min_height*$scale/100) + 0px;
 	max-width:($max_height*$scale/100) + 0px;
-	line-width: ($scale * $max_height/100) + 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @mixin scaledimagecontainer($scale) {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 	width: $max_height + 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .imgsm {
@@ -78,4 +81,33 @@ $min_height: 150;
 
 .imgfull img {
 	@include scaledimage(100)
+}
+
+.imgscaledup {
+	@include scaledimagecontainer(110)
+}
+
+.imgscaledup img {
+	@include scaledimage(110)
+}
+
+// Tables
+table, th, td {
+	border: 1px solid;
+	border-color: $monokai_dark;
+}
+
+th, td {
+	padding: 5px 15px 5px 15px;
+}
+
+thead {
+	background-color: $monokai_dark;
+	color: $monokai_green;
+	font-size: 1.2em;
+}
+
+.largemargin img {
+	margin-top: 150px;
+	margin-bottom: 150px;
 }

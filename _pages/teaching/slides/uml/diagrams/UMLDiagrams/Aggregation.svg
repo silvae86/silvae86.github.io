@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="835 572 705 313" width="705" height="313">
+  <defs>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.9805" ascent="928.2227" descent="-235.83984" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Menlo-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-750" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="gray">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.3 
+    <dc:date>2019-09-25 01:38:29 +0000</dc:date>
+  </metadata>
+  <g id="Aggregation" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>Aggregation</title>
+    <g id="Aggregation: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_52">
+        <g id="Graphic_54">
+          <rect x="842.25" y="657.948" width="189.75" height="65.343994" fill="white"/>
+          <rect x="842.25" y="657.948" width="189.75" height="65.343994" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(847.25 662.948)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">serial number</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="53">manufacture_date</tspan>
+          </text>
+        </g>
+        <g id="Graphic_53">
+          <rect x="842.25" y="629.5" width="189.75" height="28.447998" fill="white"/>
+          <rect x="842.25" y="629.5" width="189.75" height="28.447998" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(847.25 634.5)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="56.160156" y="15">Product</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_49">
+        <g id="Graphic_51">
+          <rect x="1146.5" y="664.3822" width="189.75" height="48" fill="white"/>
+          <rect x="1146.5" y="664.3822" width="189.75" height="48" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1151.5 669.3822)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">serial number</tspan>
+          </text>
+        </g>
+        <g id="Graphic_50">
+          <rect x="1146.5" y="634.3822" width="189.75" height="30" fill="white"/>
+          <rect x="1146.5" y="634.3822" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1151.5 639.3822)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="46.527344" y="15">Component</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_44">
+        <path d="M 1050 645.0745 L 1068 653.81325 L 1050 662.552 L 1032 653.81325 Z" fill="white"/>
+        <path d="M 1050 645.0745 L 1068 653.81325 L 1050 662.552 L 1032 653.81325 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_43">
+        <path d="M 1068 653.81325 L 1078 653.81325 L 1136.5 653.8822 L 1146.5 653.8822" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_41">
+        <text transform="translate(847.25 577.5)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x=".855" y="15">A product has 1 or more components</tspan>
+        </text>
+      </g>
+      <g id="Line_40">
+        <path d="M 1121 592 C 1121 592 1121 592 1121 592 C 1135.8609 597.0548 1140.2223 604.24034 1139.7982 611.30474" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_67">
+        <text transform="translate(1104.9464 625.724)" fill="black">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">1..*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_70">
+        <text transform="translate(840 763.5)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="15.12" y="15">One component</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="6.376" y="33.448">can only be part of </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="29.488" y="51.895996">one product</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="24.016" y="88.34399">0..1 is implicit </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="24158453e-20" y="106.79199">on the diamond side</tspan>
+        </text>
+      </g>
+      <g id="Line_69">
+        <path d="M 990.824 803.50985 C 1003.4506 797.9533 1015.6078 790.3636 1025.5 780 C 1055.0758 749.0149 1053.8143 704.3302 1051.5306 684.7798" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_71">
+        <g id="Graphic_73">
+          <rect x="1146.5" y="830.74" width="189.75" height="48" fill="white"/>
+          <rect x="1146.5" y="830.74" width="189.75" height="48" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1151.5 835.74)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">date</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">time</tspan>
+          </text>
+        </g>
+        <g id="Graphic_72">
+          <rect x="1146.5" y="800.74" width="189.75" height="30" fill="white"/>
+          <rect x="1146.5" y="800.74" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1151.5 805.74)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="41.710938" y="15">Inspection</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_75">
+        <path d="M 1232.6362 782.74 L 1241.375 764.74 L 1250.1138 782.74 L 1241.375 800.74 Z" fill="white"/>
+        <path d="M 1232.6362 782.74 L 1241.375 764.74 L 1250.1138 782.74 L 1241.375 800.74 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_76">
+        <path d="M 1241.375 712.3822 C 1241.375 712.3822 1241.375 764.74 1241.375 764.74" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_78">
+        <text transform="translate(1369.088 805.74)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="21.936" y="15">Each component</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="19.424" y="33.448">may be inspected </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="2.224" y="51.895996">or not, but can only be </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="25.648" y="70.34399">inspected once.</tspan>
+        </text>
+      </g>
+      <g id="Line_79">
+        <path d="M 1402.2778 800.74 C 1389.536 792.6659 1374.7688 785.1348 1358.5 780 C 1318.103 767.2498 1282.3179 773.65255 1265.9476 778.036" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_80">
+        <text transform="translate(1369.088 649.552)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="12.914001" y="15">An inspection may </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="35.594" y="33.448">inspect zero </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="1.9540013" y="51.895996">or more components.</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="6.554001" y="88.34399">(If nothing is written, </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="12.178001" y="106.79199">0..*, or * is implied)</tspan>
+        </text>
+      </g>
+      <g id="Line_85">
+        <path d="M 1364.088 735.1465 C 1358.2143 736.3 1352.1691 737.272 1346 738 C 1306.141 742.7037 1274.4483 735.64655 1259.4879 731.18674" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

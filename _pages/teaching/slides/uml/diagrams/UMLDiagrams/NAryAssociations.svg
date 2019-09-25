@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1336 963 643 420" width="643" height="420">
+  <defs>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.9805" ascent="928.2227" descent="-235.83984" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Menlo-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-750" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="gray">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.3 
+    <dc:date>2019-09-25 01:38:29 +0000</dc:date>
+  </metadata>
+  <g id="NAryAssociations" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>NAryAssociations</title>
+    <g id="NAryAssociations: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_31">
+        <g id="Graphic_33">
+          <rect x="1336.5354" y="1155.3543" width="189.75" height="69.2126" fill="white"/>
+          <rect x="1336.5354" y="1155.3543" width="189.75" height="69.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1341.5354 1160.3543)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">date of foundation</tspan>
+          </text>
+        </g>
+        <g id="Graphic_32">
+          <rect x="1336.5354" y="1125.3543" width="189.75" height="30" fill="white"/>
+          <rect x="1336.5354" y="1125.3543" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1341.5354 1130.3543)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="70.609375" y="15">Team</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_34">
+        <g id="Graphic_36">
+          <rect x="1788.0354" y="1155.3543" width="189.75" height="69.2126" fill="white"/>
+          <rect x="1788.0354" y="1155.3543" width="189.75" height="69.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1793.0354 1160.3543)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">nationality</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="53">position</tspan>
+          </text>
+        </g>
+        <g id="Graphic_35">
+          <rect x="1788.0354" y="1125.3543" width="189.75" height="30" fill="white"/>
+          <rect x="1788.0354" y="1125.3543" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1793.0354 1130.3543)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="60.97656" y="15">Player</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_37">
+        <g id="Graphic_39">
+          <rect x="1562.2854" y="1312.6772" width="189.75" height="69.2126" fill="white"/>
+          <rect x="1562.2854" y="1312.6772" width="189.75" height="69.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1567.2854 1317.6772)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">year</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">main sponsor</tspan>
+          </text>
+        </g>
+        <g id="Graphic_38">
+          <rect x="1562.2854" y="1282.6772" width="189.75" height="30" fill="white"/>
+          <rect x="1562.2854" y="1282.6772" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1567.2854 1287.6772)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="60.97656" y="15">Season</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_41">
+        <path d="M 1657.1604 1143.0709 L 1689.0502 1174.9606 L 1657.1604 1206.8504 L 1625.2707 1174.9606 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_43">
+        <line x1="1526.2854" y1="1174.9606" x2="1625.2707" y2="1174.9606" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_44">
+        <line x1="1657.1604" y1="1206.8504" x2="1657.1604" y2="1282.6772" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_45">
+        <line x1="1689.0502" y1="1174.9606" x2="1788.0354" y2="1174.9606" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_46">
+        <text transform="translate(1536.2444 1150.2086)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="31974423e-20" y="15">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(1770.8125 1150.2086)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <text transform="translate(1671.7717 1255.0788)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(1341.5354 1006.9965)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="2.224" y="15">There may be employees </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="6.056" y="33.448">without any subordinate</tspan>
+        </text>
+      </g>
+      <g id="Line_50">
+        <path d="M 1442.8352 1001.9965 C 1446.5869 995.8353 1451.6279 989.3341 1458.3141 983.6728 C 1470.6377 973.2384 1485.0074 968.6568 1494.316 966.6716" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

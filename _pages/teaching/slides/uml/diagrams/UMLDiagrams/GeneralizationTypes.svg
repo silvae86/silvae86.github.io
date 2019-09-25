@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="790 353 595 303" width="595" height="303">
+  <defs>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.9805" ascent="928.2227" descent="-235.83984" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Menlo-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="UMLInheritance_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -8 14 16" markerWidth="14" markerHeight="16" color="black">
+      <g>
+        <path d="M 12 0 L 0 -7 L 0 7 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="937.5" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-style="italic" font-weight="700">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-BoldItalic"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-750" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="gray">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.3 
+    <dc:date>2019-09-25 01:38:29 +0000</dc:date>
+  </metadata>
+  <g id="GeneralizationTypes" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>GeneralizationTypes</title>
+    <g id="GeneralizationTypes: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_2">
+        <g id="Graphic_4">
+          <rect x="937.5" y="383" width="99" height="67" fill="white"/>
+          <rect x="937.5" y="383" width="99" height="67" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(942.5 388)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">address</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="53">email</tspan>
+          </text>
+        </g>
+        <g id="Graphic_3">
+          <rect x="937.5" y="354" width="99" height="29" fill="white"/>
+          <rect x="937.5" y="354" width="99" height="29" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(942.5 359)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="15.601562" y="15">Person</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_5">
+        <g id="Graphic_7">
+          <rect x="790.5" y="531.5" width="99" height="124" fill="white"/>
+          <rect x="790.5" y="531.5" width="99" height="124" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(795.5 536.5)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">date </tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">admitted</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="72">social </tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="91">security </tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="110">number</tspan>
+          </text>
+        </g>
+        <g id="Graphic_6">
+          <rect x="790.5" y="502.5" width="99" height="29" fill="white"/>
+          <rect x="790.5" y="502.5" width="99" height="29" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(795.5 507.5)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="5.96875" y="15">Employee</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_11">
+        <g id="Graphic_13">
+          <rect x="1039.5" y="564.5" width="99" height="48" fill="white"/>
+          <rect x="1039.5" y="564.5" width="99" height="48" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1044.5 569.5)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">VAT </tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">number</tspan>
+          </text>
+        </g>
+        <g id="Graphic_12">
+          <rect x="1039.5" y="535.5" width="99" height="29" fill="white"/>
+          <rect x="1039.5" y="535.5" width="99" height="29" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1044.5 540.5)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="5.96875" y="15">Customer</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_14">
+        <path d="M 840 502.5 L 840 487 L 987 487 L 987 463.5" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_18">
+        <path d="M 1089 535.5 L 1089 487 L 987 487 L 987 463.5" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_45">
+        <text transform="translate(899.5179 498.448)" fill="black">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="4.816406" y="15">{ overlapping, </tspan>
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="24.08203" y="34">complete }</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(1176.5 366.5)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="700" fill="gray" x="54.544" y="16">overlapping</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" y="16">: </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="22.68" y="34.46411">An Employee can also </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="49.056" y="52.91211">be a Customer</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="700" fill="gray" x="63.88" y="90.36011">complete</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" y="90.36011">: </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="32.32" y="108.82422">All Persons need to </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="74.536" y="127.27222">be of at </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="46.832" y="145.72021">least one of the </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="62.552" y="164.16821">subclasses</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="24.92" y="182.61621">(Employee, Customer </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="27.272" y="201.0642">or both, in this case). </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="2.224" y="219.5122">i.e. they cannot be a Person </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="63.264" y="237.9602">and not be </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="28.904" y="256.4082">neither an Employee </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="46.392" y="274.8562">nor a Customer</tspan>
+        </text>
+      </g>
+      <g id="Line_46">
+        <path d="M 1171.5 472.9566 C 1147.6107 467.6482 1122.7647 463.7672 1100.5 463.5 C 1048.7751 462.87926 1027.889 481.9658 1019.9613 493.66185" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 ---
 layout: keynote
-title: Keynote on UML - Unified Modelling Language
-permalink: /teaching/slides/uml/uml1/
+title: UML Class Diagrams
+permalink: /teaching/slides/uml/class/
 ---
 {% highlight text %}
 {% raw %}

@@ -28,7 +28,7 @@ class: middle, center
 
 .indexpill[[Attributes](#attributes)]
 
-.indexpill[[Association](#association)]
+.indexpill[[Associations](#associations)]
 
 .indexpill[[Multiplicity](#multiplicity)]
 
@@ -45,11 +45,11 @@ class: middle, center
 .indexpill[[Qualified association](#qualifiedassociation)]
 
 .indexpill[[N-ary associations](#nary_associations)]
+
+.indexpill[[N-ary association classes](#nary_association_classes)]
 ]
 
 .index[
-
-.indexpill[[Example: Car showroom](#example)]
 
 .indexpill[[Useful software](#software)]
 
@@ -81,17 +81,29 @@ Their syntax consists of a box with two main sections.
 - The first section contains the **name** of the class 
 - The bottom will contain all the Class's [Attributes](#attributes), **one per line**.
 
-.center[.imglg[![Attributes](../diagrams/UMLDiagrams/Classes.svg)]]
+.center[.imgscaledup[![Classes](../diagrams/UMLDiagrams/Classes.svg)]]
 
 .footnote[Class names are always represented in the singular, as a class denotes a **type** of entity, instead of a **set** of all entities of a certain type.]
 
 ---
-name: Attributes
+name: attributes
 ## Attributes
 
 - Attributes represent characteristics of all objects of the Class. They have basic types like `integer`, `double`, `string`, etc*.*
 
 - Attributes cannot be multi-valued; if you have an attribute that can have multiple values for an object of a class, that attribute is likely a Class and should be promoted to that.
+
+---
+name: associations
+## Association
+
+- Associations are binary relationships between classes
+
+- Represented by a line drawn between the two classses that we want to associate
+
+.center[.imglg[![Association](../diagrams/UMLDiagrams/Association.svg)]]
+
+At each end of the line we add the [multiplicity](#multiplicity) of the association.
 
 ---
 name: multiplicity
@@ -206,27 +218,39 @@ name: selfassociation
 .center[.imgscaledup[![SelfAssociation](../diagrams/UMLDiagrams/SelfAssociation.svg)]]
 
 ---
-name: nary
-## N-Ary associations
+name: qualifiedassociation
+## Qualified association
 
+- One or more attributes of an association used to navigate from the class with the qualifier to the other
+- "Access key" from the qualifier to the qualified class
 
-
----
-name: attributeorclass
-## Attribute or Class? 
-
-It is not possible to establish 
+.center[.imglg[![QualifiedAssociation](../diagrams/UMLDiagrams/QualifiedAssociation.svg)]]
 
 ---
-name: example
-## Example: Car showroom
+name: nary_associations
+## N-ary associations
+
+- n-ary associations express relationships between more than 2 classes. 
+- Multiplicity is calculated one by one, by "fixating" all other classes to 1 and calculating the multiplicity of that "end" of the association according to the requirements.
+- Ternary = 3 classes involved; Quaternary = 4 classes; n-ary = n classes...
+
+.center[.imgscaledup[![NAryAssociations](../diagrams/UMLDiagrams/NAryAssociations.svg)]]
+
+---
+name: nary_association_classes
+## N-ary association classes
+
+- Association classes can also be associated to n-ary associations.
+- Attributes need to depend on all of the associated classes!
+
+.center[.imgscaledup[![NAryAssociationClass](../diagrams/UMLDiagrams/NAryAssociationClass.svg)]]
 
 ---
 name: software
 ## Useful software
 
 - For diagramming
-	- [draw.io](http://draw.io) - Free online, collaborative diagramming, requires Google Drive
+	- [draw.io](http://draw.io) - Free online collaborative diagramming, uses Google Drive
 	- [Dia](http://dia-installer.de) - Free for all Operating Systems
 	- [Visual Paradigm](https://www.visual-paradigm.com) - Paid for all Operating Systems
 	- [OmniGraffle](https://www.omnigroup.com/omnigraffle) - Paid for Mac

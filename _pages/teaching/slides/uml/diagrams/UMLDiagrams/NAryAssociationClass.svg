@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1336 1010 686 373" width="686" height="373">
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1336 952 677 431" width="677" height="431">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -31,9 +31,9 @@
   <metadata> Produced by OmniGraffle 7.11.3 
     <dc:date>2019-09-25 02:40:12 +0000</dc:date>
   </metadata>
-  <g id="NAryAssociations" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
-    <title>NAryAssociations</title>
-    <g id="NAryAssociations: Layer 1">
+  <g id="NAryAssociationClass" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+    <title>NAryAssociationClass</title>
+    <g id="NAryAssociationClass: Layer 1">
       <title>Layer 1</title>
       <g id="Group_31">
         <g id="Graphic_33">
@@ -41,14 +41,14 @@
           <rect x="1336.5354" y="1155.3543" width="189.75" height="69.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(1341.5354 1160.3543)" fill="black">
             <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
-            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">date of foundation</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">description</tspan>
           </text>
         </g>
         <g id="Graphic_32">
           <rect x="1336.5354" y="1125.3543" width="189.75" height="30" fill="white"/>
           <rect x="1336.5354" y="1125.3543" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(1341.5354 1130.3543)" fill="black">
-            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="70.609375" y="15">Team</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="56.160156" y="15">Disease</tspan>
           </text>
         </g>
       </g>
@@ -57,16 +57,15 @@
           <rect x="1788.0354" y="1155.3543" width="189.75" height="69.2126" fill="white"/>
           <rect x="1788.0354" y="1155.3543" width="189.75" height="69.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(1793.0354 1160.3543)" fill="black">
-            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
-            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">nationality</tspan>
-            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="53">position</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">scientific name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">common name</tspan>
           </text>
         </g>
         <g id="Graphic_35">
           <rect x="1788.0354" y="1125.3543" width="189.75" height="30" fill="white"/>
           <rect x="1788.0354" y="1125.3543" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(1793.0354 1130.3543)" fill="black">
-            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="60.97656" y="15">Player</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="27.26172" y="15">Plant species</tspan>
           </text>
         </g>
       </g>
@@ -75,15 +74,15 @@
           <rect x="1562.2854" y="1312.6772" width="189.75" height="69.2126" fill="white"/>
           <rect x="1562.2854" y="1312.6772" width="189.75" height="69.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(1567.2854 1317.6772)" fill="black">
-            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">year</tspan>
-            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">main sponsor</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">start date</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">end date</tspan>
           </text>
         </g>
         <g id="Graphic_38">
           <rect x="1562.2854" y="1282.6772" width="189.75" height="30" fill="white"/>
           <rect x="1562.2854" y="1282.6772" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(1567.2854 1287.6772)" fill="black">
-            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="60.97656" y="15">Season</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="32.078125" y="15">Time of year</tspan>
           </text>
         </g>
       </g>
@@ -100,8 +99,8 @@
         <line x1="1689.0502" y1="1174.9606" x2="1788.0354" y2="1174.9606" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_46">
-        <text transform="translate(1536.2444 1150.2086)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="31974423e-20" y="15">1</tspan>
+        <text transform="translate(1537.8764 1150.2086)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
         </text>
       </g>
       <g id="Graphic_47">
@@ -114,33 +113,57 @@
           <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
         </text>
       </g>
-      <g id="Graphic_51">
-        <text transform="translate(1369.8819 1019.8032)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="28.76" y="15">For one player in one season, </tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="6252776e-19" y="33.448">that player can only play for one team</tspan>
-        </text>
-      </g>
-      <g id="Line_50">
-        <path d="M 1524.7692 1061.6992 C 1532.3858 1071.8276 1540.151 1084.6113 1544.5122 1098.7805 C 1548.8122 1112.751 1548.98 1125.395 1547.6667 1135.4787" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-      </g>
-      <g id="Graphic_53">
-        <text transform="translate(1712.3433 1015.5512)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="8.424" y="15">In one season, one team can </tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="5258016e-19" y="33.448">have from zero to many players</tspan>
-        </text>
-      </g>
-      <g id="Line_52">
-        <path d="M 1796.1052 1057.4472 C 1789.4689 1064.937 1782.9614 1074.0548 1778.3705 1084.5565 C 1769.4393 1104.9863 1770.4847 1124.4236 1772.3235 1135.5655" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-      </g>
       <g id="Graphic_55">
-        <text transform="translate(1778.0709 1321.5458)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="2.224" y="15">One player, playing for one team, </tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="45.792" y="33.448">can play for them for </tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="20.6" y="51.895996">many seasons or none at all</tspan>
+        <text transform="translate(1787.8149 1321.5458)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="2.224" y="15">One disease can affect a plant </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="31.168" y="33.448">species in many times </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="72.056" y="51.895996">of the year</tspan>
         </text>
       </g>
       <g id="Line_54">
         <path d="M 1876.183 1316.5458 C 1862.5228 1300.4864 1841.6224 1282.1737 1811.5854 1270.7317 C 1767.339 1253.877 1717.8443 1257.484 1692.1748 1261.1544" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_57">
+        <g id="Graphic_59">
+          <rect x="1574.9104" y="1044.567" width="164.5" height="48" fill="white"/>
+          <rect x="1574.9104" y="1044.567" width="164.5" height="48" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1579.9104 1049.567)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">chance of </tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">infection</tspan>
+          </text>
+        </g>
+        <g id="Graphic_58">
+          <rect x="1574.9104" y="1031.811" width="164.5" height="12.755906" fill="white"/>
+          <rect x="1574.9104" y="1031.811" width="164.5" height="12.755906" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Line_56">
+        <line x1="1657.1604" y1="1143.0709" x2="1657.1604" y2="1092.567" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Graphic_60">
+        <text transform="translate(1354.1864 1025.293)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="10.992" y="15">One plant species, </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="5.648" y="33.448">in a time of the year, </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="2.224" y="51.895996">can suffer from many </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="46.416" y="70.34399">diseases</tspan>
+        </text>
+      </g>
+      <g id="Graphic_61">
+        <text transform="translate(1813.1143 1025.293)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="1.1555865" y="15">One disease, in a time </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="43.595587" y="33.448">of the year, can </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="36.603587" y="51.895996">affect many plant </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="70.73159" y="70.34399">species</tspan>
+        </text>
+      </g>
+      <g id="Line_62">
+        <path d="M 1649.4887 999.0236 C 1649.1808 1001.2885 1649 1003.6283 1649 1006 C 1649 1012.995 1650.5731 1018.8233 1652.338 1023.1609" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_63">
+        <text transform="translate(1469.6024 957.1276)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="1.142075" y="15">The chance of infection depends on the disease, the </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="72.046075" y="33.448">time of the year and the plant species</tspan>
+        </text>
       </g>
     </g>
   </g>

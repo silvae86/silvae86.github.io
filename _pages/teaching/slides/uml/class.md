@@ -259,7 +259,10 @@ name: software
 name: references
 ## References
 
-WIP
+- *Jeffrey D. Ullman and Jennifer Widom. 2008. A First Course in Database Systems. 3rd Edition*
+	- Section 4.7 Unified Modeling Language
+
+- *CS145 Lecture Notes (7) -- Higher-Level Design: UML. [Link](http://infolab.stanford.edu/~ullman/fcdb/jw-notes06/uml.html).*
 
 {% endraw %}
 {% endhighlight %}

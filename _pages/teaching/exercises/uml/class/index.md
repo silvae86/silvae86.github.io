@@ -1,8 +1,8 @@
 ---
 layout: page
-title: UML Exercises
+title: UML Class Diagram
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/
-crumbtitle: Exercises
+crumbtitle: UML Class Diagram
 ---
 

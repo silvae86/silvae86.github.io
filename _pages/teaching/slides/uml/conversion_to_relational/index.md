@@ -12,8 +12,8 @@ template:inverse
 # UML 
 [Unified Modelling Language] 
 
-## Conversion to the Relational Model
-by [João Rocha da Silva](https://silvae86.github.io), based on the [book](https://dl.acm.org/citation.cfm?id=1554749) by Ullman and Widom.
+## Conversion of UML Class Diagrams to the Relational Model
+by [João Rocha da Silva](https://silvae86.github.io), based on the [book](https://dl.acm.org/citation.cfm?id=1554749) by Ullman and Widom and other sources.
 
 ---
 name: agenda
@@ -126,7 +126,6 @@ name: associationclass
 
 - An attribute of the product? No! That would make the quantity of that product the same for every order in the system. That works if we wanted to save the **quantity in stock** of each product, for example, which only depends on the product and nothing else.
 
-
 ---
 name: associationclassexample1
 ## Association Class (Example 1)
@@ -207,16 +206,30 @@ name: selfassociation
 - It is also possible to specify associations between a Class and itself. 
 - Useful for representing hierarchies / subcomponents (one-to-many) or graphs (many-to-many).
 
-.center[.imgscaledup[![SelfAssociation](../diagrams/UMLDiagrams/SelfAssociation.svg)]]
-
 ---
 name: qualifiedassociation
-## Qualified association
+## Qualified association (cont'd)
 
 - One or more attributes of an association used to navigate from the class with the qualifier to the other
 - "Access key" from the qualifier to the qualified class
+  - The qualifier is like an *indexed list* of a subset of objects of the qualified class (no box side) that are relevant for each of the objects in the qualifier class (box side) 
 
 .center[.imglg[![QualifiedAssociation](../diagrams/UMLDiagrams/QualifiedAssociation.svg)]]
+
+---
+name: qualifiedassociationvsassociationclass
+## Qualified association vs Association Class
+
+
+
+|      |          Association Class           |                    Qualified Association                     |
+| ---- | :----------------------------------: | :----------------------------------------------------------: |
+|      | Represents a distinct type of object |                Is not a new object type, only                |
+|      |     Is a separate set of records     | "Lives inside the Class of the qualified end of the association<br />*(the class with the "box" attached)*<br /><br />Is an index for a subset of objects of the non-qualified end of the association |
+|      |                                      | Like a Hash Table attribute of the qualified class, with keys of type <Class with Box attached> and objects of type <Class on the end with no box> |
+|      |                                      |                                                              |
+
+
 
 ---
 name: nary_associations

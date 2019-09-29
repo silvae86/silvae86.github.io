@@ -1,7 +1,7 @@
 ---
 layout: keynote
-title: UML Class Diagrams
-permalink: /teaching/slides/uml/class/
+title: UML Conversion to Relational Model
+permalink: /teaching/slides/uml/conversion_to_relational/
 ---
 {% highlight text %}
 {% raw %}
@@ -12,7 +12,7 @@ template:inverse
 # UML 
 [Unified Modelling Language] 
 
-## Class Diagrams
+## Conversion to the Relational Model
 by [João Rocha da Silva](https://silvae86.github.io), based on the [book](https://dl.acm.org/citation.cfm?id=1554749) by Ullman and Widom.
 
 ---
@@ -22,7 +22,7 @@ class: middle, center
 ## Agenda
 .index[
 
-.indexpill[[Purpose](#purpose)]
+.indexpill[[Goal](#goal)]
 
 .indexpill[[Classes](#classes)]
 
@@ -57,18 +57,10 @@ class: middle, center
 
 ]
 ---
-name: purpose
-## Purpose
+name: goal
+## Goal
 
-- To represent the data model of an information system
-
-- Programmers and system designers alike can understand
-
-- Often derived from the reality of a system as described by the client (usually in text)
-
-- Can later be converted into a relational schema
-
-.footnote[These slides will use the example of a furniture manufacturing company to illustrate the syntax of UML class diagrams.]
+- To provide conversion strategies from UML to the Relational model
 
 ---
 name: classes

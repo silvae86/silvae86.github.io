@@ -44,7 +44,7 @@
     </font-face>
   </defs>
   <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-25 02:40:12 +0000</dc:date>
+    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
   </metadata>
   <g id="AssociationClass1" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
     <title>AssociationClass1</title>
@@ -94,21 +94,21 @@
         </text>
       </g>
       <g id="Graphic_23">
-        <rect x="1182.7327" y="573.77166" width="19.632812" height="29" fill="white"/>
-        <text transform="translate(1187.7327 578.77166)" fill="black">
-          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">*</tspan>
+        <rect x="1152.2835" y="573.27166" width="48.53125" height="29" fill="white"/>
+        <text transform="translate(1157.2835 578.27166)" fill="black">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">1..*</tspan>
         </text>
       </g>
       <g id="Graphic_22">
         <text transform="translate(1000.9331 460.54766)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="15">An order can have [0…∞] products</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="15">An order can have [1…∞] products</tspan>
         </text>
       </g>
       <g id="Line_21">
         <path d="M 1088.1925 700.27166 C 1093.9165 696.8867 1099.428 693.0673 1104.4331 688.77166 C 1117.9566 677.165 1125.0101 664.4615 1128.6648 653.8249" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_20">
-        <path d="M 1153.3637 501.99566 C 1161.0434 509.5527 1169.0138 518.74794 1175.5491 529.27166 C 1183.4101 541.9302 1187.6863 554.0819 1189.9944 564.0327" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1155.3137 501.99566 C 1163.034 509.5652 1170.5376 518.7669 1175.5491 529.27166 C 1181.4911 541.727 1182.8024 553.6519 1182.252 563.448" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_19">
         <text transform="translate(940.4331 705.27166)" fill="gray">

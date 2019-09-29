@@ -1,7 +1,7 @@
 ---
 layout: keynote
 title: Information Systems Engineering (ESIN)- MEB/MIB
-permalink: /teaching/slides/uml/uml1/
+permalink: /teaching/slides/demo/
 ---
 
 {% highlight text %}

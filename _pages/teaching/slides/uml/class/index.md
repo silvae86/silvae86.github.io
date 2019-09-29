@@ -81,7 +81,7 @@ Their syntax consists of a box with two main sections.
 - The first section contains the **name** of the class 
 - The bottom will contain all the Class's [Attributes](#attributes), **one per line**. 
 
-.center[.imgscaledup[![Classes](diagrams/UMLdiagrams/Classes.svg)]]
+.center[.imgscaledup[![Classes](diagrams/UMLDiagrams/Classes.svg)]]
 
 .footnote[Class names are always represented in the singular, as a class denotes a **type** of entity, instead of a **set** of all entities of a certain type.]
 

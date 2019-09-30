@@ -1,7 +1,6 @@
 ---
 layout: page
 title: UML Class to Relational
-include_in_menu: false
 permalink: /teaching/exercises/uml/conversion_to_relational/
 crumbtitle: UML Class to Relational exercises
 ---
@@ -20,5 +19,5 @@ crumbtitle: UML Class to Relational exercises
 
 - [Factory](/teaching/solutions/uml/class/Factory.pdf) 
 	
-- [Bicycles](/teaching/solutions/uml/class/Bicycles.pdf) 
+- [Bicycles](/teaching/solutions/uml/class/BicycleRenting.pdf) 
 

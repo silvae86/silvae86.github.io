@@ -182,3 +182,8 @@ $success-alert-color:      	#4C9A2A !default;
 	color: $success-alert-color;
 }
 
+.smalltext {
+	color:$warning-alert-color;
+	font-size:0.8em;
+	font-style:italic;
+}

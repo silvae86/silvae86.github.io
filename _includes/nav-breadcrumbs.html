@@ -27,7 +27,8 @@
                         {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
                         <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">
                           <meta property="position" content="i" />
-                          {{breadcrumb_page.title}}
+						  {% if breadcrumb_page.crumbtitle == blank %}{{breadcrumb_page.title}}{% else %}{{breadcrumb_page.crumbtitle}}{% endif %}
+
                         </a>
                   </li>
               {% endif %}

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Veterinary clinic UML Class Diagram exercise
+title: Veterinary Clinic
 include_in_menu: false
-permalink: /teaching/exercises/uml/class/vet/
+permalink: /teaching/exercises/uml/class/scenarios/vet/
 crumbtitle: Veterinary Clinic
 ---
 
@@ -20,6 +20,6 @@ The owner of a veterinary clinic wants to create a database to store information
 - It should be possible to store information about the most common conditions for each different breed in the database.
 
 
-## Acknowledgement
+### Acknowledgement
 
 Credits: [André Restivo](https://web.fe.up.pt/~arestivo/page/exercises/entity-relationship/veterinary/)

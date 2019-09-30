@@ -5,7 +5,7 @@ permalink: /teaching/exercises/uml/conversion_to_relational/
 crumbtitle: UML Class to Relational exercises
 ---
 
-{% include info.html content="These are the solutions of the UML Class exercises. They should be used as the starting point for the conversion into relational schemas." %}
+{% include info.html content="These are the solutions of the [UML Class](/teaching/exercises/uml/class) exercises. They should be used as the starting point for the conversion into relational schemas." %}
 
 - [Veterinary Clinic](/teaching/solutions/uml/class/VeterinaryClinic.pdf)  
 

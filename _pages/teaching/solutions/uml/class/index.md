@@ -19,3 +19,4 @@ crumbtitle: Solutions for UML Class Diagram exercises
 - [Factory](Factory.pdf) 
 	
 - [Bicycles](Bicycles.pdf) 
+

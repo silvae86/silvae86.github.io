@@ -16,6 +16,20 @@ database and semantic web topics.
 
 {% include_relative teaching/2020/index.md %}
 
+
+
+### Exercises by Topic
+
+
+
+| **Topic**  | Exercises                                                    | Solutions |
+| ---------- | ------------------------------------------------------------ | --------- |
+| <u>UML</u> |                                                              |           |
+|            | [Class Diagrams](/teaching/exercises/uml/class/)             | Link      |
+|            | [Mapping Class Diagrams &rarr; Relational Model](/teaching/exercises/uml/conversion_to_relational/) | Link      |
+
+
+
 <!--
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)

@@ -175,16 +175,101 @@ CHECK(date_time_of_arrival >= date_time_of_departure)
 
 ## Furniture Factory
 
+**Pieces**(<u>reference</u>, price, line &rarr; Line)
+
+NOT NULL(line)
+
+CHECK(price > 0)
 
 
-WIP
+
+**Lines**(<u>id</u>, type)
+
+NOT NULL(type)
+
+
+
+**Components**(<u>code</u>, price, component_type &rarr; ComponentTypes)
+
+NOT NULL(component_type)
+
+CHECK(price > 0)
+
+
+
+**PieceComponents**(<u>piece</u> &rarr; Piece, <u>component</u> &rarr; Component, quantity)
+
+CHECK(quantity > 0)
+
+
+
+**ComponentTypes**(<u>name</u>)
+
+
+
+**Orders**(<u>number</u>, date)
+
+NOT NULL(date)
+
+
+
+**OrderPieces**(<u>order</u> &rarr; Order, piece &rarr; <u>Piece</u>, quantity)
+
+CHECK(quantity > 0)
+
+
+
+**Stores**(<u>id</u>, name, address, fax_no)
+
+NOT NULL(name)
+
+NOT NULL(address)
 
 ## Factory
 
 
 
-WIP
+**Clients**(<u>id</u>, first name, surname, address, phone, name_contact)
+
+**Workers**(<u>id</u>, first name, surname, address, birth_date)
+
+`Comment: The generalization is disjoint, so we adopt an Object-Oriented strategy for mapping`
+
+**Skills**(<u>name</u>)
+
+**WorkerSkills**(<u>worker</u> &rarr; Worker, <u>skill</u> &rarr; Skill)
+
+**Machine**(<u>serial_no</u>, make, model, purchase_date)
+
+NOT NULL(purchase_date)
+
+**MachineWorkers**(<u>worker</u> &rarr; Worker, <u>machine</u> &rarr; Machine)
+
+**Products**(<u>identifier</u>, name)
+
+NOT NULL(name)
+
+**ProductTypes**(<u>id</u>, material, weight, produced_by &rarr; Machine)
+
+NOT NULL(material)
+
+CHECK(weight > 0)
+
+**PurchaseOrder**(<u>number</u>, date_made, expected_delivery, actual_delivery, issuer &rarr; Client)
+
+NOT NULL(date_made)
+
+NOT NULL(expected_delivery)
+
+NOT NULL(actual_delivery)
+
+NOT NULL(issuer)
+
+CHECK(date_made <= expected_delivery AND date_made <= actual_delivery)
+
+**ProductsOrders**(<u>product</u> &rarr; Products, <u>purchase_order</u> &rarr; PurchaseOrders, quantity)
+
+CHECK(quantity > 0)
 
 ## Bicycles
 
-WIP

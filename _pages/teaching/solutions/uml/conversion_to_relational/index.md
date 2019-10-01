@@ -233,7 +233,7 @@ NOT NULL(address)
 
 **Workers**(<u>id</u>, first name, surname, address, birth_date)
 
-`Comment: The generalization is disjoint, so we adopt an Object-Oriented strategy for mapping`
+`Comment: The generalization is disjoint, so we adopt an Object-Oriented strategy for mapping. The Person relation does not exist, because the generalization is complete, so there is no need for the relation usuallu derived from the superclass. If the generalization was partial instead of complete, we would have to retain the Person relation.`
 
 **Skills**(<u>name</u>)
 
@@ -245,7 +245,7 @@ NOT NULL(purchase_date)
 
 **MachineWorkers**(<u>worker</u> &rarr; Worker, <u>machine</u> &rarr; Machine)
 
-**Products**(<u>identifier</u>, name)
+**Products**(<u>identifier</u>, name, product_type &rarr; ProductTypes)
 
 NOT NULL(name)
 
@@ -267,9 +267,50 @@ NOT NULL(issuer)
 
 CHECK(date_made <= expected_delivery AND date_made <= actual_delivery)
 
-**ProductsOrders**(<u>product</u> &rarr; Products, <u>purchase_order</u> &rarr; PurchaseOrders, quantity)
+**OrdersProducts**(<u>product</u> &rarr; Products, <u>purchase_order</u> &rarr; PurchaseOrders, quantity)
 
 CHECK(quantity > 0)
 
 ## Bicycles
 
+**Clients**(<u>id</u>, NIN, TIN, name, address)
+
+UNIQUE(NIN)
+
+UNIQUE(TIN)
+
+NOT NULL(name)
+
+
+
+**Reservations**(<u>id</u>, pickup_day, return_day, actual_rented_bike &rarr; Bicycle, desired_model &rarr; BicycleModel, pickup_place &rarr; Store, client &rarr; Client)
+
+NOT NULL(pickup_day)
+
+NOT NULL(requested_model)
+
+NOT NULL(pickup_place)
+
+NOT NULL(model)
+
+CHECK(return_day >= pickup_day)
+
+
+
+**Stores**(<u>name</u>, address)
+
+NOT NULL(address)
+
+
+
+**Bicycles**(<u>number</u>, model &rarr; BicycleModels)
+
+NOT NULL(model)
+
+
+
+**BicycleModels**(<u>name</u>, type, no_gears)
+
+NOT NULL(type)
+
+CHECK(no_gears >= 1)

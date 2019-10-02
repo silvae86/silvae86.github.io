@@ -30,6 +30,8 @@ class: middle, center
 
 .indexpill[[Data Types](#types)]
 
+.indexpill[[Affinity in SQLite](#affinity)]
+
 .indexpill[[Defaults](#defaults)]
 
 .indexpill[[Constraints](#constraints)]
@@ -162,6 +164,14 @@ class: center, middle
 | TEXT          | The value is a text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE). |
 | BLOB          | The value is a blob of data, stored exactly as it was input. |
 
+
+---
+class:center, middle
+template: inverse
+name: affinity
+
+# Affinity
+
 ---
 
 template: inverse
@@ -169,8 +179,8 @@ template: inverse
 # Affinity
 
 * SQLite maps conventional SQL types to its 5 storage classes
-  * You can use the conventional Typenames, but internally they are represented according to their *affinity*.
-  * Specific [rules](https://www.sqlite.org/datatype3.html#affinity_of_expressions) are used to establish the mapping.
+  * You can use the conventional Typenames, but internally they are represented according to their *affinity*, calculated via five [rules](https://www.sqlite.org/datatype3.html#affinity_of_expressions).
+  * e.g.`NUMERIC(10,2)` (found in other dialects of SQL) for 10 integer digits and 2 decimal equals just `NUMERIC` in SQLite. Qualifiers are there for "suggestive documentation". Any numeric value will be accepted.
 
 | Typenames From The CREATE TABLE Statement or CAST Expression | Resulting Affinity |
 | :----------------------------------------------------------- | :----------------- |
@@ -231,6 +241,7 @@ template:inverse
 | NNN years        | localtime      |
 |                  | utc            |
 
+
 ---
 
 template:inverse
@@ -250,16 +261,16 @@ SELECT julianday('now') - julianday('1776-07-04');
 
  More examples [here](https://www.sqlite.org/lang_datefunc.html).
 
-------
 
+---
+
+template:inverse
 # Auto-incrementing columns
 
 * In SQLite there is a *pseudo-type* that can be used to define **auto-generated** identifiers or **auto-counters**.
 * To define a column as an auto-counter we use the type **AUTOINCREMENT**.
 
----
-
-# Example
+## Example
 
 ```sql
 CREATE TABLE employee (

@@ -871,7 +871,7 @@ Getting the current value only works if called after calling nextval and in the 
 
 # The AUTOINCREMENT type
 
-The data type serial is not a true type, but merely a notational convenience for setting up unique identifier columns.
+The data type `AUTOINCREMENT` is not a true type, but merely a notational convenience for setting up unique identifier columns.
 
 ```sql
 CREATE TABLE <tablename> (

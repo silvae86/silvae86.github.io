@@ -9,7 +9,7 @@ crumbtitle: Solutions for UML Class to Relational exercises
 
 **Animals**(<u>id</u>, name, breed &rarr;Breed, owner&rarr;Owner) 
 
-​	{breed} NOT NULL
+NOT NULL(breed)
 
 **Breeds**(<u>name</u>)
 

@@ -15,7 +15,8 @@ template:inverse
 ## Data Definition Language
 
 <a href="http://www.fe.up.pt/~arestivo">André Restivo</a>
-.small[(minor tweaks for SQLite by [João Rocha da Silva](https://silvae86.github.com))]
+
+.footnote[(revised for SQLite by [João Rocha da Silva](https://silvae86.github.com))]
 
 ---
 name: index
@@ -164,7 +165,6 @@ class: center, middle
 | TEXT          | The value is a text string, stored using the database encoding (UTF-8, UTF-16BE or UTF-16LE). |
 | BLOB          | The value is a blob of data, stored exactly as it was input. |
 
-
 ---
 class:center, middle
 template: inverse
@@ -219,6 +219,8 @@ datetime(timestring, modifier, modifier, ...) -- Current time as "YYYY-MM-DD HH:
 
 julianday(timestring, modifier, modifier, ...) -- Returns the Julian day - the number of days since noon in Greenwich on November 24, 4714 B.C.
 strftime(format, timestring, modifier, modifier, ...) -- Returns the date formatted according to the format string specified as the first argument
+SELECT strftime('%s','now'); -- get the number of seconds since unix timestamp (1 Jan 1970)
+
 ```
 
 * The `modifier` arguments make it possible to perform computations over the value stored in `timestring`.
@@ -241,12 +243,11 @@ template:inverse
 | NNN years        | localtime      |
 |                  | utc            |
 
-
 ---
 
 template:inverse
 
-# Computing dates
+# Working with dates
 
 ```sql
 --Compute the current date.
@@ -257,10 +258,13 @@ SELECT date('now','start of month','+1 month','-1 day');
 
 --Compute the number of days since the signing of the US Declaration of Independence.
 SELECT julianday('now') - julianday('1776-07-04');
+--Checking if one date is greater than another (without accounting for the time, because julianday gives a number of days)
+CHECK (julianday(date1) > julianday(date2))
+--Checking if one date/time is greater than another; comparison up to the second
+CHECK (strftime('%s', date1) > strftime('%s', date2))
 ```
 
  More examples [here](https://www.sqlite.org/lang_datefunc.html).
-
 
 ---
 

@@ -9,8 +9,7 @@ navorder: 1
 
 ### Teaching
 
-I teach courses in both the Information Science and Informatics Engineering at FEUP. I focus mostly on web development,
-database and semantic web topics.
+I teach courses in both the Information Science and Informatics Engineering at FEUP. I focus mostly on web development, database and semantic web topics.
 
 #### 2019/2020
 
@@ -22,27 +21,16 @@ database and semantic web topics.
 
 
 
-| **Topic**  | Exercises                                                    | Solutions |
-| ---------- | ------------------------------------------------------------ | --------- |
-| <u>UML</u> |                                                              |           |
-|            | [Class Diagrams](/teaching/exercises/uml/class/)             | Link      |
-|            | [Mapping Class Diagrams &rarr; Relational Model](/teaching/exercises/uml/conversion_to_relational/) | Link      |
+| **Topic**  | Exercises                                                    | Solutions                                                 |
+| ---------- | ------------------------------------------------------------ | --------------------------------------------------------- |
+| <u>UML</u> |                                                              |                                                           |
+|            | [Class Diagrams](/teaching/exercises/uml/class/)             | [Link](/teaching/solutions/uml/class/)                    |
+|            | [Mapping Class Diagrams &rarr; Relational Model](/teaching/exercises/uml/conversion_to_relational/) | [Link](/teaching/solutions/uml/conversion_to_relational/) |
+| <u>SQL</u> |                                                              |                                                           |
+|            | SQL - How to create a database in SQLite                     | [Tutorial](/teaching/exercises/sql/sqlite/)               |
+|            | SQL - Data Modelling Language                                | Link                                                      |
+|            | SQL - Data Querying Language                                 | Link                                                      |
 
 
 
-<!--
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
-
--->

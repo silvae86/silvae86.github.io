@@ -31,13 +31,18 @@ NOT NULL(time)
 
 **Owners**(<u>id</u>, name, person, address, phone_no)
 
+NOT NULL(name)
+
 **Physicians**(<u>id</u>, name, person, address, phone_no)
+
+NOT NULL(name)
 
 ## Auto Repair Shop
 
 
-
 **Persons**(<u>id</u>, name, address)
+
+NOT NULL(name)
 
 **Employees**(<u>id</u>&rarr;Person)
 
@@ -45,7 +50,7 @@ NOT NULL(time)
 
 **Services**(<u>id</u>, car_km, hours_spent, adm_date, finish_date, employee &rarr; Employee, car &rarr;Car)
 
-CHECK(finish_date >= adm_date)
+CHECK(strftime('%s', finish_date) >= strftime('%s', adm_date))
 
 CHECK(hours_spent >=1)
 
@@ -55,11 +60,13 @@ NOT NULL(car)
 
 **Cars**(<u>plate</u>, color)
 
+NOT NULL(car)
+
 **Models**(<u>id</u>, description, make &rarr;Make) 
 
 NOT NULL (make)
 
-`Comment: There are multiple generations of 'Toyota Corolla', which can have the same name but are effectively different models` 
+`Comment: This considers that model names are not unique. For example, there are multiple generations of 'Toyota Corolla', which can have the same name but are effectively different models`. You could also consider the model names to be unique. In that case, the description could be the primary key. Any tables referencing this one would need to have their foreign keys updated as well.
 
 **Makes**(<u>name</u>)
 
@@ -73,17 +80,28 @@ NOT NULL (serial_no)
 
 **PartTypes**(<u>id</u>, current_price)
 
+NOT NULL(current_price)
+
+CHECK(current_price > 0)
+
 **Compatibilities**(<u>car_model</u>&rarr;Model, <u>part_type</u>&rarr;PartType)
 
 ## Restaurant
 
 **Persons**(<u>id</u>, name, address)
 
-
+NOT NULL(name)
 
 **Waiters**(<u>id</u>&rarr;Person, identifier, phone_number)
 
 `Comment: Why 2 Ids? Identifier is what will show up on a waiter's badge (has a meaning), while the id is the internal identifier of the record, i.e. a surrogate (i.e. generated, and without meaning) key`
+
+NOT NULL(identifier)
+
+NOT NULL(phone_number)
+
+UNIQUE(identifier)
+
 
 **Clients**(<u>id</u>&rarr;Person, tax_id)
 
@@ -100,7 +118,6 @@ NOT NULL (served_by)
 NOT NULL (date)
 
 NOT NULL (start_time)
-
 
 
 **Dishes**(<u>identifier</u>, name)
@@ -129,7 +146,7 @@ CHECK(
 
 CHECK(meas_unit IS NOT NULL)
 
-CHECK(qtt_stock >=0)
+CHECK(qtt_stock >= 0)
 
 
 
@@ -153,9 +170,9 @@ CHECK(capacity > 0)
 
 
 
-**Couriers**(<u>id</u>, name, vat_no, name, phone_num)
+**Couriers**(<u>id</u>, name, vat_no, phone_num)
 
-**Customers**(<u>id</u>, vat_no ,name, phone_num, address, closest_delivery_center &rarr; DeliveryCenter)
+**Customers**(<u>id</u>, vat_no,name, phone_num, address, closest_delivery_center &rarr; DeliveryCenter)
 
 `Comment: a complete and disjoint generalization means that we can omit the Person relation.`
 
@@ -179,6 +196,8 @@ CHECK(date_time_of_arrival >= date_time_of_departure)
 
 NOT NULL(line)
 
+NOT NULL(price)
+
 CHECK(price > 0)
 
 
@@ -187,11 +206,13 @@ CHECK(price > 0)
 
 NOT NULL(type)
 
-
+UNIQUE(type)
 
 **Components**(<u>code</u>, price, component_type &rarr; ComponentTypes)
 
 NOT NULL(component_type)
+
+NOT NULL(price)
 
 CHECK(price > 0)
 
@@ -199,12 +220,14 @@ CHECK(price > 0)
 
 **PieceComponents**(<u>piece</u> &rarr; Piece, <u>component</u> &rarr; Component, quantity)
 
+
+NOT NULL(quantity)
+
 CHECK(quantity > 0)
 
 
 
 **ComponentTypes**(<u>name</u>)
-
 
 
 **Orders**(<u>number</u>, date)

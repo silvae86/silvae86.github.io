@@ -8,7 +8,8 @@ crumbtitle: SQL DDL Solutions (SQLite)
 ## From Class
 
 [Veterinary Clinic (written by hand)](veterinary_clinic.sql)
-[Veterinary Clinic (dumped )](veterinary_clinic.gui,sql)
+
+[Veterinary Clinic (dumped from the SQLite GUI)](veterinary_clinic.gui,sql)
 
 ## Full solutions
 

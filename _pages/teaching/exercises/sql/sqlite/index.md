@@ -81,19 +81,7 @@ To create a database you must first navigate to the folder where sqlite3 is inst
 6. Type `sqlite3.exe` and press Enter.
 7. You will now be in the SQLite3 command line.
 
-## Creating your first database
-
-When you first run `sqlite3`, any changes will be saved in memory only. This means that if you close the window, **all changes will be lost**.
-
-![SQLite Transient Database](transient.png)
-
-You can see the list of all commands by typing `.help`:
-
-![SQLite Help](help.png)
-
 ## Useful commands
-
-
 
 | Command           | Description                                                  |
 | ----------------- | ------------------------------------------------------------ |
@@ -112,4 +100,137 @@ You can see the list of all commands by typing `.help`:
 | **.show**         | Show current values for various settings                     |
 | **.show**         | List names of tables                                         |
 
+## Creating your first database
 
+When you first run `sqlite3`, any changes will be saved in memory only. This means that if you close the window, **all changes will be lost**.
+
+![SQLite Transient Database](transient.png)
+
+You can see the list of all commands by typing `.help`:
+
+![SQLite Help](help.png)
+
+### Executing SQL statements
+
+There are two main ways of running SQL in the prompt; the first is to write code directly, the other is to create a `.sql` file and `read` it in the prompt.
+
+Here is a piece of code to get you started:
+
+```sql
+--will present the results in a neat organized table, but will take more horizontal space. Default mode is 'list', which is more compact but harder to read
+.mode columns
+--shows headers at the top of the columns when running queries
+.headers on 
+-- delete table T if it exists (good for testing purposes)
+drop table if exists T;
+--create table T
+create table T (A text, B text);
+-- Insert Hello World into table T
+insert into T values ('Hello,', 'world!');
+-- Get all rows of table T
+select * from T;
+```
+
+You should see this result:
+
+![SQLite Hello World](hello_world.png)
+
+### Reading from a file
+
+Another, more powerful way is to save the sequence of commands and statements in a text file (say, “[helloworld.sql](helloworld.sql)”), thus creating a script that you can run via .read. This works as long as you have the sql file in the same folder as you are running sqlite3:
+
+```sql
+.read helloworld.sql
+````
+
+![SQLite Read Command Result](read.png)
+
+## Saving to a file
+
+In any case, you can later save the SQL statements that you’ve used both to create the database (CREATE TABLE statements) and to populate its tables (INSERT INTO statements). For that, you can use the `.schema`` (for the schema creation statements only) or the `.dump` (for both creation and insertion statements) commands:
+
+```sql
+.schema
+```
+
+![SQLite Dump Command Result](schema.png)
+
+```sql
+.dump
+```
+
+![SQLite Dump Command Result](dump.png)
+
+If you want to save these statements into a file you can later read from (using the `.read` command as shown above), all you need to do is to use the `.output` command to redirect any output to a file:
+
+```sql
+.output helloworld.sql
+.dump
+```
+
+The contents of the “helloworld.sql” file should be the statements listed above.
+
+## Keeping the Database state in a file
+
+The state of the database can be maintained persistently in a file, avoiding the need to store SQL statements that can be later read (using .read as shown above).
+In order to do that, you simply need to add an argument to the sqlite3 application: the name of the database to use.
+
+```shell
+sqlite hw.db
+```
+
+If the file provided as an argument to sqlite3 does not exist, SQLite will create it automatically. Any changes made in the database are persistently stored in that file, without the need for specific save commands (such as .dump).
+The following example illustrates the creation and use of a persistent database:
+
+![SQLite Persisted Database](persisted_db.png)
+
+An alternative to using the database file name as an argument to sqlite3 is to use the .open command within SQLite. This still ensures that any changes to the database are automatically stored in the persistent file.
+Similarly, if no file was provided as an argument to sqlite3 you can use the .save command to save the database to a file. Notice however that this does not trigger automatic saves of any additional changes that are made in the database.
+
+## Pragma Statements
+
+The [PRAGMA statement](https://www.sqlite.org/pragma.html) is an SQL extension specific to SQLite and used to modify the operation of the SQLite library or to query the SQLite library for internal (non-table) data.
+
+### Syntax
+
+A PRAGMA statement is formed by the keyword PRAGMA followed by the actual “pragma” that is being defined. A pragma has a name and can take one argument. The argument may be in parentheses or separated from the pragma name by an equal sign. The two syntaxes yield identical results. In many pragmas, the argument is a Boolean and can be one of: 1/yes/true/on; 0/no/false/off.
+
+### PRAGMA foreign_keys
+
+This is a very important pragma, as it may be used to set the enforcement of [foreign key constraints](https://www.sqlite.org/foreignkeys.html).
+
+Consider the following SQL statements, which violate a foreign key constraint:
+
+```sql
+create table T1 (
+	Id NUMBER PRIMARY KEY,
+	Id2 NUMBER REFERENCES T2(Id)
+);
+create table T2 (
+	Id NUMBER PRIMARY KEY
+);
+
+insert into T2 values (111);
+insert into T2 values (222);
+insert into T1 values (1,111);
+insert into T1 values (2,333);
+```
+
+Since in the current version of SQLite foreign key constraint enforcement is disabled by default, loading these statements from a file, say [fk.sql](fk.sql), does not raise any error:
+
+![SQLite Disabled Foreign Key Result](no_fks.png)
+
+If we turn on foreign key constraint enforcement, we get an error detecting the constraint violation:
+
+![SQLite Enabled Foreign Key Result](fks_on.png)
+
+## References and Tutorials
+
+- SQLite 
+	- [home page](https://www.sqlite.org/index.html).
+	- [documentation](https://www.sqlite.org/docs.html).
+- SQLite Studio Quickstart [page](https://sqlitestudio.pl/index.rvt).
+- Tutorials
+	- [SQLite Tutorial](https://www.sqlitetutorial.net)
+	- [SQLite Tutorial by TutorialsPoint](https://www.tutorialspoint.com/sqlite/)
+- SQLite quickstart guide by [Carla Lopes](http://carlalopes.com).

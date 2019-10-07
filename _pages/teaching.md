@@ -27,7 +27,7 @@ I teach courses in both the Information Science and Informatics Engineering at F
 |            | [Class Diagrams](/teaching/exercises/uml/class/)             | [Link](/teaching/solutions/uml/class/)                    |
 |            | [Mapping Class Diagrams &rarr; Relational Model](/teaching/exercises/uml/conversion_to_relational/) | [Link](/teaching/solutions/uml/conversion_to_relational/) |
 | <u>SQL</u> |                                                              |                                                           |
-|            | SQL - How to create a database in SQLite                     | [Tutorial](/teaching/exercises/sql/sqlite/)               |
+|            | [SQL - How to use SQLite](/teaching/exercises/sql/sqlite/)                     | [Tutorial](/teaching/exercises/sql/sqlite/)               |
 |            | SQL - Data Modelling Language                                | Link                                                      |
 |            | SQL - Data Querying Language                                 | Link                                                      |
 

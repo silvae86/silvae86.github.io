@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Creating a database in SQLite
+title: How to install and use SQLite
 permalink: /teaching/exercises/sql/sqlite/
-crumbtitle: Creating a database in SQLite
+crumbtitle: How to install and use SQLite
 ---
 
 ## About 

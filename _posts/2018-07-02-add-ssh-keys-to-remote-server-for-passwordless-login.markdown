@@ -97,5 +97,12 @@ Restart the sshd service
 sudo service ssh restart
 {% endhighlight %}
 
+# Establish a tunnel connection
+
+{% highlight shell %}
+ssh -L 5901:127.0.0.1:5901 -C -N -l username server_address
+{% endhighlight %}
+
+
 #### Fair warning!
 Remember, if others also get these keys and configuration file they can log into your server!

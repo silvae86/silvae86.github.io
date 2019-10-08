@@ -99,10 +99,17 @@ sudo service ssh restart
 
 # Establish a tunnel connection
 
+With username + password:
+
 {% highlight shell %}
 ssh -L 5901:127.0.0.1:5901 -C -N -l username server_address
 {% endhighlight %}
 
+With with a public key configuration:
+
+{% highlight shell %}
+ssh -R 5901:127.0.0.1:5901 -C -N dendro-builder.fe.up.pt -v
+{% endhighlight %}
 
 #### Fair warning!
 Remember, if others also get these keys and configuration file they can log into your server!

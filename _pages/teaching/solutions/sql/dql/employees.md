@@ -92,7 +92,7 @@ SELECT name, SUM(hours)
 FROM project LEFT JOIN works ON id = id_pro
 GROUP BY id
 ```
-## How many hours does each employee spends on projects every week? (employee_name, hours)
+#### How many hours does each employee spends on projects every week? (employee_name, hours)
 
 ```sql
 SELECT name, SUM(hours)
@@ -196,3 +196,5 @@ WHERE employee.id_dep = project.id_dep AND
       )
 GROUP BY employee.id
 ```
+
+*(Credits: André Restivo https://web.fe.up.pt/~arestivo)*

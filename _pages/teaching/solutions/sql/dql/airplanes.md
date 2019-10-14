@@ -185,3 +185,5 @@ FROM model LEFT JOIN plane USING (modelcod)
 GROUP BY make, version
 ORDER BY COUNT(planecod) DESC
 ```
+
+*(Credits: André Restivo https://web.fe.up.pt/~arestivo)*

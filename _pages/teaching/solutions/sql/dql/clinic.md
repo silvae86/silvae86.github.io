@@ -1,77 +1,129 @@
--- credits: André Restivo https://web.fe.up.pt/~arestivo
+---
+layout: page
+title: Clinic SQL Solutions
+permalink: /teaching/solutions/sql/dql/clinic/
+crumbtitle: Clinic
+---
 
-CREATE TABLE patient (
-	code varchar PRIMARY KEY,
-	name varchar,
-	address varchar
-);
- 
-CREATE TABLE physician (
-	number varchar PRIMARY KEY,
-	name varchar,
-	address varchar
-);
- 
-CREATE TABLE condition (
-	ref integer PRIMARY KEY,
-	designation varchar
-);
- 
-CREATE TABLE appointment (
-	num integer PRIMARY KEY,
-	date date,
-	room integer,
-	number varchar REFERENCES physician,
-	code varchar REFERENCES patient
-);
- 
-CREATE TABLE diagnosed (
-	ref integer REFERENCES condition,
-	num integer REFERENCES appointment,
-	PRIMARY KEY (ref, num)
-);
- 
-INSERT INTO physician VALUES ('99030', 'Luca Moore', '16 Victoria Road');
-INSERT INTO physician VALUES ('12312', 'Tommy Cooke', '47 Bootham Terrace');
-INSERT INTO physician VALUES ('43642', 'Joshua Bailey', '95 Nottingham Rd');
- 
-INSERT INTO patient VALUES ('12345', 'Xander Gibbs', '45 Petworth Rd');
-INSERT INTO patient VALUES ('45643', 'Tatiana Barber', '16 Vicar Lane');
-INSERT INTO patient VALUES ('23613', 'Amelie Harrison', '32 Thompsons Lane');
-INSERT INTO patient VALUES ('74927', 'Kathryn Savege', '67 Cosworth Rd');
- 
-INSERT INTO appointment VALUES (456, '2007-01-01', 190, '99030', '12345');
-INSERT INTO appointment VALUES (457, '2007-01-01', 187, '99030', '12345');
-INSERT INTO appointment VALUES (458, '2007-01-01', 190, '12312', '23613');
-INSERT INTO appointment VALUES (459, '2007-01-01', 190, '99030', '45643');
-INSERT INTO appointment VALUES (460, '2007-01-01', 187, '99030', '45643');
-INSERT INTO appointment VALUES (461, '2007-01-01', 187, '12312', '12345');
-INSERT INTO appointment VALUES (462, '2007-01-01', 204, '12312', '23613');
-INSERT INTO appointment VALUES (463, '2007-01-01', 187, '99030', '45643');
-INSERT INTO appointment VALUES (464, '2007-01-02', 190, '12312', '12345');
-INSERT INTO appointment VALUES (465, '2007-01-02', 190, '12312', '45643');
-INSERT INTO appointment VALUES (466, '2007-01-03', 190, '43642', '12345');
-INSERT INTO appointment VALUES (467, '2007-01-03', 190, '99030', '12345');
-INSERT INTO appointment VALUES (468, '2007-01-03', 190, '43642', '74927');
- 
-INSERT INTO condition VALUES (1, 'Wizard Plague');
-INSERT INTO condition VALUES (2, 'Arachnid Hepatitis');
-INSERT INTO condition VALUES (3, 'Anxious Sleepwalking');
- 
-INSERT INTO diagnosed (num, ref) VALUES (456, 1);
-INSERT INTO diagnosed (num, ref) VALUES (456, 2);
-INSERT INTO diagnosed (num, ref) VALUES (457, 2);
-INSERT INTO diagnosed (num, ref) VALUES (457, 3);
-INSERT INTO diagnosed (num, ref) VALUES (458, 3);
-INSERT INTO diagnosed (num, ref) VALUES (459, 2);
-INSERT INTO diagnosed (num, ref) VALUES (460, 2);
-INSERT INTO diagnosed (num, ref) VALUES (460, 3);
-INSERT INTO diagnosed (num, ref) VALUES (460, 1);
-INSERT INTO diagnosed (num, ref) VALUES (461, 2);
-INSERT INTO diagnosed (num, ref) VALUES (462, 3);
-INSERT INTO diagnosed (num, ref) VALUES (463, 1);
-INSERT INTO diagnosed (num, ref) VALUES (464, 2);
-INSERT INTO diagnosed (num, ref) VALUES (464, 3);
-INSERT INTO diagnosed (num, ref) VALUES (465, 1);
-INSERT INTO diagnosed (num, ref) VALUES (466, 3);
-INSERT INTO diagnosed (num, ref) VALUES (467, 2);
+1. List the physicians working in the clinic? (name)
+
+```sql
+SELECT name
+FROM physician
+```
+
+2. List the names and addresses of the patients? (name, address)
+
+```sql
+SELECT name, address
+FROM patient
+```
+
+3. List the dates of all appointments of patient 12345? (date)
+
+```sql
+SELECT DISTINCT date
+FROM appointment
+WHERE code = '12345'
+```
+
+4. What are the existing conditions in the database in alphabetical order? (designation)
+
+```sql
+SELECT designation
+FROM condition
+ORDER BY designation
+```
+
+5. What patients were seen on January 1, 2007? (number, name)
+
+```sql
+SELECT DISTINCT code, name
+FROM appointment JOIN patient USING (code)
+WHERE date = '2007-01-01'
+```
+
+6. What conditions were diagnosed in appointment number 456? (designation)
+
+```sql
+SELECT designation
+FROM diagnosed JOIN condition USING (ref)
+WHERE num = 456
+```
+
+7. How many appointments took place on January 1, 2007? (number)
+
+```sql
+SELECT COUNT(*)
+FROM appointment
+WHERE date = '2007-01-01'
+```
+
+8. How many times was each room used? (room, number)
+
+```sql
+SELECT room, COUNT(*)
+FROM appointment
+GROUP BY room
+```
+
+9. How many times was each room used by the physician with number 99030? (room, number)
+
+
+10. How many times was each room used by the physician Luca Moore? (room, number)
+
+```sql
+SELECT room, COUNT(*)
+FROM appointment
+WHERE number = '99030'
+GROUP BY room
+```
+
+11. What rooms were used more than twice on 1 January 2007? (room)
+
+```sql
+SELECT room
+FROM appointment
+WHERE date = '2007-01-01'
+GROUP BY room
+HAVING COUNT(*) > 2
+```
+
+12. What are the three most used rooms in that same day? (room)
+
+```sql
+SELECT room
+FROM appointment
+WHERE date = '2007-01-01'
+GROUP BY room
+HAVING COUNT(*) IN (
+  SELECT COUNT(*)
+  FROM appointment
+  WHERE date = '2007-01-01'
+  GROUP BY room
+  ORDER BY COUNT(*) DESC
+  LIMIT 3
+)
+```
+
+13. What conditions have been diagnosed for patient 12345? (designation)
+
+```sql
+SELECT DISTINCT designation
+FROM appointment JOIN diagnosed USING(num) JOIN condition USING (ref)
+WHERE code = '12345'
+```
+
+14. What patients have been diagnosed conditions that have also been diagnosed for patient 12345? (name)
+
+```sql
+SELECT DISTINCT name
+FROM appointment JOIN diagnosed USING(num) JOIN patient USING (code)
+WHERE ref IN (
+  SELECT ref
+  FROM appointment JOIN diagnosed USING(num)
+  WHERE code = '12345'
+)
+```
+
+*(Credits: André Restivo https://web.fe.up.pt/~arestivo)*

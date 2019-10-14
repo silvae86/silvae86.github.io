@@ -5,7 +5,7 @@ permalink: /teaching/solutions/sql/ddl/
 crumbtitle: SQL DDL Solutions (SQLite)
 ---
 
-## From Class
+## Notes From Classes
 
 [Veterinary Clinic (written by hand)](veterinary_clinic.sql)
 

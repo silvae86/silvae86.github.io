@@ -5,23 +5,29 @@ permalink: /teaching/exercises/sql/dql/clinic/
 crumbtitle: Clinic
 ---
 
+## Support
 
-1. What riders belong to the team ‘Os Velozes’? (name)
+[SQLite3 Guide](/teaching/exercises/sql/sqlite/)
 
-2. What rider won the ‘Porto - Aveiro’ stage? (name)
-	  
-3. What riders ciclistas raced the ‘Coimbra - Lisboa’ stage and what was their final position? Order the answer by their position. (name, position)
 
-4. How many riders are there in each team? (team, total)
+## Script
 
-5. What is the total sum of times of each rider? (name, total)
+[Download Script Here](/teaching/exercises/sql/dql/scripts/clinic.sql)
 
-6. What team, or teams, has a smaller sum of its riders total times? (team)
+## Exercises
 
-7. What is the average time in each stage? (description, average)
+1. List the physicians working in the clinic? (name)
+2. List the names and addresses of the patients? (name, address)
+3. List the dates of all appointments of patient 12345? (date)
+4. What are the existing conditions in the database in alphabetical order? (designation)
+5. What patients were seen on January 1, 2007? (number, name)
+6. What conditions were diagnosed in appointment number 456? (designation)
+7. How many appointments took place on January 1, 2007? (number)
+8. How many times was each room used? (room, number)
+9. How many times was each room used by the physician with number 99030? (room, number)
+10. How many times was each room used by the physician Luca Moore? (room, number)
+11. What rooms were used more than twice on 1 January 2007? (room)
+12. What are the three most used rooms in that same day? (room)
+13. What conditions have been diagnosed for patient 12345? (designation)
+14. What patients have been diagnosed conditions that have also been diagnosed for patient 12345? (name)
 
-8. What stage, or stages, had the smaller average time? (description)
-
-9. What was the time difference between the first and second rider in each stage? (description, difference)
-  
-10. What stage had the biggest time difference between the first and second rider to finish it, what rider won that stage and with how much lead time. (description, name, difference).

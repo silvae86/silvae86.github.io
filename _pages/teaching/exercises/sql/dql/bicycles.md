@@ -5,6 +5,16 @@ permalink: /teaching/exercises/sql/dql/bicycles/
 crumbtitle: Bicycles
 ---
 
+## Support
+
+[SQLite3 Guide](/teaching/exercises/sql/sqlite/)
+
+
+## Script
+
+[Download Script Here](/teaching/exercises/sql/dql/scripts/bicycles.sql)
+
+## Exercises
 
 1. What riders belong to the team ‘Os Velozes’? (name)
 

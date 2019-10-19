@@ -97,7 +97,35 @@ Restart the sshd service
 sudo service ssh restart
 {% endhighlight %}
 
-# Establish a tunnel connection
+#### Fair warning!
+Remember, if others also get these keys and configuration file they can log into your server!
+
+## Tunnel connections
+
+Tunnel connections are really cool if you have a server running somewhere and you need to access that server as if it was running on your own computer!
+
+### Configuring the remote machine
+
+We need to configure the `sshd` service to enable TCP connections forwarding. Start by editing `/etc/ssh/sshd_config`
+
+{% highlight shell %}
+sudo vim /etc/ssh/sshd_config
+{% endhighlight %}
+
+Enable these row:
+
+{% highlight conf %}
+AllowTcpForwarding yes
+TCPKeepAlive yes
+{% endhighlight %}
+
+Restart the `sshd` service:
+
+{% highlight shell %}
+sudo service sshd restart
+{% endhighlight %}
+
+### Opening the tunnel
 
 With username + password:
 
@@ -108,8 +136,6 @@ ssh -L 5901:127.0.0.1:5901 -C -N -l username server_address
 With with a public key configuration:
 
 {% highlight shell %}
-ssh -R 5901:127.0.0.1:5901 -C -N dendro-builder.fe.up.pt -v
+ssh -L 5901:127.0.0.1:5901 -C -N dendro-builder.fe.up.pt -v
 {% endhighlight %}
 
-#### Fair warning!
-Remember, if others also get these keys and configuration file they can log into your server!

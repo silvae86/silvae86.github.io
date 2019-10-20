@@ -76,7 +76,7 @@ GROUP BY course.ref, year
 ```
 10) What was the higher grade, considering both exams, obtained in the SINF course? (grade)
 ```sql
-SELECT MAX(GREATEST(grade1, grade2))
+SELECT MAX(max(grade1, grade2))
 FROM enrollment JOIN
      course USING(ref)
 WHERE name = 'SINF'
@@ -88,8 +88,8 @@ FROM student JOIN
      enrollment USING (num) JOIN
      course USING(ref)
 WHERE course.name = 'SINF' AND
-      GREATEST(grade1, grade2) IN (
-        SELECT MAX(GREATEST(grade1, grade2))
+      max(grade1, grade2) IN (
+        SELECT MAX(max(grade1, grade2))
         FROM enrollment JOIN
              course USING(ref)
         WHERE name = 'SINF'

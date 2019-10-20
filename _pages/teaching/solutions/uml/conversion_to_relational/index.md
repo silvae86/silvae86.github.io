@@ -2,8 +2,10 @@
 layout: page
 title: Solutions for UML Class to Relational
 permalink: /teaching/solutions/uml/conversion_to_relational/
-crumbtitle: Solutions for UML Class to Relational exercises
+crumbtitle: UML Class to Relational exercises
 ---
+
+{% include info.html content="These are the solutions of the [UML Class to Relational exercises](/teaching/exercises/uml/conversion_to_relational) exercises. They should be used as the starting point for building SQL scripts for building each schema." %}
 
 ## Veterinary Clinic
 

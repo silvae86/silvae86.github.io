@@ -6,14 +6,14 @@ CREATE TABLE party (
 );
 
 CREATE TABLE municipality (
-  cod AUTOINCREMENT PRIMARY KEY,
+  cod INTEGER PRIMARY KEY AUTOINCREMENT,
   designation VARCHAR NOT NULL UNIQUE,            -- e.g. Porto 
   blank INTEGER DEFAULT 0 CHECK (blank >= 0),     -- Number of blank votes
   spoiled INTEGER DEFAULT 0 CHECK (spoiled >= 0)  -- Number of spoiled (null) votes
 );
 
 CREATE TABLE elector (
-  en AUTOINCREMENT PRIMARY KEY,                          -- Elector number
+  en INTEGER PRIMARY KEY AUTOINCREMENT,                          -- Elector number
   name VARCHAR NOT NULL,
   age INTEGER NOT NULL CHECK (age >= 18),
   gender CHAR(1) NOT NULL CHECK (gender IN ('M', 'F')),
@@ -23,7 +23,7 @@ CREATE TABLE elector (
 );
 
 CREATE TABLE candidate (
-  id AUTOINCREMENT PRIMARY KEY,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR NOT NULL,
   age INTEGER NOT NULL CHECK (age >= 18),
   gender CHAR(1) NOT NULL CHECK (gender IN ('M', 'F')),

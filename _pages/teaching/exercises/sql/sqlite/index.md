@@ -234,3 +234,11 @@ If we turn on foreign key constraint enforcement, we get an error detecting the 
 	- [SQLite Tutorial](https://www.sqlitetutorial.net)
 	- [SQLite Tutorial by TutorialsPoint](https://www.tutorialspoint.com/sqlite/)
 - SQLite quickstart guide by [Carla Lopes](http://carlalopes.com).
+
+### Miscellaneous scripts
+
+Running all .sql files in the current directory (only Mac or Linux):
+
+```shell
+for i in $(ls *.sql); do echo $i; cat $i | sqlite3; done
+```

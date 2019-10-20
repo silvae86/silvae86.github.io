@@ -12,12 +12,12 @@ CREATE TABLE vehicle (
 );
 
 CREATE TABLE spot (           -- represents a parking spot
-  number serial PRIMARY KEY,
+  number integer PRIMARY KEY AUTOINCREMENT,
   floor integer
 );
 
 CREATE TABLE parking (
-  ref serial PRIMARY KEY,
+  ref integer PRIMARY KEY AUTOINCREMENT,
   day date,                  -- the day in which the car parked
   entry time,                -- entry time
   exit time,                 -- exit time
@@ -79,84 +79,84 @@ INSERT INTO vehicle
   VALUES ('27-FM-62', 'Volkswagen', 1239);
 
 INSERT INTO spot
-  VALUES (DEFAULT, 1);
+  VALUES (NULL, 1);
 INSERT INTO spot
-  VALUES (DEFAULT, 1);
+  VALUES (NULL, 1);
 INSERT INTO spot
-  VALUES (DEFAULT, 1);
+  VALUES (NULL, 1);
 INSERT INTO spot
-  VALUES (DEFAULT, 1);
+  VALUES (NULL, 1);
 INSERT INTO spot
-  VALUES (DEFAULT, 1);
+  VALUES (NULL, 1);
 INSERT INTO spot
-  VALUES (DEFAULT, 1);
+  VALUES (NULL, 1);
 
 INSERT INTO spot
-  VALUES (DEFAULT, 2);
+  VALUES (NULL, 2);
 INSERT INTO spot
-  VALUES (DEFAULT, 2);
+  VALUES (NULL, 2);
 INSERT INTO spot
-  VALUES (DEFAULT, 2);
+  VALUES (NULL, 2);
 INSERT INTO spot
-  VALUES (DEFAULT, 2);
+  VALUES (NULL, 2);
 INSERT INTO spot
-  VALUES (DEFAULT, 2);
+  VALUES (NULL, 2);
 
 INSERT INTO spot
-  VALUES (DEFAULT, 3);
+  VALUES (NULL, 3);
 INSERT INTO spot
-  VALUES (DEFAULT, 3);
+  VALUES (NULL, 3);
 INSERT INTO spot
-  VALUES (DEFAULT, 3);
+  VALUES (NULL, 3);
 
 INSERT INTO spot
-  VALUES (DEFAULT, 4);
+  VALUES (NULL, 4);
 INSERT INTO spot
-  VALUES (DEFAULT, 4);
+  VALUES (NULL, 4);
 
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-01', '10:00', '12:41', 1, '27-FM-62');
+  VALUES (NULL, '2010-01-01', '10:00', '12:41', 1, '27-FM-62');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-01', '15:34', '18:45', 2, '27-FM-62');
+  VALUES (NULL, '2010-01-01', '15:34', '18:45', 2, '27-FM-62');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-01', '10:19', '22:42', 3, 'JS-12-34');
+  VALUES (NULL, '2010-01-01', '10:19', '22:42', 3, 'JS-12-34');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-01', '11:37', '18:15', 4, 'CP-53-73');
+  VALUES (NULL, '2010-01-01', '11:37', '18:15', 4, 'CP-53-73');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-01', '07:32', '09:41', 5, 'TC-59-99');
+  VALUES (NULL, '2010-01-01', '07:32', '09:41', 5, 'TC-59-99');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '10:45', '15:43', 1, '84-RM-65');
+  VALUES (NULL, '2010-01-02', '10:45', '15:43', 1, '84-RM-65');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '10:14', '12:36', 2, 'BS-87-16');
+  VALUES (NULL, '2010-01-02', '10:14', '12:36', 2, 'BS-87-16');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '09:49', '12:58', 3, '12-TC-16');
+  VALUES (NULL, '2010-01-02', '09:49', '12:58', 3, '12-TC-16');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '11:51', '14:34', 4, '58-TC-85');
+  VALUES (NULL, '2010-01-02', '11:51', '14:34', 4, '58-TC-85');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '10:33', '12:35', 5, 'MA-83-28');
+  VALUES (NULL, '2010-01-02', '10:33', '12:35', 5, 'MA-83-28');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '11:14', '16:34', 8, 'MT-43-32');
+  VALUES (NULL, '2010-01-02', '11:14', '16:34', 8, 'MT-43-32');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '17:44', '18:54', 12, '43-MT-12');
+  VALUES (NULL, '2010-01-02', '17:44', '18:54', 12, '43-MT-12');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-02', '10:22', '14:43', 13, '54-MT-97');
+  VALUES (NULL, '2010-01-02', '10:22', '14:43', 13, '54-MT-97');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '09:01', '14:37', 1, '27-FM-62');
+  VALUES (NULL, '2010-01-03', '09:01', '14:37', 1, '27-FM-62');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '13:45', '21:11', 2, '84-RM-65');
+  VALUES (NULL, '2010-01-03', '13:45', '21:11', 2, '84-RM-65');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '08:23', '15:55', 6, 'CP-53-73');
+  VALUES (NULL, '2010-01-03', '08:23', '15:55', 6, 'CP-53-73');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '11:53', '14:11', 7, 'MP-11-11');
+  VALUES (NULL, '2010-01-03', '11:53', '14:11', 7, 'MP-11-11');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '06:46', '08:26', 8, '12-TC-16');
+  VALUES (NULL, '2010-01-03', '06:46', '08:26', 8, '12-TC-16');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '09:39', '17:15', 10, 'MA-83-28');
+  VALUES (NULL, '2010-01-03', '09:39', '17:15', 10, 'MA-83-28');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '07:25', '08:12', 11, '43-MT-12');
+  VALUES (NULL, '2010-01-03', '07:25', '08:12', 11, '43-MT-12');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '09:16', '11:21', 12, '43-MT-12');
+  VALUES (NULL, '2010-01-03', '09:16', '11:21', 12, '43-MT-12');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '11:21', '13:42', 13, '34-JS-65');
+  VALUES (NULL, '2010-01-03', '11:21', '13:42', 13, '34-JS-65');
 INSERT INTO parking
-  VALUES (DEFAULT, '2010-01-03', '14:47', '18:12', 14, '34-JS-65');
+  VALUES (NULL, '2010-01-03', '14:47', '18:12', 14, '34-JS-65');

@@ -3,7 +3,8 @@
 CREATE TABLE department (
   id integer PRIMARY KEY,      -- department id
   name varchar NOT NULL UNIQUE,-- department name
-  id_dir integer               -- department director employee id 
+  id_dir integer,               -- department director employee id 
+  FOREIGN KEY (id_dir) REFERENCES employee
 );
  
 CREATE TABLE employee (
@@ -13,10 +14,6 @@ CREATE TABLE employee (
   id_dep integer REFERENCES department NOT NULL,-- the department where he works
   id_sup integer REFERENCES employee             -- his superior
 );
- 
--- this foreign key has to be created separately due to a circular dependency
-ALTER TABLE department ADD CONSTRAINT dir_dep_fk 
-FOREIGN KEY (id_dir) REFERENCES employee ON DELETE SET NULL;
  
 CREATE TABLE project (
   id integer PRIMARY KEY,       -- project id
@@ -31,11 +28,11 @@ CREATE TABLE works (
   PRIMARY KEY (id_emp, id_pro)
 );
  
-INSERT INTO department VALUES (1, 'Logistics');
-INSERT INTO department VALUES (2, 'Transports');
-INSERT INTO department VALUES (3, 'Cleaning');
-INSERT INTO department VALUES (4, 'Human Resources');
-INSERT INTO department VALUES (5, 'Informatics');
+INSERT INTO department VALUES (1, 'Logistics', NULL);
+INSERT INTO department VALUES (2, 'Transports', NULL);
+INSERT INTO department VALUES (3, 'Cleaning', NULL);
+INSERT INTO department VALUES (4, 'Human Resources', NULL);
+INSERT INTO department VALUES (5, 'Informatics', NULL);
  
 INSERT INTO employee VALUES (1, 'John'     , 1500, 1, NULL);
 INSERT INTO employee VALUES (2, 'Mike'     , 1200, 1, 1);

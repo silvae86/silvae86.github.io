@@ -2,7 +2,7 @@
 
 -- Different kinds of fish
 CREATE TABLE fish (
-  ref AUTOINCREMENT PRIMARY KEY,
+  ref INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR NOT NULL UNIQUE,         -- name of the species
   average_weight NUMERIC(4,1) NOT NULL, -- average weight in kg
   price NUMERIC(3,1) NOT NULL           -- price on the market per kg
@@ -10,7 +10,7 @@ CREATE TABLE fish (
 
 -- Boats on the fleet
 CREATE TABLE boat (
-  id AUTOINCREMENT PRIMARY KEY,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR NOT NULL,                -- name of the boat
   max_weight INTEGER NOT NULL,          -- max weight of fish it can carry
   crew INTEGER NOT NULL,                -- max number of fishermen
@@ -19,7 +19,7 @@ CREATE TABLE boat (
 
 -- Fishermen
 CREATE TABLE fisherman (
-  cod AUTOINCREMENT PRIMARY KEY,
+  cod INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR NOT NULL,                -- name of the fisherman
   city VARCHAR NOT NULL,                -- city of origin
   age INTEGER NOT NULL                  -- age of the fisherman
@@ -27,7 +27,7 @@ CREATE TABLE fisherman (
 
 -- Fishing trips
 CREATE TABLE trip (
-  num AUTOINCREMENT PRIMARY KEY,
+  num INTEGER PRIMARY KEY AUTOINCREMENT,
   date DATE NOT NULL,                   -- date of the trip
   time TIME NOT NULL,                   -- time of departure
   duration INTEGER NOT NULL,            -- duration in hours

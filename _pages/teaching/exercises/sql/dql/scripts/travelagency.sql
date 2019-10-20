@@ -1,5 +1,4 @@
 -- credits: André Restivo https://web.fe.up.pt/~arestivo
-
 CREATE TABLE trip (
     day DATE PRIMARY KEY,
     size INTEGER NOT NULL -- how many people
@@ -8,7 +7,8 @@ CREATE TABLE trip (
 CREATE TABLE country (
     name CHARACTER VARYING PRIMARY KEY,
     language CHARACTER VARYING,
-    capital CHARACTER VARYING
+    capital CHARACTER VARYING,
+    FOREIGN KEY (capital) REFERENCES city(name)
 );
 
 CREATE TABLE city (
@@ -73,6 +73,3 @@ INSERT INTO stop VALUES ('Porto', '2008-03-02', 3);
 INSERT INTO stop VALUES ('Brazilia', '2007-01-01', 3);
 INSERT INTO stop VALUES ('Rio de Janeiro', '2007-01-01', 6);
 INSERT INTO stop VALUES ('Washington', '2007-01-01', 2);
-
-ALTER TABLE ONLY country
-    ADD CONSTRAINT "country_city_fk" FOREIGN KEY (capital) REFERENCES city(name);

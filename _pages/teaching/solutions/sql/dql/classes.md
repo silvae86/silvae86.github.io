@@ -82,6 +82,9 @@ FROM enrollment JOIN
 WHERE name = 'SINF'
 ```
 11) Who got that grade? (num, name)
+
+Original solution:
+
 ```sql
 SELECT num, student.name
 FROM student JOIN
@@ -95,4 +98,129 @@ WHERE course.name = 'SINF' AND
         WHERE name = 'SINF'
       )
 ```
+
+2019/2020 Solutions:
+
+```sql
+-- Who got that grade? (num, name)
+
+select student.num, student.name as name, grade1, grade2, course.name
+from enrollment
+join course on course.ref = enrollment.ref
+join student on enrollment.num = student.num
+where 
+course.name="SINF"
+and 
+(
+	grade1 =
+		(
+			select max( max(e1.grade1), max(e1.grade2))
+			from enrollment e1
+			join course c1
+			on e1.ref = c1.ref
+			where c1.name = "SINF"
+		)
+	or 
+	grade2 =
+		(
+			select max( max(e2.grade1), max(e2.grade2))
+			from enrollment e2
+			join course c2
+			on e2.ref = c2.ref
+			where c2.name = "SINF"
+		)
+);
+```
+
+or
+
+```sql
+-- Who got that grade? (num, name)
+-- Credits for the query fix: Inês Soares (2019/2020 Student)
+-- (Uses Views)
+
+DROP VIEW IF EXISTS max_grade_sinf;
+CREATE VIEW max_grade_sinf AS
+	SELECT MAX(MAX(grade1), MAX(grade2)) as grade
+		FROM
+			enrollment
+			JOIN course
+			ON enrollment.ref = course.ref
+			WHERE course.name = 'SINF';
+
+SELECT student.num, student.name
+FROM
+	enrollment
+	JOIN course
+	ON enrollment.ref = course.ref
+	JOIN student
+	ON enrollment.num = student.num
+	JOIN max_grade_sinf
+	ON (grade1 = grade OR grade2 = grade)
+	WHERE course.name = 'SINF';
+```
+
+or (ridiculously long query, just for laughs)
+
+```sql
+-- Who got that grade? (num, name)
+-- "The copy-paste train"
+
+select *
+from 
+(
+	select student.num, student.name as name, grade1, grade2
+	from enrollment e1
+	join course on course.ref=e1.ref
+	join student on e1.num=student.num
+	where
+	course.name = 'SINF'
+	and grade1 is not null and grade1 = ( 
+		select max(grade)
+		from 
+		(
+			select grade1 as grade
+			from enrollment e2
+			join course c2
+			on e2.ref=c2.ref
+			where c2.name = 'SINF'
+
+			union
+
+			select grade2 as grade
+			from enrollment e3
+			join course c3
+			on e3.ref=c3.ref
+			where c3.name = 'SINF'
+		)
+	)
+	union
+	select student.num, student.name as name, grade1, grade2
+	from enrollment e2
+	join course on course.ref=e2.ref
+	join student on e2.num=student.num
+	where
+	course.name = 'SINF'
+	and grade2 is not null and grade2 = ( 
+		select max(grade)
+		from 
+		(
+			select grade1 as grade
+			from enrollment e2
+			join course c2
+			on e2.ref=c2.ref
+			where c2.name = 'SINF'
+
+			union
+
+			select grade2 as grade
+			from enrollment e3
+			join course c3
+			on e3.ref=c3.ref
+			where c3.name = 'SINF'
+		)
+	)
+);		
+```
+
 *(Credits: André Restivo https://web.fe.up.pt/~arestivo)*

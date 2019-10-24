@@ -11,7 +11,7 @@ crumbtitle: Travel Agency
 
 ## Script
 
-[Download Script Here](/teaching/exercises/sql/dql/scripts/employees.sql)
+[Download Script Here](/teaching/exercises/sql/dql/scripts/travel.sql)
 
 ## Exercises
 

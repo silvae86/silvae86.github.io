@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="785 147 553 485" width="553" height="485">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="785 147 553 485" width="553" height="485">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -28,10 +28,10 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="QualifiedAssociation" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="QualifiedAssociation" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>QualifiedAssociation</title>
     <g id="QualifiedAssociation: Layer 1">
       <title>Layer 1</title>
@@ -137,7 +137,7 @@
         </text>
       </g>
       <g id="Line_53">
-        <line x1="1028.5" y1="255.625" x2="1238.5" y2="255.625" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1028.5 255.625 L 1038.5 255.625 L 1133.5 255.625 L 1228.5 255.625 L 1238.5 255.625" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_56">
         <text transform="translate(884 571.0759)" fill="gray">
@@ -162,8 +162,8 @@
         <path d="M 1256 566.0759 C 1256 566.0759 1224.7319 562.2024 1210 535.0759 C 1203.8241 523.704 1201.7719 510.4873 1201.4712 498.97106" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_60">
-        <text transform="translate(1264 556.5759)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="15">Qualifier</tspan>
+        <text transform="translate(1263.836 557.3519)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x=".164" y="15">Qualifier</tspan>
         </text>
       </g>
       <g id="Group_62">
@@ -180,7 +180,7 @@
         </g>
       </g>
       <g id="Line_61">
-        <path d="M 1143 255.625 L 1143 245.625 L 1142.3828 218.6309 L 1142.3828 208.6309" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+        <path d="M 1143 255.625 L 1143 245.625 L 1142.6914 232.12795 L 1142.3828 218.6309 L 1142.3828 208.6309" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
       </g>
       <g id="Graphic_67">
         <rect x="785.86" y="250.6118" width="115.232" height="46.895996" fill="white"/>

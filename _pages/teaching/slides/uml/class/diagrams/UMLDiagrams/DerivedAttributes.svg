@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="1293 915 758 443" width="758" height="443">
+  <defs>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.9805" ascent="928.2227" descent="-235.83984" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Menlo-Bold"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="gray">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <font-face font-family="Menlo" font-size="12" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="-750" x-height="517" cap-height="714" ascent="957.0007" descent="-212.99744" font-style="italic" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue-Italic"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
+  </metadata>
+  <g id="DerivedAttributes" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>DerivedAttributes</title>
+    <g id="DerivedAttributes: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_64">
+        <g id="Graphic_66">
+          <rect x="1294.0158" y="1007.9528" width="189.75" height="69.2126" fill="white"/>
+          <rect x="1294.0158" y="1007.9528" width="189.75" height="69.2126" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1299.0158 1012.9528)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">description</tspan>
+          </text>
+        </g>
+        <g id="Graphic_65">
+          <rect x="1294.0158" y="977.9528" width="189.75" height="30" fill="white"/>
+          <rect x="1294.0158" y="977.9528" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1299.0158 982.9528)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="60.97656" y="15">Client</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_67">
+        <g id="Graphic_69">
+          <rect x="1547.7165" y="998.0315" width="189.75" height="89.05512" fill="white"/>
+          <rect x="1547.7165" y="998.0315" width="189.75" height="89.05512" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1552.7165 1003.0315)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">description</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="53">date</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="72">/total</tspan>
+          </text>
+        </g>
+        <g id="Graphic_68">
+          <rect x="1547.7165" y="968.0315" width="189.75" height="30" fill="white"/>
+          <rect x="1547.7165" y="968.0315" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1552.7165 973.0315)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="65.79297" y="15">Order</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Group_70">
+        <g id="Graphic_72">
+          <rect x="1294.0158" y="1192.2047" width="221.10236" height="115.98425" fill="white"/>
+          <rect x="1294.0158" y="1192.2047" width="221.10236" height="115.98425" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1299.0158 1197.2047)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">description</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="53">unit_price</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="72">date_added_to_catalog</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="91">/days_on_sale</tspan>
+          </text>
+        </g>
+        <g id="Graphic_71">
+          <rect x="1294.0158" y="1162.2047" width="221.10236" height="30" fill="white"/>
+          <rect x="1294.0158" y="1162.2047" width="221.10236" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1299.0158 1167.2047)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="71.83634" y="15">Product</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_73">
+        <line x1="1483.7658" y1="1027.5591" x2="1547.7165" y2="1027.5591" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_74">
+        <line x1="1642.5915" y1="1087.0866" x2="1515.1181" y2="1198.7008" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Group_77">
+        <g id="Graphic_79">
+          <rect x="1716.1654" y="1139.2429" width="170.07874" height="48" fill="white"/>
+          <rect x="1716.1654" y="1139.2429" width="170.07874" height="48" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1721.1654 1144.2429)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">quantity</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">sale_price</tspan>
+          </text>
+        </g>
+        <g id="Graphic_78">
+          <rect x="1716.1654" y="1107.4028" width="170.07874" height="31.84017" fill="white"/>
+          <rect x="1716.1654" y="1107.4028" width="170.07874" height="31.84017" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1721.1654 1112.4028)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="22.242496" y="15">OrderProduct</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Line_81">
+        <line x1="1716.1654" y1="1147.3228" x2="1577.936" y2="1143.6983" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_82">
+        <path d="M 1916.2205 1065.5457 C 1890.3548 1066.4438 1860.2887 1067.4322 1832.1667 1068.2222 C 1786.7023 1069.4995 1760.2612 1069.8669 1747.3673 1069.968" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_84">
+        <text transform="translate(1331.6142 920.7087)" fill="black">
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="11">{total = select sum(quantity * sale_price) from </tspan>
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="25">OrderProduct where order_id = order.id } </tspan>
+        </text>
+      </g>
+      <g id="Graphic_91">
+        <rect x="1522.2047" y="990.7087" width="19.632812" height="29" fill="white"/>
+        <text transform="translate(1527.2047 995.7087)" fill="black">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">*</tspan>
+        </text>
+      </g>
+      <g id="Graphic_92">
+        <rect x="1488.189" y="990.7087" width="19.632812" height="29" fill="white"/>
+        <text transform="translate(1493.189 995.7087)" fill="black">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_105">
+        <text transform="translate(1770.9843 1301.8504)" fill="black">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">    </tspan>
+        </text>
+      </g>
+      <g id="Graphic_106">
+        <text transform="translate(1525.7874 1221.1969)" fill="black">
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="11">{ days_on_sale = julianday(‘now’) - </tspan>
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="25">julianday(date_added_to_catalog) } </tspan>
+        </text>
+      </g>
+      <g id="Graphic_107">
+        <text transform="translate(1573.9764 1296.2331)" fill="gray">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="gray" x="0" y="15">days_on_sale</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" y="15"> </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="34">is a derived </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="52.448">attribute</tspan>
+        </text>
+      </g>
+      <g id="Line_108">
+        <path d="M 1568.9764 1295.1987 C 1554.3717 1289.9354 1539.053 1285.2 1524.8677 1282.2988" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_110">
+        <path d="M 1992.277 1039.0866 C 1990.1642 1036.0823 1987.15 1032.7314 1983 1029 C 1973.281 1020.2613 1958.8107 1010.7643 1943.6787 1001.9136" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_83">
+        <rect x="1916.2205" y="1039.0866" width="134.64567" height="48" fill="white"/>
+        <text transform="translate(1921.2205 1044.3626)" fill="gray">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="gray" x="0" y="15">total</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" y="15"> is a </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="34">derived attribute </tspan>
+        </text>
+      </g>
+      <g id="Graphic_111">
+        <rect x="1819.8425" y="915.7087" width="115.24905" height="104" fill="white"/>
+        <text transform="translate(1824.8425 921.0367)" fill="gray">
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="gray" x="0" y="15">total</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" y="15">’s </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="34">associated</tspan>
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="gray" y="34"> </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="53">constraint</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="71.448">(how it is </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="89.896">calculated)</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <text transform="translate(1795.0788 1214.0987)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="15">constraint associated </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="33.448">to</tspan>
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" y="33.448"> </tspan>
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="gray" y="33.448">days_on_sale</tspan>
+          <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" y="33.448"> </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="52.448">(how it is calculated)</tspan>
+        </text>
+      </g>
+      <g id="Line_114">
+        <path d="M 1703.622 1319.1883 C 1720.7623 1316.2362 1740.078 1311.6607 1760.2193 1304.6081 C 1780.8622 1297.38 1799.357 1288.6056 1815.0464 1279.9432" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_115"/>
+      <g id="Line_116">
+        <path d="M 1819.8425 962.4754 L 1781.5748 959 L 1740.327 954.7284" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

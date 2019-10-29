@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1306 979 788 458" width="788" height="458">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="1306 979 788 458" width="788" height="458">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -28,10 +28,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="SelfAssociation" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="SelfAssociation" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>SelfAssociation</title>
     <g id="SelfAssociation: Layer 1">
       <title>Layer 1</title>
@@ -54,36 +54,36 @@
         </g>
       </g>
       <g id="Line_7">
-        <path d="M 1488.369 1138.1102 L 1488.369 1174.9844 L 1648.191 1174.9844 L 1648.191 1088.504 L 1583.244 1088.504" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1488.369 1138.1102 L 1488.369 1148.1102 L 1488.369 1174.9844 L 1648.191 1174.9844 L 1648.191 1088.504 L 1593.244 1088.504 L 1583.244 1088.504" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_8">
-        <text transform="translate(1649.3601 1056.6536)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">- hierarchical superior</tspan>
+        <text transform="translate(1648.9921 1057.4296)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".368" y="15">- hierarchical superior</tspan>
         </text>
       </g>
       <g id="Graphic_9">
-        <text transform="translate(1506.4625 1178.5433)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">- subordinates</tspan>
+        <text transform="translate(1506.1825 1179.3193)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".28" y="15">- subordinates</tspan>
         </text>
       </g>
       <g id="Graphic_10">
-        <text transform="translate(1472.1948 1143.1102)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
+        <text transform="translate(1472.0108 1143.8862)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".184" y="15">*</tspan>
         </text>
       </g>
       <g id="Graphic_11">
-        <text transform="translate(1600.458 1056.6536)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">0..1</tspan>
+        <text transform="translate(1600.302 1057.4296)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".156" y="15">0..1</tspan>
         </text>
       </g>
       <g id="Graphic_13">
-        <text transform="translate(1311.7717 984.3701)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="8.002239" y="15">The Chairman or CEO has no superior, and we also assume that no </tspan>
+        <text transform="translate(1311.7717 984.4221)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="8.002238" y="15">The Chairman or CEO has no superior, and we also assume that no </tspan>
           <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="92.61824" y="33.448">employee can have more than one superior</tspan>
         </text>
       </g>
       <g id="Line_12">
-        <path d="M 1639.4023 1026.2661 C 1636.8996 1032.0863 1633.578 1037.9988 1630.159 1043.4186" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1639.4936 1026.3701 C 1637.0655 1032.1255 1633.8458 1037.9771 1630.5094 1043.3714" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_14">
         <text transform="translate(1312.4397 1194.1339)" fill="gray">
@@ -92,7 +92,7 @@
         </text>
       </g>
       <g id="Line_15">
-        <path d="M 1413.7395 1189.1339 C 1417.4911 1182.9727 1422.5322 1176.4715 1429.2184 1170.8102 C 1438.5278 1162.9279 1449.0048 1158.3855 1457.5856 1155.7793" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1413.68 1189.1339 C 1417.4378 1182.9438 1422.4968 1176.4281 1429.2184 1170.8102 C 1438.4477 1163.0963 1448.8246 1158.7357 1457.3638 1156.2747" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Group_16">
         <g id="Graphic_18">
@@ -134,27 +134,27 @@
         <path d="M 1771.8336 1338.65 L 1771.8336 1375.5242 L 1931.6556 1375.5242 L 1931.6556 1289.0437 L 1866.7086 1289.0437" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_28">
-        <text transform="translate(1933.0903 1257.1933)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">- parent</tspan>
+        <text transform="translate(1932.7503 1257.9693)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".34" y="15">- parent</tspan>
         </text>
       </g>
       <g id="Graphic_27">
-        <text transform="translate(1789.927 1379.0831)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">- subordinates</tspan>
+        <text transform="translate(1789.647 1379.8591)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".28" y="15">- subordinates</tspan>
         </text>
       </g>
       <g id="Graphic_26">
-        <text transform="translate(1755.6594 1343.65)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
+        <text transform="translate(1755.4754 1344.426)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".184" y="15">*</tspan>
         </text>
       </g>
       <g id="Graphic_25">
-        <text transform="translate(1883.9226 1257.1933)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="0" y="15">0..1</tspan>
+        <text transform="translate(1883.7666 1257.9693)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".156" y="15">0..1</tspan>
         </text>
       </g>
       <g id="Graphic_24">
-        <text transform="translate(1595.2362 1194.1339)" fill="gray">
+        <text transform="translate(1595.2362 1194.9099)" fill="gray">
           <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="143.13824" y="15">The root folder has no parent</tspan>
         </text>
       </g>
@@ -165,10 +165,10 @@
         </text>
       </g>
       <g id="Line_22">
-        <path d="M 1697.204 1389.6737 C 1700.9557 1383.5125 1705.9967 1377.0113 1712.683 1371.35 C 1721.9923 1363.4677 1732.4694 1358.9253 1741.0502 1356.319" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1697.1446 1389.6737 C 1700.9024 1383.4836 1705.9614 1376.968 1712.683 1371.35 C 1721.9123 1363.6361 1732.2892 1359.2755 1740.8284 1356.8145" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_30">
-        <path d="M 1873.4036 1217.5819 C 1879.6231 1221.3687 1885.6257 1225.8754 1890.1954 1231.0578 C 1893.6393 1234.9635 1895.9154 1238.8515 1897.3696 1242.5428" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1875.6816 1219.1339 C 1881.075 1222.5354 1886.1865 1226.5115 1890.1954 1231.0578 C 1893.6106 1234.931 1895.8773 1238.8231 1897.333 1242.544" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>

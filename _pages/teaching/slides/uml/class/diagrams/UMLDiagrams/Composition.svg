@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="882 371 536 288" width="536" height="288">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="882 371 536 277" width="536" height="277">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -28,10 +28,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="Composition" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="Composition" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>Composition</title>
     <g id="Composition: Layer 1">
       <title>Layer 1</title>
@@ -74,7 +74,7 @@
         <path d="M 1011.5 486 L 1029.5 494.73875 L 1011.5 503.4775 L 993.5 494.73875 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_62">
-        <path d="M 1029.5 454.73875 L 1080.75 454.73875 L 1080.75 410.5 L 1132 410.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1029.5 454.73875 L 1039.5 454.73875 L 1080.75 454.73875 L 1080.75 432.6194 L 1080.75 410.5 L 1122 410.5 L 1132 410.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Group_64">
         <g id="Graphic_66">
@@ -94,7 +94,7 @@
         </g>
       </g>
       <g id="Line_70">
-        <path d="M 1029.5 494.73875 L 1080.75 494.73875 L 1080.75 541 L 1132 541" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1029.5 494.73875 L 1039.5 494.73875 L 1080.75 494.73875 L 1080.75 517.8694 L 1080.75 541 L 1122 541 L 1132 541" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_71">
         <path d="M 1011.5 446 L 1029.5 454.73875 L 1011.5 463.4775 L 993.5 454.73875 Z" fill="black"/>
@@ -116,13 +116,13 @@
       </g>
       <g id="Graphic_85"/>
       <g id="Graphic_87">
-        <text transform="translate(887 557.604)" fill="gray">
+        <text transform="translate(887 557.656)" fill="gray">
           <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="15">1..1 is implicit </tspan>
           <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="33.448">on the diamond side</tspan>
         </text>
       </g>
       <g id="Line_88">
-        <path d="M 1009.6315 552.604 C 1015.9687 542.38376 1015.7275 530.6342 1014.421 522.60364" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1009.6304 552.604 C 1015.9686 542.3768 1015.7276 530.6284 1014.4211 522.6" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_89">
         <text transform="translate(1088.4688 415.5)" fill="black">

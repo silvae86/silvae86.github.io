@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="1336 1010 686 373" width="686" height="373">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="1336 1010 686 373" width="686" height="373">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -28,10 +28,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="NAryAssociations" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="NAryAssociations" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>NAryAssociations</title>
     <g id="NAryAssociations: Layer 1">
       <title>Layer 1</title>
@@ -100,18 +100,18 @@
         <line x1="1689.0502" y1="1174.9606" x2="1788.0354" y2="1174.9606" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_46">
-        <text transform="translate(1536.2444 1150.2086)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="31974423e-20" y="15">1</tspan>
+        <text transform="translate(1536.1924 1150.9846)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".052" y="15">1</tspan>
         </text>
       </g>
       <g id="Graphic_47">
-        <text transform="translate(1770.8125 1150.2086)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
+        <text transform="translate(1770.6285 1150.9846)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".184" y="15">*</tspan>
         </text>
       </g>
       <g id="Graphic_48">
-        <text transform="translate(1671.7717 1255.0788)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x="7132073e-19" y="15">*</tspan>
+        <text transform="translate(1671.5877 1255.8548)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".184" y="15">*</tspan>
         </text>
       </g>
       <g id="Graphic_51">
@@ -121,7 +121,7 @@
         </text>
       </g>
       <g id="Line_50">
-        <path d="M 1524.7692 1061.6992 C 1532.3858 1071.8276 1540.151 1084.6113 1544.5122 1098.7805 C 1548.8122 1112.751 1548.98 1125.395 1547.6667 1135.4787" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1524.8398 1061.6992 C 1532.4338 1071.8001 1540.1645 1084.5647 1544.5122 1098.7805 C 1548.7581 1112.6638 1548.9752 1125.308 1547.7155 1135.4673" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_53">
         <text transform="translate(1712.3433 1015.5512)" fill="gray">
@@ -140,7 +140,7 @@
         </text>
       </g>
       <g id="Line_54">
-        <path d="M 1876.183 1316.5458 C 1862.5228 1300.4864 1841.6224 1282.1737 1811.5854 1270.7317 C 1767.339 1253.877 1717.8443 1257.484 1692.1748 1261.1544" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1876.2561 1316.5458 C 1862.5975 1300.4423 1841.676 1282.0894 1811.5854 1270.7317 C 1767.4403 1254.0692 1718.0709 1257.9393 1692.3515 1261.7784" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>

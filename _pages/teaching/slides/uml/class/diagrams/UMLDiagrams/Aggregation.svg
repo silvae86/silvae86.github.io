@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="835 572 705 313" width="705" height="313">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="835 572 705 313" width="705" height="313">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -23,10 +23,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="Aggregation" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="Aggregation" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>Aggregation</title>
     <g id="Aggregation: Layer 1">
       <title>Layer 1</title>
@@ -69,15 +69,15 @@
         <path d="M 1050 645.0745 L 1068 653.81325 L 1050 662.552 L 1032 653.81325 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_43">
-        <path d="M 1068 653.81325 L 1078 653.81325 L 1136.5 653.8822 L 1146.5 653.8822" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1068 653.81325 L 1078 653.81325 L 1107.25 653.8477 L 1136.5 653.8822 L 1146.5 653.8822" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_41">
-        <text transform="translate(847.25 577.5)" fill="gray">
+        <text transform="translate(847.25 578.276)" fill="gray">
           <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x=".855" y="15">A product has 1 or more components</tspan>
         </text>
       </g>
       <g id="Line_40">
-        <path d="M 1121 592 C 1121 592 1121 592 1121 592 C 1135.8609 597.0548 1140.2223 604.24034 1139.7982 611.30474" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1121 592 C 1121 592 1121 592 1121 592 C 1135.9388 597 1140.2678 604.2133 1139.7912 611.319" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_67">
         <text transform="translate(1104.9464 625.724)" fill="black">
@@ -109,7 +109,7 @@
           <rect x="1146.5" y="800.74" width="189.75" height="30" fill="white"/>
           <rect x="1146.5" y="800.74" width="189.75" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
           <text transform="translate(1151.5 805.74)" fill="black">
-            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="41.710938" y="15">Inspection</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="41.710937" y="15">Inspection</tspan>
           </text>
         </g>
       </g>
@@ -132,16 +132,16 @@
         <path d="M 1402.2778 800.74 C 1389.536 792.6659 1374.7688 785.1348 1358.5 780 C 1318.103 767.2498 1282.3179 773.65255 1265.9476 778.036" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_80">
-        <text transform="translate(1369.088 649.552)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="12.914001" y="15">An inspection may </tspan>
+        <text transform="translate(1369.088 649.932)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="12.914" y="15">An inspection may </tspan>
           <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="35.594" y="33.448">inspect zero </tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="1.9540013" y="51.895996">or more components.</tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="6.554001" y="88.34399">(If nothing is written, </tspan>
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="12.178001" y="106.79199">0..*, or * is implied)</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="1.954" y="51.895996">or more components.</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="6.554" y="88.34399">(If nothing is written, </tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="12.178" y="106.79199">0..*, or * is implied)</tspan>
         </text>
       </g>
       <g id="Line_85">
-        <path d="M 1364.088 735.1465 C 1358.2143 736.3 1352.1691 737.272 1346 738 C 1306.141 742.7037 1274.4483 735.64655 1259.4879 731.18674" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1364.088 735.1875 C 1358.2143 736.3257 1352.1691 737.28385 1346 738 C 1306.1465 742.62645 1274.457 735.6043 1259.494 731.1695" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>

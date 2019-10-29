@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="850 320 671 350" width="671" height="350">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="850 320 671 350" width="671" height="350">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -38,10 +38,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="Generalization" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="Generalization" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>Generalization</title>
     <g id="Generalization: Layer 1">
       <title>Layer 1</title>
@@ -101,10 +101,10 @@
         </g>
       </g>
       <g id="Line_14">
-        <path d="M 900 510.5 L 900 490 L 987 490 L 987 463.5" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 900 510.5 L 900 495 L 900 490 L 987 490 L 987 465.5 L 987 463.5" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_18">
-        <path d="M 1070.5 510.5 L 1070.5 490 L 987 490 L 987 463.5" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1070.5 510.5 L 1070.5 495 L 1070.5 490 L 987 490 L 987 465.5 L 987 463.5" marker-end="url(#UMLInheritance_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Group_37">
         <g id="Graphic_39">
@@ -119,7 +119,7 @@
         <g id="Graphic_38">
           <rect x="1337.5" y="347" width="99" height="30" fill="white"/>
           <rect x="1337.5" y="347" width="99" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <text transform="translate(1342.5 352)" fill="black">
+          <text transform="translate(1342.5 352.5)" fill="black">
             <tspan font-family="SF Mono" font-size="16" font-weight="700" fill="black" x="14.828125" y="15">Person</tspan>
           </text>
         </g>
@@ -139,7 +139,7 @@
         <g id="Graphic_35">
           <rect x="1250.5" y="503.5" width="99" height="30" fill="white"/>
           <rect x="1250.5" y="503.5" width="99" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <text transform="translate(1255.5 508.5)" fill="black">
+          <text transform="translate(1255.5 509)" fill="black">
             <tspan font-family="SF Mono" font-size="16" font-weight="700" fill="black" x="4.9375" y="15">Employee</tspan>
           </text>
         </g>
@@ -156,7 +156,7 @@
         <g id="Graphic_32">
           <rect x="1421" y="503.5" width="99" height="30" fill="white"/>
           <rect x="1421" y="503.5" width="99" height="30" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-          <text transform="translate(1426 508.5)" fill="black">
+          <text transform="translate(1426 509)" fill="black">
             <tspan font-family="SF Mono" font-size="16" font-weight="700" fill="black" x="4.9375" y="15">Customer</tspan>
           </text>
         </g>
@@ -176,23 +176,23 @@
         </text>
       </g>
       <g id="Graphic_41">
-        <text transform="translate(1075.5 410.552)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="0" y="15">Superclass</tspan>
+        <text transform="translate(1075.112 411.328)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x=".388" y="15">Superclass</tspan>
         </text>
       </g>
       <g id="Line_40">
-        <path d="M 1116.2661 405.552 C 1117.0412 391.32364 1115.5333 370.50533 1101.5 363 C 1085.5469 354.4679 1058.8148 366.0328 1045.1355 373.15296" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1116.2967 405.552 C 1116.9975 391.1619 1115.341 370.53994 1101.5 363 C 1085.5382 354.3047 1058.7858 365.95693 1045.1133 373.12757" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_43">
-        <text transform="translate(1056 646)" fill="gray">
-          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x="5115908e-19" y="15">Subclasses</tspan>
+        <text transform="translate(1055.94 646.776)" fill="gray">
+          <tspan font-family="Helvetica Neue" font-size="16" font-style="italic" font-weight="400" fill="gray" x=".06" y="15">Subclasses</tspan>
         </text>
       </g>
       <g id="Line_42">
-        <path d="M 1051 649.0218 C 1037.6595 646.9544 1022.8034 644.422 1008.5 641.5043 C 983.978 636.5021 967.8733 631.753 958.7783 628.6945" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1050.94 649.3215 C 1037.615 647.1373 1022.7819 644.4931 1008.5 641.5043 C 984.0024 636.3777 967.9054 631.65594 958.8054 628.6379" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Line_44">
-        <path d="M 1090.6432 641 C 1088.149 634.7916 1085.0974 627.0867 1082 619 C 1078.4978 609.8564 1075.7218 602.2738 1073.7753 596.84094" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1090.49 641 C 1088.0246 634.7162 1085.0343 627.0126 1082 619 C 1078.515 609.7971 1075.7491 602.2388 1073.8041 596.8348" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>

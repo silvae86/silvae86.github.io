@@ -281,7 +281,8 @@ name: derived_associations
 ## Derived Associations 
 
 - Similar to derived attributes, but express associations that result of computation
-- Expensive to compute: write once on certain modifications, read many times
+- Expensive to compute: perform an expensive computation and save the result once on certain changes to the system (i.e. when a new `Order` is added for a `Client`, recompute the `mostPurchasedProduct` and save it). 
+- Then just read the `mostPurchasedProduct` instantly many times, without having to re-compute.
 
 .center[.imgscaledup[![derivedAssociations](diagrams/UMLDiagrams/DerivedAssociations.svg)]]
 
@@ -290,6 +291,7 @@ name: derived_classes
 ## Derived Classes
 
 - Classes computed from other elements in the system
+- Same logic as the other derived elements
 
 .center[.imgscaledup[![derivedClasses](diagrams/UMLDiagrams/DerivedClasses.svg)]]
 

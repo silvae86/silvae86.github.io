@@ -24,6 +24,7 @@ mkdir public_html
 ### Make sure that your public_html folder contains a .htaccess file with the right contents
 
 ```bash
+cd public_html
 vim .htaccess
 ```
 

@@ -39,7 +39,8 @@ To save and exit, press `:wq`
 ### Fix permissions on `public_html`
 
 ```bash
-chmod 0755 public_html
+cd ..
+chmod -R 0755 public_html
 ```
 
 ### Bonus: 

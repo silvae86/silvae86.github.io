@@ -57,7 +57,7 @@ The second delivery will be the website itself:
 
 #### Project planning
 
-![How to succeed in the practical work](../common/project_management.PNG){:class="img-responsive"}
+![How to succeed in the practical work](../common/project_management.png){:class="img-responsive"}
 
 #### Final checklist
 

@@ -45,7 +45,7 @@ The document must be a single PDF file, submitted via Moodle. In the cover page 
 The second delivery will be the website itself:
 
 - SQL script to create the database.
-- All PHP, CSS, images and other files in a zipped file.
+- All PHP, CSS, images and other files in a zipped file. 
 - A README.txt file in the root folder containing data about the authors and how to install the project at the FEUP web server [gnomo.fe.up.pt](http://gnomo.fe.up.pt).
 - No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow etc...). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
 
@@ -54,6 +54,10 @@ The second delivery will be the website itself:
 **Presentation**: In the last practical class of the semester. 
 
 **Format of presentation**: The presentation will be carried out by the students and to the teachers of the practical classes. No slides are required, and only the working website should be presented.
+
+#### Project planning
+
+![How to succeed in the practical work](../common/project_management.PNG){:class="img-responsive"}
 
 #### Final checklist
 

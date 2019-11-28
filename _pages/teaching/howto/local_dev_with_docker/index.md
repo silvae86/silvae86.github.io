@@ -8,7 +8,9 @@ crumbtitle: Docker for Local Development
 
 ##  Objective
 
-Sometimes your FEUP server, gnomo.fe.up.pt, can misbehave or be misconfigured. If you encounter `Forbidden` errors or any other mysterious stuff, but want to get some work done, try [Docker](https://www.docker.com/products/docker-desktop) to set a Apache + PHP Container in your local machine (you need Admin rights!).
+Sometimes your FEUP server, gnomo.fe.up.pt, can misbehave or your area in particular be misconfigured (some students have been encountering such issues this year).
+
+If you encounter `Forbidden` errors or any other mysterious stuff, but want to get some work done, try [Docker](https://www.docker.com/products/docker-desktop) to set a Apache + PHP Container in your local machine (you need Admin rights!).
 
 ## Register for Docker Hub
 
@@ -56,7 +58,7 @@ From now on, we will call the folder `<folder that you created>/var/www/html` **
 
 This is optional, but will allow the web server to generate nice file listings for easy navigation, like below:
 
-![Indexes Enabled](indexes.png)
+![Indexes Enabled](/teaching/howto/local_dev_with_docker/indexes.png)
 
 To turn this on, go to the Server Root and create a new file called `.htaccess`, including the dot. 
 

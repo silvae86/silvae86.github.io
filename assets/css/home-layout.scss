@@ -19,7 +19,7 @@ div.home {
 	display:grid;
 	
 	grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts];
-	grid-template-columns: [start-of-about] 2fr [end-of-about-start-of-content] 4fr [end-of-content];
+	grid-template-columns: [start-of-about] 1fr [end-of-about-start-of-content] 4fr [end-of-content];
 	
 	grid-template-areas: "about teaching"
 						 "archive recentposts";
@@ -53,17 +53,11 @@ div.home > div#recentposts {
 
 #archive_list .separator {
 	font-size: 1em;	
-	
-	/* highlight credits https://codepen.io/pugson/pen/EwmKJp */
-    font-style: normal;
-    border-radius: 0.5em 0 0.5em 0;
-    text-shadow: 1px 1px 1px #fff;
-    background-image: 
-      linear-gradient(-100deg, 
-        rgba(255,200,200,0.15),
-        rgba(255,200,200,0.8) 100%, 
-        rgba(255,200,200,0.25)
-      );
+	border-radius: 2px; 
+	padding: 2px; 
+	background-color: #e8e8e8;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 #archive_list .post-link {

@@ -1,0 +1,12 @@
+<h2 class="post-list-heading">Archive</h2>
+
+<ul id="archive_list">
+{% for post in site.posts %}
+  {% assign currentdate = post.date | date: "%B %Y" %}
+  {% if currentdate != date %}
+    <li class="separator" id="y{{currentdate}}">{{ currentdate }}</li>
+    {% assign date = currentdate %} 
+  {% endif %}
+    <li class="post-link"><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

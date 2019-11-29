@@ -60,6 +60,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-debug
 
+
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate

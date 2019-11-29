@@ -1,56 +1,83 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
-	{%- if page.title -%}
-		<h1 class="page-heading">{{ page.title }}</h1> 
-	{%- endif -%}
+  <head>
+	  {%- include head-content.html -%}
 	  
-	<div class="home_section">
-		<h1 class="page-heading">Teaching</h1>
+      <link rel="stylesheet" href="{{ "/assets/css/home-layout.css" | relative_url }}">
+  </head>
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      	<div class="wrapper">
+			
+	        {%- include nav-breadcrumbs.html -%}
+
+			<div class="home">
+				
+				<aside id="about" class="home_section">
+					LOLINHO
+				</aside>
+				
+				{%- if page.title -%}
+					<h1 class="page-heading">{{ page.title }}</h1> 
+				{%- endif -%}
+	  
+				<div id="teaching" class="home_section">
+					<h1 class="page-heading">Teaching</h1>
 	
-		{% capture my_include %}{% include teaching/2020.md %}{% endcapture %}
-		{{ my_include | markdownify }}		
-	</div>
+					{% capture my_include %}{% include teaching/2020.md %}{% endcapture %}
+					{{ my_include | markdownify }}		
+				</div>
 	
-	<div class="home_section">
-	    <div class="search-container">
-	        <div class="search-container">
-	            <form action="/search" method="get">
-	              <input type="text" placeholder="Search..." name="query" id="search-box">
-	              <button type="submit">Search</button>
-	            </form>
-	        </div>
-	    </div>
+				<div id="archive" class="home_section">
+					{%- include archive.html -%}
+				</div>
+	
+				<div id="recentposts" class="home_section">
+				    
 
-	    {%- if site.posts.size > 0 -%}
-	      <h2 class="post-list-heading">{{ page.list_title | default: "Latest blog posts" }}</h2>
+				    {%- if site.posts.size > 0 -%}
+				      <h2 class="post-list-heading">{{ page.list_title | default: "Latest posts" }}</h2>
 
-	      <ul class="post-list">
-	        {%- for post in site.posts -%}
-	        <li>
-	          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-	          <span class="post-meta">{{ post.date | date: date_format }}</span>
-	          <h3>
-	            <a class="post-link" href="{{ post.url | relative_url }}">
-	              {{ post.title | escape }}
-	            </a>
-	          </h3>
-	          {%- if site.show_excerpts -%}
-	            {{ post.excerpt }}
-	          {%- endif -%}
-	        </li>
-	        {%- endfor -%}
-	      </ul>
+				      <ul class="post-list">
+				        {%- for post in site.posts -%}
+				        <li>
+				          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+				          <span class="post-meta">{{ post.date | date: date_format }}</span>
+				          <h3>
+				            <a class="post-link" href="{{ post.url | relative_url }}">
+				              {{ post.title | escape }}
+				            </a>
+				          </h3>
+				          {%- if site.show_excerpts -%}
+				            {{ post.excerpt }}
+				          {%- endif -%}
+				        </li>
+				        {%- endfor -%}
+				      </ul>
 
-	      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+				      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
-	      {% include share-bar.html %}
+				      {% include share-bar.html %}
 
-	    {%- endif -%}
-	</div>
+				    {%- endif -%}
+				</div>
 
-  {{ content }}
+			  {{ content }}
 
-</div>
+			</div>
+      	</div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
+
+
+

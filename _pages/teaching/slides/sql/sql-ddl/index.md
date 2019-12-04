@@ -668,6 +668,7 @@ CREATE TABLE <table_B> (
 
 * Foreign Keys are disabled in SQLite by default
 * They must be enabled separately for each database connection
+* Add the following line at the beginning of the sql script to enable foreign keys during its execution, otherwise the database will accept inconsistent information!
 
 ```sql
 PRAGMA foreign_keys = ON;

@@ -232,16 +232,19 @@ template:inverse
 # Modifiers
 
 * The time string can be followed by zero or more modifiers that alter date and/or time.
+
 * Each modifier is a transformation that is applied to the time value to its left. Modifiers are applied from left to right; order is important. 
-| Modifier | Modifier | |
-|-|-|-|
-| `NNN days`       | `start of month` ||
-| `NNN hours`      | `start of year` ||
-| `NNN minutes`    | `start of day` ||
-| `NNN.NNNN seconds` | `weekday N`    ||
-| `NNN months`     | `unixepoch`    ||
-| `NNN years`      | `localtime`    ||
-|                  | `utc`          ||
+
+  
+| Modifiers can have numeric parameters | ... and also specific strings |
+|:-:|:-:|
+| `NNN days`       | `start of month` |
+| `NNN hours`      | `start of year` |
+| `NNN minutes`    | `start of day` |
+| `NNN.NNNN seconds` | `unixepoch` |
+| `NNN months`     | `localtime` |
+| `NNN years`      | `utc` |
+| `weekday N` |           |
 
 ---
 

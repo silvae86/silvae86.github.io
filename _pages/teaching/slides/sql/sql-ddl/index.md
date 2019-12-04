@@ -664,6 +664,17 @@ CREATE TABLE <table_B> (
 
 ---
 
+# Enabling Foreign Keys
+
+* Foreign Keys are disabled in SQLite by default
+* They must be enabled separately for each database connection
+
+```sql
+PRAGMA foreign_keys = ON;
+```
+
+---
+
 # Example
 
 ```sql

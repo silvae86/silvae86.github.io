@@ -8,7 +8,7 @@ crumbtitle: ESIN
 
 ## Contents 
 
-{% include_relative common/plan.md %}
+{% include_relative esin/plan.md %}
 
 ## Information
 

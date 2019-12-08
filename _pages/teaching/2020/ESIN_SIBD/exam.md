@@ -69,7 +69,7 @@ Some examples of previous years are available [here](https://web.fe.up.pt/~arest
 
 - These students must secure the contact of a responsible person at their home University beforehand and supply that contact to the course professors. We will then coordinate with this person to arrange a controlled environment at the student's home institution where they can perform the exam. This person will assume responsibility for making sure that exam rules are followed.
 
-## Warnings that should not be necessary
+## Play fair
 
 Any illegal behaviour during the exam (plagiarism by any means or exchange of information between students) is punishable with a full annulment of the exam, resulting in a grade of zero.
 

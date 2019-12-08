@@ -41,7 +41,6 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 	- Like in the practical exercises, if you assume something that is not clear in the problem statement, write those assumptions in the paper. If you model according to those assumptions, we will consider it correct.
 	- Students must turn in a single paper sheet with their resolution of the UML Class Diagram exercise to the professors during the exam.
 	- If a student does not wish to deliver a solution, he/she must deliver an empty paper sheet, adequately identified and signed, with the words "I do not wish to solve the UML exercise".
-
 2. **Relational Model exercise** (via moodle)
 3. **Some multiple choice / short answers on HTML, PHP, and CSS** (via moodle)
 	- Wrong answers will produce negative scores, so if you are not sure, do not answer.
@@ -59,7 +58,7 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 
 ## Previous exams
 
-Some examples of previous years are available [here](https://web.fe.up.pt/~arestivo/page/courses/2018/sibd/exam/). Given that the topics covered have changed this year, the exam may also be different.
+Some examples of previous years are available [here](https://web.fe.up.pt/~arestivo/page/courses/2018/sibd/exam/). Given that some topics covered have changed this year, the structure may also be different. Use the format above as reference.
 
 ## Important notes for Erasmus students (remote exams)
 

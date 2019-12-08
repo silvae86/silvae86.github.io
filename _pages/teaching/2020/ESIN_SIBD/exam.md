@@ -1,7 +1,6 @@
 ---
 layout: page
 title: ESIN/SIBD - Final Exam
-include_in_menu: false
 permalink: /teaching/2020/ESIN_SIBD/exam/
 crumbtitle: ESIN/SIBD - Final Exam
 ---

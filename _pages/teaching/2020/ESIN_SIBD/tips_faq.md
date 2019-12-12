@@ -211,9 +211,11 @@ return $result;
 //back in the main file...
 
 /** WATCH OUT **/
-// the comparison even if the client does not exist, 
-// the result of the function will still be an empty array, 
-/// which is not null, therefore it is a "truthy" value
+// the result will be false even if the client does not exist. 
+// This is because the result of the function will be 
+// an empty array, 
+// which is not null, therefore it is a "truthy" value. 
+// !true = false, so the body of the if will never execute.
 if(! clientExists($id) ) 
 	//this is never run, and you will curse your existence.
 	// "why cant I register the client, i KNOW there is no one with that

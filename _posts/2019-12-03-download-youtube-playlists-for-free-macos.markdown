@@ -37,11 +37,14 @@ brew install youtube-dl
 pip3 install youtube-dl
 
 # download a playlist using python3, audio format 
-python3 $(which youtube-dl) \ 
-	https://www.youtube.com/watch\?v\=ISuuQ0-a5YM\&list\=PL5CCCIHEIDH4udcWyHuFyW2syzsGsYwZM  # your playlist
-	-x \ 				 # Extract audio
-	--audio-format m4a \ 	 # m4a format
-	--audio-quality 200k \ # 200kbps quality
-	--no-check-certificate # avoid certificate unavailable errors
+
+python3 $(which youtube-dl) https://www.youtube.com/playlist?list=PLamnoxId_aK2qxsln0OiDh9s3Pa1vgfvb -x --audio-format m4a --audio-quality 200k --no-check-certificate
+
+#python3 $(which youtube-dl) \ 
+#	https://www.youtube.com/watch\?v\=ISuuQ0-a5YM\&list\=PL5CCCIHEIDH4udcWyHuFyW2syzsGsYwZM  # your playlist
+#	-x \ 				 # Extract audio
+#	--audio-format m4a \ 	 # m4a format
+#	--audio-quality 200k \ # 200kbps quality
+#	--no-check-certificate # avoid certificate unavailable errors
 ```
 

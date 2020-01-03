@@ -5,7 +5,7 @@ date:   2020-01-03 19:23:000 +0100
 categories: macos php code quality tools open source
 ---
 
-While it does not replace good judgement and programming practice completely, it can be interesting to perform regular code quality analyses to make sure that you teams (and students) are writing good PHP code. This is a small guide on how to install them in macOS and how to use them to automatically produce metrics for all code repositories in a folder. 
+While it does not replace good judgement and programming practice completely, it can be interesting to perform regular code quality analyses to make sure that your teams (and students) are writing good PHP code. This is a small guide on how to install them in macOS and how to use them to automatically produce metrics for all code repositories in a folder. 
 
 This is intended as a very short guide on how to perform static code analysis on projects that are not under Git source code control, with minimal configuration and without relying on a CI/CD solution. For those other cases, I recommend [Codacy](https://www.codacy.com/) and [Travis.CI](https://travis-ci.org/). I have been using these myself for years and I think they are great!
 

@@ -135,6 +135,8 @@ Create a new file called `evaluate.sh` in the folder that contains the subfolder
 {% highlight shell %}
 #!/usr/bin/env bash
 
+NUMBER_OF_LINES_CONSIDERED_COPY_PASTE=2
+MIN_TOKENS_CONSIDERED_COPY_PASTE=15
 OUTPUT_DIR=$(pwd)/output
 
 # exclude hidden directories
@@ -157,7 +159,7 @@ for subfolder in */ ; do
 	fi
 	
 	# run phpcpd
-	phpcpd --fuzzy "$subfolder" > "$RESULTS_SUBDIR/phpcpd.txt"
+	phpcpd --min-tokens="$MIN_TOKENS_CONSIDERED_COPY_PASTE" --min-lines="$NUMBER_OF_LINES_CONSIDERED_COPY_PASTE" --fuzzy "$subfolder" > "$RESULTS_SUBDIR/phpcpd.txt"
 	
 	# run phploc
 	phploc "$subfolder" > "$RESULTS_SUBDIR/phploc.txt"
@@ -165,6 +167,7 @@ for subfolder in */ ; do
 	#run phpmetrics
 	phpmetrics --report-html="$RESULTS_SUBDIR/phpmetrics" "$subfolder"
 done
+
 {% endhighlight %}
 
 To get the results, `cd` to the previously mentioned folder, and make the script executable with `chmod +x evaluate.sh` and run it using `./evaluate.sh`.

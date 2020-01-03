@@ -171,7 +171,7 @@ To get the results, `cd` to the previously mentioned folder, and make the script
 
 ## Results
 
-You will get something like this
+You will get something like this.
 
 ### Output folder and file structure
 

@@ -19,7 +19,7 @@ However, as an informatics engineer, I hate repetitive tasks, especially those t
 
 ### Enter `moodle-autocorrect-sqlite`
 
-To make my SQL corrections easier, I have published some [Python+Bash scripts on GitHub](https://github.com/silvae86/moodle-autocorrect-sqlite) for running students' queries present in the Excel Spreadsheet produced by Moodle with the results of an exam. This means that you need either **Linux** of **Mac OS X** to use these. Sorry this time, Windows users!
+To make my SQL corrections easier, I have written and published some [Python+Bash scripts on GitHub](https://github.com/silvae86/moodle-autocorrect-sqlite) for running students' queries present in the Excel Spreadsheet produced by Moodle with the results of an exam. This means that you need either **Linux** of **Mac OS X** to use these. Sorry this time, Windows users!
 
 These scripts will produce a text file per answer that looks more or less like this:
 

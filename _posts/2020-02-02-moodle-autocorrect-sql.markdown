@@ -63,11 +63,11 @@ While they both share the same database schema, one is provided to the students 
 
 	<img src="https://github.com/silvae86/moodle-autocorrect-sqlite/raw/master/docs/img/downloading_answers.png" alt="Access all student answers" width="200"/>
 
-	1.2. Sort the answers by the first name of the students (or any other criteria, as the SQL evaluator will produce a list of answers ordered by that same criteria).
+	1.3. Sort the answers by the first name of the students (or any other criteria, as the SQL evaluator will produce a list of answers ordered by that same criteria).
 
-	1.3. Select Microsoft Excel as the download format for the answers
+	1.4. Select Microsoft Excel as the download format for the answers
 
-	1.4. Click 'Download'. An Excel file will be produced by moodle and start downloading.
+	1.5. Click 'Download'. An Excel file will be produced by moodle and start downloading.
 
 	<img src="https://github.com/silvae86/moodle-autocorrect-sqlite/raw/master/docs/img/download_answers.jpg" alt="Ordering and downloading student answers" width="800"/>
 

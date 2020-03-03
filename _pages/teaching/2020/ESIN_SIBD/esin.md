@@ -1,14 +1,13 @@
 ---
 layout: page
 title: Information Systems Engineering (ESIN)- MEB/MIB
-include_in_menu: false
 permalink: /teaching/2020/ESIN_SIBD/esin/
 crumbtitle: ESIN
 ---
 
 ## Contents 
 
-{% include_relative common/plan.md %}
+{% include_relative esin/plan.md %}
 
 ## Information
 

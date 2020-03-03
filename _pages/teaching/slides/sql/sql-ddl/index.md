@@ -232,16 +232,19 @@ template:inverse
 # Modifiers
 
 * The time string can be followed by zero or more modifiers that alter date and/or time.
+
 * Each modifier is a transformation that is applied to the time value to its left. Modifiers are applied from left to right; order is important. 
-| | | |
-|-|-|-|
-| NNN days         | start of month |
-| NNN hours        | start of year  |
-| NNN minutes      | start of day   |
-| NNN.NNNN seconds | weekday N      |
-| NNN months       | unixepoch      |
-| NNN years        | localtime      |
-|                  | utc            |
+
+  
+| Modifiers can have numeric parameters | ... and also specific strings |
+|:-:|:-:|
+| `NNN days`       | `start of month` |
+| `NNN hours`      | `start of year` |
+| `NNN minutes`    | `start of day` |
+| `NNN.NNNN seconds` | `unixepoch` |
+| `NNN months`     | `localtime` |
+| `NNN years`      | `utc` |
+| `weekday N` |           |
 
 ---
 
@@ -657,6 +660,18 @@ CREATE TABLE <table_B> (
   ...
   <column_Z> <data_type> REFERENCES <table_A>(<column_A>)
 );
+```
+
+---
+
+# Enabling Foreign Keys
+
+* Foreign Keys are disabled in SQLite by default
+* They must be enabled separately for each database connection
+* Add the following line at the beginning of the sql script to enable foreign keys during its execution, otherwise the database will accept inconsistent information!
+
+```sql
+PRAGMA foreign_keys = ON;
 ```
 
 ---

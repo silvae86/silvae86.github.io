@@ -6,7 +6,7 @@ crumbtitle: Elections
 ---
 
 ## Support
-[SQLite3 Guide](/teaching/exercises/sql/sqlite/)
+[SQLite3 Guide](/teaching/exercises/sql/teaching/howto/sqlite//)
 
 
 ## Script

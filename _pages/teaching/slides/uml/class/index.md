@@ -47,6 +47,9 @@ class: middle, center
 .indexpill[[N-ary associations](#nary_associations)]
 
 .indexpill[[N-ary association classes](#nary_association_classes)]
+
+.indexpill[[Derived elements](#derived_elements)]
+
 ]
 
 .index[
@@ -244,6 +247,53 @@ name: nary_association_classes
 - Attributes need to depend on all of the associated classes!
 
 .center[.imgscaledup[![NAryAssociationClass](diagrams/UMLDiagrams/NAryAssociationClass.svg)]]
+
+---
+name: constraints
+## Constraints 
+
+- Used to specify conditions that must be met by the system
+- Denoted by SQL-like text between brackets `{}`, either close to the relevant class (or classes) or connected by a dashed line to those elements
+
+.center[.imgscaledup[![constraints](diagrams/UMLDiagrams/Constraints.svg)]]
+
+---
+name: derived_elements
+## Derived elements
+
+- There can be elements (classes, attributes or associations) that are computed from others but do not actually exist.
+- Notation: `/` before the name of the derived element.
+- Derived elements usually have an associated constraint that relates them with other elements.
+- They add complexity to the diagram, so should be used sparingly to highlight important pre-computed attributes, associations or classes
+
+---
+name: derived_attributes
+## Derived Attributes 
+
+- Can be used to highlight a frequently used element that is expensive to compute
+- Indicate the need to pre-compute an attribute and save it in the system, as it will be typically read many times but written only a few
+- "Caching" of results
+
+.center[.imgscaledup[![derivedAttributes](diagrams/UMLDiagrams/DerivedAttributes.svg)]]
+
+---
+name: derived_associations
+## Derived Associations 
+
+- Similar to derived attributes, but express associations that result of computation
+- Expensive to compute: perform an expensive computation and save the result once on certain changes to the system (i.e. when a new `Order` is added for a `Client`, recompute the `mostPurchasedProduct` and save it). 
+- Then just read the `mostPurchasedProduct` instantly many times, without having to re-compute.
+
+.center[.imgscaledup[![derivedAssociations](diagrams/UMLDiagrams/DerivedAssociations.svg)]]
+
+---
+name: derived_classes
+## Derived Classes
+
+- Classes computed from other elements in the system
+- Same logic as the other derived elements
+
+.center[.imgscaledup[![derivedClasses](diagrams/UMLDiagrams/DerivedClasses.svg)]]
 
 ---
 name: software

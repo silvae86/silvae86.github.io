@@ -5,7 +5,7 @@ permalink: /teaching/exercises/sql/dql/
 crumbtitle: SQL DQL Exercises
 ---
 
-| **Script**                                                   | **Exercises**                                       |
+<!-- | **Script**                                                   | **Exercises**                                       |
 | :----------------------------------------------------------- | :-------------------------------------------------- |
 | [Airplanes](/teaching/exercises/sql/dql/scripts/airplanes.sql) | [exercises](/teaching/exercises/sql/dql/airplanes/) |
 | [Employees](/teaching/exercises/sql/dql/scripts/employees.sql) | [exercises](/teaching/exercises/sql/dql/employees/) |
@@ -15,10 +15,10 @@ crumbtitle: SQL DQL Exercises
 | [Bicycles](/teaching/exercises/sql/dql/scripts/bicycles.sql) | [exercises](/teaching/exercises/sql/dql/bicycles/)  |
 | [Travel Agency](/teaching/exercises/sql/dql/scripts/travel.sql) | [exercises](/teaching/exercises/sql/dql/travel/)    |
 | [Elections](/teaching/exercises/sql/dql/scripts/elections.sql) | [exercises](/teaching/exercises/sql/dql/elections/) |
-| [Fishing](/teaching/exercises/sql/dql/scripts/fishing.sql)   | [exercises](/teaching/exercises/sql/dql/fishing/)   |
+| [Fishing](/teaching/exercises/sql/dql/scripts/fishing.sql)   | [exercises](/teaching/exercises/sql/dql/fishing/)   | -->
 
 
-<!-- | **Script**                                                       | **Exercises**                                                    | **Solutions**                                                    |
+| **Script**                                                       | **Exercises**                                                    | **Solutions**                                                    |
 | :----------------------------------------------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [Airplanes](/teaching/exercises/sql/dql/scripts/airplanes.sql) | [exercises](/teaching/exercises/sql/dql/airplanes/)          | [solutions](/teaching/solutions/sql/dql/airplanes/)          |
 | [Employees](/teaching/exercises/sql/dql/scripts/employees.sql) | [exercises](/teaching/exercises/sql/dql/employees/)          | [solutions](/teaching/solutions/sql/dql/employees/)          |
@@ -34,6 +34,6 @@ crumbtitle: SQL DQL Exercises
 | [Real Estate](/teaching/exercises/sql/dql/scripts/real_estate.sql) | [exercises](/teaching/exercises/sql/dql/real_estate/) | solutions                                                    |
 | [Christmas](/teaching/exercises/sql/dql/scripts/christmas.sql) | [exercises](/teaching/exercises/sql/dql/christmas/) | solutions                                                    |
 | [Library](/teaching/exercises/sql/dql/scripts/library.sql) | [exercises](/teaching/exercises/sql/dql/library/) | solutions                                                    |
-| [Recipes](/teaching/exercises/sql/dql/scripts/recipes.sql) | [exercises](/teaching/exercises/sql/dql/recipes/) | solutions                                                    | -->
+| [Recipes](/teaching/exercises/sql/dql/scripts/recipes.sql) | [exercises](/teaching/exercises/sql/dql/recipes/) | solutions                                                    |
 
 

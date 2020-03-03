@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="935 443 795 405" width="795" height="405">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="935 443 795 405" width="795" height="405">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -43,10 +43,10 @@
       </font-face-src>
     </font-face>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="AssociationClass1" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="AssociationClass1" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>AssociationClass1</title>
     <g id="AssociationClass1: Layer 1">
       <title>Layer 1</title>
@@ -122,8 +122,8 @@
         <rect x="1424.7656" y="445.0394" width="291.98248" height="324.56693" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_16">
-        <text transform="translate(1433.6406 460.2634)" fill="black">
-          <tspan font-family="Georgia" font-size="16" font-weight="400" fill="black" x="0" y="15">Company X</tspan>
+        <text transform="translate(1433.7656 460.2634)" fill="black">
+          <tspan font-family="Georgia" font-size="16" font-weight="400" fill="black" x=".125" y="15">Company X</tspan>
         </text>
       </g>
       <g id="Graphic_15">
@@ -223,7 +223,7 @@
         </text>
       </g>
       <g id="Line_36">
-        <path d="M 1606.08 804.6577 C 1620.6191 789.3463 1631.927 769.9477 1640.6529 750.1399" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <path d="M 1606.08 804.6577 C 1621.1034 788.8363 1632.6767 768.6511 1641.5162 748.1595" marker-end="url(#FilledArrow_Marker)" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
     </g>
   </g>

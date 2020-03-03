@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="949 528 787 351" width="787" height="351">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="949 528 787 351" width="787" height="351">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -43,10 +43,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="AssociationClass2" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="AssociationClass2" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>AssociationClass2</title>
     <g id="AssociationClass2: Layer 1">
       <title>Layer 1</title>
@@ -105,8 +105,8 @@
         <rect x="1440" y="530.07874" width="291.98248" height="325.98425" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_16">
-        <text transform="translate(1448.875 545.30274)" fill="black">
-          <tspan font-family="Georgia" font-size="16" font-weight="400" fill="black" x="0" y="15">Company X</tspan>
+        <text transform="translate(1449 545.30274)" fill="black">
+          <tspan font-family="Georgia" font-size="16" font-weight="400" fill="black" x=".125" y="15">Company X</tspan>
         </text>
       </g>
       <g id="Graphic_15">
@@ -210,7 +210,7 @@
         </g>
       </g>
       <g id="Line_35">
-        <path d="M 1162.2047 611.77166 L 1162.2047 621.77166 L 1162.25 682.07874 L 1162.25 692.07874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+        <path d="M 1161.1622 611.77166 L 1161.1622 611.29814 L 1160.6886 611.29814 L 1162.25 611.29814 L 1162.25 682.07874 L 1162.25 692.07874" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
       </g>
       <g id="Graphic_36">
         <text transform="translate(1030.0721 798.7008)" fill="gray">

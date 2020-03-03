@@ -125,6 +125,7 @@ pre {
 $info-alert-color:       	#00529B !default;
 $warning-alert-color: 		#9F6000 !default;
 $danger-alert-color:      	#721c24 !default;
+$recording-icon-color:      #FF0000 !default;
 $success-alert-color:      	#4C9A2A !default;
 
 .alert
@@ -180,7 +181,16 @@ $success-alert-color:      	#4C9A2A !default;
 
 .delivery {
 	color: $success-alert-color;
+	font-size: 1.5em;
 }
+
+// Recordings Red
+
+.recording {
+	color: $recording-icon-color;
+	font-size: 1.5em;
+}
+
 
 .smalltext {
 	color:$warning-alert-color;

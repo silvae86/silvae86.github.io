@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="1450 934 352 259" width="352" height="259">
+  <defs>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="16" panose-1="2 11 7 9 3 6 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.9805" ascent="928.2227" descent="-235.83984" font-weight="700">
+      <font-face-src>
+        <font-face-name name="Menlo-Bold"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Menlo" font-size="12" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
+      <font-face-src>
+        <font-face-name name="Menlo-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
+  </metadata>
+  <g id="Constraints" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
+    <title>Constraints</title>
+    <g id="Constraints: Layer 1">
+      <title>Layer 1</title>
+      <g id="Group_120">
+        <g id="Graphic_122">
+          <rect x="1451.3386" y="973.3308" width="265.03937" height="125.0944" fill="white"/>
+          <rect x="1451.3386" y="973.3308" width="265.03937" height="125.0944" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1456.3386 978.3308)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="15">name</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="34">description</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="53">unit_price</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="72">quantity_in_stock</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="91">date_added_to_catalog</tspan>
+            <tspan font-family="Menlo" font-size="16" font-weight="400" fill="black" x="0" y="110">date_discontinued</tspan>
+          </text>
+        </g>
+        <g id="Graphic_121">
+          <rect x="1451.3386" y="935.4331" width="265.03937" height="37.897727" fill="white"/>
+          <rect x="1451.3386" y="935.4331" width="265.03937" height="37.897727" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <text transform="translate(1456.3386 940.4331)" fill="black">
+            <tspan font-family="Menlo" font-size="16" font-weight="700" fill="black" x="93.80484" y="15">Product</tspan>
+          </text>
+        </g>
+      </g>
+      <g id="Graphic_123">
+        <text transform="translate(1456.3386 1152.8622)" fill="black">
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="11">{ unit_price &gt; 0} </tspan>
+        </text>
+      </g>
+      <g id="Graphic_124">
+        <text transform="translate(1456.3386 1172.8622)" fill="black">
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="11">{ quantity_in_stock &gt;= 0} </tspan>
+        </text>
+      </g>
+      <g id="Graphic_125">
+        <text transform="translate(1456.3386 1108.8937)" fill="black">
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="11">{ date_discontinued is null </tspan>
+          <tspan font-family="Menlo" font-size="12" font-weight="400" fill="black" x="0" y="25">OR date_added_to_catalog &lt; date_discontinued }</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="250 171 209 98" width="209" height="98">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="250 171 209 98" width="209" height="98">
   <defs>
     <font-face font-family="Menlo" font-size="16" panose-1="2 11 6 9 3 8 4 2 2 4" units-per-em="1000" underline-position="-63.47656" underline-thickness="43.94531" slope="0" x-height="546.875" cap-height="729.0039" ascent="928.2227" descent="-235.83984" font-weight="400">
       <font-face-src>
@@ -23,10 +23,10 @@
       </g>
     </marker>
   </defs>
-  <metadata> Produced by OmniGraffle 7.11.3 
-    <dc:date>2019-09-29 19:26:10 +0000</dc:date>
+  <metadata> Produced by OmniGraffle 7.8 
+    <dc:date>2019-10-29 18:37:04 +0000</dc:date>
   </metadata>
-  <g id="Classes" fill="none" fill-opacity="1" stroke-opacity="1" stroke-dasharray="none" stroke="none">
+  <g id="Classes" fill-opacity="1" stroke-dasharray="none" stroke="none" stroke-opacity="1" fill="none">
     <title>Classes</title>
     <g id="Classes: Layer 1">
       <title>Layer 1</title>
@@ -52,13 +52,13 @@
         <path d="M 350.55924 212.0564 L 350.55924 212.0564 C 348.10652 211.5883 345.73872 213.19713 345.2706 215.64985 C 345.22408 215.89365 345.1977 216.14088 345.19175 216.389 L 344.8251 231.67186 C 344.77018 233.9619 343.3155 235.9835 341.1616 236.76322 L 341.1616 236.76322 C 340.41956 237.03183 340.03577 237.85113 340.3044 238.59318 C 340.44453 238.98031 340.74485 239.2882 341.1284 239.4379 L 341.3234 239.51403 C 343.5755 240.3931 345.05853 242.5627 345.0599 244.98025 L 345.06728 257.86134 C 345.0686 260.1786 346.9475 262.0564 349.26474 262.0564 L 349.26474 262.0564" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
       </g>
       <g id="Graphic_15">
-        <text transform="translate(263.70703 227.5159)" fill="black">
-          <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x="0" y="14">Attributes</tspan>
+        <text transform="translate(263.5 228.2542)" fill="black">
+          <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x=".20703125" y="14">Attributes</tspan>
         </text>
       </g>
       <g id="Graphic_16">
-        <text transform="translate(255.26172 177)" fill="black">
-          <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x="0" y="14">Class name</tspan>
+        <text transform="translate(255 177.73828)" fill="black">
+          <tspan font-family="Arial" font-size="16" font-weight="400" fill="black" x=".26171875" y="14">Class name</tspan>
         </text>
       </g>
       <g id="Line_17">

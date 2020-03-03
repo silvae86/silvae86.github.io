@@ -1,7 +1,7 @@
 ---
 layout: page
 title: How to install and use SQLite
-permalink: /teaching/exercises/sql/sqlite/
+permalink: /teaching/howto/sqlite/
 crumbtitle: How to install and use SQLite
 ---
 

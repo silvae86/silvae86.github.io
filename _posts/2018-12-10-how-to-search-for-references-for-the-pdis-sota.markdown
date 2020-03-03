@@ -7,11 +7,23 @@ categories: pdis research feup mieic
 
 ## How to search for good references
 
-For those who are doing the state of art in PDIS, I advise you to use the [CORE2018 Ranking](http://portal.core.edu.au/conf-ranks/?search=Software+Engineering&by=all&source=CORE2018&sort=arank&page=1) to find the best conferences in your area (order by ranking, the best are A *, then A, B, etc.). Afterwards, look at the [ACM Digital Library](https://dl.acm.org/) or [IEEE Xplore](https://ieeexplore.ieee.org/) or just [Google Scholar](https://scholar.google.com) if all else fails!
+For those who are doing the state of art in dissertation preparation courses (PDIS at MIEIC), I advise you to use the [CORE2018 Ranking](http://portal.core.edu.au/conf-ranks/?search=Software+Engineering&by=all&source=CORE2018&sort=arank&page=1) to find the best conferences in your area (order by ranking, the best are A *, then A, B, etc.). Afterwards, look at the [ACM Digital Library](https://dl.acm.org/) or [IEEE Xplore](https://ieeexplore.ieee.org/) or just [Google Scholar](https://scholar.google.com) if all else fails!
 
 We will follow a future Informatics Engineer, who wants to do good research for the state of the art of the dissertation.
 
 *(S)He is interested in reading the latest publications related to continuous integration, a topic within **Software Engineering**. Being a smart but very busy engineering student, (s)he wants to read the best ones first...*
+
+### The Scimago Journal Ranking
+
+There is a universally recognized ranking for Journals, called [Scimago JR](https://www.scimagojr.com/). In this ranking, the journals are divided in quartiles, Q1 being the best journals and Q4 the worst. If you search for your research area here you will discover the best journals. 
+
+#### About journals
+
+Journal articles are usually much longer than a conference article and the review process is much longer and harder to go through. Often more than one review stage is present, with reviewers asking authors to improve a lot of stuff, often to the point of a rewrite.
+
+However, because of this tough competition and review process, a journal article is often a very high quality publication, where the entire research process is explained in detail, whereas in a conference you may be left with more questions after reading a paper. Often there is not enough room in a conference paper to write everything in detail and also provide a comprehensive state of the art.
+
+For those researchers who don't like to travel to conferences, publishing in journals can be an alternative; just remember that a researcher without a network of contacts can be left out of some interesting opportunities for collaboration---like in everything in life.
 
 ### The CORE2018 Conference Ranking
 

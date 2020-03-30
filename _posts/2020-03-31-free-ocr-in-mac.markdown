@@ -9,7 +9,12 @@ When you want to make a PDF searchable, there are many paid options for the Mac.
 
 First, install [Homebrew](https://brew.sh) and then install [ocrmypdf](https://github.com/jbarlow83/OCRmyPDF). 
 
-Usage:
+```shell
+brew install ocrmypdf
+```
+
+
+Usage example:
 
 ![Usage example for ocrmypdf](/assets/images/post-images/2020-03-31-free-ocr-in-mac/ocrmypdf-usage.png){:class="img-responsive"}
 

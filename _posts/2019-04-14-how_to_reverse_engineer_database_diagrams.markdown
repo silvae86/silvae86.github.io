@@ -47,7 +47,82 @@ You can also specify the environment variable `GRAPHVIZ_DOT` to set the exact lo
 
 _(from the [GraphViz webpage](http://plantuml.com/graphviz-dot))_
 
-### Install Schemacrawler as a command-line tool
+## macOS Catalina Problems (Library Validation)
+
+Before we can run schemacrawler, we need to make sure that our version of Java is compatible with macOS Catalina app notarizing and library validation. This is a bug documented [here](https://bugs.openjdk.java.net/browse/JDK-8223671), causing this in 10.15 and later:
+
+```text
+Failed to load native library:sqlite-3.30.1-63e686c6-fc4b-46d5-bee9-6ac08b61d492-libsqlitejdbc.jnilib. osinfo: Mac/x86_64
+java.lang.UnsatisfiedLinkError: /var/folders/dq/_vfds3wn0v34sh0sw_45dvn80000gn/T/sqlite-3.30.1-63e686c6-fc4b-46d5-bee9-6ac08b61d492-libsqlitejdbc.jnilib (dlopen(/var/folders/dq/_vfds3wn0v34sh0sw_45dvn80000gn/T/sqlite-3.30.1-63e686c6-fc4b-46d5-bee9-6ac08b61d492-libsqlitejdbc.jnilib, 1): no suitable image found.  Did find: 	/var/folders/dq/_vfds3wn0v34sh0sw_45dvn80000gn/T/sqlite-3.30.1-63e686c6-fc4b-46d5-bee9-6ac08b61d492-libsqlitejdbc.jnilib: code signature in (/var/folders/dq/_vfds3wn0v34sh0sw_45dvn80000gn/T/sqlite-3.30.1-63e686c6-fc4b-46d5-bee9-6ac08b61d492-libsqlitejdbc.jnilib) not valid for use in process using Library Validation: mapped file has no cdha)
+SchemaCrawler 15.06.01
+
+Error: org/sqlite/core/NativeDB._open_utf8([BI)V
+
+Re-run SchemaCrawler with just the
+-?
+option for help
+
+Or, re-run SchemaCrawler with an additional
+-loglevel=CONFIG
+option for details on the error
+Apr 09, 2020 4:13:54 PM us.fatehi.commandlineparser.CommandLineUtility logSafeArguments
+INFO: Environment:
+SchemaCrawler 15.06.01
+Mac OS X 10.15.4
+Eclipse OpenJ9 Eclipse OpenJ9 VM 11.0.4+11
+
+Apr 09, 2020 4:13:54 PM us.fatehi.commandlineparser.CommandLineUtility logSafeArguments
+INFO: Command line:
+-server
+sqlite
+-database
+/tmp/database.db
+-user
+-password
+*****
+info
+-command
+schema
+-outputformat
+png
+-outputfile
+/tmp/diagram.png
+Apr 09, 2020 4:13:54 PM us.fatehi.commandlineparser.CommandLineUtility logFullStackTrace
+SEVERE: org/sqlite/core/NativeDB._open_utf8([BI)V
+java.lang.UnsatisfiedLinkError: org/sqlite/core/NativeDB._open_utf8([BI)V
+	at org.sqlite.core.NativeDB._open(NativeDB.java:78)
+	at org.sqlite.core.DB.open(DB.java:195)
+	at org.sqlite.SQLiteConnection.open(SQLiteConnection.java:243)
+	at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:61)
+	at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:28)
+	at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:21)
+	at org.sqlite.JDBC.createConnection(JDBC.java:115)
+	at org.sqlite.JDBC.connect(JDBC.java:90)
+	at schemacrawler.tools.databaseconnector.BaseDatabaseConnectionOptions.getConnection(BaseDatabaseConnectionOptions.java:163)
+	at schemacrawler.tools.databaseconnector.BaseDatabaseConnectionOptions.getConnection(BaseDatabaseConnectionOptions.java:104)
+	at schemacrawler.tools.commandline.SchemaCrawlerCommandLine.execute(SchemaCrawlerCommandLine.java:119)
+	at schemacrawler.Main.main(Main.java:92)
+```
+
+Install adoptopenjdk 8
+
+```sh
+brew cask install adoptopenjdk
+brew tap AdoptOpenJDK/openjdk
+# no-quarantine necessary to avoid because of (“adoptopenjdk-14.jdk” is damaged and can’t be opened.) solution found here: 
+# https://github.com/Homebrew/homebrew-cask/issues/79038 
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8 --no-quarantine
+```
+
+Set JAVA_HOME:
+
+```sh
+JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+```
+
+## Installing Schemacrawler as a command-line tool
+
+With all dependencies ready, let's install the tool itself.
 
 Heavily adapted from [here](https://gist.github.com/dannguyen/f056d05bb7fec408bb7c14ea1552c349), only updated to the latest version of SchemaCrawler.
 
@@ -60,6 +135,7 @@ _SCH_TNAME="/tmp/${SCH_BNAME}.zip"
 _SCH_URL="https://github.com/schemacrawler/SchemaCrawler/releases/download/v${_SCH_VERSION}/${_SCH_BNAME}.zip"
 _SCH_DIR='/usr/local/opt/schemacrawler'
 _SCH_SH="${_SCH_DIR}/schemacrawler-macos-opt.sh"
+JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 
 INITIAL_DIR="$(pwd)"
 # Download and unzip into /tmp
@@ -152,6 +228,8 @@ This script was used by me for generating diagrams from the SQL scripts written 
 ```shell
 #!/usr/bin/env bash
 
+JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
+
 function diagram
 {
     local database="$(pwd)/$1"
@@ -179,46 +257,48 @@ diagram database.db diagram.png
 ```shell
 #!/usr/bin/env bash
 
+JAVA_HOME="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
+
 function faz_diagrama
 {
-local database="$(pwd)/$1"
-echo "database is $database"
-local path="$(pwd)/$2"
-echo "path is $path"
-/bin/rm "/tmp/diagram.pdf"
-/bin/cp "$database" "/tmp/database.db"
-/bin/ls -la "/tmp/database.db"
-/bin/bash -c '/usr/local/bin/schemacrawler -server sqlite -database /tmp/database.db -user -password -loglevel info -command schema -outputformat pdf -outputfile /tmp/diagram.pdf'
-/bin/cp "/tmp/diagram.pdf" "$path"
+	local database="$(pwd)/$1"
+	echo "database is $database"
+	local path="$(pwd)/$2"
+	echo "path is $path"
+	/bin/rm "/tmp/diagram.pdf"
+	/bin/cp "$database" "/tmp/database.db"
+	/bin/ls -la "/tmp/database.db"
+	/bin/bash -c '/usr/local/bin/schemacrawler -server sqlite -database /tmp/database.db -user -password -loglevel info -command schema -outputformat pdf -outputfile /tmp/diagram.pdf'
+	/bin/cp "/tmp/diagram.pdf" "$path"
 }
 
 function existe()
 {
-local ficheiro=$1
-[ -f "$ficheiro" ] || (echo "Ficheiro $ficheiro não existe!" && read ERROR)
+	local ficheiro=$1
+	[ -f "$ficheiro" ] || (echo "Ficheiro $ficheiro não existe!" && read ERROR)
 }
 
 function corre_queries
 {
-for (( i = 1; i <= 10; i++ )); do
-local file_path="./int${i}.sql"
-printf "\n---------Ficheiro Query ${file_path}---------\n\n"
-existe "$file_path" && \
-cat "$file_path" | sqlite3 database.db || (echo "Erro a correr query ${i}" && read ERROR)
-done
+	for (( i = 1; i <= 10; i++ )); do
+		local file_path="./int${i}.sql"
+		printf "\n---------Ficheiro Query ${file_path}---------\n\n"
+		existe "$file_path" && \
+			cat "$file_path" | sqlite3 database.db || (echo "Erro a correr query ${i}" && read ERROR)
+	done
 }
 
 function testa_triggers
 {
-for (( i = 1; i <= 3; i++ )); do
-local file_path="./gatilho${i}_XXXXXX.sql"
-printf "\n---------Ficheiro Gatilho ${file_path}---------\n\n"
+	for (( i = 1; i <= 3; i++ )); do
+		local file_path="./gatilho${i}_XXXXXX.sql"
+		printf "\n---------Ficheiro Gatilho ${file_path}---------\n\n"
 
-( existe "./gatilho${i}_adiciona.sql" || existe "./gatilho${i}_verifica.sql" ] || existe "./gatilho${i}_remove.sql" ) && \
-cat "./gatilho${i}_adiciona.sql" | sqlite3 database.db && \
-cat "./gatilho${i}_verifica.sql" | sqlite3 database.db && \
-cat "./gatilho${i}_remove.sql" | sqlite3 database.db || (echo "Erro a correr trigger ${i}" && read ERROR)
-done
+		( existe "./gatilho${i}_adiciona.sql" || existe "./gatilho${i}_verifica.sql" ] || existe "./gatilho${i}_remove.sql" ) && \
+			cat "./gatilho${i}_adiciona.sql" | sqlite3 database.db && \
+				cat "./gatilho${i}_verifica.sql" | sqlite3 database.db && \
+					cat "./gatilho${i}_remove.sql" | sqlite3 database.db || (echo "Erro a correr trigger ${i}" && read ERROR)
+	done
 }
 
 rm -rf database.db

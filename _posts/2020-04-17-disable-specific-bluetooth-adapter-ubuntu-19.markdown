@@ -94,4 +94,4 @@ hci0:	Type: Primary  Bus: USB # <-- It will now be hci0
 
 ## Why is this important to me?
 
-I had to get it running on my ancient but much loved Lenovo T420. Check out the [specs](/2019-02-10-my-hacked-lenovo-t420) of this Frankenstein of a laptop that I built over the years with some fancy goodies.
+I had to get it running on my ancient but much loved Lenovo T420. Check out the [specs](/hardware/hacks/t420/toaster/2019/02/10/my-hacked-lenovo-t420/) of this Frankenstein of a laptop that I built over the years with some fancy goodies.

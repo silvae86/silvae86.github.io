@@ -9,6 +9,9 @@ This all started because my Bluetooth mouse was lagging and the pointer skipping
 
 Say you have a crappy built-in BT adapter, with a very old BT version (2.0, for example), and you pop in a new wifi card with combined Wifi-6 and BT 4.0 LE, such as the [AzureWave AW-CB160](https://www.ebay.co.uk/itm/BroadCom-AW-CB160-BCM94360HMB-WIFI-HALF-PCI-E-Wireless-BT-Card-BT4-0-WLAN-W003-/303426968043) with the BroadCom BCM94360HMB chipset. Wi-Fi ac at 1300Mbps was working out of the box, but Bluetooth 4.0 was nowhere to be found.
 
+![Opening up the T420 to change the Wifi Card](/assets/images/post-images/2020-04-17-disable-specific-bluetooth-adapter-ubuntu-19/Screenshot from 2020-04-18 11:50:04.png){:class="img-responsive"}
+*Opening up the T420 to change anything is a breeze. Right to repair FTW!*{:class="img-caption"}
+
 Ubuntu Linux will automatically use the first adapter it detects, so your shiny new adapter will be ignored, and the system keeps using the other, older and weaker one.
 
 ### Approach?

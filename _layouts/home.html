@@ -3,8 +3,6 @@
 
   <head>
 	  {%- include head-content.html -%}
-	  
-      <link rel="stylesheet" href="{{ "/assets/css/home-layout.css" | relative_url }}">
   </head>
 
   <body>
@@ -12,34 +10,33 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      	<div class="wrapper">
-			
+      <div class="wrapper">
+
 	        {%- include nav-breadcrumbs.html -%}
 
 			<div class="home">
-				
-				<aside id="about" class="home_section">
-					{%- include about.html -%}
-				</aside>
-				
-				{%- if page.title -%}
-					<h1 class="page-heading">{{ page.title }}</h1> 
-				{%- endif -%}
-	  
-				<div id="teaching" class="home_section">
-					<h1 class="page-heading">Teaching</h1>
-	
-					{% capture my_include %}{% include teaching/2020.md %}{% endcapture %}
-					{{ my_include | markdownify }}		
-				</div>
-	
-				<div id="archive" class="home_section">
-					{%- include archive.html -%}
-				</div>
-	
-				<div id="recentposts" class="home_section">
-				    
 
+        <aside class="">
+          <div id="about" class="home_section">
+  					{%- include about.html -%}
+  				</div>
+          <div id="archive" class="home_section">
+  					{%- include archive.html -%}
+  				</div>
+        </aside>
+
+				{%- if page.title -%}
+					<h1 class="page-heading">{{ page.title }}</h1>
+				{%- endif -%}
+
+        <!-- <div id="teaching" class="home_section">
+					<h1 class="page-heading">Teaching</h1>
+
+					{% capture my_include %}{% include teaching/2020.md %}{% endcapture %}
+					{{ my_include | markdownify }}
+				</div> -->
+
+				<div id="recentposts" class="home_section">
 				    {%- if site.posts.size > 0 -%}
 				      <h2 class="post-list-heading">{{ page.list_title | default: "Latest posts" }}</h2>
 
@@ -78,6 +75,3 @@
   </body>
 
 </html>
-
-
-

@@ -1,6 +1,3 @@
----
----
-
 $monokai_dark: #272822 !default;
 $monokai_pink: #f92672 !default;
 $monokai_cyan: #66d9ef !default;
@@ -17,10 +14,10 @@ div.wrapper {
 
 div.home {
 	display:grid;
-	
+
 	grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts];
 	grid-template-columns: [start-of-about] 1fr [end-of-about-start-of-content] 4fr [end-of-content];
-	
+
 	grid-template-areas: "about teaching"
 						 "archive recentposts";
 }
@@ -48,24 +45,28 @@ div.home > div#recentposts {
 
 #archive_list {
 	list-style-type: none;
-	margin-left: 0;	
+	margin-left: 0;
 }
 
 #archive_list .separator {
-	font-size: 1em;	
-	border-radius: 2px; 
-	padding: 2px; 
+	font-size: 1em;
+	border-radius: 2px;
+	padding: 2px;
 	background-color: #e8e8e8;
+	color: #aaa;
 	margin-top: 1em;
 	margin-bottom: 1em;
 }
 
-#archive_list .post-link {
-	font-size: 0.7em;
-	margin-left: 2em;
+#archive_list > li.post-link a {
+	font-size: 0.6em;
+	margin-left: 0.5em;
+	font-family: sans-serif;
+  color: lighten($brand-color, 30%);
 }
 
-#archive_list .post-link > a::before {
+#archive_list > li.post-link a::before {
 	font-family: "Font Awesome 5 Free";
-	content: "\f70e";
+	content: "\f70e\00a0";
+	font-weight:900;
 }

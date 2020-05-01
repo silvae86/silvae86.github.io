@@ -59,6 +59,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-debug
+  - jekyll-sitemap
 
 
 # mimic GitHub Pages with --safe

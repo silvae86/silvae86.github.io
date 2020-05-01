@@ -76,9 +76,14 @@ GROUP BY course.ref, year
 ```
 10) What was the higher grade, considering both exams, obtained in the SINF course? (grade)
 ```sql
-SELECT MAX(max(grade1, grade2))
+--coalesce function will return the first non-null argument:
+--https://www.sqlitetutorial.net/sqlite-functions/sqlite-coalesce/
+
+SELECT MAX(
+		MAX(COALESCE(grade1, grade2), COALESCE(grade1, grade2) )
+	)
 FROM enrollment JOIN
-     course USING(ref)
+  course USING(ref)
 WHERE name = 'SINF'
 ```
 11) Who got that grade? (num, name)
@@ -108,9 +113,9 @@ select student.num, student.name as name, grade1, grade2, course.name
 from enrollment
 join course on course.ref = enrollment.ref
 join student on enrollment.num = student.num
-where 
+where
 course.name="SINF"
-and 
+and
 (
 	grade1 =
 		(
@@ -120,7 +125,7 @@ and
 			on e1.ref = c1.ref
 			where c1.name = "SINF"
 		)
-	or 
+	or
 	grade2 =
 		(
 			select max( max(e2.grade1), max(e2.grade2))
@@ -167,7 +172,7 @@ or (ridiculously long query, just for laughs)
 -- "The copy-paste train"
 
 select *
-from 
+from
 (
 	select student.num, student.name as name, grade1, grade2
 	from enrollment e1
@@ -175,9 +180,9 @@ from
 	join student on e1.num=student.num
 	where
 	course.name = 'SINF'
-	and grade1 is not null and grade1 = ( 
+	and grade1 is not null and grade1 = (
 		select max(grade)
-		from 
+		from
 		(
 			select grade1 as grade
 			from enrollment e2
@@ -201,9 +206,9 @@ from
 	join student on e2.num=student.num
 	where
 	course.name = 'SINF'
-	and grade2 is not null and grade2 = ( 
+	and grade2 is not null and grade2 = (
 		select max(grade)
-		from 
+		from
 		(
 			select grade1 as grade
 			from enrollment e2

@@ -7,7 +7,7 @@ crumbtitle: SIBD
 
 ## Contents 
 
-{% include_relative common/plan.md %}
+{% include_relative sibd/plan.md %}
 
 ## Information
 

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: ESIN/SIBD Project Information
+title: Project Information
 include_in_menu: false
-permalink: /teaching/2020/ESIN_SIBD/project/
-crumbtitle: ESIN/SIBD Project
+permalink: /teaching/2020/ESIN_SIBD/sibd/project/
+crumbtitle: Project
 ---
 
 ##  Objective
@@ -57,7 +57,7 @@ The second delivery will be the website itself:
 
 #### Project planning
 
-![How to succeed in the practical work](../common/project_management.png){:class="img-responsive"}
+![How to succeed in the practical work](../../common/project_management.png){:class="img-responsive"}
 
 #### Final checklist
 

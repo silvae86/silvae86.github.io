@@ -12,37 +12,6 @@ div.wrapper {
 	min-width: 60em;
 }
 
-div.home {
-	display:grid;
-
-	grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts];
-	grid-template-columns: [start-of-about] 1fr [end-of-about-start-of-content] 4fr [end-of-content];
-
-	grid-template-areas: "about teaching"
-						 "archive recentposts";
-}
-
-div.home > *
-{
-	margin:2em;
-}
-
-div.home > aside#about {
-	grid-template-area: about;
-}
-
-div.home > div#teaching {
-	grid-template-area: teaching;
-}
-
-div.home > div#archive {
-	grid-template-area: archive;
-}
-
-div.home > div#recentposts {
-	grid-template-area: recentposts;
-}
-
 #archive_list {
 	list-style-type: none;
 	margin-left: 0;
@@ -62,7 +31,7 @@ div.home > div#recentposts {
 	font-size: 0.6em;
 	margin-left: 0.5em;
 	font-family: sans-serif;
-  color: lighten($brand-color, 30%);
+  color: $brand-color;
 }
 
 #archive_list > li.post-link a::before {

@@ -2,7 +2,7 @@
 layout: post
 title:  "How to add your SSH keys to a server for password-less logins"
 date:   2018-07-02 16:54:07 +0100
-categories: sysadmin ssh keys
+tags: sysadmin ssh keys
 ---
 
 SSH keys allow you to login into your SSH server without having to remember passwords and with much stronger security. It's like having a super long password that you never have to remember... Just keep your private keys in a safe place.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Fixing `unable to determine url for /Volumes/TimeCapsule in Apple Time Machine`"
 date:   2019-09-10 23:28:000 +0100
-categories: macOS catalina time capsule bug
+tags: macOS catalina time capsule bug
 ---
 
 So far, macOS Catalina Beta has been a mixed bag of experiences. After critical crashes to the login screen on Beta 3, Beta 7 seems to be stable enough for daily use.

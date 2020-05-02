@@ -2,7 +2,7 @@
 layout: post
 title:  "Using find and xargs to deep find files in a directory tree and copy them"
 date:   2020-04-18 11:13:000 +0100
-categories: ubuntu font install batch xargs commands cli
+tags: ubuntu font install batch xargs commands cli
 ---
 
 I was looking for an easy way to install a lot of fonts in Ubuntu. By the way, I discovered a great GitHub repository with many interesting ones [here](https://github.com/perrychan1/fonts)!

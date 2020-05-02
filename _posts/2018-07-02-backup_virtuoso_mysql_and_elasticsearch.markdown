@@ -2,7 +2,7 @@
 layout: post
 title:  "How to backup MySQL, OpenLink Virtuoso and ElasticSearch database data via command line in Linux"
 date:   2018-07-09 15:12:00 +0100
-categories: sysadmin backup mysql virtuoso elasticsearch ubuntu
+tags: sysadmin backup mysql virtuoso elasticsearch ubuntu
 ---
 
 MySQL, ElasticSearch and OpenLink Virtuoso are all dependencies of our research data management platform, [Dendro](https://github.com/feup-infolab/dendro). Here is how we back up the databases.

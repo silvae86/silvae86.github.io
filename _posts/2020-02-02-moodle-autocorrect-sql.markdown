@@ -2,7 +2,7 @@
 layout: post
 title:  "Semi-automated correction of SQL exercises in Moodle"
 date:   2020-02-02 18:37:000 +0100
-categories: moodle teaching automated correction sql sqlite elearning
+tags: moodle teaching automated correction sql sqlite elearning
 ---
 
 At FEUP we have a [Moodle instance](https://moodle.up.pt) provided by the University of Porto. I think Moodle is an awesome tool for e-learning: I use it as much as possible for centralizing lecture contents, organize assignment deliveries and provide not only grades but also individual feedback to my students. 

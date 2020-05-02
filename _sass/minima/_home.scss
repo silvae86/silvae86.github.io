@@ -1,0 +1,30 @@
+div.home {
+	display:grid;
+
+	grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts];
+	grid-template-columns: [start-of-about] 1fr [end-of-about-start-of-content] 4fr [end-of-content];
+
+	grid-template-areas: "about teaching"
+						 "archive recentposts";
+}
+
+div.home > *
+{
+	margin:2em;
+}
+
+div.home > aside#about {
+	grid-template-area: about;
+}
+
+div.home > div#teaching {
+	grid-template-area: teaching;
+}
+
+div.home > div#archive {
+	grid-template-area: archive;
+}
+
+div.home > div#recentposts {
+	grid-template-area: recentposts;
+}

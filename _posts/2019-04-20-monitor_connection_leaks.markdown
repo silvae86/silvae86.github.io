@@ -2,7 +2,7 @@
 layout: post
 title:  "How to monitor connection leaks"
 date:   2019-04-20 21:44:00 +0100
-categories: connection leaks monitoring
+tags: connection leaks monitoring
 ---
 
 Database connections need to be managed properly. If we keep opening connections to a database without closing or releasing them (in the case of a connection pool), the database will soon stop responding.

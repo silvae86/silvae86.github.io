@@ -2,7 +2,7 @@
 layout: post
 title:  "Installing Semantic Mediawiki"
 date:   2018-10-28 16:54:07 +0100
-categories: sysadmin semantic mediawiki install
+tags: sysadmin semantic mediawiki install
 ---
 
 ## How to install Semantic MediaWiki on Ubuntu 18.04 LTS

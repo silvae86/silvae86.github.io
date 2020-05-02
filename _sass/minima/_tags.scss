@@ -1,0 +1,12 @@
+ul.tags {
+  margin-left: 0px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+li.tag-pill {
+  display:inline;
+  background-color: $brand-color;
+  padding: 0.3em 1em 0.3em 1em;
+  border-radius:3px;
+}

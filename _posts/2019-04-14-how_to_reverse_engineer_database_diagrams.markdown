@@ -2,7 +2,7 @@
 layout: post
 title:  "How to make nice diagrams from your SQLite database"
 date:   2019-04-14 23:20:00 +0100
-categories: databases sqlite diagrams macos reverse engineering
+tags: databases sqlite diagrams macos reverse engineering
 ---
 
 There often comes the time when you have an existing database and you need to build a nice diagram to analyse it quickly. Here is how to do it using open-source software. We are going to be working on a Mac running macOS 10.14 Mojave, as well as an SQLite database.

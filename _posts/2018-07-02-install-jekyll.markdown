@@ -2,7 +2,7 @@
 layout: post
 title:  "How to install Jekyll using Homebrew, Mac OS X 10.14 Mojave Beta"
 date:   2018-07-02 16:36:07 +0100
-categories: jekyll install mac osx sysadmin mojave
+tags: jekyll install mac osx sysadmin mojave
 ---
 
 This short guide shows you how to install and run a Jekyll blog in your Mac. Mojave broke some things for me in Homebrew, so this addresses some possible issues that you may also face.

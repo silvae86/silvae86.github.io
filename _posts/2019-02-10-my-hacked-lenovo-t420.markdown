@@ -65,3 +65,5 @@ Here are some references I was able to find. Antiglare/glossy info from Panelloo
 | 00NY412          | LP140QH1-SPE3      | [Antiglare](https://www.ebay.com/itm/LP140QH1-SP-E3-14-0-3K-QHD-LED-Display-2560x1440-40-Pin-eDP-matt-00NY412/263489106971?hash=item3d592cb41b:g:xUYAAOSwfphafu~K) |
 | 00HN877, 00HN878 | LP140QH1-SPF1      | Antiglare |
 | 00HN827          | LP140QH1-SPA2      | Glossy    |
+| 00NY440          | B140QAN01.5      | Glossy    |
+| 00HN826          | B140QAN01.1      | Glossy    |

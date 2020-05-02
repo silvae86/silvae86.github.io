@@ -1,12 +1,14 @@
 ul.tags {
   margin-left: 0px;
-  margin-top: 2em;
+  margin-top: 0.2em;
   margin-bottom: 2em;
 }
 
 li.tag-pill {
   display:inline;
-  background-color: $brand-color;
+  color: white;
+  background-color: transparentize($brand-color, 0.2);
   padding: 0.3em 1em 0.3em 1em;
   border-radius:3px;
+  clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0 50%);
 }

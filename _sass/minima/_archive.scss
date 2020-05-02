@@ -7,35 +7,39 @@ $monokai_orange: #fd971f !default;
 // start content
 @charset "utf-8";
 
-div.wrapper {
-	max-width: 90em;
-	min-width: 60em;
-}
-
 #archive_list {
 	list-style-type: none;
 	margin-left: 0;
 }
 
-#archive_list .separator {
+$separator-color: #aaa;
+
+#archive_list > li.separator {
 	font-size: 1em;
 	border-radius: 2px;
 	padding: 2px;
-	background-color: #e8e8e8;
-	color: #aaa;
+	color: $separator-color;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	margin-left: 0;
+	border-bottom: 3px dashed lighten($separator-color, 0.7);
+	font-weight:900;
 }
 
+// #archive_list .separator::before {
+// 	font-family: "Font Awesome 5 Free";
+// 	content: "\f5b7\00a0";
+// }
+
 #archive_list > li.post-link a {
-	font-size: 0.6em;
-	margin-left: 0.5em;
-	font-family: sans-serif;
+	font-size: 0.8em;
+	margin-left: 0px;
+	font-family: $monospace-font-family;
   color: $brand-color;
 }
 
 #archive_list > li.post-link a::before {
 	font-family: "Font Awesome 5 Free";
-	content: "\f70e\00a0";
+	content: "\f0c8\00a0";
 	font-weight:900;
 }

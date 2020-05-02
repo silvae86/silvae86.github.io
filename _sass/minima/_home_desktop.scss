@@ -1,0 +1,17 @@
+@media only screen and (min-width: $on-laptop) {
+	div.home{
+		grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts];
+		grid-template-columns: [start-of-about] 1fr [end-of-about-start-of-content] 4fr [end-of-content];
+
+		// grid-template-areas: "about teaching"
+		// 					 "archive recentposts";
+
+		grid-template-areas: "about recentposts"
+		  					"archive recentposts";
+	}
+
+	#about {
+		grid-area: about;
+		margin:1em;
+	}
+}

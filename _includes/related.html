@@ -41,7 +41,7 @@
 
      <ul class="tags minitags">
        {% for tag in post.commonTags %}
-         <a class="tag-pill tag-pill-mini" href="/tags#{{ tag | slugify }}"
+         <a class="tag-pill tag-pill-mini" href="/tags#{{ tag | slugify }}">
           <li>{{ tag }}</li>
          </a>
        {% endfor %}

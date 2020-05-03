@@ -237,6 +237,7 @@ GEM
       pry (~> 0.10)
     public_suffix (3.1.1)
     rainbow (3.0.0)
+    rake (12.3.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -276,6 +277,7 @@ DEPENDENCIES
   jekyll-theme-hacker
   minima (~> 2.0)
   pry-byebug
+  rake
   tzinfo-data
 
 BUNDLED WITH

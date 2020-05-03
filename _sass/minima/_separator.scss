@@ -1,0 +1,6 @@
+$separator-color: #aaa;
+
+.separator {
+  color: $separator-color;
+	border-bottom: 3px dashed lighten($separator-color, 0.7);
+}

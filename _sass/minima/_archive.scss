@@ -12,17 +12,13 @@ $monokai_orange: #fd971f !default;
 	margin-left: 0;
 }
 
-$separator-color: #aaa;
-
 #archive_list > li.separator {
 	font-size: 1em;
 	border-radius: 2px;
 	padding: 2px;
-	color: $separator-color;
 	margin-top: 1em;
 	margin-bottom: 1em;
 	margin-left: 0;
-	border-bottom: 3px dashed lighten($separator-color, 0.7);
 	font-weight:900;
 }
 

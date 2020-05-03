@@ -8,15 +8,14 @@ crumbtitle: Solutions for UML Class Diagram exercises
 
 - [Veterinary Clinic](VeterinaryClinic.pdf)  
 
-- [Auto Repair Shop](AutoRepairShop.pdf) 
+- [Auto Repair Shop](AutoRepairShop.pdf)
 
-- [Restaurant](Restaurant.pdf) 
+- [Restaurant](Restaurant.pdf)
 
-- [Deliveries](Deliveries.pdf) 
+- [Deliveries](Deliveries.pdf)
 
-- [Furniture Factory](FurnitureFactory.pdf) 
+- [Furniture Factory](FurnitureFactory.pdf)
 
-- [Factory](Factory.pdf) 
-	
-- [Bicycles](Bicycles.pdf) 
+- [Factory](Factory.pdf)
 
+- [Bicycles](BicycleRenting.pdf) 

@@ -15,7 +15,7 @@ We will follow a future Informatics Engineer, who wants to do good research for 
 
 ### The Scimago Journal Ranking
 
-There is a universally recognized ranking for Journals, called [Scimago JR](https://www.scimagojr.com/). In this ranking, the journals are divided in quartiles, Q1 being the best journals and Q4 the worst. If you search for your research area here you will discover the best journals. 
+There is a universally recognized ranking for Journals, called [Scimago JR](https://www.scimagojr.com/). In this ranking, the journals are divided in quartiles, Q1 being the best journals and Q4 the worst. If you search for your research area here you will discover the best journals.
 
 #### About journals
 
@@ -46,7 +46,7 @@ By clicking on the link with the name of the conference, it is possible to get t
 
 ### ACM Digital Library
 
-If one cannot find anything in IEEE Xplore, the next option is the ACM Digital Library. In this case, since [http://www.icse-conferences.org/](ICSE) is a top conference, it will also be [there](https://dl.acm.org/citation.cfm?id=3183428&picked=prox).
+If one cannot find anything in IEEE Xplore, the next option is the ACM Digital Library. In this case, since [ICSE](http://www.icse-conferences.org/) is a top conference, it will also be [there](https://dl.acm.org/citation.cfm?id=3183428&picked=prox).
 
 Clicking on the "Table of Contents" gives one access to the list of papers:
 

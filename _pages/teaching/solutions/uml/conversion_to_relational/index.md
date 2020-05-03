@@ -9,7 +9,7 @@ crumbtitle: UML Class to Relational exercises
 
 ## Veterinary Clinic
 
-**Animals**(<u>id</u>, name, breed &rarr;Breed, owner&rarr;Owner) 
+**Animals**(<u>id</u>, name, breed &rarr;Breed, owner&rarr;Owner)
 
 NOT NULL(breed)
 
@@ -64,7 +64,7 @@ NOT NULL(car)
 
 NOT NULL(car)
 
-**Models**(<u>id</u>, description, make &rarr;Make) 
+**Models**(<u>id</u>, description, make &rarr;Make)
 
 NOT NULL (make)
 
@@ -72,7 +72,7 @@ NOT NULL (make)
 
 **Makes**(<u>name</u>)
 
-**Parts**(<u>id</u>, serial_no, service &rarr;Service) 
+**Parts**(<u>id</u>, serial_no, service &rarr;Service)
 
 NOT NULL(service)
 
@@ -109,7 +109,7 @@ UNIQUE(identifier)
 
 **Meals**(id, served_to &rarr;Client, served_by &rarr; Waiter, date, start_time, end_time, table &rarr; Table)
 
-CHECK(start_time < end_time OR end_time IS NULL) 
+CHECK(start_time < end_time OR end_time IS NULL)
 
 `Comment: if end_time is null, the meal is still going on, but we should be able to insert the record anyway, and then update it when the meal is finished.`
 
@@ -130,15 +130,15 @@ CHECK(
 
 ​	(
 
-​	SELECT COUNT(*) 
+​	SELECT COUNT(*)
 
-​	FROM QuantitiesNeededForDishes 
+​	FROM QuantitiesNeededForDishes
 
 ​	JOIN Dishes ON Dishes.identifier = QuantitiesNeededForDishes.dish 	
 
 ​	WHERE Dishes.identifier = NEW.identifier
 
-​	) >= 1 
+​	) >= 1
 
 )
 

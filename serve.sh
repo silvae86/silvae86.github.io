@@ -8,4 +8,4 @@ bundle install
 
 #serve blog
 # bundle exec jekyll serve --config _config.yml --plugins _plugins
-bundle exec jekyll serve b -w --trace --config _config.yml
+bundle exec jekyll serve b -w --trace --config _config.yml --safe

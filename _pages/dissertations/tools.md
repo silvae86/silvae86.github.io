@@ -18,7 +18,7 @@ I have heard great things about Office 365, but it still does not solve the bibl
 
 Another thing I do not like about Word for research documents is that research writing is a creative process, and Word is simply not designed for creative writing. When you want to just write your thoughts as they flow, the last thing you need is 30 different buttons to remind you that you need to use styles, format with bold, italic, click click click to add a reference here and there... Just you and your text, that is all you need. And LaTeX produces beautiful documents according to actual typographic and editing standards made by people who know much more about it than me! Why fight with your editor to get something beautiful out of it? And page breaks? Give ME a break!
 
-If you want to read more about why I think LaTeX is the best choice for scientific writing, read [this opinion post](/latex/scientific/writing/tools/2018/10/28/why-latex-is-the-best-for-scientific-writing).
+If you want to read more about why I think LaTeX is the best choice for scientific writing, read [this opinion post](/2018/10/28/why-latex-is-the-best-for-scientific-writing).
 
 ## Online document editing: Overleaf
 
@@ -62,7 +62,7 @@ Some examples are:
   - Meeting records: Are you writing down what is said in meetings?
   - Experiment records: Are you performing user inquiries? Are you running experiments? For every experiment where you record user performance across several tasks you should make an experiment record
 
-As you can see, as this starts to mount you will need to create document subsets. These start as folders and subfolders in your local hard drive, and still be somewhat searchable for quick retrieval of information. If all you want is quick retrieval, it may be enough, but if you want to establish links between such documents you may want to set up a [DokuWiki](https://www.dokuwiki.org/dokuwiki) in your [http://gnomo.fe.up.pt](FEUP web area) or [https://help.github.com/articles/about-github-wikis/](GitHub Wiki) as part of your repository. GitHub also provides free private repositories for members of the educational community in the form of the [Student Pack](https://education.github.com/pack).
+As you can see, as this starts to mount you will need to create document subsets. These start as folders and subfolders in your local hard drive, and still be somewhat searchable for quick retrieval of information. If all you want is quick retrieval, it may be enough, but if you want to establish links between such documents you may want to set up a [DokuWiki](https://www.dokuwiki.org/dokuwiki) in your [FEUP web area](http://gnomo.fe.up.pt) or [GitHub Wiki](https://help.github.com/articles/about-github-wikis/) as part of your repository. GitHub also provides free private repositories for members of the educational community in the form of the [Student Pack](https://education.github.com/pack).
 
 Introduce structure as a way to organise a process that starts to become chaotic. Building a wiki adds some bureaucratic overhead to your research activity; if you are not supposed to deliver an online web page for your dissertation project, the wikis become less attractive/necessary. An alternative to a centralised wiki with many linked sections and pages can therefore be:
 

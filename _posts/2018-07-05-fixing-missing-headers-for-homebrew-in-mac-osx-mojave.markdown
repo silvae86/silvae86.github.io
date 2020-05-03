@@ -3,9 +3,11 @@ layout: post
 title:  "Fixing missing headers for homebrew in Mac OS X Mojave"
 date:   2018-07-05 16:55:00 +0100
 tags: sysadmin mac osx mojave beta libxml2
+redirect_from:
+  - /sysadmin/mac/osx/mojave/beta/libxml2/2018/07/05/fixing-missing-headers-for-homebrew-in-mac-osx-mojave
 ---
 
-If, like me, you tried installing `imagemagick` or other software using [Homebrew](https://brew.sh), you might have ran into this error: 
+If, like me, you tried installing `imagemagick` or other software using [Homebrew](https://brew.sh), you might have ran into this error:
 {% highlight shell %}
 <libxml/parser.h> no such file or directory
 {% endhighlight %}
@@ -14,9 +16,9 @@ This took me one day to fix, because usually everyone tells you to run `xcode-se
 
 ## Why this happens
 
-Mac OS X 10.14 has stopped placing the include libraries in their usual location, `/usr/include`, keeping them only inside the XCode directory. 
+Mac OS X 10.14 has stopped placing the include libraries in their usual location, `/usr/include`, keeping them only inside the XCode directory.
 
-To confirm that this is the problem, simply run `ls /usr/include`. If the result comes out empty, its really this problem. 
+To confirm that this is the problem, simply run `ls /usr/include`. If the result comes out empty, its really this problem.
 
 By running `find / | grep libxml/parser.h` I can find the `libxml` library in several places:
 

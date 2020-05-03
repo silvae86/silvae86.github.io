@@ -52,7 +52,6 @@ breadcrumbs:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -60,15 +59,18 @@ plugins:
   - jekyll-include-cache
   - jekyll-debug
   - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-relative-links
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
+  - jekyll-relative-links
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

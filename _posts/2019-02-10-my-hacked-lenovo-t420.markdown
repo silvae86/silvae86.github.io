@@ -3,7 +3,8 @@ layout: post
 title:  "The story of my hacked Lenovo T420"
 date:   2019-02-10 09:01:000 +0100
 tags: hardware hacks t420 toaster
-permalink: /hardware/hacks/t420/toaster/2019/02/10/my-hacked-lenovo-t420/
+redirect_from:
+  - /hardware/hacks/t420/toaster/2019/02/10/my-hacked-lenovo-t420/
 ---
 
 {% include info.html content="Page in construction" %}

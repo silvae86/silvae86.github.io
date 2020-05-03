@@ -7,12 +7,12 @@ crumbtitle: Classes
 
 ## Support
 
-[SQLite3 Guide](/teaching/exercises/sql/teaching/howto/sqlite/)
+[SQLite3 Guide]({% link _pages/teaching/howto/sqlite/index.md %})
 
 
 ## Script
 
-[Download Script Here](/teaching/exercises/sql/dql/scripts/classes.sql)
+[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/classes.sql %})
 
 ## Exercises
 

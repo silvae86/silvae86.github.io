@@ -14,4 +14,16 @@
 		grid-area: about;
 		margin:1em;
 	}
+
+	.site-header nav {
+			width:100%;
+		}
+
+	#search-container {
+		text-align:right;
+	}
+
+	#search-box {
+		max-width: 150px;
+	}
 }

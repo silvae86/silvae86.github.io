@@ -12,23 +12,49 @@ div.home {
 
 		#teaching {
 			grid-area: teaching;
-			margin:1em;
+			margin:1em 0em 1em 0em;
 		}
 
 		#recentposts {
 			grid-area: recentposts;
-			margin:1em;
+			margin:1em 0em 1em 0em;
 		}
 
 		#archive {
 			grid-area: archive;
-			margin:1em;
+			margin:1em 0em 1em 0em;
+		}
+
+		.trigger {
+			z-index: 400;
 		}
 }
 
-@media only screen and (max: $on-palm) {
+@media only screen and (max-width: $on-palm) {
 	#about {
 		display:none;
+	}
+
+	code {
+			max-width: $on-palm;
+			word-break: break-all;
+			white-space: pre-wrap;
+	}
+
+	.site-header a.site-title{
+		font-size: 1.4em;
+	}
+	.site-header .site-nav {
+		z-index: 10000;
+	}
+
+	#search-container {
+		float:left;
+		text-align:left;
+	}
+
+	#search-box {
+		max-width: 150px;
 	}
 }
 
@@ -75,20 +101,10 @@ div.home {
 
 .site-header nav {
 	float:left;
-	width:100%;
 	display:block;
 }
 
 .site-header .nav-links{
 	float:left;
 	margin-right:auto;
-}
-
-#search-container {
-	float:right;
-	text-align:right;
-}
-
-#search-box {
-	max-width: 150px;
 }

@@ -20,18 +20,18 @@ Register [here](https://hub.docker.com/signup) for free. You need a set of crede
 
 ## Install Docker
 
-For Windows and Mac, simply download the [Docker Desktop Installer](https://www.docker.com/products/docker-desktop) and run it. 
+For Windows and Mac, simply download the [Docker Desktop Installer](https://www.docker.com/products/docker-desktop) and run it.
 
 For Ubuntu Linux, I have compiled a script for easy installation.
 
-1. Fire up the Terminal, 
+1. Fire up the Terminal,
 2. Run `sudo -i` and type user password
 3. `exit` the root command line
 4. Paste the script found [here](/install/docker/ubuntu/18/2018/11/05/install-docker-ubuntu18/) in the Terminal.
 
 ## Fire up the container
 
-1. Create a new folder somewhere, for example ~/php in Linux (it will create a `php` folder in your home directory), or in Windows create the `C:\php`. 
+1. Create a new folder somewhere, for example ~/php in Linux (it will create a `php` folder in your home directory), or in Windows create the `C:\php`.
 2. Open a Windows  (`cmd.exe`) / Linux / Mac Terminal and run this:
 3. Navigate (`cd`) to the folder you created before
 4. Run the following commands
@@ -60,7 +60,7 @@ This is optional, but will allow the web server to generate nice file listings f
 
 ![Indexes Enabled](/teaching/howto/local_dev_with_docker/indexes.png)
 
-To turn this on, go to the Server Root and create a new file called `.htaccess`, including the dot. 
+To turn this on, go to the Server Root and create a new file called `.htaccess`, including the dot.
 
 The contents of the folder should be this:
 
@@ -73,4 +73,3 @@ Options +Indexes
 From now on, whatever you put in the Root Folder, should be accessible in the browser via the link [http://localhost:8080](http://localhost:8080). 
 
 You should also get lists of folders and files directly in the browser, because you created the `.htaccess` file.
-	

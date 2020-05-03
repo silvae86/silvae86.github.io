@@ -5,7 +5,7 @@ date:   2018-07-10 15:34:00 +0100
 tags: sysadmin mojave beta vagrant virtualbox osx macos
 ---
 
-The new beta of Mac OS X Mojave is mostly stable and so far it has been a good experience... Apart from the [recent issues that i have faced](/sysadmin/mac/osx/mojave/beta/libxml2/2018/07/05/fixing-missing-headers-for-homebrew-in-mac-osx-mojave) with homebrew legacy libraries and this recent problem with Virtualbox, which loads a Kernel Extension that has not yet been approved by Apple.
+The new beta of Mac OS X Mojave is mostly stable and so far it has been a good experience... Apart from the [recent issues that i have faced](/2018/07/05/fixing-missing-headers-for-homebrew-in-mac-osx-mojave) with homebrew legacy libraries and this recent problem with Virtualbox, which loads a Kernel Extension that has not yet been approved by Apple.
 
 Here is a **temporary solution** to get you up and running with the latest Mac OS beta.
 

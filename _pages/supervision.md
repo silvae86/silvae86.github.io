@@ -26,13 +26,10 @@ This is closely linked to the topic that you wish to follow. My only advice is t
 
 ### After you start your dissertation
 
-- [Finding references for the state of the art](/pdis/research/feup/mieic/2018/12/10/how-to-search-for-references-for-the-pdis-sota)
+- [Finding references for the state of the art](/2018/12/10/how-to-search-for-references-for-the-pdis-sota)
 
 - [A suggested document structure - What should be in a dissertation and why](/dissertations/structure)
 
 - [Overall writing tips](/dissertations/general_writing_tips)
 
 - [Useful tools](/dissertations/tools)
-
-
-

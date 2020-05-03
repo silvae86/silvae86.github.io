@@ -232,7 +232,7 @@ If we turn on foreign key constraint enforcement, we get an error detecting the 
 - SQLite Studio Quickstart [page](https://sqlitestudio.pl/index.rvt).
 - Tutorials
 	- [SQLite Tutorial](https://www.sqlitetutorial.net)
-	- [SQLite Tutorial by TutorialsPoint](https://www.tutorialspoint.com/sqlite/)
+	- [SQLite Tutorial by TutorialsPoint](https://www.tutorialspoint.com/sqlite)
 - SQLite quickstart guide by [Carla Lopes](http://carlalopes.com).
 
 ### Miscellaneous scripts

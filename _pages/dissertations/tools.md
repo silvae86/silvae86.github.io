@@ -18,7 +18,7 @@ I have heard great things about Office 365, but it still does not solve the bibl
 
 Another thing I do not like about Word for research documents is that research writing is a creative process, and Word is simply not designed for creative writing. When you want to just write your thoughts as they flow, the last thing you need is 30 different buttons to remind you that you need to use styles, format with bold, italic, click click click to add a reference here and there... Just you and your text, that is all you need. And LaTeX produces beautiful documents according to actual typographic and editing standards made by people who know much more about it than me! Why fight with your editor to get something beautiful out of it? And page breaks? Give ME a break!
 
-If you want to read more about why I think LaTeX is the best choice for scientific writing, read [this opinion post](/latex/scientific/writing/tools/2018/10/28/why-latex-is-the-best-for-scientific-writing).
+If you want to read more about why I think LaTeX is the best choice for scientific writing, read [this opinion post](/2018/10/28/why-latex-is-the-best-for-scientific-writing).
 
 ## Online document editing: Overleaf
 

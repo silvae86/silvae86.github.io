@@ -317,7 +317,7 @@ $wgRunJobsAsync=false;
 
 # Enable Results Formats (for semantic queries with average and other aggregation operators)
 
-Semantic Formats Extension [https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Result_Formats](here).
+Semantic Formats Extension [here](https://www.semantic-mediawiki.org/wiki/Extension:Semantic_Result_Formats).
 
 ```
 # As shown in the Extension page, these are the possible formats

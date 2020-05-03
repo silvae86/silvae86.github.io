@@ -41,9 +41,11 @@
 
      <ul class="tags minitags">
        {% for tag in post.commonTags %}
+       <li>
          <a class="tag-pill tag-pill-mini" href="/tags#{{ tag | slugify }}">
-          <li>{{ tag }}</li>
+           {{tag}}
          </a>
+       </li>
        {% endfor %}
      </ul>
     </div>

@@ -7,7 +7,7 @@ crumbtitle: Clinic
 
 ## Support
 
-[SQLite3 Guide](/teaching/exercises/sql/teaching/howto/sqlite/)
+[SQLite3 Guide]({% link _pages/teaching/howto/sqlite/index.md %})
 
 
 ## Script

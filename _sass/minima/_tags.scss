@@ -6,12 +6,21 @@ ul.tags {
   margin-left: 0px;
   margin-top: 0.2em;
   margin-bottom: 2em;
+  list-style: none;
+}
+
+ul.tags > li{
+  display: inline;
 }
 
 ul.minitags {
   display: block;
   margin-top: 0.2em;
   margin-bottom: 0px;
+}
+
+ul.minitags > li{
+  display:inline-block;
 }
 
 a.tag-pill {

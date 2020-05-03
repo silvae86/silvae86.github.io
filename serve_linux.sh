@@ -12,4 +12,4 @@ rvm use 2.5.1
 bundle install
 
 #serve blog
-bundle exec jekyll serve --config _config.yml --plugins _plugins
+bundle exec jekyll serve --config _config.yml --plugins _plugins --safe

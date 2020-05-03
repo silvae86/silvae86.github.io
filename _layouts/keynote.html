@@ -27,18 +27,18 @@
 
 	<!-- remark.js -->
 	<link rel="stylesheet" href="/assets/remark.js/remark.js.css">
-	
+
 	<!-- Remark Search by André Restivo: https://github.com/arestivo/remark.search -->
 	<script src="/assets/arestivo.remark.search/node_modules/mark.js/dist/mark.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="/assets/arestivo.remark.search/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-	
+
 	<link rel="stylesheet" href="/assets/arestivo.remark.search/remark.search.css">
 	<script src="/assets/arestivo.remark.search/remark.search.js" type="text/javascript"></script>
-	
+
 	<!-- END Remark Search by André Restivo -->
-	
+
 	<link rel="stylesheet" href="{{ "/assets/css/keynotes.css" | relative_url }}">
-	
+
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
@@ -48,37 +48,36 @@
 	<!--Include Fontawesome -->
 
 	<script defer src="/assets/fontawesome/js/all.js"></script> <!--load all styles -->
-	<script defer src="/assets/fontawesome/js/brands.js"></script> <!--load brands styles -->
-		
+
 	<script type="application/javascript">
 		window.addEventListener('DOMContentLoaded', function() {
-			
+
 			let textContent = new DOMParser().parseFromString(
 					document.querySelector("#source").firstChild.textContent,
 					"text/html"
 				)
 				.querySelector("code.language-text")
 				.innerHTML;
-			
+
 			const regex = /&lt;\/code&gt;&lt;\/pre&gt;&lt;\/figure&gt;(\s|\n)+<\/textarea>/gm;
 			const subst = ``;
 			const result = textContent.replace(regex, subst);
-			
+
 			textContent = result;
 			document.querySelector("#source").innerHTML = textContent;
-			
+
 			var slideshow = remark.create({
 						highlightStyle: 'monokai',
 						highlightLanguage: 'remark',
 						highlightLines: true
 					}) ;
-					
+
 		  RemarkSearch.create(
 			  {
-				  'slideshow': slideshow, 
-			  	'position': 'top-right', 
-			  	'caseSensitive' : false, 
-			  	'showIcon': false, 
+				  'slideshow': slideshow,
+			  	'position': 'top-right',
+			  	'caseSensitive' : false,
+			  	'showIcon': false,
 			  	'autoSearch': true
 		  	  }
 		  );

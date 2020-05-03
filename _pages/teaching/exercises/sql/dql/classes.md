@@ -12,7 +12,7 @@ crumbtitle: Classes
 
 ## Script
 
-[Download Script Here](/teaching/exercises/sql/dql/scripts/classes.sql)
+[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/classes.sql %})
 
 ## Exercises
 

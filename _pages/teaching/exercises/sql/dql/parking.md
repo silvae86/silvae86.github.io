@@ -11,7 +11,7 @@ crumbtitle: Parking
 
 ## Script
 
-[Download Script Here](/teaching/exercises/sql/dql/scripts/parking.sql)
+[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/parking.sql %})
 
 ## Exercises
 

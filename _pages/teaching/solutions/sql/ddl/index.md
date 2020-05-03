@@ -9,7 +9,7 @@ crumbtitle: SQL DDL Solutions (SQLite)
 
 [Veterinary Clinic (written by hand)](veterinary_clinic.sql)
 
-[Veterinary Clinic (dumped from the SQLite GUI)](veterinary_clinic.gui,sql)
+[Veterinary Clinic (dumped from the SQLite GUI)](veterinary_clinic_gui.sql)
 
 ## Full solutions
 

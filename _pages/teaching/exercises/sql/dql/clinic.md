@@ -12,7 +12,7 @@ crumbtitle: Clinic
 
 ## Script
 
-[Download Script Here](/teaching/exercises/sql/dql/scripts/clinic.sql)
+[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/clinic.sql %})
 
 ## Exercises
 

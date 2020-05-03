@@ -27,7 +27,7 @@ For Ubuntu Linux, I have compiled a script for easy installation.
 1. Fire up the Terminal,
 2. Run `sudo -i` and type user password
 3. `exit` the root command line
-4. Paste the script found [here](/install/docker/ubuntu/18/2018/11/05/install-docker-ubuntu18/) in the Terminal.
+4. Paste the script found [here](/2018/11/05/install-docker-ubuntu18/) in the Terminal.
 
 ## Fire up the container
 
@@ -58,7 +58,7 @@ From now on, we will call the folder `<folder that you created>/var/www/html` **
 
 This is optional, but will allow the web server to generate nice file listings for easy navigation, like below:
 
-![Indexes Enabled](/teaching/howto/local_dev_with_docker/indexes.png)
+![Indexes Enabled]({% link _pages/teaching/howto/local_dev_with_docker/indexes.png %})
 
 To turn this on, go to the Server Root and create a new file called `.htaccess`, including the dot.
 
@@ -70,6 +70,6 @@ Options +Indexes
 
 ## Place your files in the directory
 
-From now on, whatever you put in the Root Folder, should be accessible in the browser via the link [http://localhost:8080](http://localhost:8080). 
+From now on, whatever you put in the Root Folder, should be accessible in the browser via the link [http://localhost:8080](http://localhost:8080).
 
 You should also get lists of folders and files directly in the browser, because you created the `.htaccess` file.

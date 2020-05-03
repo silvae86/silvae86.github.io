@@ -46,7 +46,7 @@ For example, if you have a form like this:
 </form>
 ````
 
-Then your username and password will be retrieved as shown below. 
+Then your username and password will be retrieved as shown below.
 
 Watch the `name` attribute of your `input` HTML elements, that is what dictates the key that you use to get the value back in the server, via the `$_POST` or `$_GET` arrays.
 
@@ -81,7 +81,7 @@ Another example of not checking the contents of your variables.
 Say you want to count the number of products in your database. You write a function `countProducts()` in your `database/products.php` file:
 
 ```php
-<?php 
+<?php
 function countProducts()
 
 {
@@ -204,19 +204,19 @@ $stmt->execute(array($username));
 
 $result = $stmt->fetch();
 
-return $result; 
+return $result;
 
 )
 
 //back in the main file...
 
 /** WATCH OUT **/
-// the result will be false even if the client does not exist. 
-// This is because the result of the function will be 
-// an empty array, 
-// which is not null, therefore it is a "truthy" value. 
+// the result will be false even if the client does not exist.
+// This is because the result of the function will be
+// an empty array,
+// which is not null, therefore it is a "truthy" value.
 // !true = false, so the body of the if will never execute.
-if(! clientExists($id) ) 
+if(! clientExists($id) )
 	//this is never run, and you will curse your existence.
 	// "why cant I register the client, i KNOW there is no one with that
 	// username!"
@@ -233,14 +233,14 @@ For those of you using local HTTP servers: You should turn on error printing, ot
 Quoted from a student from another course (Thanks [Bruno Mauricio](https://sigarra.up.pt/feup/pt/fest_geral.cursos_list?pv_num_unico=201604107))
 
 > Greetings fellow humans.
-> 
+>
 > From time to time, PHP throws an error, and if the server is not configured for such, a simple empty page will appear, with no error whatsoever (this is most true for local, non properly configured, servers).
 >
 > So to fix this, you can either configure the server, or add the following lines to all scripts (through a global include or something of the sort).
 > These will help you force PHPs' runtime environment to spit out the error log.
 >
-> ```php 
->    <?php 
+> ```php
+>    <?php
 >    ini_set('display_errors', 1);
 >    ini_set('display_startup_errors', 1);
 >    error_reporting(E_ALL);
@@ -249,13 +249,3 @@ Quoted from a student from another course (Thanks [Bruno Mauricio](https://sigar
 >
 > Farewell,
 > Bruno Maurício
-
-
-
-
-
-
-
-
-
-

@@ -12,7 +12,7 @@ crumbtitle: Bicycles
 
 ## Script
 
-[Download Script Here](/teaching/exercises/sql/dql/scripts/bicycles.sql)
+[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/bicycles.sql %})
 
 ## Exercises
 

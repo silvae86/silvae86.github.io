@@ -11,7 +11,7 @@ crumbtitle: Fishing
 
 ## Script
 
-[Download Script Here](/teaching/exercises/sql/dql/scripts/employees.sql)
+[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/employees.sql %})
 
 ## Exercises
 

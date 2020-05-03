@@ -1,7 +1,7 @@
 | **Topic**  | Exercises                                                    | Solutions                                         |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------- |
 | <u>SQL</u> |                                                              |                                                   |
-|            | [How to use SQLite](/teaching/howto/sqlite)                 | [Tutorial](/teaching/howto/sqlite)               |
+|            | [How to use SQLite]({% link _pages/teaching/howto/sqlite/index.md %})                 | [Tutorial]({% link _pages/teaching/howto/sqlite/index.md %})               |
 | Docker     |                                                              |                                                   |
-|            | [How to use Docker for PHP local development](/teaching/howto/local_dev_with_docker) | [Tutorial](/teaching/howto/local_dev_with_docker) |
+|            | [How to use Docker for PHP local development]({% link _pages/teaching/howto/local_dev_with_docker/index.md %}) | [Tutorial]({% link _pages/teaching/howto/local_dev_with_docker/index.md %}) |
 

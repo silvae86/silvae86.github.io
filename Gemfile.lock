@@ -274,9 +274,8 @@ DEPENDENCIES
   jekyll-archives
   jekyll-feed (~> 0.6)
   jekyll-include-cache
-  jekyll-sitemap
-  jekyll-theme-hacker
   jekyll-relative-links
+  jekyll-sitemap
   minima (~> 2.0)
   pry-byebug
   rake

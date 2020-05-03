@@ -35,3 +35,5 @@ function kill_server {
 }
 
 trap kill_server INT
+
+wait

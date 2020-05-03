@@ -57,6 +57,11 @@ div.home {
 	font-family: $serif-font-family;
 	list-style: none;
 	margin-left: 0px;
+	text-align: center;
+}
+
+#about a.hidden-link {
+	color: $text-color;
 }
 
 .site-header a.site-title{

@@ -33,4 +33,7 @@ gem "github-pages", group: :jekyll_plugins
 
 gem 'pry-byebug'
 gem 'jekyll-include-cache'
+gem 'rake'
+gem 'html-proofer'
+gem 'jekyll-archives'
 gem 'jekyll-sitemap'

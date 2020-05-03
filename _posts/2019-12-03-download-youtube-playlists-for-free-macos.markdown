@@ -2,7 +2,7 @@
 layout: post
 title:  "Download YouTube playlists as music for free using macOS"
 date:   2019-12-03 16:04:000 +0100
-categories: macos youtube download playlist open source free music
+tags: macos youtube download playlist open source free music
 ---
 
 Often you want to download videos from YouTube or extract audio from them. 

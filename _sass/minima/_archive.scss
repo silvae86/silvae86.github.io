@@ -1,0 +1,41 @@
+$monokai_dark: #272822 !default;
+$monokai_pink: #f92672 !default;
+$monokai_cyan: #66d9ef !default;
+$monokai_green: #a6e22e !default;
+$monokai_orange: #fd971f !default;
+
+// start content
+@charset "utf-8";
+
+#archive_list {
+	list-style-type: none;
+	margin-left: 0;
+}
+
+#archive_list > li.separator {
+	font-size: 1em;
+	border-radius: 2px;
+	padding: 2px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	font-weight:900;
+}
+
+// #archive_list .separator::before {
+// 	font-family: "Font Awesome 5 Free";
+// 	content: "\f5b7\00a0";
+// }
+
+#archive_list > li.post-link a {
+	font-size: 0.8em;
+	margin-left: 0px;
+	font-family: $monospace-font-family;
+  color: $brand-color;
+}
+
+#archive_list > li.post-link a::before {
+	font-family: "Font Awesome 5 Free";
+	content: "\f0c8\00a0";
+	font-weight:900;
+}

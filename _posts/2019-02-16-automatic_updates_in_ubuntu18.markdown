@@ -2,7 +2,7 @@
 layout: post
 title:  "How to set up Automatic Updates on Ubuntu Server with scheduled reboot time"
 date:   2019-02-16 9:46:00 +0100
-categories: sysadmin ubuntu server automatic updates
+tags: sysadmin ubuntu server automatic updates
 ---
 
 If you administer servers, you know the importance of keeping your packages up to date for security concerns.

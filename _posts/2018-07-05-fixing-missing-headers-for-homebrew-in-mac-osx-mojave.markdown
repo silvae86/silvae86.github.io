@@ -2,7 +2,7 @@
 layout: post
 title:  "Fixing missing headers for homebrew in Mac OS X Mojave"
 date:   2018-07-05 16:55:00 +0100
-categories: sysadmin mac osx mojave beta libxml2
+tags: sysadmin mac osx mojave beta libxml2
 ---
 
 If, like me, you tried installing `imagemagick` or other software using [Homebrew](https://brew.sh), you might have ran into this error: 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Why LaTeX is better for scientific writing"
 date:   2018-10-28 22:53:00 +0100
-categories: latex scientific writing tools
+tags: latex scientific writing tools
 ---
 
 Here is my short list of reasons why LaTeX is so much better than Microsoft Word for scientific writing.

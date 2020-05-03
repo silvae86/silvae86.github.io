@@ -2,7 +2,7 @@
 layout: post
 title:  "How to search for good references for a State of the Art"
 date:   2018-12-10 14:11:00 +0200
-categories: pdis research feup mieic
+tags: pdis research feup mieic
 ---
 
 ## How to search for good references

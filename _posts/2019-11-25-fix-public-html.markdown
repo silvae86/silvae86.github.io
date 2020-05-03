@@ -2,7 +2,7 @@
 layout: post
 title:  "Fixing permissions of the public_html folder"
 date:   2019-11-25 14:20:000 +0100
-categories: linux sysadmin gnomo feup public html
+tags: linux sysadmin gnomo feup public html
 ---
 
 Sometimes you may not be able to run PHP files or view HTML in a web server. This can be 

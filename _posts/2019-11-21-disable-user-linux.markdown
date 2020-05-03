@@ -2,7 +2,7 @@
 layout: post
 title:  "Disable and enable user accounts in Linux"
 date:   2019-11-21 15:38:000 +0100
-categories: linux sysadmin user accounts
+tags: linux sysadmin user accounts
 ---
 
 Sometimes you need to disable user accounts (say, people enter and leave the team). 

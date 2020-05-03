@@ -1,0 +1,33 @@
+h5.related_post {
+  display:inline;
+}
+
+ul.tags {
+  margin-left: 0px;
+  margin-top: 0.2em;
+  margin-bottom: 2em;
+}
+
+ul.minitags {
+  display: block;
+  margin-top: 0.2em;
+  margin-bottom: 0px;
+}
+
+a.tag-pill {
+  display:inline;
+  color: white;
+  background-color: transparentize($brand-color, 0.5);
+  padding: 0.3em 1em 0.3em 1em;
+  border-radius:3px;
+  clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 10px 100%, 0 50%);
+  margin-right:1em
+}
+
+a.tag-pill-mini {
+  font-size:0.8em;
+}
+
+a.tag-pill:hover{
+  background-color: transparentize($brand-color, 0.1);
+}

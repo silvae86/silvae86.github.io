@@ -2,7 +2,7 @@
 layout: post
 title:  "How to run a command in a Docker container (or how to SSH into a Docker container)"
 date:   2018-07-09 17:04:00 +0100
-categories: sysadmin docker container ssh
+tags: sysadmin docker container ssh
 ---
 
 Docker containers can be a great way to try out some scripts before they are ready for production. One of the basic tasks is to run a command in a specific container. Here is how to do it.

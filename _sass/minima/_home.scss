@@ -1,0 +1,94 @@
+div.home {
+	position: relative;
+	display:grid;
+
+	grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts-start-archive] auto [end-archive];
+	grid-template-columns: [start-of-content] auto [end-of-content];
+
+	grid-template-areas:
+			// "teaching"
+			"recentposts"
+			"archive";
+
+		#teaching {
+			grid-area: teaching;
+			margin:1em;
+		}
+
+		#recentposts {
+			grid-area: recentposts;
+			margin:1em;
+		}
+
+		#archive {
+			grid-area: archive;
+			margin:1em;
+		}
+}
+
+@media only screen and (max: $on-palm) {
+	#about {
+		display:none;
+	}
+}
+
+#about .round-mask-wrap {
+	filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+	width: 50%;
+	margin: 20px auto 20px auto;
+}
+
+#about img.round-mask {
+	clip-path: circle(50% at center);
+}
+
+#about h1 {
+	font-family: $serif-font-family;
+	font-size: 1.2em;
+	margin: auto;
+	text-align: center;
+	display:block;
+	margin-top:1em;
+	margin-bottom:1em;
+	font-weight: bold;
+}
+
+#about ul {
+	font-family: $serif-font-family;
+	list-style: none;
+	margin-left: 0px;
+	text-align: center;
+}
+
+#about a.hidden-link {
+	color: $text-color;
+}
+
+.site-header a.site-title{
+	display:block;
+}
+
+.site-header a.site-title{
+	display:block;
+	font-style: italic;
+}
+
+.site-header nav {
+	float:left;
+	width:100%;
+	display:block;
+}
+
+.site-header .nav-links{
+	float:left;
+	margin-right:auto;
+}
+
+#search-container {
+	float:right;
+	text-align:right;
+}
+
+#search-box {
+	max-width: 150px;
+}

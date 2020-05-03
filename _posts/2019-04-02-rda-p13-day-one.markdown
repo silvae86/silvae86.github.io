@@ -2,7 +2,7 @@
 layout: post
 title:  "RDA Research Data Alliance Plenary 13 at Philadelphia, Day 1"
 date:   2019-04-02 10:46:00 +0100
-categories: rda p13 plenary research data alliance
+tags: rda p13 plenary research data alliance
 ---
 
 Under the motto "With Data comes Responsibility", the RDA 13th plenary at the beautiful city of Philadelphia.

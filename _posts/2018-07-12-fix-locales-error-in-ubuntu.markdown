@@ -2,7 +2,7 @@
 layout: post
 title:  "Fixing locales error in Ubuntu"
 date:   2018-07-12 15:47:00 +0100
-categories: sysadmin ubuntu locales fix
+tags: sysadmin ubuntu locales fix
 ---
 
 Tired of warning about locales in Ubuntu? Me too, and there is a fix.

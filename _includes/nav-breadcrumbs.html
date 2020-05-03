@@ -6,20 +6,20 @@
     <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
       <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
         <a property="item" typeof="WebPage"  href="{{ site.baseurl }}/">
-          <img class="nav-root-icon" src="{{ '/assets/images/home/Coffee_cup_icon.svg' | relative_url }}">
+          <img class="nav-root-icon" src="{{ '/assets/images/home/Coffee_cup_icon.svg' | relative_url }}" alt="Logo: a nice cup of coffee.">
           <meta property="position" content="0" />
           Home
         </a>
       </li>
 
       {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
-      {% for i in (1..forLoopMaxInt) %}	  
+      {% for i in (1..forLoopMaxInt) %}
           {% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}
           {% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
           {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
           {% for breadcrumb_page in site.pages %}
               {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
-                  {% assign j = forLoopMaxInt | plus: 0 %}		  		
+                  {% assign j = forLoopMaxInt | plus: 0 %}
 
                   <li {% if i == j %}class="breadcrumb-item breadcrumb-item-active"{% else %}class="breadcrumb-item"{% endif %}
                       property="itemListElement"

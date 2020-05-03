@@ -2,7 +2,7 @@
 layout: post
 title:  "Static analysis of PHP code using open-source code quality tools"
 date:   2020-01-03 19:23:000 +0100
-categories: macos php code quality tools open source
+tags: macos php code quality tools open source
 ---
 
 While it does not replace good judgement and programming practice completely, it can be interesting to perform regular code quality analyses to make sure that your teams (and students) are writing good PHP code. This is a small guide on how to install them in macOS and how to use them to automatically produce metrics for all code repositories in a folder. 

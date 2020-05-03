@@ -2,7 +2,7 @@
 layout: post
 title:  "How to set up MAMP to enable .htaccess and mod_rewrite debugging"
 date:   2019-01-01 0:10:06 +0100
-categories: sysadmin apache mamp mod_rewrite
+tags: sysadmin apache mamp mod_rewrite
 ---
 
 Here is how to enable htaccess overrides in a [MAMP](https://www.mamp.info/en/) server for local development. This is useful to test PHP configurations where you want to use a `.htaccess` file to redirect all requests to a specific file, say, an `index.php` that acts as a router, enabling you to use pretty URIs such as `/users`, `/users/new`, etc. for your PHP application.

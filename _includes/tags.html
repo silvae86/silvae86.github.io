@@ -1,0 +1,8 @@
+<ul class="tags">
+    {% for tag in page.tags %}
+      {%- assign slug_tag = tag | slugify -%}
+      <a class="tag-pill" href="{{ "/tags#" | append: slug_tag }}">
+        <li>{{ tag }}</li>
+      </a>
+    {% endfor %}
+</ul>

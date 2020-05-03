@@ -2,7 +2,7 @@
 layout: post
 title:  "How to set up a basic venv for python development"
 date:   2019-03-25 17:36:00 +0100
-categories: python pyenv development
+tags: python pyenv development
 ---
 
 Before writing your code, you should make sure that your python environment is easily portable to other machines. None of that "Works on my machine" nonsense!

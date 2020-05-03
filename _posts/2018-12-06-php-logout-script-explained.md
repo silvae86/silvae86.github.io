@@ -2,7 +2,7 @@
 layout: post
 title:  "Logging out a session properly in PHP"
 date:   2018-12-06 12:06:56 +0100
-categories: php programming session
+tags: php programming session
 ---
 
 Logging out a user in PHP, the right way.

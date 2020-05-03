@@ -2,7 +2,7 @@
 layout: post
 title:  "OCR for PDF documents for free using macOS"
 date:   2020-03-30 08:20:000 +0100
-categories: macos ocr scanning homebrew
+tags: macos ocr scanning homebrew
 ---
 
 When you want to make a PDF searchable, there are many paid options for the Mac. However, if you are willing to use the command line, you can get some quite good results.

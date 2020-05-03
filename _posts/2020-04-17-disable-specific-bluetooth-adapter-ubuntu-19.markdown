@@ -2,7 +2,7 @@
 layout: post
 title:  "Disabling a specific Bluetooth adapter in Ubuntu 19.10 (Hacked Lenovo T420)"
 date:   2020-04-17 11:09:000 +0100
-categories: ubuntu bluetooth configuration 19.10
+tags: ubuntu bluetooth configuration 19.10
 ---
 
 This all started because my Bluetooth mouse was lagging and the pointer skipping!

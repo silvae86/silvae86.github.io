@@ -3,6 +3,8 @@ layout: post
 title:  "Install Docker on Ubuntu 18"
 date:   2018-11-05 16:54:00 +0200
 tags: install docker ubuntu 18
+redirect_from:
+  - /install/docker/ubuntu/18/2018/11/05/install-docker-ubuntu18/
 ---
 
 ## Installation Script

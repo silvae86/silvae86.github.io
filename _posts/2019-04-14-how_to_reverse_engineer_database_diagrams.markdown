@@ -3,6 +3,8 @@ layout: post
 title:  "How to make nice diagrams from your SQLite database"
 date:   2019-04-14 23:20:00 +0100
 tags: databases sqlite diagrams macos reverse engineering
+redirect_from:
+  - /databases/sqlite/diagrams/macos/reverse/engineering/2019/04/14/how_to_reverse_engineer_database_diagrams/
 ---
 
 There often comes the time when you have an existing database and you need to build a nice diagram to analyse it quickly. Here is how to do it using open-source software. We are going to be working on a Mac running macOS 10.14 Mojave, as well as an SQLite database.
@@ -109,8 +111,8 @@ Install adoptopenjdk 8
 ```sh
 brew cask install adoptopenjdk
 brew tap AdoptOpenJDK/openjdk
-# no-quarantine necessary to avoid because of (“adoptopenjdk-14.jdk” is damaged and can’t be opened.) solution found here: 
-# https://github.com/Homebrew/homebrew-cask/issues/79038 
+# no-quarantine necessary to avoid because of (“adoptopenjdk-14.jdk” is damaged and can’t be opened.) solution found here:
+# https://github.com/Homebrew/homebrew-cask/issues/79038
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8 --no-quarantine
 ```
 
@@ -320,4 +322,3 @@ read ERROR
 
 faz_diagrama database.db diagram.pdf
 ```
-

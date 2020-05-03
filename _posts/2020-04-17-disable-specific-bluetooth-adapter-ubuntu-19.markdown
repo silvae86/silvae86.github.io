@@ -3,6 +3,8 @@ layout: post
 title:  "Disabling a specific Bluetooth adapter in Ubuntu 19.10 (Hacked Lenovo T420)"
 date:   2020-04-17 11:09:000 +0100
 tags: ubuntu bluetooth configuration 19.10
+redirect_from:
+  - /sysadmin/squid/file/caching/mac/homebrew/2019/01/09/setup_squid_in_mac_with_homebrew/
 ---
 
 This all started because my Bluetooth mouse was lagging and the pointer skipping!

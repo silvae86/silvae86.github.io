@@ -3,6 +3,8 @@ layout: post
 title:  "My spicy cuttlefish recipe"
 date:   2019-01-13 1:16:00 +0100
 tags: recipes fish cuttlefish spicy
+redirect_from:
+  - /recipes/fish/cuttlefish/spicy/2019/01/13/da_bomb_spicy_cuttlefish_recipe/
 ---
 
 Here is a great recipe for cuttlefish, for those that like spicy food. With strong Portuguese roots, I added some oriental touches to give it an Asian twist, but without overdoing it.

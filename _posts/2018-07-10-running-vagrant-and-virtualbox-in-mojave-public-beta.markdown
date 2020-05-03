@@ -3,6 +3,8 @@ layout: post
 title:  "Fixing Virtualbox and Vagrant in macOS Mojave 10.14 Public Beta 3"
 date:   2018-07-10 15:34:00 +0100
 tags: sysadmin mojave beta vagrant virtualbox osx macos
+redirect_from:
+  - /sysadmin/mojave/beta/vagrant/virtualbox/osx/macos/2018/07/10/running-vagrant-and-virtualbox-in-mojave-public-beta/
 ---
 
 The new beta of Mac OS X Mojave is mostly stable and so far it has been a good experience... Apart from the [recent issues that i have faced](/2018/07/05/fixing-missing-headers-for-homebrew-in-mac-osx-mojave) with homebrew legacy libraries and this recent problem with Virtualbox, which loads a Kernel Extension that has not yet been approved by Apple.

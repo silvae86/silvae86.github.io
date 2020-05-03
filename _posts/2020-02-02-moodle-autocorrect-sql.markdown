@@ -3,15 +3,18 @@ layout: post
 title:  "Semi-automated correction of SQL exercises in Moodle"
 date:   2020-02-02 18:37:000 +0100
 tags: moodle teaching automated correction sql sqlite elearning
+redirect_from:
+  - /moodle/teaching/automated/correction/sql/sqlite/elearning/2020/02/02/moodle-autocorrect-sql/
+
 ---
 
-At FEUP we have a [Moodle instance](https://moodle.up.pt) provided by the University of Porto. I think Moodle is an awesome tool for e-learning: I use it as much as possible for centralizing lecture contents, organize assignment deliveries and provide not only grades but also individual feedback to my students. 
+At FEUP we have a [Moodle instance](https://moodle.up.pt) provided by the University of Porto. I think Moodle is an awesome tool for e-learning: I use it as much as possible for centralizing lecture contents, organize assignment deliveries and provide not only grades but also individual feedback to my students.
 
 ### The need for SQL (semi-) automated correction in moodle
 
 I teach classes on Databases and [Web](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=436868) [Development](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=436868), and we have final exams that include SQL queries over a provided database. We use [SQLite](https://www.sqlite.org/download.html) for its ease of use and portability. It removes the need for a local or faculty server like [PostgreSQL](https://www.postgresql.org/download/) and [MySQL](https://www.mysql.com/downloads/) do. At the same time, what want is to focus on the students' learning of the SQL, not the maximum performance. Another great open-source tool for working with SQLite is the [DB Browser for SQLite](https://sqlitebrowser.org) software, by the way.
 
-Going back to moodle, while I think it is packed with features that make it (imho) an essential tool for teaching nowadays, it does not support automatic correction of SQL exercises. 
+Going back to moodle, while I think it is packed with features that make it (imho) an essential tool for teaching nowadays, it does not support automatic correction of SQL exercises.
 
 Also, I am not a fan of 100% automatic correction of SQL exercises, so I needed a way to run the queries written by the students in an automated fashion against two databases: one that I provide to the students, and another, with the same schema but with more records, designed to test more edge cases.
 
@@ -77,8 +80,8 @@ While they both share the same database schema, one is provided to the students 
 
 4. Now we need to place your proposed solutions for the SQL questions in the `correction/proposed_answers` folder.
 
-	4.1. For every question that you want to automatically correct, place a `.sql` file with the same name as the header of the column in the Excel file downloaded from Moodle. 
-	
+	4.1. For every question that you want to automatically correct, place a `.sql` file with the same name as the header of the column in the Excel file downloaded from Moodle.
+
 	- For example, if the `Response 15` column in the Excel file contains SQL answers, you need to create a `correction/proposed_answers/Response 15.sql` file with your proposed solution (in SQL) for that question.
 
 	4.2. The script will detect these `.sql` files and try to correct only those answers where there is a proposed answer.
@@ -108,9 +111,9 @@ These scripts are super fast, because they are simple. They even run in parallel
 
 Access the exam in Moodle and go to the little gear at the top right and select "Manual Grading". After choosing the question you want to grade, change the settings like this:
 
-1. Sort by the same criteria you used when you downloaded your Excel spreadsheet with the answers and 
+1. Sort by the same criteria you used when you downloaded your Excel spreadsheet with the answers and
 2. Show many answers per page
 
 <img src="https://github.com/silvae86/moodle-autocorrect-sqlite/raw/master/docs/img/manual-grading-settings.png" alt="Manual Grading Settings Example" />
-	
+
 Then, open the text file by the side of the manual grading window. Scroll in parallel and start grading!

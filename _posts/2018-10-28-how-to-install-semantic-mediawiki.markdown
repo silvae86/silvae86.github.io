@@ -4,7 +4,7 @@ title:  "Installing Semantic Mediawiki"
 date:   2018-10-28 16:54:07 +0100
 tags: sysadmin semantic mediawiki install
 redirect_from:
-  - /sysadmin/semantic/mediawiki/install/2018/10/28/how-to-install-semantic-mediawiki/
+  - "/sysadmin/semantic/mediawiki/install/2018/10/28/how-to-install-semantic-mediawiki/"
 ---
 
 ## How to install Semantic MediaWiki on Ubuntu 18.04 LTS

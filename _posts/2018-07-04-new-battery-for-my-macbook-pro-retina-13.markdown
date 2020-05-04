@@ -4,7 +4,7 @@ title:  "I just changed the battery on my Mid-2014 Macbook Pro Retina 13''"
 date:   2018-07-04 23:50:00 +0100
 tags: mac battery hardware diy
 redirect_from:
-  - /mac/battery/hardware/diy/2018/07/04/new-battery-for-my-macbook-pro-retina-13/
+  - "/mac/battery/hardware/diy/2018/07/04/new-battery-for-my-macbook-pro-retina-13/"
 ---
 
 I just changed my 13'' MacBook Pro Mid-2014's battery. Its not easy, but not as hard as I initially thought. The trick is to remove the adhesive with some dental floss or fishing line. Fishing line is actually better because it is made up of a single nylon filament and will be more robust than the dental floss, which tends to break more easily.

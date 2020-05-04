@@ -4,7 +4,7 @@ title:  "Squid proxy cache in an ancient, hacked up Mac Mini 1.1"
 date:   2019-01-10 0:46:00 +0100
 tags: sysadmin squid file caching mac homebrew
 redirect_from:
-  - /sysadmin/squid/file/caching/mac/homebrew/2019/01/09/setup_squid_in_mac_with_homebrew/
+  - "/sysadmin/squid/file/caching/mac/homebrew/2019/01/09/setup_squid_in_mac_with_homebrew/"
 ---
 
 A proxy cache server acts as an intermediary between your machine and the internet. Say, for example, you have two machines in your network, and a third machine that you want to dedicate to caching web content. Here is how to set it up on a Mac.

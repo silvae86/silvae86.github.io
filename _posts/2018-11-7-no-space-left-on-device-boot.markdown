@@ -4,7 +4,7 @@ title:  "No space left on device - Full /boot partition"
 date:   2018-11-05 15:17:00 +0200
 tags: sysadmin boot no space left on device
 redirect_from:
-  - /sysadmin/boot/no/space/left/on/device/2018/11/05/no-space-left-on-device-boot/
+  - "/sysadmin/boot/no/space/left/on/device/2018/11/05/no-space-left-on-device-boot/"
 ---
 
 Do you have messages like this?

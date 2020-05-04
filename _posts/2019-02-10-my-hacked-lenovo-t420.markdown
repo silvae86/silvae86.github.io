@@ -4,7 +4,7 @@ title:  "The story of my highly upgraded Lenovo T420"
 date:   2019-02-10 09:01:000 +0100
 tags: hardware hack t420 lenovo upgrade 2960XM intel
 redirect_from:
-  - /hardware/hacks/t420/toaster/2019/02/10/my-hacked-lenovo-t420/
+  - "/hardware/hacks/t420/toaster/2019/02/10/my-hacked-lenovo-t420/"
 ---
 
 {% include info.html content="Page in construction" %}

@@ -4,7 +4,7 @@ title:  "Semi-automated correction of SQL exercises in Moodle"
 date:   2020-02-02 18:37:000 +0100
 tags: moodle teaching automated correction sql sqlite elearning
 redirect_from:
-  - /moodle/teaching/automated/correction/sql/sqlite/elearning/2020/02/02/moodle-autocorrect-sql/
+  - "/moodle/teaching/automated/correction/sql/sqlite/elearning/2020/02/02/moodle-autocorrect-sql/"
 
 ---
 

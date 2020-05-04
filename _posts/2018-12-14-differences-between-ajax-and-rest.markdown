@@ -4,7 +4,7 @@ title:  "What is the difference between REST and AJAX?"
 date:   2018-12-14 19:00:00 +0000
 tags: ltw feup mieic student questions rest api ajax
 redirect_from:
-  - /ltw/feup/mieic/student/questions/rest/api/ajax/2018/12/14/differences-between-ajax-and-rest/
+  - "/ltw/feup/mieic/student/questions/rest/api/ajax/2018/12/14/differences-between-ajax-and-rest/"
 ---
 
 A question from one of my students at the Languages and Web Technologies class at FEUP.

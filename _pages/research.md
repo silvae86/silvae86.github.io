@@ -20,52 +20,52 @@ the research data repositories of the future.
 ### EPISA
 -   (May 2016 - May 2019) [EPISA](https://www.inesctec.pt/en/news/inesc-tec-wants-to-digitise-the-largest-documental-collection-of-portugal#about)-—-Entity and Property Inference for Semantic Archives
 
->Integrate the largest collection of sources for the History of Portugal in the digital world. This is the main goal of the new INESC TEC's project entitled EPISA—Entity and Property Inference for Semantic Archives, which will start in January 2019. 
+>Integrate the largest collection of sources for the History of Portugal in the digital world. This is the main goal of the new INESC TEC's project entitled EPISA—Entity and Property Inference for Semantic Archives, which will start in January 2019.
 [source](https://www.inesctec.pt/en/news/inesc-tec-wants-to-digitise-the-largest-documental-collection-of-portugal#about)
 
-### TAIL 
+### TAIL
 -   (May 2016 - May 2019) [TAIL](https://www.inesctec.pt/en/news/inesc-tec-wants-to-digitise-the-largest-documental-collection-of-portugal#intro)---Research data management from creation to deposit and sharing
 
->The purpose of this project is to develop and test instruments, work flows and description models to manage data in research groups. The project follows groups in different areas of creation, management and publication of research data, making them researchable and quoted. This project allows to identify opening problems and monitor National and European initiatives, namely the tour of research infrastructures and the European Open Science Cloud. Over the project, there will be services in University of Porto, INESC TEC and CIBIO monitoring the adopted instruments tests, considering its use in stable support services to the researchers. 
+>The purpose of this project is to develop and test instruments, work flows and description models to manage data in research groups. The project follows groups in different areas of creation, management and publication of research data, making them researchable and quoted. This project allows to identify opening problems and monitor National and European initiatives, namely the tour of research infrastructures and the European Open Science Cloud. Over the project, there will be services in University of Porto, INESC TEC and CIBIO monitoring the adopted instruments tests, considering its use in stable support services to the researchers.
 [source](https://www.inesctec.pt/en/projects/tail#about)
 
 ## Supervision of dissertations
 
 ### 2020
 
--   Marques, Bruno (2019-expected), "Dendro Research Notebook: Interactive 
+-   Marques, Bruno (2020), "Dendro Research Notebook: Interactive
     Scientific Visualizations for e-Science"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
-    \[Informatics Engineering, Final Grade: In progress\]
+    Informatics Engineering MSc Dissertation.
+    University of Porto, Faculty of Engineering.
+    \[Informatics Engineering, Final Grade:18/20\]
 
 ### 2019
 
--   Costa, Lázaro (2019-expected), "DendroShare: Partilha e citação 
+-   Costa, Lázaro (2019), "DendroShare: Partilha e citação
     de conjuntos de dados de investigação"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
+    Informatics Engineering MSc Dissertation.
+    University of Porto, Faculty of Engineering.
     \[Informatics Engineering, Final Grade: 19/20\]
 
--   Freitas, Nuno (2019-expected), "ArchGraph, Design and conception 
+-   Freitas, Nuno (2019), "ArchGraph, Design and conception
     of a vertical prototype for a semantic archives infrastructure"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
+    Informatics Engineering MSc Dissertation.
+    University of Porto, Faculty of Engineering.
     \[Informatics Engineering, Final Grade: 18/20\]
 
--   Fukunaga, William (2019-expected), "Citation of subsets of dynamic data: A case 
+-   Fukunaga, William (2019), "Citation of subsets of dynamic data: A case
     study with the Dendro platform"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
+    Informatics Engineering MSc Dissertation.
+    University of Porto, Faculty of Engineering.
     \[Informatics Engineering, Final Grade: 16/20\]
 
--   Neto, Nuno (2019-expected), "Automatic testing and deployment 
+-   Neto, Nuno (2019), "Automatic testing and deployment
     pipelines using Docker, Jenkins and Travis.ci"
-    Informatics Engineering MSc Dissertation. 
-    University of Porto, Faculty of Engineering. 
+    Informatics Engineering MSc Dissertation.
+    University of Porto, Faculty of Engineering.
     \[Informatics Engineering, Final Grade: 18/20\]
 
--   Oliveira, Raquel (2019-expected), "Classificação de conjuntos de dados 
+-   Oliveira, Raquel (2019), "Classificação de conjuntos de dados
     de investigação com base em seus registos de metadados" Information Science MSc dissertation.
     University of Porto, Faculty of Engineering. \[Information Science,
     Final Grade: 16/20\]
@@ -85,7 +85,7 @@ the research data repositories of the future.
 -   Monteiro, Cláudio (2018). "Dendro Keywords: Supporting data
     description through keyword extraction and visualisation",
     Informatics Engineering MSc Dissertation. University of Porto,
-    Faculty of Engineering. Retrieved from 
+    Faculty of Engineering. Retrieved from
     <https://repositorio-aberto.up.pt/handle/10216/114140>
     \[Informatics Engineering, Final Grade 18/20\]
 
@@ -110,19 +110,19 @@ the research data repositories of the future.
 
 ### 2019
 
--   Rodrigues J., Castro J., Rocha, J., Ribeiro C. (2019) "Hands-On Data 
-    Publishing with Researchers: Five Experiments with Metadata in Multiple Domains. 
-    In: Manghi P., Candela L., Silvello G. (eds) Digital Libraries: 
-    Supporting Open Science. IRCDL 2019. Communications in Computer and 
+-   Rodrigues J., Castro J., Rocha, J., Ribeiro C. (2019) "Hands-On Data
+    Publishing with Researchers: Five Experiments with Metadata in Multiple Domains.
+    In: Manghi P., Candela L., Silvello G. (eds) Digital Libraries:
+    Supporting Open Science. IRCDL 2019. Communications in Computer and
     Information Science, vol 988. Springer, Cham \[Retrieved from
     <https://doi.org/10.1007/978-3-030-11226-4_22>\].
 
 ### 2018
 
 -   Rodrigues, J., Castro, J., Rocha, J., Pereira, N., Karimova, Y., Ribeiro, C. (2018),
-    "Metadados específicos do domínio em registos B2SHARE": 
-    Actas do Congresso Nacional de Bibliotecários, Arquivistas e Documentalistass, 
-    Congresso BAD 2018, Fundão, Portugal, October 24-26, 2018, Proceedings. 
+    "Metadados específicos do domínio em registos B2SHARE":
+    Actas do Congresso Nacional de Bibliotecários, Arquivistas e Documentalistass,
+    Congresso BAD 2018, Fundão, Portugal, October 24-26, 2018, Proceedings.
     \[Retrieved from <https://www.bad.pt/publicacoes/index.php/congressosbad/article/view/1774/Resumo>\].
 
 -   Rocha, J., Pereira, N., Dias, P. & Barros, B. (2018), "Grassroots
@@ -172,7 +172,7 @@ the research data repositories of the future.
     Libraries, TPDL 2016, Hannover, Germany, September 5--9, 2016
     (27-38). Research and Advanced Technology for Digital Libraries
     (9819), Springer International Publishing. DOI:
-    <https://doi.org/10.1007/978-3-319-43997-6_3> 
+    <https://doi.org/10.1007/978-3-319-43997-6_3>
 
 3.  Silva, F., Amorim, R., Castro, J., Rocha, J., & Ribeiro, C. (2016).
     "End-to-End Research Data Management Workflows: A Case Study with

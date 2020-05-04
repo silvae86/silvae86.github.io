@@ -3,6 +3,8 @@ layout: post
 title:  "Fixing `unable to determine url for /Volumes/TimeCapsule in Apple Time Machine`"
 date:   2019-09-10 23:28:000 +0100
 tags: macOS catalina time capsule bug
+redirect_from:
+  - "/macos/catalina/time/capsule/bug/2019/09/10/unable_to_determine_url_for_mount_point_time_machine/"
 ---
 
 So far, macOS Catalina Beta has been a mixed bag of experiences. After critical crashes to the login screen on Beta 3, Beta 7 seems to be stable enough for daily use.
@@ -45,7 +47,7 @@ Let's explain it step by step:
 - `tmutil`:  command-line utility for managing Time Machine settings and operations
 - `setdestination`: sets the destination of your backups
 - `-ap`: `a` - Add destination, `-p` prompt for password in a blind input, so that the password to access the remote disk is not recorded in the Terminal history (you can use `history -c` to clear command history, by the way)
-- `afp://<<yourusername>>@<<your_capsule_ip>>/<<disk_name>>`: Connection string to indicate how to access the shared volume. 
+- `afp://<<yourusername>>@<<your_capsule_ip>>/<<disk_name>>`: Connection string to indicate how to access the shared volume.
 	- `yourusername` needs to be replaced with the username that you used when configuring the Time Capsule
 	- `your_capsule_ip` has to be replaced with what you got in step 3
 	- `disk_name` has to be replaced with the name of your disk, that you got in step 4.
@@ -63,6 +65,3 @@ sudo tmutil setdestination -ap afp://joaorocha@10.0.1.1/Capsule
 The remote capsule disk should now appear in the GUI and you should be able to start a backup:
 
 ![Final Result](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/result.png){:class="img-responsive"}
-
-
-

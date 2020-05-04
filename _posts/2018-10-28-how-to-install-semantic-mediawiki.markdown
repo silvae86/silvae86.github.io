@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Installing Semantic Mediawiki"
+title:  "Installing Semantic Mediawiki, a complete and revised guide"
 date:   2018-10-28 16:54:07 +0100
 tags: sysadmin semantic mediawiki install
 redirect_from:

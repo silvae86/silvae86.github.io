@@ -5,10 +5,16 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      {%- include tags.html -%}
+    </p>
   </header>
 
   <div class="post-content">
-    {% include toc.html html=content ordered=true item_class='toc-item' %}
+    {% unless page.no_toc %}
+      {% include toc.html html=content ordered=true item_class='toc-item' %}
+    {% endunless %}
+
     {{ content }}
   </div>
 

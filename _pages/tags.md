@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tags
+no_toc: true
 ---
 
 {% capture tags %}

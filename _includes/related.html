@@ -6,7 +6,7 @@
   {% assign maxRelatedCounter = 0 %}
   {% assign posts_copy = "" | split: ',' %}
 
-  {% for post in site.posts %}
+  {% for post in ( site.posts | concat: site.pages ) %}
 
       {% assign sameTagCount = 0 %}
       {% assign commonTags = "" | split: ',' %}

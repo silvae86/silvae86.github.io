@@ -5,6 +5,8 @@ date:   2020-05-06 18:44:000 +0100
 tags: jekyll liquid programming template github pages tags pure-liquid no-plugins
 ---
 
+### A pages+posts "tags" page for your Jekyll blog
+
 After a lot of debugging I finally can render a Tags page for Jekyll that:
 
 - Does not use any plugins, for complete compatibility with GitHub pages!

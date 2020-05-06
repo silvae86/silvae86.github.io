@@ -61,7 +61,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jekyll-relative-links
-  - jekyll-tagories
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -72,7 +71,6 @@ whitelist:
   - jekyll-include-cache
   - jekyll-redirect-from
   - jekyll-relative-links
-  - jekyll-tagories
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

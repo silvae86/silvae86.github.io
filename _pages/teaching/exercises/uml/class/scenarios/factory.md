@@ -4,6 +4,7 @@ title: Factory
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/scenarios/factory/
 crumbtitle: Factory
+tags: exercises uml
 ---
 
 ## Veterinary Clinic Exercise

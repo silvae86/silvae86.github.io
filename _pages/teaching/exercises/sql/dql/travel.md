@@ -3,6 +3,7 @@ layout: page
 title: Travel Agency SQL Exercises
 permalink: /teaching/exercises/sql/dql/travel/
 crumbtitle: Travel Agency
+tags: exercises sql
 ---
 
 ## Support

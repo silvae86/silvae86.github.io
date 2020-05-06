@@ -3,6 +3,7 @@ layout: page
 title: Airplanes SQL Exercises
 permalink: /teaching/exercises/sql/dql/airplanes/
 crumbtitle: Airplanes
+tags: exercises sql
 ---
 
 ## Support

@@ -3,6 +3,7 @@ layout: page
 title: Parking SQL Exercises
 permalink: /teaching/exercises/sql/dql/parking/
 crumbtitle: Parking
+tags: exercises sql
 ---
 
 ## Support

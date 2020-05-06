@@ -3,6 +3,7 @@ layout: page
 title: Exercises
 permalink: /teaching/exercises/
 crumbtitle: Exercises
+tags: exercises
 ---
 
 ## Exercises

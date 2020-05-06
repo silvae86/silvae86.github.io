@@ -4,6 +4,7 @@ title: Furniture Factory
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/scenarios/furniture_factory/
 crumbtitle: Furniture Factory
+tags: exercises uml
 ---
 
 ## Furniture Factory

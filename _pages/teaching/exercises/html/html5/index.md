@@ -3,6 +3,7 @@ layout: page
 title: HTML 5 Exercises
 permalink: /teaching/exercises/html/html5/
 crumbtitle: HTML5
+tags: exercises html
 ---
 
 ## Online Newspaper.

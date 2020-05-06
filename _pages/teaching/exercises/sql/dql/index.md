@@ -3,6 +3,7 @@ layout: page
 title: SQL Data Querying Language Exercises
 permalink: /teaching/exercises/sql/dql/
 crumbtitle: SQL DQL Exercises
+tags: exercises sql
 ---
 
 <!-- | **Script**                                                   | **Exercises**                                       |

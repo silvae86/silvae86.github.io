@@ -3,6 +3,7 @@ layout: page
 title: Classes SQL Exercise
 permalink: /teaching/exercises/sql/dql/classes/
 crumbtitle: Classes
+tags: exercises sql
 ---
 
 ## Support

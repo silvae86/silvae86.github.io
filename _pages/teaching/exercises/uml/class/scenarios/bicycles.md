@@ -4,6 +4,7 @@ title: Bicycle Rental
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/scenarios/bicycles/
 crumbtitle: Bicycle Rental
+tags: exercises uml
 ---
 
 ## Bicycle Rental Exercise

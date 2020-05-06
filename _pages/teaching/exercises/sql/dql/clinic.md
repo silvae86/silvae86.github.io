@@ -3,6 +3,7 @@ layout: page
 title: Clinic SQL Exercise
 permalink: /teaching/exercises/sql/dql/clinic/
 crumbtitle: Clinic
+tags: exercises sql
 ---
 
 ## Support
@@ -30,4 +31,3 @@ crumbtitle: Clinic
 12. What are the three most used rooms in that same day? (room)
 13. What conditions have been diagnosed for patient 12345? (designation)
 14. What patients have been diagnosed conditions that have also been diagnosed for patient 12345? (name)
-

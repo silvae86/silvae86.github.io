@@ -4,6 +4,7 @@ title: Veterinary Clinic
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/scenarios/vet/
 crumbtitle: Veterinary Clinic
+tags: exercises uml
 ---
 
 ## Veterinary Clinic Exercise

@@ -4,6 +4,7 @@ title: Deliveries
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/scenarios/delivery/
 crumbtitle: Deliveries
+tags: exercises uml
 ---
 
 ## Deliveries Exercise

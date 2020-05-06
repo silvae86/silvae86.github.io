@@ -3,9 +3,10 @@ layout: page
 title: Information Systems Engineering (ESIN)- MEB/MIB
 permalink: /teaching/2020/ESIN_SIBD/esin/
 crumbtitle: ESIN
+tags: teaching databases web programming feup
 ---
 
-## Contents 
+## Contents
 
 {% include_relative esin/plan.md %}
 
@@ -18,7 +19,3 @@ crumbtitle: ESIN
 {% include_relative common/contact.md %}
 
 {% include_relative common/acknows.md %}
-
-
-
-

@@ -3,6 +3,7 @@ layout: page
 title: Fishing SQL Exercises
 permalink: /teaching/exercises/sql/dql/fishing/
 crumbtitle: Fishing
+tags: exercises sql
 ---
 
 ## Support

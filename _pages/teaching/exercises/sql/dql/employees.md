@@ -3,6 +3,7 @@ layout: page
 title: Employees SQL Exercises
 permalink: /teaching/exercises/sql/dql/employees/
 crumbtitle: Employees
+tags: exercises sql
 ---
 
 ## Support

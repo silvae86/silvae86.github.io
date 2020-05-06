@@ -3,9 +3,10 @@ layout: page
 title: Information Systems and Databases (SIBD)- MIEEC
 permalink: /teaching/2020/ESIN_SIBD/sibd/
 crumbtitle: SIBD
+tags: teaching databases web programming feup
 ---
 
-## Contents 
+## Contents
 
 {% include_relative sibd/plan.md %}
 

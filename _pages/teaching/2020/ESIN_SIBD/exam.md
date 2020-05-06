@@ -3,6 +3,7 @@ layout: page
 title: ESIN/SIBD - Final Exam
 permalink: /teaching/2020/ESIN_SIBD/exam/
 crumbtitle: ESIN/SIBD - Final Exam
+tags: teaching databases web programming feup
 ---
 
 
@@ -34,7 +35,7 @@ If it is not listed below, it should not be on your table. Any consultation mate
 
 ## Format
 
-The exam will be made available in [Moodle](https://moodle.up.pt). **Please make sure to test your access to the platform. Contact the [FEUP Helpdesk](mailto:helpdesk@fe.up.pt) to sort out any issues beforehand.** 
+The exam will be made available in [Moodle](https://moodle.up.pt). **Please make sure to test your access to the platform. Contact the [FEUP Helpdesk](mailto:helpdesk@fe.up.pt) to sort out any issues beforehand.**
 
 1. **UML Class Diagram exercise** (delivered on paper)
 	- A problem statement similar to the UML Class Diagram exercises will be presented in Moodle.
@@ -68,12 +69,12 @@ Some examples of previous years are available [here](https://web.fe.up.pt/~arest
 
 - These students must secure the contact of a responsible person at their home University beforehand and supply that contact to the course professors. We will then coordinate with this person to arrange a controlled environment at the student's home institution where they can perform the exam. This person will assume responsibility for making sure that exam rules are followed.
 
-- The responsible person needs to communicate to the professors the range of external IPs from which the student will perform the exam, otherwise the student will not be able to perform the exam. 
+- The responsible person needs to communicate to the professors the range of external IPs from which the student will perform the exam, otherwise the student will not be able to perform the exam.
 
 ## Play fair
 
 Any illegal behaviour during the exam (plagiarism by any means or exchange of information between students) is punishable with a full annulment of the exam, resulting in a grade of zero.
 
-All network accesses and interactions with the computers during the exam are monitored. Unlawful behaviour will be easy to detect and any implicated individuals will be dealt with accordingly. 
+All network accesses and interactions with the computers during the exam are monitored. Unlawful behaviour will be easy to detect and any implicated individuals will be dealt with accordingly.
 
 Any attempt to perform the exam on computers other than the ones in the computer rooms is easily detectable and will result in __immediate anullment of the exam__, unless you are an Erasmus student and have contacted us beforehand to arrange a remote exam.

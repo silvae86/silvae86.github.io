@@ -3,6 +3,7 @@ layout: page
 title: Bicycles SQL Exercise
 permalink: /teaching/exercises/sql/dql/bicycles/
 crumbtitle: Bicycles
+tags: exercises sql
 ---
 
 ## Support

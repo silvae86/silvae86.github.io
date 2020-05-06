@@ -4,6 +4,7 @@ title: Restaurant
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/scenarios/restaurant/
 crumbtitle: Restaurant
+tags: exercises uml
 ---
 
 ## Restaurant

@@ -3,6 +3,7 @@ layout: page
 title: Elections SQL Exercises
 permalink: /teaching/exercises/sql/dql/elections/
 crumbtitle: Elections
+tags: exercises sql
 ---
 
 ## Support

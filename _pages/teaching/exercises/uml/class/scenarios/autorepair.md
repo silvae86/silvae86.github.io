@@ -4,6 +4,7 @@ title: Auto Repair Shop
 include_in_menu: false
 permalink: /teaching/exercises/uml/class/scenarios/autorepair/
 crumbtitle: Auto Repair Shop
+tags: exercises uml
 ---
 
 ## Auto Repair Shop

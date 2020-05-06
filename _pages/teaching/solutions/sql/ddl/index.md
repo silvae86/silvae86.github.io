@@ -3,6 +3,7 @@ layout: page
 title: SQL DDL Solutions (SQLite)
 permalink: /teaching/solutions/sql/ddl/
 crumbtitle: SQL DDL Solutions (SQLite)
+tags: solutions sql exercises
 ---
 
 ## Notes From Classes

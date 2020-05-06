@@ -3,6 +3,7 @@ layout: page
 title: PHP FAQ / Tips/ Common Mistakes
 permalink: /teaching/2020/ESIN_SIBD/tips_faq
 crumbtitle: PHP FAQ / Tips/ Common Mistakes
+tags: teaching databases web programming feup
 ---
 
 Here are answers to some common problems faced by students working on the PHP practical work. Please send me your questions and tips and I will add them to this list.

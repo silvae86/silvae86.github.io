@@ -6,49 +6,48 @@ crumbtitle: BDAD
 tags: teaching databases feup exercises sql
 ---
 
-## "Tuned" scripts with more edge cases
+# "Tuned" scripts with more edge cases
 
 [Oficina/Workshop]({% link _pages/teaching/2020/BDAD/scripts/oficina_with_ties.sql %})
 
 - More than one most expensive repair to test whether or not your queries return more than one repair with the maximum cost.
 - Second-most costly repair: 2 repairs also tied
 
+# SQL DML
 
-## Some solutions to the SQL exercises
+## Faculdade
 
-### Faculdade
-
-#### 1. Quais	os	números	dos	alunos?
+### 1. Quais	os	números	dos	alunos?
 
 ```sql
 select nr FROM Aluno;
 ```
 
-#### 2. Qual	o	código	e	designação	das	cadeiras	do	curso	'AC'?
+### 2. Qual	o	código	e	designação	das	cadeiras	do	curso	'AC'?
 
 ```sql
 select cod, Design FROM cadeira where curso='AC';
 ```
 
-#### 3. Existem	nomes	comuns	a	alunos	e	profs?	Quais?
+### 3. Existem	nomes	comuns	a	alunos	e	profs?	Quais?
 
 ```sql
 select nome from aluno intersect select nome from prof;
 ```
 
-#### 4. Quais	os	nomes	específicos	dos	alunos,	i.e.,	que	nenhum	professor	tem?
+### 4. Quais	os	nomes	específicos	dos	alunos,	i.e.,	que	nenhum	professor	tem?
 
 ```sql
 select nome from aluno except select nome from prof;
 ```
 
-#### 5. Quais	os	nomes	das	pessoas	relacionadas	com	a	faculdade?
+### 5. Quais	os	nomes	das	pessoas	relacionadas	com	a	faculdade?
 
 ```sql
 select nome from aluno union select nome from prof;
 ```
 
-#### 6. Quais	os	nomes	dos	alunos	que	fizeram	alguma	prova	de	'ts1'?
+### 6. Quais	os	nomes	dos	alunos	que	fizeram	alguma	prova	de	'ts1'?
 
 ```sql
 select nome
@@ -92,7 +91,7 @@ SELECT nome
        AS codigos_dos_alunos ON aluno.nr = codigos_dos_alunos.nr;
 ```
 
-#### 7. Quais	os	nomes	dos	alunos	com	inscrição	no	curso	'IS'?
+### 7. Quais	os	nomes	dos	alunos	com	inscrição	no	curso	'IS'?
 
 ```sql
 select distinct(aluno.nome)
@@ -102,29 +101,29 @@ where
     and Cadeira.curso = 'IS';
 ```
 
-#### 8. Qual	a	relação	dos	nomes	dos	alunos	que	concluíram	o	curso	'IS'.
+### 8. Qual	a	relação	dos	nomes	dos	alunos	que	concluíram	o	curso	'IS'.
 
 
 
-#### 9. Qual	a	nota	máxima	existente	nas	provas?
+### 9. Qual	a	nota	máxima	existente	nas	provas?
 
 ```sql
 select cod, max(nota) from Prova;
 ```
 
-#### 10. Qual	a	nota	média	nas	provas	de	BD?
+### 10. Qual	a	nota	média	nas	provas	de	BD?
 
 ```sql
 select avg(nota) as media_de_bd from prova where cod='BD';
 ```
 
-#### 11. Qual	o	número	de	alunos?
+### 11. Qual	o	número	de	alunos?
 
 ```sql
 select count(*) from aluno;
 ```
 
-#### 12. Qual	o	número	de	cadeiras	de	cada	curso?
+### 12. Qual	o	número	de	cadeiras	de	cada	curso?
 
 ```sql
 select curso, count(*) as num_cadeiras
@@ -132,7 +131,7 @@ from cadeira
 group by curso;
 ```
 
-#### 13. Qual	o	número	de	provas	de cada	aluno?
+### 13. Qual	o	número	de	provas	de cada	aluno?
 
 ```sql
 select nr, count(*) as num_provas
@@ -140,7 +139,7 @@ from prova
 group by nr;
 ```
 
-#### 14. Qual	a	média	do	número	de	provas	por	aluno?
+### 14. Qual	a	média	do	número	de	provas	por	aluno?
 
 ```sql
 select avg(num_provas)
@@ -168,7 +167,7 @@ from
 group by cod;
 ```
 
-#### 15. Qual	o	nome	e	respetiva	média	atual	(cadeiras	feitas,	em	qualquer	curso)	de
+### 15. Qual	o	nome	e	respetiva	média	atual	(cadeiras	feitas,	em	qualquer	curso)	de
 cada	aluno?
 
 ```sql
@@ -183,7 +182,7 @@ from
 group by nome;
 ```
 
-#### 16. Qual	a	nota	máxima	de	cada	cadeira	e	qual	o	aluno	que	a	obteve?
+### 16. Qual	a	nota	máxima	de	cada	cadeira	e	qual	o	aluno	que	a	obteve?
 
 ```sql
 select alunos_com_notas_maximas.cod, nome, max_nota
@@ -205,7 +204,7 @@ join
 on aluno.nr = alunos_com_notas_maximas.nr;
 ```
 
-#### 17. Obtenha	a	relação	ordenada	por	curso	dos	nomes	dos	alunos	formados
+### 17. Obtenha	a	relação	ordenada	por	curso	dos	nomes	dos	alunos	formados
 
 Para este exercício há (pelo menos) duas alternativas. Podemos utilizar subqueries/views ou então uma subquery correlacionada ([correlated subquery](https://www.geeksforgeeks.org/sql-correlated-subqueries/)). Recomendo ler esse link porque explica a lógica da subquery correlacionada, como que fosse uma "função" de validação de cada tuplo da query principal. Só os tuplos que passarem a "validação" pela subquery serão incluídos na query principal.
 Na abordagem sem query correlacionada, o raciocínio é mais parecido com algebra relacional, em que partimos de um resultado de uma query e vamos aplicando mais restrições/joins até obtermos o resultado pretendido.
@@ -294,7 +293,7 @@ not exists
 
 ### Oficina
 
-#### a. Quais	as	peças	com	custo	unitário	inferior	a	10€	e	cujo	código	contém	‘98’?
+### a. Quais	as	peças	com	custo	unitário	inferior	a	10€	e	cujo	código	contém	‘98’?
 
 ```sql
 select idPeca
@@ -305,7 +304,7 @@ and
 	codigo like '%98%';
 ```
 
-#### b. Quais	as	matrículas	dos	carros	que	foram	reparados	no	mês	de	Setembro	de 2010,	i.e.,	cuja	reparação	terminou	nesse	mês?
+### b. Quais	as	matrículas	dos	carros	que	foram	reparados	no	mês	de	Setembro	de 2010,	i.e.,	cuja	reparação	terminou	nesse	mês?
 
 ```sql
 select matricula
@@ -317,7 +316,7 @@ where
 strftime('%m', dataFim) = '09' and strftime('%Y', dataFim) = '2010';
 ```
 
-#### c. Quais	os	nomes	dos	clientes	proprietários	de	carros	que	utilizaram	peças com	custo	unitário	superior	a	10€?	Apresente	o	resultado	ordenado	por ordem	descendente	do	custo	unitário.
+### c. Quais	os	nomes	dos	clientes	proprietários	de	carros	que	utilizaram	peças com	custo	unitário	superior	a	10€?	Apresente	o	resultado	ordenado	por ordem	descendente	do	custo	unitário.
 
 ```sql
 select nome
@@ -338,7 +337,7 @@ order by custoUnitario DESC;
 ```
 
 
-#### d. Quais	os	nomes	dos	clientes	que	não	têm	(tanto	quanto	se	saiba)	carro?
+### d. Quais	os	nomes	dos	clientes	que	não	têm	(tanto	quanto	se	saiba)	carro?
 
 
 ```sql
@@ -363,7 +362,7 @@ join
 on Cliente.idCliente = clientes_sem_carro.idCliente;
 ```
 
-#### e. Qual	o	número	de	reparações	feitas	a	cada	carro?
+### e. Qual	o	número	de	reparações	feitas	a	cada	carro?
 
 ```sql
 -- Objetivo
@@ -385,7 +384,7 @@ on n_rep_por_carro.idCarro = Carro.idCarro;
 -- group by Matricula;
 ```
 
-#### f. Qual	o	número	de	dias	em	que	cada	carro	esteve	em	reparação?
+### f. Qual	o	número	de	dias	em	que	cada	carro	esteve	em	reparação?
 
 ```sql
 -- Solução inicial proposta (tem bug no caso de um carro entrar no final de um mes e sair no inicio de outro)
@@ -416,7 +415,7 @@ join
 on horas_totais_por_carro.idCarro = Carro.idCarro;
 ```
 
-#### g. Qual	o	custo	unitário	médio,	o	valor	total	e	o	número	de	unidades	das	peças, bem	como	o	valor	da	peça	mais	cara	e	da	mais	barata?
+### g. Qual	o	custo	unitário	médio,	o	valor	total	e	o	número	de	unidades	das	peças, bem	como	o	valor	da	peça	mais	cara	e	da	mais	barata?
 
 ```sql
 --- Media | Val Total | Num Unidades | Val. Mais Cara | Valor Mais Barata
@@ -430,7 +429,7 @@ max(custoUnitario) as 'Preco Maximo'
 from Peca;
 ```
 
-#### h. Qual	a	especialidade	que	foi	utilizada	mais	vezes	nas	reparações	dos	carros de	cada	marca?
+### h. Qual	a	especialidade	que	foi	utilizada	mais	vezes	nas	reparações	dos	carros de	cada	marca?
 
 ```sql
 -- Obj Final
@@ -475,7 +474,7 @@ in
 ```
 
 
-#### i. Qual	o	preço	total	de	cada	reparação?
+### i. Qual	o	preço	total	de	cada	reparação?
 
 ```sql
 -- | idReparacao | custoTotal (= custoPecas + custoMaoObra) |
@@ -564,7 +563,7 @@ select * from custosReparacoes;
 
 
 
-#### j. Qual	o	preço	total	das	reparações	com	custo	total	superior	a	60€?
+### j. Qual	o	preço	total	das	reparações	com	custo	total	superior	a	60€?
 
 ```sql
 --- fazer read da i.sql para ter a view com o custo total das reparacaoes.
@@ -574,7 +573,7 @@ from custosReparacoes
 where custoTotal > 60;
 ```
 
-#### k. Qual	o	proprietário	do	carro	que	teve	a	reparação	mais	cara?
+### k. Qual	o	proprietário	do	carro	que	teve	a	reparação	mais	cara?
 
 
 ```sql
@@ -599,7 +598,7 @@ where custoTotal = (
 );
 ```
 
-#### l. Qual	a	matrícula	do	carro	com	a	segunda	reparação	mais	cara?
+### l. Qual	a	matrícula	do	carro	com	a	segunda	reparação	mais	cara?
 
 
 ```sql
@@ -625,7 +624,7 @@ where custoTotal = (
 );
 ```
 
-#### m. Quais	são	as	três	reparações	mais	caras	(ordenadas	por	ordem	decrescente de	preço)?
+### m. Quais	são	as	três	reparações	mais	caras	(ordenadas	por	ordem	decrescente de	preço)?
 
 
 ```sql
@@ -640,7 +639,7 @@ limit 3;
 
 
 
-#### n. Quais	os	nomes	dos	clientes	responsáveis	por	reparações	de	carros	e respetivos	proprietários	(só	para	os	casos	em	que	não	são	coincidentes)?
+### n. Quais	os	nomes	dos	clientes	responsáveis	por	reparações	de	carros	e respetivos	proprietários	(só	para	os	casos	em	que	não	são	coincidentes)?
 
 
 ```sql
@@ -684,28 +683,320 @@ and Carro.idCliente = proprietario.idCliente
 and proprietario.idCliente <> pagador.idCliente;
 ```
 
-#### o. Quais	as	localidades	onde	mora	alguém,	seja	ele	cliente	ou	funcionário?
+### o. Quais	as	localidades	onde	mora	alguém,	seja	ele	cliente	ou	funcionário?
 
 
-#### p. Quais	as	localidades	onde	moram	clientes	e	funcionários?
+### p. Quais	as	localidades	onde	moram	clientes	e	funcionários?
 
 
-#### q. Quais	as	peças	compatíveis	com	modelos	da	Volvo	cujo	preço	é	maior	do	que o	de	qualquer	peça	compatível	com	modelos	da	Renault?
+### q. Quais	as	peças	compatíveis	com	modelos	da	Volvo	cujo	preço	é	maior	do	que o	de	qualquer	peça	compatível	com	modelos	da	Renault?
 
 
-#### r. Quais	as	peças	compatíveis	com	modelos	da	Volvo	cujo	preço	é	maior	do	que o	de	alguma	peça	compatível	com	modelos	da	Renault?
+### r. Quais	as	peças	compatíveis	com	modelos	da	Volvo	cujo	preço	é	maior	do	que o	de	alguma	peça	compatível	com	modelos	da	Renault?
 
 
-#### s. Quais	as	matriculas	dos	carros	que	foram	reparados	mais	do	que	uma	vez?
+### s. Quais	as	matriculas	dos	carros	que	foram	reparados	mais	do	que	uma	vez?
 
 
-#### t. Quais	as	datas	de	início	e	de	fim	e	nome	do	proprietário	das	reparações feitas	por	carros	que	foram	reparados	mais	do	que	uma	vez?
+### t. Quais	as	datas	de	início	e	de	fim	e	nome	do	proprietário	das	reparações feitas	por	carros	que	foram	reparados	mais	do	que	uma	vez?
 
 
-#### u. Quais	as	reparações	que	envolveram	todas	as	especialidades?
+### u. Quais	as	reparações	que	envolveram	todas	as	especialidades?
 
 
-#### v. Calcule	as	durações	de	cada	reparação,	contabilizando	até	à	data	atual	os	não entregues.
+### v. Calcule	as	durações	de	cada	reparação,	contabilizando	até	à	data	atual	os	não entregues.
 
 
-#### w. Substitua	Renault	por	Top,	Volvo	por	Down	e	os	restantes	por	NoWay.
+### w. Substitua	Renault	por	Top,	Volvo	por	Down	e	os	restantes	por	NoWay.
+
+# SQL Triggers
+
+## Oficina
+
+### a. Se não for especificado o cliente aquando a inserção de uma reparação, assumir que o cliente é o proprietário do carro.
+
+**Trigger**
+
+```sql
+drop trigger if exists proprietario_paga_por_defeito;
+create trigger proprietario_paga_por_defeito
+  after insert on Reparacao
+  for each row
+  when (new.idCliente IS NULL)
+  BEGIN
+    UPDATE Reparacao
+    SET idCliente =
+    (
+      select max(Carro.idCliente)
+      where Carro=NEW.idCarro
+    )
+    where Reparacao.idReparacao = NEW.idReparacao;
+  END;
+```
+
+**Teste**
+
+```sql
+delete from reparacao where idCarro isnull;
+
+INSERT INTO Reparacao (dataInicio, dataFim, idCliente, idCarro)
+	VALUES ('2010-09-17', '2010-09-20', 1, NULL);
+
+select * from Reparacao;
+
+```
+
+### b. . Simultaneamente: (1) impedir a atribuição de peças não compatíveis com o modelo do carro em reparação; e (2) impedir a atribuição de peças sem stock suficiente para satisfazer a quantidade pretendida na reparação.
+
+**Trigger**
+
+```sql
+drop trigger if exists verifica_compatibilidade_e_stock;
+
+create trigger verifica_compatibilidade_e_stock
+  before insert on ReparacaoPeca
+  for each row
+  begin
+    select case
+    when
+      exists (
+          select *
+          from Peca
+          where idPeca = new.idPeca
+          and new.quantidade > Peca.quantidade
+      )
+    then
+      RAISE(ABORT, 'Não existe quantidade suficiente da peça em stock.')
+    end;
+    select case
+    when
+      not exists (
+        select *
+        from
+        Reparacao join Carro
+        on Reparacao.idCarro = Carro.idCarro
+        join Modelo
+        on Carro.idModelo = Modelo.idModelo
+        join PecaModelo
+        on Carro.idModelo = PecaModelo.idModelo
+        where PecaModelo.idPeca = new.idPeca
+        and
+        Reparacao.idReparacao = new.idReparacao
+    )
+    then
+      RAISE(ABORT, 'A peca nao e compativel com o carro da reparacao.')
+    end;
+  end;
+```
+**Teste**
+
+```sql
+--stock insuficiente mas peça é compatível
+insert into ReparacaoPeca(idReparacao,idPeca,quantidade)
+    values(2, 1, 40000);
+
+---stock suficiente mas peça nao e compatível
+insert into ReparacaoPeca(idReparacao,idPeca,quantidade)
+    values(1, 1, 1);
+
+-- apagar entrada introduzida
+-- com sucesso para novos testes
+delete from ReparacaoPeca
+    where idReparacao = 2
+    and idPeca = 1
+    and quantidade = 8;
+
+---stock suficiente e peça é compatível
+insert into ReparacaoPeca(idReparacao,idPeca,quantidade)
+    values(2, 1, 8);
+```
+
+### c. Atualizar automaticamente o stock de peças após inserção de registos na tabela ReparacaoPeca
+
+**Trigger**
+
+```sql
+DROP TRIGGER IF EXISTS atualiza_stock_apos_reparacao;
+CREATE TRIGGER atualiza_stock_apos_reparacao
+  after insert on ReparacaoPeca
+  FOR EACH ROW
+  BEGIN
+    update Peca
+    set quantidade = (
+        select max(quantidade - new.quantidade)
+        from Peca
+        where idPeca = new.idPeca
+    )
+    where Peca.idPeca = new.idPeca;
+  end;
+```
+**Teste**
+
+```sql
+-- apagar entrada introduzida
+-- com sucesso para novos testes
+delete from ReparacaoPeca
+    where idReparacao = 2
+    and idPeca = 1
+    and quantidade = 8;
+
+
+-- reestabelecer stock para novas execuçoes do insert
+update Peca set quantidade = 100
+  where idPeca = 1;
+
+---stock suficiente e peça é compatível
+insert into ReparacaoPeca(idReparacao,idPeca,quantidade)
+    values(2, 1, 8);
+
+select *
+  from Peca
+  where quantidade = 92 --(100 - 8, que é o que gastámos menos stock inicial de 100)
+  and idPeca = 1;
+
+
+select *
+  from Peca;
+```
+
+### d. Quando se inserem registos numa vista com os nomes de todos os modelos e respetivas marcas, estas inserções sejam propagadas para as tabelas que dão origem à vista.
+
+**Trigger**
+
+```sql
+drop view if exists modelos_e_marcas;
+create view modelos_e_marcas AS
+  select
+      Modelo.nome as nome_modelo,
+      Marca.nome as nome_marca
+  from
+  Modelo join Marca on Modelo.idMarca = Marca.idMarca;
+
+CREATE TRIGGER atualiza_modelos_e_marcas
+  instead of insert on modelos_e_marcas
+  for each row
+  BEGIN
+    insert or replace into Marca (idMarca, nome)
+    values
+    (
+        (
+            select idMarca
+            from Marca
+            where nome = new.nome_marca
+        ),
+        new.nome_marca
+    );
+
+    insert or replace into Modelo (idModelo, nome, idMarca)
+    VALUES
+    (
+        (
+            select max(idModelo)
+            from
+            Modelo
+            where nome = new.nome_modelo
+        ),
+        new.nome_modelo,
+        (
+                select idMarca
+                from Marca
+                where nome = new.nome_marca
+        )
+    );
+END;
+```
+**Teste**
+
+```sql
+-- Remover inserçoes anteriores, para restaurar estado da BD
+
+delete from Modelo where nome = 'Uno Turbo i.e.';
+delete from Modelo where nome = '850R';
+delete from Marca where nome = 'Fiat';
+
+---modelo e marca nao existem
+insert into modelos_e_marcas
+(
+    nome_modelo,
+    nome_marca
+)
+values
+('Uno Turbo i.e.', 'Fiat');
+
+--- marca existe, modelo nao
+insert into modelos_e_marcas
+(
+    nome_modelo,
+    nome_marca)
+values
+('850 R', 'Volvo');
+
+---modelo existe, marca nao (à partida impossivel pq tem
+-- que haver uma marca sempre associada a um modelo! Só se o nome da marca
+-- tiver mudado desde a sua inserção... código continua o mesmo mas nome
+-- foi alterado na BD)
+-- contudo, se usarmos update or replace,
+-- a marca da V50 Momentum vai mudar para Mazda!
+-- há uma forma de impedir isto? Será que faz sequer sentido impedir?
+insert into modelos_e_marcas
+(
+  nome_modelo,
+  nome_marca)
+values
+  --V50 Momentum é um Volvo na bd inicial.
+  ('V50 Momentum', 'Mazda');
+```
+
+**Trigger (com insert dentro de select case, para demonstrar que NÃO FUNCIONA!!!)**
+
+```sql
+drop view if exists modelos_e_marcas;
+create view modelos_e_marcas AS
+  select
+      Modelo.nome as nome_modelo,
+      Marca.nome as nome_marca
+  from
+  Modelo join Marca on Modelo.idMarca = Marca.idMarca;
+
+-- isto nao funciona devido ao uso de insert dentro de um case.
+-- Select é operação de leitura, nao permite inserts.
+-- https://stackoverflow.com/questions/20243739/insert-into-with-use-case-sqlite
+
+CREATE TRIGGER atualiza_modelos_e_marcas
+  instead of insert on modelos_e_marcas
+  for each row
+  BEGIN
+
+  select case
+    when
+        not exists (
+            select * from marca where nome = new.nome_marca
+        )
+    then
+        insert into Marca(nome) VALUES (new.nome_marca);
+    end;
+  end;
+
+  select case
+    when
+        not exists (
+          select * from modelo where nome = new.nome_modelo
+        )
+        then
+            insert into Modelo
+                (nome,idMarca)
+                VALUES
+                (
+                    new.nome_modelo,
+                    (
+                        select max(idMarca)
+                        from
+                        Marca
+                        where nome = new.nome_marca
+                    )
+                )
+            )
+        end;
+    end;
+  END;
+```

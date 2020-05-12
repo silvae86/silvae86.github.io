@@ -39,7 +39,7 @@ gnome-language-settings
 
 Select IBus in the combo box below.
 
-![Select IBus as input method system]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/settings.png -%}){:class="img-responsive"}
+![Select IBus as input method system]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/ibus.png -%}){:class="img-responsive"}
 
 ## Possible solution 4 - Fix bugs with shortcuts in Xorg
 

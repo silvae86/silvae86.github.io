@@ -7,11 +7,11 @@ tags: ubuntu 20.04 upgrade keyboard fix
 
 After upgrading to Ubuntu 20.04 I saw that my keyboard shortcuts no longer worked (`Ctrl + T,` `Shift Insert`, `Ctrl + V`...). The `Super` key also was not working.
 
-### Issues in terminal
+## Issues in terminal
 
 I also saw that while I was in the Terminal, pressing `Ctrl + U`, for example, would no longer delete the current command but instead just blink the cursor between white and black.
 
-### Solution
+## Solution
 
 The solution for this was to go into the Settings app, Regional settings, and remove all Keyboards except the only one I use (Portuguese).
 
@@ -20,3 +20,15 @@ The solution for this was to go into the Settings app, Regional settings, and re
 After that, I ran `sudo dpkg-reconfigure keyboard-configuration` and followed the steps.
 
 For my Lenovo T420, I used the Lenovo T61 Keyboard type, as there was no specific option. However, since they both share the same 8-row keyboard, I figured it would work.
+
+## Step 2 - Fix bugs with shortcuts in Xorg
+
+I was editing text and felt that __sometimes__ the `Ctrl` key would fail on the first times I used `Ctrl + Shift + Left` or `Ctrl + Shift + Right` to select text. Seems like this is a [very old bug in Xorg](https://bugs.launchpad.net/xorg-server/+bug/36812), where `Ctrl + Shift` is captured by the system as a shortcut to change keyboard layout, instead of being considered a text selection operation.
+
+Someone has already published a PPA to deal with this [here](https://launchpad.net/~nrbrtx/+archive/ubuntu/xorg-hotkeys). If you have this behaviour, run these commands:
+
+```shell
+sudo add-apt-repository ppa:nrbrtx/xorg-hotkeys
+sudo apt-get update
+sudo apt-get dist-upgrade
+```

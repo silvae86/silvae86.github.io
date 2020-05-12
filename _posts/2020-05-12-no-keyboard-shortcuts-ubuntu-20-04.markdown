@@ -7,9 +7,9 @@ tags: ubuntu 20.04 upgrade keyboard fix
 
 After upgrading to Ubuntu 20.04 I saw that my keyboard shortcuts no longer worked (`Ctrl + T,` `Shift Insert`, `Ctrl + V`...). The `Super` key also was not working.
 
-## Issues in terminal
+I was also editing text and felt that __sometimes__ the `Ctrl` key would fail on the first times I used `Ctrl + Shift + Left` or `Ctrl + Shift + Right` to select text. Seems like this is a [very old bug in Xorg](https://bugs.launchpad.net/xorg-server/+bug/36812), where `Ctrl + Shift` is captured by the system as a shortcut to change keyboard layout, instead of being considered a text selection operation.
 
-I also saw that while I was in the Terminal, pressing `Ctrl + U`, for example, would no longer delete the current command but instead just blink the cursor between white and black.
+In terminal, I saw that pressing `Ctrl + U`, for example, would no longer delete the current command but instead just blink the cursor between white and black, indicating that maybe some app was handling the shortcut before it reached the Terminal itself.
 
 ## Possible solution 1 - Disable Locate Pointer
 
@@ -23,13 +23,15 @@ The solution for this was to go into the Settings app, Regional settings, and re
 
 ![Ubuntu Regional Settings]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/settings.png -%}){:class="img-responsive"}
 
-After that, I ran `sudo dpkg-reconfigure keyboard-configuration` and followed the steps.
+## Possible solution 3 - Reconfigure Keyboard Configuration
+
+I also ran `sudo dpkg-reconfigure keyboard-configuration` and followed the steps.
 
 For my Lenovo T420, I used the Lenovo T61 Keyboard type, as there was no specific option. However, since they both share the same 8-row keyboard, I figured it would work.
 
 I chose right alt to be the AltGr and disabled the special input key (typically allows you to input characters by pressing Ctrl + ASCII code). I want the least interference with my Ctrl keys as possible!
 
-## Possible solution 3 - Select IBus as your input method system
+## Possible solution 4 - Select IBus as your input method system
 
 Open Terminal
 
@@ -41,9 +43,9 @@ Select IBus in the combo box below.
 
 ![Select IBus as input method system]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/ibus.png -%}){:class="img-responsive"}
 
-## Possible solution 4 - Fix bugs with shortcuts in Xorg
+## Possible solution 5 - Fix bugs with shortcuts in Xorg
 
-I was editing text and felt that __sometimes__ the `Ctrl` key would fail on the first times I used `Ctrl + Shift + Left` or `Ctrl + Shift + Right` to select text. Seems like this is a [very old bug in Xorg](https://bugs.launchpad.net/xorg-server/+bug/36812), where `Ctrl + Shift` is captured by the system as a shortcut to change keyboard layout, instead of being considered a text selection operation.
+I left this last option because, as a rule of thubmb, you should avoid installing PPAs for security and maintainability reasons.
 
 User [Norbert](https://launchpad.net/~nrbrtx) has already published a PPA to deal with this [here](https://launchpad.net/~nrbrtx/+archive/ubuntu/xorg-hotkeys). If you have this behaviour, run these commands:
 
@@ -53,4 +55,4 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 ```
 
-This seems to be supported on everything except GNOME, so I leave another alternative below...
+This seems to be supported on everything except GNOME...

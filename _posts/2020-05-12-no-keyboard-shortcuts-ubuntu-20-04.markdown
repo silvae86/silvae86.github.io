@@ -25,7 +25,7 @@ For my Lenovo T420, I used the Lenovo T61 Keyboard type, as there was no specifi
 
 I was editing text and felt that __sometimes__ the `Ctrl` key would fail on the first times I used `Ctrl + Shift + Left` or `Ctrl + Shift + Right` to select text. Seems like this is a [very old bug in Xorg](https://bugs.launchpad.net/xorg-server/+bug/36812), where `Ctrl + Shift` is captured by the system as a shortcut to change keyboard layout, instead of being considered a text selection operation.
 
-Someone has already published a PPA to deal with this [here](https://launchpad.net/~nrbrtx/+archive/ubuntu/xorg-hotkeys). If you have this behaviour, run these commands:
+User [Norbert](https://launchpad.net/~nrbrtx) has already published a PPA to deal with this [here](https://launchpad.net/~nrbrtx/+archive/ubuntu/xorg-hotkeys). If you have this behaviour, run these commands:
 
 ```shell
 sudo add-apt-repository ppa:nrbrtx/xorg-hotkeys

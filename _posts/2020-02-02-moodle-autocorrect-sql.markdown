@@ -46,15 +46,15 @@ While they both share the same database schema, one is provided to the students 
 1. Open Terminal
 2. Clone the repository:
 
-		`git clone https://github.com/silvae86/moodle-autocorrect-sqlite`
+	- 	`git clone https://github.com/silvae86/moodle-autocorrect-sqlite`
 
 3. Go to the directory where the cloned files are:
 
-		`cd moodle-autocorrect-sqlite`
+	- 	`cd moodle-autocorrect-sqlite`
 
 4. Run the setup in Terminal (should detect your operating system, macOS or Ubuntu, and act appropriately)
 
-	- `chmod +x setup.sh && ./setup.sh`
+	- 	`chmod +x setup.sh && ./setup.sh`
 
 ### Preparation of the environment
 

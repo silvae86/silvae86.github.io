@@ -37,9 +37,9 @@ Go to System Preferences -> Security and Privacy and add the Terminal app to tho
 
 Now that we have all the necessary information, we need to set the Time Machine destination manually. You need a commmand more or less like this:
 
-{% highlight shell %}
+```shell
 sudo tmutil setdestination -ap afp://<<yourusername>>@<<your_capsule_ip>>/<<disk_name>>
-{% endhighlight %}
+```
 
 Let's explain it step by step:
 
@@ -56,9 +56,9 @@ Let's explain it step by step:
 
 Your command should now be something like this. **Run it in Terminal**.
 
-{% highlight shell %}
+```shell
 sudo tmutil setdestination -ap afp://joaorocha@10.0.1.1/Capsule
-{% endhighlight %}
+```
 
 ### Final Result
 

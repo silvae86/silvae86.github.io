@@ -8,9 +8,9 @@ redirect_from:
 ---
 
 If, like me, you tried installing `imagemagick` or other software using [Homebrew](https://brew.sh), you might have ran into this error:
-{% highlight shell %}
+```shell
 <libxml/parser.h> no such file or directory
-{% endhighlight %}
+```
 
 This took me one day to fix, because usually everyone tells you to run `xcode-select --install`. This does not fix the problem.
 
@@ -22,7 +22,7 @@ To confirm that this is the problem, simply run `ls /usr/include`. If the result
 
 By running `find / | grep libxml/parser.h` I can find the `libxml` library in several places:
 
-{% highlight shell %}
+```shell
 /Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/libxml2/libxml/parser.h
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/libxml2/libxml/parser.h
 /Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS.sdk/usr/include/libxml2/libxml/parser.h
@@ -37,7 +37,7 @@ By running `find / | grep libxml/parser.h` I can find the `libxml` library in se
 /Applications/Xcode-beta.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk/usr/include/libxml2/libxml/parser.h
 /Applications/Xcode-beta.app/Contents/Developer/Platforms/AppleTVSimulator.platform/Developer/SDKs/AppleTVSimulator.sdk/usr/include/libxml2/libxml/parser.h
 /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/libxml2/libxml/parser.h
-{% endhighlight %}
+```
 
 ## What you should not do
 
@@ -49,19 +49,19 @@ You CANNOT modify `/usr/include`, even with the `root` user. It is locked by SIP
 
 Apple ships a "legacy installer" for you to be able to install the headers in the "old location". Run this:
 
-{% highlight shell %}
+```shell
 #copy installer to the desktop
 cp /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg ~/Desktop
-{% endhighlight %}
+```
 
 Then, the installer will be placed at your Destop. Simple double-click and it will install the headers in `/usr/include`.
 
 or, if you want a pure command line alternative:
 
-{% highlight shell %}
+```shell
 #run installer via command line
 sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
-{% endhighlight %}
+```
 
 ## Problem fixed
 

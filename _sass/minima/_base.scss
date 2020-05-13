@@ -151,7 +151,6 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border: 1px solid $grey-color-light;
-  border-radius: 3px;
   background-color: #eef;
 }
 
@@ -170,7 +169,48 @@ pre {
   }
 }
 
+div.highlight {
+    // change theme here
+    @import "minima/themes/autumn";
+}
 
+div.highlight > pre.highlight {
+	background: $background-color;
+}
+
+pre.highlight {
+	padding: 0;
+	border-style: none;
+}
+
+pre.highlight td {
+	padding: 0;
+}
+
+pre.highlight td > pre{
+	margin-bottom: 0;
+}
+
+table.rouge-table {
+	table-layout:fixed;
+}
+
+table.rouge-table, table.rouge-table td {
+	border-style: none;
+}
+
+table.rouge-table td.rouge-gutter {
+	width: 3em;
+}
+
+table.rouge-table td.rouge-gutter > pre {
+	border-radius: 5px 0px 0px 5px;
+}
+
+table.rouge-table td.rouge-code > pre {
+	border-radius: 0px 5px 5px 0px;
+	word-wrap:break-word;
+}
 
 /**
  * Wrapper

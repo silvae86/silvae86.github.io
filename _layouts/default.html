@@ -11,10 +11,14 @@
       <div class="wrapper">
 
         {%- include nav-breadcrumbs.html -%}
-
+        
         {{ content }}
 
         {%- include related.html -%}
+
+        {%- if page.show_ads -%}
+        {%- include ads/post_footer.html -%}
+        {%- endif -%}
       </div>
     </main>
 

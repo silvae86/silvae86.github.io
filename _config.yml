@@ -83,3 +83,11 @@ whitelist:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      title: "Untitled"
+      autoads: true # like this

@@ -19,15 +19,23 @@
 			width:100%;
 		}
 
-	#search-container {
-		text-align:right;
+	.search-container {
+		float: right;
 	}
 
 	#search-box {
 		max-width: 150px;
 	}
-	
+
 	div.home #archive {
 		margin:1em;
+	}
+
+	div.trigger {
+		display:flex;
+	}
+
+	div.trigger > div.search-container {
+		margin-left: auto;
 	}
 }

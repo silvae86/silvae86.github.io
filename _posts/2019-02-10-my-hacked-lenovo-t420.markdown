@@ -7,16 +7,19 @@ redirect_from:
   - "/hardware/hacks/t420/toaster/2019/02/10/my-hacked-lenovo-t420/"
 ---
 
-{% include info.html content="Page in construction" %}
-
-![Hacked Lenovo T420](/assets/images/post-images/2019-02-10-my-hacked-lenovo-t420/IMG_20200417_111333.jpg){:class="img-responsive"}
-*My Upgraded Lenovo T420*{:class="img-caption"}
 
 I have a Lenovo T420 that I love because of its unmatched 8-row keyboard. It is old and was slow with its original i5-2520m cpu... but it is very Linux friendly and runs MacOS too. A GitHub user called tluck has compiled [everything you need](https://github.com/tluck/Lenovo-T420-Clover) to get it running under MacOS (yes, even Catalina, an OS that no mac from 2011 supports...).
 
-Shame on you Apple for dropping support of such useful machines, even nowadays. Perhaps you guys want them to be forgotten after yet another [screw-up](https://discussions.apple.com/thread/4659905) with the AMD 6750m and AMD 6770m GPUs?
+![Hacked Lenovo T420](/assets/images/post-images/2019-02-10-my-hacked-lenovo-t420/IMG_2361.jpg){:class="img-responsive"}
+*My Upgraded Lenovo T420*{:class="img-caption"}
 
-And yes, I was the owner of one of the 8600GT-equipped [A1260 MacBook Pros](https://www.ifixit.com/Answers/View/431333/MacBook+Pro+A1260+-+Logic+Board+Repair+-+No+Power+Up from 2008) which suffered from the infamous [manufacturing defect](https://forums.lenovo.com/t5/ThinkPad-T61-and-prior-T-series/T61p-Nvidia-problems/td-p/917335) which also claimed the souls of thousands of innocent Thinkpad T61p's (I also have one of those btw...dead and waiting for a donor board!).
+It was sad to see Apple dropping support of such (still to this day) useful machines. Perhaps they want us to forget yet another [screw-up](https://discussions.apple.com/thread/4659905) with the AMD 6750m and AMD 6770m GPUs?
+
+
+![Traditional Blue Enter Key](/assets/images/post-images/2019-02-10-my-hacked-lenovo-t420/IMG_2362.jpg){:class="img-responsive"}
+*Close-up of the traditional Blue Enter Key*{:class="img-caption"}
+
+And yes, I was the owner of one of the ill-fated 8600GT-equipped [A1260 MacBook Pros](https://www.ifixit.com/Answers/View/431333/MacBook+Pro+A1260+-+Logic+Board+Repair+-+No+Power+Up from 2008) which suffered from the infamous [manufacturing defect](https://forums.lenovo.com/t5/ThinkPad-T61-and-prior-T-series/T61p-Nvidia-problems/td-p/917335) which also claimed the souls of thousands of innocent Thinkpad T61p's (I also have one of those btw...dead and waiting for a donor board!).
 
 ## Specs
 
@@ -33,6 +36,9 @@ So far, this machine was upgraded with the following goodies:
 - Monitor panel from an [Alienware M14X laptop](https://www.youtube.com/watch?v=9h0n-PQNEFw) (one of the rarest and best you can get at 1600x900, which is not to say much, as they are still nasty TN panels).
 - Some German keyboard because I like the tactile experience more than the Portuguese ones (there were [3 different manufacturers of keyboard for this machine](http://forum.notebookreview.com/threads/thinkpad-keyboard-identification.634208/))
 - Custom hacked up vent with blue BGA chip heatsinks from china stuck to the cooler.
+
+![Custom Heatsinks detailed](/assets/images/post-images/2019-02-10-my-hacked-lenovo-t420/IMG_2365.jpg){:class="img-responsive"}
+*Closeup of the add-on custom heatsinks*{:class="img-caption"}
 
 ## About the CPU
 
@@ -68,3 +74,6 @@ Here are some references I was able to find. Antiglare/glossy info from Panelloo
 | 00HN827          | LP140QH1-SPA2      | Glossy    |
 | 00NY440          | B140QAN01.5      | Glossy    |
 | 00HN826          | B140QAN01.1      | Glossy    |
+
+
+{% include info.html content="Page in construction" %}

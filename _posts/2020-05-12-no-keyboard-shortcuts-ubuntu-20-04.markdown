@@ -15,13 +15,13 @@ In terminal, I saw that pressing `Ctrl + U`, for example, would no longer delete
 
 Go to your Settings app and make sure that the "Locate Pointer" option is disabled:
 
-![Disabling Locate Pointer in Accessibility]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/disable-locate-pointer.png -%}){:class="img-responsive"}
+![Disabling Locate Pointer in Accessibility]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/disable-locate-pointer.png -%}){:class="img-center"}
 
 ## Possible solution 2 - Remove all languages in Regional Settings except one
 
 The solution for this was to go into the Settings app, Regional settings, and remove all Keyboards except the only one I use (Portuguese).
 
-![Ubuntu Regional Settings]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/settings.png -%}){:class="img-responsive"}
+![Ubuntu Regional Settings]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/settings.png -%}){:class="img-center"}
 
 ## Possible solution 3 - Reconfigure Keyboard Configuration
 
@@ -41,7 +41,7 @@ gnome-language-settings
 
 Select IBus in the combo box below.
 
-![Select IBus as input method system]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/ibus.png -%}){:class="img-responsive"}
+![Select IBus as input method system]({%- link /assets/images/post-images/2020-05-12-no-keyboard-shortcuts-ubuntu-20-04/ibus.png -%}){:class="img-center"}
 
 ## Possible solution 5 - Fix bugs with shortcuts in Xorg
 

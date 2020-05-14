@@ -15,16 +15,16 @@ I followed this [video](https://www.youtube.com/watch?v=RqbclOdjcsw) for the ste
 
 ## The old battery
 
-![The old battery](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/1.jpg){:class="img-responsive"}
+![The old battery](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/1.jpg){:class="img-center"}
 
 ## Before and after
 
 I went from a 1000+ cycle battery to a new one, and it shows. Not only I got 2 more hours battery life (it is expected to increase after the first recharge cycles), but I am also more confident traveling with this laptop.
 
-![Before](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-04 at 21.03.52.png){:class="img-responsive"}
+![Before](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-04 at 21.03.52.png){:class="img-center"}
 
 
-![After](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-05 at 00.50.50.png){:class="img-responsive"}
+![After](/assets/images/post-images/2018-07-04-new-battery-for-my-macbook-pro-retina-13/Screenshot 2018-07-05 at 00.50.50.png){:class="img-center"}
 
 ## Final note
 

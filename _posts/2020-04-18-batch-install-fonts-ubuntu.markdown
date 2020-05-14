@@ -39,4 +39,4 @@ cp ./Avenir Next/500 Medium/avenir-next-medium.ttf ~/Desktop/fonts
 
 After you copied all fonts into a single directory, just open Font Manager, go to the folder, press Ctrl+A and select them to install all!
 
-![Font installer selecting all fonts](/assets/images/post-images/2020-04-18-batch-install-fonts-ubuntu/Screenshot from 2020-04-18 11:24:12.png){:class="img-responsive"}
+![Font installer selecting all fonts](/assets/images/post-images/2020-04-18-batch-install-fonts-ubuntu/Screenshot from 2020-04-18 11:24:12.png){:class="img-center"}

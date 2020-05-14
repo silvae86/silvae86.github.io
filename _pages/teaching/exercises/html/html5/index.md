@@ -39,7 +39,7 @@ Using HTML 5 only, create a document representing the following table. Use the a
 </html>
 ````
 
-![exercise-table-html5](table.png){:class="img-responsive"}
+![exercise-table-html5](table.png){:class="img-center"}
 
 - Validate the HTML code using the online W3C validator.
 - Include a valid HTML 5 icon on the webpage.

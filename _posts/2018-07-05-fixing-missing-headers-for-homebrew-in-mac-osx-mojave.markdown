@@ -67,6 +67,6 @@ sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_heade
 
 The `/usr/include` directory now includes all the libraries required by `brew` to link during package compilation:
 
-![end](/assets/images/post-images/2018-07-05-fixing-missing-headers-for-homebrew-in-mac-osx-mojave/Screenshot 2018-07-05 at 17.36.49.png){:class="img-responsive"}
+![end](/assets/images/post-images/2018-07-05-fixing-missing-headers-for-homebrew-in-mac-osx-mojave/Screenshot 2018-07-05 at 17.36.49.png){:class="img-center"}
 
 Now `imagemagick` and other kegs will install successfully.

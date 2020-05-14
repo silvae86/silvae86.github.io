@@ -21,17 +21,17 @@ I just bought an Apple Time Capsule 2TB on eBay for automatic backups over Wi-Fi
 
 Go to System Preferences -> Security and Privacy and add the Terminal app to those with Full Disk Access permissions
 
-![Add Terminal to Full Disk Access](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/add-terminal-to-full-access.png){:class="img-responsive"}
+![Add Terminal to Full Disk Access](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/add-terminal-to-full-access.png){:class="img-center"}
 
 ### Open Terminal
 
 ### Open Airport Utility and take note of the IP of your Time Capsule
 
-![Seeing IP of Time Capsule](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/get-capsule-ip.png){:class="img-responsive"}
+![Seeing IP of Time Capsule](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/get-capsule-ip.png){:class="img-center"}
 
 ### Still in Airport Utility, take note of the name of your disk
 
-![Seeing Disk Name](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/see-capsule-disk-name.png){:class="img-responsive"}
+![Seeing Disk Name](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/see-capsule-disk-name.png){:class="img-center"}
 
 ### Putting the command together
 
@@ -64,4 +64,4 @@ sudo tmutil setdestination -ap afp://joaorocha@10.0.1.1/Capsule
 
 The remote capsule disk should now appear in the GUI and you should be able to start a backup:
 
-![Final Result](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/result.png){:class="img-responsive"}
+![Final Result](/assets/images/post-images/2019-09-10-unable_to_determine_url_for_mount_point_time_machine/result.png){:class="img-center"}

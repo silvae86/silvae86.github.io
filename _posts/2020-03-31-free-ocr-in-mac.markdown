@@ -16,7 +16,7 @@ brew install ocrmypdf
 
 Usage example:
 
-![Usage example for ocrmypdf](/assets/images/post-images/2020-03-31-free-ocr-in-mac/ocrmypdf-usage.png){:class="img-responsive"}
+![Usage example for ocrmypdf](/assets/images/post-images/2020-03-31-free-ocr-in-mac/ocrmypdf-usage.png){:class="img-center"}
 
 This was tested in macOS Catalina (10.15.4).
 

@@ -35,12 +35,12 @@ After this is solved, do the same steps to re-enable SIP, but type `csrutil enab
 
 Run the installer.
 
-![Installer Running](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 15.22.49.png){:class="img-responsive"}
+![Installer Running](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 15.22.49.png){:class="img-center"}
 
 
 You will get an error message like this:
 
-![Installer Error](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 15.22.51.png){:class="img-responsive"}
+![Installer Error](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 15.22.51.png){:class="img-center"}
 
 No worries, close it and continue.
 
@@ -75,7 +75,7 @@ Virtualbox &
 
 Using the GUI will give you an error:
 
-![GUI Error](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 16.52.06.png){:class="img-responsive"}
+![GUI Error](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 16.52.06.png){:class="img-center"}
 
 However, you should be able to start VirtualBox using the Terminal:
 
@@ -126,4 +126,4 @@ if plugins_to_install.any?
 
 ## Vagrant and Virtualbox 5.2 working on Mojave!
 
-![All fixed](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 16.54.10.png){:class="img-responsive"}
+![All fixed](/assets/images/post-images/2018-07-10-running-vagrant-and-virtualbox-in-mojave-public-beta/Screenshot 2018-07-10 at 16.54.10.png){:class="img-center"}

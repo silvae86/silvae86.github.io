@@ -26,7 +26,7 @@ To make my SQL corrections easier, I have written and published some [Python+Bas
 
 These scripts will produce a text file per answer that looks more or less like this:
 
-![Sample output](https://github.com/silvae86/moodle-autocorrect-sqlite/raw/master/docs/img/sample.png){:class="img-responsive"}
+![Sample output](https://github.com/silvae86/moodle-autocorrect-sqlite/raw/master/docs/img/sample.png){:class="img-center"}
 
 ## Two SQL scripts: one for the students, one for grading
 

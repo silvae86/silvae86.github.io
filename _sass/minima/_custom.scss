@@ -71,6 +71,16 @@
     margin-right: auto;
     display:block;
     width: 85%;
+    padding:1em;
+    border-radius: 3px;
+    background-color: white;
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+em.img-caption {
+  text-align: center;
+  margin: 1em;
+  font-family: $monospace-font-family;
 }
 
 .fullwidth {

@@ -3,7 +3,6 @@ layout: post
 title:  "How to set up MAMP to enable .htaccess and mod_rewrite debugging"
 date:   2019-01-01 0:10:06 +0100
 tags: sysadmin apache mamp mod_rewrite
-show_ads: true
 redirect_from:
   - "/sysadmin/apache/mamp/mod_rewrite/2018/12/31/setup_mod_rewrite_and_htaccess_in_mamp/"
 ---

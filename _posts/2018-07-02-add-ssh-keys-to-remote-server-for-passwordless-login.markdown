@@ -11,40 +11,40 @@ SSH keys allow you to login into your SSH server without having to remember pass
 
 Generate public keys. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`).
 
-{% highlight shell %}
+```shell
 ssh-keygen -f ~/.ssh/example.com-id
-{% endhighlight %}
+```
 
 
 ## Copy Public Key to the target machine
 
 Your remote server needs to know your public key, so you need to send it there.
 
-{% highlight shell %}
+```shell
 #copy the public key to the target machine
 ssh-copy-id -i ~/.ssh/example.com-id.pub exampleuser@example.com
-{% endhighlight %}
+```
 
 ## Set appropriate permissions
 
 Your private key should only be visible to you and not other users, otherwise `ssh` will complain and not allow you to use the keys.
 
-{% highlight shell %}
+```shell
 chmod 0700 ~/.ssh/
 chmod 0600 ~/.ssh/example.com-id
-{% endhighlight %}
+```
 
 ## Create Configuration File for auto login
 
 This config file will tell `ssh` where are the configurations for an alias for your now key-authenticated server.
 
-{% highlight shell %}
+```shell
 vim ~/.ssh/config
-{% endhighlight %}
+```
 
 ### Example contents of the new file
 
-{% highlight shell %}
+```shell
 #alias of the machine into which you are logging in
 Host example.com
 
@@ -56,16 +56,16 @@ User exampleuser
 
 #the private key, without "-pub"
 IdentityFile ~/.ssh/example.com-id
-{% endhighlight %}
+```
 
 
 ### Login using machine identifier
 
 Now you can login using `ssh` and the alias you choose in the config file above.
 
-{% highlight shell %}
+```shell
 ssh example.com
-{% endhighlight %}
+```
 
 
 ### Save your keys and configuration file in a "safe place" for later
@@ -80,22 +80,22 @@ into your `~/.ssh` directory in the new machine.
 
 ### Disable remote login using passwords
 
-{% highlight shell %}
+```shell
 vim /etc/ssh/sshd_config
-{% endhighlight %}
+```
 
 Search for the line below and uncomment `PasswordAuthentication No`
 
-{% highlight shell %}
+```shell
 # Change to no to disable tunnelled clear text passwords
 #PasswordAuthentication no #change to PasswordAuthentication no without the hash
-{% endhighlight %}
+```
 
 Restart the sshd service
 
-{% highlight shell %}
+```shell
 sudo service ssh restart
-{% endhighlight %}
+```
 
 #### Fair warning!
 Remember, if others also get these keys and configuration file they can log into your server!
@@ -108,34 +108,34 @@ Tunnel connections are really cool if you have a server running somewhere and yo
 
 We need to configure the `sshd` service to enable TCP connections forwarding. Start by editing `/etc/ssh/sshd_config`
 
-{% highlight shell %}
+```shell
 sudo vim /etc/ssh/sshd_config
-{% endhighlight %}
+```
 
 Enable these row:
 
-{% highlight conf %}
+```conf
 AllowTcpForwarding yes
 TCPKeepAlive yes
-{% endhighlight %}
+```
 
 Restart the `sshd` service:
 
-{% highlight shell %}
+```shell
 sudo service sshd restart
-{% endhighlight %}
+```
 
 ### Opening the tunnel
 
 With username + password:
 
-{% highlight shell %}
+```shell
 ssh -L 5901:127.0.0.1:5901 -C -N -l username server_address
-{% endhighlight %}
+```
 
 With with a public key configuration:
 
-{% highlight shell %}
+```shell
 ssh -L 5901:127.0.0.1:5901 -C -N dendro-builder.fe.up.pt -v
-{% endhighlight %}
+```
 

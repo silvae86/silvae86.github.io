@@ -13,16 +13,16 @@ Instead, we are going to use [venv](https://docs.python.org/3/library/venv.html)
 
 This was tested in Ubuntu 16.04.
 
-{% highlight bash %}
+```bash
 # install python
 sudo apt-get install -y python3.7 python3.7-venv
-{% endhighlight %}
+```
 
 ## Set up `venv`
 
 There are only a few lines that need to be uncommented:
 
-{% highlight bash %}
+```bash
 # install venv
 python3.7 -m venv env
 # activate venv
@@ -34,19 +34,19 @@ python get-pip.py
 pip install --upgrade pip
 # (optional) install any requirements of your current app in this venv
 pip install -r requirements.txt
-{% endhighlight %}
+```
 
 Now you are ready to start coding!
 
-{% highlight bash %}
+```bash
 # now we can use python instead of python3.7 as the executable name, because venv will take care of selecting the right version for us
 python
-{% endhighlight %}
+```
 
 
 ## Exiting `venv`
 
-{% highlight bash %}
+```bash
 #simply type
 deactivate
-{% endhighlight %}
+```

@@ -11,7 +11,7 @@ MySQL, ElasticSearch and OpenLink Virtuoso are all dependencies of our research 
 
 This script is a basic template for backing up the data of all three servers.
 
-{% highlight shell%}
+```shell
 # Create backup directory with date timestamp
 ##get valid timestamp for the backup directory
 BACKUP_DIR=$HOME/$(date +"%Y-%m-%d_%H-%M-%S") 
@@ -31,6 +31,6 @@ sudo cp -r /usr/local/virtuoso-opensource/var/lib/virtuoso/db/* $BACKUP_DIR/virt
 
 #MySQL (backup all databases): 
 mysqldump --all-databases > $BACKUP_DIR/mysqlbackup.sql -u root -p$MYSQL_PASSWORD
-{% endhighlight %}
+```
 
 

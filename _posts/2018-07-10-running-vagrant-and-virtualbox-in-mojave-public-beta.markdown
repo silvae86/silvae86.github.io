@@ -46,7 +46,7 @@ No worries, close it and continue.
 
 ## Modify Kexts, rebuild Kernel Extension Cache
 
-{% highlight shell %}
+```shell
 #Fix Kernel Version
 
 sudo sed -i '' 's/5\.2/5\.3/g' '/Library/Application Support/VirtualBox/VBoxDrv.kext/Contents/Info.plist'
@@ -67,7 +67,7 @@ sudo kextcache -i /
 # Start up Virtualbox GUI
 Virtualbox &
 
-{% endhighlight %}
+```
 
 [Credit @IPV6Freely](https://forums.virtualbox.org/viewtopic.php?f=39&t=88231&start=75)
 
@@ -79,15 +79,15 @@ Using the GUI will give you an error:
 
 However, you should be able to start VirtualBox using the Terminal:
 
-{% highlight shell %}
+```shell
 Virtualbox &
-{% endhighlight %}
+```
 
 ## Fix plugin installations if you are using Vagrant and they fail to install
 
 Before I had this, which worked before Mojave and in Linux too:
 
-{% highlight ruby %}
+```ruby
 
 required_plugins = %w(vagrant-share vagrant-vbguest vagrant-disksize vagrant-proxyconf)
 plugins_to_install = required_plugins.select { |plugin| not Vagrant.has_plugin? plugin }
@@ -98,19 +98,19 @@ if not plugins_to_install.empty?
   else
     abort "Installation of one or more plugins has failed. Aborting."
   end
-{% endhighlight %}
+```
 
 This caused issues:
 
-{% highlight shell %}
+```shell
 Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long
 Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long
 Exec error: fork/exec /opt/vagrant/embedded/bin/ruby: argument list too long
-{% endhighlight %}
+```
 
 The solution was to reformulate the plugin installation code in the `Vagrantfile` like this:
 
-{% highlight ruby %}
+```ruby
 
 required_plugins = %w(vagrant-share vagrant-vbguest vagrant-disksize vagrant-proxyconf)
 return if !Vagrant.plugins_enabled?
@@ -120,7 +120,7 @@ plugins_to_install = required_plugins.select { |plugin| !Vagrant.has_plugin? plu
 if plugins_to_install.any?
   system "vagrant plugin install #{plugins_to_install.join(' ')}"
   exit system 'vagrant up'
-{% endhighlight %}
+```
 
 [Credit to @nuxy for this fix](https://github.com/hashicorp/vagrant/issues/8055)
 

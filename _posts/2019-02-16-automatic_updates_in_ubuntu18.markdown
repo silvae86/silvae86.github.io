@@ -9,20 +9,20 @@ If you administer servers, you know the importance of keeping your packages up t
 
 In Ubuntu Server 18, this is carried out by editing the `/etc/apt/apt.conf.d/50unattended-upgrades` file. Let's edit it with the following command:
 
-{% highlight bash %}
+```bash
 sudo vim /etc/apt/apt.conf.d/50unattended-upgrades
-{% endhighlight %}
+```
 
 ## Changes to the file
 
 There are only a few lines that need to be uncommented:
 
-{% highlight bash %}
+```bash
 "${distro_id}:${distro_codename}-updates"; // will enable automatic security updates
 Unattended-Upgrade::Automatic-Reboot "true"; // will enable automatic reboot after updates are concluded
 Unattended-Upgrade::Automatic-Reboot-Time "04:00"; // will set up 4AM as the reboot time
 Unattended-Upgrade::Remove-Unused-Kernel-Packages "true"; // will prevent your boot partition from getting filled of junk, which will block any and all updates at a point
-{% endhighlight %}
+```
 
 Special attention should be given to the last line, which will enable the update to automatically clean up old kernel packages. Without it, you can find yourself with a full `boot` partition, which has the nasty ability to halt any and all updates! I have [faced this in the past](/sysadmin/boot/no/space/left/on/device/2018/11/05/no-space-left-on-device-boot/) and it can be a pain.
 
@@ -30,7 +30,7 @@ Special attention should be given to the last line, which will enable the update
 
 If you just want to copy and paste, here is my file, with these changes made.
 
-{% highlight bash %}
+```bash
 
 // Automatically upgrade packages from these (origin:archive) pairs
 //
@@ -127,4 +127,4 @@ Unattended-Upgrade::Automatic-Reboot-Time "04:00";
 // (i.e. skip or gracefully stop updates on a metered connection)
 // Unattended-Upgrade::Skip-Updates-On-Metered-Connections "true";
 
-{% endhighlight %}
+```

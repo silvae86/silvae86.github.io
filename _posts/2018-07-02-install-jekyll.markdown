@@ -17,64 +17,64 @@ Install XCode, open it and install all components it asks you to.
 
 ### Install homebrew
 
-{% highlight shell %}
+```shell
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{% endhighlight %}
+```
 
 ### Add binaries to path if you want
 
-{% highlight shell %}
+```shell
   echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.zshrc
-{% endhighlight %}
+```
 
 ### Install ruby
 
-{% highlight shell %}
+```shell
 brew install ruby
-{% endhighlight %}
+```
 
 #### (Optional) Fix homebrew links if necessary
 
-{% highlight shell %}
+```shell
 sudo mkdir -p /usr/local/include
 sudo mkdir -p /usr/local/lib
 sudo chown -R $(whoami):admin /usr/local/include
 sudo chown -R $(whoami):admin /usr/local/lib
 brew list -1 | while read line; do brew unlink $line; brew link $line; done
-{% endhighlight %}
+```
 
 ### Install RVM and stable ruby
 
-{% highlight shell %}
+```shell
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
-{% endhighlight %}
+```
 
 ### Install Jekyll
 
-{% highlight shell %}
+```shell
 sudo gem install jekyll
-{% endhighlight %}
+```
 
 ### Check Jekyll is working
 
-{% highlight shell %}
+```shell
 jekyll -v
-{% endhighlight %}
+```
 
 ### cd to your blog directory
 
-{% highlight shell %}
+```shell
 cd /my/blog/directory
-{% endhighlight %}
+```
 
 ### install dependencies
 
-{% highlight shell %}
+```shell
 bundle install
-{% endhighlight %}
+```
 
 ### serve blog with Jekyll and Bundler
 
-{% highlight shell %}
+```shell
 bundle exec jekyll serve
-{% endhighlight %}
+```

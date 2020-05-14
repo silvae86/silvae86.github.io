@@ -13,9 +13,9 @@ Another issue that you may face is that many databases use sockets to communicat
 
 This command will print you the list of open file descriptors (thus including sockets) that a program on a certain port (in this case `1111`) is holding on to.
 
-{% highlight shell %}
+```shell
 watch -n 1 'lsof -i -n -P | grep 1111 | grep CLOSE_WAIT | wc -l'
-{% endhighlight %}
+```
 
 1. uses `watch -n 1` to continuously run the command that comes next. In this case, we are using a command that contains pipes (`|`), so we must put the entire command inside quotes.
 2. Gets the list of file descriptors currently open, with the open ports  of the processes who are holding them: `lsof -i -n -P`

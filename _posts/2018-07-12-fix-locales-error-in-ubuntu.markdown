@@ -12,7 +12,7 @@ Tired of warning about locales in Ubuntu? Me too, and there is a fix.
 
 You login, you try to compile something, etc. All the time you see this:
 
-{% highlight shell %}
+```shell
 
 perl: warning: Setting locale failed.   
 perl: warning: Please check that your locale settings:   
@@ -22,16 +22,16 @@ perl: warning: Please check that your locale settings:
         LANG = "en_US.UTF-8"   
     are supported and installed on your system.   
 
-{% endhighlight %}
+```
 
 
 ## The fix
 
 Edit the file `/etc/environment` and add this:
 
-{% highlight shell %}
+```shell
 LC_ALL=en_US.UTF-8
 LANG=en_US.UTF-8
-{% endhighlight %}
+```
 
 If it still fails, add the same lines to `/etc/default/locale`.

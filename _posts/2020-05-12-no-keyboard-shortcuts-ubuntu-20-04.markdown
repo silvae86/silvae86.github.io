@@ -5,7 +5,7 @@ date:   2020-05-12 12:05:000 +0100
 tags: ubuntu 20.04 upgrade keyboard fix
 ---
 
-After upgrading to Ubuntu 20.04 I saw that my keyboard shortcuts no longer worked (`Ctrl + T,` `Shift Insert`, `Ctrl + V`...). The `Super` key also was not working.
+After upgrading to Ubuntu 20.04 I saw that my keyboard shortcuts no longer worked (`Ctrl + T`, `Shift Insert`, `Ctrl + V`...). The `Super` key also was not working.
 
 I was also editing text and felt that __sometimes__ the `Ctrl` key would fail on the first times I used `Ctrl + Shift + Left` or `Ctrl + Shift + Right` to select text. Seems like this is a [very old bug in Xorg](https://bugs.launchpad.net/xorg-server/+bug/36812), where `Ctrl + Shift` is captured by the system as a shortcut to change keyboard layout, instead of being considered a text selection operation.
 

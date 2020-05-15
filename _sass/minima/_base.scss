@@ -159,6 +159,11 @@ code {
 code {
   padding: 1px 5px;
   font-family: $monospace-font-family;
+  background-color:  $tables-and-code-background-color;
+  border-color: $grey-color-light;
+  border-width: 1px;
+  border-radius: 3px;
+  border-style: solid;
 }
 
 pre {
@@ -177,18 +182,17 @@ div.highlight {
     // change theme here
     @import "minima/themes/autumn";
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-    max-width: 90%;
-    margin-left: auto;
-    margin-right:auto;
+    border-radius: 5px;
 }
 
 div.highlight > pre.highlight {
-	background: $background-color;
+	background: $tables-and-code-background-color;
 }
 
 pre.highlight {
 	padding: 0;
 	border-style: none;
+  border-radius: 5px;
 }
 
 pre.highlight td {
@@ -202,6 +206,8 @@ pre.highlight td > pre {
 table.rouge-table {
     margin-bottom:0;
     border-style:none;
+    table-layout: fixed;
+    border-radius: 3px;
 }
 
 table.rouge-table tr, table.rouge-table td {
@@ -209,23 +215,24 @@ table.rouge-table tr, table.rouge-table td {
   padding-top: 0px;
   padding-bottom: 0px;
   vertical-align: top;
-  background-color: #eef;
+  background-color: $tables-and-code-background-color;
 }
 
 table.rouge-table tr > td.rouge-gutter {
   width: 3em;
-	border-radius: 5px 0px 0px 5px;
-  border-style:none;
+  border-style:solid;
+  border-color: $grey-color-light
 
 }
 
 table.rouge-table tr > td.rouge-code {
-	border-radius: 0px 5px 5px 0px;
-  border-style:none;
+  border-style:solid;
+  border-color: $grey-color-light
 }
 
 table.rouge-table td.rouge-code > pre {
 	word-wrap:break-word;
+  word-break: break-all;
 }
 
 /**

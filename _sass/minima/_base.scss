@@ -147,31 +147,39 @@ blockquote {
 /**
  * Code formatting
  */
+
+ // Code
+
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  background-color: #eef;
+  border-style: none;
 }
 
 code {
   padding: 1px 5px;
+  font-family: $monospace-font-family;
 }
 
 pre {
-  padding: 8px 12px;
-  overflow-x: auto;
+ padding: 8px 12px;
+ overflow-x: auto;
+ font-family: $monospace-font-family;
 
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
+ > code {
+   border: 0;
+   padding-right: 0;
+   padding-left: 0;
+ }
 }
 
 div.highlight {
     // change theme here
     @import "minima/themes/autumn";
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    max-width: 90%;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 div.highlight > pre.highlight {
@@ -187,28 +195,36 @@ pre.highlight td {
 	padding: 0;
 }
 
-pre.highlight td > pre{
+pre.highlight td > pre {
 	margin-bottom: 0;
 }
 
 table.rouge-table {
-	table-layout:fixed;
+    margin-bottom:0;
+    border-style:none;
 }
 
-table.rouge-table, table.rouge-table td {
-	border-style: none;
+table.rouge-table tr, table.rouge-table td {
+  max-height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  vertical-align: top;
+  background-color: #eef;
 }
 
-table.rouge-table td.rouge-gutter {
-	width: 3em;
-}
-
-table.rouge-table td.rouge-gutter > pre {
+table.rouge-table tr > td.rouge-gutter {
+  width: 3em;
 	border-radius: 5px 0px 0px 5px;
+  border-style:none;
+
+}
+
+table.rouge-table tr > td.rouge-code {
+	border-radius: 0px 5px 5px 0px;
+  border-style:none;
 }
 
 table.rouge-table td.rouge-code > pre {
-	border-radius: 0px 5px 5px 0px;
 	word-wrap:break-word;
 }
 

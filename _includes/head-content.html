@@ -35,17 +35,6 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  <!-- <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      processEscapes: true
-    }
-  });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-  -->
-
 <!-- Include Fontawesome -->
 
   <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.css' | relative_url }}">
@@ -54,8 +43,5 @@
 
 <!-- Include Fontawesome Animations -->
   <link rel="stylesheet" href="{{ '/assets/fontawesome-animations/font-awesome-animation.min.css' | relative_url }}">
-<!-- Jupyter Notebook Preview JS library -->
-  <script defer src="{{ '/js/notebook.min.js' | relative_url }}"></script>
 
-  <!-- Mathjax -->
-  <script id="MathJax-script" async src="{{ '/js/tex-mml-chtml.js' | relative_url }}"></script>
+{%- include head-nbpreview.html -%}

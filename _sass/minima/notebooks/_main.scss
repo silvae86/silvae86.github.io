@@ -1,0 +1,9 @@
+div.notebook_viewer {
+    // Import partials.
+    @import
+      "notebook",
+      "prism"
+    ;
+}
+
+@import "katex";

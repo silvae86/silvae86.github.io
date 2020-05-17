@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Embedding Jupyter Notebooks in Jekyll"
-date:   2020-05-17 15:53:000 +0100
+date:   1970-05-17 15:53:000 +0100
 tags: jupyter jekyll notebook embed
 ---
 

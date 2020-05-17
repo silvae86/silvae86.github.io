@@ -1,7 +1,7 @@
 {%- if notebook_counter -%}
   {% assign notebook_counter = notebook_counter + 1 %}
 {%- else -%}
-  {% assign notebook_counter = notebook_counter = 0 %}
+  {% assign notebook_counter = 0 %}
 {%- endif -%}
 
 {% assign real_notebook_url = "/assets/notebooks/" | append: include.url %}
@@ -13,10 +13,11 @@
     var oReq = new XMLHttpRequest();
 
     const responseHandler = function () {
-      console.log(this.responseText);
       var notebook = nb.parse(JSON.parse(this.responseText));
       var rendered = notebook.render();
       document.getElementById("notebook_preview_{{notebook_counter}}").appendChild(rendered);
+      MathJax.typeset();
+      document.querySelectorAll("notebook_preview_{{notebook_counter}} mjx-container")[0].classList.remove("style");
     };
 
     oReq.onload = responseHandler;

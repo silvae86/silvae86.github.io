@@ -1,0 +1,35 @@
+{%- if notebook_counter -%}
+  {% assign notebook_counter = notebook_counter + 1 %}
+{%- else -%}
+  {% assign notebook_counter = notebook_counter = 0 %}
+{%- endif -%}
+
+{% assign real_notebook_url = "/assets/notebooks/" | append: include.url %}
+
+<div id="notebook_preview_{{notebook_counter}}" class="notebook_viewer"></div>
+
+<script type="text/javascript">
+  function fetchNotebook() {
+    var oReq = new XMLHttpRequest();
+
+    const responseHandler = function () {
+      console.log(this.responseText);
+      var notebook = nb.parse(JSON.parse(this.responseText));
+      var rendered = notebook.render();
+      document.getElementById("notebook_preview_{{notebook_counter}}").appendChild(rendered);
+    };
+
+    oReq.onload = responseHandler;
+    oReq.open("get", "{{ real_notebook_url }}", true);
+    oReq.send();
+  }
+
+  if (window.addEventListener) // W3C standard
+  {
+    window.addEventListener('load', fetchNotebook, false);
+  }
+  else if (window.attachEvent) // Microsoft
+  {
+    window.attachEvent('onload', fetchNotebook);
+  }
+</script>

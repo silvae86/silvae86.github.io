@@ -14,7 +14,7 @@
 
   <!--site property validation -->
   <meta name="google-site-verification" content="PXGVwxgRO2GkjJdNKwFsMxF3381i2iM1bKpXugImR8g" />
-  
+
   {%- include ads/autoads.html -%}
 
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -46,11 +46,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   -->
 
-<!--Include Fontawesome -->
+<!-- Include Fontawesome -->
 
   <link rel="stylesheet" href="{{ '/assets/fontawesome/css/all.css' | relative_url }}">
   <script defer src="{{ '/assets/fontawesome/js/all.js' | relative_url }}"></script>
   <!--load all styles -->
 
-<!--Include Fontawesome Animations -->
+<!-- Include Fontawesome Animations -->
   <link rel="stylesheet" href="{{ '/assets/fontawesome-animations/font-awesome-animation.min.css' | relative_url }}">
+<!-- Jupyter Notebook Preview JS library -->
+  <script defer src="{{ '/js/notebook.min.js' | relative_url }}"></script>
+
+  <!-- Mathjax -->
+  <script id="MathJax-script" async src="{{ '/js/tex-mml-chtml.js' | relative_url }}"></script>

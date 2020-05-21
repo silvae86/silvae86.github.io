@@ -244,10 +244,10 @@ from aluno, cadeiras_de_curso
 where (nr, curso)
 not in
 (
-    cursos que cada aluno nao fez
-    se tiver falhado pelo menos
-    uma cadeira do curso, nao o fez
-    (nao importa que cadeira tenha falhado!)
+    -- cursos que cada aluno nao fez
+    -- se tiver falhado pelo menos
+    -- uma cadeira do curso, nao o fez
+    -- (nao importa que cadeira tenha falhado!)
     select nr, curso
     from
     (
@@ -712,9 +712,11 @@ and proprietario.idCliente <> pagador.idCliente;
 
 #### w. Substitua	Renault	por	Top,	Volvo	por	Down	e	os	restantes	por	NoWay.
 
-# SQL Triggers
+## SQL Triggers
 
-## Oficina
+### Oficina
+
+Triggers Exercício Oficina
 
 #### a. Se não for especificado o cliente aquando a inserção de uma reparação, assumir que o cliente é o proprietário do carro.
 

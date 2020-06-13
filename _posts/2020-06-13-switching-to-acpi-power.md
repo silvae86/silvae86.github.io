@@ -86,3 +86,8 @@ sudo apt install tlp tlpui
 #### Default `/etc/default/tlp` file
 
 [Here](/assets/images/post-images/2020-06-13-switching-to-acpi-power/tlp) is a default configuration file of the `tlp` utility, in case your `/etc/default/tlp` goes Missing In Action...
+
+### Other nice tools
+
+- [s-tui](https://github.com/amanusk/s-tui) allows you to monitor frequencies in load using the CLI, with a nice interface.
+- [throttled](https://github.com/erpalma/throttled) allows you to suppress thermal throttling if needed.

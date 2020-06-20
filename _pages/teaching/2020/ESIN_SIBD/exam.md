@@ -71,6 +71,8 @@ Some examples of previous years are available [here](https://web.fe.up.pt/~arest
 
 - The responsible person needs to communicate to the professors the range of external IPs from which the student will perform the exam, otherwise the student will not be able to perform the exam.
 
+- Since they are supposed to be drawn on paper, UML diagrams must be delivered to the responsible person at the end of the exam time period. That individual must then scan and email the diagram to the course professors, if possible within one hour after the exam.
+
 ## Play fair
 
 Any illegal behaviour during the exam (plagiarism by any means or exchange of information between students) is punishable with a full annulment of the exam, resulting in a grade of zero.

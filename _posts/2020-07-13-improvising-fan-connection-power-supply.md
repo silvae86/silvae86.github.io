@@ -5,7 +5,7 @@ date:   2020-07-13 12:05:000 +0100
 tags: corsair power supply ax860 summer heat power supply
 ---
 
-These days have been blistering hot, so I had to improvise a fan with some hardware I had at home. Here I am using a [Corsair AX860 Power Supply](http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575597576&toolid=10001&campid=5338700334&customid=&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2334524.m570.l1313.TR5.TRC1.A0.H0.XCorsair%2BAX860.TRS0%26_nkw%3DCorsair%2BAX860%26_sacat%3D42017%26LH_TitleDesc%3D0%26_odkw%3Dcorsair%2Bml120) and a [120mm Corsair ML120 fan](http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575597576&toolid=10001&campid=5338700334&customid=&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2499334.m570.l1313.TR11.TRC1.A0.H0.Xcorsair%2Bml120.TRS0%26_nkw%3Dcorsair%2Bml120%26_sacat%3D42017) that I had lying around.
+These days have been blistering hot, so I had to improvise a fan with some hardware I had at home. Here I am using a [Corsair AX860 Power Supply](https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/ax-series-config/p/CP-9020044-NA) and a [120mm Corsair ML120 fan](https://www.corsair.com/us/en/Categories/Products/Fans/Magnetic-Levitation-Fans/ml-pro-config/p/CO-9050040-WW) that I had lying around.
 
 ![Computer fan hooked up to a power supply!](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/final_product.jpg){:class="img-center fullwidth"}
 *Computer fan hooked up to a power supply!*{:class="img-caption"}

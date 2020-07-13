@@ -34,7 +34,7 @@ These days have been blistering hot, so I had to improvise a fan with some hardw
 
 4. Insert the short piece of wire into the 24-pin ATX cable of the PSU, as shown in the diagram below.
 	![Electrical connections](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/ATX_PS_signals.png){:class="img-center fullwidth"}
-*Electrical connections on the ATX PSU. Credits: [click](https://en.wikipedia.org/wiki/ATX#/media/File:ATX_PS_signals.svg)*{:class="img-caption"}
+*Electrical connections on the ATX PSU. Image based on this one: [click](https://en.wikipedia.org/wiki/ATX#/media/File:ATX_PS_signals.svg)*{:class="img-caption"}
 
 5. Insert the red wire of the fan extension into a +12V hole of the 24-pin plug. Any hole marked as +12V1 or +12V2 in the diagram will work.
 

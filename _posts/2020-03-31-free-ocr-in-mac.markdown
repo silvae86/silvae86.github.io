@@ -27,7 +27,7 @@ Sometimes the PDFs will be encrypted, and `ocrmypdf` will complain after the fac
 
 ```shell
 find . -name "*.pdf" |  xargs -I{} qpdf --decrypt {} {}-decrypted.pdf
-find . -name "*.pdf" |  xargs -I{} ocrmypdf {} {}-ocr.pdf
+find . -name "*-decrypted.pdf" |  xargs -I{} ocrmypdf {} {}-ocr.pdf
 ````
 
 

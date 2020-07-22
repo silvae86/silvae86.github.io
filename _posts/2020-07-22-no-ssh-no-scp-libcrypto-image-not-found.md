@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SSH and SCP broken: "
+title:  "SSH and SCP broken: Fixing `dyld: Library not loaded`"
 date:   2020-07-22 12:02:000 +0100
 tags: libcrypto macos openssh homebrew error fix
 ---

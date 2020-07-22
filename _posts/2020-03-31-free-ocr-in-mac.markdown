@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "OCR for PDF documents for free using macOS"
-date:   2020-03-30 08:20:000 +0100
+date:   2020-07-22 08:20:000 +0100
 tags: macos ocr scanning homebrew
 ---
 
@@ -19,5 +19,16 @@ Usage example:
 ![Usage example for ocrmypdf](/assets/images/post-images/2020-03-31-free-ocr-in-mac/ocrmypdf-usage.png){:class="img-center"}
 
 This was tested in macOS Catalina (10.15.4).
+
+
+### For encrypted pdfs
+
+Sometimes the PDFs will be encrypted, and `ocrmypdf` will complain after the fact. In those cases, you can run these command to decrypt and then apply OCR to all PDFs:
+
+```shell
+find . -name "*.pdf" |  xargs -I{} qpdf --decrypt {} {}-decrypted.pdf
+find . -name "*.pdf" |  xargs -I{} ocrmypdf {} {}-ocr.pdf
+````
+
 
 

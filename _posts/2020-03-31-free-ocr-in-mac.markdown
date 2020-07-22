@@ -5,7 +5,11 @@ date:   2020-07-22 09:20:000 +0100
 tags: macos ocr scanning homebrew
 ---
 
-When you want to make a PDF searchable, there are many paid options for the Mac. However, if you are willing to use the command line, you can get some quite good and fast results using parallel processing. All for free!
+Ever encountered a PDF from a scanned document where Ctrl+F does not work? No text selection too? 
+
+What you need is to use OCR to make a PDF searchable! There are many paid options for the Mac, but if you are willing to use the command line... you can get some quite good and fast results using parallel processing. 
+
+All for free!
 
 ### Requirements and basic usage
 

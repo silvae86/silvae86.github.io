@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "OCR for PDF documents for free using macOS"
-date:   2020-07-22 08:20:000 +0100
+date:   2020-07-22 09:20:000 +0100
 tags: macos ocr scanning homebrew
 ---
 

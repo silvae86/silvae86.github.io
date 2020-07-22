@@ -5,14 +5,13 @@ date:   2020-07-22 09:20:000 +0100
 tags: macos ocr scanning homebrew
 ---
 
-When you want to make a PDF searchable, there are many paid options for the Mac. However, if you are willing to use the command line, you can get some quite good results.
+When you want to make a PDF searchable, there are many paid options for the Mac. However, if you are willing to use the command line, you can get some quite good and fast results using parallel processing. All for free!
 
 First, install [Homebrew](https://brew.sh) and then install [ocrmypdf](https://github.com/jbarlow83/OCRmyPDF). 
 
 ```shell
 brew install ocrmypdf
 ```
-
 
 Usage example:
 
@@ -21,14 +20,28 @@ Usage example:
 This was tested in macOS Catalina (10.15.4).
 
 
-### For encrypted pdfs
+### Handling encrypted PDFs + Deep Search
 
-Sometimes the PDFs will be encrypted, and `ocrmypdf` will complain after the fact. In those cases, you can run these command to decrypt and then apply OCR to all PDFs:
+Sometimes the PDFs will be encrypted, and `ocrmypdf` will complain after the fact. In those cases, you can run these command to decrypt and then apply OCR to all PDFs in the current directory. These commands will perform OCR on all PDFs within the current folder and its subfolders, i.e. **with deep search**:
 
 ```shell
-find . -name "*.pdf" |  xargs -I{} qpdf --decrypt {} {}-decrypted.pdf
-find . -name "*-decrypted.pdf" |  xargs -I{} ocrmypdf {} {}-ocr.pdf
+# to delete any existing OCR'd files and redo run (if there are already semi-processed files due to errors, for example)
+# -print0 + -0 in xargs -> handle files with spaces
+find . -name "*-decrypted.pdf" -print0 | xargs -0 -I{} rm -f {};
+find . -name "*-ocr.pdf" -print0 |  xargs -0 -I{} rm -f {};
+# apply OCR in parallel (all available cores will be used - Command valid only for macos, for Linux replace sysctl -n hw.logicalcpu with nproc)
+find . -name "*.pdf" -print0 |  xargs -0 -P $(sysctl -n hw.logicalcpu) -n 1 -I{} qpdf --decrypt {} {}-decrypted.pdf;
+find . -name "*-decrypted.pdf" -print0 |  xargs -0 -P $(sysctl -n hw.logicalcpu) -n 1 -I{} ocrmypdf {} {}-ocr.pdf;
+# remove intermediate files (decrypted pdfs)
+find . -name "*-decrypted.pdf" -print0 | xargs -0 -I{} rm -f {};
 ````
 
+If everything goes as planned, you will have parallel processing of OCR for your PDFs:
 
+![Parallel processing of OCR](/assets/images/post-images/2020-03-31-free-ocr-in-mac/ocrmypdf.png){:class="img-center"}
 
+![All cores loaded](/assets/images/post-images/2020-03-31-free-ocr-in-mac/full-load.png){:class="img-center"}
+
+And you will have proper text selection and search, even in images with captions:
+
+![Text selection now working](/assets/images/post-images/2020-03-31-free-ocr-in-mac/ocr-working.png){:class="img-center"}

@@ -1,3 +1,5 @@
+## Course Plan and Contents
+
 | Week | Dates          | Theory Class                                                 | Practical Class                                              |
 | ---- | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 1    | 21-25 Sept. | **Course Presentation**: Introduction to the web and databases<br />UML Class Diagrams: Classes and Associations<br /><br />Slides: [Presentation](https://web.fe.up.pt/~arestivo/presentation/sibd) \| [UML Class Diagrams]({% link _pages/teaching/slides/uml/class/index.md %}) <br/><br/> Alternatives: [UML Class Diagrams](https://web.fe.up.pt/~arestivo/presentation/uml-classes) by [André Restivo](https://web.fe.up.pt/~arestivo/page/) \| [Alt. UML Slides 1](https://drive.google.com/open?id=1_hGXTIVIQLHAwtZWNrwh1qARVYuS25CR) [Alt.UML Slides 2](https://drive.google.com/open?id=1AzI2PvqbNL-B6MVcEtazYgxZ_EBmU7C9) by [Carla Lopes](http://www.carlalopes.com) | No practical class                                           |

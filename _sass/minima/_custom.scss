@@ -202,3 +202,8 @@ span.reading-time {
 span.reading-time > span.actual_time{
   display:inline;
 }
+
+.page-content a:hover {
+	background-color: $text-color;
+	color: $background-color;
+}

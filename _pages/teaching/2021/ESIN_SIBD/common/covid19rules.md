@@ -1,11 +1,10 @@
-## Special guidelines for the COVID-19 pandemic
+## Special guidelines for the COVID-19 pandemic (PLEASE READ!)
 
 As you know, the COVID-19 pandemic will affect the classes for the school year of 2020/2021. 
 
 To comply with the regulations specified by the University of Porto and the Direction of FEUP, I have prepared a few rules that students and professors should follow to ensure the well-being and academic success of everyone involved.
 
-**Please read these guidelines carefully and [email me](mailto:jrsilva@fe.up.pt) if you still have any questions. I will answer here for everyone to see.**
-
+**Please read these guidelines carefully and [email me](mailto:jrsilva@fe.up.pt) if you still have any questions. I will update this guide for everyone to see.**
 
 
 ### General Rules
@@ -14,7 +13,7 @@ To comply with the regulations specified by the University of Porto and the Dire
 
 - All persons are required to wear appropriate masks whenever they are within FEUP premises.
 - Desinfection materials will be provided for students to clean their keyboard and mouse when using a FEUP computer in class.
-	- Besides the personal protection materials offered at FEUP, students are feel free to bring their own desinfectants if they want.
+	- Besides the personal protection materials that will be offered at FEUP, students are free to bring their own pocket desinfectants as well.
 
 ### Classes: Remote or in person?
 
@@ -52,12 +51,12 @@ In English:
 
 
 
-#### Theoretical classes 
+### Theoretical classes 
 
 We will have theoretical classes exclusively via remote connection on Zoom (see the [moodle](https://moodle.up.pt) course page for the Room link and Password).
 
 
-#### Practical classes
+### Practical classes
 
 
 
@@ -72,13 +71,10 @@ Even though only half will attend in person, the remaining students at that clas
 
 All students, including the ones physically present in class, should join the Zoom classroom for that particular class. This will be necessary for asking questions, as explained below.
 
-
-
 #### Asking and answering doubts and questions in class
 
 
-
-During the practical classes, students ask questions that require the professor to come close to the student to answer the question. In order to reduce the risk of virus transmission, we will implement the following measures:
+During the practical classes, students ask questions that require the professor to come close to the student to answer the question. In order to reduce the risk of virus transmission, we will try to implement the following measures:
 
 - When there is a question involving theoretical exercises, involving drawing, the question scenario will be replicated on the board or in the computer screen by the professor and solved there.
 
@@ -86,29 +82,26 @@ During the practical classes, students ask questions that require the professor 
 
   - Students are advised to turn off all messaging apps and other non-work related applications during class, as their screen will be shared with the entire class while the doubt is being cleared. 
 
-  - Suggestion: If you use your personal computer in class, create a separate user account that you only use during practical classes. This way, you will have a clean Desktop and Documents folder, and no personal information can be shared by accident when you share your screen. At the end of the semester, you can delete that account and keep your computer clean.
+  - If you use your personal laptop in class, I suggest creating a separate user account that you only use during practical classes. This way, you will have a clean Desktop and Documents folder, and no personal information can be shared by accident when you share your screen. At the end of the semester, you can delete that account and keep your computer clean.
 
-    
+#### Designated exercises and homework
 
-### Contact and doubts clearing
+Every week, there will be a list of exercises that the professors will designate as the tasks for the practical class and others that will be homework for the students that attend the practical class in person. 
 
-Institutional e-mail: [jrsilva@fe.up.pt](mailto:jrsilva@fe.up.pt)
+Everyone is encouraged to solve these exercises on their own and compare with the solutions that will also be made available. If any doubts arise, students should send an email to the professor of the practical classes.
 
-If you have any questions or doubts, you can find me on **Fridays from 5pm to 6pm via [Zoom](https://zoom.us)**, using a Room URL + Room Password that you can find on [Moodle](https://moodle.up.pt), after authenticating and accessing the page of the course unit.
+### How can the situation change?
 
-Student/Worker students are encouraged to visit and present the progress of their work and the practice exercises that they should do at home.
+- If, as the semester progresses, we believe that there is no need for the splitting of students in the practical class, we will ask all students to attend in person. For example, if the class is large enough to keep the required social distancing of 2 meters between students.
+- There may be an additional doubts clearing schedule in the future on Mondays/Tuesdays if the professors and the students decide that the alternate practical classes are not enough.
+- If the Portuguese Government decides to return to confinement, the classes will change to fully remote. This is a serious situation and will certainly be communicated to all students via email by the Direction of FEUP.
+
+### References and official recommendations 
 
 
-
-### References and official recommendations
-
-
-
-[Manual Procedimentos 2020-2021](https://paginas.fe.up.pt/~covid19/wp-content/uploads/2020/09/2020_09_14_FEUP_Medidas-Procedimentos-2020-21_pt.pdf)
-
-[Plano de Funcionamento das Aulas no 1o semestre 2020-21](https://paginas.fe.up.pt/~covid19/wp-content/uploads/2020/09/2020_09_14-FEUP_Plano-Funcionamento-Aulas-1º-semestre-2020-21_pt.pdf)
-
-[FEUP page on COVID-19](https://paginas.fe.up.pt/~covid19/)
+- [Manual Procedimentos 2020-2021](https://paginas.fe.up.pt/~covid19/wp-content/uploads/2020/09/2020_09_14_FEUP_Medidas-Procedimentos-2020-21_pt.pdf)
+- [Plano de Funcionamento das Aulas no 1o semestre 2020-21](https://paginas.fe.up.pt/~covid19/wp-content/uploads/2020/09/2020_09_14-FEUP_Plano-Funcionamento-Aulas-1º-semestre-2020-21_pt.pdf)
+- [FEUP page on COVID-19](https://paginas.fe.up.pt/~covid19/)
 
 
 

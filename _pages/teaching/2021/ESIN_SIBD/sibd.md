@@ -2,7 +2,7 @@
 layout: page
 title: Information Systems and Databases (SIBD)- MIEEC
 permalink: /teaching/2021/ESIN_SIBD/sibd/
-crumbtitle: SIBD
+crumbtitle: SIBD - 2020/2021
 tags: teaching databases web programming feup
 ---
 
@@ -12,10 +12,10 @@ tags: teaching databases web programming feup
 
 - Assessment components: Exam 50% + Project 50%
 
-{% include_relative common/covid19rules.md %}
+{% include_relative sibd/plan.md %}
 
 {% include_relative common/acknows.md %}
 
-## Contents
+{% include_relative common/covid19rules.md %}
 
-{% include_relative sibd/plan.md %}
+{% include_relative common/contact.md %}

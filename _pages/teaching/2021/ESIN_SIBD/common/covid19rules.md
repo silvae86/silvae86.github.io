@@ -1,4 +1,4 @@
-# COVID-19 guidelines 
+## Special guidelines for the COVID-19 pandemic
 
 As you know, the COVID-19 pandemic will affect the classes for the school year of 2020/2021. 
 
@@ -8,17 +8,15 @@ To comply with the regulations specified by the University of Porto and the Dire
 
 
 
-## General Rules
+### General Rules
 
 
 
-- All persons are required to wear appropriate masks whenever they are inside FEUP premises.
-
+- All persons are required to wear appropriate masks whenever they are within FEUP premises.
 - Desinfection materials will be provided for students to clean their keyboard and mouse when using a FEUP computer in class.
-- Besides the personal protection materials offered at FEUP, students should feel free to bring their own desinfectants if they want.
+	- Besides the personal protection materials offered at FEUP, students are feel free to bring their own desinfectants if they want.
 
-## Classes: Remote or in person?
-
+### Classes: Remote or in person?
 
 
 The FEUP Direction has specified the following rules:
@@ -54,13 +52,12 @@ In English:
 
 
 
-### Theoretical classes 
+#### Theoretical classes 
 
-To comply with these orders, we will have theoretical classes exclusively via remote connection on Zoom (see the [moodle](https://moodle.up.pt) course page for the Room link and Password).
+We will have theoretical classes exclusively via remote connection on Zoom (see the [moodle](https://moodle.up.pt) course page for the Room link and Password).
 
 
-
-### Practical classes
+#### Practical classes
 
 
 
@@ -93,7 +90,7 @@ During the practical classes, students ask questions that require the professor 
 
     
 
-## Contact and doubts clearing
+### Contact and doubts clearing
 
 Institutional e-mail: [jrsilva@fe.up.pt](mailto:jrsilva@fe.up.pt)
 
@@ -103,7 +100,7 @@ Student/Worker students are encouraged to visit and present the progress of thei
 
 
 
-## References
+### References and official recommendations
 
 
 

@@ -6,7 +6,7 @@ div.home {
 	grid-template-columns: [start-of-content] auto [end-of-content];
 
 	grid-template-areas:
-			// "teaching"
+			"teaching"
 			"recentposts"
 			"archive";
 

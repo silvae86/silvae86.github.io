@@ -14,52 +14,56 @@
 
 	        {%- include nav-breadcrumbs.html -%}
 
-    			<div class="home">
-            <div id="about" class="home_section">
-    					{%- include about.html -%}
-    				</div>
-            <div id="archive" class="home_section">
-    					{%- include archive.html -%}
-    				</div>
+    		<div class="home">
+            	<div id="about" class="home_section">
+    				{%- include about.html -%}
+    			</div>
+				
+				<div id="archive" class="home_section">
+    				{%- include archive.html -%}
+				</div>
+				
+				<!-- if you comment this to hide it, do not forget to comment the lines pertaining to teaching on the minima/_home.scss and minima/_home-desktop.scss files! -->
+				<div id="teaching" class="home_section">
+					<h1 class="page-heading">Teaching</h1>
+					{% capture my_include %}{% include teaching/2021.md %}{% endcapture %}
+					{{ my_include | markdownify }}
+				</div>
 
-    				{%- if page.title -%}
-    					<h1 class="page-heading">{{ page.title }}</h1>
-    				{%- endif -%}
+    			{%- if page.title -%}
+    				<h1 class="page-heading">{{ page.title }}</h1>
+    			{%- endif -%}
 
-            <!-- <div id="teaching" class="home_section">
-    					<h1 class="page-heading">Teaching</h1>
+				<div id="home-content" class="home_section">
 
-    					{% capture my_include %}{% include teaching/2020.md %}{% endcapture %}
-    					{{ my_include | markdownify }}
-    				</div> -->
+	    				<div id="recentposts">
+	    				    {%- if site.posts.size > 0 -%}
+	    				      <h2 class="post-list-heading">{{ page.list_title | default: "Latest posts" }}</h2>
 
-    				<div id="recentposts" class="home_section">
-    				    {%- if site.posts.size > 0 -%}
-    				      <h2 class="post-list-heading">{{ page.list_title | default: "Latest posts" }}</h2>
+	    				      <ul class="post-list">
+	    				        {%- for post in site.posts -%}
+	    				        <li>
+	    				          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+	    				          <span class="post-meta">{{ post.date | date: date_format }}</span>
+	    				          <h3>
+	    				            <a class="post-link" href="{{ post.url | relative_url }}">
+	    				              {{ post.title | escape }}
+	    				            </a>
+	    				          </h3>
+	    				          {%- if site.show_excerpts -%}
+	    				            {{ post.excerpt }}
+	    				          {%- endif -%}
+	    				        </li>
+	    				        {%- endfor -%}
+	    				      </ul>
 
-    				      <ul class="post-list">
-    				        {%- for post in site.posts -%}
-    				        <li>
-    				          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-    				          <span class="post-meta">{{ post.date | date: date_format }}</span>
-    				          <h3>
-    				            <a class="post-link" href="{{ post.url | relative_url }}">
-    				              {{ post.title | escape }}
-    				            </a>
-    				          </h3>
-    				          {%- if site.show_excerpts -%}
-    				            {{ post.excerpt }}
-    				          {%- endif -%}
-    				        </li>
-    				        {%- endfor -%}
-    				      </ul>
+	    				      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
-    				      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+	    				      {% include share-bar.html %}
 
-    				      {% include share-bar.html %}
-
-    				    {%- endif -%}
-    				</div>
+	    				    {%- endif -%}
+	    				</div>
+					</div>
 
   			    {{ content }}
 

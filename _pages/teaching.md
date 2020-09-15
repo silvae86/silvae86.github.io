@@ -11,6 +11,10 @@ navorder: 1
 
 I teach courses in both the Information Science and Informatics Engineering at FEUP. I focus mostly on web development, database and semantic web topics.
 
+#### 2020/2021
+
+{% include_relative teaching/2021/index.md %}
+
 #### 2019/2020
 
 {% include_relative teaching/2020/index.md %}

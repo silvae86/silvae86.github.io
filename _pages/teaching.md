@@ -15,6 +15,8 @@ I teach courses in both the Information Science and Informatics Engineering at F
 
 {% include_relative teaching/2021/index.md %}
 
+[Class Calendar for 2020/2021](https://sigarra.up.pt/feup/pt/web_base.gera_pagina?p_pagina=página%20estática%20genérica%20106)
+
 #### 2019/2020
 
 {% include_relative teaching/2020/index.md %}

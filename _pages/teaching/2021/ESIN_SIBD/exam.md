@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ESIN/SIBD - Final Exam
-permalink: /teaching/2020/ESIN_SIBD/exam/
+permalink: /teaching/2021/ESIN_SIBD/exam/
 crumbtitle: ESIN/SIBD - Final Exam
 tags: teaching databases web programming feup
 ---
@@ -13,15 +13,15 @@ tags: teaching databases web programming feup
 
 ### 1st Phase
 
-- **Date**: 17/01/2020
-- **Time**: 9:00 - 12:00
-- **Rooms**: [B208](https://sigarra.up.pt/feup/pt/instal_geral.espaco_view?pv_id=73398), [B213](https://sigarra.up.pt/feup/pt/instal_geral.espaco_view?pv_id=73438).
+- **Date**: TBA
+- **Time**: TBA
+- **Rooms**: TBA
 
 ### 2nd Phase / Improvement
 
-- **Date**: 03/02/2020
-- **Time**: 9:00 - 12:00
-- **Room**: [B201](https://sigarra.up.pt/feup/pt/instal_geral.espaco_view?pv_id=73393).
+- **Date**: TBA
+- **Time**: TBA
+- **Room**: TBA
 
 ## Necessary materials
 
@@ -44,7 +44,7 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 	- If a student does not wish to deliver a solution, he/she must deliver an empty paper sheet, adequately identified and signed, with the words "I do not wish to solve the UML exercise".
 2. **Relational Model exercise** (via moodle)
 3. **Some multiple choice / short answers on HTML, PHP, and CSS** (via moodle)
-	- Wrong answers will produce negative scores, so if you are not sure, do not answer.
+	- Wrong answers will produce negative scores, so if you are not sure, **do not answer**.
 4. **SQL exercises**
 	- An SQL script will be provided in Moodle, that you must download and use to initialize your database.
 	- For every exercise, you must provide the SQL query that returns the expected results. To avoid losing work and time, you can follow this workflow, like we did in class:

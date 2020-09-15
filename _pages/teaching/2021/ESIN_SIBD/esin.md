@@ -12,7 +12,7 @@ tags: teaching databases web programming feup
 
 ## Information
 
-- [Official page](https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=436542)
+- [Official page](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=455514)
 
 - Assessment components: Exam 50% + Project 50%
 

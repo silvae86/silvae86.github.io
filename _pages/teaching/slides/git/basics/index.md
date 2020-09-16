@@ -9,8 +9,8 @@ name: git
 class: middle, center
 template:inverse
 
-# Git 
-[distributed version-control system] 
+# Git
+[distributed version-control system]
 
 ## Introduction and Basics
 by [João Rocha da Silva](https://silvae86.github.io), based on ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by Jon Loeliger & Matthew McCullough.
@@ -63,25 +63,25 @@ class: middle, center
 name: about
 ## About
 
-- A *distributed* source code *version control* system. 
+- A **distributed** source code **version control** system.
 
-- *Version control* because it tracks all changes made to the code of a software solution
+- **Version control** because it tracks all changes made to the code of a software solution
 
-- *Distributed*, because it does not require a *repository server*
-	- All collaborators of the repository can synchronise their code without the need for a central authority
+- **Distributed**, because it does not require a **repository server**
+	- All collaborators of the repository can synchronize their code without the need for a "central authority"
 
-.footnote[We will only cover some basics of Git usage in these slides.]
+.footnote[.red[*]We will only cover some basics of Git usage in these slides.]
 
 ---
 name: history
 ## History
 
-Classes are used to represent the main entities of the system. 
+Classes are used to represent the main entities of the system.
 
 Their syntax consists of a box with two main sections.
 
-- The first section contains the **name** of the class 
-- The bottom will contain all the Class's [Attributes](#attributes), **one per line**. 
+- The first section contains the **name** of the class
+- The bottom will contain all the Class's [Attributes](#attributes), **one per line**.
 
 .center[.imgscaledup[![Classes](diagrams/UMLDiagrams/Classes.svg)]]
 

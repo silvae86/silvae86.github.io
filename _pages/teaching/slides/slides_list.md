@@ -6,8 +6,7 @@
 | **SQL**    |                                                              |
 |            | [SQL - Data Description Language](/teaching/slides/sql/sql-ddl/) |
 | **Git**    |                                                              |
-|            | Introduction and Basics                                      |
+|            | [Introduction and Basics](/teaching/slides/git/basics/)                                      |
 | **Docker** |                                                              |
-|            | Introduction and Basics                                      |
+|            | [Introduction and Basics](/teaching/slides/docker/basics/)                                      |
 |            |                                                              |
-

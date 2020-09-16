@@ -123,6 +123,10 @@ header.site-header a.site-title {
 	color: $text-color;
 }
 
+#about a.hidden-link:hover {
+	color: $background-color;
+}
+
 .site-header a.site-title{
 	display:block;
 }

@@ -5,6 +5,7 @@ include_in_menu: true
 permalink: /teaching/
 crumbtitle: Teaching
 navorder: 1
+tags: teaching web programming uml sql docker git
 ---
 
 ### Teaching

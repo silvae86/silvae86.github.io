@@ -28,6 +28,8 @@ class: middle, center
 
 .indexpill[[Concepts](#concepts)]
 
+.indexpill[[Centralized vs. Distributed](#centralized_vs_distributed)]
+
 .indexpill[[Creating a repository](#creating)]
 
 .indexpill[[Cloning a repository](#clone)]
@@ -77,15 +79,29 @@ name: about
 name: history
 ## History
 
-
-| Year | Name                      | Acronym | Type          |
+| | Name                      | Acronym | Type          |
 | ---- | ------------------------- | ------- | ------------- |
 | 1986 | Concurrent Version System | CVS     | Centralized   |
 | 2001 | Subversion                | SVN     | Centralized   |
 | 2000 | BitKeeper                 | -       | Decentralized |
 | 2005 | Mercurial                 | Hg      | Decentralized |
 | 2005 | Git                       | -       | Decentralized |
-|      |                           |         |               |
+
+
+---
+name: centralized_vs_distributed
+## Centralized vs Distributed
+
+
+
+---
+name: Concepts
+## Concepts
+
+- A **repository** is a folder with some "magic" added. 
+	- At the root of the folder there is a hidden `.git` folder with information that Git uses to keep track of the changes made to everything in that folder.
+- **Changes** are calculated automatically by Git whenever a file inside a repository is edited.
+- **Commits** are like the milestones on a road: they are used to "save" the current state of the repository
 
 ---
 name: references

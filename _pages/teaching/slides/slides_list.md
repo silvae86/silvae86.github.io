@@ -9,4 +9,4 @@
 |            | [Introduction and Basics](/teaching/slides/git/basics/)                                      |
 | **Docker** |                                                              |
 |            | [Introduction and Basics](/teaching/slides/docker/basics/)                                      |
-|            |                                                              |
+

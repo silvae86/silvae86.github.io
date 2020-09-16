@@ -70,22 +70,13 @@ name: about
 - **Distributed**, because it does not require a **repository server**
 	- All collaborators of the repository can synchronize their code without the need for a "central authority"
 
-.footnote[.red[*]We will only cover some basics of Git usage in these slides.]
+.footnote[.red[*]We will cover some basics of Git usage in these slides. More advanced usage can be explored in the bibliography]
 
 ---
 name: history
 ## History
 
-Classes are used to represent the main entities of the system.
-
-Their syntax consists of a box with two main sections.
-
-- The first section contains the **name** of the class
-- The bottom will contain all the Class's [Attributes](#attributes), **one per line**.
-
-.center[.imgscaledup[![Classes](diagrams/UMLDiagrams/Classes.svg)]]
-
-.footnote[Class names are always represented in the singular, as a class denotes a **type** of entity, instead of a **set** of all entities of a certain type.]
+Git 
 
 ---
 name: references

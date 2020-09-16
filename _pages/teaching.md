@@ -21,6 +21,10 @@ I teach courses in both the Information Science and Informatics Engineering at F
 
 {% include_relative teaching/2020/index.md %}
 
+### Slides by Topic
+
+{% include_relative teaching/slides/slides_list.md %}
+
 ### Exercises by Topic
 
 {% include_relative teaching/exercises/exercise_list.md %}

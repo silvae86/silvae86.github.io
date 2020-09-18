@@ -15,6 +15,12 @@ To comply with the regulations specified by the University of Porto and the Dire
 - Desinfection materials will be provided for students to clean their keyboard and mouse when using a FEUP computer in class.
 	- Besides the personal protection materials that will be offered at FEUP, students are free to bring their own pocket desinfectants as well.
 
+
+
+###  Recording attendance
+
+All attendance will be recorded via [moodle](https://moodle.up.pt). Students should log into the course unit and record their presence, even those that are attending remotely.
+
 ### Classes: Remote or in person?
 
 

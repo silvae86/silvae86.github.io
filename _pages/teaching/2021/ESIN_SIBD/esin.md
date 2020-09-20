@@ -12,7 +12,7 @@ tags: teaching databases web programming feup
 
 - Assessment components: Exam 50% + Project 50%
 
-{% include_relative sibd/plan.md %}
+{% include_relative esin/plan.md %}
 
 {% include_relative common/acknows.md %}
 

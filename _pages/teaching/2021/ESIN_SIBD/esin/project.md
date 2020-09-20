@@ -10,9 +10,9 @@ crumbtitle: Project
 
 The development of a small dynamic website using the technologies studied during the course.
 
-The assignment should be done in groups of 2 elements. The constitution of these groups should be proposed by the students themselves but approved by the teacher to ensure they are balanced.
+The assignment should be done in groups of 2 elements. The constitution of these groups should be proposed by the students themselves but approved by the professor of the practical class.
 
-The theme of the website should also be proposed by the students and approved by the teacher.
+The theme of the website should also be proposed by the students and approved by the professor of the practical class.
 
 ## Deliveries
 
@@ -32,24 +32,27 @@ The first delivery will be a small report (6 pages maximum), containing:
 - UML diagram that represents the problem. The UML diagram should have at least 8 classes and cover as much of the UML language as possible (quantity &ne; quality).
 - Relational model of the database. As an indication, 10-12 tables is a healthy count.
 
-The document must be a single PDF file, submitted via Moodle. In the cover page students must write:
+The document must be a single PDF file, submitted via [Moodle](https://moodle.up.pt). In the cover page students must write:
 
 - Name of the topic
 - Full name of all members of the group and institutional emails
 - Number of their practical class
 
-**Delivery date**: 3rd November 2019 at 23:59
+**Delivery date**: 10th November 2020 at 23:59
 
 ### Second delivery (70% of Project component)
 
-The second delivery will be the website itself:
+The second delivery will be a [GitHub](https://github.com) repository containing the website itself. When the work is finished, add the users [zeornelas](https://github.com/zeornelas) and [silvae86](https://github.com/silvae86) to the list of collaborators of the repository. After adding us as collaborators, clone your repository using `git clone`, zip the resulting folder and upload it [Moodle](https://moodle.up.pt). **Both steps are required**.
+
+**Expected contents**
 
 - SQL script to create the database.
-- All PHP, CSS, images and other files in a zipped file.
-- A README.txt file in the root folder containing data about the authors and how to install the project at the FEUP web server [gnomo.fe.up.pt](http://gnomo.fe.up.pt).
+- All PHP, CSS, images and other files.
+- A README file in the root folder containing data about the authors and how to install and run the project. 
+  - Ideally, professors should only need to 
 - No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow etc...). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
 
-**Delivery date**: 15rd December 2019 at 23:59
+**Delivery date**: 15th December 2020 at 23:59
 
 **Presentation**: In the last practical class of the semester.
 
@@ -63,7 +66,7 @@ The second delivery will be the website itself:
 
 Here are some last minute checks to do before sending in your work.
 
-- Did you run your whole script on a blank database in the Server? does it run without errors?
+- Did you run your whole script on a blank database? does it run without errors?
 - Did you validate your HTML and CSS?
 - Do all your web pages render correctly in the browser, without 404 errors (use the browser inspector for this)
 - Does your ZIP file actually contain everything that is expected?

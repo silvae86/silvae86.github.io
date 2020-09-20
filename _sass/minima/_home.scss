@@ -119,16 +119,17 @@ header.site-header a.site-title {
 	text-align: center;
 }
 
-#about a.hidden-link {
+.site-header a.site-title{
+	display:block;
+}
+
+#about .hidden-link {
 	color: $text-color;
 }
 
-#about a.hidden-link:hover {
+#about .hidden-link:hover {
 	color: $background-color;
-}
-
-.site-header a.site-title{
-	display:block;
+	background-color: $text-color;
 }
 
 .site-header a.site-title{

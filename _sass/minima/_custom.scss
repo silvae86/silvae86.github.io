@@ -207,3 +207,7 @@ span.reading-time > span.actual_time{
 	background-color: $text-color;
 	color: $background-color;
 }
+
+a:hover {
+	border-radius: 3px;
+}

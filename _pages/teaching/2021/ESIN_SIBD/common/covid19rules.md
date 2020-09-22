@@ -77,6 +77,23 @@ Even though only half will attend in person, the remaining students at that clas
 
 All students, including the ones physically present in class, should join the Zoom classroom for that particular class. This will be necessary for asking questions, as explained below.
 
+#### Which halves of the class should be present each week?
+
+According to the [rules set](https://paginas.fe.up.pt/~covid19/wp-content/uploads/2020/09/2020_09_14-FEUP_Plano-Funcionamento-Aulas-1º-semestre-2020-21_pt.pdf) by the FEUP Direction, the parity (even or odd) of the student number will decide who must be physically present each week in the practical classes.
+
+In Portuguese:
+
+> Nas aulas do tipo B recomenda-se que as turmas sejam divididas em duas partes, usando a paridade do número de estudante. A presença dos estudantes em aula de acordo com esta regra encontra-se definida semanalmente no [calendário escolar](https://sigarra.up.pt/feup/pt/web_gessi_docs.download_file?p_name=F-605574312/Calend_Outros.pdf) acessível no SIGARRA da FEUP com "P" (par) e "I" (ímpar).
+
+In English:
+
+> In the classes of type B, it is recommended that the classes be divided in two halves, using the parity of the student number. The presence of the students in the room according to this rule is defined weekly in the [school calendar](https://sigarra.up.pt/feup/pt/web_gessi_docs.download_file?p_name=F-605574312/Calend_Outros.pdf) that can be accessed via FEUP's SIGARRA with a "P" (even) or "I" (odd).
+
+
+![Odd Even Attendance]({% link _pages/teaching/2021/ESIN_SIBD/common/odd_even_attendance.png %}){:class="img-center fullwidth"}
+
+*P = Even student number must attend; I = Odd student number must attend.*{:class="img-caption"}
+
 #### Asking and answering doubts and questions in class
 
 

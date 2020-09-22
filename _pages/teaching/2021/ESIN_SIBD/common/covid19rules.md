@@ -75,7 +75,7 @@ We will have theoretical classes exclusively via remote connection on Zoom (see 
 
 
 
-We will start the practical classes in the alternate attendance mode. This means that, every week, only half of each class will will be present in classroom. 
+We will start the practical classes in the alternate attendance mode. This means that, every week, only half of each class will be present in classroom. 
 
 Check at the course plan page to see which classes you need to attend in person.
 
@@ -110,7 +110,7 @@ During the practical classes, students ask questions that require the professor 
 
 - When there is a question involving theoretical exercises, involving drawing, the question scenario will be replicated on the board or in the computer screen by the professor and solved there.
 
-- When there is a question involving code present the student's computer, that student will be asked to present their screen using Zoom's "Share Screen" feature. The professors will then request control of the student's computer to solve the issue from their seat, without having to come close to the student. 
+- When there is a question involving code present at the student's computer, that student will be asked to present their screen using Zoom's "Share Screen" feature. The professors will then request control of the student's computer to solve the issue from their seat, without having to come close to the student. 
 
   - Students are advised to turn off all messaging apps and other non-work related applications during class, as their screen will be shared with the entire class while the doubt is being cleared. 
 

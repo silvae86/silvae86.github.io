@@ -39,20 +39,20 @@ For Ubuntu Linux, I have compiled a script for easy installation.
 (For Linux / Mac):
 
 ```bash
-docker run -d -p 8080:8080 -it --name=php -v $(pwd)/var/www/html:/var/www/html quay.io/vesica/php73:dev
+docker run -d -p 8080:8080 -it --name=php -v $(pwd)/html/site:/var/www/html quay.io/vesica/php73:dev
 ```
 
 (For Windows):
 
 ```cmd
-docker run -d -p 8080:8080 -it --name=php -v C:\php\var\www\html:/var/www/html quay.io/vesica/php73:dev
+docker run -d -p 8080:8080 -it --name=php -v C:\webdev\html:/var/www/html quay.io/vesica/php73:dev
 ```
 
-In Windows you may need to run cmd.exe as an administrator, because it needs that to be able to write to the `C:\php` folder. In Windows, accessing the hard drive root requires admin rights.
+In Windows you may need to run cmd.exe as an administrator, because it needs that to be able to write to the `C:\webdev` folder. In Windows, accessing the hard drive root requires admin rights.
 
 ### The Server Root folder
 
-From now on, we will call the folder `<folder that you created>/var/www/html` **Server Root**. This folder will will be where you will put your `php`, `html` and other files of your website.
+From now on, we will call the folder `<folder that you created>/html` **Server Root**. This folder will will be where you will put your `php`, `html` and other files of your website.
 
 ## Create a `.htaccess` file in the Server Root
 

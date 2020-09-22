@@ -1,3 +1,12 @@
+---
+layout: page
+title: COVID-19 Guidelines
+permalink: /teaching/2021/ESIN_SIBD/covid19rules
+crumbtitle: COVID-19 Guidelines
+tags: teaching feup covid19 guidelines
+---
+
+
 ## Special guidelines for the COVID-19 pandemic (PLEASE READ!)
 
 As you know, the COVID-19 pandemic will affect the classes for the school year of 2020/2021. 

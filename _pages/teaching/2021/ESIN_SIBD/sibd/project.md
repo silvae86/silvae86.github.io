@@ -56,6 +56,10 @@ The second delivery will be the website itself:
 
 **Format of presentation**: The presentation will be carried out by the students and to the teachers of the practical classes. No slides are required, and only the working website should be presented.
 
+#### Setting up the project environment
+
+[Project setup tutorial](/teaching/2021/ESIN_SIBD/project_setup)
+
 #### Project planning
 
 ![How to succeed in the practical work](../../common/project_management.png){:class="img-center"}

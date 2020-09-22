@@ -49,7 +49,7 @@ The second delivery will be a [GitHub](https://github.com) repository containing
 - SQL script to create the database.
 - All PHP, CSS, images and other files.
 - A README file in the root folder containing data about the authors and how to install and run the project. 
-  - *Ideally, professors should only need to clone the repository and run the `docker-compose up` command on the cloned folder to boot up the website. Test this before submitting.*
+  - *Ideally, professors should only need to clone the repository and run the docker boot up command on the cloned folder to boot up the website. Test this before submitting.*
 - No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow etc...). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
 
 **Delivery date**: 15th December 2020 at 23:59
@@ -57,6 +57,10 @@ The second delivery will be a [GitHub](https://github.com) repository containing
 **Presentation**: In the last practical class of the semester.
 
 **Format of presentation**: The presentation will be carried out by the students and to the teachers of the practical classes. No slides are required, and only the working website should be presented.
+
+#### Setting up the project environment
+
+[Project setup tutorial](/teaching/2021/ESIN_SIBD/project_setup)
 
 #### Project planning
 

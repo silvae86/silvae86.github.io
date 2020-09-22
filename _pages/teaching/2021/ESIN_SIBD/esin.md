@@ -16,7 +16,5 @@ tags: teaching databases web programming feup
 
 {% include_relative common/acknows.md %}
 
-{% include_relative common/covid19rules.md %}
-
 {% include_relative common/contact.md %}
 

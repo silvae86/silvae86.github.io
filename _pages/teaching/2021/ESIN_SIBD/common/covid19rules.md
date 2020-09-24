@@ -1,8 +1,8 @@
 ---
 layout: page
-title: COVID-19 Guidelines
-permalink: /teaching/2021/ESIN_SIBD/covid19rules
-crumbtitle: COVID-19 Guidelines
+title: COVID-19 Guidelines for the 2020/2021 School Year
+permalink: /teaching/2021/ESIN_SIBD/covid19rules/
+crumbtitle: COVID-19 Guidelines (2020/2021)
 tags: teaching feup covid19 guidelines
 ---
 

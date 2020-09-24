@@ -19,4 +19,4 @@
 
 ## Special guidelines for the COVID-19 pandemic (PLEASE READ!)
 
-[Covid19 Guidelines](/teaching/2021/ESIN_SIBD/covid19rules)
+[Covid19 Guidelines](/teaching/2021/ESIN_SIBD/covid19rules/)

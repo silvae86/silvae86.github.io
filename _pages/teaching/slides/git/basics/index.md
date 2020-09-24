@@ -24,11 +24,11 @@ class: middle, center
 
 .indexpill[[About](#about)]
 
+.indexpill[[None/Centralized/Distributed VCS](#none_vs_centralized_vs_distributed)]
+
 .indexpill[[History](#history)]
 
 .indexpill[[Concepts](#concepts)]
-
-.indexpill[[Centralized vs. Distributed](#centralized_vs_distributed)]
 
 .indexpill[[Creating a repository](#creating)]
 
@@ -76,6 +76,30 @@ name: about
 .footnote[.red[*]We will cover some basics of Git usage in these slides. More advanced usage can be explored in the bibliography]
 
 ---
+name: none_vs_centralized_vs_distributed
+## None/Centralized/Distributed VCS (1/3)
+
+### No Version Control System
+
+.center[.imgscaledup[![NoVCS](diagrams/GitBasics/NoVCS.png)]]
+
+---
+
+## None/Centralized/Distributed VCS (2/3)
+
+### Centralized VCS
+
+.center[.imgscaledup[![CentralizedVCS](diagrams/GitBasics/CentralizedVCS.png)]]
+
+---
+
+## None/Centralized/Distributed VCS (3/3)
+
+### Distributed VCS
+
+.center[.imgscaledup[![DistributedVCS](diagrams/GitBasics/DistributedVCS.png)]]
+
+---
 name: history
 ## History
 
@@ -89,17 +113,11 @@ name: history
 
 
 ---
-name: centralized_vs_distributed
-## Centralized vs Distributed
-
-
-
----
 name: Concepts
 ## Concepts
 
-- A **repository** is a folder with some "magic" added. 
-	- At the root of the folder there is a hidden `.git` folder with information that Git uses to keep track of the changes made to everything in that folder.
+- A **repository** is a folder with some files added by the VCS. 
+	- For Git, the root of the folder will have a hidden `.git` folder with information that it uses to keep track of the changes made to everything in that folder, among other things.
 - **Changes** are calculated automatically by Git whenever a file inside a repository is edited.
 - **Commits** are like the milestones on a road: they are used to "save" the current state of the repository
 

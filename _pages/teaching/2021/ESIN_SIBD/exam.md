@@ -2,7 +2,7 @@
 layout: page
 title: ESIN/SIBD - Final Exam
 permalink: /teaching/2021/ESIN_SIBD/exam/
-crumbtitle: ESIN/SIBD - Final Exam
+crumbtitle: ESIN/SIBD 2020/2021 - Final Exam
 tags: teaching databases web programming feup
 ---
 

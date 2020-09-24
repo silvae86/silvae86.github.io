@@ -4,6 +4,7 @@ title: Project Information
 include_in_menu: false
 permalink: /teaching/2021/ESIN_SIBD/esin/project/
 crumbtitle: Project
+tags: teaching databases web programming feup esin 2021
 ---
 
 ##  Objective
@@ -49,7 +50,7 @@ The second delivery will be a [GitHub](https://github.com) repository containing
 - SQL script to create the database.
 - All PHP, CSS, images and other files.
 - A README file in the root folder containing data about the authors and how to install and run the project. 
-  - *Ideally, professors should only need to clone the repository and run the docker boot up command on the cloned folder to boot up the website. Test this before submitting.*
+  - *Ideally, professors should only need to clone the repository and [run the docker boot up command](/teaching/2021/ESIN_SIBD/project_setup) on the cloned folder to boot up the website. Test this before submitting.*
 - No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow etc...). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
 
 **Delivery date**: 15th December 2020 at 23:59

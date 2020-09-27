@@ -84,7 +84,7 @@ Their syntax consists of a box with two main sections.
 - The first section contains the **name** of the class 
 - The bottom will contain all the Class's [Attributes](#attributes), **one per line**. 
 
-.center[.imgscaledup[![Classes](diagrams/UMLDiagrams/Classes.svg)]]
+.center[.imgscaledup[![Classes](diagrams/UMLDiagrams/Classes.png)]]
 
 .footnote[Class names are always represented in the singular, as a class denotes a **type** of entity, instead of a **set** of all entities of a certain type.]
 
@@ -102,9 +102,9 @@ name: associations
 
 - Associations are binary relationships between classes
 
-- Represented by a line drawn between the two classses that we want to associate
+- Represented by a line drawn between the two classes that we want to associate
 
-.center[.imglg[![Association](diagrams/UMLDiagrams/Association.svg)]]
+.center[.imglg[![Association](diagrams/UMLDiagrams/Association.png)]]
 
 At each end of the line we add the [multiplicity](#multiplicity) of the association*.*
 
@@ -132,7 +132,7 @@ name: associationclass
 
 - Sometimes we need to represent attributes derived from an association of classes instead of classes themselves
 
-.center[.imgscaledup[![AssociationClass1](diagrams/UMLDiagrams/AssociationClass1.svg)]]
+.center[.imgscaledup[![AssociationClass1](diagrams/UMLDiagrams/AssociationClass1.png)]]
 
 
 - An attribute of the product? No! That would make the quantity of that product the same for every order in the system. That works if we wanted to save the **quantity in stock** of each product, for example, which only depends on the product and nothing else.
@@ -146,7 +146,7 @@ name: associationclassexample1
 - Usually emerges to represent characteristics of the association. Groups of attributes that depend on the associated classes
 - Can be derived from many-to-many relationships, one-to-one and many-to-one associations
 
-.center[.imgscaledup[![AssociationClass2](diagrams/UMLDiagrams/AssociationClass2.svg)]]
+.center[.imgscaledup[![AssociationClass2](diagrams/UMLDiagrams/AssociationClass2.png)]]
 
 - Denoted by a box (usually without a title) connected by a dashed line to the solid line denoting the association between two classes.
 
@@ -154,7 +154,7 @@ name: associationclassexample1
 name: associationclassexample2
 ## Association Class (Example 2)
 
-.center[.imgscaledup[![AssociationClass3](diagrams/UMLDiagrams/AssociationClass3.svg)]]
+.center[.imgscaledup[![AssociationClass3](diagrams/UMLDiagrams/AssociationClass3.png)]]
 
 ---
 name: generalization
@@ -164,7 +164,7 @@ name: generalization
 
 - It is represented by an equilateral triangle pointing to the superclass and attached to it, with lines coming from it towards all subclasses.
 
-.center[.imglg[![Attributes](diagrams/UMLDiagrams/Generalization.svg)]]
+.center[.imglg[![Attributes](diagrams/UMLDiagrams/Generalization.png)]]
 
 .foonote[`Employee`s and `Customer`s are both `Person`s, so they have the attributes of a `Person`, as well as their own particular attributes]
 
@@ -176,7 +176,7 @@ name: typesofgeneralization
 	- **Overlapping** (an object can be of more than one subclass) or **Disjoint** (can only belong to one subclass)
 	- **Partial** (objects may not belong to any of the subclasses) or **Complete** (all objects of the superclass must be also objects of one or more subclasses)
 
-.center[.imgfull[![GeneralizationTypes](diagrams/UMLDiagrams/GeneralizationTypes.svg)]]
+.center[.imgfull[![GeneralizationTypes](diagrams/UMLDiagrams/GeneralizationTypes.png)]]
 
 ---
 name: aggregation
@@ -186,7 +186,7 @@ name: aggregation
 - At one end we place a white diamond, which means `0...1`.
 - For the other end, if nothing is written, the syntax implies `*`. We can restrict the lower bound of that multiplicity by writing something different, e.g. `1..*`.
 
-.center[.imgscaledup[![Aggregation](diagrams/UMLDiagrams/Aggregation.svg)]]
+.center[.imgscaledup[![Aggregation](diagrams/UMLDiagrams/Aggregation.png)]]
 
 .footnote[Does **not** express parent-child relationships. If the diamond end object is deleted, the related objects still live on.]
 
@@ -197,7 +197,7 @@ name: composition
 - A special kind of Aggregation, where the diamond end denotes a `1..1` multiplicity
 - If the object of at the diamond side is destroyed, so must be the related ones in the opposite end of the Composition
 
-.center[.imglg[![Composition](diagrams/UMLDiagrams/Composition.svg)]] 
+.center[.imglg[![Composition](diagrams/UMLDiagrams/Composition.png)]] 
 
 - If the campus is demolished, it makes no sense to keep track of its buildings and parks anymore. 
 
@@ -209,7 +209,7 @@ name: associationvsaggregationvscomposition
 
 - Compositions are special cases of Aggregations and Aggregations are special cases of Associations.
 
-.center[.largemargin[.imgscaledup[![AssociationVsAggregationVsComposition](diagrams/UMLDiagrams/AssociationVsAggregationVsComposition.svg)]]]
+.center[.largemargin[.imgscaledup[![AssociationVsAggregationVsComposition](diagrams/UMLDiagrams/AssociationVsAggregationVsComposition.png)]]]
 
 ---
 name: selfassociation
@@ -218,7 +218,7 @@ name: selfassociation
 - It is also possible to specify associations between a Class and itself. 
 - Useful for representing hierarchies / subcomponents (one-to-many) or graphs (many-to-many).
 
-.center[.imgscaledup[![SelfAssociation](diagrams/UMLDiagrams/SelfAssociation.svg)]]
+.center[.imgscaledup[![SelfAssociation](diagrams/UMLDiagrams/SelfAssociation.png)]]
 
 ---
 name: qualifiedassociation
@@ -227,7 +227,7 @@ name: qualifiedassociation
 - One or more attributes of an association used to navigate from the class with the qualifier to the other
 - "Access key" from the qualifier to the qualified class
 
-.center[.imglg[![QualifiedAssociation](diagrams/UMLDiagrams/QualifiedAssociation.svg)]]
+.center[.imglg[![QualifiedAssociation](diagrams/UMLDiagrams/QualifiedAssociation.png)]]
 
 ---
 name: nary_associations
@@ -237,7 +237,7 @@ name: nary_associations
 - Multiplicity is calculated one by one, by "fixating" all other classes to 1 and calculating the multiplicity of that "end" of the association according to the requirements.
 - Ternary = 3 classes involved; Quaternary = 4 classes; n-ary = n classes...
 
-.center[.imgscaledup[![NAryAssociations](diagrams/UMLDiagrams/NAryAssociations.svg)]]
+.center[.imgscaledup[![NAryAssociations](diagrams/UMLDiagrams/NAryAssociations.png)]]
 
 ---
 name: nary_association_classes
@@ -246,7 +246,7 @@ name: nary_association_classes
 - Association classes can also be associated to n-ary associations.
 - Attributes need to depend on all of the associated classes!
 
-.center[.imgscaledup[![NAryAssociationClass](diagrams/UMLDiagrams/NAryAssociationClass.svg)]]
+.center[.imgscaledup[![NAryAssociationClass](diagrams/UMLDiagrams/NAryAssociationClass.png)]]
 
 ---
 name: constraints
@@ -255,7 +255,7 @@ name: constraints
 - Used to specify conditions that must be met by the system
 - Denoted by SQL-like text between brackets `{}`, either close to the relevant class (or classes) or connected by a dashed line to those elements
 
-.center[.imgscaledup[![constraints](diagrams/UMLDiagrams/Constraints.svg)]]
+.center[.imgscaledup[![constraints](diagrams/UMLDiagrams/Constraints.png)]]
 
 ---
 name: derived_elements
@@ -274,7 +274,7 @@ name: derived_attributes
 - Indicate the need to pre-compute an attribute and save it in the system, as it will be typically read many times but written only a few
 - "Caching" of results
 
-.center[.imgscaledup[![derivedAttributes](diagrams/UMLDiagrams/DerivedAttributes.svg)]]
+.center[.imgscaledup[![derivedAttributes](diagrams/UMLDiagrams/DerivedAttributes.png)]]
 
 ---
 name: derived_associations
@@ -284,7 +284,7 @@ name: derived_associations
 - Expensive to compute: perform an expensive computation and save the result once on certain changes to the system (i.e. when a new `Order` is added for a `Client`, recompute the `mostPurchasedProduct` and save it). 
 - Then just read the `mostPurchasedProduct` instantly many times, without having to re-compute.
 
-.center[.imgscaledup[![derivedAssociations](diagrams/UMLDiagrams/DerivedAssociations.svg)]]
+.center[.imgscaledup[![derivedAssociations](diagrams/UMLDiagrams/DerivedAssociations.png)]]
 
 ---
 name: derived_classes
@@ -293,7 +293,7 @@ name: derived_classes
 - Classes computed from other elements in the system
 - Same logic as the other derived elements
 
-.center[.imgscaledup[![derivedClasses](diagrams/UMLDiagrams/DerivedClasses.svg)]]
+.center[.imgscaledup[![derivedClasses](diagrams/UMLDiagrams/DerivedClasses.png)]]
 
 ---
 name: software

@@ -91,7 +91,7 @@ name: associations
 
 - Associations are binary relationships between classes
 
-- Represented by a line drawn between the two classses that we want to associate
+- Represented by a line drawn between the two classes that we want to associate
 
 .center[.imglg[![Association](../diagrams/UMLDiagrams/Association.svg)]]
 

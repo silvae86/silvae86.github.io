@@ -6,6 +6,14 @@ permalink: /teaching/solutions/uml/class/
 crumbtitle: Solutions for UML Class Diagram exercises
 ---
 
+### New version in PowerPoint
+
+- [All Solutions](UML_Solutions.pdf) 
+
+(Converted using PowerPoint by Prof. José Ornelas)
+
+### Old versions (handwritten)
+
 - [Veterinary Clinic](VeterinaryClinic.pdf)  
 
 - [Auto Repair Shop](AutoRepairShop.pdf)
@@ -19,3 +27,5 @@ crumbtitle: Solutions for UML Class Diagram exercises
 - [Factory](Factory.pdf)
 
 - [Bicycles](BicycleRenting.pdf) 
+
+

@@ -17,6 +17,10 @@
 | 13   | 7-11 Dec.    | **PHP** Examples<br />Examples: [Orders]({% link _pages/teaching/exercises/php/orders.zip %}) | [Project]({% link _pages/teaching/2021/ESIN_SIBD/esin/project.md %}) Support \| [PHP Exercises](https://web.fe.up.pt/~arestivo/page/exercises/php/) |
 | 14   | 14-18 Dec.   | **Q&A** (preparation for the final [exam]({% link _pages/teaching/2021/ESIN_SIBD/exam.md %}))                   | <i class="fa fa-envelope fa-pulse delivery"></i>**Delivery** Project Presentation                                     |
 
-## Special guidelines for the COVID-19 pandemic (PLEASE READ!)
+## COVID-19 pandemic (PLEASE READ!)
 
 [Covid19 Guidelines](/teaching/2021/ESIN_SIBD/covid19rules/)
+
+## FAQ: group formation, lack of moodle access, choosing a topic, etc.
+
+[FAQ - Topic Choice and Group Formation Issues](/teaching/2021/ESIN_SIBD/faq_topic_choice/)

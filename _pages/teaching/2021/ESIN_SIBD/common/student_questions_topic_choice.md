@@ -16,13 +16,16 @@ Visitor mode can give you access to the course contents, but you will not be abl
 
 Only after you have a proper moodle account (not visitor) will you be able to join groups, submit works and do the final exam.
 
+
 ## “I do not have access to Moodle. How can I register in a group?”
 
 Moodle periodically imports the student registrations from SIGARRA, and there is no way for the professors to register a student manually. However, **if you are registered in the UC and appear in its SIGARRA student listing** but cannot log in to Moodle, it can be a temporary problem until the import is performed again. In these cases, you can contact the elearning staff at elearning@uporto.pt and explain the situation (put the professors in CC). 
 
 If you do not appear in the list of students of the course, please contact the DEEC secretariat or the Academic Services of FEUP to see if they can expedite your registration in the course. You may mention that, while access to moodle via the visitor mode can give you access to the course contents, you will not be able to join a group on moodle or submit works until the situation is solved. Professors can only provide access to the visitor mode.
 
-To request visitor access to moodle, contact the course professors.
+To request visitor access to moodle, contact the course professors. 
+
+If the situation is not solved because of technical problems until a date of submission of a work, please ask your group colleagues **that have** access to Moodle to clearly specify in the first page of the work or in the website README the full name, email and student number of all members of the group. We will manually give the grade to everyone involved when we make the final gradings spreadsheets.
 
 ## “I still do not have a group. What do I do?”
 

@@ -643,6 +643,10 @@ name: foreign
 # Foreign Key Constraints
 
 * We can also declare foreign keys.
+	* SQLite requires the following command:
+		```sql
+		PRAGMA foreign_keys = ON;
+		```
 * A foreign key must always **reference a key** (primary or unique) from another (or the same) table.
 * Databases don't allow columns with a foreign key containing values that do not exist in the referenced column.
 
@@ -868,24 +872,7 @@ name: sequences
 
 * A sequence is a special kind of database object designed for generating unique numeric identifiers.
 * They ensure that a different value is generated for every client.
-
----
-
-# Sequences
-
-```sql
-CREATE SEQUENCE <name>;
-```
-
-Get the next and the current value of the sequence.
-
-```sql
-SELECT nextval('<name>');
-SELECT currval('<name>');
-```
-
-Getting the current value only works if called after calling nextval and in the same transaction.
-
+	* SQLite3 creates sequences when using the AUTOINCREMENT pseudo-type
 ---
 
 # The AUTOINCREMENT type
@@ -893,29 +880,37 @@ Getting the current value only works if called after calling nextval and in the 
 The data type `AUTOINCREMENT` is not a true type, but merely a notational convenience for setting up unique identifier columns.
 
 ```sql
-CREATE TABLE <tablename> (
-    <colname> INTEGER AUTOINCREMENT
-);
-```
+drop table if exists clients;
 
-Is equivalent to:
-
-```sql
-CREATE SEQUENCE <tablename_colname_seq>;
-CREATE TABLE <tablename> (
-    <colname> INTEGER DEFAULT nextval('<tablename_colname_seq>') NOT NULL
+create table clients (
+	id integer primary key autoincrement,
+	name text,
+	nif text unique
 );
 ```
 
 ---
 
+# Getting values from the sequence
+
+Get the next and the current value of a sequence created by AUTOINCREMENT.
+
+```sql
+SELECT seq + 1 from sqlite_sequence where name = 'clients'; -- retrieves the next value of an AUTOINCREMENET column called ID in the clients table
+SELECT seq from sqlite_sequence where name = 'clients'; -- retrieves the current value of an AUTOINCREMENET column called ID in the clients table
+```
+
+--- 
 # Example
 
 ```sql
+drop table if exists product; 
+drop table if exists category; 
+
 CREATE TABLE category (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT
-)
+);
 
 CREATE TABLE product (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -923,8 +918,11 @@ CREATE TABLE product (
   cat_id INTEGER REFERENCES category
 );
 
-INSERT INTO category VALUES(DEFAULT, 'Fruits');
-INSERT INTO products VALUES(DEFAULT, 'Lemon', currval('category_id_seq'));
+INSERT INTO category (name) VALUES('Fruits');
+-- in construction
+INSERT INTO product (name, cat_id) VALUES('Lemon', 
+	select seq from sqlite_sequence where name = 'category'
+);
 ```
 
 ---

@@ -1,36 +1,51 @@
-PRAGMA foreign_keys=on;
+-- Assuming the library is compiled with foreign key constraints enabled, it must still be enabled by the application at runtime
+PRAGMA foreign_keys = ON;
 
-drop table if exists animals;
-drop table if exists breeds;
-drop table if exists owners;
-
-create table breeds(
-	name text primary key
+CREATE TABLE breed (
+    name varchar PRIMARY KEY
 );
 
-insert into breeds (name) values('Golden Retriever');
-
-create table owners(
-	id integer primary key autoincrement,
-	name text not null,
-	address text,
-	phone_no text
+CREATE TABLE condition (
+    name varchar PRIMARY KEY
 );
 
-insert into owners (name, address, phone_no) values('José Pires', 'Rua das Flores', '9191919191');
-
-create table animals(
-	id integer primary key autoincrement,
-	name text,
-	breed text not null references breeds,
-	owner integer references owners
+CREATE TABLE owner (
+    id integer PRIMARY KEY,
+    name varchar NOT NULL,
+    address varchar,
+    phone_no varchar
 );
-	
-	--select(currval('breeds_id_seq')), 	--select(currval('animals_id_seq'))
-	
-insert into animals(name, breed, owner) values ('Tareco',
-	'Golden Retriever',
-	1 
-)
 
+CREATE TABLE physician (
+    id integer PRIMARY KEY,
+    name varchar NOT NULL,
+    address varchar,
+    phone_no varchar
+);
 
+CREATE TABLE animal (
+  id integer PRIMARY KEY,
+  name varchar NOT NULL,
+  breed varchar REFERENCES breed,
+  owner integer REFERENCES owner
+);
+
+CREATE TABLE appointment (
+    id integer PRIMARY KEY,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    animal integer NOT NULL REFERENCES animal,
+    physician integer NOT NULL REFERENCES physician
+);
+
+CREATE TABLE conditionsIdentified (
+    condition varchar REFERENCES condition,
+    appointment integer REFERENCES appointment,
+    PRIMARY KEY(condition, appointment)
+);
+
+CREATE TABLE BreedConditions (
+    breed varchar REFERENCES breed,
+    condition varchar REFERENCES condition,
+    PRIMARY KEY(breed, condition)
+);

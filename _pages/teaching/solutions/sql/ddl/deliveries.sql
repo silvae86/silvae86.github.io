@@ -1,3 +1,5 @@
+-- Solution proposal by @zeornelas on github
+
 -- Assuming the library is compiled with foreign key constraints enabled, it must still be enabled by the application at runtime
 PRAGMA foreign_keys = ON;
 

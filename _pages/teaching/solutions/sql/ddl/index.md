@@ -8,9 +8,6 @@ tags: solutions sql exercises sqlite3 scripts
 
 ## Solutions
 
-in construction
-
-
 | **Exercise** <br />(Relational schema to be converted)       | **Solution** <br />(Converted sqlite3 script)                |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [Veterinary Clinic](/teaching/solutions/uml/conversion_to_relational/#veterinary-clinic) | [SQL file]({% link _pages/teaching/solutions/sql/ddl/veterinary_clinic.sql %}) |
@@ -19,12 +16,14 @@ in construction
 | [Restaurant](/teaching/solutions/uml/conversion_to_relational/#restaurant)         | [SQL file]({% link _pages/teaching/solutions/sql/ddl/restaurant.sql %}) |
 
 
+If you spot any mistakes or have suggestions, contact the professors of the practical class.
+
 ## Notes From Classes
 
-### 2020/2021
+These files are here just as a record of past activities or account of work carried out in practical classes. **The "official" solutions are the ones upstairs.**
+
+### 2019/2020
 
 [Veterinary Clinic (written by hand)]({% link _pages/teaching/solutions/sql/ddl/class_notes/veterinary_clinic.sql %})
 
 [Veterinary Clinic (dumped from the SQLite GUI)]({% link _pages/teaching/solutions/sql/ddl/class_notes/veterinary_clinic_gui.sql %})
-
-

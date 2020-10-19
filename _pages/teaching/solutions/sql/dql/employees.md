@@ -130,7 +130,9 @@ FROM department JOIN employee ON id_dep = department.id
 GROUP BY department.id
 HAVING AVG(salary) > 1300
 ```
+
 19. List the employees who work on projects external to their department? (employee_name)
+```sql
 SELECT employee.name
 FROM employee JOIN
      works ON id_emp = id JOIN
@@ -138,6 +140,7 @@ FROM employee JOIN
 WHERE employee.id_dep <> project.id_dep
 GROUP BY employee.id
 ```
+
 20. List the employees who work on projects internal to their department? (employee_name)
 
 ```sql
@@ -148,6 +151,7 @@ FROM employee JOIN
 WHERE employee.id_dep = project.id_dep
 GROUP BY employee.id
 ```
+
 21. List the employees who only work on projects internal to their department? (employee_name)
 ```sql
 SELECT employee.name

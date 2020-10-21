@@ -5,14 +5,14 @@ PRAGMA foreign_keys = ON;
 
 CREATE TABLE person (
     id integer PRIMARY KEY AUTOINCREMENT,
-    name varchar NOT NULL,
-    address varchar
+    name text NOT NULL,
+    address text
 );
 
 CREATE TABLE waiter (
     id integer PRIMARY KEY REFERENCES person,
     identifier integer NOT NULL UNIQUE,
-    phone varchar NOT NULL
+    phone text NOT NULL
 );
 
 CREATE TABLE client (
@@ -22,8 +22,8 @@ CREATE TABLE client (
 
 
 CREATE TABLE ingredient (
-    name varchar PRIMARY KEY,
-    unit varchar NOT NULL,
+    name text PRIMARY KEY,
+    unit text NOT NULL,
     stock integer NOT NULL CHECK(stock > 0)
 );
 
@@ -34,23 +34,23 @@ CREATE TABLE tables (
 
 CREATE TABLE meal (
     id integer PRIMARY KEY AUTOINCREMENT,
+    date text NOT NULL,
+    start_time text NOT NULL,
+    end_time text,
     served_to integer NOT NULL REFERENCES client,
     served_by integer NOT NULL REFERENCES waiter,
-    date DATE NOT NULL,
-    start_time TIME NOT NULL,
-    end_time TIME,
     table_num integer NOT NULL REFERENCES tables,
-    CHECK(start_time < end_time OR end_time IS NULL)
+    CHECK(time(start_time) < time(end_time) OR end_time IS NULL)
 );
 
 CREATE TABLE dish (
-    id integer PRIMARY KEY,
-    name varchar NOT NULL UNIQUE
+    id integer PRIMARY KEY AUTOINCREMENT,
+    name text NOT NULL UNIQUE
 );
 
 CREATE TABLE ingredientInDish (
     dish integer NOT NULL REFERENCES dish DEFERRABLE INITIALLY DEFERRED,
-    ingredient varchar NOT NULL REFERENCES ingredient,
+    ingredient text NOT NULL REFERENCES ingredient,
     quantity integer NOT NULL CHECK(quantity > 0),
     PRIMARY KEY (dish, ingredient)
 );

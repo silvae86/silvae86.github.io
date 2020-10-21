@@ -7,7 +7,15 @@ crumbtitle: UML Class to Relational exercises
 
 {% include info.html content="These are the solutions of the [UML Class to Relational exercises](/teaching/exercises/uml/conversion_to_relational) exercises. They should be used as the starting point for building SQL scripts for building each schema." %}
 
-## Veterinary Clinic
+## New version in PowerPoint
+
+- [Solutions for UML to Relational Schema mapping exercises](Relational_Model.pdf) 
+
+(Converted using PowerPoint by Prof. José Ornelas)
+
+## Old versions (handwritten)
+
+### Veterinary Clinic
 
 **Animal**(<u>id</u>, name, breed &rarr;Breed, owner&rarr;Owner)
 
@@ -39,7 +47,7 @@ NOT NULL(name)
 
 NOT NULL(name)
 
-## Auto Repair Shop
+### Auto Repair Shop
 
 
 **Person**(<u>id</u>, name, address)
@@ -88,7 +96,7 @@ CHECK(current_price > 0)
 
 **Compatibilitie**(<u>car_model</u>&rarr;Model, <u>part_type</u>&rarr;PartType)
 
-## Restaurant
+### Restaurant
 
 **Person**(<u>id</u>, name, address)
 
@@ -168,7 +176,7 @@ CHECK(times_served > 0)
 
 CHECK(capacity > 0)
 
-## Deliveries
+### Deliveries
 
 
 
@@ -192,7 +200,7 @@ InternalTracking(<u>package</u>&rarr;Package, <u>delivery_center</u>&rarr;Delive
 
 CHECK(date_time_of_arrival >= date_time_of_departure)
 
-## Furniture Factory
+### Furniture Factory
 
 **Piece**(<u>reference</u>, price, line &rarr; Line)
 
@@ -250,7 +258,7 @@ NOT NULL(name)
 
 NOT NULL(address)
 
-## Factory
+### Factory
 
 
 
@@ -296,7 +304,7 @@ CHECK(date_made <= expected_delivery AND date_made <= actual_delivery)
 
 CHECK(quantity > 0)
 
-## Bicycles
+### Bicycles
 
 **Client**(<u>id</u>, NIN, TIN, name, address)
 

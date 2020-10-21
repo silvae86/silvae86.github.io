@@ -2,6 +2,7 @@
 layout: keynote
 title: Git Basics
 permalink: /teaching/slides/git/basics/
+published: false
 ---
 {% highlight text %}
 {% raw %}

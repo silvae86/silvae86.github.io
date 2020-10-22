@@ -5,8 +5,10 @@
 source ~/.rvm/scripts/rvm
 source ~/.bashrc
 
+RUBY_VERSION="2.7.2"
+
 #use latest ruby
-rvm use 2.5.1
+rvm use "$RUBY_VERSION"
 
 #install bundle
 bundle install

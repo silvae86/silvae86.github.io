@@ -21,6 +21,7 @@
 # https://forums.developer.apple.com/thread/104296
 # cp /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg ~/Desktop
 
+RUBY_VERSION="2.7.2"
 sudo apt-get update
 
 curl -sSL https://get.rvm.io | bash
@@ -29,13 +30,13 @@ curl -sSL https://get.rvm.io | bash
 source ~/.rvm/scripts/rvm
 
 #install latest ruby
-rvm install "ruby-2.5.1"
+rvm install "$RUBY_VERSION"
 
 #use latest ruby
-rvm use "ruby-2.5.1"
+rvm use "$RUBY_VERSION"
 
 #set default ruby
-rvm default "ruby-2.5.1"
+rvm default "$RUBY_VERSION"
 
 # install dependencies for responsive imagess
 sudo apt-get install imagemagick

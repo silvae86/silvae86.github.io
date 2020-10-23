@@ -21,6 +21,9 @@
 # https://forums.developer.apple.com/thread/104296
 # cp /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg ~/Desktop
 
+RUBY_VERSION="2.7.2"
+BUNDLER_VERSION="1.16.2"
+
 # if the legacy headers are not installed (for OS X Mojave):
 if [ ! -f /usr/include ]
 then
@@ -34,13 +37,13 @@ fi
 source ~/.rvm/scripts/rvm
 
 #install latest ruby
-rvm install 2.5.1
+rvm install "$RUBY_VERSION"
 
 #use latest ruby
-rvm use 2.5.1
+rvm use "$RUBY_VERSION"
 
 #set default ruby
-rvm default 2.5.1
+rvm default "$RUBY_VERSION"
 
 # install dependencies for responsive images
 brew unlink imagemagick
@@ -52,6 +55,7 @@ brew install imagemagick@6 && brew link imagemagick@6 --force
 #install jekyll and bundle
 gem install jekyll bundle
 gem install rmagick
+gem install "bundler:$BUNDLER_VERSION"
 
 #install deps
 bundle install

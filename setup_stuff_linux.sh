@@ -46,6 +46,8 @@ sudo apt-get install libmagickwand-dev imagemagick
 #install jekyll and bundle
 gem install jekyll bundle
 gem install rmagick
+gem install bundler:1.16.2
+
 
 # update bundler
 bundle update --bundler --full-index

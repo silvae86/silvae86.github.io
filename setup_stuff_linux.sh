@@ -22,6 +22,8 @@
 # cp /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg ~/Desktop
 
 RUBY_VERSION="2.7.2"
+BUNDLER_VERSION="1.16.2"
+
 sudo apt-get update
 
 curl -sSL https://get.rvm.io | bash
@@ -46,6 +48,7 @@ sudo apt-get install libmagickwand-dev imagemagick
 #install jekyll and bundle
 gem install jekyll bundle
 gem install rmagick
+gem install "bundler:$BUNDLER_VERSION"
 
 # update bundler
 bundle update --bundler --full-index

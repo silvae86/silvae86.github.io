@@ -27,7 +27,9 @@ sudo apt-get update
 curl -sSL https://get.rvm.io | bash
 
 #activate rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 source ~/.rvm/scripts/rvm
+/bin/bash --login
 
 #install latest ruby
 rvm install "$RUBY_VERSION"

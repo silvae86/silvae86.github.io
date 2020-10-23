@@ -48,7 +48,7 @@ gem install jekyll bundle
 gem install rmagick
 
 # update bundler
-bundle update --bundler
+bundle update --bundler --full-index
 
 #install deps
 bundle install

@@ -41,7 +41,7 @@ The document must be a single PDF file, submitted via [Moodle](https://moodle.up
 
 To avoid duplicate emails, [here is a list of answers](/teaching/2021/ESIN_SIBD/faq_topic_choice/) to previous questions about the work topic. You may find an answer to your question here, before sending email to the course professors.
 
-**Delivery date**: 10th November 2020 at 23:59
+**Delivery date**: 20th November 2020 at 23:59
 
 ### Second delivery (70% of Project component)
 

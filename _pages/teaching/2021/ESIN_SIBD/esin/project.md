@@ -35,13 +35,13 @@ The first delivery will be a small report (6 pages maximum), containing:
 
 The document must be a single PDF file, submitted via [Moodle](https://moodle.up.pt). In the cover page students must write:
 
-- Name of the topic
+- Name of the topic		
 - Full name of all members of the group and institutional emails
 - Number of their practical class
 
 To avoid duplicate emails, [here is a list of answers](/teaching/2021/ESIN_SIBD/faq_topic_choice/) to previous questions about the work topic. You may find an answer to your question here, before sending email to the course professors.
 
-**Delivery date**: 10th November 2020 at 23:59
+**Delivery date**: 20th November 2020 at 23:59
 
 ### Second delivery (70% of Project component)
 

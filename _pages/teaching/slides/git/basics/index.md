@@ -14,7 +14,12 @@ template:inverse
 [distributed version-control system]
 
 ## Introduction and Basics
-by [João Rocha da Silva](https://silvae86.github.io), based on ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by Jon Loeliger & Matthew McCullough and ['Git for Version Control'](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf).
+by [João Rocha da Silva](https://silvae86.github.io)
+
+Based on:
+- ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by Jon Loeliger & Matthew McCullough;
+- ['gittutorial - A tutorial introduction to Git'](https://git-scm.com/docs/gittutorial);
+- ['Git for Version Control'](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf).
 
 ---
 name: agenda
@@ -130,7 +135,10 @@ name: concepts
 name: repository_from_scracth
 ## Creating a repository from scratch
 
-
+- 
+```bash 
+git init
+```
 
 ---
 name: cloning_a_repository

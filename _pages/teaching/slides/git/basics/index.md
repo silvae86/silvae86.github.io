@@ -38,6 +38,8 @@ class: middle, center
 
 .indexpill[[Concepts](#concepts)]
 
+.indexpill[[Introducing yourself](#concepts)]
+
 .indexpill[[Repository from scratch](#repository_from_scratch)]
 
 .indexpill[[Cloning a repository](#cloning_a_repository)]
@@ -132,7 +134,11 @@ name: concepts
 .footnote[.red[*] Unless you turn on "Show hidden files" in Windows]
 
 ---
-name: repository_from_scracth
+name: introducing_yourself
+## Introducing yourself
+
+---
+name: repository_from_scratch
 ## Creating a repository from scratch
 
 - 

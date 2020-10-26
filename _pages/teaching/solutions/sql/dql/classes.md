@@ -78,7 +78,6 @@ GROUP BY course.ref, year
 ```sql
 --coalesce function will return the first non-null argument:
 --https://www.sqlitetutorial.net/sqlite-functions/sqlite-coalesce/
-
 SELECT MAX(
 		MAX(COALESCE(grade1, grade2), COALESCE(grade1, grade2) )
 	)

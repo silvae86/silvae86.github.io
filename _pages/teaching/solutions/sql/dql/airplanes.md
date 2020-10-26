@@ -97,42 +97,44 @@ GROUP BY country
 HAVING COUNT(*) > 2
 ```
 12. What country, or countries, has more airports and how many? (country, number)
+
 ```sql
-SELECT country, COUNT(*)
-FROM airport
-GROUP BY country
-HAVING COUNT(*) >= ALL (
-  SELECT COUNT(*)
-  FROM airport
-  GROUP BY country
-)
-```
-or
-```sql
-SELECT country, COUNT(*)
+SELECT country, COUNT(*) as count
 FROM airport
 GROUP BY country
 HAVING COUNT(*) IN (
-  SELECT MAX(count) FROM (
-    SELECT COUNT(*)
-    FROM airport
-    GROUP BY country
-  ) AS t
-)
-```
-or
-```sql
-SELECT country, COUNT(*)
-FROM airport
-GROUP BY country
-HAVING COUNT(*) IN (
-  SELECT COUNT(*)
+  SELECT COUNT(*) as count
   FROM airport
   GROUP BY country
   ORDER BY COUNT(*) DESC
   LIMIT 1
 )
 ```
+or
+```sql
+SELECT country, COUNT(*) as count
+FROM airport
+GROUP BY country
+HAVING COUNT(*) IN (
+  SELECT MAX(count) FROM (
+    SELECT COUNT(*) as count
+    FROM airport
+    GROUP BY country
+  ) AS t
+)
+```
+or (only in PostgreSQL, as `ALL` operator **does not exist** in sqlite3. Running this in sqlite3 will throw a syntax error!)
+```sql
+SELECT country, COUNT(*) as count
+FROM airport
+GROUP BY country
+HAVING COUNT(*) >= ALL (
+  SELECT COUNT(*) as count
+  FROM airport
+  GROUP BY country
+)
+```
+
 13. How many actual planes are there for each plane model. Sort the result so that least frequent models appear last (make, version, number). Note: You do not need to show models that do not have planes.
 ```sql
 SELECT make, version, COUNT(*)

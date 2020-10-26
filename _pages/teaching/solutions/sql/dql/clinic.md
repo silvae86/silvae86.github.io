@@ -52,13 +52,21 @@ FROM appointment
 GROUP BY room
 ```
 9. How many times was each room used by the physician with number 99030? (room, number)
-10. How many times was each room used by the physician Luca Moore? (room, number)
 ```sql
 SELECT room, COUNT(*)
 FROM appointment
 WHERE number = '99030'
 GROUP BY room
 ```
+
+10. How many times was each room used by the physician Luca Moore? (room, number)
+```sql
+SELECT room, COUNT(*) as number
+FROM appointment join physician using(number)
+WHERE name = 'Luca Moore'
+GROUP BY room;
+```
+
 11. What rooms were used more than twice on 1 January 2007? (room)
 ```sql
 SELECT room

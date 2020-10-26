@@ -2,7 +2,7 @@
 layout: keynote
 title: Git Basics
 permalink: /teaching/slides/git/basics/
-published: false
+published: true
 ---
 {% highlight text %}
 {% raw %}
@@ -14,7 +14,7 @@ template:inverse
 [distributed version-control system]
 
 ## Introduction and Basics
-by [João Rocha da Silva](https://silvae86.github.io), based on ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by Jon Loeliger & Matthew McCullough.
+by [João Rocha da Silva](https://silvae86.github.io), based on ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by Jon Loeliger & Matthew McCullough and ['Git for Version Control'](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf).
 
 ---
 name: agenda
@@ -25,25 +25,27 @@ class: middle, center
 
 .indexpill[[About](#about)]
 
+.indexpill[[References](#references)]
+
 .indexpill[[None/Centralized/Distributed VCS](#none_vs_centralized_vs_distributed)]
 
 .indexpill[[History](#history)]
 
 .indexpill[[Concepts](#concepts)]
 
-.indexpill[[Creating a repository from scratch](#creating_a_repository_from_scratch)]
+.indexpill[[Repository from scratch](#repository_from_scratch)]
 
-.indexpill[[Cloning an existing repository](#cloning_an_existing_repository)]
+.indexpill[[Cloning a repository](#cloning_a_repository)]
 
 .indexpill[[Adding files](#adding)]
 
-.indexpill[[Checking status of the repository](#checking_status)]
+.indexpill[[Checking status](#checking_status)]
 
-.indexpill[[Committing changes](#committing)]
+.indexpill[[Committing ](#committing)]
 
-.indexpill[[Pushing your commits](#pushing)]
+.indexpill[[Pushing](#pushing)]
 
-.indexpill[[Pulling commits](#pulling)]
+.indexpill[[Pulling](#pulling)]
 
 .indexpill[[Branches](#branches)]
 
@@ -53,15 +55,10 @@ class: middle, center
 
 .indexpill[[Change log](#log)]
 
-]
-
-.index[
-
 .indexpill[[GitHub](#github)]
 
-.indexpill[[References](#references)]
-
 ]
+
 ---
 name: about
 ## About
@@ -130,13 +127,13 @@ name: concepts
 .footnote[.red[*] Unless you turn on "Show hidden files" in Windows]
 
 ---
-name: creating_a_repository_from_scracth
+name: repository_from_scracth
 ## Creating a repository from scratch
 
 
 
 ---
-name: cloning_an_existing_repository
+name: cloning_a_repository
 ## Cloning an existing repository
 
 ---

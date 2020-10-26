@@ -11,15 +11,10 @@ class: middle, center
 template:inverse
 
 # Git
-[distributed version-control system]
+[a distributed version-control system]
 
 ## Introduction and Basics
 by [João Rocha da Silva](https://silvae86.github.io)
-
-Based on:
-- ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by Jon Loeliger & Matthew McCullough;
-- ['gittutorial - A tutorial introduction to Git'](https://git-scm.com/docs/gittutorial);
-- ['Git for Version Control'](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf).
 
 ---
 name: agenda
@@ -72,11 +67,12 @@ name: about
 
 - A **distributed** source code **version control** system.
 
-- **Version control** because it tracks all changes made to the code of a software solution
-
 - **Distributed**, because it does not require a **repository server**
 	- All collaborators of the repository can synchronize their code without the need for a "central authority"
-- <u>Keeps your code safe, </u>
+
+- **Version control** because it tracks all changes made to the code of a software solution
+
+- Keeps your code safe and bugs easy to blame 👻, as the authors of all changes are recorded! 
 
 .footnote[.red[*]We will cover some basics of Git usage in these slides. More advanced usage can be explored in the bibliography]
 
@@ -135,7 +131,12 @@ name: concepts
 
 ---
 name: introducing_yourself
+
 ## Introducing yourself
+
+Before performing any operations using `git`, you should specify your **user name** and **email**.
+
+
 
 ---
 name: repository_from_scratch
@@ -195,16 +196,33 @@ name: log
 ## Change log
 
 
+
+---
+name: help
+## Getting help
+
+To get help about `git` command-line operations, you can enter the following commands:
+
+```bash
+man git-log # will show the manpage of git, for the log command
+```
+
+alternatively:
+```bash
+git help log # ask git to show help about the log command
+```
+
 ---
 name: references
 ## References
 
-- *Version Control with Git, 2nd Edition* 
+- *[Version Control with Git, 2nd Edition](https://www.oreilly.com/library/view/version-control-with/9781449345037/)* 
 	Loeliger, J., & McCullough, M. (2012).  
-	O'Reilly Media, Inc..
-
+	O'Reilly Media, Inc.
+- *['gittutorial - A tutorial introduction to Git'](https://git-scm.com/docs/gittutorial)*;
+- *['Git for Version Control'](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)*;	
 - *Git Commands on GitHub, by joshnh* [Link](https://github.com/joshnh/Git-Commands)
-	- An interesting *cheat sheet* for command-line (advanced) use of Git
+	- An interesting *cheat sheet* for command-line (advanced) use of Git.
 
 {% endraw %}
 {% endhighlight %}

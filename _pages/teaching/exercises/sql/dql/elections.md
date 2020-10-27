@@ -12,7 +12,7 @@ tags: exercises sql
 
 ## Script
 
-[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/employees.sql %})
+[Download Script Here]({% link _pages/teaching/exercises/sql/dql/scripts/elections.sql %})
 
 ## Exercises
 

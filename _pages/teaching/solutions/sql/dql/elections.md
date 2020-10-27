@@ -81,13 +81,13 @@ SELECT designation, COUNT(en) AS quantity FROM municipality LEFT JOIN (SELECT * 
 13) What municipalities had more enrolled voters? Note: Show all municipalities in this situation.
 
 ```sql
-SELECT designation FROM municipality JOIN elector USING (cod) GROUP BY cod, designation HAVING COUNT(*) >= ALL (  SELECT COUNT(*)  FROM elector  GROUP BY cod ) 
+SELECT designation FROM municipality JOIN elector USING (cod) GROUP BY cod, designation HAVING COUNT(*) = (select max(cnt) from (  SELECT COUNT(*) as cnt  FROM elector  GROUP BY cod )) 
 ```
 
 14) What municipalities had more candidates? Note: Show all municipalities in this situation.
 
 ```sql
-SELECT designation FROM municipality JOIN candidate USING (cod) GROUP BY cod, designation HAVING COUNT(*) >= ALL (  SELECT COUNT(*)  FROM candidate  GROUP BY cod ) 
+SELECT designation FROM municipality JOIN candidate USING (cod) GROUP BY cod, designation HAVING COUNT(*) = (select max(cnt) from (  SELECT COUNT(*) as cnt FROM candidate  GROUP BY cod )) 
 ```
 
 15) What are the codes of the municipalities where the party with ‘RP’ as its acronym had a majority? Note: To have a majority, a party must have more votes than the sum of the votes of all other parties in that municipality.

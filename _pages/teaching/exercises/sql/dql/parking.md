@@ -18,7 +18,7 @@ tags: exercises sql
 
 1. What is the make of all vehicles owned by the client with NIF 1232? (make)
 2. What cars have ever parked in the second floor? (plate)
-3. In which days what there Ferraris in the park? Order your answer starting with the oldest day first. (day)
+3. In which days were there Ferraris parked in the park? Order your answer starting with the oldest day first. (day)
 4. Which cars parked on the 1st of January 2010? Order them by entry time. (entry, plate)
 5. How many cars does the client with NIF 1232 own? (quantity)
 6. How many parking spots are there above the first floor? (quantity)

@@ -366,8 +366,7 @@ name: conflicts
 .center[.imgfull[![A file with merge conflicts](images/mergeconflict_git_branches.png)]]
 .footnote[.red[*]Image credits: [Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/).]
 
-
---- 
+---
 name: conflicts-2
 ## Conflicts - Spotting (2/3)
 

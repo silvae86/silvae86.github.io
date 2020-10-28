@@ -31,13 +31,13 @@ class: middle, center
 
 .indexpill[[History](#history)]
 
-.indexpill[[Introducing yourself](#concepts)]
+.indexpill[[Introducing yourself](#introducing-yourself)]
 
 .indexpill[[Repository from scratch](#repository-from-scratch)]
 
 .indexpill[[Cloning a repository](#cloning-a-repository)]
 
-.indexpill[[Adding files](#adding)]
+.indexpill[[Adding changes](#adding)]
 
 .indexpill[[Checking status](#checking-status)]
 
@@ -145,8 +145,8 @@ A new hidden.red[*] directory called `.git` will be created inside the `/path/to
 .footnote[.red[*] Unless you turn on "Show hidden files" in Windows]
 
 ---
-name: adding-files
-## Adding files
+name: adding
+## Adding changes
 
 - To add files to version control of the repository (so that Git starts "seeing" them), Git provides the `git add` command.
 - To add all the files and folders inside our repository, we will use
@@ -157,16 +157,20 @@ cd /path/to/folder/to/make/into/repository # go to repository folder
 git add . # make everything part of the repository
 ```
 
+- "**Git tracks content, not files**: Many revision control systems provide an `add` command that tells the system to start tracking changes to a new file. Git’s `add` command does something simpler and more powerful: `git add` is used **both for new and newly modified files**, and in both cases it takes a snapshot of the given files and stages that content in the index, ready for inclusion in the next commit."(.red[[Source](https://git-scm.com/docs/gittutorial)]).
+
 ---
 name: making-changes
 ## Making changes
 
-- Edit some files inside the repository, using any editor you want. Git also manages changes to binary files, such as images or sqlite3 databases (".db files").
-- Add all the changes in the entire folder
+1. Edit some files inside the repository, using any editor you want. 
+	- Git also manages changes to binary files, such as images or sqlite3 databases (".db files").
+2. Add changes
+	- You can add all the changes changes within the entire folder:
 	```bash
 	git add . 
 	```
-- Add only the changes made to files `home.php` and `static/images/products.png` to the index
+	- ... or only the changes made to files `home.php` and `static/images/products.png`:
 	```bash
 	git add home.php static/images/products.png
 	```
@@ -177,25 +181,25 @@ name: making-changes
 name: diff 
 ## Pending changes
 
-- You can see any changes made to the repository files that have **not** been added to the index, using:
+- You can see any changes made to the repository files that have **not** been added to the *index*, using the command
 
 ```bash
 git diff
 ```
 
-- After adding changes to the index you can see what **has been added**:
+- After adding changes to the index you can see what **has been added**
 
 ```bash
 git diff --cached
 ```
 
-These commands are good to see what is *in the index* (also called "staged") before you commit *commit*.
+These commands are good to see what is *in the index* (sometimes called "staged") before you `commit` anything.
 
 ---
 name: checking-status
 ## Checking status
 
-Another way to get an overview of the changes that are to be committed, you can use `git status`:
+Another way to get an overview of the changes that are to be `commit`ted, you can use `git status`:
 
 ```bash
 $ git status
@@ -306,7 +310,8 @@ name: pushing
 name: branches
 ## Branches
 
-
+- Sometimes you want to work on a new feature for the project that is too large to be committing changes as you progress in your work without breaking the main code until the entire feature is finished.
+- Without version control, you would simply copy-paste the entire folder, implement the entire feature, and then go file by file to 
 
 ---
 name: merging

@@ -291,6 +291,10 @@ git remote add bob bob.org:/home/bob/myrepo
 	- `bob` short, easy to memorize name for the new remote repository
 	- `bob.org:/home/bob/myrepo` location of the remote repository
 
+- Alice can then fetch the changes committed by Bob in his repository:
+```bash
+git remote add bob bob.org:/home/bob/myrepo
+```
 
 ---
 name: pushing
@@ -302,7 +306,6 @@ name: pushing
 	- If anyone `push`ed changes to files that you also modified, a merge conflict will appear. 
 - Fixing conflicts
 	- You will have to manually merge the files marked as conflicted (use `git status` to see which files have conflicts after `pull`ing)
-		- For this example, let's say that Alice and Bob both modified the same lines in the `home.php` file.
 	- After the conflicts [have been fixed](#conflicts), you can use `git add home.php` to set the fixed file as the version to be `commit`ted over whatever is in the remote repository.
 	- To persist the changes, run `commit` and `push` to send the merged changes to the GitHub repository.
 
@@ -329,9 +332,9 @@ name: branches-2
 			new-feature
 			* master # Star denotes your current branch
 	```
-	3. Switch to the newly-create branch. All add and commit operations will affect that branch instead of the default `master` branch, which should be used for the main, stable version of your app. 
+	3. Switch to the newly-created branch `new-feature`. All add and commit operations will affect that branch instead of the default `master` branch, which should be used for the main, stable version of your app. 
 	```bash
-	git switch
+	git switch new-feature
 	(edit file)
 	git commit -a -m "A change made in the new feature".
 	```
@@ -344,9 +347,9 @@ name: merging
 	```bash 
 	git switch master
 	```
-2. Merge experimental into master. It is always like a "pull", you first *switch to the destination branch* and then merge *from the origin branch*.
+2. Merge `new-feature` into master. It is always like a "pull", you first *switch to the destination branch* and then merge *from the origin branch*.
 	```bash 
-	git merge experimental
+	git merge new-feature
 	```
 3. If there are no conflicts, you are done. Otherwise, you need to [resolve them](#conflicts). 
 
@@ -385,7 +388,7 @@ name: conflicts-3
 
 1. Remove the change designations added by Git (A, B, and C [here](#conflicts-2)).
 2. Correct the content and save. The result will look something like this:
-	.center[.imglg[![A file with merge conflicts, now resolved](images/mergeconflict_git_branches_resolved.png)]]
+	.center[.imgmd[![A file with merge conflicts, now resolved](images/mergeconflict_git_branches_resolved.png)]]
 3. See if you missed any conflicts. Run a quick `Ctrl+F` search for `<<<<<<`, for example (this sequence appears in all conflicts but rarely in actual source code). Fix if needed.
 4. Add and commit the changes, push if you wish
 	```bash

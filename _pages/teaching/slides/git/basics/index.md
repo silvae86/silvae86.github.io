@@ -354,6 +354,7 @@ name: merging
 
 - Representation of branching and merging in a real project. Dots are commits, arrows are the branching and merging operations.
 
+
 ---
 name: conflicts
 ## Conflicts - Why do they happen? (1/3)
@@ -363,7 +364,8 @@ name: conflicts
 - You open one of the conflicted files and you see something like this.red[*]:
 
 .center[.imgfull[![A file with merge conflicts](images/mergeconflict_git_branches.png)]]
-.footnote[.red[*]Image credits: [Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/)].
+.footnote[.red[*]Image credits: [Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/).]
+
 
 --- 
 name: conflicts-2
@@ -376,6 +378,7 @@ name: conflicts-2
 - C: End of the changes present in the remote repository (i.e. that someone `push`ed after your last `pull`)
 
 .footnote[.red[*]Image credits: [Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/)].
+
 
 ---
 name: conflicts-3

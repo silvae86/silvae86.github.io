@@ -27,21 +27,19 @@ class: middle, center
 
 .indexpill[[References](#references)]
 
-.indexpill[[None/Centralized/Distributed VCS](#none_vs_centralized_vs_distributed)]
+.indexpill[[None/Centralized/Distributed VCS](#none-vs-centralized-vs-distributed)]
 
 .indexpill[[History](#history)]
 
-.indexpill[[Concepts](#concepts)]
-
 .indexpill[[Introducing yourself](#concepts)]
 
-.indexpill[[Repository from scratch](#repository_from_scratch)]
+.indexpill[[Repository from scratch](#repository-from-scratch)]
 
-.indexpill[[Cloning a repository](#cloning_a_repository)]
+.indexpill[[Cloning a repository](#cloning-a-repository)]
 
 .indexpill[[Adding files](#adding)]
 
-.indexpill[[Checking status](#checking_status)]
+.indexpill[[Checking status](#checking-status)]
 
 .indexpill[[Committing ](#committing)]
 
@@ -58,6 +56,8 @@ class: middle, center
 .indexpill[[Change log](#log)]
 
 .indexpill[[GitHub](#github)]
+
+.indexpill[[TL;DR](#tl-dr)]
 
 ]
 
@@ -77,7 +77,7 @@ name: about
 .footnote[.red[*]We will cover some basics of Git usage in these slides. More advanced usage can be explored in the bibliography]
 
 ---
-name: none_vs_centralized_vs_distributed
+name: none-vs-centralized-vs-distributed
 ## None/Centralized/Distributed VCS (1/3)
 
 ### No Version Control System
@@ -114,56 +114,140 @@ name: history
 
 
 ---
-name: concepts
-## Concepts
-
-- A **repository** is a folder with some files added by the VCS. 
-	- In `Git`, the root of the folder will contain an *invisible* `.git`.red[*] folder with information that it uses to keep track of the changes made to everything in that folder, among other things.
-- **Cloning** is to create a local copy of a repository present at some remote location
-- **Changes** are calculated automatically by Git whenever a file inside a repository is edited. They refer to lines added, removed or modified in all the files in the repository, as well as files added, deleted or renamed.
-- **Commits** are similar to milestones on a road: they are used to "mark" the current state of the repository as a milestone. When you commit your changes you are only modifying the local copy of the repository. Nothing will be sent 
-- **Pulling** means to retrieve the latest changes present in the remote
-- **Pushing** is to send all your local commits i.e. to send all changes made locally back to the remote
-- **Branches** are like the branches on a tree. You can branch out your code to work separately on a certain functionality. When you think it is stable, you can **merge** it back into the main branch, which is like the trunk of a tree
-- **Merging** is to merge all the changes made in a separate branch back into the main branch of the repository.
-
-.footnote[.red[*] Unless you turn on "Show hidden files" in Windows]
-
----
-name: introducing_yourself
+name: introducing-yourself
 
 ## Introducing yourself
 
 Before performing any operations using `git`, you should specify your **user name** and **email**.
 
+```bash
+git config --global user.name "Your Name Comes Here"
+git config --global user.email you@yourdomain.example.com
+```
 
+This allows you to mark every change made to the code with your information, so everyone in the repository knows who did what. 
 
 ---
-name: repository_from_scratch
-## Creating a repository from scratch
+name: repository-from-scratch
+## Creating a repository
 
-- 
+You can initialize a Git repository from existing sources in a folder or create a completely blank repository if you initialize it in an empty folder. 
+
 ```bash 
+cd /path/to/folder/to/make/into/repository
 git init
 ```
 
----
-name: cloning_a_repository
-## Cloning an existing repository
+A new hidden.red[*] directory called `.git` will be created inside the `/path/to/folder/to/make/into/repository` folder. This folder contains the information that Git needs to manage the repository.
+
+.footnote[.red[*] Unless you turn on "Show hidden files" in Windows]
 
 ---
-name: adding_files
+name: adding-files
 ## Adding files
 
+- To add files to version control of the repository (so that Git starts "seeing" them), Git provides the `git add` command.
+- To add all the files and folders inside our repository, we will use
+- The *current state* of all files and folders is added to the *index* (a temporary staging area of Git). 
+
+```bash
+cd /path/to/folder/to/make/into/repository # go to repository folder
+git add . # make everything part of the repository
+```
+
 ---
-name: checking_status
+name: making-changes
+## Making changes
+
+- Edit some files inside the repository, using any editor you want. Git also manages changes to binary files, such as images or sqlite3 databases (".db files").
+- Add all the changes in the entire folder
+	```bash
+	git add . 
+	```
+- Add only the changes made to files `home.php` and `static/images/products.png` to the index
+	```bash
+	git add home.php static/images/products.png
+	```
+	
+.footnote[.red[*] Empty folders will not be added to the index by default. This is a behavior of Git that you can circumvent by creating a dummy file inside the folder whose addition you want to force.]
+
+---
+name: diff 
+## Pending changes
+
+- You can see any changes made to the repository files that have **not** been added to the index, using:
+
+```bash
+git diff
+```
+
+- After adding changes to the index you can see what **has been added**:
+
+```bash
+git diff --cached
+```
+
+These commands are good to see what is *in the index* (also called "staged") before you commit *commit*.
+
+---
+name: checking-status
 ## Checking status
 
+Another way to get an overview of the changes that are to be committed, you can use `git status`:
+
+```bash
+$ git status
+On branch master
+Changes to be committed:
+Your branch is up to date with 'origin/master'.
+  (use "git restore --staged <file>..." to unstage)
+
+	modified:   home.php
+	modified:   static/images/products.png
+```
 
 ---
 name: committing
 ## Committing changes
 
+- To permanently store the contents of the index in the repository you must create a commit:
+	```bash
+	git commit
+	```
+
+	1. You will be prompted to enter a commit message, using the default command-line editor.
+		- To change the default editor (often `nano` in Linux distros):
+		```bash
+		# this will replace 'nano' with 'vim' as the default editor 
+		# used by git, for those that prefer 'vim'
+		git config --global core.editor "vim" 
+		```
+	2.  Enter your commit message (**write good descriptions of the changes, as everyone will see them**) and exit the editor. Git will immediately commit the changes as soon as the editor closes.
+- You can also use command line arguments as a "shortcut" to 1. Add everything in the current folder to the index, 2. Commit those changes (aka "Staging changes") and 3. Specify the commit message in one go:
+	```bash
+	git commit -a -m "Fixed security hole in the authentication module (reported in issue #1291). Replaced md5 with bcrypt for the password encryption."
+	```
+
+---
+name: cloning-a-repository
+## Cloning an existing repository
+
+Cloning allows you to collaborate with other users without having to use a central server (hence *distributed* version control).
+
+Alice and Bob are building a website, and Bob wants to make some changes to Alice's code.
+
+- Alice has a repository on her home directory, at `/home/alice/website`.
+- Bob wants to clone Alice's repository to work on his machine and send the changes later. 
+
+How can Bob do it?
+
+- Bob accesses Alice's machine to clone the repository.red[*]: 
+	```bash
+	git clone alice.org:/home/alice/website myrepo`.
+	```
+- Bob's repository clone, at Bob's machine, will be on equal footing with the original project, with an exact copy of the entire history of the project.
+	
+.footnote[.red[*] She could use the `ifconfig` command on UNIX and `ipconfig` on Windows or give Bob her IP address if they are both on the same network, or give him the public domain of her machine, e.g. `alice.org`]
 
 ---
 name: pushing
@@ -172,7 +256,7 @@ name: pushing
 
 ---
 name: pulling
-## Pulling changes from remote
+## Pulling changes
 
 ---
 name: branches
@@ -211,6 +295,21 @@ alternatively:
 ```bash
 git help log # ask git to show help about the log command
 ```
+
+---
+name: tl-dr
+## TL;DR
+
+- A **repository** is a folder with some files added by the VCS. 
+	- In `Git`, the root of the folder will contain an *invisible* `.git` folder with information that it uses to keep track of the changes made to everything in that folder, among other things.
+- **Cloning** is to create a local copy of a repository present at some remote location
+- **Changes** are calculated automatically by Git whenever a file inside a repository is edited. They refer to lines added, removed or modified in all the files in the repository, as well as files added, deleted or renamed.
+- **Commits** are similar to milestones on a road: they are used to "mark" the current state of the repository as a milestone. When you commit your changes you are only modifying the local copy of the repository. Nothing will be *sent* anywhere.
+- **Pulling** means to retrieve the latest changes present in the remote
+- **Pushing** is to send all your local commits i.e. to send all changes made locally back to the remote
+- **Branches** are like the branches on a tree. You can branch out your code to work separately on a certain functionality. When you think it is stable, you can **merge** it back into the main branch, which is like the trunk of a tree
+- **Merging** is to merge all the changes made in a separate branch back into the main branch of the repository.
+
 
 ---
 name: references

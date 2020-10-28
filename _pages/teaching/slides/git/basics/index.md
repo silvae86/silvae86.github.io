@@ -308,20 +308,55 @@ name: pushing
 
 ---
 name: branches
-## Branches
+## Branches - Purpose (1/2)
 
 - Sometimes you want to work on a new feature for the project that is too large to be committing changes as you progress in your work without breaking the main code until the entire feature is finished.
-- Without version control, you would simply copy-paste the entire folder, implement the entire feature, and then go file by file to 
+- Without version control, you would simply copy-paste the entire folder, implement the entire feature, and then go file by file to copy all the changes made during the implementation of the feature 😱😱😱
+- A single Git repository can maintain multiple branches of development, so that commits to one branch do not affect the others.
 
 ---
+name: branches-2
+## Branches - Creating and switching (2/2)
+ 
+- To create a new branch named "new-feature", use:
+	1. 
+	```bash
+	git branch new-feature
+	```
+	2. Your new branch will be created:
+	```bash
+		git branch
+			new-feature
+			* master # Star denotes your current branch
+	```
+	3. Switch to the newly-create branch. All add and commit operations will affect that branch instead of the default `master` branch, which should be used for the main, stable version of your app. 
+	```bash
+	git switch
+	(edit file)
+	git commit -a -m "A change made in the new feature".
+	```
+	
+---
 name: merging
-## Merging 
+## Merging one branch into another
 
-TODO
+1. To *merge* the changes from a branch into the master branch:
+	```bash 
+	git switch master
+	```
+2. Merge experimental into master. It is always like a "pull", you first *switch to the destination branch* and then merge *from the origin branch*.
+	```bash 
+	git merge experimental
+	```
+3. If there are no conflicts, you are done. Otherwise, you need to [resolve them](#conflicts). 
+
+.center[.imgmd[![A merge graph of a real git project](images/branch-network.png)]]
+
+- Representation of branching and merging in a real project. Dots are commits, arrows are the branching and merging operations.
 
 ---
 name: conflicts
-## Conflicts - Why? (1/3)
+## Conflicts - Why do they happen? (1/3)
 
 - You `pull` from a remote repository or you try to `merge` your new branch into the main repository branch.
 - You get conflicts (use `git status` to see the files with conflicts)

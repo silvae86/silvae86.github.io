@@ -47,6 +47,8 @@ class: middle, center
 
 .indexpill[[Pulling](#pulling)]
 
+.indexpill[[Fetching](#fetching)]
+
 .indexpill[[Branches](#branches)]
 
 .indexpill[[Merging](#merging)]
@@ -74,7 +76,7 @@ name: about
 
 - Keeps your code safe and bugs easy to blame 👻, as the authors of all changes are recorded! 
 
-.footnote[.red[*]We will cover some basics of Git usage in these slides. More advanced usage can be explored in the bibliography]
+.footnote[.red[*]We will cover some basics of Git usage in these slides. More advanced usage can be explored in the bibliography.]
 
 ---
 name: none-vs-centralized-vs-distributed
@@ -243,20 +245,62 @@ How can Bob do it?
 
 - Bob accesses Alice's machine to clone the repository.red[*]: 
 	```bash
-	git clone alice.org:/home/alice/website myrepo`.
+	git clone alice.org:/home/alice/website /home/bob/myrepo`.
 	```
 - Bob's repository clone, at Bob's machine, will be on equal footing with the original project, with an exact copy of the entire history of the project.
 	
 .footnote[.red[*] She could use the `ifconfig` command on UNIX and `ipconfig` on Windows or give Bob her IP address if they are both on the same network, or give him the public domain of her machine, e.g. `alice.org`]
 
 ---
-name: pushing
-## Pushing your commits
+name: pulling
+## Pulling changes
+
+- After Bob made his improvements to the code, Alice wants to add them to her version of the website.
+- To pull the changes made by Bob, Alice runs the commands:
+
+```bash
+cd /home/alice/website # change to the website's folder on Alice's computer
+git pull . bob.org:/home/bob/myrepo master # perform the pull operation
+```
+- Here is the meaning of the command, split into its parts:
+	- `git pull` tells git to pull changes from another repository
+	- `.` current folder will be the destination of the changes pulled
+	- `bob.org:/home/bob/myrepo` fetch from the repository at `/home/bob/myrepo` folder at Bob's computer (network address `bob.org`)
+
+- The changes contained in the commits that Bob performed in his local repository will be retrieved and merged in Alice's local repository. 
+
+- Alice should `add` and  `commit` any current changes to her own repository before `pull`ing any changes from other repositories. This will make it easy to solve conflicts, e.g. two users edited the same line of the same file (we will see these later).
+
+---
+name: fetching
+## Fetching changes
+
+Instead of directly pulling the changes from Bob, Alice can first *take a peek* at his repository to see if he has any changes worth pulling into her own code, without making any changes to her code. 
+
+- Alice can define a `remote` from which she pulls changes regularly, using:
+
+```bash
+git remote add bob bob.org:/home/bob/myrepo
+```
+- Here is the meaning of the command, split into its parts:
+	- `git remote add` tells git to add a new remote repository 
+	- `bob` short, easy to memorize name for the new remote repository
+	- `bob.org:/home/bob/myrepo` location of the remote repository
 
 
 ---
-name: pulling
-## Pulling changes
+name: pushing
+## Pushing your commits
+
+- Git can work much like CVS (a centralized version control system), where you can `push` your changes to a remote server. This is the way GitHub works.
+	- After you clone from GitHub, you can `add` changes, make several `commit`s and finally push those commits to the GitHub repository from where you cloned. 
+	- Before you `push` any changes you need to see if anyone has pushed anything to the repository since you last `pull`ed from it.
+	- If anyone `push`ed changes to files that you also modified, a merge conflict will appear. 
+- Fixing conflicts
+	- You will have to manually merge the files marked as conflicted (use `git status` to see which files have conflicts after `pull`ing)
+		- For this example, let's say that Alice and Bob both modified the same lines in the `home.php` file.
+	- After the conflicts [have been fixed](#conflicts), you can use `git add home.php` to set the fixed file as the version to be `commit`ted over whatever is in the remote repository.
+	- To persist the changes, run `commit` and `push` to send the merged changes to the GitHub repository.
 
 ---
 name: branches
@@ -268,18 +312,59 @@ name: branches
 name: merging
 ## Merging 
 
-
+TODO
 
 ---
 name: conflicts
-## Conflicts
+## Conflicts - Why? (1/3)
 
+- You `pull` from a remote repository or you try to `merge` your new branch into the main repository branch.
+- You get conflicts (use `git status` to see the files with conflicts)
+- You open one of the conflicted files and you see something like this.red[*]:
+
+.center[.imgfull[![A file with merge conflicts](images/mergeconflict_git_branches.png)]]
+.footnote[.red[*]Image credits: [Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/)].
+
+--- 
+name: conflicts-2
+## Conflicts - Spotting (2/3)
+
+.center[.imgfull[![A file with merge conflicts](images/mergeconflict_git_branches.png)]]
+
+- A: Start of the changes in the local branch (i.e. your changes)
+- B: Delimiter - End of the changes in the local branch and start of the changes in the remote branch
+- C: End of the changes present in the remote repository (i.e. that someone `push`ed after your last `pull`)
+
+.footnote[.red[*]Image credits: [Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/)].
+
+---
+name: conflicts-3
+## Conflicts - Fixing (3/3)
+
+1. Remove the change designations added by Git (A, B, and C [here](#conflicts-2)).
+2. Correct the content and save. The result will look something like this:
+	.center[.imglg[![A file with merge conflicts, now resolved](images/mergeconflict_git_branches_resolved.png)]]
+3. See if you missed any conflicts. Run a quick `Ctrl+F` search for `<<<<<<`, for example (this sequence appears in all conflicts but rarely in actual source code). Fix if needed.
+4. Add and commit the changes, push if you wish
+	```bash
+	git add <filename>
+	git commit -m'commit message'
+	git push # Push the changes to the main repository if you wish.
+	```
+.footnote[.red[*]Image credits: [Atlassian](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts).]
 
 ---
 name: log
 ## Change log
 
+To see the history of changes in a Git repository, you can run `git log`.red[*]:
 
+.center[.imgmd[![Seeing the list of commits over a Git repository (Git Log)](images/git-log.png)]]
+
+- For every commit, you can see the author, its date and time, and the associated message as written by the author of the commit. 
+- The *hash sum* is a long, unique identifier of the state of the repository at that exact point in time, useful for restoring after someone makes mistakes.
+
+.footnote[.red[*]This is the actual log of the commits to the [repository](https://github.com/silvae86/silvae86.github.io) where the source code for these slides is.]
 
 ---
 name: help
@@ -320,6 +405,7 @@ name: references
 	O'Reilly Media, Inc.
 - *['gittutorial - A tutorial introduction to Git'](https://git-scm.com/docs/gittutorial)*;
 - *['Git for Version Control'](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)*;	
+- *['Resolve merge conflicts'](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/)*;	
 - *Git Commands on GitHub, by joshnh* [Link](https://github.com/joshnh/Git-Commands)
 	- An interesting *cheat sheet* for command-line (advanced) use of Git.
 

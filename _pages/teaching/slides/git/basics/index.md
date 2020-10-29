@@ -219,8 +219,8 @@ name: references
 - *[Version Control with Git, 2nd Edition](https://www.oreilly.com/library/view/version-control-with/9781449345037/)* 
 	Loeliger, J., & McCullough, M. (2012).  
 	O'Reilly Media, Inc.
-- *['gittutorial - A tutorial introduction to Git'](https://git-scm.com/docs/gittutorial)*;
-- *['Git for Version Control'](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)*;	
+- *[gittutorial - A tutorial introduction to Git](https://git-scm.com/docs/gittutorial)*
+- *[Git for Version Control](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)*
 - *Git Commands on GitHub, by joshnh* [Link](https://github.com/joshnh/Git-Commands)
 	- An interesting *cheat sheet* for command-line (advanced) use of Git.
 

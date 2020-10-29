@@ -45,16 +45,20 @@ GROUP BY ref
 ```
 6. What team, or teams, has a smaller sum of its riders total times? (team)
 ```sql
-SELECT team, SUM(time)
+SELECT team, SUM(time) as total
 FROM rider JOIN
-     classification USING (ref)
+  classification USING (ref)
 GROUP BY team
-HAVING SUM(time) <=ALL (
-  SELECT SUM(time)
-  FROM rider JOIN
-       classification USING (ref)
-  GROUP BY team
-)
+HAVING SUM(time) = (
+	select min(sum_time)
+	from 
+	(
+	    SELECT SUM(time) as sum_time
+	    FROM rider JOIN
+	      classification USING (ref)
+	    GROUP BY team
+	)
+);
 ```
 7. What is the average time in each stage? (description, average)
 ```sql
@@ -69,16 +73,21 @@ SELECT description
 FROM stage JOIN
      classification USING (num)
 GROUP BY num
-HAVING AVG(time) <= ALL (
-  SELECT AVG(time)
-  FROM stage JOIN
-       classification USING (num)
-  GROUP BY num
-)
+HAVING AVG(time) = (
+	select min(avg_time)
+	from 
+	(
+	    SELECT AVG(time) as avg_time
+	    FROM stage JOIN
+	         classification USING (num)
+	    GROUP BY num
+	)
+);
 ```
 9. What was the time difference between the first and second rider in each stage? (description, difference)
 ```sql
-SELECT first.description, second.time - first.time FROM
+SELECT first.description, strftime('%s', second.time) - strftime('%s', first.time) as difference 
+FROM
  (SELECT *
   FROM stage JOIN
        classification USING (num)
@@ -88,27 +97,38 @@ SELECT first.description, second.time - first.time FROM
   FROM stage JOIN
        classification USING (num)
   WHERE position = 2) AS second
-  USING (num)
+  USING (num);
 ```
 10. What stage had the biggest time difference between the first and second rider to finish it, what rider won that stage and with how much lead time. (description, name, difference).
 ```sql
-SELECT first.description FROM
- (SELECT *
-  FROM stage JOIN
-       classification USING (num)
-  WHERE position = 1) AS first
-  JOIN
- (SELECT *
-  FROM stage JOIN
-       classification USING (num)
-  WHERE position = 2) AS second
-  USING (num)
-WHERE second.time - first.time >= ALL (
-  SELECT second.time - first.time
-  FROM classification AS first JOIN
-       classification AS second USING (num)
-  WHERE first.position = 1 AND second.position = 2
-)
+SELECT first.description, first.name, strftime('%s', second.time) - strftime('%s', first.time) as difference 
+FROM
+	(
+		SELECT *
+		FROM stage JOIN
+		classification USING (num)
+		join rider USING (ref)
+		WHERE position = 1
+	) AS first
+	JOIN
+	(
+		SELECT *
+		FROM stage JOIN
+		classification USING (num)
+		WHERE position = 2
+	) as second 
+	on first.num = second.num
+	WHERE strftime('%s', second.time) - strftime('%s', first.time) = 
+	(
+		select max(difference)
+		from
+		(
+			SELECT strftime('%s', second.time) - strftime('%s', first.time) as difference
+			FROM classification AS first JOIN
+			classification AS second USING (num)
+			WHERE first.position = 1 AND second.position = 2
+		)
+	);
 ```
 
 *(Credits: André Restivo https://web.fe.up.pt/~arestivo)*

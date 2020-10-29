@@ -46,6 +46,10 @@ rvm use "$RUBY_VERSION"
 rvm default "$RUBY_VERSION"
 
 # install dependencies for responsive images
+
+# for OS X Sierra (old versions...)
+#brew update && brew upgrade
+
 brew unlink imagemagick
 brew uninstall imagemagick
 brew install imagemagick@6

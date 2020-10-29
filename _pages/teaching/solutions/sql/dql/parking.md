@@ -22,16 +22,14 @@ WHERE floor = 2
 ```sql
 SELECT DISTINCT day
 FROM vehicle JOIN
-     parking USING(plate) JOIN
-     spot USING (number)
+     parking USING(plate)
 WHERE make = 'Ferrari'
 ORDER BY day
 ```
 4. Which cars parked on the 1st of January 2010? Order them by entry time. (entry, plate)
 ```sql
 SELECT entry, plate
-FROM parking JOIN
-     spot USING (number)
+FROM parking
 WHERE day = '2010-01-01'
 ORDER BY entry
 ```

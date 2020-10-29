@@ -448,14 +448,18 @@ name: references
 - *[Version Control with Git, 2nd Edition](https://www.oreilly.com/library/view/version-control-with/9781449345037/)* 
 	Loeliger, J., & McCullough, M. (2012).  
 	O'Reilly Media, Inc.
+	- A complete book on using Git, from the basics to mastery.
 - *[gittutorial - A tutorial introduction to Git](https://git-scm.com/docs/gittutorial)*
+	- **The** introduction to Git, by its makers.
 - *[Git for Version Control](https://courses.cs.washington.edu/courses/cse403/13au/lectures/git.ppt.pdf)*
 	Software Engineering, Paul G. Allen School. 
+	- A set of slides similar to these, explaining Git concepts
 - *[Resolve merge conflicts](https://support.atlassian.com/bitbucket-cloud/docs/resolve-merge-conflicts/)*
 	Atlassian.
-- *Git Commands on GitHub
-	joshnh* on GitHub [Link](https://github.com/joshnh/Git-Commands)
-	*An interesting *cheat sheet* for command-line (advanced) use of Git*
+	- An uncomplicated guide on fixing conflicts in Git. 
+- *[Git Commands on GitHub](https://github.com/joshnh/Git-Commands)*
+	joshnh on GitHub
+	- An interesting *cheat sheet* for command-line (advanced) use of Git*
 
 {% endraw %}
 {% endhighlight %}

@@ -208,6 +208,11 @@ span.reading-time > span.actual_time{
 	color: $background-color;
 }
 
+ul#search-results > li > a:hover {
+	background-color: $background-color;
+	color: $text-color;
+}
+
 a:hover {
 	border-radius: 3px;
 }

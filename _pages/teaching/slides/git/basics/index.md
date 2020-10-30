@@ -249,7 +249,7 @@ How can Bob do it?
 
 - Bob accesses Alice's machine to clone the repository.red[*]: 
 	```bash
-	git clone alice.org:/home/alice/website /home/bob/myrepo`.
+	git clone alice.org:/home/alice/website /home/bob/myrepo
 	```
 - Bob's repository clone, at Bob's machine, will be on equal footing with the original project, with an exact copy of the entire history of the project.
 	
@@ -293,7 +293,7 @@ git remote add bob bob.org:/home/bob/myrepo
 
 - Alice can then fetch the changes committed by Bob in his repository:
 ```bash
-git remote add bob bob.org:/home/bob/myrepo
+git fetch bob
 ```
 
 ---

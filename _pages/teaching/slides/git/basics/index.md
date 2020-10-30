@@ -435,7 +435,7 @@ name: tl-dr
 - **Cloning** is to create a local copy of a repository present at some remote location
 - **Changes** are calculated automatically by Git whenever a file inside a repository is edited. They refer to lines added, removed or modified in all the files in the repository, as well as files added, deleted or renamed.
 - **Commits** are similar to milestones on a road: they are used to "mark" the current state of the repository as a milestone. When you commit your changes you are only modifying the local copy of the repository. Nothing will be *sent* anywhere.
-- **Pulling** means to retrieve the latest changes present in the remote
+- **Pulling** means to retrieve the latest changes present in a remote branch
 - **Pushing** is to send all your local commits i.e. to send all changes made locally back to the remote
 - **Branches** are like the branches on a tree. You can branch out your code to work separately on a certain functionality. When you think it is stable, you can **merge** it back into the main branch, which is like the trunk of a tree
 - **Merging** is to merge all the changes made in a separate branch back into the main branch of the repository.

@@ -431,7 +431,7 @@ name: tl-dr
 ## TL;DR
 
 - A **repository** is a folder with some files added by the VCS. 
-	- In `Git`, the root of the folder will contain an *invisible* `.git` folder with information that it uses to keep track of the changes made to everything in that folder, among other things.
+	- In `Git`, the root of the folder will contain an *invisible* `.git` folder with information that it uses to keep track of the changes made to everything in that folder, among many things.
 - **Cloning** is to create a local copy of a repository present at some remote location
 - **Changes** are calculated automatically by Git whenever a file inside a repository is edited. They refer to lines added, removed or modified in all the files in the repository, as well as files added, deleted or renamed.
 - **Commits** are similar to milestones on a road: they are used to "mark" the current state of the repository as a milestone. When you commit your changes you are only modifying the local copy of the repository. Nothing will be *sent* anywhere.

@@ -3,7 +3,7 @@ layout: page
 title: Information Systems and Databases (SIBD)- MIEEC
 permalink: /teaching/2021/ESIN_SIBD/sibd/
 crumbtitle: SIBD - 2020/2021
-tags: teaching databases web programming feup
+tags: teaching databases web programming feup sibd
 ---
 
 ## Evaluation

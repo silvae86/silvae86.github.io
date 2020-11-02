@@ -31,7 +31,7 @@ I teach courses in both the Information Science and Informatics Engineering at F
 {% include_relative teaching/exercises/exercise_list.md %}
 
 
-### How-to Guides
+### How-to Guides by Topic
 
 {% include_relative teaching/howto/howto_list.md %}
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How-to guides
+title: How-to guides by topic
 permalink: /teaching/howto/
 crumbtitle: How-to guides
 ---

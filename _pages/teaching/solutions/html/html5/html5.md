@@ -7,7 +7,7 @@ crumbtitle: HTML5
 
 # HTML Exercises Solutions
 
-## Online Newspaper.
+## Online Newspaper
 
 ```html
 <!DOCTYPE html>

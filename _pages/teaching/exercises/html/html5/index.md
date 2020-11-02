@@ -3,10 +3,10 @@ layout: page
 title: HTML 5 Exercises
 permalink: /teaching/exercises/html/html5/
 crumbtitle: HTML5
-tags: exercises html
+tags: exercises html html5 feup programming teaching web development exercises
 ---
 
-## Online Newspaper.
+## Online Newspaper
 
 Using HTML 5 only, create a prototype of an online newspaper.
 

@@ -1,68 +1,108 @@
-<div class="relatedPosts">
-  <h4 class="related-header">You May Also Enjoy</h4>
+<link rel="stylesheet" href="{{ "/assets/css/circle.css" | relative_url }}">
 
-  {% assign maxRelated = 5 %}
-  {% assign minCommonTags =  1 %}
-  {% assign maxRelatedCounter = 0 %}
-  {% assign related_posts = "" | split: ',' %}
-  {% assign all_posts_and_pages = "" | split: ',' %}
+{% assign max_related = 5 %}
+{% assign min_common_tags =  1 %}
+{% assign related_posts = "" | split: ',' %}
+{% assign all_posts_and_pages = "" | split: ',' %}
 
-  {% for post in site.posts %}
-    {% assign all_posts_and_pages = all_posts_and_pages | push: post %}
-  {% endfor %}
+{% for site_post in site.posts %}
+  {% assign all_posts_and_pages = all_posts_and_pages | push: site_post %}
+{% endfor %}
 
-  {% for page in site.pages %}
-    {% assign all_posts_and_pages = all_posts_and_pages | push: page %}
-  {% endfor %}
+{% for site_page in site.pages %}
+  {% assign all_posts_and_pages = all_posts_and_pages | push: site_page %}
+{% endfor %}
 
-  {% for post in all_posts_and_pages %}
-      {% assign sameTagCount = 0 %}
-      {% assign commonTags = "" | split: ',' %}
+{% for post in all_posts_and_pages %}
+  {% assign same_tag_count = 0 %}
+  {% assign common_tags = "" | split: ',' %}
 
-      {%- if post.tags -%}
-        {% for tag in post.tags %}
-          {% if post.url != page.url %}
-            {% if page.tags contains tag %}
-              {% assign sameTagCount = sameTagCount | plus: 1 %}
-              {% assign commonTags = commonTags | push: tag %}
-            {% endif %}
-          {% else %}
-
-          {% endif %}
-        {% endfor %}
-      {%- endif -%}
-
-      {% if sameTagCount >= minCommonTags %}
-        {% include mkhash.inc commonTags = commonTags sameTagCount = sameTagCount url = post.url  title = post.title %}
-        {% assign related_posts = related_posts | push: h %}
-
-        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-
-        {% if maxRelatedCounter >= maxRelated %}
-            {% break %}
+  {%- if post.tags -%}
+    {% for tag in post.tags %}
+      {% if post.url != page.url %}
+        {% if page.tags contains tag %}
+          {% assign same_tag_count = same_tag_count | plus: 1 %}
+          {% assign common_tags = common_tags | push: tag %}
         {% endif %}
+      {% else %}
       {% endif %}
+    {% endfor %}
+  {%- endif -%}
 
-  {% endfor %}
+  {% assign union_tags = (page.tags | concat: post.tags ) | uniq %}
+  {% assign n_union_tags = union_tags | size %}
+  {% assign n_union_tags = n_union_tags | times: 1.0 %}
 
-  {% assign sorted_posts = (related_posts | sort: "sameTagCount") | reverse %}
-  {% assign top_posts = (sorted_posts | slice: 0, maxRelated %}
+  {% assign n_common_tags = common_tags | size %}
+  {% assign n_common_tags = n_common_tags | times: 1.0 %}
 
-  {% for post in top_posts %}
-    <div>
-      <h5 class="related_post">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-     </h5>
+  {% if n_union_tags > 0 %}
+    {% assign similarity_score = n_common_tags | divided_by: n_union_tags %}
+  {% else %}
+    {% assign similarity_score = 0 %}
+  {% endif %}
 
-     <ul class="tags minitags">
-       {% for tag in post.commonTags %}
-       <li>
-         <a class="tag-pill tag-pill-mini" href="/tags#{{ tag | slugify }}">
-           {{tag}}
-         </a>
-       </li>
-       {% endfor %}
-     </ul>
-    </div>
-  {% endfor %}
+
+  {% if similarity_score > 0 %}
+    {% include
+      mkhash.inc common_tags = common_tags
+      same_tag_count = same_tag_count
+      n_union_tags = n_union_tags
+      n_common_tags = n_common_tags
+      similarity_score = similarity_score
+      url = post.url
+      title = post.title
+    %}
+    {% assign related_posts = related_posts | push: h %}
+    {% assign max_related_counter = max_related_counter | plus: 1 %}
+  {% endif %}
+
+{% endfor %}
+
+{% assign sorted_posts = related_posts | sort: "similarity_score" | reverse %}
+{% assign top_posts = (sorted_posts | slice: 0, max_related %}
+{% assign n_top_posts = (top_posts | size %}
+
+{% if n_top_posts > 0 %}
+  <div class="relatedPosts">
+    <header>
+      <h4 class="related-header">You May Also Enjoy</h4>
+    </header>
+    {% for post in top_posts %}
+      {%- if post.similarity_score > 0 and post.similarity_score < 0.25 -%}
+        {% assign ring_color = 'red' %}
+      {%- elsif post.similarity_score >= 0.25 and post.similarity_score < 0.50 -%}
+        {% assign ring_color = 'orange' %}
+      {%- elsif post.similarity_score >= 0.50 and post.similarity_score < 0.75 -%}
+        {% assign ring_color = '' %} <!-- default is blue -->
+      {%- elsif post.similarity_score >= 0.75 -%}
+        {% assign ring_color = 'green' %}
+      {%- endif -%}
+      <article class="relatedPost">
+        <div class="row">
+          <div class="hidden-sm col-md-2 c100 p{{post.similarity_score | times: 100 | round }} {{ring_color}} tiny">
+              <span>{{post.similarity_score | times: 100 | round }}%</span>
+              <div class="slice">
+                  <div class="bar"></div>
+                  <div class="fill"></div>
+              </div>
+          </div>
+          <div class="col-sm-12 col-md-10">
+            <h5 class="related_post">
+              <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+             </h5>
+             <ul class="tags minitags">
+               {% for tag in post.common_tags %}
+               <li>
+                 <a class="tag-pill tag-pill-mini" href="/tags#{{ tag | slugify }}">
+                   {{tag}}
+                 </a>
+               </li>
+               {% endfor %}
+             </ul>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
 </div>
+{% endif %}

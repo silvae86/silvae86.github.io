@@ -14,7 +14,7 @@ template:inverse
 [a distributed version-control system]
 
 ## Introduction and Basics
-by [João Rocha da Silva](https://silvae86.github.io)
+by [João Rocha da Silva](https://silvae86.github.io), based on ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by *Jon Loeliger* & Matthew McCullough and [other sources](#references).
 
 ---
 name: agenda

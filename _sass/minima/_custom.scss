@@ -55,13 +55,13 @@
 }
 
 .float-right {
-    float: left;
+    float: right;
     margin-right: 1em;
     width: 30%;
 }
 
 .float-left {
-    float: right;
+    float: left;
     margin-left: 1em;
     width: 30%;
 }
@@ -86,6 +86,11 @@ em.img-caption {
 .fullwidth {
     width: 100%;
 }
+
+.width80 {
+    width: 80%;
+}
+
 
 .img-caption {
   margin-left: auto;

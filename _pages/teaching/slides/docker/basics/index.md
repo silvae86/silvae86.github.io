@@ -1,19 +1,19 @@
 ---
 layout: keynote
-title: Git Basics
+title: Docker Basics
 permalink: /teaching/slides/docker/basics/
 ---
 {% highlight text %}
 {% raw %}
-name: git
+name: docker
 class: middle, center
 template:inverse
 
 # Docker
-[In Construction]
+[container runtime for portable and scalable application deployment]
 
 ## Introduction and Basics
-by [João Rocha da Silva](https://silvae86.github.io), based on ['Version Control with Git, 2nd Edition'](https://www.oreilly.com/library/view/version-control-with/9781449345037/) by Jon Loeliger & Matthew McCullough.
+by [João Rocha da Silva](https://silvae86.github.io), based on ['Using Docker: Developing and Deploying Software with Containers'](https://www.oreilly.com/library/view/using-docker/9781491915752/) by *Adrian Mouat* and [other sources](#references).
 
 ---
 name: agenda
@@ -24,95 +24,93 @@ class: middle, center
 
 .indexpill[[About](#about)]
 
-.indexpill[[History](#history)]
+.indexpill[[Features](#features)]
 
-.indexpill[[Concepts](#concepts)]
+.indexpill[[Virtual Machines](#virtual-machines)]
 
-.indexpill[[Centralized vs. Distributed](#centralized_vs_distributed)]
+.indexpill[[VM Hypervisor vs Docker Runtime](#hypervisor-vs-docker)]
 
-.indexpill[[Creating a repository](#creating)]
+.indexpill[[Images](#images)]
 
-.indexpill[[Cloning a repository](#clone)]
+.indexpill[[Containers](#containers)]
 
-.indexpill[[Adding files](#adding)]
+.indexpill[[Volumes](#volumes)]
 
-.indexpill[[Checking status](#status)]
+.indexpill[[Dockerfiles](#dockerfiles)]
 
-.indexpill[[Committing](#committing)]
+.indexpill[[Docker compose](#compose)]
 
-.indexpill[[Pushing your commits](#pushing)]
+.indexpill[[Docker Hub](#docker-hub)]
 
-.indexpill[[Pulling changes](#pulling)]
+.indexpill[[Example container (Web Server)](#example)]
 
-.indexpill[[Branches](#branches)]
+.indexpill[[Installation](#installation)]
 
-.indexpill[[Merging](#merging)]
-
-.indexpill[[Conflicts](#conflicts)]
-
-.indexpill[[Tracking history](#log)]
-
-]
-
-.index[
-
-.indexpill[[GitHub](#github)]
+.indexpill[[TL;DR](#tl-dr)]
 
 .indexpill[[References](#references)]
 
 ]
----
-name: about
-## About
-
-- A **distributed** source code **version control** system.
-
-- **Version control** because it tracks all changes made to the code of a software solution
-
-- **Distributed**, because it does not require a **repository server**
-	- All collaborators of the repository can synchronize their code without the need for a "central authority"
-- <u>Keeps your code safe, </u>
-
-.footnote[.red[*]We will cover some basics of Git usage in these slides. More advanced usage can be explored in the bibliography]
 
 ---
-name: history
-## History
+name: features
+## Features of Docker
 
-| | Name                      | Acronym | Type          |
-| ---- | ------------------------- | ------- | ------------- |
-| 1986 | Concurrent Version System | CVS     | Centralized   |
-| 2001 | Subversion                | SVN     | Centralized   |
-| 2000 | BitKeeper                 | -       | Decentralized |
-| 2005 | Mercurial                 | Hg      | Decentralized |
-| 2005 | Git                       | -       | Decentralized |
+- Separates Code + Infrastructure from Data (*state*)
+- Ensures portability of execution environment (no more "works on my machine!")
+- Facilitates scalability of solutions
+
+---
+name: virtual-machines
+## Virtual Machines
 
 
 ---
-name: centralized_vs_distributed
-## Centralized vs Distributed
+name: hypervisor-vs-docker
+## VM Hypervisor vs Docker Runtime
 
+.width80[
+	.center[
+		<section>
+		    <img width="47%" src="/teaching/slides/docker/basics/container-engine.png" alt="Container Engine Architectural Diagram">
+		    <img width="47%" src="/teaching/slides/docker/basics/vms.png" alt="Virtual Machines Architectural Diagram">
+		</section>
+	]
+]
+
+- Containers does not need to virtualize an Operating System
+- Containers share the host's *kernel*
+
+---
+name: images
+## Images
+
+---
+name: containers
+## Containers
 
 
 ---
-name: Concepts
-## Concepts
+name: volumes
+## Volumes
 
-- A **repository** is a folder with some "magic" added. 
-	- At the root of the folder there is a hidden `.git` folder with information that Git uses to keep track of the changes made to everything in that folder.
-- **Changes** are calculated automatically by Git whenever a file inside a repository is edited.
-- **Commits** are like the milestones on a road: they are used to "save" the current state of the repository
+
+---
+name: dockerfiles
+## Dockerfiles
+
+
+---
+name: docker-compose
+## Docker Compose
 
 ---
 name: references
 ## References
 
-- *Version Control with Git, 2nd Edition* 
-	Loeliger, J., & McCullough, M. (2012).  
-	O'Reilly Media, Inc..
-
-- *Git Commands on GitHub, by joshnh* [Link](https://github.com/joshnh/Git-Commands)
-	- An interesting *cheat sheet* for command-line (advanced) use of Git
+- *Using Docker: Developing and Deploying Software with Containers*
+	Mouat, A. (2016).  
+	O'Reilly Media, Inc.
 
 {% endraw %}
 {% endhighlight %}

@@ -76,7 +76,7 @@ Make sure that in smaller screens, the form fills the content area like [this](n
 - Copy the following HTML code: [news.html](/teaching/exercises/css/css3/html-template/) into a new *.html* file.
 - Open it and observe its structure.
 - As you might have noticed, this document references a, not yet created, file named *style.css* as its style sheet. Create that file and modify it so that the page appearance becomes as similar to the following designs as possible: style 1 , style 2 and style 3
-- Style 2 uses the following image: <img src="stripe.png">
+- Style 2 uses the following image: <img src="stripe.png" alt="Stripe pattern">
 
 Extra: Now try the same exercises, this time using flexbox and grid layouts.
 

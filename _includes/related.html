@@ -66,7 +66,8 @@
 {% if n_top_posts > 0 %}
   <div class="relatedPosts">
     <header>
-      <h4 class="related-header">You May Also Enjoy</h4>
+      <h4 class="related-header">Related posts</h4>
+      <h5 class="about">Similarity determined via <a href="https://en.wikipedia.org/wiki/Jaccard_index">Jaccard similarity</a> between this page's tags and the tags of every other page in this website.</h4>
     </header>
     {% for post in top_posts %}
       {%- if post.similarity_score > 0 and post.similarity_score < 0.25 -%}

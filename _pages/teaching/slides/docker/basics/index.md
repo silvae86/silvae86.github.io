@@ -24,7 +24,7 @@ class: middle, center
 
 .indexpill[[About](#about)]
 
-.indexpill[[Features](#features)]
+.indexpill[[Why Docker?](#why)]
 
 .indexpill[[Virtual Machines](#virtual-machines)]
 
@@ -36,7 +36,7 @@ class: middle, center
 
 .indexpill[[Volumes](#volumes)]
 
-.indexpill[[Dockerfiles](#dockerfiles)]
+.indexpill[[Dockerfiles](#dockerfile)]
 
 .indexpill[[Docker compose](#compose)]
 
@@ -53,8 +53,8 @@ class: middle, center
 ]
 
 ---
-name: features
-## Features of Docker
+name: why
+## Why Docker?
 
 - Separates Code + Infrastructure from Data (*state*)
 - Ensures portability of execution environment (no more "works on my machine!")
@@ -82,6 +82,20 @@ name: hypervisor-vs-docker
 - Containers share the host's *kernel*
 
 ---
+name: architecture
+## Architecture
+
+.width100[
+	.center[
+		<section>
+		    <img width="47%" src="/teaching/slides/docker/basics/architecture.svg" alt="Docker Architecture">
+		</section>
+	]
+]
+
+- An overview of the Docker architecture (Image by Docker - [link](https://docs.docker.com/get-started/overview/))
+
+---
 name: images
 ## Images
 
@@ -96,8 +110,18 @@ name: volumes
 
 
 ---
-name: dockerfiles
-## Dockerfiles
+name: networking
+## Networking
+
+
+---
+name: commands
+## Commands
+
+
+---
+name: dockerfile
+## The Dockerfile
 
 
 ---
@@ -111,6 +135,10 @@ name: references
 - *Using Docker: Developing and Deploying Software with Containers*
 	Mouat, A. (2016).  
 	O'Reilly Media, Inc.
+
+- *Docker Overview*
+	Docker Docs  
+	[https://docs.docker.com/get-started/overview/](https://docs.docker.com/get-started/overview/)
 
 {% endraw %}
 {% endhighlight %}

@@ -99,7 +99,7 @@ In English:
 > In the classes of type B, it is recommended that the classes be divided in two halves, using the parity of the student number. The presence of the students in the room according to this rule is defined weekly in the [school calendar](https://sigarra.up.pt/feup/pt/web_gessi_docs.download_file?p_name=F-605574312/Calend_Outros.pdf) that can be accessed via FEUP's SIGARRA with a "P" (even) or "I" (odd).
 
 
-![Odd Even Attendance]({% link _pages/teaching/2021/ESIN_SIBD/common/odd_even_attendance.png %}){:class="img-center fullwidth"}
+![Odd Even Attendance]({% link _pages/teaching/2021/ESIN_SIBD/common/odd_even_attendance.png %}){:class="img-center width100"}
 
 *P = Even student number must attend; I = Odd student number must attend.*{:class="img-caption"}
 

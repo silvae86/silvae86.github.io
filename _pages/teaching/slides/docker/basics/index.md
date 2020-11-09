@@ -28,13 +28,19 @@ class: middle, center
 
 .indexpill[[Virtual Machines](#virtual-machines)]
 
-.indexpill[[VM Hypervisor vs Docker Runtime](#hypervisor-vs-docker)]
+.indexpill[[VMs vs. 'bare metal'](#virtual-machines-vs-bare-metal)]
+
+.indexpill[[VMs vs Containers](#vms-vs-containers)]
 
 .indexpill[[Images](#images)]
 
 .indexpill[[Containers](#containers)]
 
 .indexpill[[Volumes](#volumes)]
+
+.indexpill[[Networking](#networking)]
+
+.indexpill[[Commands](#common-commands)]
 
 .indexpill[[Dockerfiles](#dockerfile)]
 
@@ -58,16 +64,52 @@ name: why
 
 - Separates Code + Infrastructure from Data (*state*)
 - Ensures portability of execution environment (no more "works on my machine!")
-- Facilitates scalability of solutions
+- Makes it easi*er* to scale solutions dynamically by running more or less containers
+	- Solution can handle more or less users as needed
+	- Important for the cloud, where resources (and the costs!) are dynamic
 
 ---
 name: virtual-machines
 ## Virtual Machines
 
+- A virtual machine is a software that *simulates* a computer's hardware and software components
+- Several virtual machines can run in a single physical, or *bare metal* machine
+	- Makes it easy to set up a *multi-tenant* environment, where resources are shared among the various VMs, which can even belong to
+- The *hypervisor* is the software that powers the virtual machines
+	- It provides virtual networking and storage layers (virtual network cards and virtual hard drives)
+	- Controls access to CPU and memory of the physical machine
+- Virtual machines
 
 ---
-name: hypervisor-vs-docker
-## VM Hypervisor vs Docker Runtime
+name: virtual-machines-vs-bare-metal
+## VM vs. Bare Metal
+
+Advantages and disadvantages of running virtual machines over 'bare metal'
+
+.left[
+### Advantages
+- Portability and hardware-agnosticism
+	- The same VM can run in computers with very different hardware and software configurations
+	- The *hypervisor* provides an abstraction layer between the virtual and physical hardware configurations
+- Faster disaster recovery
+	- Virtual machines can be backed up
+- Isolation
+	- Improved security for shared servers, as several users can have full administration previledges their own VMs
+- Abstraction
+	-
+]
+
+.right [
+### Disadvantages
+- High resource consumption
+	 - The physical machine needs to virtualize everything, including the operating system
+- Lack of access to some low-level functions
+	- Everything is virtualized,
+]
+
+---
+name: vms-vs-containers
+## VMs vs Containers (Cont'd)
 
 .width80[
 	.center[
@@ -78,8 +120,25 @@ name: hypervisor-vs-docker
 	]
 ]
 
-- Containers does not need to virtualize an Operating System
-- Containers share the host's *kernel*
+- Containers does not need to virtualize the Operating System
+- Containers share the host's operating system and *kernel*
+
+---
+name: vms-vs-containers-2
+## VMs vs Containers (Cont'd)
+
+Advantages and disadvantages of running containers when compared to virtual machines
+
+.left[
+### Advantages
+- Vast reduction in resource usage
+- Much faster spin up and spin down than a VM
+]
+
+.right [
+
+
+]
 
 ---
 name: architecture
@@ -114,9 +173,10 @@ name: networking
 ## Networking
 
 
+
 ---
 name: commands
-## Commands
+## Common commands
 
 
 ---

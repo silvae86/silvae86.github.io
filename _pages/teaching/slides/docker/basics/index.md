@@ -76,7 +76,8 @@ name: why
 - .good[**Security**]
 	- Containers apply aggressive constraints and isolations to processes without any configuration required on the part of the user.
 
-.footnote[.tiny[Source: "Orientation and setup", by [Docker](https://docs.docker.com/get-started/)]]
+
+.footnote[.tiny[Source: "Orientation and setup", by [Docker](https://docs.docker.com/get-started/)]].
 
 ---
 name: why-2
@@ -102,7 +103,7 @@ name: virtual-machines
 
 ### What are they?
 
-- A virtual machine is a software that *simulates* a computer's hardware and software components
+- A virtual machine is a software that *simulates* a physical computer's hardware and software components
 
 ### Host vs. Guest
 
@@ -159,25 +160,8 @@ name: vms-vs-containers
 	]
 ]
 
-- Containers does not need to virtualize the Operating System
+- Containers does not need to virtualize the Operating System, saving memory
 - Containers share the host's operating system and *kernel*
-
----
-name: vms-vs-containers-2
-## VMs vs Containers (Cont'd)
-
-Advantages and disadvantages of running containers when compared to virtual machines
-
-.left[
-### Advantages
-- Vast reduction in resource usage
-- Much faster spin up and spin down than a VM
-]
-
-.right [
-
-
-]
 
 ---
 name: architecture
@@ -185,17 +169,16 @@ name: architecture
 
 .width100[
 	.center[
-		<section>
-		    <img width="47%" src="/teaching/slides/docker/basics/architecture.svg" alt="Docker Architecture">
-		</section>
+		![/teaching/slides/docker/basics/architecture.png]("Docker Architecture")
 	]
 ]
 
-- An overview of the Docker architecture (Image by Docker - [link](https://docs.docker.com/get-started/overview/))
+- An overview of the Docker architecture (Image by Docker - [Source](https://docs.docker.com/get-started/overview/))
 
 ---
 name: images
 ## Images
+
 
 ---
 name: containers

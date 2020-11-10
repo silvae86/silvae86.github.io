@@ -62,83 +62,89 @@ class: middle, center
 name: why
 ## Why Docker? (1/2)
 
-### Main advantages
-
-- **Flexibility**
+- .good[**Flexibility**]
 	- Practically any application can be containerized
-- **Lightweight**
+- .good[**Lightweight**]
 	- Containers share the host Kernel, without virtualizing an OS for every application, saving resources
-- **Portability**
+- .good[**Portability**]
 	- Ensures portability of execution environment on any machine
 	- Application, pre-requisites and dependencies are packaged together
-- **Scalability**
+- .good[**Scalability**]
 	- From a single container on your laptop or thousands in the cloud, it is all the same technology
-- **Loose coupling**
+- .good[**Loose coupling**]
 	- Containers are highly self-sufficient and encapsulated, and can be updated individually without upsetting others
-- **Security**: Containers apply aggressive constraints and isolations to processes without any configuration required on the part of the user.
+- .good[**Security**]
+	- Containers apply aggressive constraints and isolations to processes without any configuration required on the part of the user.
 
-.footnote[.tinytext[Source: "Orientation and setup", by [Docker](https://docs.docker.com/get-started/)]]
+.footnote[.tiny[Source: "Orientation and setup", by [Docker](https://docs.docker.com/get-started/)]]
 
 ---
 name: why-2
 ## Why Docker? (2/2)
 
-### More advantages
-
-**Elasticity for the cloud**
-
-- In the cloud, computational resources should be purchased as needed
+- .good[**Elasticity for the cloud**]
+	- In the cloud, computational resources should be purchased as needed
 	- Too many users for too little computational power &rarr; poor system performance
 	- Too many resources for too little users &rarr; waste of money
-- Docker makes it easier to scale applications up to meet peak loads, and then scale down during downtime
-	- Spin up more or less containers (*replicas* of the application) across a datacenter, to respond to application loading
+	- Docker makes it easier to scale applications up to meet peak loads, and then scale down during downtime
+		- Spin up more or less containers (*replicas* of the application) across a datacenter, to respond to application loading
 
-- **Separation of code from state**:
+- .good[**Separation of code from state**]
 	- Separates code+infrastructure (*application logic*) configuration from Data (*application state*)
 	- Backups only need to worry about the data, as code and infrastructure can be built on-the-fly
 
-- **Native CPU scheduling**
+- .good[**Native CPU scheduling**]
  	- On Linux, containers are seen by the Kernel as independent processes, so they can be efficiently managed by the CPU scheduler
 
 ---
 name: virtual-machines
-## Virtual Machines
+## Virtual Machines (1/2)
+
+### What are they?
 
 - A virtual machine is a software that *simulates* a computer's hardware and software components
+
+### Host vs. Guest
+
 - Several **virtual** machines can run in a single **physical**, or *bare metal* machine
-	- Virtual machines are typically called "guests" while the physical machines where they run are called "hosts"
-	- Makes it easy to set up a *multi-tenant* environment, where resources are shared among the various VMs, which can even belong to
-- The *hypervisor* is the software that powers the virtual machines
-	- It provides virtual networking and storage layers (virtual network cards and virtual hard drives)
-	- Controls access to CPU and memory of the physical machine
-- Virtual machines
+	- Virtual machines are typically called "guests" 
+	- The physical machines where they run are called "hosts"
 
 ---
-name: virtual-machines-vs-bare-metal
-## VM vs. Bare Metal
+name: virtual-machines-2
+## Virtual Machines (2/2)
 
-Advantages and disadvantages of running virtual machines over 'bare metal'
+### The hypervisor
+- The *hypervisor* is the software that powers the virtual machines
+	- It provides virtual networking and storage layers (virtual network cards and virtual hard drives)
+	- Controls how much % of CPU and RAM of the host is given to each of the guests
+ 
 
-.left[
-### Advantages
+---
+name: virtual-machines-advantages-disadvantages
+## Virtual machines vs. 'bare-metal'
+
+### .good[Advantages]
 - Portability and hardware-agnosticism
 	- The same VM can run in computers with very different hardware and software configurations
 	- The *hypervisor* provides an abstraction layer between the virtual and physical hardware configurations
 - Faster disaster recovery
 	- Virtual machines can be backed up
 - Isolation
-	- Improved security for shared hardware machines-several users can have full administration privileges their own VMs, but without
-- Abstraction
-	-
-]
+	- Improved security for shared hardware machines-several users can have full administration privileges inside their own VMs, but without any access to the host
+	- VMs make it easier to set up a *multi-tenant* environment, where resources are shared among the various VMs, which can even belong to different people.
 
-.right [
-### Disadvantages
+---
+name: virtual-machines-advantages-disadvantages-2
+
+### .bad[Disadvantages]
 - High resource consumption
-	 - The physical machine needs to virtualize everything, including the operating system
+	 - The physical machine needs to virtualise everything, including the operating system - RAM usage is the same as that of a 'bare-metal' machine. The host needs a lot of RAM to run several VMs at the same time.
+	 - Running many VMs on the same host can slow down even powerful servers, because the access to hard drive needs to be split among multiple concurrent and random accesses--- this is especially hard on mechanical hard drives, not so much on SSDs.
 - Lack of access to some low-level functions
-	- Everything is virtualized,
-]
+	- If your application needs direct access to some low-level / hardware capabilities (such as 3D acceleration), those may be unavailable.
+- Backups need to include the entire virtual machine
+	- Very large files, as the virtual machine "virtual hard drive" takes as much space as an entire hard drive of a 'bare-metal' machine (~hundreds of GB **each**!).
 
 ---
 name: vms-vs-containers

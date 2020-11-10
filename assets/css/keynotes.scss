@@ -111,3 +111,28 @@ thead {
 	margin-top: 150px;
 	margin-bottom: 150px;
 }
+
+// good and bad headers (for advantages/disadvantages slides)
+span.good {
+	display: block;
+	color: #3A3;
+}
+
+span.good::after {
+	content: " ✅";
+}
+
+span.bad {
+	display: block;
+	color: #A33;
+}
+
+span.bad::after {
+	content: " ❌";
+};
+
+// for very small footnotes
+
+.tiny {
+	font-size:0.5em;
+}

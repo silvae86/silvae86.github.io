@@ -12,7 +12,7 @@ template:inverse
 # Docker
 [a container runtime for software deployments]
 
-## Introduction and Basics
+## Concepts and Introduction
 by [João Rocha da Silva](https://silvae86.github.io), based on ['Using Docker: Developing and Deploying Software with Containers'](https://www.oreilly.com/library/view/using-docker/9781491915752/) by *Adrian Mouat* and [other sources](#references).
 
 ---
@@ -108,7 +108,7 @@ name: virtual-machines
 ### Host vs. Guest
 
 - Several **virtual** machines can run in a single **physical**, or *bare metal* machine
-	- Virtual machines are typically called "guests" 
+	- Virtual machines are typically called "guests"
 	- The physical machines where they run are called "hosts"
 
 ---
@@ -119,7 +119,7 @@ name: virtual-machines-2
 - The *hypervisor* is the software that powers the virtual machines
 	- It provides virtual networking and storage layers (virtual network cards and virtual hard drives)
 	- Controls how much % of CPU and RAM of the host is given to each of the guests
- 
+
 
 ---
 name: virtual-machines-advantages-disadvantages
@@ -137,6 +137,7 @@ name: virtual-machines-advantages-disadvantages
 
 ---
 name: virtual-machines-advantages-disadvantages-2
+## Virtual machines vs. 'bare-metal'
 
 ### .bad[Disadvantages]
 - High resource consumption
@@ -169,7 +170,7 @@ name: architecture
 
 .width100[
 	.center[
-		![/teaching/slides/docker/basics/architecture.png]("Docker Architecture")
+		!["Docker Architecture"](/teaching/slides/docker/basics/architecture.png)
 	]
 ]
 
@@ -179,12 +180,25 @@ name: architecture
 name: images
 ## Images
 
+- Read-only **templates** with instructions for creating a Docker container
+- Often based on other images. e.g. : you can start with from a `ubuntu` image (*base image*) and install additional libraries, resulting in a new image.
+	- Steps to go from one image to another are like *layers*, because an image is like an onion: made up of several successive sets of changes.
+	- When images are rebuilt, only the modified layers are remade, and the base image recovered from *cache*. This makes image building much more efficient than building a VM using, say, [Vagrant](https://www.vagrantup.com/).
+- Images are built using [Dockerfiles](#dockerfile), written as a sequence of steps to go from the *base image* to your final image. Every step in a Dockerfile creates a new *layer*.
+- You can `pull` them from an image registry, i.e. [Docker Hub](https://hub.docker.com/search?q=&type=image&image_filter=official), or build and `push` your own to Docker hub to publish your work.
 
 ---
 name: containers
 ## Containers
 
+- Containers are a runnable *instance* of an image.
+	- Instance because you can start __multiple containers__ from the same image---like baking cookies from the same mold!
+- You can `start`, `stop`, `move`, or `delete` containers using the `docker` command.
+- Connectors can be connected to one or more *networks*---separate them for security via isolation, or connect them so they work together
+- Attach storage to the container via **volumes**---like plugging in an external hard drive to keep changed files after the container is shut down.
+- You can `save` a new image from the current state of a container.
 
+.dangerbox[If you `start` a container from an image and anything is modified inside the container, all will be lost when you `stop` and `rm` it.]
 ---
 name: volumes
 ## Volumes
@@ -192,7 +206,7 @@ name: volumes
 
 ---
 name: networking
-## Networking
+## Networks
 
 
 

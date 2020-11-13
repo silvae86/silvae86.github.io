@@ -198,11 +198,37 @@ name: containers
 - Attach storage to the container via **volumes**---like plugging in an external hard drive to keep changed files after the container is shut down.
 - You can `save` a new image from the current state of a container.
 
-.dangerbox[If you `start` a container from an image and anything is modified inside the container, all will be lost when you `stop` and `rm` it.]
+.dangerbox[If you `start` a container from an image and anything is modified inside the container, all changes be lost when you `stop` and `rm` it.]
 ---
 name: volumes
-## Volumes
+## Volumes (1/2)
 
+- Without volumes, containers contain both application code and state
+	- When the container is removed, so are the changes made since its instantiation from its base image
+- A volume acts a like a "mount point" for a container
+	- It "injects" a link to a folder from the host machine into the container's file structure
+	- That becomes a shared folder between host and container
+	- You can also use `tmpfs` in Linux to create a memory-based volume for using RAM as a virtual file structure
+- By default, volumes are **bidirectional**
+	- Changes made by the host to any file within the volume are reflected inside container at the volume's mount point and vice-versa
+	- `readonly` volumes will allow the container to read files in the volume, but not change them
+.width30[
+	.center[
+		!["Docker Volumes"](/teaching/slides/docker/basics/types-of-mounts-volume.png)
+	]
+]
+.tiny[Docker volumes (Image by Docker - [Source](https://docs.docker.com/storage/volumes/))]
+
+---
+name: volumes
+## Volumes (2/2)
+
+- Volumes are very useful for backups
+	- You link only the folders within the container that have your application state (say, the folders where you have database files, uploaded images, and any other) 
+	- Ignore the rest of the operating system in each container, because all dependencies are handled by the image 
+	- To backup, instead of making an image of the entire container, you just copy the volume folders in the host
+	- To go back in time, just replace the volume folders' content with your backup and start a new with those volumes!
+- Read and write to/from volume folders can be quote slow on non-Linux operating systems. Watch out if you need intensive I/O.
 
 ---
 name: networking

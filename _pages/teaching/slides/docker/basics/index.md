@@ -28,6 +28,8 @@ class: middle, center
 
 .indexpill[[Virtual Machines vs. 'bare metal'](#virtual-machines-vs-bare-metal)]
 
+.indexpill[[Hypervisor](#hypervisor)]
+
 .indexpill[[About Docker](#about)]
 
 .indexpill[[Why Docker?](#why-docker)]
@@ -46,15 +48,13 @@ class: middle, center
 
 .indexpill[[Dockerfiles](#dockerfile)]
 
-.indexpill[[Docker compose](#compose)]
+.indexpill[[Docker Compose](#compose)]
 
 .indexpill[[Docker Hub](#docker-hub)]
 
-.indexpill[[Example container (Web Server)](#example)]
-
 .indexpill[[Installation](#installation)]
 
-.indexpill[[TL;DR](#tl-dr)]
+.indexpill[[Example container (Web Server)](#example)]
 
 .indexpill[[References](#references)]
 
@@ -62,7 +62,7 @@ class: middle, center
 
 ---
 name: virtual-machines
-## Virtual Machines (1/2)
+## Virtual Machines
 
 ### What are they?
 
@@ -75,15 +75,39 @@ name: virtual-machines
 	- The physical machines where they run are called "hosts"
 
 ---
-name: virtual-machines-2
-## Virtual Machines (2/2)
+name: virtual-machines-vs-bare-metal
+## Virtual machines vs. 'bare-metal' - Advantages
 
-### The hypervisor
-- The *hypervisor* is the software that powers the virtual machines
-	- It provides virtual networking and storage layers (virtual network cards and virtual hard drives)
-	- Controls how much % of CPU and RAM of the host is given to each of the guests
+- .good[Portability and hardware-agnosticism]
+	- The same VM can run in computers with very different hardware and software configurations
+	- The [*hypervisor*](#hypervisor) provides an abstraction layer between the virtual and physical hardware configurations
+- .good[Faster disaster recovery]
+	- Virtual machines can be backed up and restored simply by copying and pasting their *virtual* hard drives, which are simple files on the host's file system.
+- .good[Isolation]
+	- Improved security for shared hardware machines-several users can have full administration privileges inside their own VMs, but without any access to the host
+	- VMs make it easier to set up a *multi-tenant* environment, where resources are shared among the various VMs, which can even belong to different people.
 
+---
+name: virtual-machines-vs-bare-metal-2
+## Virtual machines vs. 'bare-metal' - Disadvantages
 
+- .bad[High resource consumption]
+	 - The physical machine needs to virtualise everything, including the operating system - RAM usage is the same as that of a 'bare-metal' machine. The host needs a lot of RAM to run several VMs at the same time.
+	 - Running many VMs on the same host can slow down even powerful servers, because the access to hard drive needs to be split among multiple concurrent and random accesses--- this is especially hard on mechanical hard drives, not so much on SSDs.
+- .bad[Lack of access to some low-level functions]
+	- If your application needs direct access to some low-level / hardware capabilities (such as 3D acceleration), those may be unavailable.
+- .bad[Backups need to include the entire virtual machine]
+	- Very large files, as the virtual machine "virtual hard drive" takes as much space as an entire hard drive of a 'bare-metal' machine (~hundreds of GB **each**!).
+
+---
+name: hypervisor
+## The hypervisor
+- Software that powers the virtual machines
+- It provides virtual networking and storage layers (virtual network cards and virtual hard drives)
+- Controls how much % of CPU and RAM of the host is given to each of the guests
+
+<br>
+<br>
 
 
 .cols[
@@ -103,31 +127,6 @@ name: virtual-machines-2
 ]
 ]
 ]
-
----
-name: virtual-machines-vs-bare-metal
-## Virtual machines vs. 'bare-metal' - Advantages
-
-- .good[Portability and hardware-agnosticism]
-	- The same VM can run in computers with very different hardware and software configurations
-	- The *hypervisor* provides an abstraction layer between the virtual and physical hardware configurations
-- .good[Faster disaster recovery]
-	- Virtual machines can be backed up and restored simply by copying and pasting their *virtual* hard drives, which are simple files on the host's file system.
-- .good[Isolation]
-	- Improved security for shared hardware machines-several users can have full administration privileges inside their own VMs, but without any access to the host
-	- VMs make it easier to set up a *multi-tenant* environment, where resources are shared among the various VMs, which can even belong to different people.
-
----
-name: virtual-machines-vs-bare-metal-2
-## Virtual machines vs. 'bare-metal' - Disadvantages
-
-- .bad[High resource consumption]
-	 - The physical machine needs to virtualise everything, including the operating system - RAM usage is the same as that of a 'bare-metal' machine. The host needs a lot of RAM to run several VMs at the same time.
-	 - Running many VMs on the same host can slow down even powerful servers, because the access to hard drive needs to be split among multiple concurrent and random accesses--- this is especially hard on mechanical hard drives, not so much on SSDs.
-- .bad[Lack of access to some low-level functions]
-	- If your application needs direct access to some low-level / hardware capabilities (such as 3D acceleration), those may be unavailable.
-- .bad[Backups need to include the entire virtual machine]
-	- Very large files, as the virtual machine "virtual hard drive" takes as much space as an entire hard drive of a 'bare-metal' machine (~hundreds of GB **each**!).
 
 ---
 name: why-docker
@@ -172,17 +171,24 @@ name: why-docker-2
 name: vms-vs-containers
 ## VMs vs Containers (Cont'd)
 
-.width80[
-	.center[
-		<section>
-		    <img width="42%" src="/teaching/slides/docker/basics/container-engine.png" alt="Container Engine Architectural Diagram">
-		    <img width="42%" src="/teaching/slides/docker/basics/vms.png" alt="Virtual Machines Architectural Diagram">
-		</section>
-	]
+.center[
+.cols[
+.fifty[
+.center[
+.imgmd2[![Container Engine Architectural Diagram](/teaching/slides/docker/basics/container-engine.png)]
+]
+]
+.fifty[
+.center[
+.imgmd2[![Virtual Machines Architectural Diagram](/teaching/slides/docker/basics/vms.png)]
+]
+]
+]
 ]
 
-- Containers does not need to virtualize the Operating System, saving memory
-- Containers share the host's operating system and *kernel*
+- Containers share the host's OS and kernel, and do not need to virtualize the Operating System &rarr; saving memory
+
+.footnote[.tiny[Images from [*Using Docker: Developing and Deploying Software with Containers*](#references)]]
 
 ---
 name: architecture
@@ -304,9 +310,11 @@ name: volumes
 name: networking
 ## Networks
 
+- Flexible network architecture
+	- Docker containers can live on the same network as other VMs, bare-metal machines, or containers
 
 
-.footnote[.tiny[Source: [https://docs.docker.com/network/](https://docs.docker.com/network)]
+.footnote[.tiny[Source: [https://docs.docker.com/network/](https://docs.docker.com/network)]]
 ---
 name: commands
 ## Common commands

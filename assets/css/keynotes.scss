@@ -71,9 +71,18 @@ $min_height: 150;
 	@include scaledimage(60)
 }
 
+.imgmd2 {
+	@include scaledimagecontainer(50)
+}
+
+.imgmd2 img {
+	@include scaledimage(50)
+}
+
 .imglg {
 	@include scaledimagecontainer(80)
 }
+
 
 .imglg img {
 	@include scaledimage(80)
@@ -100,6 +109,7 @@ $min_height: 150;
   }
   
   .fifty {
+	align-self: flex-end;
     flex: 50%;
   }
 
@@ -169,4 +179,8 @@ span.dangerbox::before {
 
 .center {
 	margin: 0 auto;
+}
+
+.width80 {
+	width:80%;
 }

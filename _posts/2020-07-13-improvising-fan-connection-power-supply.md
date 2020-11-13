@@ -7,7 +7,7 @@ tags: corsair power supply ax860 summer heat power supply
 
 These days have been blistering hot, so I had to improvise a fan with some hardware I had at home. Here I am using a [Corsair AX860 Power Supply](http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575597576&toolid=10001&campid=5338700334&customid=&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2334524.m570.l1313.TR5.TRC1.A0.H0.XCorsair%2BAX860.TRS0%26_nkw%3DCorsair%2BAX860%26_sacat%3D42017%26LH_TitleDesc%3D0%26_odkw%3Dcorsair%2Bml120) and a [120mm Corsair ML120 fan](http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575597576&toolid=10001&campid=5338700334&customid=&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dp2499334.m570.l1313.TR11.TRC1.A0.H0.Xcorsair%2Bml120.TRS0%26_nkw%3Dcorsair%2Bml120%26_sacat%3D42017) that I had lying around.
 
-![Computer fan hooked up to a power supply!](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/final_product.jpg){:class="img-center fullwidth"}
+![Computer fan hooked up to a power supply!](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/final_product.jpg){:class="img-center width100"}
 *Computer fan hooked up to a power supply!*{:class="img-caption"}
 
 ## Bill of materials
@@ -21,19 +21,19 @@ These days have been blistering hot, so I had to improvise a fan with some hardw
 ## Procedure
 
 1. Cut a short (e.g. 4cm) piece of wire and stript the ends. 
-	![A short piece of wire with ends stripped](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/short_stripped_cable.jpg){:class="img-center fullwidth"}
+	![A short piece of wire with ends stripped](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/short_stripped_cable.jpg){:class="img-center width100"}
 *A short piece of wire with ends stripped*{:class="img-caption"}
 
 2. Using a knife or boxcutter, cut the edge of the female end of the 3-pin fan extension cable so that it can fit into the 4-pin PWM male header of the fan.
-	![3-pin extension with one of the sides removed](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/cut_female_header.jpg){:class="img-center fullwidth"}
+	![3-pin extension with one of the sides removed](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/cut_female_header.jpg){:class="img-center width100"}
 *3-pin extension with one of the sides removed*{:class="img-caption"}
 
 3. Unpin the red and yellow wires from the male connector of the fan extension. You can use a needle to press against the visible metal on the back of the connector and gently pull the wires out.
-	![Male fan header connector pins](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/fan_male_header_pins.jpg){:class="img-center fullwidth"}
+	![Male fan header connector pins](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/fan_male_header_pins.jpg){:class="img-center width100"}
 *Male fan header connector pins. Press with a needle to unpin each cable*{:class="img-caption"}
 
 4. Insert the short piece of wire into the 24-pin ATX cable of the PSU, as shown in the diagram below.
-	![Electrical connections](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/ATX_PS_signals.png){:class="img-center fullwidth"}
+	![Electrical connections](/assets/images/post-images/2020-07-13-improvising-fan-connection-power-supply/ATX_PS_signals.png){:class="img-center width100"}
 *Electrical connections on the ATX PSU. Image based on this one: [click](https://en.wikipedia.org/wiki/ATX#/media/File:ATX_PS_signals.svg)*{:class="img-caption"}
 
 5. Insert the red wire of the fan extension into a +12V hole of the 24-pin plug. Any hole marked as +12V1 or +12V2 in the diagram will work.

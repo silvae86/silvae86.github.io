@@ -7,6 +7,11 @@ $monokai_cyan: #66d9ef !default;
 $monokai_green: #a6e22e !default;
 $monokai_orange: #fd971f !default;
 
+$good-color: #3A3;
+$bad-color: #A33;
+$warning-color: yellow;
+$danger-color: #A33;
+
 // start content
 @charset "utf-8";
 
@@ -23,7 +28,7 @@ $monokai_orange: #fd971f !default;
 	background-color: $monokai_dark;
 	font-size:1.1em;
 	margin-left:1em;
-	margin-right:1em;	
+	margin-right:1em;
 	padding:10px;
 }
 
@@ -67,9 +72,18 @@ $min_height: 150;
 	@include scaledimage(60)
 }
 
+.imgmd2 {
+	@include scaledimagecontainer(50)
+}
+
+.imgmd2 img {
+	@include scaledimage(50)
+}
+
 .imglg {
 	@include scaledimagecontainer(80)
 }
+
 
 .imglg img {
 	@include scaledimage(80)
@@ -91,6 +105,15 @@ $min_height: 150;
 	@include scaledimage(110)
 }
 
+.cols {
+    display: flex;
+  }
+  
+  .fifty {
+	align-self: flex-end;
+    flex: 50%;
+  }
+
 // Tables
 table, th, td {
 	border: 1px solid;
@@ -110,4 +133,69 @@ thead {
 .largemargin img {
 	margin-top: 150px;
 	margin-bottom: 150px;
+}
+
+// good and bad headers (for advantages/disadvantages slides)
+span.good {
+	display: block;
+	color: $good-color;
+}
+
+span.good::after {
+	content: " ✅";
+}
+
+span.bad {
+	display: block;
+	color: $bad-color;
+}
+
+span.bad::after {
+	content: " ❌";
+};
+
+span.dangerbox {
+	display: block;
+	padding: 1em;
+	background-color: transparentize($danger-color, 0.4);
+	border-radius: 0.5em;
+	border-style: solid;
+	border-width: 3px;
+}
+
+span.dangerbox::before {
+	font-size: 1.2em;
+	content: "💀 ";
+}
+
+span.warningbox {
+	display: block;
+	padding: 1em;
+	background-color: transparentize($warning-color, 0.4);
+	border-radius: 0.5em;
+	border-style: solid;
+	border-width: 3px;
+}
+
+span.warningbox::before {
+	font-size: 1.2em;
+	content: "⚠ ";
+}
+
+// for very small footnotes
+
+.tiny {
+	font-size:0.5em;
+}
+
+.small {
+	font-size:0.8em;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.width80 {
+	width:80%;
 }

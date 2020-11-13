@@ -7,7 +7,7 @@ $monokai_cyan: #66d9ef !default;
 $monokai_green: #a6e22e !default;
 $monokai_orange: #fd971f !default;
 
-$good-color: #A33;
+$good-color: #3A3;
 $bad-color: #A33;
 $warning-color: yellow;
 
@@ -144,7 +144,7 @@ span.dangerbox {
 	border-width: 3px;
 }
 
-span.dangerbox::first-letter::before {
+span.dangerbox::before {
 	font-size: 1.2em;
 	content: "⚠️ ";
 }
@@ -153,4 +153,8 @@ span.dangerbox::first-letter::before {
 
 .tiny {
 	font-size:0.5em;
+}
+
+.small {
+	font-size:0.8em;
 }

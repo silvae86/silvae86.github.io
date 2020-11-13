@@ -168,13 +168,11 @@ name: vms-vs-containers
 name: architecture
 ## Architecture
 
-.width100[
-	.center[
-		!["Docker Architecture"](/teaching/slides/docker/basics/architecture.png)
-	]
-]
+.center[
+.imgfull[!["Docker Architecture"](/teaching/slides/docker/basics/architecture.png)]
 
-- An overview of the Docker architecture (Image by Docker - [Source](https://docs.docker.com/get-started/overview/))
+.tiny[An overview of the Docker architecture (Image by Docker - [Source](https://docs.docker.com/get-started/overview/))]
+]
 
 ---
 name: images
@@ -199,36 +197,65 @@ name: containers
 - You can `save` a new image from the current state of a container.
 
 .dangerbox[If you `start` a container from an image and anything is modified inside the container, all changes be lost when you `stop` and `rm` it.]
+
 ---
 name: volumes
-## Volumes (1/2)
+## Volumes (1/4) - What are they?
 
-- Without volumes, containers contain both application code and state
-	- When the container is removed, so are the changes made since its instantiation from its base image
-- A volume acts a like a "mount point" for a container
+.center[
+.imgmd[!["Docker Volumes"](/teaching/slides/docker/basics/types-of-mounts-volume.png)]
+
+.tiny[Docker volumes (Image by Docker - [Source](https://docs.docker.com/storage/volumes/))]
+]
+
+- Without volumes, containers contain both application code and state (no separation)
+	- When the container is deleted, so are any changes made since its instantiation from its base image
+- A volume acts a like a *mount point* for a container
 	- It "injects" a link to a folder from the host machine into the container's file structure
 	- That becomes a shared folder between host and container
-	- You can also use `tmpfs` in Linux to create a memory-based volume for using RAM as a virtual file structure
-- By default, volumes are **bidirectional**
-	- Changes made by the host to any file within the volume are reflected inside container at the volume's mount point and vice-versa
-	- `readonly` volumes will allow the container to read files in the volume, but not change them
-.width30[
-	.center[
-		!["Docker Volumes"](/teaching/slides/docker/basics/types-of-mounts-volume.png)
-	]
-]
-.tiny[Docker volumes (Image by Docker - [Source](https://docs.docker.com/storage/volumes/))]
+	- You can also use `tmpfs` in Linux to create a memory-based volume for using RAM as a virtual file structure 
+		- Fast!! But volatile too, good for caching files, for example
 
 ---
-name: volumes
-## Volumes (2/2)
+## Volumes (2/4) - Advantages and Disadvantages
 
-- Volumes are very useful for backups
+.center[
+.imgmd[!["Docker Volumes"](/teaching/slides/docker/basics/volumes-shared-storage.png)]
+
+.tiny[Docker volumes (Image by Docker - [Source](https://docs.docker.com/storage/volumes/))]
+]
+
+- .good[Sharing data across different containers and machines]
+	- Good for fault-tolerant applications---if one containerized "clone" of your application crashes, another can over transparently, because they share the same data, or *state*
+- .good[Access control]
+	- Volumes are **bidirectional** be default: changes made by the host to files inside the volume folder are also propagated inside the corresponding folder in the container (and vice-versa)
+	- `readonly` volumes will allow the container to read files in the volume, but not change them
+
+---
+## Volumes (3/4) - Advantages and Disadvantages Part 2
+
+- .good[Very useful for backups]
 	- You link only the folders within the container that have your application state (say, the folders where you have database files, uploaded images, and any other) 
-	- Ignore the rest of the operating system in each container, because all dependencies are handled by the image 
+	- Ignore the rest of the operating system in each container, because all dependencies are handled by the image---great space savings
 	- To backup, instead of making an image of the entire container, you just copy the volume folders in the host
-	- To go back in time, just replace the volume folders' content with your backup and start a new with those volumes!
-- Read and write to/from volume folders can be quote slow on non-Linux operating systems. Watch out if you need intensive I/O.
+	- To go back in time, just replace the volume folders' content with your backup and start a new container with those volumes mounted.
+
+- .bad[Slow I/O on non-Linux Operating Systems] 
+	- Read and write to/from volume folders can be quote slow on non-Linux operating systems. Watch out if you need intensive I/O in your app.
+
+---
+## Volumes (4/4) - Initialization of containerized applications .tiny[from "Stuff I learned the hard way, page 3519"] 
+
+.dangerbox[Volumes are mounted when a container is booted, **replacing the contents** of the folder in the container with the contents of the volume folder from the host]
+
+.small[
+1. If you need to initialize your app automatically on first startup (e.g. create default admin users), you cannot do it during image creation, but instead use a startup script inside the container. 
+	- This is because our application state (e.g. some database files) is saved in a folder somewhere in the container. If you initialize those files during the image building process, apparently everything works well **without volumes**. 
+2.  When that folder is later mounted as a volume, its contents **will be replaced** with the contents of the host's folder that is mounted
+	- .red[Down the 🚽 goes your initialization], as the mounted volume's folder is most likely empty when it is mounted by the host in the container on first startup!
+3.  Possible generic solution: Create a dummy file in your data folder after a successful initialization. Let your initialization code check if the file is present. If it is not, then you need to re-initialize. Changes will be propagated to the volume's folder on the host, so this should only happen on first bootup. 
+	- Alternatively, some web frameworks also provide support for database *migration* and *seeding*, that you can run on application startup.
+]
 
 ---
 name: networking

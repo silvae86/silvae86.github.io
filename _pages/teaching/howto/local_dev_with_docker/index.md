@@ -12,12 +12,6 @@ Sometimes your FEUP server, gnomo.fe.up.pt, can misbehave or your area in partic
 
 If you encounter `Forbidden` errors or any other mysterious stuff, but want to get some work done, try [Docker](https://www.docker.com/products/docker-desktop) to set a Apache + PHP Container in your local machine (you need Admin rights!).
 
-## Register for Docker Hub
-
-*(For Windows users)*
-
-Register [here](https://hub.docker.com/signup) for free. You need a set of credentials to download the Docker engine.
-
 ## Install Docker
 
 For Windows and Mac, simply download the [Docker Desktop Installer](https://www.docker.com/products/docker-desktop) and run it.
@@ -31,28 +25,23 @@ For Ubuntu Linux, I have compiled a script for easy installation.
 
 ## Fire up the container
 
-1. Create a new folder somewhere, for example ~/php in Linux (it will create a `php` folder in your home directory), or in Windows create the `C:\php`.
-2. Open a Windows  (`cmd.exe`) / Linux / Mac Terminal and run this:
-3. Navigate (`cd`) to the folder you created before
-4. Run the following commands
+- **Windows**
+    1. Create a new folder for your web files: `C:\php`
+    2. Open a terminal (`cmd.exe`) **with administrator privileges** and run:
+        ```cmd
+        docker run -d -p 8080:8080 -it --name=php -v C:\php\html:/var/www/html quay.io/vesica/php73:dev
+        ```
 
-(For Linux / Mac):
-
-```bash
-docker run -d -p 8080:8080 -it --name=php -v $(pwd)/html/site:/var/www/html quay.io/vesica/php73:dev
-```
-
-(For Windows):
-
-```cmd
-docker run -d -p 8080:8080 -it --name=php -v C:\webdev\html:/var/www/html quay.io/vesica/php73:dev
-```
-
-In Windows you may need to run cmd.exe as an administrator, because it needs that to be able to write to the `C:\webdev` folder. In Windows, accessing the hard drive root requires admin rights.
+- **Linux / Mac**
+    1. Create a new folder for your web files: `~/php`
+    2. Open a terminal and run:
+        ```bash
+        docker run -d -p 8080:8080 -it --name=php -v ~/php/html:/var/www/html quay.io/vesica/php73:dev
+        ```
 
 ### The Server Root folder
 
-From now on, we will call the folder `<folder that you created>/html` **Server Root**. This folder will will be where you will put your `php`, `html` and other files of your website.
+From now on, we will call the folder `php/html` **Server Root**. This folder will be where you will put your `php`, `html` and other files of your website.
 
 ## Create a `.htaccess` file in the Server Root
 

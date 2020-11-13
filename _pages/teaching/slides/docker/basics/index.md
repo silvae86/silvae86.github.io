@@ -314,24 +314,30 @@ name: networking
 
 ---
 name: networking-bridge
-## Networking (Bridge)
+## Networking (`bridge` mode)
 
 .cols[
 .fifty[
 .center[
 .imgmd[!["Docker Networking - Bridge Mode"](/teaching/slides/docker/basics/docker-networks-bridge.png)]
 
-.tiny[Docker Networking (Bridge mode))]
+.tiny[Docker Networking ([Bridge mode)](https://docs.docker.com/network/bridge/)]
 ]
 ]
 .fifty[
-- test
+- Containers running on Bob host can find other containers also running on Bob by name (running `ping solr` on `my-app` container will return the IP of `my-app`, as given by the Docker DHCP server).
+- Alice cannot find a container by name, (`ping solr` on Alice's machine will return Host Not Found).
+- Containers can find Alice by name (`ping alice` will return alice's IP, as given by Internet Gateway) and access the Internet.
+- Containers running in the Bob host cannot find any containers running on Alice
+- Multiple `bridge` networks can be created, and containers can will communicate within the same `bridge` network (for separation).
 ]
 ]
 
 ---
 name: networking-host
-## Networking (Host)
+## Networking (`host` mode)
+
+
 
 ---
 name: dockerfile
@@ -340,7 +346,8 @@ name: dockerfile
 
 ---
 name: example
-## Example
+## Example Container (Web Server)
+
 
 
 ---

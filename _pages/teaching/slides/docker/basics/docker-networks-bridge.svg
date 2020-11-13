@@ -30,7 +30,7 @@
      inkscape:cx="377.91025"
      inkscape:cy="502.57868"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1400"
@@ -62,12 +62,12 @@
        x="17.988647"
        y="116.73221" />
     <rect
-       style="fill:#ff0000;fill-opacity:0.2;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.875;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#ff0000;fill-opacity:0.2;fill-rule:evenodd;stroke:#ff0000;stroke-width:2.5576;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect1155-3"
        width="26.864786"
-       height="17.878353"
+       height="33.265121"
        x="15.539956"
-       y="86.376724" />
+       y="70.98996" />
   </g>
   <g
      inkscape:label="Layer 1"
@@ -177,7 +177,7 @@
     <g
        style="fill:none;stroke-width:0.025in"
        id="g1121"
-       transform="matrix(0.03667862,0,0,0.04293729,40.123916,-498.69234)">
+       transform="matrix(0.03667862,0,0,0.04293729,10.225859,-499.48765)">
       <!-- Line -->
       <!--  spline  -->
       <polyline
@@ -336,45 +336,60 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="85.443001"
-       y="93.62793"
+       x="87.27182"
+       y="80.969704"
        id="text1525-8-9"><tspan
          sodipodi:role="line"
-         id="tspan1523-7-2"
-         x="85.443001"
-         y="93.62793"
-         style="font-size:7.05556px;stroke-width:0.264583">Physical </tspan><tspan
-         sodipodi:role="line"
-         x="85.443001"
-         y="102.44738"
+         x="87.27182"
+         y="80.969704"
          style="font-size:7.05556px;stroke-width:0.264583"
-         id="tspan1563">router</tspan></text>
+         id="tspan952">Physical Internet </tspan><tspan
+         sodipodi:role="line"
+         x="87.27182"
+         y="89.789154"
+         style="font-size:7.05556px;stroke-width:0.264583"
+         id="tspan958">Gateway</tspan><tspan
+         sodipodi:role="line"
+         x="87.27182"
+         y="98.608604"
+         style="font-size:5.29167px;stroke-width:0.264583"
+         id="tspan948">(DNS resolution + </tspan><tspan
+         sodipodi:role="line"
+         x="87.27182"
+         y="107.42805"
+         style="font-size:5.29167px;stroke-width:0.264583"
+         id="tspan964">DHCP server)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="113.60333"
-       y="126.56869"
+       x="112.89252"
+       y="120.04398"
        id="text1525-8-9-9"><tspan
          sodipodi:role="line"
          id="tspan1523-7-2-7"
-         x="113.60333"
-         y="126.56869"
+         x="112.89252"
+         y="120.04398"
          style="font-size:7.05556px;stroke-width:0.264583">Docker</tspan><tspan
          sodipodi:role="line"
-         x="113.60333"
-         y="135.38812"
+         x="112.89252"
+         y="128.86343"
          style="font-size:7.05556px;stroke-width:0.264583"
          id="tspan1563-3">Virtual </tspan><tspan
          sodipodi:role="line"
-         x="113.60333"
-         y="144.20758"
+         x="112.89252"
+         y="137.68288"
          style="font-size:7.05556px;stroke-width:0.264583"
          id="tspan1627">Networking </tspan><tspan
          sodipodi:role="line"
-         x="113.60333"
-         y="153.02702"
-         style="font-size:7.05556px;stroke-width:0.264583"
-         id="tspan2018">(DNS + Routing)</tspan></text>
+         x="112.89252"
+         y="146.50233"
+         style="font-size:5.29167px;stroke-width:0.264583"
+         id="tspan954">(DNS resolution + </tspan><tspan
+         sodipodi:role="line"
+         x="112.89252"
+         y="155.32178"
+         style="font-size:5.29167px;stroke-width:0.264583"
+         id="tspan962">DHCP server)</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 66.547048,132.79199 v 0"
@@ -416,13 +431,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="15.685355"
-       y="98.39901"
+       x="15.65578"
+       y="81.720352"
        id="text1525-8-6"><tspan
          sodipodi:role="line"
          id="tspan1523-7-7"
-         x="15.685355"
-         y="98.39901"
+         x="15.65578"
+         y="81.720352"
          style="stroke-width:0.264583">Alice</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.54337;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -430,5 +445,33 @@
        id="path1954-7-5"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
+    <g
+       id="Layer_1-35-3"
+       transform="matrix(0.07925588,0,0,0.07185524,17.887943,84.724895)">
+      <path
+         d="M 29.19,73.773 130.18,145.131 128.971,248.54 28.585,174.158 Z"
+         fill="#8bccb0"
+         id="path1062-62-5" />
+      <path
+         d="m 28.792,74.457 v 0 l 100.99,-65.916 97.966,65.916 -97.966,71.358 z"
+         fill="#53a3a6"
+         id="path1064-9-6" />
+      <path
+         d="m 128.169,248.54 1.21,-103.409 97.966,-71.358 v 102.804 l -99.176,71.963"
+         fill="#318ba2"
+         id="path1066-1-2" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.79794px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.178029"
+       x="89.672989"
+       y="34.544529"
+       id="text1445-3-9"
+       transform="matrix(0.59230489,0.77850828,-0.89057837,0.51776944,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan1443-6-1"
+         x="89.672989"
+         y="34.544529"
+         style="font-size:3.79794px;stroke-width:0.178029">my-app-2</tspan></text>
   </g>
 </svg>

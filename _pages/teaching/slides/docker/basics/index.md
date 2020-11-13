@@ -28,9 +28,7 @@ class: middle, center
 
 .indexpill[[Virtual Machines vs. 'bare metal'](#virtual-machines-vs-bare-metal)]
 
-.indexpill[[Hypervisor](#hypervisor)]
-
-.indexpill[[About Docker](#about)]
+.indexpill[[VM Hypervisor](#hypervisor)]
 
 .indexpill[[Why Docker?](#why-docker)]
 
@@ -44,7 +42,7 @@ class: middle, center
 
 .indexpill[[Networking](#networking)]
 
-.indexpill[[Dockerfile](#dockerfile)]
+.indexpill[[Dockerfiles](#dockerfiles)]
 
 .indexpill[[Installation](#installation)]
 
@@ -326,7 +324,7 @@ name: networking-bridge
 ]
 .fifty[
 - Containers running on Bob host can find other containers also running on Bob by name (running `ping solr` on `my-app` container will return the IP of `my-app`, as given by the Docker DHCP server).
-- Alice cannot find a container by name, (`ping solr` on Alice's machine will return Host Not Found).
+- Alice cannot find a container by name (`ping solr` on Alice's machine will return Host Not Found).
 - Containers can find Alice by name (`ping alice` will return alice's IP, as given by Internet Gateway) and access the Internet.
 - Containers running in the Bob host cannot find any containers running on Alice
 - Multiple `bridge` networks can be created, and containers can will communicate within the same `bridge` network (for separation).
@@ -337,24 +335,112 @@ name: networking-bridge
 name: networking-host
 ## Networking (`host` mode)
 
+.cols[
+.fifty[
+.center[
+.imgmd[!["Docker Networking - Host Mode"](/teaching/slides/docker/basics/docker-networks-host.png)]
 
+.tiny[Docker Networking ([Host mode)](https://docs.docker.com/network/host/)]
+]
+]
+.fifty[
+- Only available on Linux
+- Containers on Bob host can access the host network directly.
+- No name resolution among containers
+	- `my-app` running on Bob will not get any response if it runs `ping mysql`
+	- DNS entries (such as `bob.lan <ip>`) must be added at the physical network host resolution level
+- Containers can bind their open ports to ports on the host. 
+	- Alice can access a container on Bob via Bob's IP + port of the container they want
+	- Only one program (and thus, only one container) can be listening on a port of each host. Beware of conflicts! 
+]
+]
 
 ---
-name: dockerfile
-## The Dockerfile
+name: dockerfiles
+## Dockerfiles
 
+- Dockerfiles are files containing the sequence of steps required to build an image. 
+- They are typically named `Dockerfile` without any extension.
 
----
-name: example
-## Example Container (Web Server)
+.small[
+````dockerfile
+# Start with a base image of Ubuntu 18.04, then:
+FROM ubuntu:18.04			
+# Copy current folder on the host to /app on the container
+COPY . /app
+# run `make` (compilation, etc) on  /app to build the app on the container
+RUN make /app				
+# Set default command when container boots up (runs installed app)
+CMD python /app/app.py		
+````
+]
 
+To build an image from a `Dockerfile` in the current directory, you run:
 
+.small[
+````shell
+docker build .
+````
+]
 
+- More complicated `Dockerfile` examples can be found [here](https://github.com/silvae86/feup-bdad-corrector/blob/master/Dockerfile) and [here](https://github.com/feup-infolab/dendro/blob/master/Dockerfile) if you are curious.
+- [Best practices for writing Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+- [`docker build` command reference](https://docs.docker.com/engine/reference/commandline/build/)
 ---
 name: installation
 ## Installation
 
+- Installation guide for Docker and how to use a container for local PHP development available [here](/teaching/howto/local_dev_with_docker).
 
+.warningbox[Remember to turn on Virtualization Support (or VT-x) on your BIOS/ UEFI (press Delete/F2 before Windows Starts) in order to run virtualization apps like Docker or a VM Hypervisor. See more [here](https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Troubleshooting-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.html).]
+
+.center[
+.imglg[!["Virtualization Off - Docker Error"](/teaching/slides/docker/basics/docker-no-virtualization.png)]
+
+.tiny[Oops, I forgot to [turn on Virtualization](https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Troubleshooting-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.html)!]
+]
+
+---
+name: example
+## Example Container (Apache Web Server + PHP)
+
+- The command that you use to start your server, now explained:
+
+.small[
+```sh
+docker run 		 				\ #
+									\ # run is the command for running a container
+	-d 			 				\ #
+									\ # run in detached mode (without this, 
+									\ # the container will stop when you close the 
+									\ # command line, instead of running in 
+									\ # the background and on system startup)
+	-p 8080:8080					\ #
+									\ # bind port 8080 of the container, 
+									\ # which is running the Apache+PHP server, 
+									\ # to the port 8080 of the host. This is 
+									\ # what allows you to type localhost:8080 
+									\ # on the browser and have the container respond
+	-it 							\ #
+									\ # allocate a tty for the container process 
+	--name=php 	 				\ #
+									\ # name of the container to create 
+	-v $(pwd)/html:/var/www/html	\ #			
+									\ # create a volume to map 
+									\ # [current folder]/html on the 
+									\ # host to /var/www/html (default Apache 
+									\ # htdocs location) on the container
+	quay.io/vesica/php73:dev		#
+									# name of the image to base 
+									# the container on (has Apache and PHP 
+									# pre-installed)
+```
+]
+
+.footnote[.tiny[
+- [`docker run` command reference](https://docs.docker.com/engine/reference/run/)
+- [What is a TTY?](https://www.howtogeek.com/428174/what-is-a-tty-on-linux-and-how-to-use-the-tty-command/)
+]]
 
 ---
 name: references

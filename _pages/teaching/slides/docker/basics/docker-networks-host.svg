@@ -14,7 +14,7 @@
    id="svg8"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
    sodipodi:docname="docker-networks-host.svg"
-   inkscape:export-filename="/run/user/1000/gvfs/sftp:host=macpro.local/Users/joaorocha/Documents/GitHub/silvae86.github.io/_pages/teaching/slides/docker/basics/svgs/docker-networks-bridge.png"
+   inkscape:export-filename="/run/user/1000/gvfs/sftp:host=macpro.local/Users/joaorocha/Documents/GitHub/silvae86.github.io/_pages/teaching/slides/docker/basics/docker-networks-host.png"
    inkscape:export-xdpi="250"
    inkscape:export-ydpi="250">
   <defs
@@ -73,9 +73,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
      inkscape:cx="287.62663"
-     inkscape:cy="367.70994"
+     inkscape:cy="453.42423"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer3"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1400"
@@ -473,5 +473,22 @@
          x="61.027515"
          y="120.27087"
          style="font-size:5.29167px;fill:#ffffff;stroke:#000000;stroke-width:0.165;stroke-miterlimit:4;stroke-dasharray:none">8983</tspan></text>
+    <circle
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path2023"
+       cx="116.97502"
+       cy="118.5482"
+       r="2.9864578" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.29167px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.165;stroke-miterlimit:4;stroke-dasharray:none"
+       x="114.81555"
+       y="120.55299"
+       id="text909-7-3-3"><tspan
+         sodipodi:role="line"
+         id="tspan907-5-5-6"
+         x="114.81555"
+         y="120.55299"
+         style="font-size:5.29167px;fill:#ffffff;stroke:#000000;stroke-width:0.165;stroke-miterlimit:4;stroke-dasharray:none">Open port</tspan></text>
   </g>
 </svg>

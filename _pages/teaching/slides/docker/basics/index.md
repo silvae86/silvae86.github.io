@@ -84,31 +84,49 @@ name: virtual-machines-2
 	- Controls how much % of CPU and RAM of the host is given to each of the guests
 
 
+
+
+.cols[
+.fifty[
+.center[
+.imgmd[!["VMWare Logo"](/teaching/slides/docker/basics/vmware-logo.png)]
+
+.tiny[[VMWare Workstation by VMWare](https://www.vmware.com/)]
+]
+]
+.fifty[
+.center[
+.imgmd[!["VirtualBox Logo"](/teaching/slides/docker/basics/virtualbox-logo.png)]
+
+.tiny[[VirtualBox by Oracle](https://www.vmware.com/) - 
+(Open source hypervisor)]
+]
+]
+]
+
 ---
 name: virtual-machines-vs-bare-metal
-## Virtual machines vs. 'bare-metal'
+## Virtual machines vs. 'bare-metal' - Advantages
 
-### .good[Advantages]
-- Portability and hardware-agnosticism
+- .good[Portability and hardware-agnosticism]
 	- The same VM can run in computers with very different hardware and software configurations
 	- The *hypervisor* provides an abstraction layer between the virtual and physical hardware configurations
-- Faster disaster recovery
-	- Virtual machines can be backed up
-- Isolation
+- .good[Faster disaster recovery]
+	- Virtual machines can be backed up and restored simply by copying and pasting their *virtual* hard drives, which are simple files on the host's file system.
+- .good[Isolation]
 	- Improved security for shared hardware machines-several users can have full administration privileges inside their own VMs, but without any access to the host
 	- VMs make it easier to set up a *multi-tenant* environment, where resources are shared among the various VMs, which can even belong to different people.
 
 ---
 name: virtual-machines-vs-bare-metal-2
-## Virtual machines vs. 'bare-metal'
+## Virtual machines vs. 'bare-metal' - Disadvantages
 
-### .bad[Disadvantages]
-- High resource consumption
+- .bad[High resource consumption]
 	 - The physical machine needs to virtualise everything, including the operating system - RAM usage is the same as that of a 'bare-metal' machine. The host needs a lot of RAM to run several VMs at the same time.
 	 - Running many VMs on the same host can slow down even powerful servers, because the access to hard drive needs to be split among multiple concurrent and random accesses--- this is especially hard on mechanical hard drives, not so much on SSDs.
-- Lack of access to some low-level functions
+- .bad[Lack of access to some low-level functions]
 	- If your application needs direct access to some low-level / hardware capabilities (such as 3D acceleration), those may be unavailable.
-- Backups need to include the entire virtual machine
+- .bad[Backups need to include the entire virtual machine]
 	- Very large files, as the virtual machine "virtual hard drive" takes as much space as an entire hard drive of a 'bare-metal' machine (~hundreds of GB **each**!).
 
 ---
@@ -118,7 +136,7 @@ name: why-docker
 - .good[**Flexibility**]
 	- Practically any application can be containerized
 - .good[**Lightweight**]
-	- Containers share the host Kernel, without virtualizing an OS for every application, saving resources
+	- Containers share the host Kernel, without virtualizing an OS for every application, saving a LOT of resources when compared to using Virtual Machines
 - .good[**Portability**]
 	- Ensures portability of execution environment on any machine
 	- Application, pre-requisites and dependencies are packaged together
@@ -180,25 +198,48 @@ name: architecture
 name: images
 ## Images
 
+.cols[
+.fifty[
+	.center[
+		.imgmd[!["Docker Images"](/teaching/slides/docker/basics/architecture-images.png)]
+		.tiny[Docker Images (Based on an image by Docker - [Source](https://docs.docker.com/storage/volumes/))]
+	]
+]
+.fifty[
 - Read-only **templates** with instructions for creating a Docker container
-- Often based on other images. e.g. : you can start with from a `ubuntu` image (*base image*) and install additional libraries, resulting in a new image.
-	- Steps to go from one image to another are like *layers*, because an image is like an onion: made up of several successive sets of changes.
-	- When images are rebuilt, only the modified layers are remade, and the base image recovered from *cache*. This makes image building much more efficient than building a VM using, say, [Vagrant](https://www.vagrantup.com/).
 - Images are built using [Dockerfiles](#dockerfile), written as a sequence of steps to go from the *base image* to your final image. Every step in a Dockerfile creates a new *layer*.
 - You can `pull` them from an image registry, i.e. [Docker Hub](https://hub.docker.com/search?q=&type=image&image_filter=official), or build and `push` your own to Docker hub to publish your work.
+]
+]
+
+- Often based on other images. e.g. : you can start with from a `ubuntu` image (*base image*) and install additional libraries, resulting in a new image.
+	- Steps to go from one image to another are called *layers*, because an image is like an onion: made up of several successive sets of changes.
+	- When images are rebuilt, only the modified layers are remade, and the base image recovered from *cache*. This makes image building much more efficient than building a VM using, say, [Vagrant](https://www.vagrantup.com/).
 
 ---
 name: containers
 ## Containers
 
+.cols[
+.fifty[
+.center[
+.imgmd[!["Docker Containers"](/teaching/slides/docker/basics/architecture-containers.png)]
+
+.tiny[Docker containers (Based on an image by Docker - [Source](https://docs.docker.com/storage/volumes/))]
+]
+]
+.fifty[
 - Containers are a runnable *instance* of an image.
 	- Instance because you can start __multiple containers__ from the same image---like baking cookies from the same mold!
 - You can `start`, `stop`, `move`, or `delete` containers using the `docker` command.
-- Connectors can be connected to one or more *networks*---separate them for security via isolation, or connect them so they work together
-- Attach storage to the container via **volumes**---like plugging in an external hard drive to keep changed files after the container is shut down.
+]
+]
+
+- Connectors can be connected to one or more [*networks*](#networking) &rarr; separate them for security via isolation, or connect them so they work together
+- Attach storage to the container via [**volumes**](#volumes) &rarr; like plugging in an external hard drive to keep changed files after the container is shut down.
 - You can `save` a new image from the current state of a container.
 
-.dangerbox[If you `start` a container from an image and anything is modified inside the container, all changes be lost when you `stop` and `rm` it.]
+.dangerbox[If you `start` a container from an image and anything is modified inside the former, all changes be lost when you `stop` and `rm` (remove) it.]
 
 ---
 name: volumes
@@ -265,6 +306,7 @@ name: networking
 
 
 
+.footnote[.tiny[Source: [https://docs.docker.com/network/](https://docs.docker.com/network)]
 ---
 name: commands
 ## Common commands
@@ -290,6 +332,10 @@ name: references
 - *Docker Overview*
 	Docker Docs
 	[https://docs.docker.com/get-started/overview/](https://docs.docker.com/get-started/overview/)
+
+- *Docker Networking*
+	Docker Docs
+	[https://docs.docker.com/network/](https://docs.docker.com/network/)
 
 {% endraw %}
 {% endhighlight %}

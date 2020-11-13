@@ -95,6 +95,14 @@ $min_height: 150;
 	@include scaledimage(110)
 }
 
+.cols {
+    display: flex;
+  }
+  
+  .fifty {
+    flex: 50%;
+  }
+
 // Tables
 table, th, td {
 	border: 1px solid;
@@ -137,7 +145,7 @@ span.bad::after {
 
 span.dangerbox {
 	display: block;
-	padding: 2em;
+	padding: 1em;
 	background-color: transparentize($warning-color, 0.4);
 	border-radius: 0.5em;
 	border-style: solid;
@@ -157,4 +165,8 @@ span.dangerbox::before {
 
 .small {
 	font-size:0.8em;
+}
+
+.center {
+	margin: 0 auto;
 }

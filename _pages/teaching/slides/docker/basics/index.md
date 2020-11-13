@@ -44,13 +44,7 @@ class: middle, center
 
 .indexpill[[Networking](#networking)]
 
-.indexpill[[Commands](#common-commands)]
-
-.indexpill[[Dockerfiles](#dockerfile)]
-
-.indexpill[[Docker Compose](#compose)]
-
-.indexpill[[Docker Hub](#docker-hub)]
+.indexpill[[Dockerfile](#dockerfile)]
 
 .indexpill[[Installation](#installation)]
 
@@ -308,17 +302,36 @@ name: volumes
 
 ---
 name: networking
-## Networks
+## Networking
 
-- Flexible network architecture
-	- Docker containers can live on the same network as other VMs, bare-metal machines, or containers
-
+- Docker containers can live on the same network as other VMs, bare-metal machines, or containers
+	- All types of machines can communicate transparently
+- 5 networking modes: `bridge`, `host`, `overlay`, `macvlan` and `none`
+	- `none` will disable networking completely-no communication
+- We will cover the two most common ones, `bridge` and `host`.
 
 .footnote[.tiny[Source: [https://docs.docker.com/network/](https://docs.docker.com/network)]]
----
-name: commands
-## Common commands
 
+---
+name: networking-bridge
+## Networking (Bridge)
+
+.cols[
+.fifty[
+.center[
+.imgmd[!["Docker Networking - Bridge Mode"](/teaching/slides/docker/basics/docker-networks-bridge.png)]
+
+.tiny[Docker Networking (Bridge mode))]
+]
+]
+.fifty[
+- test
+]
+]
+
+---
+name: networking-host
+## Networking (Host)
 
 ---
 name: dockerfile
@@ -326,8 +339,15 @@ name: dockerfile
 
 
 ---
-name: docker-compose
-## Docker Compose
+name: example
+## Example
+
+
+---
+name: installation
+## Installation
+
+
 
 ---
 name: references
@@ -344,6 +364,9 @@ name: references
 - *Docker Networking*
 	Docker Docs
 	[https://docs.docker.com/network/](https://docs.docker.com/network/)
+
+- *Most common Docker commands*
+	[Docker Cheat Sheet](https://github.com/wsargent/docker-cheat-sheet)
 
 {% endraw %}
 {% endhighlight %}

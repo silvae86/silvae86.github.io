@@ -10,6 +10,8 @@ class: middle, center
 template:inverse
 
 # Docker
+
+.center[.imgsm[!["Docker Logo"](/teaching/slides/docker/basics/docker-logo.png)]]
 [a container runtime for software deployments]
 
 ## Concepts and Introduction
@@ -22,13 +24,13 @@ class: middle, center
 ## Agenda
 .index[
 
-.indexpill[[About](#about)]
-
-.indexpill[[Why Docker?](#why)]
-
 .indexpill[[Virtual Machines](#virtual-machines)]
 
-.indexpill[[VMs vs. 'bare metal'](#virtual-machines-vs-bare-metal)]
+.indexpill[[Virtual Machines vs. 'bare metal'](#virtual-machines-vs-bare-metal)]
+
+.indexpill[[About Docker](#about)]
+
+.indexpill[[Why Docker?](#why-docker)]
 
 .indexpill[[VMs vs Containers](#vms-vs-containers)]
 
@@ -59,45 +61,6 @@ class: middle, center
 ]
 
 ---
-name: why
-## Why Docker? (1/2)
-
-- .good[**Flexibility**]
-	- Practically any application can be containerized
-- .good[**Lightweight**]
-	- Containers share the host Kernel, without virtualizing an OS for every application, saving resources
-- .good[**Portability**]
-	- Ensures portability of execution environment on any machine
-	- Application, pre-requisites and dependencies are packaged together
-- .good[**Scalability**]
-	- From a single container on your laptop or thousands in the cloud, it is all the same technology
-- .good[**Loose coupling**]
-	- Containers are highly self-sufficient and encapsulated, and can be updated individually without upsetting others
-- .good[**Security**]
-	- Containers apply aggressive constraints and isolations to processes without any configuration required on the part of the user.
-
-
-.footnote[.tiny[Source: "Orientation and setup", by [Docker](https://docs.docker.com/get-started/)]].
-
----
-name: why-2
-## Why Docker? (2/2)
-
-- .good[**Elasticity for the cloud**]
-	- In the cloud, computational resources should be purchased as needed
-	- Too many users for too little computational power &rarr; poor system performance
-	- Too many resources for too little users &rarr; waste of money
-	- Docker makes it easier to scale applications up to meet peak loads, and then scale down during downtime
-		- Spin up more or less containers (*replicas* of the application) across a datacenter, to respond to application loading
-
-- .good[**Separation of code from state**]
-	- Separates code+infrastructure (*application logic*) configuration from Data (*application state*)
-	- Backups only need to worry about the data, as code and infrastructure can be built on-the-fly
-
-- .good[**Native CPU scheduling**]
- 	- On Linux, containers are seen by the Kernel as independent processes, so they can be efficiently managed by the CPU scheduler
-
----
 name: virtual-machines
 ## Virtual Machines (1/2)
 
@@ -122,7 +85,7 @@ name: virtual-machines-2
 
 
 ---
-name: virtual-machines-advantages-disadvantages
+name: virtual-machines-vs-bare-metal
 ## Virtual machines vs. 'bare-metal'
 
 ### .good[Advantages]
@@ -136,7 +99,7 @@ name: virtual-machines-advantages-disadvantages
 	- VMs make it easier to set up a *multi-tenant* environment, where resources are shared among the various VMs, which can even belong to different people.
 
 ---
-name: virtual-machines-advantages-disadvantages-2
+name: virtual-machines-vs-bare-metal-2
 ## Virtual machines vs. 'bare-metal'
 
 ### .bad[Disadvantages]
@@ -149,14 +112,53 @@ name: virtual-machines-advantages-disadvantages-2
 	- Very large files, as the virtual machine "virtual hard drive" takes as much space as an entire hard drive of a 'bare-metal' machine (~hundreds of GB **each**!).
 
 ---
+name: why-docker
+## Why Docker? (1/2)
+
+- .good[**Flexibility**]
+	- Practically any application can be containerized
+- .good[**Lightweight**]
+	- Containers share the host Kernel, without virtualizing an OS for every application, saving resources
+- .good[**Portability**]
+	- Ensures portability of execution environment on any machine
+	- Application, pre-requisites and dependencies are packaged together
+- .good[**Scalability**]
+	- From a single container on your laptop or thousands in the cloud, it is all the same technology
+- .good[**Loose coupling**]
+	- Containers are highly self-sufficient and encapsulated, and can be updated individually without upsetting others
+- .good[**Security**]
+	- Containers apply aggressive constraints and isolations to processes without any configuration required on the part of the user.
+
+.tiny[.footnote[Source: "Orientation and setup", by [Docker](https://docs.docker.com/get-started/)]]
+
+---
+name: why-docker-2
+## Why Docker? (2/2)
+
+- .good[**Elasticity for the cloud**]
+	- In the cloud, computational resources should be purchased as needed
+	- Too many users for too little computational power &rarr; poor system performance
+	- Too many resources for too little users &rarr; waste of money
+	- Docker makes it easier to scale applications up to meet peak loads, and then scale down during downtime
+		- Spin up more or less containers (*replicas* of the application) across a datacenter, to respond to application loading
+
+- .good[**Separation of code from state**]
+	- Separates code+infrastructure (*application logic*) configuration from Data (*application state*)
+	- Backups only need to worry about the data, as code and infrastructure can be built on-the-fly
+
+- .good[**Native CPU scheduling**]
+ 	- On Linux, containers are seen by the Kernel as independent processes, so they can be efficiently managed by the CPU scheduler
+
+
+---
 name: vms-vs-containers
 ## VMs vs Containers (Cont'd)
 
 .width80[
 	.center[
 		<section>
-		    <img width="47%" src="/teaching/slides/docker/basics/container-engine.png" alt="Container Engine Architectural Diagram">
-		    <img width="47%" src="/teaching/slides/docker/basics/vms.png" alt="Virtual Machines Architectural Diagram">
+		    <img width="42%" src="/teaching/slides/docker/basics/container-engine.png" alt="Container Engine Architectural Diagram">
+		    <img width="42%" src="/teaching/slides/docker/basics/vms.png" alt="Virtual Machines Architectural Diagram">
 		</section>
 	]
 ]

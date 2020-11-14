@@ -27,7 +27,7 @@ Some possible errors have been listed here to point you towards a possible solut
 
 - **Lack of virtualization support**
 
-![Virtualization](screenshots/win/virtualization.png)
+![Virtualization](/teaching/howto/local_dev_with_docker/screenshots/win/virtualization.png)
 
 Remember to turn on Virtualization Support (or VT-x) on your computer's BIOS/ UEFI (press Delete/F2 before Windows Starts) in order to run virtualization apps like Docker or a VM Hypervisor. See more [here](https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Troubleshooting-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.html).
 
@@ -35,13 +35,13 @@ Remember to turn on Virtualization Support (or VT-x) on your computer's BIOS/ UE
 
 If you get this when installing Docker, click the link in blue, follow the necessary instructions and then press the 'Restart' button.
 
-![Wsl2](screenshots/win/wsl2.png)
+![Wsl2](/teaching/howto/local_dev_with_docker/screenshots/win/wsl2.png)
 
 - **Windows Firewall warnings**
 
 When Docker first starts on Windows, you may get this prompt. Select 'Allow Access'.
 
-![Firewall](screenshots/win/firewall.png)
+![Firewall](/teaching/howto/local_dev_with_docker/screenshots/win/firewall.png)
 
 ### macOS
 

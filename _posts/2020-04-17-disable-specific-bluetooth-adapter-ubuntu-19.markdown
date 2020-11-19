@@ -27,7 +27,7 @@ Oh, and [blacklisting](https://askubuntu.com/questions/317004/how-to-completely-
 
 Go to Software -> Additional drivers and activate the Broadcom STA drivers ([some](https://askubuntu.com/questions/55868/installing-broadcom-wireless-drivers) say that they are junk, but hey, they work for me!)
 
-![Activate Broadcom drivers](/assets/images/post-images/2020-04-17-disable-specific-bluetooth-adapter-ubuntu-19/Screenshot from 2020-04-17 11:26:30.png){:class="img-center"}
+![Activate Broadcom drivers](/assets/images/post-images/2020-04-17-disable-specific-bluetooth-adapter-ubuntu-19/screenshot1.png){:class="img-center"}
 
 ### Listing all active bluetooth adapters
 

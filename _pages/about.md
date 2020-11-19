@@ -38,7 +38,7 @@ It is at the [I123](https://sigarra.up.pt/feup/pt/instal_geral.espaco_view?pv_id
 
 ##  Classic Car Mechanics
 
-![Me driving my old AE86](/assets/images/about/ae86.jpg){:class="img-center fullwidth"}
+![Me driving my old AE86](/assets/images/about/ae86.jpg){:class="img-center width100"}
 
 *Me driving my old 1987 Corolla.*{:class="img-caption"}
 

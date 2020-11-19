@@ -71,7 +71,7 @@ Introduce structure as a way to organise a process that starts to become chaotic
 - For meeting and experiment records -> Use a combination of FreedCamp tasks and links to a Google Drive folder for your dissertation, where you create subfolders and place Google [Docs](https://docs.google.com) and [Sheets](https://docs.google.com). You can copy the "sharing links" from your Google Docs to every task in your FreedCamp Tasks and keep track of where the related documents are.
 
 <a name="markdown_notes"></a>
-![Mendeley Notes](/assets/images/dissertations/mendeley_notes.png){:class="img-center fullwidth"}
+![Mendeley Notes](/assets/images/dissertations/mendeley_notes.png){:class="img-center width100"}
 *Notes in the Mendeley interface*{:class="img-caption"}
 
 **Installation**

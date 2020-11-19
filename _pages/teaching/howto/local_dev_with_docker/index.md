@@ -14,51 +14,121 @@ If you encounter `Forbidden` errors or any other mysterious stuff, but want to g
 
 ## Install Docker
 
-For Windows and Mac, simply download the [Docker Desktop Installer](https://www.docker.com/products/docker-desktop) and run it.
+Several instruction guides are here to help you install Docker on any platform.
 
-For Ubuntu Linux, I have compiled a script for easy installation.
+
+### Windows
+
+Download the [Docker Desktop Installer](https://www.docker.com/products/docker-desktop) and run it.
+
+#### Solutions to possible problems
+
+Some possible errors have been listed here to point you towards a possible solution. **Not everyone will encounter these errors**.
+
+- **Lack of virtualization support**
+
+![Virtualization](/teaching/howto/local_dev_with_docker/screenshots/win/virtualization.png)
+
+Remember to turn on Virtualization Support (or VT-x) on your computer's BIOS/ UEFI (press Delete/F2 before Windows Starts) in order to run virtualization apps like Docker or a VM Hypervisor. See more [here](https://docs.fedoraproject.org/en-US/Fedora/13/html/Virtualization_Guide/sect-Virtualization-Troubleshooting-Enabling_Intel_VT_and_AMD_V_virtualization_hardware_extensions_in_BIOS.html).
+
+- **WSL2 Linux Kernel message**
+
+If you get this when installing Docker, click the link in blue, follow the necessary instructions and then press the 'Restart' button.
+
+![Wsl2](/teaching/howto/local_dev_with_docker/screenshots/win/wsl2.png)
+
+- **Windows Firewall warnings**
+
+When Docker first starts on Windows, you may get this prompt. Select 'Allow Access'.
+
+![Firewall](/teaching/howto/local_dev_with_docker/screenshots/win/firewall.png)
+
+### macOS
+
+Simply download the [Docker Desktop Installer](https://www.docker.com/products/docker-desktop) and run it.
+
+### Ubuntu Linux
+
+I have compiled a script for easy installation.
 
 1. Fire up the Terminal,
 2. Run `sudo -i` and type user password
 3. `exit` the root command line
 4. Paste the script found [here](/2018/11/05/install-docker-ubuntu18/) in the Terminal.
 
-## Fire up the container
+## Start the container!
 
-- **Windows**
-    1. Create a new folder for your web files: `C:\php`
-    2. Open a terminal (`cmd.exe`) **with administrator privileges** and run:
-        ```cmd
-        docker run -d -p 8080:8080 -it --name=php -v C:\php\html:/var/www/html quay.io/vesica/php73:dev
-        ```
+### Windows
 
-- **Linux / Mac**
-    1. Create a new folder for your web files: `~/php`
-    2. Open a terminal and run:
-        ```bash
-        docker run -d -p 8080:8080 -it --name=php -v ~/php/html:/var/www/html quay.io/vesica/php73:dev
-        ```
+#### Automated guide
 
-### The Server Root folder
+1. Download [this zip file](/teaching/howto/local_dev_with_docker/docker-scripts-for-windows.zip).
+2. Unzip the file into a folder of your choice.
+3. You will see a folder called `docker-scripts-for-windows` after unzipping the file.
+4. Inside `docker-scripts-for-windows`, you will see a folder called `html`, and 4 files:
+	- 2 PowerShell Scripts (`.ps1` extension) &larr; **DO NOT TOUCH THESE**
+	- 2 Windows Batch Files (`.bat` extension) &larr; **We will use these to start and stop our container**
 
-From now on, we will call the folder `php/html` **Server Root**. This folder will be where you will put your `php`, `html` and other files of your website.
+5. To start the container, run the `start-container.bat` file as an Administrator:
+	- ![Running the start container script as an administrator]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/run-start-container-bat.png %})
 
-## Create a `.htaccess` file in the Server Root
+6. Test your container, by navigating your browser to `http://localhost:8080`. You should see this:
+	- ![Indexes empty page]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/indexes.png %})
 
-This is optional, but will allow the web server to generate nice file listings for easy navigation, like below:
+7. Create a new file called `index.html` inside the `html` folder, and paste this HTML excerpt:
+	```html
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+  	  <meta charset="utf-8">
+  	<title>Hello World!</title>
+	</head>
+	<body>
+  	  <h1 id="hello_world!!!">Hello World!</h1>
 
-![Indexes Enabled]({% link _pages/teaching/howto/local_dev_with_docker/indexes.png %})
+	  <a href="#teste">Test Link!</a>
+	</body>
+	</html>
+	```
 
-To turn this on, go to the Server Root and create a new file called `.htaccess`, including the dot.
+8. Save the file.
 
-The contents of the folder should be this:
+9. Go back to your browser and refresh the page. You should now see this:
+	- ![Hello world page]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/hello-world.png %})
+
+10. To stop the container, run the `stop-container.bat` file as an Administrator:
+	- ![Running the stop container script as an administrator]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/run-stop-container-bat.png %})
+
+#### Manual guide
+
+1. Create a new folder `html` at the root of your hard drive for your website files: `C:\html`
+2. Open a terminal (`cmd.exe`) **with administrator privileges** and run:
+		```cmd
+		docker run -d -p 8080:8080 -it --name=php -v C:\html:/var/www/html quay.io/vesica/php73:dev
+		```
+
+##### (Optional) Create a `.htaccess` file inside the `html` folder
+
+This is optional, but will allow the web server to generate nice file listings for easy navigation. To turn this on, go to the Server Root and create a new file called `.htaccess`, including the dot. The contents of the folder should be this:
 
 ```apacheconf
 Options +Indexes
 ```
 
-## Place your files in the directory
+After saving the file, point your browser to [http://localhost:8080](http://localhost:8080). You should see this:
 
-From now on, whatever you put in the Root Folder, should be accessible in the browser via the link [http://localhost:8080](http://localhost:8080).
+![Indexes Enabled]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/indexes.png %})
 
-You should also get lists of folders and files directly in the browser, because you created the `.htaccess` file.
+### Linux / Mac
+
+1. Create a new `html` folder for your web files: `mkdir -p ~/html` (~ means your home folder)
+2. Open a terminal and run:
+	```bash
+	docker run -d -p 8080:8080 -it --name=php -v ~/html:/var/www/html quay.io/vesica/php73:dev
+	```
+4. (Optional) [Create the .htaccess file](#optional-create-a-htaccess-file-inside-the-html-folder) inside the `~/html` folder.
+3. Point your browser to [http://localhost:8080](http://localhost:8080).
+
+## Place your files in the directory and start developing!
+
+From now on, whatever you put in the `html` Folder, should be accessible in the browser via the link [http://localhost:8080](http://localhost:8080).

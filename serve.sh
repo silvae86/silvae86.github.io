@@ -16,7 +16,7 @@ echo "Building site."
 bundle exec jekyll build --config _config.yml
 
 #serve site
-bundle exec jekyll serve --config _config.yml --plugins _plugins --safe --skip-initial-build &
+bundle exec jekyll serve --config _config.yml --plugins _plugins --safe --skip-initial-build --host=0.0.0.0 &
 SERVER_PID=$!
 
 bundle exec htmlproofer \
@@ -34,4 +34,3 @@ function kill_server {
 trap kill_server INT
 
 wait
-

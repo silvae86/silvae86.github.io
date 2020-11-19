@@ -69,40 +69,17 @@ I have compiled a script for easy installation.
 	- 2 PowerShell Scripts (`.ps1` extension) &larr; **DO NOT TOUCH THESE**
 	- 2 Windows Batch Files (`.bat` extension) &larr; **We will use these to start and stop our container**
 
-5. To start the container, run the `start-container.bat` file as an Administrator:
-	- ![Running the start container script as an administrator]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/run-start-container-bat.png %})
-
+5. To start the container, run the `start-container.bat` file.
 6. Test your container, by navigating your browser to `http://localhost:8080`. You should see this:
-	- ![Indexes empty page]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/indexes.png %})
-
-7. Create a new file called `index.html` inside the `html` folder, and paste this HTML excerpt:
-	```html
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-  	  <meta charset="utf-8">
-  	<title>Hello World!</title>
-	</head>
-	<body>
-  	  <h1 id="hello_world!!!">Hello World!</h1>
-
-	  <a href="#teste">Test Link!</a>
-	</body>
-	</html>
-	```
-
-8. Save the file.
-
-9. Go back to your browser and refresh the page. You should now see this:
 	- ![Hello world page]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/hello-world.png %})
 
-10. To stop the container, run the `stop-container.bat` file as an Administrator:
-	- ![Running the stop container script as an administrator]({% link _pages/teaching/howto/local_dev_with_docker/screenshots/win/run-stop-container-bat.png %})
+7. To stop the container, run the `stop-container.bat` file.
 
 #### Manual guide
 
 1. Create a new folder `html` at the root of your hard drive for your website files: `C:\html`
 2. Open a terminal (`cmd.exe`) **with administrator privileges** and run:
+
 		```cmd
 		docker run -d -p 8080:8080 -it --name=php -v C:\html:/var/www/html quay.io/vesica/php73:dev
 		```

@@ -91,6 +91,10 @@ header.site-header a.site-title {
 	}
 }
 
+#about ul {
+	list-style: none;
+}
+
 #about .round-mask-wrap {
 	filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
 	width: 50%;
@@ -116,6 +120,10 @@ header.site-header a.site-title {
 	font-family: $serif-font-family;
 	list-style: none;
 	margin-left: 0px;
+}
+
+#about .center
+{
 	text-align: center;
 }
 
@@ -130,6 +138,20 @@ header.site-header a.site-title {
 #about .hidden-link:hover {
 	color: $background-color;
 	background-color: $text-color;
+}
+
+//#about .timebracket-pill {
+//	background-color: $brand-color;
+//	border-style: 1px darken($brand-color,0.5) solid;
+//	border-radius: 3px;
+//	padding:3px;
+//	color: $background-color;
+//	display:block;
+//}
+
+#about .previously{
+	margin-top: 2em;
+	margin-bottom: 0px;
 }
 
 .site-header a.site-title{

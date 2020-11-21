@@ -35,9 +35,57 @@ header.site-header a.site-title {
 		width: 100%;
 }
 
+#about h1 {
+	font-family: $serif-font-family;
+	font-size: 1.2em;
+	margin: auto;
+	display: inline-block;
+}
+
+#about .round-mask-wrap {
+	filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+#about img.textheight {
+	height: 1em;
+}
+
+@media only screen and (min-width: $on-laptop) {
+	.home_section {
+		margin-bottom:8em;
+	}
+	
+	#about div.round-mask-wrap {
+		margin-bottom:1em;
+	}
+	
+	#about .round-mask-wrap {
+		filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+		width: 80%;
+	}
+}
+
 @media only screen and (max-width: $on-laptop) and (min-width: $on-palm) {
 	nav.site-nav {
 		width: 100%;
+	}
+	
+	#about .round-mask-wrap {
+		margin: 20px auto 20px auto;
+	}	
+	
+	#about .round-mask-wrap
+	{
+		display: inline;
+	}
+	
+	#about .round-mask-wrap img.round-mask {
+		float:left;
+		margin-right: 3em;
+	}
+	
+	.home_section {
+		margin-bottom:1em;
 	}
 }
 
@@ -60,6 +108,30 @@ header.site-header a.site-title {
 	div.search-container form > input {
 		flex-grow:1;
 	}
+	
+	#about .center
+	{
+		text-align: center;
+	}
+
+	.site-header a.site-title{
+		display:block;
+	}
+	
+	#about h1 {
+		text-align: center;
+		margin-top:1em;
+		margin-bottom:1em;
+		font-weight: bold;
+	}
+	
+	#about .round-mask-wrap {
+		margin-bottom: 3em;
+	}	
+	
+	#about .round-mask-wrap {
+		width: 50%;
+	}
 }
 
 @media only screen and (max-width: $on-palm) {
@@ -68,9 +140,9 @@ header.site-header a.site-title {
 	}
 
 	code {
-			max-width: $on-palm;
-			word-break: break-all;
-			white-space: pre-wrap;
+		max-width: $on-palm;
+		word-break: break-all;
+		white-space: pre-wrap;
 	}
 
 	.site-header a.site-title{
@@ -95,40 +167,14 @@ header.site-header a.site-title {
 	list-style: none;
 }
 
-#about .round-mask-wrap {
-	filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
-	width: 50%;
-	margin: 20px auto 20px auto;
-}
-
 #about img.round-mask {
 	clip-path: circle(50% at center);
-}
-
-#about h1 {
-	font-family: $serif-font-family;
-	font-size: 1.2em;
-	margin: auto;
-	text-align: center;
-	display:block;
-	margin-top:1em;
-	margin-bottom:1em;
-	font-weight: bold;
 }
 
 #about ul {
 	font-family: $serif-font-family;
 	list-style: none;
 	margin-left: 0px;
-}
-
-#about .center
-{
-	text-align: center;
-}
-
-.site-header a.site-title{
-	display:block;
 }
 
 #about .hidden-link {
@@ -167,7 +213,7 @@ header.site-header a.site-title {
     border-style: solid;
     border-width: 2px;
     border-radius: 3px;
-		border-color: $grey-color-light;
+	border-color: $grey-color-light;
   }
 
   button {

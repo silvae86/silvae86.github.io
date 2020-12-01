@@ -27,7 +27,7 @@ BUNDLER_VERSION="1.16.2"
 # if the legacy headers are not installed (for OS X Mojave):
 if [ ! -f /usr/include ]
 then
-    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
+    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target / 
 fi
 
 #install nvm

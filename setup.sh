@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	source "./scripts/serve_mac.sh"
+	source "./scripts/setup_stuff_mac.sh"
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
-	source "./scripts/serve_linux.sh"
+	source "./scripts/setup_stuff_linux.sh"
 fi

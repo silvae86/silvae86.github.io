@@ -45,21 +45,31 @@ To avoid duplicate emails, [here is a list of answers](/teaching/2021/ESIN_SIBD/
 
 ### Second delivery (70% of Project component)
 
-The second delivery will be a [GitHub](https://github.com) repository containing the website itself. When the work is finished, add the users [lazarocosta](https://github.com/lazarocosta) and [silvae86](https://github.com/silvae86) to the list of collaborators of the repository. After adding us as collaborators, clone your repository using `git clone`, zip the resulting folder and upload it [Moodle](https://moodle.up.pt). **Both steps are required**.
+The second delivery will be a [GitHub](https://github.com) repository containing the website itself. If you have not yet created a GitHub repository for your project, you must follow [these](/teaching/2021/ESIN_SIBD/project_setup) instructions.  
+
+When the work is finished, you must:  
+* add the users [lazarocosta](https://github.com/lazarocosta) and [gflcampos](https://github.com/gflcampos) to the list of collaborators of your repository.  
+* after adding us as collaborators, clone your repository using `git clone`, zip the resulting folder and upload it to [Moodle](https://moodle.up.pt).  
+
+**Both steps are required!**
 
 **Expected contents**
 
-- SQL script to create the database.
+- An SQL script to create the database (if you used SQLiteStudio to create your database, you can export an SQL script by selecting SQL as the export format).
 - All PHP, CSS, images and other files.
-- A README file in the root folder containing data about the authors and how to install and run the project. 
-  - *Ideally, professors should only need to clone the repository and [run the docker boot up command](/teaching/2021/ESIN_SIBD/project_setup) on the cloned folder to boot up the website. Test this before submitting.*
-- No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow etc...). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
+- A README.md file in the root of the repository containing information about the authors and how to run the project.  
+  - *Ideally, professors should only need to clone the repository from GitHub and a `docker run` command (as explained [here](/teaching/2021/ESIN_SIBD/project_setup)) on the cloned folder to boot up the website. Test this before submitting.*
+- No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow, etc). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
 
 **Delivery date**: 23rd December 2020 at 23:59
 
-**Presentation**: In the last practical class of the semester.
+**Presentation**: TBD.
 
-**Format of presentation**: The presentation will be carried out by the students and to the teachers of the practical classes. No slides are required, and only the working website should be presented.
+**Format of presentation**: The presentation will be carried out by the students to the teachers of the practical classes via Zoom. No slides are required, and only the working website should be presented.  
+Groups will have a total of 15 minutes each to present their work:
+
+* 10 minutes to demonstrate the website functionality and highlight any parts of the code that they are particularly proud of, if they so desire.
+* 5 minutes for questions.
 
 #### Setting up the project environment
 
@@ -73,9 +83,9 @@ The second delivery will be a [GitHub](https://github.com) repository containing
 
 Here are some last minute checks to do before sending in your work.
 
-- Did you run your whole script on a blank database? does it run without errors?
+- Did you run your whole script on a blank database? Does it run without errors?
 - Did you validate your HTML and CSS?
-- Do all your web pages render correctly in the browser, without 404 errors (use the browser inspector for this)
+- Do all your web pages render correctly in the browser, without 404 errors (use the browser inspector to check this).
 - Does your ZIP file actually contain everything that is expected?
 
 ### Penalty for delays

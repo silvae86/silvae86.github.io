@@ -48,7 +48,7 @@ To avoid duplicate emails, [here is a list of answers](/teaching/2021/ESIN_SIBD/
 The second delivery will be a [GitHub](https://github.com) repository containing the website itself. If you have not yet created a GitHub repository for your project, you must follow [these](/teaching/2021/ESIN_SIBD/project_setup) instructions.  
 
 When the work is finished, you must:  
-* add the users [lazarocosta](https://github.com/lazarocosta) and [zeornelas](https://github.com/zeornelas) to the list of collaborators of your repository.  
+* add the users [gflcampos](https://github.com/gflcampos) and [zeornelas](https://github.com/zeornelas) to the list of collaborators of your repository.  
 * after adding us as collaborators, clone your repository using `git clone`, zip the resulting folder and upload it to [Moodle](https://moodle.up.pt).  
 
 **Both steps are required!**

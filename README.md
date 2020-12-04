@@ -3,3 +3,11 @@ An Engineer's Blog - Source code for the blog, lectures, keynotes and other peda
 
 Source code for the blog at https://silvae86.github.io/
 
+## Testing locally
+
+```shell
+git clone https://github.com/silvae86/silvae86.github.io
+cd silvae86.github.io
+./setup.sh
+./serve.sh
+```

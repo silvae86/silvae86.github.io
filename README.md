@@ -5,6 +5,8 @@ Source code for the blog at https://silvae86.github.io/
 
 ## Testing locally
 
+Only runs on Ubuntu and macOS.
+
 ```shell
 git clone https://github.com/silvae86/silvae86.github.io
 cd silvae86.github.io

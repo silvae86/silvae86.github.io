@@ -47,6 +47,9 @@ To avoid duplicate emails, [here is a list of answers](/teaching/2021/ESIN_SIBD/
 
 The second delivery will be a [GitHub](https://github.com) repository containing the website itself. If you have not yet created a GitHub repository for your project, you must follow [these](/teaching/2021/ESIN_SIBD/project_setup) instructions.  
 
+**<ins>NOTE:</ins>** You should be using Git from day one of the development. Both group elements should interact with Git (committing, pushing and pulling) frequently throughout the project development.  
+If you have already stared developing without using Git, stop. Set up you GitHub repository, push whatever you already have to it and then you can continue developing.  
+
 When the work is finished, you must:  
 * add the users [gflcampos](https://github.com/gflcampos) and [zeornelas](https://github.com/zeornelas) to the list of collaborators of your repository.  
 * after adding us as collaborators, clone your repository using `git clone`, zip the resulting folder and upload it to [Moodle](https://moodle.up.pt).  

@@ -15,8 +15,8 @@
 | 11   | 30 Nov.-4 Dec.     | **PHP**: Code organization, forms, actions and register.<br /><br />Examples: [Organization & Register]({% link _pages/teaching/exercises/php/organization-register.zip %}) | [Project]({% link _pages/teaching/2021/ESIN_SIBD/esin/project.md %}) Support  <br/><br/>[PHP FAQ and Common Mistakes]({% link _pages/teaching/2021/ESIN_SIBD/tips_faq.md %}) |
 | 12   | 7-11 Dec.     | **PHP**: Error handling and file uploads<br /><br />Examples: [Login, Logout and Shopping Cart]({% link _pages/teaching/exercises/php/login-cart.zip %}) | [Project]({% link _pages/teaching/2021/ESIN_SIBD/esin/project.md %}) Support \| [PHP Exercises](https://web.fe.up.pt/~arestivo/page/exercises/php/) |
 | 13   | 14-18 Dec.     | **PHP** Examples<br />[Messages, Search and Pagination]({% link _pages/teaching/exercises/php/messages-search-pagination.zip %}) \| [Orders]({% link _pages/teaching/exercises/php/orders.zip %}) | [Project]({% link _pages/teaching/2021/ESIN_SIBD/esin/project.md %}) Support \| [PHP Exercises](https://web.fe.up.pt/~arestivo/page/exercises/php/) |
-|    | 23 Dec.     |  | <i class="fa fa-envelope fa-pulse delivery"></i>**Delivery**                                     |
-|    | TBD      |  | <i class="fa fa-envelope fa-pulse delivery"></i>**Presentation**                                     |
+|    | 28 Dec.     |  | <i class="fa fa-envelope fa-pulse delivery"></i>**Delivery**                                     |
+|    | 30 Dec.      |  | <i class="fa fa-envelope fa-pulse delivery"></i>**Presentation**                                     |
 
 ## COVID-19 pandemic (PLEASE READ!)
 

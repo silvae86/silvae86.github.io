@@ -48,7 +48,7 @@ To avoid duplicate emails, [here is a list of answers](/teaching/2021/ESIN_SIBD/
 The second delivery will be a [GitHub](https://github.com) repository containing the website itself. If you have not yet created a GitHub repository for your project, you must follow [these](/teaching/2021/ESIN_SIBD/project_setup) instructions.  
 
 **<ins>NOTE:</ins>** You should be using Git from day one of the development. Both group elements should interact with Git (committing, pushing and pulling) frequently throughout the project development.  
-If you have already stared developing without using Git, stop. Set up you GitHub repository, push whatever you already have to it and then you can continue developing.  
+If you have already started developing without using Git, stop. Set up you GitHub repository, push whatever you already have to it and then you can continue developing.  
 
 When the work is finished, you must:  
 * add the users [gflcampos](https://github.com/gflcampos) and [zeornelas](https://github.com/zeornelas) to the list of collaborators of your repository.  
@@ -64,9 +64,9 @@ When the work is finished, you must:
   - *Ideally, professors should only need to clone the repository from GitHub and a `docker run` command (as explained [here](/teaching/2021/ESIN_SIBD/project_setup)) on the cloned folder to boot up the website. Test this before submitting.*
 - No frameworks or external libraries are allowed (jQuery, Bootstrap, Angular, CSS pasted from StackOverflow, etc). You must write **everything from scratch**, and any unlawful behaviour will be strongly punished.
 
-**Delivery date**: 23rd December 2020 at 23:59
+**Delivery date**: 28th December 2020 at 23:59
 
-**Presentation**: TBD.
+**Presentation**: 30th December 2020
 
 **Format of presentation**: The presentation will be carried out by the students to the teachers of the practical classes via Zoom. No slides are required, and only the working website should be presented.  
 Groups will have a total of 15 minutes each to present their work:
@@ -111,7 +111,7 @@ Without the proper foundation (a correct database schema) any code you write on 
 
 It is a good idea to work *smart* instead of *hard*. Split your problem into smaller ones, prioritize those, and add more features as time allows. Basic functionality like a list in a homepage or the login should **not** fail on the day of the demo, especially if you spent time implementing other "optional" features.
 
-In the professional world, all client requirements are broken down into smaller features that must be prioritized, their effort estimated, and some even need to be dropped. What seems very interesting / essential today may not seem like a good idea two weeks from now, and may be dropped algether.
+In the professional world, all client requirements are broken down into smaller features that must be prioritized, their effort estimated, and some even need to be dropped. What seems very interesting / essential today may not seem like a good idea two weeks from now, and may be dropped altogether.
 
 ### Keep it simple
 

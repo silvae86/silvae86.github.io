@@ -34,6 +34,7 @@ show_excerpts: true
 
 GH_ENV: gh_pages
 environment: production
+encoding: utf-8
 
 safe: true
 

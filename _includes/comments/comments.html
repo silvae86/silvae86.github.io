@@ -1,0 +1,35 @@
+{% assign issues_repo = site.issues_repo %}
+{% assign issue_id = include.issue_id %}
+
+<section id="comments">
+    <div class="comment-actions">
+        <h1 class="comment-section-header">Comments <span id="comments-count"></span></h1>
+        <a
+          class="post-comment-button"
+          href="https://github.com/{{ issues_repo }}/issues/{{ issue_id }}"
+          ><i class="fa fa-plus"></i>Post comment</a
+        >
+    </div>
+    <div id="comments-wrapper">
+      Loading...
+    </div>
+</section>
+
+<!-- Include depencencies scripts -->
+{% include comments/dependencies.html %}
+
+<!-- Include observer function -->
+{% include comments/observer.html %}
+
+<!-- Include observer function -->
+{% include comments/renderer.html %}
+
+<!-- Comments script -->
+<script>
+const commentsSection = document.getElementById('comments');
+const commentsWrapper = commentsSection.querySelector('#comments-wrapper');
+const commentsCount = commentsSection.querySelector('#comments-count');
+
+commentsObserver.observe(commentsSection);
+
+</script>

@@ -3,6 +3,7 @@ layout: post
 title:  "Fixing no Spotlight results on macOS Big Sur"
 date: 2020-12-20 09:40:000 +0100
 tags: macOS big sur spotlight index
+comments_id: 15
 ---
 
 After upgrading to macOS Big Sur I noticed that Spotlight would no longer list any local applications or files.

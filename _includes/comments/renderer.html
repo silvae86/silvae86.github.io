@@ -1,0 +1,49 @@
+<script type="text/javascript">
+  /**
+  * @param {Array<Object>} comments - an array of objects representing GitHub comments
+  */
+  function renderComments(comments) {
+    if (!allCommentScriptsLoaded()) return;
+
+    commentsCount.innerText = `(${comments.length})`;
+
+    const commentsList = document.createElement('ol');
+    commentsList.className = 'comments-list';
+    commentsList.setAttribute('aria-label', 'Comments on this blog post');
+
+    commentsList.innerHTML = comments
+    .sort((comment1, comment2) => {
+      return comment1.created_at < comment2.created_at ? 1 : -1;
+    })
+    .map(comment => {
+      // load the relativeTime plugin
+      dayjs.extend(dayjs_plugin_relativeTime);
+      const datePosted = dayjs(comment.created_at).fromNow();
+
+      const user = comment.user;
+      const body = DOMPurify.sanitize(marked(comment.body));
+      const postedByAuthor = comment.author_association === 'OWNER';
+      const edited = comment.created_at !== comment.updated_at;
+
+      return `<li class="comment">
+                  <div class="commenter">
+                      <img src="${user.avatar_url}" alt="" aria-hidden="true" class="meta avatar" />
+                      <a
+                          href="https://github.com/${user.login}"
+                          class="meta username"
+                          >${user.login}</a
+                      >
+                      <div class="meta date-posted">commented <time datetime="${comment.created_at}">${datePosted}</time></div>
+                      ${postedByAuthor ? '<span class="meta tag author-badge">Author</span>' : ''}
+                      ${edited ? `<span class="meta comment-edited">Edited</span>` : ''}
+                  </div>
+                  <div class="comment-body">${body}</div>
+              </li>`;
+    })
+    .join('');
+
+    commentsWrapper.innerHTML = '';
+    commentsWrapper.appendChild(commentsList);
+  }
+
+</script>

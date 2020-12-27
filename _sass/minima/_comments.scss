@@ -1,0 +1,18 @@
+section#comments > div.comment-actions {
+  .h1 {
+    font-size: 3em;
+  }
+
+  a.post-comment-button {
+    color: white;
+    display: inline-block;
+    background-color: transparentize($brand-color, 0.5);
+    padding: 0.1em 0.8em 0.1em 0.8em;
+    border-radius:3px;
+    margin: 1em 0px;
+  }
+
+  a.post-comment-button:hover{
+    background-color: transparentize($brand-color, 0.1);
+  }
+}

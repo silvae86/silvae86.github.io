@@ -1,18 +1,65 @@
+$comment-header-size: 1.5em;
+$author-pill-color: #a1045a;
+
+section#comments {
+  display: flex;
+  flex-direction: column;
+}
+
 section#comments > div.comment-actions {
-  .h1 {
-    font-size: 3em;
+  h1 {
+    display: inline;
+    font-size: $comment-header-size;
+    float: left;
   }
 
   a.post-comment-button {
-    color: white;
-    display: inline-block;
-    background-color: transparentize($brand-color, 0.5);
-    padding: 0.1em 0.8em 0.1em 0.8em;
+    @extend a.tag-pill;
+    padding: 0.3em 0.8em 0.3em 0.8em;
     border-radius:3px;
-    margin: 1em 0px;
+    float: right;
   }
 
   a.post-comment-button:hover{
     background-color: transparentize($brand-color, 0.1);
+  }
+}
+
+section#comments {
+  ol, li {
+    list-style-type: none;
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+  }
+
+  .commenter {
+    display: flex;
+  }
+
+  .commenter > * {
+    margin-right: 0.5em;
+  }
+
+  li.comment .commenter > img {
+    width: $comment-header-size;
+    height: $comment-header-size;
+  }
+
+  div.date-posted {
+    font-style: italic;
+  }
+
+  span.author-badge {
+    @extend a.tag-pill;
+    margin-left: auto;
+    background-color: transparentize($author-pill-color, 0.5);
+    border-color: $author-pill-color;
+    border-style: solid 1px;
+    color: $background-color;
+  }
+
+  span.author-badge:hover {
+    background-color: transparentize($author-pill-color, 0.4);
   }
 }

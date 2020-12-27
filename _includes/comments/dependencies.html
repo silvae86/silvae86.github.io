@@ -1,25 +1,40 @@
 <script type="text/javascript">
   const commentScripts = {
     marked: {
-      src: '/assets/js/marked.min.js',
+      src: '/assets/github-comments/marked.min.js',
       loaded: false,
     },
     DOMPurify: {
-      src: '/assets/js/purify.min.js',
+      src: '/assets/github-comments/purify.min.js',
       loaded: false,
     },
     dayjs: {
-      src: '/assets/js/dayjs.min.js',
+      src: '/assets/github-comments/dayjs.min.js',
       loaded: false,
     },
     dayJsRelativeTimePlugin: {
-      src: '/assets/js/relativeTime.js',
+      src: '/assets/github-comments/relativeTime.js',
       loaded: false,
     },
   };
 
   function allCommentScriptsLoaded() {
     return Object.keys(commentScripts).every(script => commentScripts[script].loaded);
+  }
+
+  /**
+  * @param {Object} script - the script to load async
+  * @param {function} callback - a function to call once the script has loaded
+  */
+  function loadCommentScript(script, callback) {
+    const scriptElement = document.createElement('script');
+    scriptElement.src = script.src;
+    document.body.appendChild(scriptElement);
+
+    scriptElement.onload = () => {
+        script.loaded = true;
+        callback();
+    };
   }
 
   /**

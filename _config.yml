@@ -23,6 +23,11 @@ url: "https://silvae86.github.io" # the base hostname & protocol for your site, 
 github_username:  silvae86
 linkedin_username: joaomiguelsilva
 
+# For the issue-based comments
+issues_repo: silvae86/silvae86.github.io
+github_comments_app_id: f7759fffd083d1eb168e
+github_comments_app_secret: e4bf7ffb5357d199825a4be9183844f45b69ee2a
+
 # Build settings
 markdown: kramdown
 kramdown:

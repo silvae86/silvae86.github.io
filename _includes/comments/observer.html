@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  function fetchComments() {
+    fetch(
+      'https://api.github.com/repos/{{ issues_repo }}/issues/{{ issue_id }}/comments'
+    )
+      .then(blob => blob.json())
+      .then(initRenderComments)
+      .catch(e => {
+        commentsWrapper.innerHTML = `<p>Unable to retrieve the comments for this post. Check back later.</p>`;
+      });
+  }
+
+  const commentsObserver = new IntersectionObserver(function (entries, self) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            fetchComments(); // this is the important part
+            self.unobserve(entry.target);
+        }
+    });
+  }, { rootMargin: '200px 0px 0px 0px' });
+</script>

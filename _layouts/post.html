@@ -26,6 +26,10 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.comments_id %}
+      {% include comments/comments.html issue_id=page.comments_id %}
+  {% endif %}
+
   {% include share-bar.html %}
 
   {%- if site.disqus.shortname -%}

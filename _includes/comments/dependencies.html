@@ -1,0 +1,40 @@
+<script type="text/javascript">
+  const commentScripts = {
+    marked: {
+      src: '/assets/js/marked.min.js',
+      loaded: false,
+    },
+    DOMPurify: {
+      src: '/assets/js/purify.min.js',
+      loaded: false,
+    },
+    dayjs: {
+      src: '/assets/js/dayjs.min.js',
+      loaded: false,
+    },
+    dayJsRelativeTimePlugin: {
+      src: '/assets/js/relativeTime.js',
+      loaded: false,
+    },
+  };
+
+  function allCommentScriptsLoaded() {
+    return Object.keys(commentScripts).every(script => commentScripts[script].loaded);
+  }
+
+  /**
+  * Called after the GitHub API request finishes.
+  * @param {Array<Object>} comments - an array of objects representing GitHub comments
+  */
+  function initRenderComments(comments) {
+    if (!comments.length) {
+      commentsWrapper.innerHTML = `<p>No comments yet 👀 Be the first to post!</p>`;
+      return;
+    }
+
+    // Load all comment script dependencies async
+    Object.keys(commentScripts).forEach(script =>
+      loadCommentScript(commentScripts[script], () => renderComments(comments))
+    );
+  }
+</script>

@@ -181,7 +181,7 @@ pre {
 div.highlight {
     // change theme here
     @import "minima/themes/autumn";
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.2));
     border-radius: 5px;
 }
 
@@ -208,6 +208,11 @@ table.rouge-table {
     border-style:none;
     table-layout: fixed;
     border-radius: 3px;
+}
+
+.highlighter-rouge {
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 table.rouge-table tr, table.rouge-table td {

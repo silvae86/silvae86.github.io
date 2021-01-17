@@ -37,15 +37,11 @@ If it is not listed below, it should not be on your table. Any consultation mate
 
 The exam will be made available in [Moodle](https://moodle.up.pt). **Please make sure to test your access to the platform. Contact the [FEUP Helpdesk](mailto:helpdesk@fe.up.pt) to sort out any issues beforehand.**  
 
-- **UML Class Diagram exercise**
-	- You will be presented with a UML Class Diagram and will have to answer multiple choice and open-answer questions about it.
-- **Relational Model exercise**
-	- Conversion of UML to Relational Model.
-- **Some multiple choice and short-answer questions on HTML, CSS, PHP, Git and Docker**
-	- Wrong answers will produce negative scores, so if you are not sure, **do not answer**.
-- **PHP code question**
-	- To prepare for this question, you should review basic functionality you implemented on your project, such as registration, authentication, listing and inserting information from/into the database.
-- **SQL exercises**
+**NOTE**: wrong answers on multiple choice questions will produce negative scores, so if you are not sure, **do not answer**.
+
+- **UML Class Diagram**: multiple choice and open-answer questions.
+- **Relational Model**: open-answer questions.
+- **SQL**:
 	- An SQL script will be provided in Moodle, that you must download and use to initialize your database. **Please review how to initialize a database in SQLite3 beforehand, so you do not waste time during he exam**.
 	- For every exercise, you must provide the SQL query that returns the expected results. To avoid losing work and time, you can follow this workflow, like we did in class:
 		1. Use a proper code text editor available at the FEUP computers, such as Notepad++, Atom or VS Code.
@@ -56,6 +52,8 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 		6. Do not include any SQLite initialization code, such as `.headers on` or `.mode columns`. The answer should be the query itself only.
 	- When a question does not ask you to order the results, your answer will be correct as long as it returns the expected tuples, regardless of their order.
 	- Even when your answer produces the same tuples as the ones presented as the example result for the question, it may not be considered correct. In the correction we will test your queries against a database with the same structure as the supplied script but with different records, designed to test more edge cases (like we have seen in class). To be considered correct, your query should still produce the correct answers when ran against the correction database.
+- **HTML, CSS, PHP, Git and Docker**: multiple choice and open-answer questions.
+- **PHP**: code question.
 
 ## Previous exams
 

@@ -46,7 +46,7 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 - **PHP code question**
 	- To prepare for this question, you should review basic functionality you implemented on your project, such as registration, authentication, listing and inserting information from/into the database.
 - **SQL exercises**
-	- An SQL script will be provided in Moodle, that you must download and use to initialize your database. **Please review how to initialize a database in SQLite3 beforehand, so you do not waste time during he exam**.
+	- An SQL script will be provided in Moodle, that you must download and use to initialize your database. **Please review how to initialize a database in SQLite3 beforehand, so you do not waste time during the exam**.
 	- For every exercise, you must provide the SQL query that returns the expected results. To avoid losing work and time, you can follow this workflow, like we did in class:
 		1. Use a proper code text editor available at the FEUP computers, such as Notepad++, Atom or VS Code.
 		2. Use UTF-8 encoding (same as the one used in the script).

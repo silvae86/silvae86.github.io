@@ -13,42 +13,42 @@ tags: teaching databases web programming feup
 
 ### 1st Phase
 
-- **Date**: TBA
-- **Time**: TBA
-- **Rooms**: TBA
+- **Date**: 22/01/2021
+- **Time**: 11:30 - 13:00
+- **Rooms**: B207, B104
 
 ### 2nd Phase / Improvement
 
-- **Date**: TBA
-- **Time**: TBA
-- **Room**: TBA
+- **Date**: 06/02/2021
+- **Time**: 08:30 - 10:00
+- **Room**: B207, B104
 
 ## Necessary materials
 
 If it is not listed below, it should not be on your table. Any consultation materials deemed necessary for the exam will be made available in Moodle.
 
 - **Writing material**.
-- **Blank paper sheets**, just in case we run out of draft paper sheets that we will supply during the exam. Sign and return all draft paper sheets to the professor in your exam room before leaving.
+- **Blank paper sheets**, just in case we run out of draft paper sheets that we will supply during the exam. Sign and return all draft paper sheets to the professor in your exam room before leaving. All questions will be answered in Moodle, so you can use the paper sheet simply as a draft. **Anything written on the paper sheets will not be considered for evaluation.**
 - **Student card**, which you will place on the corner of your table for easy checking; otherwise we will bother you during the exam unnecessarily.
 
 **Smartwatches and mobile phones must stay in your bags.**
 
 ## Format
 
-The exam will be made available in [Moodle](https://moodle.up.pt). **Please make sure to test your access to the platform. Contact the [FEUP Helpdesk](mailto:helpdesk@fe.up.pt) to sort out any issues beforehand.**
+The exam will be made available in [Moodle](https://moodle.up.pt). **Please make sure to test your access to the platform. Contact the [FEUP Helpdesk](mailto:helpdesk@fe.up.pt) to sort out any issues beforehand.**  
 
-1. **UML Class Diagram exercise** (delivered on paper)
-	- A problem statement similar to the UML Class Diagram exercises will be presented in Moodle.
-	- Like in the practical exercises, if you assume something that is not clear in the problem statement, write those assumptions in the paper. If you model according to those assumptions, we will consider it correct.
-	- Students must turn in a single paper sheet with their resolution of the UML Class Diagram exercise to the professors during the exam.
-	- If a student does not wish to deliver a solution, he/she must deliver an empty paper sheet, adequately identified and signed, with the words "I do not wish to solve the UML exercise".
-2. **Relational Model exercise** (via moodle)
-3. **Some multiple choice / short answers on HTML, PHP, and CSS** (via moodle)
+- **UML Class Diagram exercise**
+	- You will be presented with a UML Class Diagram and will have to answer multiple choice and open-answer questions about it.
+- **Relational Model exercise**
+	- Conversion of UML to Relational Model.
+- **Some multiple choice and short-answer questions on HTML, CSS, PHP, Git and Docker**
 	- Wrong answers will produce negative scores, so if you are not sure, **do not answer**.
-4. **SQL exercises**
-	- An SQL script will be provided in Moodle, that you must download and use to initialize your database.
+- **PHP code question**
+	- To prepare for this question, you should review basic functionality you implemented on your project, such as registration, authentication, listing and inserting information from/into the database.
+- **SQL exercises**
+	- An SQL script will be provided in Moodle, that you must download and use to initialize your database. **Please review how to initialize a database in SQLite3 beforehand, so you do not waste time during the exam**.
 	- For every exercise, you must provide the SQL query that returns the expected results. To avoid losing work and time, you can follow this workflow, like we did in class:
-		1. Use a proper code text editor available at the FEUP computers, such as Notepad++ or Atom.
+		1. Use a proper code text editor available at the FEUP computers, such as Notepad++, Atom or VS Code.
 		2. Use UTF-8 encoding (same as the one used in the script).
 		3. Make a separate text file for each of your solutions and edit the code there.
 		4. Test your queries using the SQLite command line (use the `.read` command to run each of your files instead of typing on the command line).
@@ -70,8 +70,6 @@ Some examples of previous years are available [here](https://web.fe.up.pt/~arest
 - These students must secure the contact of a responsible person at their home University beforehand and supply that contact to the course professors. We will then coordinate with this person to arrange a controlled environment at the student's home institution where they can perform the exam. This person will assume responsibility for making sure that exam rules are followed.
 
 - The responsible person needs to communicate to the professors the range of external IPs from which the student will perform the exam, otherwise the student will not be able to perform the exam.
-
-- Since they are supposed to be drawn on paper, UML diagrams must be delivered to the responsible person at the end of the exam time period. That individual must then scan and email the diagram to the course professors, if possible within one hour after the exam.
 
 ## Play fair
 

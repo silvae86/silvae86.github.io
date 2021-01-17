@@ -41,7 +41,7 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 	- You will be presented with a UML Class Diagram and will have to answer multiple choice and open-answer questions about it.
 - **Relational Model exercise**
 	- Conversion of UML to Relational Model.
-- **Some multiple choice and short-answer questions on HTML, CSS and PHP**
+- **Some multiple choice and short-answer questions on HTML, CSS, PHP, Git and Docker**
 	- Wrong answers will produce negative scores, so if you are not sure, **do not answer**.
 - **PHP code question**
 	- To prepare for this question, you should review basic functionality you implemented on your project, such as registration, authentication, listing and inserting information from/into the database.

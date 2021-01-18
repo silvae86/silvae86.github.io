@@ -25,7 +25,7 @@ tags: teaching databases web programming feup
 
 ## Necessary materials
 
-If it is not listed below, it should not be on your table. Any consultation materials deemed necessary for the exam will be made available in Moodle.
+If it is not listed below, it should not be on your table. Any consultation materials (including the slides) deemed necessary for the exam will be made available in Moodle.
 
 - **Writing material**.
 - **Blank paper sheets**, just in case we run out of draft paper sheets that we will supply during the exam. Sign and return all draft paper sheets to the professor in your exam room before leaving. All questions will be answered in Moodle, so you can use the paper sheet simply as a draft. **Anything written on the paper sheets will not be considered for evaluation.**
@@ -54,6 +54,19 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 	- Even when your answer produces the same tuples as the ones presented as the example result for the question, it may not be considered correct. In the correction we will test your queries against a database with the same structure as the supplied script but with different records, designed to test more edge cases (like we have seen in class). To be considered correct, your query should still produce the correct answers when ran against the correction database.
 - **HTML, CSS, PHP, Git and Docker**: multiple choice and open-answer questions.
 - **PHP**: code question.
+
+## Rules of conduct in times of COVID-19
+- The use of a mask is mandatory for all participants (students, teachers, etc).
+- Before the test starts, students should keep a distance of more than 1m from each other, either during the waiting time in the corridor or during the entrance and exit.
+- Groups of persons are not allowed in the corridors, as well as outside spaces of FEUP, before and after the exams.
+- In the 10 minutes before the starting time, students must go to the respective classrooms, entering and sitting immediately:
+	- Should sit at the available tables further away from the entrance door(s) to the room, in the order of entry; Students should be distributed evenly in the classroom with places of interval as in the classes.
+	- At the entrance of the PC rooms, each student must be provided with a disinfectant wipe, with which they must disinfect the equipment they will use (keyboard, mouse...); the used wipe must be deposited in the dustbin when leaving the room, at the end of the test.
+- During the exam:
+	- There will be no possibility of questioning the professors present to avoid proximity between professors and students.
+	- Delivery of extra sheets of paper should be avoided during the test.
+- Students must remain seated until the end of the exam, even if they finish before;
+- At the order of the professor, students may leave the classroom starting from those who are closest to the doors;
 
 ## Previous exams
 

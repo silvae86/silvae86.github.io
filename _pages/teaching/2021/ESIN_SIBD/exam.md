@@ -25,7 +25,7 @@ tags: teaching databases web programming feup
 
 ## Necessary materials
 
-If it is not listed below, it should not be on your table. Any consultation materials deemed necessary for the exam will be made available in Moodle.
+If it is not listed below, it should not be on your table. Any consultation materials (including the slides) deemed necessary for the exam will be made available in Moodle.
 
 - **Writing material**.
 - **Blank paper sheets**, just in case we run out of draft paper sheets that we will supply during the exam. Sign and return all draft paper sheets to the professor in your exam room before leaving. All questions will be answered in Moodle, so you can use the paper sheet simply as a draft. **Anything written on the paper sheets will not be considered for evaluation.**
@@ -37,15 +37,11 @@ If it is not listed below, it should not be on your table. Any consultation mate
 
 The exam will be made available in [Moodle](https://moodle.up.pt). **Please make sure to test your access to the platform. Contact the [FEUP Helpdesk](mailto:helpdesk@fe.up.pt) to sort out any issues beforehand.**  
 
-- **UML Class Diagram exercise**
-	- You will be presented with a UML Class Diagram and will have to answer multiple choice and open-answer questions about it.
-- **Relational Model exercise**
-	- Conversion of UML to Relational Model.
-- **Some multiple choice and short-answer questions on HTML, CSS, PHP, Git and Docker**
-	- Wrong answers will produce negative scores, so if you are not sure, **do not answer**.
-- **PHP code question**
-	- To prepare for this question, you should review basic functionality you implemented on your project, such as registration, authentication, listing and inserting information from/into the database.
-- **SQL exercises**
+**NOTE**: wrong answers on multiple choice questions will produce negative scores, so if you are not sure, **do not answer**.
+
+- **UML Class Diagram**: multiple choice and open-answer questions.
+- **Relational Model**: open-answer questions.
+- **SQL**:
 	- An SQL script will be provided in Moodle, that you must download and use to initialize your database. **Please review how to initialize a database in SQLite3 beforehand, so you do not waste time during the exam**.
 	- For every exercise, you must provide the SQL query that returns the expected results. To avoid losing work and time, you can follow this workflow, like we did in class:
 		1. Use a proper code text editor available at the FEUP computers, such as Notepad++, Atom or VS Code.
@@ -56,6 +52,21 @@ The exam will be made available in [Moodle](https://moodle.up.pt). **Please make
 		6. Do not include any SQLite initialization code, such as `.headers on` or `.mode columns`. The answer should be the query itself only.
 	- When a question does not ask you to order the results, your answer will be correct as long as it returns the expected tuples, regardless of their order.
 	- Even when your answer produces the same tuples as the ones presented as the example result for the question, it may not be considered correct. In the correction we will test your queries against a database with the same structure as the supplied script but with different records, designed to test more edge cases (like we have seen in class). To be considered correct, your query should still produce the correct answers when ran against the correction database.
+- **HTML, CSS, PHP, Git and Docker**: multiple choice and open-answer questions.
+- **PHP**: code question.
+
+## Rules of conduct in times of COVID-19
+- The use of a mask is mandatory for all participants (students, teachers, etc).
+- Before the test starts, students should keep a distance of more than 1m from each other, either during the waiting time in the corridor or during the entrance and exit.
+- Groups of persons are not allowed in the corridors, as well as outside spaces of FEUP, before and after the exams.
+- In the 10 minutes before the starting time, students must go to the respective classrooms, entering and sitting immediately:
+	- Should sit at the available tables further away from the entrance door(s) to the room, in the order of entry; Students should be distributed evenly in the classroom with places of interval as in the classes.
+	- At the entrance of the PC rooms, each student must be provided with a disinfectant wipe, with which they must disinfect the equipment they will use (keyboard, mouse...); the used wipe must be deposited in the dustbin when leaving the room, at the end of the test.
+- During the exam:
+	- There will be no possibility of questioning the professors present to avoid proximity between professors and students.
+	- Delivery of extra sheets of paper should be avoided during the test.
+- Students must remain seated until the end of the exam, even if they finish before;
+- At the order of the professor, students may leave the classroom starting from those who are closest to the doors;
 
 ## Previous exams
 

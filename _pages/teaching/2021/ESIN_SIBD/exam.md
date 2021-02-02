@@ -19,9 +19,9 @@ tags: teaching databases web programming feup
 
 ### 2nd Phase / Improvement
 
-- **Date**: 06/02/2021
+- **Date**: 05/02/2021
 - **Time**: 08:30 - 10:00
-- **Room**: B207, B104
+- **Room**: B207 (ESIN), B104 (SIBD)
 
 ## Necessary materials
 

@@ -45,13 +45,45 @@
   }
 
   .page-link {
+	position: relative;
     color: $text-color;
     line-height: $base-line-height;
+	padding: 0.7em;
+	outline: 0;
+	overflow:hidden;
+	background: none;
+	// z-index: 1;
+	cursor: pointer;
+	transition:         0.08s ease-in;
+	-o-transition:      0.08s ease-in;
+	-ms-transition:     0.08s ease-in;
+	-moz-transition:    0.08s ease-in;
+	-webkit-transition: 0.08s ease-in;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+       margin-right: 0.5em;
     }
+  }
+  
+  .page-link:before {
+    content: "";
+    position: absolute;
+    background-color: $brand-color;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+  }
+  
+  .page-link:hover {
+  	  color: $background-color;
+  }
+  
+  .page-link:hover:before {
+	  top: 0;
   }
 
   @include media-query($on-palm) {

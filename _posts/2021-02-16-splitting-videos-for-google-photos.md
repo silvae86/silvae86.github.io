@@ -2,7 +2,7 @@
 layout: post
 title:  "Splitting videos automatically for Google Photos"
 date: 2021-02-16 18:14:000 +0100
-tags: macOS "google photos" homebrew ffmpeg terminal
+tags: macOS google photos homebrew ffmpeg terminal
 comments_id: 22
 ---
 

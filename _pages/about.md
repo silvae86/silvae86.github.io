@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About me
+title: About
 include_in_menu: true
 permalink: /about/
-crumbtitle: About me
+crumbtitle: About
 navorder: 4
 ---
 

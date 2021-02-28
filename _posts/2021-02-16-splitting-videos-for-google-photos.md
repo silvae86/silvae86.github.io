@@ -17,40 +17,65 @@ Enjoy this while you can still upload in [High Quality without the videos counti
 
 ## Install ffmpeg
 
-Install [Homebrew](https://brew.sh) if you do not already have it in your Mac. Then, install ffmpeg and 
+Install [Homebrew](https://brew.sh) if you do not already have it in your Mac. Then, install `ffmpeg`:
 
 ```bash
 brew install ffmpeg
 ```
 
+Now, here is a script that will split a file into segments with a maximum file size. The first argument of the script is the path of the file to be split, and the second argument is the maximum size of the segments, e.g. `10M` for 10 Megabytes or `8G` for 8 Gigabytes.
+
+The script is designed to copy the video and audio streams directly instead of recompressing the file, which would take longer and reduce the quality of the resulting files.
 
 ```bash
 #!/bin/bash
-INPUT_FILE=$1
+
+display_usage() {
+	echo "You must provide two arguments for this script. First, the full path to the file to split, and then the maximum size of each segment (e.g. 8G will split the files up to 8GB segments each.)"
+	echo -e "\nUsage: $0 <input_file> <segment_size> \n"
+}
+
+# if less than two arguments supplied, display usage
+if [  $# -lt 2 ]
+then
+	display_usage
+	exit 1
+fi
+
+INPUT_FILE="$1"
+SEGMENT_SIZE="$2"
 
 # based on https://stackoverflow.com/questions/965053/extract-filename-and-extension-in-bash
 FILENAME=${INPUT_FILE##*/}
 INPUT_FILE_NO_EXTENSION=${FILENAME%%.*}
+EXTENSION="${FILENAME##*.}"
 
-SLICES_LENGTH_IN_SECONDS=0
 function calculate_length_in_secs {
-	FILE=$1
-	echo $(ffprobe -i "$FILE" -show_entries format=duration -v quiet -of csv="p=0")
+	FILE="$1"
+	LENGTH=$(ffprobe -i "$FILE" -show_entries format=duration -v quiet -of csv="p=0")
+	echo "${LENGTH%.*}"
 }
 
-function calculate_length_in_sexagesimal {
-	FILE=$1
-	echo $(ffprobe -v error -sexagesimal -select_streams v:0 -show_entries stream=duration -of default=noprint_wrappers=1:nokey=1 $FILE)
-}
+FULL_LENGTH=$(calculate_length_in_secs "$INPUT_FILE")
+OFFSET_TIMESTAMP=0
+SEGMENT_NUMBER=0
+while [[ $OFFSET_TIMESTAMP < $FULL_LENGTH ]]; do
+	((SEGMENT_NUMBER++))
+	echo "Processing segment $SEGMENT_NUMBER..."
+	OUTPUT_FILE="$INPUT_FILE_NO_EXTENSION-segment-$SEGMENT_NUMBER.$EXTENSION"
 
-FULL_LENGTH_IN_SECONDS=calculate_length_in_secs "$INPUT_FILE"
-ITERATION=0
-OFFSET_TIMESTAMP="0:00:00.000000"
-
-while [[ $SLICES_LENGTH_IN_SECONDS -lt $FULL_LENGTH_IN_SECONDS ]]; do
-	ffmpeg -i "$INPUT_FILE" segment -segment_time -codec copy -fs 8G "$INPUT_FILE"
+	if [[ $OFFSET_TIMESTAMP -gt 0 ]]; 
+	then
+		ffmpeg -i "$INPUT_FILE" -map 0 -c copy -ss "$OFFSET_TIMESTAMP" -fs "$SEGMENT_SIZE" "$OUTPUT_FILE"
+	else
+		ffmpeg -i "$INPUT_FILE" -map 0 -c copy -fs "$SEGMENT_SIZE" "$OUTPUT_FILE"
+	fi
+	
+	LENGTH_OF_SEGMENT=$(calculate_length_in_secs "$OUTPUT_FILE")
+	echo "Segment $SEGMENT_NUMBER is $LENGTH_OF_SEGMENT seconds long."
+    OFFSET_TIMESTAMP=$((OFFSET_TIMESTAMP+LENGTH_OF_SEGMENT))
+	echo "Next segment will start from $OFFSET_TIMESTAMP"
 done
 
+echo "Completed splitting of $INPUT_FILE into $SEGMENT_NUMBER segments."
 ```
-
-Replace the `<input file>` with the absolute path of your input video

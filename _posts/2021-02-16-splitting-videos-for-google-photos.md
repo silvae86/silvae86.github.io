@@ -2,9 +2,8 @@
 layout: post
 title:  "Splitting videos automatically for Google Photos"
 date: 2021-02-16 18:14:000 +0100
-tags: macOS "google photos" homebrew ffmpeg
-comments_id: 16
-published: false
+tags: macOS "google photos" homebrew ffmpeg terminal
+comments_id: 22
 ---
 
 Google [imposes a limit of 10 GB per video](https://support.google.com/photos/thread/1278118?hl=en&msgid=1279363) on uploads to Google photos. I had some very large videos that I filmed on my iPhone and that Google Photos was refusing to backup. A possible solution is to:

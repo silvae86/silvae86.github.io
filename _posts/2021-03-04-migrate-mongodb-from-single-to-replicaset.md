@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Convert Standalone MongoDB to Replica Set with WiredTiger storage engine (macOS + Homebrew)"
-date: 2021-03-04 23:50:000 +0100
+title:  "Convert Standalone MongoDB to Replica Set with WiredTiger storage engine (macOS and Homebrew)"
+date: 2021-03-04 22:07:000 +0100
 tags: macOS homebrew mongodb replicaset wiredtiger changestreams
+# comments_id: 23
 ---
 
 If you want to take advantage of MongoDB [Change Streams](https://docs.mongodb.com/manual/changeStreams/) (which will allow an event to be fired whenever a collection is modified instead of polling the database for changes), you need to change your MongoDB instance to a Replica Set. Here is the full process using the Terminal.
@@ -87,7 +88,7 @@ Initiate a new replica set with `replocal` as the `_id`.
 rs.initiate({_id: "replocal", members: [{_id: 0, host: "127.0.0.1:27017"}] })
 { "ok" : 1 }
 ```
-{% include info.html content="You may need this replica set name when connecting later using your favorite tool such as [Robo 3T](https://robomongo.org/) (this will be the "Replica set name" field)" %}
+{% include info.html content="You may need this replica set name when connecting later using your favorite tool such as [Robo 3T](https://robomongo.org/) (this will be the **Replica set name** field)" %}
 
 It will tell you that you are secondary, but you will soon be promoted to primary:
 

@@ -162,8 +162,7 @@ Use your multimeter to check for continuity between the two terminals. This is t
 
 If you get around 178 kΩ, that is fine. 0Ω means a short circuit! 
 
-![Finished result](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/soldered-1.jpg){:class="img-center"}
-![Finished result - second angle](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/soldered-2.jpg){:class="img-center"}
+![Finished result](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/soldered.jpg){:class="img-center"}
 *Finished result. Wires soldered and insulation covers the ends.*{:class="img-caption"}
 
 
@@ -203,5 +202,5 @@ Press the charger securely in a vice for 72 hours for the adhesive to achieve ma
 
 
 ![Final Result](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/final-result.jpg){:class="img-center"}
-
 ![MagSafe Charger charging a Macbook](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/final-result-2.jpg){:class="img-center"}
+*Final results! My MacBook is charging its battery again!*{:class="img-caption"}

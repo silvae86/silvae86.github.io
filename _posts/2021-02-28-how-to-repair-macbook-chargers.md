@@ -203,3 +203,5 @@ Press the charger securely in a vice for 72 hours for the adhesive to achieve ma
 
 
 ![Final Result](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/final-result.jpg){:class="img-center"}
+
+![MagSafe Charger charging a Macbook](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/final-result-2.jpg){:class="img-center"}

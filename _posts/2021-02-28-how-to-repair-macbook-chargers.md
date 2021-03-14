@@ -17,7 +17,7 @@ There is a third alternative. Why not fix your current one and help save the pla
 
 ## Why you should not buy a knockoff charger
 
-Some may consider a knockoff charger instead of trying to repair their existing one. Please do **not** buy one of these. If you do not think you are able to undertake this repair, plese take it to a local repair shop and have them do it for you, or simply buy a genuine Apple charger.
+Please do **not** buy one of these. If you do not think you are able to undertake this repair, please take it to a local repair shop and have them do it for you, or simply buy a genuine Apple charger.
 
 Here are the main problems with knockoff chargers:
 

@@ -185,7 +185,7 @@ Align the two halves and apply some more adhesive to the outside edge.
 ![Applying adhesive to the edge of the charger (1/4)](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/adhesive-edge-charger-1.jpg){:class="img-center"}
 ![Applying adhesive to the edge of the charger (2/4)](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/adhesive-edge-charger-2.jpg){:class="img-center"}
 ![Applying adhesive to the edge of the charger (3/4)](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/adhesive-edge-charger-3.jpg){:class="img-center"}
-![Applying adhesive to the edge of the charger (4/4)](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/adhesive-edge-charger-3.jpg){:class="img-center"}
+![Applying adhesive to the edge of the charger (4/4)](/assets/images/post-images/2021-02-28-how-to-repair-macbook-chargers/adhesive-edge-charger-4.jpg){:class="img-center"}
 *Apply adhesive to the inside of the charger's two plastic halves.*{:class="img-caption"}
 
 Wipe off the excess adhesive that can come out the sides before you let it dry.

@@ -74,8 +74,8 @@
 
 /* new monospace font */
 @font-face {
-    font-family: 'Source Code Pro Regular';
-    src: url('SourceCodePro-Regular.ttf') format('truetype');
+    font-family: 'Fira Mono Regular';
+    src: url('FiraMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: monospace;
 }

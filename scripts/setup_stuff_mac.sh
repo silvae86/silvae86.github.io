@@ -54,6 +54,7 @@ brew unlink imagemagick
 brew uninstall imagemagick
 brew install imagemagick@6
 brew install imagemagick@6 && brew link imagemagick@6 --force
+brew install --build-from-source exiftool
 
 
 #install jekyll and bundle

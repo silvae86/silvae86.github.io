@@ -43,7 +43,7 @@ rvm use "$RUBY_VERSION"
 rvm default "$RUBY_VERSION"
 
 # install dependencies for responsive imagess
-sudo apt-get install libmagickwand-dev imagemagick
+sudo apt-get install libmagickwand-dev imagemagick exiftool
 
 #install jekyll and bundle
 gem install jekyll bundle

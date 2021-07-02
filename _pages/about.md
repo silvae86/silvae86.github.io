@@ -15,11 +15,14 @@ My [CV](https://github.com/silvae86/cv/raw/master/cv.pdf) is [open-source](https
 
 ![João Rocha da Silva](/assets/images/about/me.jpg){:class="float-left"}
 
-I am currently a Full Stack Engineer at [GYANT](https://gyant.com). At our company, we build advanced solutions supported by Artificial Intelligence to help patients find the assistance they need.
-
-GYANT's AI virtual assistant reduces clinical strain and support staff overhead, improves outcomes, and exceeds patient expectations.
+Currently a Senior Full Stack Software Engineer at [Kuhne+Naegel](https://pt.kuehne-nagel.com), working on software that streamlines customs-related procedures.
 
 ### Past adventures
+
+
+Previously I was a Full Stack Engineer at [GYANT](https://gyant.com). The company builds advanced solutions supported by Artificial Intelligence to help patients find the assistance they need.
+
+GYANT's AI virtual assistant reduces clinical strain and support staff overhead, improves outcomes, and exceeds patient expectations.
 
 I hold a PhD in Informatics Engineering from the Faculty of Engineering of the University of Porto, where I also used to lecture (2016-2020). I specialised on research data management, working on FEUP's InfoLab building Dendro, a solution to help researchers describe and share their datasets in a clear and reusable way.
 

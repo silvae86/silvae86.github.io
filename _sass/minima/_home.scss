@@ -6,13 +6,13 @@ div.home {
 	grid-template-columns: [start-of-content] auto [end-of-content];
 
 	grid-template-areas:
-			"teaching"
+			// "teaching"
 			"recentposts"
 			"archive";
 
 		#teaching {
-			grid-area: teaching;
-			margin:1em 0em 1em 0em;
+		 	grid-area: teaching;
+		 	margin:1em 0em 1em 0em;
 		}
 
 		#recentposts {
@@ -82,6 +82,7 @@ header.site-header a.site-title {
 	#about .round-mask-wrap img.round-mask {
 		float:left;
 		margin-right: 3em;
+		margin-bottom: 3em;
 	}
 	
 	.home_section {
@@ -163,18 +164,8 @@ header.site-header a.site-title {
 	}
 }
 
-#about ul {
-	list-style: none;
-}
-
 #about img.round-mask {
 	clip-path: circle(50% at center);
-}
-
-#about ul {
-	font-family: $serif-font-family;
-	list-style: none;
-	margin-left: 0px;
 }
 
 #about .hidden-link {
@@ -195,9 +186,14 @@ header.site-header a.site-title {
 //	display:block;
 //}
 
-#about .previously{
-	margin-top: 2em;
-	margin-bottom: 0px;
+#about ul {
+	font-family: $serif-font-family;
+	list-style: none;
+}
+
+#about ul.previously {
+	margin-top:2em;
+	list-style: square;
 }
 
 .site-header a.site-title{

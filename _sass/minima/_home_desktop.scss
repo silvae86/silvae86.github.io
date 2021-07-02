@@ -1,18 +1,37 @@
 @media only screen and (min-width: $on-laptop) {
 	div.home{
-		grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts];
+		// without teaching
+		grid-template-rows: [start] auto [end-about-start-archive] 1fr [end];
+		
+		// with teaching
+		// grid-template-rows: [start-teaching] auto [end-teaching-start-posts] 1fr [end-posts];
 		grid-template-columns: [start-of-about] 1fr [end-of-about-start-of-content] 4fr [end-of-content];
 
-		grid-template-areas: "about teaching"
-		 					 "archive recentposts";
+		//grid-template-areas: "about teaching"
+		// 					 "archive recentposts";
 
-		//grid-template-areas: "about recentposts"
-		//  					"archive recentposts";
+		grid-template-areas: "about homecontent"
+		  					"archive homecontent";
 	}
 
+	#archive {
+		align-items: start;
+	}
+	
 	#about {
 		grid-area: about;
 		margin:1em;
+	}
+	
+	#home-content {
+		grid-area: homecontent;
+		margin:1em;
+	}
+
+	#about ul {
+		margin-left: 0px;
+		margin-top: 2em;
+		margin-bottom: 0px;
 	}
 
 	.site-header nav {

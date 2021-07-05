@@ -127,11 +127,11 @@ header.site-header a.site-title {
 	}
 	
 	#about .round-mask-wrap {
-		margin-bottom: 3em;
+		margin: 3em;
 	}	
 	
 	#about .round-mask-wrap {
-		width: 50%;
+		width: 30%;
 	}
 }
 
@@ -164,27 +164,33 @@ header.site-header a.site-title {
 	}
 }
 
+#about h1 {
+	font-family: $sans-serif-font-family;
+}
+
 #about img.round-mask {
 	clip-path: circle(50% at center);
 }
 
-#about .hidden-link {
+#about a.hidden-link {
 	color: $text-color;
 }
 
-#about .hidden-link:hover {
+#about a.hidden-link:hover {
 	color: $background-color;
-	background-color: $text-color;
+	background-color: lighten($text-color, 0.5);
 }
 
-//#about .timebracket-pill {
+#about .timebracket-pill {
 //	background-color: $brand-color;
 //	border-style: 1px darken($brand-color,0.5) solid;
 //	border-radius: 3px;
 //	padding:3px;
 //	color: $background-color;
-//	display:block;
-//}
+	font-family: $sans-serif-font-family;
+	display:block;
+	font-weight:bold;
+}
 
 #about ul {
 	font-family: $serif-font-family;

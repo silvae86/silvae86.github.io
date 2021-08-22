@@ -12,7 +12,7 @@ I always regarded `merge` as generally safer option, although it made the commit
 
 - When you `merge`, you keep information about the commit from which you branched out of, and the merge commit marks the merge back into the base branch after your work is done. You know when you pulled new changes from the base branch, and when it was merged into the main branch. This keeps the full branching dependencies and history, but can make the git flow very noisy in large teams!
 
-- When you `rebase`, the commit timeline of your branch will stay linear even when you pull new changes from the base branch &em; but the timeline will give you no idea of when you actually pulled those changes. The dependencies between branches will also be lost, since you are copying commits from one branch to another instead of adding new merge commits. This keeps the history cleaner at the cost of traceability.
+- When you `rebase`, the commit timeline of your branch will stay linear even when you pull new changes from the base branch &mdash; but the timeline will give you no idea of when you actually pulled those changes. The dependencies between branches will also be lost, since you are copying commits from one branch to another instead of adding new merge commits. This keeps the history cleaner at the cost of traceability.
 
 ## A typical rebase flow
 

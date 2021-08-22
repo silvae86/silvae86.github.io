@@ -45,11 +45,19 @@ git rebase --continue
 
 # When rebasing is finished, let's push our changes.
 # Avoid git push --force at all costs, since it will rewrite the remote history.
+# 
 # If other people pushed to the same branch in the meantime, all those commits
 # WILL BE LOST!
 # 
+# 
 # Instead, use git push --force-with-lease, which will refuse to perform the push 
-# if newer commits are found. 
+# if newer commits are found in the remote branch (i.e. local refs differ from 
+# remote ones). 
+#
+# Do not perform git fetch before this, as it will effectively equal a 
+# git push --force, which forces the remote history to be rewritten,
+# potentially wreaking havoc if others pushed to the remote branch
+# meanwhile!
 git push --force-with-lease
 ```
 

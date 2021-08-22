@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How to make nice diagrams from your SQLite database"
-date:   2019-04-14 23:20:00 +0100
-tags: databases sqlite diagrams macos reverse engineering
+title:  "How to make nice diagrams from your databases (SQLite, PostgreSQL)"
+date:   2021-08-05 23:20:00 +0100
+tags: databases sqlite postgresql diagrams macos reverse engineering
 redirect_from:
   - "/databases/sqlite/diagrams/macos/reverse/engineering/2019/04/14/how_to_reverse_engineer_database_diagrams/"
 ---
@@ -166,6 +166,8 @@ The latest releases can be found on the Github page [here](https://github.com/sc
 
 ## How to use
 
+### SQLite
+
 If you have an SQL script, you need to run it to create a database first:
 
 ```sh
@@ -185,6 +187,27 @@ schemacrawler -server sqlite \
   -loglevel INFO \
   -outputfile OUTPUT_IMAGE_FILE.png
 ```
+
+### PostgreSQL 
+
+
+```sh
+schemacrawler.sh \
+    -server=postgresql \
+    -host=localhost \
+    -port=5432 \
+    -database={...} \
+    -schemas={...} \
+    -user={...} \
+    -password={...} \
+    -infolevel=standard \
+    -command=schema \
+    -outputformat=png \
+    -outputfile=graph.png
+	-loglevel INFO \
+    -outputfile OUTPUT_IMAGE_FILE.png
+```
+
 
 ## Changing how the diagrams look by editing the behaviour of SchemaCrawler
 

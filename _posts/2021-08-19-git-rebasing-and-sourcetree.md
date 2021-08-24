@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Git rebase, rolling back commits, and a Sourcetree caveat"
-date: 2021-08-22 16:30:000 +0100
+date: 2021-08-19 16:30:000 +0100
 tags: git rebasing sourcetree
 published: true
 ---
@@ -90,7 +90,7 @@ git log.
 
 ## The main problem with `rebase`
 
-Because it rewrites history in your local branch, `rebase` should never be used on branches where other people are working, or in other words, __public branches__. Let's say that you branched off of `main`, worked on ``.
+Because it rewrites history in your local branch, `rebase` should never be used on branches where other people are working, or in other words, __public branches__.
 
 Quoting Atlassian's [on Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing):
 

@@ -4,6 +4,7 @@ title:  "Generating diagrams from XSD files (Windows only)"
 date: 2021-08-23 21:46:000 +0100
 tags: xsd diagrams windows opensource powershell scripting xml diagrams howto
 published: true
+comments_id: 29
 ---
 
 I always loved the [Oxygen XML Editor](https://www.oxygenxml.com/), in particular the way it represents XML Schemas (or XSD's) in an easy to understand, visual way. However, the price tag is very high, especially when you have to pay for it on a yearly basis.

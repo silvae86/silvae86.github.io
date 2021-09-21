@@ -82,4 +82,3 @@ You will see `Indexing and searching disabled.` this time around.
 	Indexing and searching disabled.
 ```
 
-

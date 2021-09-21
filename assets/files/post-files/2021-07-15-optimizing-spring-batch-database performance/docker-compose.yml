@@ -1,0 +1,42 @@
+version: "3.9"
+services:
+  db:
+    container_name: testpostgres
+    networks:
+      - testnetwork
+    image: bitnami/postgresql:12.4.0
+    restart: always
+    volumes:
+      - ./volumes/postgresql/pg_data:/bitnami/postgresql/pg_data
+      - ./volumes/postgresql/data:/bitnami/postgresql/data
+      - ./postgresql.conf:/bitnami/postgresql/conf/postgresql.conf
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=admin # database-user
+      - POSTGRESQL_PASSWORD=admin # password for database-user
+      - POSTGRESQL_DATABASE=test # name of db initially created
+      - POSTGRESQL_POSTGRES_PASSWORD=root # Password for root-user 'postgres'
+    deploy:
+      replicas: 1
+  dbui:
+    networks:
+      - testnetwork
+    container_name: testpgadmin
+    restart: always
+    volumes:
+      - ./volumes/pgadmin_data/data:/var/lib/pgadmin
+    image: dpage/pgadmin4:4.24
+    ports:
+      - 5051:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@test.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    deploy:
+      replicas: 1
+
+networks:
+  testnetwork:
+
+volumes:
+  pg_data:

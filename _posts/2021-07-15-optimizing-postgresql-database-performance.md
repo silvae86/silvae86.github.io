@@ -139,6 +139,7 @@ create or replace function random_date() returns date
 $$;
 
 -- generate lorem ipsum random strings
+-- from https://stackoverflow.com/questions/35068285/how-to-create-a-huge-string-in-postgresql/43743174
 create or replace function lipsum( quantity_ integer ) returns character varying
     language plpgsql
     as $$

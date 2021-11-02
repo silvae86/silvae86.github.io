@@ -9,12 +9,13 @@ SSH keys allow you to login into your SSH server without having to remember pass
 
 ## Generate Public and Private Keys
 
-Generate public keys. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`).
+Generate public-private key pair. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`).
 
 ```shell
 ssh-keygen -f ~/.ssh/example.com-id
 ```
 
+{% include danger.html content="If someone gets your private key and knows your username they can log into the server!!" %}
 
 ## Copy Public Key to the target machine
 
@@ -25,7 +26,7 @@ Your remote server needs to know your public key, so you need to send it there.
 ssh-copy-id -i ~/.ssh/example.com-id.pub exampleuser@example.com
 ```
 
-## Set appropriate permissions
+## Set appropriate permissions in your local ~/.ssh folder
 
 Your private key should only be visible to you and not other users, otherwise `ssh` will complain and not allow you to use the keys.
 
@@ -33,6 +34,20 @@ Your private key should only be visible to you and not other users, otherwise `s
 chmod 0700 ~/.ssh/
 chmod 0600 ~/.ssh/example.com-id
 ```
+
+## Set appropriate permissions in the remote ~/.ssh folder
+
+```shell
+
+# remove write access to group and others, keep user only
+chmod go-w /home/$(whoami) 
+
+# give all permissions to user, none to any others
+chmod 700 /home/$(whoami)/.ssh/
+
+# give all permissions except execute to user, none to any others
+chmod 600 /home/$(whoami)/.ssh/authorized_keys 
+````
 
 ## Create Configuration File for auto login
 
@@ -59,7 +74,7 @@ IdentityFile ~/.ssh/example.com-id
 ```
 
 
-### Login using machine identifier
+## Login using machine identifier
 
 Now you can login using `ssh` and the alias you choose in the config file above.
 
@@ -67,8 +82,35 @@ Now you can login using `ssh` and the alias you choose in the config file above.
 ssh example.com
 ```
 
+## Debugging login issues
 
-### Save your keys and configuration file in a "safe place" for later
+If you still cannot login, try setting the verbose flag in the ssh client, try to connect again and read the output carefully to find the root issue:
+
+```shell
+# Verbose login
+ssh -v example.com
+````
+
+### An example of debugging
+
+A permissions issue in the remote .ssh directory would make ssh would prompt for the password. The error would only manifest itself after entering the password and continuing with that auth method:
+
+```shell
+debug1: Next authentication method: password
+user@example.com's password:
+debug1: Authentication succeeded (password).
+Authenticated to example.com ([100.64.1.29]:22).
+debug1: channel 0: new [client-session]
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: network
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+
+# ERROR ONLY LOGGED AFTER LOGIN WITH PASSWORD!
+debug1: Remote: Ignored authorized keys: bad ownership or modes for directory /home/user/.ssh 
+```
+
+## Save your keys and configuration file in a "safe place" for later
 
 You can login from other computers using the same public key without having to configure the server again.
 All you need is to copy:
@@ -78,7 +120,7 @@ All you need is to copy:
 
 into your `~/.ssh` directory in the new machine.
 
-### Disable remote login using passwords
+## Disable remote login using passwords
 
 ```shell
 vim /etc/ssh/sshd_config
@@ -96,9 +138,6 @@ Restart the sshd service
 ```shell
 sudo service ssh restart
 ```
-
-#### Fair warning!
-Remember, if others also get these keys and configuration file they can log into your server!
 
 ## Tunnel connections
 

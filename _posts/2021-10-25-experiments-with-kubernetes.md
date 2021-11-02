@@ -8,7 +8,7 @@ published: false
 
 Kubernetes is "an open-source platform for managing containerized workloads and services". It is an awesome solution for Continuous Integration! Among many other things, you can deploy newer versions of services with zero downtime, scale workloads to multiple machines, and fallback to a stable version if a deployment goes badly or the newer version happens to crash.
 
-Minikube sets up a single-node Kubernetes cluster that makes it easier to develop for a Kubernetes environment on a local machine. It's also a great way to learn Kubernetes, so we will start here.
+Minikube sets up a single-node Kubernetes cluster that makes it easier to develop for a Kubernetes environment on a local machine. It's also a great way to learn Kubernetes, so we will start by using it.
 
 ## Install Kubernetes, MiniKube and Kubernetes Dashboard
 

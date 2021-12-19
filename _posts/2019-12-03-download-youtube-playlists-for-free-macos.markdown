@@ -102,3 +102,29 @@ pip3 install .
 + Wait for the Download and for the conversion
 + Wait for the splitting process to complete
 + You will find your tracks in the `./splits` folder
+
+### Converting WAVs to AAC
+
+Let's install a WAV to AAC Converter: 
+
+```bash
+brew install fdk-aac fdk-aac-encoder
+```
+
+Save this as `splits/convert_aac_256.sh`. 
+
+```bash
+#!/usr/bin/env bash
+for i in *wav; do
+    fdkaac -b 256k "$i" &
+done
+```
+
+Then, run the conversion script inside each sufolder whose files you want to convert, e.g.: 
+
+```bash
+cd splits/<subfolder>
+../convert_aac_256.sh
+```
+
+This runs all conversions in parallel for fastest performance.

@@ -27,7 +27,7 @@ We will be using Docker and Docker Compose for this example, so please [install 
 
 ## Set up a custom configuration file for PostgreSQL
 
-1. Place [this customized postgresql.conf file](/assets/post-files/2021-07-15-optimizing-postgresql-database-performance/postgresql.conf) in a directory of your choice.
+1. Place [this customized postgresql.conf file](/assets/files/post-files/2021-07-15-optimizing-postgresql-database-performance/postgresql.conf) in a directory of your choice.
 
 - These two options at the end of the file are the primary changes:
 
@@ -39,7 +39,7 @@ pg_stat_statements.track = all
 track_io_timing = on
 ```
 
-2. Place this example [docker-compose.yaml](/assets/post-files/2021-07-15-optimizing-postgresql-database-performance/postgresql.conf) file in the same directory. It includes some comments to explain what each line does.
+2. Place this example [docker-compose.yaml](/assets/files/post-files/2021-07-15-optimizing-postgresql-database-performance/docker-compose.yaml) file in the same directory. It includes some comments to explain what each line does.
 3. Start the containers: `docker-compose up -d`
 
 ## Enable statistics extension using the `psql` command line 
@@ -100,7 +100,7 @@ The default credentials are, according to the `docker-compose.yml`file:
 
 ### Import the database schema
 
-- Download this [sql schema file](/assets/post-files/2021-07-15-optimizing-postgresql-database-performance/test_dump.sql).
+- Download this [sql schema file](/assets/files/post-files/2021-07-15-optimizing-postgresql-database-performance/test_dump.sql).
 
 - Import the SQL into the database
 

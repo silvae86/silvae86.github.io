@@ -14,9 +14,9 @@ We were all there once:
 
 And like that, you just lost one of the best opportunities to know more about the company where you will be spending 8 (at least) hours a day for the foreseeable future. 
 
-# Why we do this to ourselves?
+# Common fears?
 
-Often, we are nervous, feeling insecure, or just want the job so badly that we want to make a good impression at all costs! We feel that asking questions may: 
+One can be nervous, feeling insecure, or just want the job so badly that we want to make a good impression at all costs! We feel that asking questions may: 
 
 - leave the interviewer them with the impression that we want to know too much about the company's internal processes; 
 - lead the conversation into a tough situation if the interviewer asks something about 

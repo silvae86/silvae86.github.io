@@ -39,7 +39,7 @@ pg_stat_statements.track = all
 track_io_timing = on
 ```
 
-2. Place this example [docker-compose.yaml](/assets/files/post-files/2021-07-15-optimizing-postgresql-database-performance/docker-compose.yaml) file in the same directory. It includes some comments to explain what each line does.
+2. Place this example [docker-compose.yml](/assets/files/post-files/2021-07-15-optimizing-postgresql-database-performance/docker-compose.yml) file in the same directory. It includes some comments to explain what each line does.
 3. Start the containers: `docker-compose up -d`
 
 ## Enable statistics extension using the `psql` command line 
@@ -48,7 +48,7 @@ track_io_timing = on
  psql -U postgres -h localhost test
  ```
 
-The CLI will prompt you for a password, use `root` as specified in the `docker-compose.yml` file. 
+The CLI will prompt you for a password, use `root` as specified in the `docker-compose.yml` file.
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS pg_stat_statements;
@@ -203,7 +203,7 @@ call insert_random_records(50000);
 
 ## Running a query with EXPLAIN
 
-The[ `EXPLAIN` ]((https://www.postgresql.org/docs/9.4/using-explain.html)) command allows you to view the query plan designed by the DBMS, and determine if it will be efficient or not, and identify potential needs for indexes.
+The[ `EXPLAIN` ](https://www.postgresql.org/docs/9.4/using-explain.html) command allows you to view the query plan designed by the DBMS, and determine if it will be efficient or not, and identify potential needs for indexes.
 
 ```sql
 explain

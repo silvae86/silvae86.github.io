@@ -9,10 +9,19 @@ inconstruction: true
 
 Interviews are the single best opportunity for a developer to gauge the job/company/team that they are getting themselves into. Being a developer myself, I decided to write this post with some questions and lessons learned from going through several interview processes. I have also interviewed many developers throughout my professional career, so maybe I can distill some valid information for those of you looking for a job.
 
+Success in professional life is a careful blend of technical skill, building a solid contact network and making the right decisions. Each of these three pillars influences the others.
 
-## Avoiding over-excitement
+## Managing expectations
 
-You just got that LinkedIn message that promises to double your current salary? Tired of legacy code or black box systems and are dying to jump into some fancy new framework? Great! That's opportunity coming your way! However, getting a message for a job that is __just perfect__ for you does not mean that you have to let the recruiter do all the talking. In fact, you should see the interview as a test to the company's policies, environment, tech stack, and development processes.
+Whether you are stuck patching up legacy code, in charge of reverse-engineering black-box systems on life support just to keep them running, or feel pressure to jump into some modern tech to keep honing your skills, this is motivation for change.
+
+You just got that LinkedIn message that promises to double your current salary! Now you have opportunity coming your way. 
+
+{:.floatquote}
+Luck is what happens when preparation meets opportunity.
+--Seneca (Philosopher of Ancient Greece)
+
+Getting a message for a job that is __just perfect__ for you does not mean that you have to let the recruiter do all the talking. In fact, you should see the interview as a test to the company's policies, environment, tech stack, and development processes.
 
 It is key to manage your expectations during a recruitment process. No matter how exciting the first proposal may look like, you should assume that there will be always adjustments until the final proposal that will land on your table to sign, when you reach the end of the recruitment process.
 

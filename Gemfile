@@ -38,5 +38,5 @@ gem 'jekyll-archives'
 gem 'jekyll-relative-links'
 gem 'jekyll-sitemap'
 gem 'jekyll-seo-tag'
-gem "nokogiri", ">= 1.12.5"
+gem "nokogiri", ">= 1.13.2"
 gem "kramdown", ">= 2.3.1"

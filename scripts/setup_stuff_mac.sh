@@ -22,12 +22,12 @@
 # cp /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg ~/Desktop
 
 RUBY_VERSION="2.7.2"
-BUNDLER_VERSION="1.16.2"
+BUNDLER_VERSION="1.16.6"
 
 # if the legacy headers are not installed (for OS X Mojave):
 if [ ! -f /usr/include ]
 then
-    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target / 
+    sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /
 fi
 
 #install nvm

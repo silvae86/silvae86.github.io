@@ -17,7 +17,7 @@ Salaries have also been increasing by quite a lot, result of a worldwide competi
 
 {:.floatquote}
 Love your job, but never fall in love with your company, because you never know when the company stops loving you.
---Narayana Murthy
+--Narayana Murthy (Indian businessman)
 
 When I say it is in your best interest to keep searching for challenges that force you to grow as an engineer, learning valuable skills and keeping yourself in demand for years to come. 
 

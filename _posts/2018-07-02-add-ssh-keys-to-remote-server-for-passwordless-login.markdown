@@ -138,7 +138,6 @@ Restart the sshd service
 ```shell
 sudo service ssh restart
 ```
-
 ## Tunnel connections
 
 Tunnel connections are really cool if you have a server running somewhere and you need to access that server as if it was running on your own computer!
@@ -177,4 +176,23 @@ With with a public key configuration:
 ```shell
 ssh -L 5901:127.0.0.1:5901 -C -N dendro-builder.fe.up.pt -v
 ```
+
+## Removing keys from the SSH agent (GitHub SSH Push)
+
+If you have errors like:
+
+```shell
+agent key RSA SHA256:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX returned incorrect signature type
+sign_and_send_pubkey: no mutual signature supported
+git@github.com: Permission denied (publickey).
+```
+
+Try removing the key from the SSH Agent:
+
+```shell
+eval `ssh-agent -s`
+ssh-add -D ~/.ssh/privatekey-id
+```
+
+And try again to push. 
 

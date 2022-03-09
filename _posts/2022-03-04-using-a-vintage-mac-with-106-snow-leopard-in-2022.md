@@ -16,7 +16,7 @@ Here is a little bit of my personal history using Macintosh computers, combined 
 I made my switch to the Mac around 2008, while I was still an MSc. student of Informatics Engineering. First, I started by trying to convert my PC into a Hackintosh running 10.5 Leopard. It was a terrible choice of hardware, since only Intel could run reliably back then. 
 
 {:.float-img-right}
-![Work setup at home, circa 2009](/assets/images/post-images/2022-03-04-using-a-vintage-mac-with-106-snow-leopard-in-2022/workroom.jpg)<br>*Home setup, circa 2009. At the bottom left, my first Hackintosh running on an AMD64 3000+ CPU. Under the table below the printer, a Linux server cobbled together from old parts.*
+![Work setup at home, circa 2009](/assets/images/post-images/2022-03-04-using-a-vintage-mac-with-106-snow-leopard-in-2022/workroom.JPG)<br>*Home setup, circa 2009. At the bottom left, my first Hackintosh running on an AMD64 3000+ CPU. Under the table below the printer, a Linux server cobbled together from old parts.*
 
 Kernel panics were frequent, but it was all worth it when it finally booted up. The shadows looked amazing, and using [Adium](http://adium.im), the native Mac cross-platform messaging app for the first time is an experience that I will not forget. I had no money to actually buy a Mac, but one that was sure that one day I would own my very own Mac laptop. I figure that I would give up on the ability to play some games in exchange for a superior work machine.
 
@@ -52,6 +52,110 @@ We made the buttons on the screen look so good you'll want to lick them.<br><br>
 Because I like to use completely outdated/unsafe but absolutely beautiful operating systems to write my blog posts, I set out to find a way to use my MacBook as a text editing and music playing machine, so I can use the old TextMate 1.5 and Omnigraffle 5 Pro. At the same time, I can use a much more recent and more powerful computer to compile the sources of this blog.
 
 It's easy to use a flash drive to transfer an entire project between machines and compile it in the more recent one. It is also easy to use Screen Sharing to work remotely on the more modern machine. Instead of using these methods, will use AFP shares to mount the folder in the vintage Mac on the modern machine. We then start the server that automatically compiles Then, whenever a file is saved on the folder of the vintage machine, 
+
+```bash
+#!/bin/bash
+
+# 
+#  mount-and-compile.sh
+#  silvae86.github.io
+#  
+#  Created by João Rocha da Silva on 2022-03-09.
+#  Copyright 2022 João Rocha da Silva. All rights reserved.
+# 
+
+# =============================================================
+# = Function to encode the url of the shared folder =
+# = Credits: https://gist.github.com/cdown/1163649 =
+# =============================================================
+
+urlencode() {
+    # urlencode <string>
+
+    old_lc_collate=$LC_COLLATE
+    LC_COLLATE=C
+
+    local length="${#1}"
+    for (( i = 0; i < length; i++ )); do
+        local c="${1:$i:1}"
+        case $c in
+            [a-zA-Z0-9.~_-]) printf '%s' "$c" ;;
+            *) printf '%%%02X' "'$c" ;;
+        esac
+    done
+
+    LC_COLLATE=$old_lc_collate
+}
+
+# ========================================================
+# = Machine where sources are supposed to be shared from =
+# ========================================================
+
+# This is basically the old machine where you are editing the sources
+
+# By default, this machine's host
+SHARE_HOST=$(hostname) 	
+
+# Same share name as in the Sharing preferences after adding a new shared folder
+SHARE_NAME="silvae86.github.io"
+
+# By default, your own username
+SHARE_USER=$(whoami)	
+
+# ==========================================================================
+# = Machine that will mount the sources to compile them and serve the blog =
+# ==========================================================================
+
+# Network host of the machine that will perform the compilation
+COMPILATION_HOST='macpro'
+
+# Instead of using /Volumes/.... I will mount everything in the user's own home folder, under a MountPoints subfolder.
+# Avoid needless use of sudo found everywhere on the web when you search about mounts in OS X
+COMPILATION_HOST_MOUNTPOINT="\$HOME/MountedVolumes/${SHARE_HOST}/${SHARE_NAME}"
+
+# Command that will be run at the compilation host to compile the blog on any modification and serve it
+COMPILATION_COMMAND="./serve.sh"
+
+# ==========
+# = Script =
+# ==========
+
+# Read password to the remote host
+echo "Enter your password (${SHARE_USER}'s password at ${SHARE_HOST}):"
+read -s SHARE_HOST_PASSWORD
+
+# Encode URL components to avoid problems with special characters in the mount URLs
+AFP_MOUNT_URL=afp://$(urlencode ${SHARE_USER}):$(urlencode ${SHARE_HOST_PASSWORD})@$(urlencode ${SHARE_HOST})/$(urlencode $SHARE_NAME)
+
+# uncomment for debugging if you get mounting errors, to check if your password is correctly escaped
+#echo "AFP MOUNT URL: ${AFP_MOUNT_URL}"
+
+# Run remote commands on compilation machine to mount the sources folder from the Share and perform the compilation
+# -tt will force the allocation of a tty for this ssh session (to stream compilation output)
+
+
+ssh -tt "${COMPILATION_HOST}" << EOF 
+# Disable history so that your password will not be logged in history,
+# although it will be printed on the terminal window
+unset HISTFILE
+# Create mount point
+mkdir -p "${COMPILATION_HOST_MOUNTPOINT}"
+# Mount remote directory into mount point
+mount -t afp "${AFP_MOUNT_URL}" "${COMPILATION_HOST_MOUNTPOINT}"
+# Go to the mounted share
+cd "${COMPILATION_HOST_MOUNTPOINT}"
+# Compile from the mounted volume
+$COMPILATION_COMMAND
+EOF
+
+echo "Bye!"
+
+# Install ssh key without ssh-copy-id binary present
+# ssh [user]@[host] 'mkdir -m 700 ~/.ssh; echo ' $(< ~/.ssh/[host]-id.pub) ' >> ~/.ssh/authorized_keys ; chmod 600 ~/.ssh/authorized_keys'
+
+# List all mounted shares
+# df
+```
 
 ## Some awesome applications with support for vintage Macs
 

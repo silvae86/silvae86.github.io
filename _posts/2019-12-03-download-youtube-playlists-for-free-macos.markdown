@@ -128,3 +128,14 @@ cd splits/<subfolder>
 ```
 
 This runs all conversions in parallel for fastest performance.
+
+
+### Dowloading an entire channel
+
+Here is another goodie: How to download an entire channel. Replace everything up to CHANNELURL with the link of the channel you want to download, **but keep the `/videos` suffix**.
+
+`youtube-dl -f 'bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a][height<=480]/mp4' -citw -v  https://www.youtube.com/user/CHANNELURL/videos`
+
+Will download all videos at 480p and in mp4+m4a format for maximum compatibility. Adjust to your preferences.
+
+You can also just replace the link with the link of a playlist to download all videos on that playlist.

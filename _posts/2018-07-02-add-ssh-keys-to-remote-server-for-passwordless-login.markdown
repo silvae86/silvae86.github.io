@@ -9,10 +9,10 @@ SSH keys allow you to login into your SSH server without having to remember pass
 
 ## Generate Public and Private Keys
 
-Generate public-private key pair. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`).
+Generate public-private key pair. The command will produce two keys, one public (`~/.ssh/example.com-id.pub`) and one private (`~/.ssh/example.com-id`). This uses the `ed25519` host key algorithm as [recommended by Mozilla](https://infosec.mozilla.org/guidelines/openssh).
 
 ```shell
-ssh-keygen -f ~/.ssh/example.com-id
+ssh-keygen -t ed25519 -f ~/.ssh/example.com-id
 ```
 
 {% include danger.html content="If someone gets your private key and knows your username they can log into the server!!" %}
@@ -26,7 +26,19 @@ Your remote server needs to know your public key, so you need to send it there.
 ssh-copy-id -i ~/.ssh/example.com-id.pub exampleuser@example.com
 ```
 
-## Set appropriate permissions in your local ~/.ssh folder
+### Install public key on host, even without ssh-copy-id
+
+In some rare occasions like on [very old machines](/posts/using-a-vintage-mac-with-106-snow-leopard-in-2022), you may not have the `ssh-copy-id` binary. You may then use this command, which is equivalent:
+
+```shell
+# Install ssh key without ssh-copy-id binary present
+ssh [user]@example.com 'mkdir -m 700 ~/.ssh; echo ' $(< ~/.ssh/example.com-id.pub) ' >> ~/.ssh/authorized_keys ; chmod 600 ~/.ssh/authorized_keys'
+```
+
+Alternatively, to get the `ssh-copy-id` binary you may install the `openssh` port via [macports](https://ports.macports.org/port/openssh/) on very old Macs (OS X<=10.6) or [homebrew](https://formulae.brew.sh/formula/openssh). 
+
+
+## Set right permissions in your local ~/.ssh folder
 
 Your private key should only be visible to you and not other users, otherwise `ssh` will complain and not allow you to use the keys.
 

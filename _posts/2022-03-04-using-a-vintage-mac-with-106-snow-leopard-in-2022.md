@@ -3,6 +3,7 @@ layout: post
 title:  "Using a vintage Mac with 10.6 Snow Leopard in 2022"
 date: 2022-03-07 18:10:000 +0100
 tags: vintage computing mac osx macbook pro snow leopard afp mount powerbook g4
+permalink: /posts/using-a-vintage-mac-with-106-snow-leopard-in-2022
 published: true
 inconstruction: true
 ---
@@ -49,6 +50,8 @@ Do not forget to remove Read Access by Everyone, unless you want anyone on the n
 ## Mounting the shared folder on the server
 
 This script was written to perform a series of commands from the older mac into the newer one, allowing you to work on a completely *headless* server (i.e. without even a display connected).
+
+Before specifying the host, I recommend generating a pair of public-private keys and installing your public key on your server. This is much more secure than using a password since a key is much much longer (thus almost impossible to break by brute force) and avoids having to memorize the passwords.
 
 ```bash
 #!/bin/bash
@@ -146,9 +149,6 @@ $COMPILATION_COMMAND
 EOF
 
 echo "Bye!"
-
-# Install ssh key without ssh-copy-id binary present
-# ssh [user]@[host] 'mkdir -m 700 ~/.ssh; echo ' $(< ~/.ssh/[host]-id.pub) ' >> ~/.ssh/authorized_keys ; chmod 600 ~/.ssh/authorized_keys'
 
 # List all mounted shares
 # df

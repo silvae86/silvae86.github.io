@@ -130,7 +130,7 @@ cd splits/<subfolder>
 This runs all conversions in parallel for fastest performance.
 
 
-### Dowloading entire channel
+### Dowloading an entire channel
 
 Here is another goodie: How to download an entire channel. Replace everything up to CHANNELURL with the link of the channel you want to download, **but keep the `/videos` suffix**.
 

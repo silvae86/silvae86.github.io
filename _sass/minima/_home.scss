@@ -208,7 +208,7 @@ header.site-header a.site-title {
 
 .site-header a.site-title{
 	display:block;
-	font-style: italic;
+	font-family: $site-header-font, $sans-serif-font-family;
 }
 
 .search-container {

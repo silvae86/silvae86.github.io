@@ -51,7 +51,9 @@ I have a YouTube channel covering car mechanics and repairs. I called it Toyota 
 
 ## Disclaimer
 
-This blog contains my personal notes about programming, sysadmin, and other stuff. All materials and opinions are my own and do not reflect any point of view of my employer.
+This blog contains my personal notes about programming, sysadmin, and some personal experience. All materials and opinions are my own and do not reflect any point of view of my employer.
+
+The font in the header of this website is a [Free and Open Source adaptation](https://usemodify.com/fonts/chicago/) of the original Chicago font by Apple.
 
 <!--
 

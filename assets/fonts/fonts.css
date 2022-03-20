@@ -79,3 +79,11 @@
     font-weight: normal;
     font-style: monospace;
 }
+
+/* title font */
+@font-face {
+    font-family: 'Chicago';
+    src: url('chicagoflf-webfont.woff') format('truetype');
+    font-weight: normal;
+    font-style: monospace;
+}

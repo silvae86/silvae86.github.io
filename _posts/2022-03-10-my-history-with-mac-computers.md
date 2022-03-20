@@ -48,16 +48,15 @@ The OS was truly **fun** to use, even more so than Windows XP. The subtle, pulsi
 
 In his speech Commencement address at Stanford University on June 2005, Steve Jobs talked about how he decided to take a calligraphy class at Reed University when he was in colleged. This came to impact the Macintosh user interface, which according to Jobs, was "the first computer with beautiful typography".  This attention to detail spans across decades of Apple products, where beautiful and clear fonts were chosen for every part of the UI. Take for example the Chicago font, used in the Macintosh from 1984 and 1997 and later slightly modified for the iPod as well.
 
-{:.float-img-right}
-![The Chicago font](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/Chicago_font.svg.png)
-*The famous Chicago font, named after one of Steve Jobs' favourite cities.*{:class="img-caption"}
+{:.float-img-right .img-padding-05}
+![The Chicago font](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/Chicago_font.svg.png)<br>*The famous Chicago font, named after one of Steve Jobs' [favourite cities](https://uxplanet.org/steve-jobs-typographer-2e450a356437).*{:class="img-caption"}
 
-On the Mac, the subtle animations when a window was minimised and maximised were not only technically impressive for the time, but elegant at the same time. More than providing useless flourish, they served a purpose and helped the user understand where the window went. 
+On the Mac, the subtle animations when a window was minimised and maximised were not only technically impressive for the time, but elegant at the same time. More than providing useless flourish (looking at you, [Compiz](http://www.compiz.org)), they served a purpose and helped the user understand where the window went. 
 
 The modal dialogs that popped up when you needed to save a document or answer a prompt kept the user in focus and provided useful hints and shortcuts. The `⌘D` shortcut to always select the Desktop as the target destination saved me more time than I can remember throughout my life time as well! 
 
 {:.float-img-left}
-![Lickable Buttons in a modal dialog box in OS X Snow Leopard](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/lickable-buttons.png) <br> *Some "lickable" Buttons in a modal dialog box in OS X Snow Leopard.*{:class="img-caption"}
+![Lickable Buttons in a modal dialog box in OS X Snow Leopard](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/lickable-buttons.png) <br> *Some "lickable" Buttons: modal folder picker in Mac OS X 10.6.*{:class="img-caption"}
 
 All in all, I had no idea how spoiled I was during this era of skeuomorphism. Since Yosemite (10.10) every button, scroll bar and top left semaphore in the macOS UI is flat and streamlined, in the name of reducing visual clutter and maintaining a sleek image. It exchanged some of its fun for sharpness and professionalism and became somewhat more serious.
 
@@ -105,7 +104,7 @@ I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-
 
 ## 2018 - MacBook 12'' - The most gorgeous slow computer ever
 
-Circa 2016 I bought a gold 12'' MacBook, more from the 
+Circa 2016 I bought a gold 12'' MacBook, looking for a very light laptop that would always be with me in case I needed to write something down or reply to an email quickly while on the road. 
 
 ## 2020/2021 - MacBook Pro 16'' - The hybrid car of Apple Computers
 

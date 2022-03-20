@@ -9,7 +9,7 @@ inconstruction: true
 
 *In construction*
 
-Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of my personal thoughts, so grab a coffee and enjoy the ride.
+Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of Apple-fanboyism and personal thoughts, so grab a coffee and enjoy the ride.
 
 ## "Aqua": the user interface of the modern-era Macintosh
 
@@ -33,7 +33,7 @@ Kernel panics were frequent, but it was all worth it when it finally booted up. 
 
 ## 2008 - The first Macbook Pro 
 
-In 2009 my parents got me my first Mac laptop at a great discount, when the Unibody ones started coming in. It was an [Early 2008 MacBook Pro A1260](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-2-duo-2.4-15-early-2008-penryn-specs.html) model that came with 10.5 Leopard, and I absolutely loved it. By this time, Windows XP was the most widely used OS. A glowing Apple logo on the back of a computer lid was a rare sight in Portuguese university classrooms---at least outside of a Fine Arts class, where Macs where greatly praised for their tight integration with the Adobe creative suite. The screen on that MacBook Pro was colourful, vibrant and high-resolution (1400x900), resulting in a better viewing experience than on my previous Windows computer, which capped out at 1280x720.
+In 2009 my parents gifted me my first Mac laptop at a great discount, when the Unibody ones started coming in. It was an [Early 2008 MacBook Pro A1260](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-2-duo-2.4-15-early-2008-penryn-specs.html) model that came with 10.5 Leopard, and I absolutely loved it. By this time, Windows XP was the most widely used OS. A glowing Apple logo on the back of a computer lid was a rare sight in Portuguese university classrooms---at least outside of a Fine Arts class, where Macs where greatly praised for their tight integration with the Adobe creative suite. The screen on that MacBook Pro was colourful, vibrant and high-resolution (1400x900), resulting in a better viewing experience than on my previous Windows computer, which capped out at 1280x720.
 
 By that time, most students like myself were using Windows XP as their main OS (after all, we were students and needed to play games) and Linux was the OS of choice for those subjects where UNIX was required. On PCs of the time it was common to have to dim the screen to the minimum and cut down CPU clock using [RMClock](https://cpu.rightmark.org/products/rmclock.shtml) if you wanted it to last throughout a 2 hour class. 
 
@@ -104,15 +104,20 @@ I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-
 
 ## 2018 - MacBook 12'' - The most gorgeous slow computer ever
 
-Circa 2016 I bought a gold 12'' MacBook, looking for a very light laptop that would always be with me in case I needed to write something down or reply to an email quickly while on the road. 
+In 2018 I bought a Gold 12'' MacBook, looking for a very light laptop that would always be with me in case I needed to write something down or reply to an email quickly while on the road. I have to say, at the beginning my main motivation for choosing this color was the price! This machine cost me €999 back then, since it was on clearance sale. 
 
-I used to joke about how someone's laptop tells something about their job when you look around a meeting table: if it is a very slim and portable machine, you can safely hazard that this person is in a management position. If it is a thick brick of a computer, this person is a video editor or a video game developer. If
+These machines are notorious for their fragile keyboards based on a new "butterfly mechanism" which replaced the "scissors switch" ones that came before it. This new mechanism was necessary for Apple to build even thinner laptops by reducing the space necessary for the keys to travel. However, such a small gap in the key mechanism made it very susceptible to crumbs and dust, which when stuck inside the key would be almost impossible to flush out, causing dead or stuck keys. Apple released a [guide](https://support.apple.com/en-us/HT205662) covering how to clean these keyboards, and more importantly, a [4-year warranty extension](https://support.apple.com/keyboard-service-program-for-mac-notebooks) on the keyboard only counting from the date of purchase. This 4-year warranty gave me the peace of mind that I needed to buy the computer.
 
-## 2020/2021 - MacBook Pro 16'' - The hybrid car of Apple Computers
+{:.float-img-left}
+![Scissor Vs Butterfly Keyboard Mechanism by Apple](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/scissor-vs-butterfly.gif)<br>*Scissor Vs Butterfly Keyboard Mechanism. Image © Apple*
 
-## 2021 - MacBook Air M1 13'' - You have to own it to believe it
+I used to joke about how someone's laptop tells something about their job when you look around a meeting table: if it is a very slim and portable machine, you can safely hazard that this person is in a management position. If it is a thick brick of a computer, this person is a professional video editor or a video game developer. If it is somewhere in the middle, like a 15'' MacBook Pro, 
 
-## 2022 - MacBook Pro 14'' M1 Pro - A resemblance of the PowerBook G4
+## 2020/2021 - MacBook Pro 16'' - The "hybrid car" of Apple Computers
+
+## 2021 - MacBook Air M1 13'' - You have to own one to believe it
+
+## 2022 - MacBook Pro 14'' M1 Pro - The return of the Pro
 
 ## Footnotes
 

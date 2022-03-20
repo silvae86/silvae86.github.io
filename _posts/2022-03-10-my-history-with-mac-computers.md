@@ -7,6 +7,8 @@ published: true
 inconstruction: true
 ---
 
+*In construction*
+
 Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of my personal thoughts, so grab a coffee and enjoy the ride.
 
 ## "Aqua": the user interface of the modern-era Macintosh
@@ -22,16 +24,16 @@ The entirely new user interface of the new Mac OS, called "Aqua", was completely
 
 ## 2007 - Trying Mac OS X on a budget: Hackintosh!
 
-I made my switch to the Mac around 2008, while I was still an MSc. student of Informatics Engineering. First, I started by trying to convert my back-then desktop computer into a *Hackintosh* running 10.5 Leopard. Looking back, it was a terrible choice of hardware, since only Intel could run reliably back then. This ended up playing in my favor in the long term, since I had to start getting acquainted with command line tools and the Unix-way of doing things. At the time it meant working with the Terminal, editing and writing Bash Scripts and understanding `.plist` files.
+I made my switch to the Mac around 2008, while I was still an MSc. student of Informatics Engineering. First, I started by trying to convert my back-then desktop computer into a *Hackintosh* running 10.5 Leopard. Looking back, it was a terrible choice of hardware, since only Intel could run reliably back then. This ended up playing in my favor in the long term, since I had to start getting acquainted with command line tools and the Unix-way of doing things. At the time it meant working with the Terminal, editing and writing BASh Scripts and understanding `.plist` files.
 
 {:.float-img-right}
 ![Work setup at home, circa 2009](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/workroom.JPG)<br>*Home setup, circa 2009. At the bottom left, my first Hackintosh running on an AMD64 3000+ CPU. Under the table below the printer, a Linux server cobbled together from old parts.*
 
-Kernel panics were frequent, but it was all worth it when it finally booted up. The shadows looked amazing, and using [Adium](http://adium.im), the native Mac cross-platform messaging app for the first time is an experience that I will not forget. I had no money to actually buy a Mac, but one that was sure that one day I would own my very own Mac laptop. I figure that I would give up on the ability to play some games in exchange for a superior work machine.
+Kernel panics were frequent, but it was all worth it when it finally booted up. The shadows looked amazing, and using [Adium](http://adium.im), the native Mac cross-platform messaging app for the first time is an experience that I will not forget. I had no money to buy a real Mac, but now I was sure that I wanted my own Mac laptop, even if that meant giving up on playing games in exchange for a superior work machine.
 
 ## 2008 - The first Macbook Pro 
 
-In 2009 my parents got me my first Mac laptop at a great discount, when the Unibody ones started coming in. It was an [Early 2008 MacBook Pro A1260](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-2-duo-2.4-15-early-2008-penryn-specs.html) model that came with 10.5 Leopard, and I absolutely loved it. By this time, Windows XP ruled the classrooms, and a glowing Apple logo on the back of a computer lid was a rare sight in Portuguese university classrooms---at least outside of a Fine Arts class, where Macs where greatly praised for their tight integration with the Adobe create suite. The screen on that MacBook Pro was colourful, vibrant and high-resolution (1400x900), resulting in a better viewing experience than on my previous Windows computer, which capped out at (1280x720).
+In 2009 my parents got me my first Mac laptop at a great discount, when the Unibody ones started coming in. It was an [Early 2008 MacBook Pro A1260](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-2-duo-2.4-15-early-2008-penryn-specs.html) model that came with 10.5 Leopard, and I absolutely loved it. By this time, Windows XP was the most widely used OS. A glowing Apple logo on the back of a computer lid was a rare sight in Portuguese university classrooms---at least outside of a Fine Arts class, where Macs where greatly praised for their tight integration with the Adobe creative suite. The screen on that MacBook Pro was colourful, vibrant and high-resolution (1400x900), resulting in a better viewing experience than on my previous Windows computer, which capped out at 1280x720.
 
 By that time, most students like myself were using Windows XP as their main OS (after all, we were students and needed to play games) and Linux was the OS of choice for those subjects where UNIX was required. On PCs of the time it was common to have to dim the screen to the minimum and cut down CPU clock using [RMClock](https://cpu.rightmark.org/products/rmclock.shtml) if you wanted it to last throughout a 2 hour class. 
 
@@ -44,7 +46,7 @@ I hold dear memories of using that computer, since it was my main work tool thro
 
 The OS was truly **fun** to use, even more so than Windows XP. The subtle, pulsing glow of the default button in a modal window in Snow Leopard...Just [like Steve Jobs did](https://www.businessinsider.com/steve-jobss-signature-design-style-2014-10), I love the [skeuomorphic design](https://en.wikipedia.org/wiki/Skeuomorph) from those days! And while some may consider Windows XP childish with its plasticky buttons and title bars, I also continue to enjoy its contrasty intuitive colors back then. 
 
-In his speech Commencement address at Stanford University on June 2005, Steve Jobs talked about how he decided to take a calligraphy class at Reed University when he was in colleged. This came to impact the Macintosh user interface, which according to Jobs, was "the first computer with beautiful typography".  This attention to detail spans across decades of Apple products, where beautiful and clear fonts were chosen for every part of the UI. Take for example the Chicago font, used in the Macintosh from 1984 and 1997 and later slightly modified for the iPod as well. 
+In his speech Commencement address at Stanford University on June 2005, Steve Jobs talked about how he decided to take a calligraphy class at Reed University when he was in colleged. This came to impact the Macintosh user interface, which according to Jobs, was "the first computer with beautiful typography".  This attention to detail spans across decades of Apple products, where beautiful and clear fonts were chosen for every part of the UI. Take for example the Chicago font, used in the Macintosh from 1984 and 1997 and later slightly modified for the iPod as well.
 
 {:.float-img-right}
 ![The Chicago font](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/Chicago_font.svg.png)
@@ -72,12 +74,38 @@ It came with a 1000-plus cycle count battery, whose internal resistance made the
 
 The first great characteristic of this laptop is its The thing about this laptop is that you can run many versions of Mac OS X, from Snow Leopard (10.6) up to Catalina (10.15) through the [unofficial patcher](https://github.com/dosdude1/macos-catalina-patcher) by dosdude1. 
 
-## 2013 - MacBook Pro Retina 15'' - The first Retina experience
+## 2014 - MacBook Pro Retina 15'' - The first Retina experience
 
-When OS X Mavericks came along, it marked the arrival of the first Retina MacBook Pro. Until then, on the most widely used Operating Systems, one physical pixel was always used to render a single point in an UI. On the 
+The first Retina MacBook Pro I ever used came out of the box with [Mac OS X 10.9 (Mavericks)](https://en.wikipedia.org/wiki/OS_X_Mavericks). Up to that time, on the most widely used Operating Systems, one physical pixel was always used to render a single logical pixel in an UI (1:1 scaling). On a Retina display, 4 physical pixels are used to render the same logical pixel, causing the interface to be scaled to fill in the extra pixels. This *[HiDPI mode](https://wiki.archlinux.org/title/HiDPI)*, coined by Apple as Retina, allows for much crisper images and typography everywhere, almost resembling printed text and photographs.
+
+As always, it was Apple's *execution* of this new high pixel density UI all throughout the OS X that made the difference. When Mavericks came out, the UI was beautifully remapped to a high-pixel version, with pixellated elements being few and far in between. Developers were also quick to update their apps' assets to provide the Retina display experience.
+
+{:.float-img-left}
+![The ](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_retina_2015.jpg)<br>*That's me in a late night around 2015 working on my Ph.D. thesis*
+
+HiDPI mode came to Windows as well, with many of the Windows native scaling gracefully. However, many older apps and less user-facing areas of the OS [looked bad back then](https://www.hanselman.com/blog/living-a-highdpi-desktop-lifestyle-can-be-painful), since they never got an overhaul like that done upon the release of OS X Mavericks. Even to this day on Windows 10 you will sometimes get apps with tiny buttons and fonts because the scaling is not working properly. Fortunately this is rare and far in between.
+
+This laptop was my lab workhorse in my last years of research as a Ph.D. student. My particular one was the base i7 at 2.0 GHz, without a dedicated graphics card. The main reason was that I was afraid of GPU defects after my 2008 MacBook Pro died because of a bad GPU, and the price was much lower. The Intel Iris Pro is a very capable graphics card for most 
+everyday uses outside of gaming and any sort of 3D modelling. Even video rendering was quite fast. 
+
+The computer was solidly built, with a long battery life, the best screen I had ever seen in a laptop, a very crisp keyboard. Apple had learned from their mistakes of the past and provided the laptop with a couple of very slim air intake notches at the left and right edges of the bottom case. This greatly improved airflow inside the case and ensured a quieter working environment. You would really notice the cool air flowing towards the inside of the machine when under load and the fans spun up. No wonder the MacBook Pros from 2010-2012 had the habit of overheating and dying... No cool air intake at all!
+
+{:.float-img-right}
+![The airflow path in the 2013 Retina MacBook Pro's under case](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_bottom_case.jpg)<br>*The airflow path in the 2013 Retina MacBook Pro's under case*
 
 
-## 2016 - MacBook 12'' - The most gorgeous slow computer ever
+## 2017 - MacBook Pro 13'' - Great connectivity, mid-range power
+
+By 2017 I had to update my personal laptop with a more recent machine, as my Unibody Macbook White from 2010 was starting to show its age. The 15'' MacBook Pro was my lab-supplied machine and was simply too large to lug around everywhere. Looking for a personal machine that I was going to buy with my own money, I started looking around on second hand market. 
+
+I ended up buying a second hand 13'' Retina MacBook Pro, with a dual-core i7 at 3.0GHz, with 16GB of RAM, for 750€. The most powerful and rare configuration, the computer had some issues: very worn out keys, a MagSafe charger with a torn cable, a battery on its last legs, and a bad case of the Retina Macbook Pro [delamination issue](https://www.macrumors.com/2019/12/20/macbook-pro-anti-reflective-repair-program/) in the display. When I bought it, I proceeded to replace the thermal paste, the [battery](/2018/07/04/new-battery-for-my-macbook-pro-retina-13/) and clean up the remains of the bad anti-reflective coating with some [eyeglasses cleaning solution](https://www.ifixit.com/Answers/View/582699/How+to+remove+anti-glare+coating+effectively), a microfiber cloth, and a lot of patience.
+
+{:.float-img-right}
+![MacBook Pro Retina 13 at the ](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_bottom_case.jpg)<br>*The airflow path in the 2013 Retina MacBook Pro's under case*
+
+## 2018 - MacBook 12'' - The most gorgeous slow computer ever
+
+Circa 2016 I bought a gold 12'' MacBook, more from the 
 
 ## 2020/2021 - MacBook Pro 16'' - The hybrid car of Apple Computers
 

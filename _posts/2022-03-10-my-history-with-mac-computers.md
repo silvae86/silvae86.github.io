@@ -106,6 +106,8 @@ I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-
 
 Circa 2016 I bought a gold 12'' MacBook, looking for a very light laptop that would always be with me in case I needed to write something down or reply to an email quickly while on the road. 
 
+I used to joke about how someone's laptop tells something about their job when you look around a meeting table: if it is a very slim and portable machine, you can safely hazard that this person is in a management position. If it is a thick brick of a computer, this person is a video editor or a video game developer. If
+
 ## 2020/2021 - MacBook Pro 16'' - The hybrid car of Apple Computers
 
 ## 2021 - MacBook Air M1 13'' - You have to own it to believe it

@@ -8,8 +8,6 @@ published: true
 inconstruction: true
 ---
 
-**In construction**
-
 Here is a short guide on how to use [AFP (Apple Filing Protocol)](https://en.wikipedia.org/wiki/Apple_Filing_Protocol) shares to offload heavy compilation operations to a more modern and powerful machine, while using a vintage Mac for simple text editing and browsing compiled result. I am using the [source code of this very blog](http://github.com/silvae86/silvae86.github.io) as a test case. 
 
 This may be of use to those of you running older PowerPC Macs, such as the Powerbook G4 12'', one of the most beautiful computers ever to be created in my opinion. As long as its Mac OS X version supports AFP, you should be good to go.
@@ -18,7 +16,7 @@ This may be of use to those of you running older PowerPC Macs, such as the Power
 
 [It's no secret that I like](/2022/03/10/my-history-with-mac-computers) to use completely outdated/unsafe but absolutely beautiful operating systems to write my blog posts. I never take them outside of the house, log into any website, or connect them to a public Wi-Fi network, though!
 
-Anyway... I set out to find a way to use my MacBook as a text editing and music playing machine, so I can use the old TextMate 1.5 and Omnigraffle 5 Pro. At the same time, I can use a much more recent and more powerful computer to compile the sources of this blog.
+Anyway... I set out to find a way to use my MacBook as a text editing and music playing machine, so I can use the old [TextMate](https://macromates.com) 1.5 and [Omnigraffle](https://www.omnigroup.com/omnigraffle/) 5 Pro. At the same time, I can use a much more recent and more powerful computer to compile the sources of this blog.
 
 It's easy to use a flash drive to transfer an entire project between machines and compile it in the more recent one. It is also easy to use Screen Sharing to work remotely on the more modern machine. Instead of using these methods, will use AFP shares to mount the folder in the vintage Mac on the modern machine. We then start the [Jekyll server](https://jekyllrb.com) that automatically compiles this website when any file in the volume is modified on the host machine (the vintage Mac).
 

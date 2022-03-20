@@ -15,12 +15,13 @@ My [CV](https://github.com/silvae86/cv/raw/master/cv.pdf) is [open-source](https
 
 ![João Rocha da Silva](/assets/images/about/me.jpg){:class="float-left"}
 
-Currently a Senior Full Stack Software Engineer at [Kuhne+Naegel](https://pt.kuehne-nagel.com), working on software that streamlines customs-related procedures.
+Curently a Full Stack Senior Software Engineer at [Times Higher Education](https://www.timeshighereducation.com).
 
 ### Past adventures
 
+Previously I was a Senior Full Stack Software Engineer at [Kuhne+Naegel](https://pt.kuehne-nagel.com), working on software that streamlines customs-related procedures.
 
-Previously I was a Full Stack Engineer at [GYANT](https://gyant.com). The company builds advanced solutions supported by Artificial Intelligence to help patients find the assistance they need.
+Before that, I was a Full Stack Engineer at [GYANT](https://gyant.com). The company builds advanced solutions supported by Artificial Intelligence to help patients find the assistance they need.
 
 GYANT's AI virtual assistant reduces clinical strain and support staff overhead, improves outcomes, and exceeds patient expectations.
 

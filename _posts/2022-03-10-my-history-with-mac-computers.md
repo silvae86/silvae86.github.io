@@ -2,14 +2,12 @@
 layout: post
 title:  "My history with Mac computers"
 date: 2022-03-10 11:20:000 +0100
-tags: macintosh mac life history nostalgia aqua opininionated
+tags: macintosh mac life history nostalgia aqua opininionated skeuomorphism user interface
 published: true
 inconstruction: true
 ---
 
-**In construction**
-
-Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of my personal thoughts, so grab a coffee and enjoy the ride. 
+Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of my personal thoughts, so grab a coffee and enjoy the ride.
 
 ## "Aqua": the user interface of the modern-era Macintosh
 

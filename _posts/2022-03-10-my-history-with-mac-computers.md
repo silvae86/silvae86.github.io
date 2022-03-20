@@ -98,10 +98,10 @@ The computer was solidly built, with a long battery life, the best screen I had 
 
 By 2017 I had to update my personal laptop with a more recent machine, as my Unibody Macbook White from 2010 was starting to show its age. The 15'' MacBook Pro was my lab-supplied machine and was simply too large to lug around everywhere. Looking for a personal machine that I was going to buy with my own money, I started looking around on second hand market. 
 
-I ended up buying a second hand 13'' Retina MacBook Pro, with a dual-core i7 at 3.0GHz, with 16GB of RAM, for 750€. The most powerful and rare configuration, the computer had some issues: very worn out keys, a MagSafe charger with a torn cable, a battery on its last legs, and a bad case of the Retina Macbook Pro [delamination issue](https://www.macrumors.com/2019/12/20/macbook-pro-anti-reflective-repair-program/) in the display. When I bought it, I proceeded to replace the thermal paste, the [battery](/2018/07/04/new-battery-for-my-macbook-pro-retina-13/) and clean up the remains of the bad anti-reflective coating with some [eyeglasses cleaning solution](https://www.ifixit.com/Answers/View/582699/How+to+remove+anti-glare+coating+effectively), a microfiber cloth, and a lot of patience.
+I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-core i7 at 3.0GHz, with 16GB of RAM, for 750€. The most powerful and rare configuration, the computer had some issues: very worn out keys, a MagSafe charger with a torn cable, a battery on its last legs, and a bad case of the Retina Macbook Pro [delamination issue](https://www.macrumors.com/2019/12/20/macbook-pro-anti-reflective-repair-program/) in the display. When I bought it, I proceeded to replace the thermal paste, the [battery](/2018/07/04/new-battery-for-my-macbook-pro-retina-13/) and clean up the remains of the bad anti-reflective coating with some [eyeglasses cleaning solution](https://www.ifixit.com/Answers/View/582699/How+to+remove+anti-glare+coating+effectively), a microfiber cloth, and a lot of patience.
 
 {:.float-img-right}
-![MacBook Pro Retina 13 at the ](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_bottom_case.jpg)<br>*The airflow path in the 2013 Retina MacBook Pro's under case*
+![MacBook Pro Retina 13 inch](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_13_inch.JPG)<br>*MacBook Pro 13", acting as an SSH terminal for all those other machines*
 
 ## 2018 - MacBook 12'' - The most gorgeous slow computer ever
 

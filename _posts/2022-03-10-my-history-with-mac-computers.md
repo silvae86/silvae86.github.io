@@ -87,10 +87,10 @@ HiDPI mode came to Windows as well, with many of the Windows native scaling grac
 This laptop was my lab workhorse in my last years of research as a Ph.D. student. My particular one was the base i7 at 2.0 GHz, without a dedicated graphics card. The main reason was that I was afraid of GPU defects after my 2008 MacBook Pro died because of a bad GPU, and the price was much lower. The Intel Iris Pro is a very capable graphics card for most 
 everyday uses outside of gaming and any sort of 3D modelling. Even video rendering was quite fast in Final Cut Pro X.
 
-The computer was solidly built, with a long battery life, the best screen I had ever seen in a laptop, a very crisp keyboard. Apple had also learned from their overheating mistakes of the past and provided the laptop with a couple of very slim air intake notches at the left and right edges of the bottom case. 
-
 {:.float-img-right}
 ![The airflow path in the 2013 Retina MacBook Pro's under case](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_bottom_case.jpg)<br>*The airflow path in the 2013 Retina MacBook Pro's under case*
+
+The computer was solidly built, with a long battery life, the best screen I had ever seen in a laptop, a very crisp keyboard. Apple had also learned from their overheating mistakes of the past and provided the laptop with a couple of very slim air intake notches at the left and right edges of the bottom case. 
 
 This greatly improved airflow inside the case and ensured a quieter working environment. You would really notice the cool air flowing towards the inside of the machine when under load and the fans spun up. No wonder the MacBook Pros from 2010-2012 had the habit of overheating and dying... No cool air intake at all!
 

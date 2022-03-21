@@ -77,30 +77,32 @@ The first great characteristic of this laptop is its The thing about this laptop
 
 The first Retina MacBook Pro I ever used came out of the box with [Mac OS X 10.9 (Mavericks)](https://en.wikipedia.org/wiki/OS_X_Mavericks). Up to that time, on the most widely used Operating Systems, one physical pixel was always used to render a single logical pixel in an UI (1:1 scaling). On a Retina display, 4 physical pixels are used to render the same logical pixel, causing the interface to be scaled to fill in the extra pixels. This *[HiDPI mode](https://wiki.archlinux.org/title/HiDPI)*, coined by Apple as Retina, allows for much crisper images and typography everywhere, almost resembling printed text and photographs.
 
-As always, it was Apple's *execution* of this new high pixel density UI all throughout the OS X that made the difference. When Mavericks came out, the UI was beautifully remapped to a high-pixel version, with pixellated elements being few and far in between. Developers were also quick to update their apps' assets to provide the Retina display experience.
-
 {:.float-img-left}
 ![The ](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_retina_2015.jpg)<br>*That's me in a late night around 2015 working on my Ph.D. thesis*
+
+As always, it was Apple's *execution* of this new high pixel density UI all throughout the OS X that made the difference. When Mavericks came out, the UI was beautifully remapped to a high-pixel version, with pixellated elements being few and far in between. Developers were also quick to update their apps' assets to provide the Retina display experience.
 
 HiDPI mode came to Windows as well, with many of the Windows native scaling gracefully. However, many older apps and less user-facing areas of the OS [looked bad back then](https://www.hanselman.com/blog/living-a-highdpi-desktop-lifestyle-can-be-painful), since they never got an overhaul like that done upon the release of OS X Mavericks. Even to this day on Windows 10 you will sometimes get apps with tiny buttons and fonts because the scaling is not working properly. Fortunately this is rare and far in between.
 
 This laptop was my lab workhorse in my last years of research as a Ph.D. student. My particular one was the base i7 at 2.0 GHz, without a dedicated graphics card. The main reason was that I was afraid of GPU defects after my 2008 MacBook Pro died because of a bad GPU, and the price was much lower. The Intel Iris Pro is a very capable graphics card for most 
-everyday uses outside of gaming and any sort of 3D modelling. Even video rendering was quite fast. 
+everyday uses outside of gaming and any sort of 3D modelling. Even video rendering was quite fast in Final Cut Pro X.
 
-The computer was solidly built, with a long battery life, the best screen I had ever seen in a laptop, a very crisp keyboard. Apple had learned from their mistakes of the past and provided the laptop with a couple of very slim air intake notches at the left and right edges of the bottom case. This greatly improved airflow inside the case and ensured a quieter working environment. You would really notice the cool air flowing towards the inside of the machine when under load and the fans spun up. No wonder the MacBook Pros from 2010-2012 had the habit of overheating and dying... No cool air intake at all!
+The computer was solidly built, with a long battery life, the best screen I had ever seen in a laptop, a very crisp keyboard. Apple had also learned from their overheating mistakes of the past and provided the laptop with a couple of very slim air intake notches at the left and right edges of the bottom case. 
 
 {:.float-img-right}
 ![The airflow path in the 2013 Retina MacBook Pro's under case](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_bottom_case.jpg)<br>*The airflow path in the 2013 Retina MacBook Pro's under case*
+
+This greatly improved airflow inside the case and ensured a quieter working environment. You would really notice the cool air flowing towards the inside of the machine when under load and the fans spun up. No wonder the MacBook Pros from 2010-2012 had the habit of overheating and dying... No cool air intake at all!
 
 
 ## 2017 - MacBook Pro 13'' - Great connectivity, mid-range power
 
 By 2017 I had to update my personal laptop with a more recent machine, as my Unibody Macbook White from 2010 was starting to show its age. The 15'' MacBook Pro was my lab-supplied machine and was simply too large to lug around everywhere. Looking for a personal machine that I was going to buy with my own money, I started looking around on second hand market. 
 
-I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-core i7 at 3.0GHz, with 16GB of RAM, for 750€. The most powerful and rare configuration, the computer had some issues: very worn out keys, a MagSafe charger with a torn cable, a battery on its last legs, and a bad case of the Retina Macbook Pro [delamination issue](https://www.macrumors.com/2019/12/20/macbook-pro-anti-reflective-repair-program/) in the display. When I bought it, I proceeded to replace the thermal paste, the [battery](/2018/07/04/new-battery-for-my-macbook-pro-retina-13/) and clean up the remains of the bad anti-reflective coating with some [eyeglasses cleaning solution](https://www.ifixit.com/Answers/View/582699/How+to+remove+anti-glare+coating+effectively), a microfiber cloth, and a lot of patience.
-
 {:.float-img-right}
-![MacBook Pro Retina 13 inch](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_13_inch.JPG)<br>*MacBook Pro 13", acting as an SSH terminal for all those other machines*
+![MacBook Pro Retina 13 inch](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_13_inch.JPG)<br>*MacBook Pro 13", mostly an SSH client for all those machines by this point. Notice the 2 sexy Mac Pro's under the table.*
+
+I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-core i7 at 3.0GHz, with 16GB of RAM, for 750€. The most powerful and rare configuration, the computer had some issues: very worn out keys, a MagSafe charger with a torn cable, a battery on its last legs, and a bad case of the Retina Macbook Pro [delamination issue](https://www.macrumors.com/2019/12/20/macbook-pro-anti-reflective-repair-program/) in the display. When I bought it, I proceeded to replace the thermal paste, the [battery](/2018/07/04/new-battery-for-my-macbook-pro-retina-13/) and clean up the remains of the bad anti-reflective coating with some [eyeglasses cleaning solution](https://www.ifixit.com/Answers/View/582699/How+to+remove+anti-glare+coating+effectively), a microfiber cloth, and a lot of patience.
 
 ## 2018 - MacBook 12'' - The most gorgeous slow computer ever
 

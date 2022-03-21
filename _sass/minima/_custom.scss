@@ -224,10 +224,26 @@ span.reading-time > span.actual_time{
 	color: $background-color;
 }
 
-ul#search-results > li > a:hover {
-	background-color: $background-color;
-	color: $text-color;
+ul#search-results {
+	margin-left: 0px; 
 }
+
+ul#search-results > li {
+	list-style:none;
+	padding-left: 2em;
+	margin-left: 0px;
+  	border-left: $text-color dotted 2px;
+}
+
+ul#search-results > li:first-child {
+	margin-top: 4em;
+}
+
+ul#search-results>li>a:hover {
+	background-color:#fdfdfd;
+	color:#111
+}
+
 
 a:hover {
 	border-radius: 3px;

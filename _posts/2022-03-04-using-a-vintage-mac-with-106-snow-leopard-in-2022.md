@@ -8,9 +8,9 @@ published: true
 inconstruction: true
 ---
 
-Here is a short guide on how to use [AFP (Apple Filing Protocol)](https://en.wikipedia.org/wiki/Apple_Filing_Protocol) shares to offload heavy compilation operations to a more modern and powerful machine, while using a vintage Mac for simple text editing and browsing compiled result. I am using the [source code of this very blog](http://github.com/silvae86/silvae86.github.io) as a test case. 
+Here is a short guide on how to use [AFP (Apple Filing Protocol)](https://en.wikipedia.org/wiki/Apple_Filing_Protocol) shares to offload heavy compilation operations to a more modern and powerful machine, while using a vintage Mac for simple text editing and viewing the compiled result in the web browser. This may be of use to those of you running older PowerPC Macs, such as the 12-inch Powerbook G4, one of the most beautiful computers ever created. As long as its Mac OS X version supports AFP, you should be good to go.
 
-This may be of use to those of you running older PowerPC Macs, such as the Powerbook G4 12'', one of the most beautiful computers ever to be created in my opinion. As long as its Mac OS X version supports AFP, you should be good to go.
+I am using the [source code of this very blog](http://github.com/silvae86/silvae86.github.io) as a test case. 
 
 ## Compiling this blog remotely via an AFP share
 

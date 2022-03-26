@@ -26,8 +26,10 @@ The entirely new user interface of the new Mac OS, called "Aqua", was completely
 
 I made my switch to the Mac around 2008, while I was still an MSc. student of Informatics Engineering. First, I started by trying to convert my back-then desktop computer into a *Hackintosh* running 10.5 Leopard. Looking back, it was a terrible choice of hardware, since only Intel could run reliably back then. This ended up playing in my favor in the long term, since I had to start getting acquainted with command line tools and the Unix-way of doing things. At the time it meant working with the Terminal, editing and writing BASh Scripts and understanding `.plist` files.
 
-{:.float-img-right}
-![Work setup at home, circa 2009](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/workroom.JPG)<br>*Home setup, circa 2009. At the bottom left, my first Hackintosh running on an AMD64 3000+ CPU. Under the table below the printer, a Linux server cobbled together from old parts.*
+{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/workroom.JPG" 
+caption="Home setup, circa 2009. At the bottom left, my first Hackintosh running on an AMD64 3000+ CPU. Under the table below the printer, a Linux server cobbled together from old parts." imageposition="right" 
+title="Work setup at home, circa 2009"
+%}
 
 Kernel panics were frequent, but it was all worth it when it finally booted up. The shadows looked amazing, and using [Adium](http://adium.im), the native Mac cross-platform messaging app for the first time is an experience that I will not forget. I had no money to buy a real Mac, but now I was sure that I wanted my own Mac laptop, even if that meant giving up on playing games in exchange for a superior work machine.
 

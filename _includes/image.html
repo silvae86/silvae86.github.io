@@ -9,10 +9,10 @@
 	{% assign imgclass = "img-responsive" %}
 {%- endif -%}
 
-{% assign lightboxgroup = "imglightboxes" %}
+{% assign lightboxgroup = "imglightbox" %}
 
 <p class="{{ imgclass }}">
-	<a href="{{src}}" class="{{ lightboxgroup }}" data-description="{{ caption }}" data-title="{{ title }}" data-sizes="(max-width: 600px) 480px, 800px" data-srcset="img480.jpx 480w img800.jpg 800w">
+	<a href="{{src}}" class="{{ lightboxgroup }}" data-description="{{ caption }}" data-title="{{ title }}">
 		<img src="{{ src }}" alt="{{ title }}">	
 	</a>
 	{%- if caption -%}
@@ -21,11 +21,4 @@
 	{%- endif -%}
 </p>
 
-<script type="application/javascript">
-	window.onload = function() {
-		var myLightbox = GLightbox({
-		    'selector': "{{ lightboxgroup }}"
-		});
-	};	
-</script>
 

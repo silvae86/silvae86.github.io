@@ -48,4 +48,22 @@
 <link href="{{ '/assets/glightbox/dist/css/glightbox.css' | relative_url }}" rel="stylesheet">
 <script src="{{ '/assets/glightbox/dist/js/glightbox.js' | relative_url }}"></script>
 
+<script type="application/javascript">
+	document.addEventListener('DOMContentLoaded', function(event) {
+		var myLightbox = GLightbox({
+		    selector: ".imglightbox",
+			touchNavigation: true,
+			loop: true,
+			onOpen: () => {
+		        // console.log('Lightbox opened')
+			},
+			beforeSlideLoad: (slide, data) => {
+				// console.log('Lightbox loaded')
+		        // Need to execute a script in the slide?
+		        // You can do that here...
+		    }
+		})
+	});	
+</script>
+
 {%- include head-nbpreview.html -%}

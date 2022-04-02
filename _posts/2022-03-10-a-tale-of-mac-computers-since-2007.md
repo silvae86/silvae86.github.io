@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A tale of my Mac computers since 2007"
+title:  "A tale of Mac computers since 2007"
 date: 2022-03-10 11:20:000 +0100
 tags: macintosh mac life history nostalgia aqua opininionated skeuomorphism user interface
 published: true

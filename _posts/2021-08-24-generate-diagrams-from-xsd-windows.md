@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Generating diagrams from XSD files (Windows only)"
+title:  "Generating diagrams from XSD files on Windows"
 date: 2021-08-23 21:46:000 +0100
 tags: xsd diagrams windows opensource powershell scripting xml diagrams howto
 published: true
@@ -11,15 +11,15 @@ I always loved the [Oxygen XML Editor](https://www.oxygenxml.com/), in particula
 
 ## Context
 
-I set out to find an open-source alternative for generating diagrams from XSD files and discovered [dgis/xsddiagram](https://github.com/dgis/xsddiagram), an open-source GUI/CLI tool that generates diagrams from XSD files automatically. There are two catches, though: 
+I set out to find an open-source alternative for generating diagrams from XSD files and discovered [dgis/xsddiagram](https://github.com/dgis/xsddiagram), an open-source GUI/CLI tool that generates diagrams from XSD files automatically. There are two catches, though:
 
 1. It only runs on Windows since it requires the .NET framework (I will be taking a look at how to run this in a [Docker Container](https://hub.docker.com/_/microsoft-dotnet-framework-runtime/) in the future, though...)
 
-2. It does not support exporting the diagrams to PDF Format, only to PNG. This makes it impossible to Ctrl+F to search for a particular element or attribute in the diagram! If this was UNIX, I could cook up a script to print the SVG's to PDF, but oh well... It is a question to solve later after I get it running in the container. 
+2. It does not support exporting the diagrams to PDF Format, only to PNG. This makes it impossible to Ctrl+F to search for a particular element or attribute in the diagram! If this was UNIX, I could cook up a script to print the SVG's to PDF, but oh well... It is a question to solve later after I get it running in the container.
 
 ## Download dgis/xsddiagram
 
-[Download the program](https://github.com/dgis/xsddiagram/archive/refs/heads/master.zip) and unzip it to Program Files folder. 
+[Download the program](https://github.com/dgis/xsddiagram/archive/refs/heads/master.zip) and unzip it to Program Files folder.
 
 
 ## Add executable to the PATH
@@ -43,32 +43,32 @@ This will make it easier to work with the script below. In alternative, replace 
 Copy this template script and save it in a file named `make_diagrams.ps1` it in the same folder as your XSDs. **You will need to edit the some of the noted parameters with `!!` to match your needs**.
 
 ```powershell
-# !! You can change the Filter to 
-# !! retrieve only the files that you 
+# !! You can change the Filter to
+# !! retrieve only the files that you
 # !! want to represent as diagrams
-Get-ChildItem . -Filter SomeFilterForStartOfFileName*.xsd | 
+Get-ChildItem . -Filter SomeFilterForStartOfFileName*.xsd |
 Foreach-Object {
 	$filename = $_.FullName
-	
-	# Change extension if you need a .png, .jpg... 
-	# I used svg since it is a vector format and 
-	# thus allows Search in the diagram to find certain 
+
+	# Change extension if you need a .png, .jpg...
+	# I used svg since it is a vector format and
+	# thus allows Search in the diagram to find certain
 	# elements.
     $output_file = $_.FullName + ".svg"
-    
-	# !! Edit the RootElement to match 
-	# !! the root element of your XSDs. 
-	# 
-	# -e 10000 will expand at most 10000 
-	# levels of #elements, which 
-	# in practice generates a diagram 
+
+	# !! Edit the RootElement to match
+	# !! the root element of your XSDs.
+	#
+	# -e 10000 will expand at most 10000
+	# levels of #elements, which
+	# in practice generates a diagram
 	# of the entire XSD.
-	# 
-	# If you did not add the xsddiagram 
-	# folder (containing the 
-	# XSDDiagramConsole.exe binary) 
-	# to the PATH, replace 
-	# XSDDiagramConsole.exe with 
+	#
+	# If you did not add the xsddiagram
+	# folder (containing the
+	# XSDDiagramConsole.exe binary)
+	# to the PATH, replace
+	# XSDDiagramConsole.exe with
 	# the absolute path
     XSDDiagramConsole.exe -r RootElement -o $output_file -e 10000 $filename
 }
@@ -96,7 +96,7 @@ Try it out. Let's get an example XSD from (Source: [W3C Tutorials](https://www.w
 
 ![Diagram for Example.Xsd](/assets/images/post-images/2021-08-24-generate-diagrams-from-xsd-windows/Example.xsd.png)
 
-Example XSD: 
+Example XSD:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -149,14 +149,11 @@ Example XSD:
 
 <xs:element name="shiporder" type="shipordertype"/>
 
-</xs:schema> 
+</xs:schema>
 ```
 (Source: [W3C](https://www.w3schools.com/xml/schema_example.asp))
 
 
-## References 
+## References
 
 [dgis/xsddiagram](https://github.com/dgis/xsddiagram) on GitHub
-
-
-

@@ -58,8 +58,8 @@
 
 /* new sans font */
 @font-face {
-    font-family: 'Slate for OnePlus Regular';
-    src: url('SlateForOnePlus-Regular.ttf') format('truetype');
+    font-family: 'Merriweather Sans';
+    src: url('Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: sans-serif;
 }

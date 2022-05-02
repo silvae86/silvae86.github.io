@@ -5,11 +5,11 @@ date: 2022-03-10 11:20:000 +0100
 tags: macintosh mac life history nostalgia aqua opininionated skeuomorphism user interface
 published: true
 inconstruction: true
----
+---w
 
 *In construction*
 
-Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of Apple-fanboyism and personal thoughts, so grab a coffee and enjoy the ride.
+Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of Apple-fanboyism and personal thoughts, so you may want to grab a coffee while I take you with me on this journey.
 
 ## "Aqua": the user interface of the modern-era Macintosh
 
@@ -115,9 +115,13 @@ These machines are notorious for their fragile keyboards based on a new "butterf
 {:.float-img-left}
 ![Scissor Vs Butterfly Keyboard Mechanism by Apple](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/scissor-vs-butterfly.gif)<br>*Scissor Vs Butterfly Keyboard Mechanism. Image © Apple*
 
-I used to joke about how someone's laptop tells something about their job when you look around a meeting table: if it is a very slim and portable machine, you can safely hazard that this person is in a management position. If it is a thick brick of a computer, this person is a professional video editor or a video game developer. If it is somewhere in the middle, like a 15'' MacBook Pro,
+I used to joke about how a laptop tells a lot about someone's job when you look around a meeting table: if it is a very slim and portable machine, you can safely hazard that this person is in a management position. If it is a thick brick of a computer, this person may be an architect, a professional video/photo editor or a video game developer. If it is somewhere in the middle, like a 15'' MacBook Pro, then you may likely be in the presence of a Web developer.
+ 
+For a long time, I carried heavy machines, like the [Lenovo ThinkPad W520](https://www.notebookcheck.info/Lenovo-ThinkPad-W520.51750.0.html). 
 
 ## 2020/2021 - MacBook Pro 16'' - The "hybrid car" of Apple Computers
+
+
 
 ## 2021 - MacBook Air M1 13'' - You have to own one to believe it
 

@@ -5,7 +5,7 @@ date: 2022-03-10 11:20:000 +0100
 tags: macintosh mac life history nostalgia aqua opininionated skeuomorphism user interface
 published: true
 inconstruction: true
----w
+---
 
 *In construction*
 

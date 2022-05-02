@@ -84,15 +84,14 @@ header.site-header a.site-title {
 	
 	#about .currently h1 {
 		margin: 0;
-		font-size: 4em;
 	}
 			
 	#about img {
-		max-width: 10%;
+		max-width: 5em;
 	}
 	
 	#about div.round-mask-wrap {
-		margin-top: 0;
+		margin-top: 0 1em;
 	}	
 	
 	#about .round-mask-wrap {
@@ -101,8 +100,7 @@ header.site-header a.site-title {
 	
 	#about .round-mask-wrap img.round-mask {
 		float:left;
-		margin-right: 3em;
-		margin-bottom: 3em;
+		margin: 1em;
 	}
 	
 	.home_section {

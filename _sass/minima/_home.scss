@@ -69,17 +69,33 @@ header.site-header a.site-title {
 	nav.site-nav {
 		width: 100%;
 	}
-	
-	#about img {
-		max-width: 30%;
+
+	#about {
+		margin-bottom:0;
 	}
 	
-	#about .round-mask-wrap {
-		margin: 20px auto 20px auto;
+	#about .previously { 
+		display: none;
+	}
+	
+	#about .currently ul {
+		margin: 0;
+	}
+	
+	#about .currently h1 {
+		margin: 0;
+		font-size: 4em;
+	}
+			
+	#about img {
+		max-width: 10%;
+	}
+	
+	#about div.round-mask-wrap {
+		margin-top: 0;
 	}	
 	
-	#about .round-mask-wrap
-	{
+	#about .round-mask-wrap {
 		display: inline;
 	}
 	
@@ -114,8 +130,7 @@ header.site-header a.site-title {
 		flex-grow:1;
 	}
 	
-	#about .center
-	{
+	#about .center {
 		text-align: center;
 	}
 
@@ -132,7 +147,7 @@ header.site-header a.site-title {
 	}
 	
 	#about .round-mask-wrap {
-		margin: 3em;
+		margin: 10em;
 	}	
 	
 	#about .round-mask-wrap {

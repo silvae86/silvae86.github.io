@@ -5,13 +5,13 @@
 
 <!-- Add google analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121742151-1"></script>
+<script data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=UA-121742151-1"></script>
 
 <!-- Google Adsense Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9508559972576470"
+<script data-cookiecategory="ads" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9508559972576470"
      crossorigin="anonymous"></script>
 	 
-<script data-ad-client="ca-pub-9508559972576470" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script data-cookiecategory="ads"  data-ad-client="ca-pub-9508559972576470" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <script>
     // Actually starting analytics up
@@ -19,7 +19,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-
 		gtag('config', 'UA-121742151-1');
     }
 
@@ -30,6 +29,13 @@
 
         // run plugin with your configuration
         cc.run({
+			gui_options: {
+				consent_modal: {
+					layout : 'box',
+					position : 'middle center',
+					transition: 'slide' 
+				}
+			},
             current_lang: 'en',
             autoclear_cookies: true,                   // default: false
             page_scripts: true,                        // default: false
@@ -37,7 +43,7 @@
             //++ mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
             // delay: 0,                               // default: 0
             // auto_language: '',                      // default: null; could also be 'browser' or 'document'
-            // autorun: true,                          // default: true
+            autorun: true,                          // default: true
             force_consent: true,                   // default: false
             // hide_from_bots: false,                  // default: false
             // remove_cookie_tables: false             // default: false
@@ -75,8 +81,6 @@
                             text: 'Settings',
                             role: 'settings'        // 'settings' or 'accept_necessary'
                         },
-                        layout: 'box',
-						position: 'middle center'
                     },
                     settings_modal: {
                         title: 'Cookie preferences',
@@ -84,7 +88,7 @@
                         accept_all_btn: 'Accept all',
                         reject_all_btn: 'Reject all',
                         close_btn_label: 'Close',
-                        cookie_table_headers: 
+                        cookie_table_headers: [
                             {col1: 'Name'},
                             {col2: 'Domain'},
                             {col3: 'Expiration'},
@@ -107,7 +111,7 @@
                                 description: 'These cookies allow the website to remember the choices you have made in the past',
                                 toggle: {
                                     value: 'analytics',     // your cookie category
-                                    enabled: false,
+                                    enabled: true,
                                     readonly: false
                                 },
                                 cookie_table: [             // list of all expected cookies
@@ -129,8 +133,8 @@
                                 title: 'Advertisement and Targeting cookies',
                                 description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you',
                                 toggle: {
-                                    value: 'targeting',
-                                    enabled: false,
+                                    value: 'ads',
+                                    enabled: true,
                                     readonly: false
                                 }
                             }, {

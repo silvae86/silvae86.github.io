@@ -47,16 +47,28 @@ brew install atomicparsley
 ## Downloading a playlist
 
 ```bash
-youtube-dl https://www.youtube.com/playlist?list=PLamnoxId_aK2qxsln0OiDh9s3Pa1vgfvb -x --audio-format m4a --audio-quality 200k --no-check-certificate --add-metadata --postprocessor-args "-metadata album='Album name, even with spaces!" --embed-thumbnail -o '%(playlist_index)s. - %(title)s.%(ext)s'
+youtube-dl https://www.youtube.com/playlist?list=PLamnoxId_aK2qxsln0OiDh9s3Pa1vgfvb \
+--download-archive downloaded.txt \
+--rm-cache-dir \
+-x \
+--audio-format m4a \
+--audio-quality 200k \
+--no-check-certificate \
+--add-metadata \
+--postprocessor-args "-metadata album='Album name, even with spaces!'" \
+--embed-thumbnail \
+-o '%(playlist_index)s. - %(title)s.%(ext)s'
 ```
 
-Explanation of this command, for the curious:
+Explanation of this long command, for the curious:
 
 - `youtube-dl` &larr; Base command
-- https://www.youtube.com/playlist?list=PLamnoxId_aK2qxsln0OiDh9s3Pa1vgfvb &larr; Playlist address
+- `https://www.youtube.com/playlist?list=PLamnoxId_aK2qxsln0OiDh9s3Pa1vgfvb` &larr; Playlist address
+- `--download-archive downloaded.txt` &larr; Keep a file with the list of the files already downloaded, so downloads can resume. Delete `downloaded.txt` to download everything again.
+- `--rm-cache-dir` &larr; Remove cache directory. Helps circumvent `403 Forbidden` errors that sometimes happen.
 - `-x` &larr; Extract
 - `--audio-format` &larr; Use m4a for the output. You can replace with mp3 if you would like mp3 files.
-- `--audio-quality 200k` &larr; Bitrate for the produced files. Higher = more space = better quality
+- `--audio-quality 200k` &larr; Bitrate for the produced files. Higher = larger files but better quality
 - `--no-check-certificate` &larr; Needed because without this some error would appear 😳
 - `--add-metadata --postprocessor-args "-metadata album='Album name, even with spaces!"` &larr; Sets the album name in the ID3 tags of the produced files. The single quotes `'` are needed at the end to handle names with spaces
 - `--embed-thumbnail` &larr; Embeds the album art thumbnail in the file (nice for iTunes or whatever player you use).

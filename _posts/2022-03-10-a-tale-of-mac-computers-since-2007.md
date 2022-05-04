@@ -62,18 +62,18 @@ The modal dialogs that popped up when you needed to save a document or answer a 
 
 All in all, I had no idea how spoiled I was during this era of skeuomorphism. Since Yosemite (10.10) every button, scroll bar and top left semaphore in the macOS UI is flat and streamlined, in the name of reducing visual clutter and maintaining a sleek image. It exchanged some of its fun for sharpness and professionalism and became somewhat more serious.
 
-## 2012 - The White Macbook Unibody - The definition of a student laptop
+## 2012 - The White Macbook Unibody - What a "student laptop" should be
 
 Like many of its kind, my 2008 Macbook Pro died a painful death when its GPU, the [flawed nVidia 8600GT](https://forums.macrumors.com/threads/so-are-all-mbp-owners-with-the-8600m-gt-cards-screwed.515067/), finally gave up on me around 2012.
 
 {:.float-img-left}
 ![My 2010 Unibody Plastic White MacBook](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/2010_macbook_unibody_white.jpg)<br>*2010 Unibody Macbook White (plastic).*
 
-Meet my 2010 MacBook Unibody White with an Intel 2.4 GHz Core 2 Duo processor, which I bought after my 2008 MacBook died. It was a beaten up machine that I got second hand for the reasonable price of € 450 at the time. At such a low price for the time, it had some problems that I figured I could fix with my trusty precision screwdriver set, some thermal paste and a few new parts...
+Meet my 2010 MacBook Unibody White with an Intel 2.4 GHz Core 2 Duo processor, bought after my 2008 MacBook died. It was a beaten up machine that I got second hand for the reasonable price of € 450 at the time. At such a low price for the time, it had some problems that I figured I could fix with my trusty precision screwdriver set, some thermal paste and a few new parts...
 
-It came with a 1000-plus cycle count battery, whose internal resistance made the laptop hot to work on and short-lasting. It was missing a couple of keys in the keyboard and was powered by an aftermarket 'El Cheapo' power adapter lighter than most of today's mobile phones. I still remember how the charger's terrible grounding would give me shocks in the ears when I was wearing earbuds. But hey, when you are a Ph.D. student you can't be picky, and it was nothing I could not fix! I proceeded to repair and upgrade it as much as I could, with a new aftermarket battery (still delivers up to 4 hours of light use to this day), a 250 GB Samsung 840 SSD, 8GB RAM, and the missing keyboard keys.
+It came with a 1000-plus cycle count battery, whose internal resistance made the laptop hot to work on and short-lasting. It was missing a couple of keys in the keyboard and was powered by an aftermarket 'El Cheapo' power adapter lighter than most of today's mobile phones. I still remember how the charger's terrible grounding would give me shocks in the ears when I was wearing earbuds... but hey, when you are a Ph.D. student money is always short and you can't be picky. I proceeded to repair and upgrade it as much as I could, with a new aftermarket battery (still delivers up to 4 hours of light use to this day), a 250 GB Samsung 840 SSD, 8GB RAM, and the missing keyboard keys.
 
-The first great characteristic of this laptop is its The thing about this laptop is that you can run many versions of Mac OS X, from Snow Leopard (10.6) up to Catalina (10.15) through the [unofficial patcher](https://github.com/dosdude1/macos-catalina-patcher) by dosdude1.
+Perhaps the most recognizable characteristic of this laptop is its polycarbonate plastic construction that hides scratches very well, an essential feature for laptops that are intended for classrooms and dorm rooms.  Another awesome aspect about this laptop is that you can run many versions of Mac OS X, from Snow Leopard (10.6) up to Catalina (10.15) through the [unofficial patcher](https://github.com/dosdude1/macos-catalina-patcher) by dosdude1.
 
 ## 2014 - MacBook Pro Retina 15'' - The first Retina experience
 
@@ -108,25 +108,57 @@ I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-
 
 ## 2018 - MacBook 12'' - The most gorgeous slow computer ever
 
-In 2018 I bought a Gold 12'' MacBook, looking for a very light laptop that would always be with me in case I needed to write something down or reply to an email quickly while on the road. I have to say, at the beginning my main motivation for choosing this color was the price! This machine cost me €999 back then, since it was on clearance sale.
+For a long time, I also carried heavy machines, like the [Lenovo ThinkPad W520](https://www.notebookcheck.info/Lenovo-ThinkPad-W520.51750.0.html). 
+By that time, I used to joke about how a laptop tells a lot about someone's job when you look around a meeting table: if it is a very slim and portable machine, you can hazard that this person is in a management position. If it is a thick brick of a computer, this person may be an architect, a professional video/photo editor, a video game developer or a programmer who also needs his daily gaming fixes. If it is somewhere in the middle, like a 15'' MacBook Pro, then you may likely be in the presence of a Web developer who clearly does not game. 
+ 
+Transitioning to a 12'' laptop was my failed attempt to distance myself from development work and transition into more *managerial* role, if you will. Research is a lot about getting money to fund your next 5 years, so I had to focus on writing project proposals as a Post-doctoral researcher and leave coding to the *grunts*. In the end, I just could not live without coding and felt my future would not be in an academic career, so I joined the private sector as a Software Engineer.
 
-These machines are notorious for their fragile keyboards based on a new "butterfly mechanism" which replaced the "scissors switch" ones that came before it. This new mechanism was necessary for Apple to build even thinner laptops by reducing the space necessary for the keys to travel. However, such a small gap in the key mechanism made it very susceptible to crumbs and dust, which when stuck inside the key would be almost impossible to flush out, causing dead or stuck keys. Apple released a [guide](https://support.apple.com/en-us/HT205662) covering how to clean these keyboards, and more importantly, a [4-year warranty extension](https://support.apple.com/keyboard-service-program-for-mac-notebooks) on the keyboard only counting from the date of purchase. This 4-year warranty gave me the peace of mind that I needed to buy the computer.
+In 2018 I bought a Gold 12'' MacBook, looking for a very light laptop that would always be with me in case I needed to write something down or reply to an email quickly while on the road. I have to say, at the beginning my main motivation for choosing this color was the price! This machine was on clearance sale, and all the space gray units had been sold. 
+
+Overall, this machine was for those willing to compromise. A single USB-C port means you have to be willing to go fully Bluetooth on your peripherals. Weak Core-M/Netbook class CPUs mean that you will have to offload all your heavy computing to the cloud or to a remote machine somewhere. A 480p webcam with terrible low light performance. A time-bomb of a keyboard that forces your tables to be absolutely spotless, as a single crumb under a key can permanently make your keyboard unusable ... BUT! in exchange for all that hassle, you have a computer thinner, lighter and more beautiful than anything else on the market at the time (and dare I say, up to this day). I see it very much like an 1969 Alfa Romeo GT Junior: an emotional purchase that may give you a lot of headaches most of the time, but when in the right context, makes up for everything and makes you smile.
+
+{:.float-img-left}
+![Alfa Romeo GT Junior](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/alfa-gt-junior.jpg)<br>*The MacBook 12'' is the 1969 Alfa Romeo GT Junior of laptops [^alfa-gt-junior].*
+
+These machines were notorious for their fragile keyboards based on a new "butterfly mechanism" which replaced the "scissors switch" ones that came before it. This new mechanism was necessary for Apple to build even thinner laptops by reducing the space necessary for the keys to travel. However, such a small gap in the key mechanism made it very susceptible to crumbs and dust, which when stuck inside the key would be almost impossible to flush out, causing dead or stuck keys. Apple released a [guide](https://support.apple.com/en-us/HT205662) covering how to clean these keyboards, and more importantly, a [4-year warranty extension](https://support.apple.com/keyboard-service-program-for-mac-notebooks) on the keyboard only counting from the date of purchase. This 4-year warranty gave me the peace of mind that I needed to buy the computer at the time, so it was not entirely emotional for me.
 
 {:.float-img-left}
 ![Scissor Vs Butterfly Keyboard Mechanism by Apple](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/scissor-vs-butterfly.gif)<br>*Scissor Vs Butterfly Keyboard Mechanism. Image © Apple*
 
-I used to joke about how a laptop tells a lot about someone's job when you look around a meeting table: if it is a very slim and portable machine, you can safely hazard that this person is in a management position. If it is a thick brick of a computer, this person may be an architect, a professional video/photo editor or a video game developer. If it is somewhere in the middle, like a 15'' MacBook Pro, then you may likely be in the presence of a Web developer.
- 
-For a long time, I carried heavy machines, like the [Lenovo ThinkPad W520](https://www.notebookcheck.info/Lenovo-ThinkPad-W520.51750.0.html). 
+The MacBook 12'', with all its quirks, slow performance and single-USB-C-port *personality*, was a very pleasant computer to use. I wrote long essays and papers in that keyboard, which was clicky and responsive (mine was the 2017 version, slightly improved over the more mushy 2015 version). The screen was gorgeous, there was no distracting fan noise, battery life was far from prodigious but still acceptable. The speakers sounded impossibly good for a computer of that weight and size. 
+
+I would buy one again, but since they have to be bought new because you don't know what crumbs may be hiding under those keys... I guess that ship has sailed. At least until Apple decides to bring it back with a Magic Keyboard and a brand new Apple Silicon heart.
 
 ## 2020/2021 - MacBook Pro 16'' - The "hybrid car" of Apple Computers
 
+This one left me with mixed feelings. You spend years enjoying and praising Macs for their stability, and all of a sudden... you are disappointed. I used 2 distinct machines of this type, and faced issues like freezing/lagging Touch Bars or frequent crashes / Kernel panics when the LG Ultrafine 5k display. 
 
+This felt like a product of Intel's failures in delivering a proper 10nm CPU in time for the new MacBook Pro enclosure. It looked like Apple was promised cooler and faster CPUs by Intel way before they launched the Touch Bar MacBook Pros in 2016, Apple designed a super-slim laptop under those assumptions, and then Intel did not deliver. The result? A super hot chip inside a very thin laptop, with noise, [overheating](https://www.slrlounge.com/apple-i9-macbook-pro-overheating-fix-from-apple-useless-or-useful/) and crashes galore. 
+
+In a hybrid car we have to combine the new electric infrastructure, full of revolutionary technologies, but still hampered by insufficient battery specific capacity and range, with the older but mature technology of the internal combustion engine. The hybrid approach is only necessary until the electric matures and can stand on its own. You have some advantages but also all the drawbacks of both: a heavy and limited-lifespan car because of having to lug around heavy batteries, redundant systems which can add points of failure... but you go with it because you have no other option. 
+
+As a side note, this makes me remember how much I admire Toyota and the Prius. You may not like the car, but Toyota managed to make it robust and reliable, despite all the different ways it could go wrong. And they stood behind their product, which is more than we can say of Apple, who never admits they are wrong... at least until the pressure of class-action lawsuit is too great.
+
+Why do I call this laptop a hybrid car? Because hybrid cars are nice, but only *stopgap solutions*, much like the 16'' MacBook Pro. The 16'' showed how Apple already knew how complacent Intel was by this time, how their foundries were [having problems with the new 10nm process](https://www.infinitevalueptr.com/post/intel_10nm), and thus would not deliver on their roadmaps. Intel had accelerated Apple's switch to ARM, since much like in the days of the IBM PowerPC, Apple had no way to build the products that they wanted with the CPU roadmap proposed by Intel. The T2 chip inside the 16'' MacBook Pro already showed more and more responsibilities being handled by Apple's silicon (video encoding, disk encryption/decryption, secure enclave, control of the power rails to the Intel CPU). The seeds of the transition were already there. 
+
+{:.floatquote}
+[...] as we look ahead we can of envision some amazing products we want to build for you and we don't know how to build them with the future PowerPC road map[^steve-jobs-powerpc].<span class="quoteauthor"> Steve Jobs (Co-founder at Apple)<span>
+
+From my experience as a developer, the 16'' MacBook Pro was heavy, blistering hot, noisy all day, buggy, and as a consequence had terrible battery life during productive activity. The Touch Bar never actually made sense to me as someone who uses the F-row for debugging shortcuts on a daily basis... but hey, at least we got a keyboard that did not die if a breadcrumb got stuck under a key!
 
 ## 2021 - MacBook Air M1 13'' - You have to own one to believe it
+
+
+
 
 ## 2022 - MacBook Pro 14'' M1 Pro - The return of the Pro
 
 ## Footnotes
 
 [^memory-protection]: To understand the importance of memory protection, one only has to look at the seriousness of the [Spectre and Meltdown vulnerabilities](https://meltdownattack.com), which can be weaponised by malicious processes to access data from other processes running on the same machine. They break memory protection, allowing, for example, a malicious process to read your banking passwords from the RAM segment allocated by your browser process). Spectre and Meltdown are especially bad because they are hardware-based vulnerabilities. This means that they are part of most Intel and AMD processors' physical architecture and thus, cannot be patched with a software updated. Only by buying a new computer with a more modern CPU will the problem be solved.
+
+[^steve-jobs-powerpc]: "Apple's Intel switch: Jobs' keynote transcript" [Link](https://www.cnet.com/tech/tech-industry/apples-intel-switch-jobs-keynote-transcript/)
+
+[^alfa-gt-junior]: "Alfa Romeo GT Junior" by grassrootsgroundswell on Flickr [Link](https://flic.kr/p/XPM956)
+
+

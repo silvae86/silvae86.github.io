@@ -76,7 +76,7 @@ sudo chmod +x /etc/init.d/disable_builtin_bluetooth
 ```
 4. Run update-rc.d to wire all the symlinks needed for boot
 ```shell
-update-rc.d nobluetooth start 26 2 3 4 5  .
+update-rc.d disable_builtin_bluetooth start 26 2 3 4 5  .
 ```
 5. Reboot
 6. Run

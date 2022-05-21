@@ -9,7 +9,9 @@ inconstruction: true
 
 *In construction*
 
-Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. This is a nostalgia-filled post with a quite a lot of Apple-fanboyism and personal thoughts, so you may want to grab a coffee while I take you with me on this journey.
+Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. 
+
+This is a nostalgia-filled post with a quite a lot of Apple-fanboyism and personal thoughts, so you may want to grab a coffee while I take you with me on this journey.
 
 ## "Aqua": the user interface of the modern-era Macintosh
 
@@ -86,7 +88,7 @@ As always, it was Apple's *execution* of this new high pixel density UI all thro
 
 HiDPI mode came to Windows as well, with many of the Windows native scaling gracefully. However, many older apps and less user-facing areas of the OS [looked bad back then](https://www.hanselman.com/blog/living-a-highdpi-desktop-lifestyle-can-be-painful), since they never got an overhaul like that done upon the release of OS X Mavericks. Even to this day on Windows 10 you will sometimes get apps with tiny buttons and fonts because the scaling is not working properly. Fortunately this is rare and far in between.
 
-This laptop was my lab workhorse in my last years of research as a Ph.D. student. My particular one was the base i7 at 2.0 GHz, without a dedicated graphics card. The main reason was that I was afraid of GPU defects after my 2008 MacBook Pro died because of a bad GPU, and the price was much lower. The Intel Iris Pro is a very capable graphics card for most
+This laptop was my research workhorse in my last years as a Ph.D. student. My particular one was the base i7 at 2.0 GHz, without a dedicated graphics card. The main reason was that I was afraid of GPU defects after my 2008 MacBook Pro died because of a bad GPU, and the price was much lower. The Intel Iris Pro is a very capable graphics card for most
 everyday uses outside of gaming and any sort of 3D modelling. Even video rendering was quite fast in Final Cut Pro X.
 
 {:.float-img-right}
@@ -152,6 +154,12 @@ From my experience as a developer, the 16'' MacBook Pro was heavy, blistering ho
 
 
 ## 2022 - MacBook Pro 14'' M1 Pro - The return of the Pro
+
+
+{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook-pile.jpg"
+caption="From bottom to top: 2013 15'' Macbook Pro, 2021 M1 MacBook Pro, 2017 12'' Macbook" imageposition="center"
+title="Size comparison"
+%}
 
 ## Footnotes
 

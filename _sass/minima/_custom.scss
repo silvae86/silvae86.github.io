@@ -290,7 +290,7 @@ a:hover {
     font-style: normal;
 }
 
-.float-img-right {
+@mixin captionbox {
     padding: 0px;
     font-size: .7rem;
     font-family: $serif-font-family;
@@ -301,6 +301,22 @@ a:hover {
     border-radius: 3px;
     background-color: $grey-color-light;
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+}
+
+.float-img-center {
+	@include captionbox;
+  
+    @media (min-width: 768px) {
+      margin: 1rem;
+      width: 90%;
+      padding: 0px;
+      clear: left right;
+	}
+}
+
+
+.float-img-right {
+   	@include captionbox;
   
     @media (min-width: 768px) {
       margin: 1.5rem -5rem 2rem 1.5rem;
@@ -312,16 +328,7 @@ a:hover {
 }
 
 .float-img-left {
-    padding: 0px;
-    font-size: .7rem;
-    font-family: $serif-font-family;
-    font-style: italic;
-    line-height: 1.2rem;
-  	text-align: center;
-
-    border-radius: 3px;
-    background-color: $grey-color-light;
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+   	@include captionbox;
   
     @media (min-width: 768px) {
       margin: 1.5rem 1.5rem 2rem -5rem;

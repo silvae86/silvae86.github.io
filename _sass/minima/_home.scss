@@ -7,6 +7,8 @@ div.home {
 
 	grid-template-areas:
 			// "teaching"
+			"about"
+			"homecontent"
 			"recentposts"
 			"archive";
 
@@ -71,7 +73,8 @@ header.site-header a.site-title {
 	}
 
 	#about {
-		margin-bottom:0;
+		grid-area: about;
+		margin-bottom:2rem;
 	}
 	
 	#about .previously { 
@@ -105,6 +108,11 @@ header.site-header a.site-title {
 	
 	.home_section {
 		margin-bottom:1em;
+	}
+	
+	#home-content {
+		grid-area: homecontent;
+		margin:0em 1em 1em 1em;
 	}
 }
 

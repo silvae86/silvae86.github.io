@@ -20,7 +20,7 @@ Some years ago I wrote some [classroom keynote slides](https://silvae86.github.i
 
 ## Challenges posed by M1 Macs in the dev environment
 
-Most laptops/desktops commonly used as development machines are built on the x86 architecture. Up until very recently, Apple also used Intel processors based on x86, or more specifically x86_64 (x86 with 64-bit extensions) in most of its computer products. 
+Most laptops/desktops commonly used as development machines are built on the x86 architecture. Up until very recently, Apple also used Intel processors based on x86, or more specifically x86_64 (x86 with 64-bit extensions) in most of its computer products.
 
 ## Approaches for Node apps
 

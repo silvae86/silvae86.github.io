@@ -14,7 +14,14 @@
 		  					"archive homecontent";
 	}
 
+	#homecontent {
+		grid-area: homecontent;
+		align-items: start;
+	}
+
+
 	#archive {
+		grid-area: archive;
 		align-items: start;
 	}
 	

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How to add your SSH keys to a server for password-less logins"
+permalink: /add-ssh-keys-to-remote-server-for-passwordless-login/
 date:   2018-07-02 16:54:07 +0100
 tags: sysadmin ssh keys
 ---

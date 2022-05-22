@@ -137,29 +137,50 @@ This one left me with mixed feelings. You spend years enjoying and praising Macs
 
 This felt like a product of Intel's failures in delivering a proper 10nm CPU in time for the new MacBook Pro enclosure. It looked like Apple was promised cooler and faster CPUs by Intel way before they launched the Touch Bar MacBook Pros in 2016, Apple designed a super-slim laptop under those assumptions, and then Intel did not deliver. The result? A super hot chip inside a very thin laptop, with noise, [overheating](https://www.slrlounge.com/apple-i9-macbook-pro-overheating-fix-from-apple-useless-or-useful/) and crashes galore. 
 
+### A hybrid car, you say?
+
 In a hybrid car we have to combine the new electric infrastructure, full of revolutionary technologies, but still hampered by insufficient battery specific capacity and range, with the older but mature technology of the internal combustion engine. The hybrid approach is only necessary until the electric matures and can stand on its own. You have some advantages but also all the drawbacks of both: a heavy and limited-lifespan car because of having to lug around heavy batteries, redundant systems which can add points of failure... but you go with it because you have no other option. 
 
 As a side note, this makes me remember how much I admire Toyota and the Prius. You may not like the car, but Toyota managed to make it robust and reliable, despite all the different ways it could go wrong. And they stood behind their product, which is more than we can say of Apple, who never admits they are wrong... at least until the pressure of class-action lawsuit is too great.
 
-Why do I call this laptop a hybrid car? Because hybrid cars are nice, but only *stopgap solutions*, much like the 16'' MacBook Pro. The 16'' showed how Apple already knew how complacent Intel was by this time, how their foundries were [having problems with the new 10nm process](https://www.infinitevalueptr.com/post/intel_10nm), and thus would not deliver on their roadmaps. Intel had accelerated Apple's switch to ARM, since much like in the days of the IBM PowerPC, Apple had no way to build the products that they wanted with the CPU roadmap proposed by Intel. The T2 chip inside the 16'' MacBook Pro already showed more and more responsibilities being handled by Apple's silicon (video encoding, disk encryption/decryption, secure enclave, control of the power rails to the Intel CPU). The seeds of the transition were already there. 
+Why do I call this laptop a hybrid car? Because hybrid cars are nice, but only *stopgap solutions*, much like the 16'' MacBook Pro. The 16'' showed how Apple already knew how complacent Intel was by this time, how their foundries were [having problems with the new 10nm process](https://www.infinitevalueptr.com/post/intel_10nm), and thus would not deliver on their roadmaps. Intel had accelerated Apple's switch to ARM, since much like in the days of the IBM PowerPC, Apple had no way to build the products that they wanted with the CPU roadmap proposed by Intel. The T2 chip inside the 16'' MacBook Pro already showed more and more responsibilities being handled by Apple's silicon (video encoding, disk encryption/decryption, secure enclave, etc). The seeds of the transition were already there. 
 
 {:.floatquote}
 [...] as we look ahead we can of envision some amazing products we want to build for you and we don't know how to build them with the future PowerPC road map[^steve-jobs-powerpc].<span class="quoteauthor"> Steve Jobs (Co-founder at Apple)<span>
 
-From my experience as a developer, the 16'' MacBook Pro was heavy, blistering hot, noisy all day, buggy, and as a consequence had terrible battery life during productive activity. The Touch Bar never actually made sense to me as someone who uses the F-row for debugging shortcuts on a daily basis... but hey, at least we got a keyboard that did not die if a breadcrumb got stuck under a key!
+From my experience as a developer, the 16'' MacBook Pro was heavy, blistering hot, noisy all day, buggy, and as a consequence had terrible battery life during productive activity. The Touch Bar never actually made sense to me as someone who uses the F-row for debugging shortcuts on a daily basis... but hey, at least we got a keyboard that did not die when a breadcrumb gets stuck under a key!
 
-## 2021 - MacBook Air M1 13'' - You have to own one to believe it
+## 2021 - MacBook Air M1 13'' - The best value in any laptop in recent years
 
+With the launch of the ARM-based laptop processors, Apple really shook the market. With the new M1 series of processors, we now could have long battery life, performance that [beats the 2013 Mac Pro](https://barefeats.com/m1-macbook-pro-versus-2013-mac-pro.html)... and no fan. NO FAN! Let that sink in. The key to this great success was bringing the expertise acquired throughout the many years of development of iPhone mobile processors.
 
+### "Look ma, no fan!"
 
+For the first time in a MacBook Air, the design is fanless, but that does not mean any less performance. This 13'' MacBook Air (with a 10W TDP and 30W charger[^apple-m1-benchmark]) compiles this blog in 6 seconds, while a watercooled 10-core Intel Core i9 7900x Hackintosh with a TDP of 140W[^intel-7900x-specs], takes over 10 seconds. Hardly any scientific evidence, but matches Apple's claims of much superior _performance per watt_[^apple-m1-presentation]. 
+
+Performance per watt is crucial in enabling Apple to continue making innovative products, be it in the battery life, thinness of the design, or reduced weight. When performance per watt stagnates, so does Apple's product lineup, and they shift to the next architecture that enables them to keep innovating. 
+
+{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook-air-13-m1/macbook-12-transfer.JPG"
+caption="Out with the old, in with the new. Migrating MacBook 12 to a brand new 13'' Macbook Air M1" imageposition="left"
+title="Using the Apple Migration Assistant to transfer data between MacBooks"
+%}
+
+### The MacBook Air M1 is incredible value
+
+This is the best value in any laptop on the market today, bar none. When you factor the quality of the screen, the overall build quality, the battery life, the performance of the M1 chips, the quality of the speakers, the low weight... It is really no contest. Similarly-specced machines exist in the Windows world, but not for the price of the MacBook Air with the M1 processor. For that price you will have compromises: plastic build, nasty speakers, noisy fans are just a few. Apart from the 720p webcam, with its nasty grain in low light, nothing in this laptop feels cheap, although you can get the base model for around 1000€ here in Portugal.
+
+### Air or Pro?
+
+Between the 13'' Air and the Pro, I ended up going for the Air, and I am glad I did. It can handle everything I throw at it in absolute silence. There is another MacBook Pro 13'' M1 in the family, and I never heard the sound of that computer's fan, even during Final Cut Pro renders at 4k 60fps. Sure, the larger battery, the better microphones and the slightly higher 500 nits of brightness of the monitor (vs 400 on the Air) make a difference, but not enough to justify the extra cost. The price difference allows for a spec bump (more SSD storage or RAM), and the absence of the TouchBar is a great benefit for developers such as myself.
 
 ## 2022 - MacBook Pro 14'' M1 Pro - The return of the Pro
 
-
 {% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook-pile.jpg"
-caption="From bottom to top: 2013 15'' Macbook Pro, 2021 M1 MacBook Pro, 2017 12'' Macbook" imageposition="center"
+caption="From bottom to top: 2013 15'' Macbook Pro, 2021 M1 MacBook Pro, 2017 12'' Macbook" imageposition="right"
 title="Size comparison"
 %}
+
+
 
 ## Footnotes
 
@@ -169,4 +190,8 @@ title="Size comparison"
 
 [^alfa-gt-junior]: "Alfa Romeo GT Junior" by grassrootsgroundswell on Flickr [Link](https://flic.kr/p/XPM956)
 
+[^apple-m1-presentation]: "Introducing M1 Pro and M1 Max: the most powerful chips Apple has ever built" [Link](https://www.apple.com/newsroom/2021/10/introducing-m1-pro-and-m1-max-the-most-powerful-chips-apple-has-ever-built/)
 
+[^apple-m1-benchmark]: "Apple M1 Benchmark" [Link](https://www.notebookcheck.net/Apple-M1-Processor-Benchmarks-and-Specs.503613.0.html)
+
+[^intel-7900x-specs]: "Intel® Core™ i9-7900X X-series Processor" [Link](https://www.intel.com/content/www/us/en/products/sku/123613/intel-core-i97900x-xseries-processor-13-75m-cache-up-to-4-30-ghz/specifications.html)

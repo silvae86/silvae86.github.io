@@ -308,9 +308,8 @@ a:hover {
   
     @media (min-width: 768px) {
       margin: 1rem;
-      width: 90%;
+      max-width: 90%;
       padding: 0px;
-      clear: left right;
 	}
 }
 

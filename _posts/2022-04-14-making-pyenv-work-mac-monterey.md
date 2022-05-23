@@ -4,6 +4,7 @@ title:  "Getting Python to install and run on M1 Pro MacBook Pro with macOS Mont
 date: 2022-04-13 20:10:000 +0100
 tags: macintosh python pyenv apple silicon monterey
 published: true
+comments_id: 38
 ---
 
 In order to get [Bash Beautify](https://marketplace.visualstudio.com/items?itemName=shakram02.bash-beautify) working on my Mac, I had to have both the `python2` and `python3` commands running on my Mac. 

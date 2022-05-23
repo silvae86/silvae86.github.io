@@ -3,7 +3,7 @@ layout: post
 title:  "Convert Standalone MongoDB to Replica Set with WiredTiger storage engine (macOS and Homebrew)"
 date: 2021-03-04 22:07:000 +0100
 tags: macOS homebrew mongodb replicaset wiredtiger changestreams
-# comments_id: 23
+comments_id: 23
 ---
 
 If you want to take advantage of MongoDB [Change Streams](https://docs.mongodb.com/manual/changeStreams/) (which will allow an event to be fired whenever a collection is modified instead of polling the database for changes), you need to change your MongoDB instance to a Replica Set. Here is the full process using the Terminal.

@@ -5,6 +5,7 @@ date: 2022-03-01 16:23:000 +0100
 tags: job search career advice developers linkedin
 published: false
 inconstruction: true
+comments_id: 40
 ---
 
 Around 15 years ago, the work market was a barren wasteland of low-paid jobs in software development; the only way to get double digit raises every year was to join a consulting company (and forget you had a personal life by the way). Since Portugal's economy is tiny when compared to the US or UK, Portuguese developers had to be content with around a third or quarter of the salary of their counterparts. Too much importance was given to management roles, and technical profiles had to inevitably switch to a management role in the hopes of further salary and career advancement.

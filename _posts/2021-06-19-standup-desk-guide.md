@@ -3,6 +3,7 @@ layout: post
 title:  "My standing desk project: purchase guide, assembly and review"
 date: 2021-06-04 22:07:000 +0100
 tags: standup desk guide review minimalism home decoration maidesite amazon anker baseus programming
+comments_id: 46
 ---
 
 ![After](/assets/images/post-images/2021-06-19-standup-desk-guide/after.jpg){:class="img-responsive"}

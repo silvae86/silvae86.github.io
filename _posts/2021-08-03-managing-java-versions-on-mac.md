@@ -3,6 +3,7 @@ layout: post
 title:  "Java versions on macOS without pain, complete guide"
 date: 2021-08-02 20:00:000 +0100
 tags: java macos versions jenv homebrew adoptopenjdk
+comments_id: 43
 ---
 
 An ages-long problem that once in a while comes to take a couple of hours away from a developer: How to properly manage multiple versions of Java in a single Mac, and how to switch between them *painlessly*.

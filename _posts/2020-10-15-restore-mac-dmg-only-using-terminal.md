@@ -3,6 +3,7 @@ layout: post
 title:  "Restoring a dmg file to USB using only the Terminal"
 date:   2020-10-15 20:11:000 +0100
 tags: macos junk legacy dmg boot restore image snow leopard mountain lion
+comments_id: 45
 ---
 
 If you need to restore an image of an old version of Mac OS X (Leopard or Snow Leopard, for example), using a newer version of macOS (Mojave or Catalina) you may encounter messages like this, due to the uselessness of the newer versions of Disk Utility. 

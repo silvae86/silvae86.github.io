@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Dockerizing NodeJS development for Apple Silicon and Intel"
+title:  "Fully Dockerized development with Apple Silicon and Intel machines"
 date: 2022-04-22 16:34:000 +0100
 tags: docker linux macintosh pyenv apple silicon monterey docker devops docker-compose development
 published: false
+comments_id: 37
 ---
 
 More and more developers are looking into Apple Silicon Macs as their new work machines. Based on the innovations brought about by the Apple processors found on the iPhone, Apple Silicon delivers unprecedented performance per watt. This means no noise on 99% of daily operations, while delivering much greater performance than their previous Intel x86 counterparts. 

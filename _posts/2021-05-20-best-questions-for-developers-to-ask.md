@@ -5,6 +5,7 @@ date: 2021-09-19 21:46:000 +0100
 tags: job interviews questions job negotiations career
 published: false
 inconstruction: true
+comments_id:
 ---
 
 Interviews are the single best opportunity for a developer to gauge the job/company/team that they are getting themselves into. Being a developer myself, I decided to write this post with some questions and lessons learned from going through several interview processes. I have also interviewed many developers throughout my professional career, so maybe I can distill some valid information for those of you looking for a job.

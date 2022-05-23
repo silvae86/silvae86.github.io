@@ -3,6 +3,7 @@ layout: post
 title:  "Finding illegal characters in a directory"
 date: 2020-12-19 15:11:000 +0100
 tags: macOS find illegal characters utf8 ascii
+comments_id: 44
 ---
 
 Sometimes you need to grep for occurrences of invalid files in an entire directory. I personally came across this issue when running htmlproofer to validate this blog's generated files. Let's take a look at the error message and then the solution.

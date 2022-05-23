@@ -4,6 +4,7 @@ title:  "Git rebase, rolling back commits, and a Sourcetree caveat"
 date: 2021-08-19 16:30:000 +0100
 tags: git rebasing sourcetree
 published: true
+comments_id: 42
 ---
 
 Until recently, I used mostly `merge` operations in `git`. However, recently I have been using `rebase` more often. 

@@ -1,17 +1,16 @@
 ---
 layout: post
-title:  "A tale of Mac computers since 2007"
+title:  "Review of my Mac computers, from 2007 to present"
 date: 2022-03-10 11:20:000 +0100
 tags: macintosh mac life history nostalgia aqua opininionated skeuomorphism user interface
 published: true
 inconstruction: true
+comments_id: 36
 ---
-
-*In construction*
 
 Here is a little bit of my personal history using Macintosh computers, from a pet project Hackintosh circa 2008 to the current MacBook Pros powered by Apple Silicon. 
 
-This is a nostalgia-filled post with a quite a lot of Apple-fanboyism and personal thoughts, so you may want to grab a coffee while I take you with me on this journey.
+This is a nostalgia-filled post with a quite a lot of Apple-fanboyism and personal thoughts, so you may want to grab a coffee while I take you with me on this journey. I will also be updating this regularly, so consider it a work-in-progress.
 
 ## "Aqua": the user interface of the modern-era Macintosh
 
@@ -129,13 +128,18 @@ These machines were notorious for their fragile keyboards based on a new "butter
 
 The MacBook 12'', with all its quirks, slow performance and single-USB-C-port *personality*, was a very pleasant computer to use. I wrote long essays and papers in that keyboard, which was clicky and responsive (mine was the 2017 version, slightly improved over the more mushy 2015 version). The screen was gorgeous, there was no distracting fan noise, battery life was far from prodigious but still acceptable. The speakers sounded impossibly good for a computer of that weight and size. 
 
-I would buy one again, but since they have to be bought new because you don't know what crumbs may be hiding under those keys... I guess that ship has sailed. At least until Apple decides to bring it back with a Magic Keyboard and a brand new Apple Silicon heart.
+I would buy one again, for the fond memories I keep. However, since they have to be bought new because you don't know what crumbs may be hiding under those keys, I guess that ship has sailed. However, if hope Apple decides to bring it back with a Magic Keyboard and brand new Apple Silicon under the hood... I will seriously consider it.
+
+{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook-pile.jpg"
+caption="From bottom to top: 2013 15'' Macbook Pro, 2021 M1 MacBook Pro, 2017 12'' Macbook" imageposition="right"
+title="Size comparison"
+%}
 
 ## 2020/2021 - MacBook Pro 16'' - The "hybrid car" of Apple Computers
 
-This one left me with mixed feelings. You spend years enjoying and praising Macs for their stability, and all of a sudden... you are disappointed. I used 2 distinct machines of this type, and faced issues like freezing/lagging Touch Bars or frequent crashes / Kernel panics when the LG Ultrafine 5k display. 
+This one left me with mixed feelings. You spend years enjoying and praising Macs for their stability, and all of a sudden... you are disappointed. I used 2 distinct machines of this type, and faced issues like freezing/lagging Touch Bars or frequent crashes / Kernel panics[^macbook-pro-16-kernel-panics] when connecting/disconnecting the LG Ultrafine 5k display. 
 
-This felt like a product of Intel's failures in delivering a proper 10nm CPU in time for the new MacBook Pro enclosure. It looked like Apple was promised cooler and faster CPUs by Intel way before they launched the Touch Bar MacBook Pros in 2016, Apple designed a super-slim laptop under those assumptions, and then Intel did not deliver. The result? A super hot chip inside a very thin laptop, with noise, [overheating](https://www.slrlounge.com/apple-i9-macbook-pro-overheating-fix-from-apple-useless-or-useful/) and crashes galore. 
+This laptop felt like a product of Intel's failures in delivering a proper 10nm CPU in time for the new MacBook Pro enclosure. It looked like Apple was promised cooler and faster CPUs by Intel way before they launched the Touch Bar MacBook Pros in 2016, Apple designed a super-slim laptop under those assumptions, and then Intel did not deliver. The result? A super hot chip inside a very thin laptop, with noise, [overheating](https://www.slrlounge.com/apple-i9-macbook-pro-overheating-fix-from-apple-useless-or-useful/) and crashes galore. 
 
 ### A hybrid car, you say?
 
@@ -149,6 +153,12 @@ Why do I call this laptop a hybrid car? Because hybrid cars are nice, but only *
 [...] as we look ahead we can of envision some amazing products we want to build for you and we don't know how to build them with the future PowerPC road map[^steve-jobs-powerpc].<span class="quoteauthor"> Steve Jobs (Co-founder at Apple)<span>
 
 From my experience as a developer, the 16'' MacBook Pro was heavy, blistering hot, noisy all day, buggy, and as a consequence had terrible battery life during productive activity. The Touch Bar never actually made sense to me as someone who uses the F-row for debugging shortcuts on a daily basis... but hey, at least we got a keyboard that did not die when a breadcrumb gets stuck under a key!
+
+### One cable on each side
+
+On the 16'' MacBook Pro there was an annoying quirk. When you plug in display with a resolution larger than 4k (like the LG Ultrafine 5k) to one of the Thunderbolt ports, you could not drive another display via the Thunderbolt port on the same side of the laptop. Instead, you had to connect the second display to one of the ports on the opposite side[^apple-macbook-pro-connect-displays].
+
+This meant that when running a dual monitor setup, you had to either have the laptop in front of you when in clamshell position with one cable out each side of it, or have cables hanging out the sides of your desk. 
 
 ## 2021 - MacBook Air M1 13'' - The best value in any laptop in recent years
 
@@ -175,12 +185,27 @@ Between the 13'' Air and the Pro, I ended up going for the Air, and I am glad I 
 
 ## 2022 - MacBook Pro 14'' M1 Pro - The return of the Pro
 
-{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook-pile.jpg"
-caption="From bottom to top: 2013 15'' Macbook Pro, 2021 M1 MacBook Pro, 2017 12'' Macbook" imageposition="right"
-title="Size comparison"
-%}
+The purchase of a MacBook Pro around 2008 was often seen as a worthwhile investment, since the unique combination of software and hardware enabled the machine to stay relevant for a long time, from a performance and design standpoint. They were seen in certain circles as  lasting longer, being faster at very specific tasks, and providing an overall less buggy than Windows laptops. 
 
+As Intel failed on its promises of delivering increasingly efficient CPUs, there was a long time during which MacBook Pros went from being clearly differentiated from their consumer-level counterparts to little more than a different moniker targeted at "Prosumers". The price tag remained high, but felt more like Apple charging its "Apple Tax" on the MacBook Pro brand than actual value. A Dual Core 13'' Core i7 MacBook Pro in 2015 for more than 2000€[^macbook-pro-13-2015-everymac], or even worse, the dual-core, dual-Thunderbolt port MacBook Pros of 2017 for 1800€[^macbook-pro-13-2017-everymac]? No way these could be considered true "Pro" machines, with many people I know delaying an upgrade until something came along that justified paying "Pro" money.
 
+That something came along in 2021, with the arrival of the M1 Pro 14'' and 16'' MacBook Pros. 
+
+### Design
+
+The design of these machines is clearly different than the 13'' M1 MacBook Pro, with more squared off corners reminiscent of the A1211 and A1212 MacBook Pros from 2006. They are built like tools: heavier and solid-feeling. The bottom rubber feet are larger in diameter and seem more solidly stuck to the bottom of the machine. They are slightly thicker too, firmly anchoring the machine to whatever surface it is placed on. There are two Thunderbolt ports on one side, each with the ability to drive its own display up to 6k, and another one on the right. If you opt for the M1 Mac version you can use all 3 to drive their own external display, up to 6k. There is also an HDMI port on the right side, adding to the flexibility of connections in this machine.
+
+On these machines, the intake air vents on the sides of the bottom case are larger to allow the machine to draw in more air. The speakers remain excellent for the size of the machine, with the 14'' even sounding bassy. 
+
+Gone is the TouchBar (good riddance), replaced with a row of full-size physical F-keys. The keyboard area is anodized in a much darker shade of gray, a new design cue for an Apple laptop. 
+
+Oh, and the Apple logo on the back of the lid is larger now, bringing it closer to the size of the illuminated logo on the MacBook Pro's of old. 
+
+### Display
+
+Perhaps the greatest improvement versus the older machines is the display. It is now variable refresh rate (up to 120Hz), and the backlight is mini-LED. The mini LED technology makes blacks look darker and allows for higher sustained brightness as well, greatly increasing contrast ratios but without the downsides of OLED displays (such as low peak brightness and burn-in).
+
+It has been enlarged without increasing the footprint of the machine thanks to much thinner bezels, and at the top lives the improved webcam (now 1080p, but still no Face ID hardware). This creates a "notch" similar to that in the iPhones, that in my opinion is not an issue. The mouse pointer jumps from one end to another automatically in daily use, and the notch ends up covering a part of the top menu bar that would normally not be used anyway. The display's quality is amazing, and improves the cost/benefit ratio of the machine, making it hard to find a display of this quality at this price point.
 
 ## Footnotes
 
@@ -195,3 +220,13 @@ title="Size comparison"
 [^apple-m1-benchmark]: "Apple M1 Benchmark" [Link](https://www.notebookcheck.net/Apple-M1-Processor-Benchmarks-and-Specs.503613.0.html)
 
 [^intel-7900x-specs]: "Intel® Core™ i9-7900X X-series Processor" [Link](https://www.intel.com/content/www/us/en/products/sku/123613/intel-core-i97900x-xseries-processor-13-75m-cache-up-to-4-30-ghz/specifications.html)
+
+[^macbook-pro-13-2015-everymac]: "Apple MacBook Pro 13-Inch "Core i7" 3.1 Early 2015 Specs" [Link](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-3.1-13-early-2015-retina-display-specs.html)
+
+[^macbook-pro-13-2017-everymac]: "Apple MacBook Pro 13-Inch "Core i7" 2.5 Mid-2017 Specs" [Link](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.5-13-mid-2017-retina-display-no-touch-bar-specs.html)
+
+[^macbook-pro-16-kernel-panics]: "Kernel Panics in New MacBook Pro 16" — Solution is Here" [Link](https://canartuc.medium.com/kernel-panics-in-new-macbook-pro-16-solution-is-here-2ac1d88fada7)
+
+[^apple-macbook-pro-connect-displays]: "Use the LG UltraFine 5K Display with your Mac or iPad" [Link](https://support.apple.com/en-us/HT210205)
+
+

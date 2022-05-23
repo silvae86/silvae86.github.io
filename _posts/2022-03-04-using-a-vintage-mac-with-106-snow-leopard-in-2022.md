@@ -15,7 +15,7 @@ I am using the [source code of this very blog](http://github.com/silvae86/silvae
 
 ## Compiling this blog remotely via an AFP share
 
-[It's no secret that I like](/2022/03/10/a-tale-of-mac-computers-since-2007) to use completely outdated/unsafe but absolutely beautiful operating systems to write my blog posts. I never take them outside of the house, log into any website, or connect them to a public Wi-Fi network, though!
+[It's no secret that I like](/2022/03/10/review-my-mac-computers-since-2007-present/) to use completely outdated/unsafe but absolutely beautiful operating systems to write my blog posts. I never take them outside of the house, log into any website, or connect them to a public Wi-Fi network, though!
 
 Anyway... I set out to find a way to use my MacBook as a text editing and music playing machine, so I can use the old [TextMate](https://macromates.com) 1.5 and [Omnigraffle](https://www.omnigroup.com/omnigraffle/) 5 Pro. At the same time, I can use a much more recent and more powerful computer to compile the sources of this blog.
 

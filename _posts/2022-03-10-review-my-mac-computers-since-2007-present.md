@@ -2,7 +2,7 @@
 layout: post
 title:  "Review of my Mac computers, from 2007 to present"
 date: 2022-03-10 11:20:000 +0100
-tags: macintosh mac life history nostalgia aqua opininionated skeuomorphism user interface
+tags: review hardware macintosh mac life history nostalgia aqua opininionated skeuomorphism user interface
 published: true
 inconstruction: true
 comments_id: 36
@@ -27,7 +27,7 @@ The entirely new user interface of the new Mac OS, called "Aqua", was completely
 
 I made my switch to the Mac around 2008, while I was still an MSc. student of Informatics Engineering. First, I started by trying to convert my back-then desktop computer into a *Hackintosh* running 10.5 Leopard. Looking back, it was a terrible choice of hardware, since only Intel could run reliably back then. This ended up playing in my favor in the long term, since I had to start getting acquainted with command line tools and the Unix-way of doing things. At the time it meant working with the Terminal, editing and writing BASh Scripts and understanding `.plist` files.
 
-{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/workroom.JPG"
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/workroom.JPG"
 caption="Home setup, circa 2009. At the bottom left, my first Hackintosh running on an AMD64 3000+ CPU. Under the table below the printer, a Linux server cobbled together from old parts." imageposition="right"
 title="Work setup at home, circa 2009"
 %}
@@ -43,23 +43,28 @@ By that time, most students like myself were using Windows XP as their main OS (
 The battery life of the Mac was worlds apart. It would get 4 hours in class with 25% brightness, so I could actually see what I was typing. The Mac also gave me a window into a UNIX-based system that I could actually daily drive, because GUI apps worked great, and BASh scripting was readily available out of the box.
 
 {:.float-img-left}
-![Me working on my MSc. Dissertation](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/msc.jpg) <br> *That's me working on my MSc. dissertation, circa 2009. <br> Notice the A1260 MacBook Pro and the [Motorola V3X](https://www.gsmarena.com/motorola_v3x-1120.php) on the table*
+![Me working on my MSc. Dissertation](/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/msc.jpg) <br> *That's me working on my MSc. dissertation, circa 2009. <br> Notice the A1260 MacBook Pro and the [Motorola V3X](https://www.gsmarena.com/motorola_v3x-1120.php) on the table*
 
 I hold dear memories of using that computer, since it was my main work tool throughout an [MSc. dissertation](https://hdl.handle.net/10216/58508), starting a [YouTube channel](https://www.youtube.com/user/MoleskineFan?app=desktop), and the early stages of what ended up becoming my [Ph.D. thesis](https://hdl.handle.net/10216/83993). [Omnigraffle Pro 5](https://www.omnigroup.com/download) was awesome to design UML Class diagrams in! Unlike [Microsoft Visio](https://www.microsoft.com/en-us/microsoft-365/previous-versions/microsoft-visio-2007) on Windows or [Dia](http://dia-installer.de/) on Linux, it had nice and smooth shadows, anti-aliased fonts and overall better look. Like in a restaurant, the eyes also eat, right?
 
 The OS was truly **fun** to use, even more so than Windows XP. The subtle, pulsing glow of the default button in a modal window in Snow Leopard...Just [like Steve Jobs did](https://www.businessinsider.com/steve-jobss-signature-design-style-2014-10), I love the [skeuomorphic design](https://en.wikipedia.org/wiki/Skeuomorph) from those days! And while some may consider Windows XP childish with its plasticky buttons and title bars, I also continue to enjoy its contrasty intuitive colors back then.
 
-In his speech Commencement address at Stanford University on June 2005, Steve Jobs talked about how he decided to take a calligraphy class at Reed University when he was in colleged. This came to impact the Macintosh user interface, which according to Jobs, was "the first computer with beautiful typography".  This attention to detail spans across decades of Apple products, where beautiful and clear fonts were chosen for every part of the UI. Take for example the Chicago font, used in the Macintosh from 1984 and 1997 and later slightly modified for the iPod as well.
+In his speech Commencement address at Stanford University on June 2005, Steve Jobs talked about how he decided to take a calligraphy class at Reed University when he was in colleged. This came to impact the Macintosh user interface, which according to Jobs, was "the first computer with beautiful typography".  This attention to detail spans across decades of Apple products, where beautiful and clear fonts were chosen for every part of the UI. Take for example the Chicago font, used in the Macintosh from 1984 and 1997 and later slightly modified for the iPod as well. This was famously named after one of Steve Jobs' [favourite cities](https://uxplanet.org/steve-jobs-typographer-2e450a356437)
 
-{:.float-img-right .img-padding-05}
-![The Chicago font](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/Chicago_font.svg.png)<br>*The famous Chicago font, named after one of Steve Jobs' [favourite cities](https://uxplanet.org/steve-jobs-typographer-2e450a356437).*{:class="img-caption"}
+
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/Chicago_font.svg.png"
+caption="The Chicago font used in old iPods and Mac OS versions" imageposition="left"
+title="The Chicago font"
+%}
 
 On the Mac, the subtle animations when a window was minimised and maximised were not only technically impressive for the time, but elegant at the same time. More than providing useless flourish (looking at you, [Compiz](http://www.compiz.org)), they served a purpose and helped the user understand where the window went.
 
 The modal dialogs that popped up when you needed to save a document or answer a prompt kept the user in focus and provided useful hints and shortcuts. The `⌘D` shortcut to always select the Desktop as the target destination saved me more time than I can remember throughout my life time as well!
 
-{:.float-img-left}
-![Lickable Buttons in a modal dialog box in OS X Snow Leopard](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/lickable-buttons.png) <br> *Some "lickable" Buttons: modal folder picker in Mac OS X 10.6.*{:class="img-caption"}
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/lickable-buttons.png"
+caption="Some lickable buttons: modal folder picker in Mac OS X 10.6." imageposition="left"
+title="Lickable Buttons in a modal dialog box in OS X Snow Leopard"
+%}
 
 All in all, I had no idea how spoiled I was during this era of skeuomorphism. Since Yosemite (10.10) every button, scroll bar and top left semaphore in the macOS UI is flat and streamlined, in the name of reducing visual clutter and maintaining a sleek image. It exchanged some of its fun for sharpness and professionalism and became somewhat more serious.
 
@@ -67,8 +72,10 @@ All in all, I had no idea how spoiled I was during this era of skeuomorphism. Si
 
 Like many of its kind, my 2008 Macbook Pro died a painful death when its GPU, the [flawed nVidia 8600GT](https://forums.macrumors.com/threads/so-are-all-mbp-owners-with-the-8600m-gt-cards-screwed.515067/), finally gave up on me around 2012.
 
-{:.float-img-left}
-![My 2010 Unibody Plastic White MacBook](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/2010_macbook_unibody_white.jpg)<br>*2010 Unibody Macbook White (plastic).*
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/2010_macbook_unibody_white.jpg"
+caption="2010 Unibody Macbook White (plastic)." imageposition="left"
+title="My 2010 Unibody Plastic White MacBook"
+%}
 
 Meet my 2010 MacBook Unibody White with an Intel 2.4 GHz Core 2 Duo processor, bought after my 2008 MacBook died. It was a beaten up machine that I got second hand for the reasonable price of € 450 at the time. At such a low price for the time, it had some problems that I figured I could fix with my trusty precision screwdriver set, some thermal paste and a few new parts...
 
@@ -80,8 +87,10 @@ Perhaps the most recognizable characteristic of this laptop is its polycarbonate
 
 The first Retina MacBook Pro I ever used came out of the box with [Mac OS X 10.9 (Mavericks)](https://en.wikipedia.org/wiki/OS_X_Mavericks). Up to that time, on the most widely used Operating Systems, one physical pixel was always used to render a single logical pixel in an UI (1:1 scaling). On a Retina display, 4 physical pixels are used to render the same logical pixel, causing the interface to be scaled to fill in the extra pixels. This *[HiDPI mode](https://wiki.archlinux.org/title/HiDPI)*, coined by Apple as Retina, allows for much crisper images and typography everywhere, almost resembling printed text and photographs.
 
-{:.float-img-left}
-![The ](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_retina_2015.jpg)<br>*That's me in a late night around 2015 working on my Ph.D. thesis*
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/macbook_pro_retina_2015.jpg"
+caption="That's me in a late night around 2015 working on my Ph.D. thesis" imageposition="left"
+title="Late night work at the lab circa 2015"
+%}
 
 As always, it was Apple's *execution* of this new high pixel density UI all throughout the OS X that made the difference. When Mavericks came out, the UI was beautifully remapped to a high-pixel version, with pixellated elements being few and far in between. Developers were also quick to update their apps' assets to provide the Retina display experience.
 
@@ -90,8 +99,10 @@ HiDPI mode came to Windows as well, with many of the Windows native scaling grac
 This laptop was my research workhorse in my last years as a Ph.D. student. My particular one was the base i7 at 2.0 GHz, without a dedicated graphics card. The main reason was that I was afraid of GPU defects after my 2008 MacBook Pro died because of a bad GPU, and the price was much lower. The Intel Iris Pro is a very capable graphics card for most
 everyday uses outside of gaming and any sort of 3D modelling. Even video rendering was quite fast in Final Cut Pro X.
 
-{:.float-img-right}
-![The airflow path in the 2013 Retina MacBook Pro's under case](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_bottom_case.jpg)<br>*The airflow path in the 2013 Retina MacBook Pro's under case*
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/macbook_pro_bottom_case.jpg"
+caption="The airflow path in the 2013 Retina MacBook Pro's under case" imageposition="left"
+title="Improved air intake"
+%}
 
 The computer was solidly built, with a long battery life, the best screen I had ever seen in a laptop, a very crisp keyboard. Apple had also learned from their overheating mistakes of the past and provided the laptop with a couple of very slim air intake notches at the left and right edges of the bottom case.
 
@@ -102,8 +113,10 @@ This greatly improved airflow inside the case and ensured a quieter working envi
 
 By 2017 I had to update my personal laptop with a more recent machine, as my Unibody Macbook White from 2010 was starting to show its age. The 15'' MacBook Pro was my lab-supplied machine and was simply too large to lug around everywhere. Looking for a personal machine that I was going to buy with my own money, I started looking around on second hand market.
 
-{:.float-img-right}
-![MacBook Pro Retina 13 inch](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook_pro_13_inch.JPG)<br>*MacBook Pro 13", mostly an SSH client for all those machines by this point. Notice the 2 sexy Mac Pro's under the table.*
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/macbook-pro-13-inch.JPG"
+caption="MacBook Pro 13-inch, mostly an SSH client for all those machines by this point. Notice the 2 sexy Mac Pro cheese graters under the table." imageposition="left"
+title="MacBook Pro Retina 13-inch"
+%}
 
 I ended up buying a second hand Early 2014 13'' Retina MacBook Pro, with a dual-core i7 at 3.0GHz, with 16GB of RAM, for 750€. The most powerful and rare configuration, the computer had some issues: very worn out keys, a MagSafe charger with a torn cable, a battery on its last legs, and a bad case of the Retina Macbook Pro [delamination issue](https://www.macrumors.com/2019/12/20/macbook-pro-anti-reflective-repair-program/) in the display. When I bought it, I proceeded to replace the thermal paste, the [battery](/2018/07/04/new-battery-for-my-macbook-pro-retina-13/) and clean up the remains of the bad anti-reflective coating with some [eyeglasses cleaning solution](https://www.ifixit.com/Answers/View/582699/How+to+remove+anti-glare+coating+effectively), a microfiber cloth, and a lot of patience.
 
@@ -116,21 +129,25 @@ Transitioning to a 12'' laptop was my failed attempt to distance myself from dev
 
 In 2018 I bought a Gold 12'' MacBook, looking for a very light laptop that would always be with me in case I needed to write something down or reply to an email quickly while on the road. I have to say, at the beginning my main motivation for choosing this color was the price! This machine was on clearance sale, and all the space gray units had been sold. 
 
-Overall, this machine was for those willing to compromise. A single USB-C port means you have to be willing to go fully Bluetooth on your peripherals. Weak Core-M/Netbook class CPUs mean that you will have to offload all your heavy computing to the cloud or to a remote machine somewhere. A 480p webcam with terrible low light performance. A time-bomb of a keyboard that forces your tables to be absolutely spotless, as a single crumb under a key can permanently make your keyboard unusable ... BUT! in exchange for all that hassle, you have a computer thinner, lighter and more beautiful than anything else on the market at the time (and dare I say, up to this day). I see it very much like an 1969 Alfa Romeo GT Junior: an emotional purchase that may give you a lot of headaches most of the time, but when in the right context, makes up for everything and makes you smile.
+Overall, this machine was for those willing to compromise. A single USB-C port means you have to be willing to go fully Bluetooth on your peripherals. Weak Core-M/Netbook class CPUs mean that you will have to offload all your heavy computing to the cloud or to a remote machine somewhere. A 480p webcam with terrible low light performance. A time-bomb of a keyboard that forces your tables to be absolutely spotless, as a single crumb under a key can permanently make your keyboard unusable ... BUT! in exchange for all that hassle, you have a computer thinner, lighter and more beautiful than anything else on the market at the time (and dare I say, up to this day). I see it very much like an 1969 Alfa Romeo GT Junior[^alfa-gt-junior]: an emotional purchase that may give you a lot of headaches most of the time, but when in the right context, makes up for everything and makes you smile.
 
-{:.float-img-left}
-![Alfa Romeo GT Junior](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/alfa-gt-junior.jpg)<br>*The MacBook 12'' is the 1969 Alfa Romeo GT Junior of laptops [^alfa-gt-junior].*
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/alfa-gt-junior.jpg"
+caption="The MacBook 12'' is the 1969 Alfa Romeo GT Junior of laptops." imageposition="left"
+title="Alfa Romeo GT Junior"
+%}
 
 These machines were notorious for their fragile keyboards based on a new "butterfly mechanism" which replaced the "scissors switch" ones that came before it. This new mechanism was necessary for Apple to build even thinner laptops by reducing the space necessary for the keys to travel. However, such a small gap in the key mechanism made it very susceptible to crumbs and dust, which when stuck inside the key would be almost impossible to flush out, causing dead or stuck keys. Apple released a [guide](https://support.apple.com/en-us/HT205662) covering how to clean these keyboards, and more importantly, a [4-year warranty extension](https://support.apple.com/keyboard-service-program-for-mac-notebooks) on the keyboard only counting from the date of purchase. This 4-year warranty gave me the peace of mind that I needed to buy the computer at the time, so it was not entirely emotional for me.
 
-{:.float-img-left}
-![Scissor Vs Butterfly Keyboard Mechanism by Apple](/assets/images/post-images/2022-03-10-my-history-with-mac-computers/scissor-vs-butterfly.gif)<br>*Scissor Vs Butterfly Keyboard Mechanism. Image © Apple*
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/scissor-vs-butterfly.gif"
+caption="Scissor Vs Butterfly Keyboard Mechanism by Apple" imageposition="left"
+title="Scissor Vs Butterfly Keyboard Mechanism. Image © Apple"
+%}
 
 The MacBook 12'', with all its quirks, slow performance and single-USB-C-port *personality*, was a very pleasant computer to use. I wrote long essays and papers in that keyboard, which was clicky and responsive (mine was the 2017 version, slightly improved over the more mushy 2015 version). The screen was gorgeous, there was no distracting fan noise, battery life was far from prodigious but still acceptable. The speakers sounded impossibly good for a computer of that weight and size. 
 
 I would buy one again, for the fond memories I keep. However, since they have to be bought new because you don't know what crumbs may be hiding under those keys, I guess that ship has sailed. However, if hope Apple decides to bring it back with a Magic Keyboard and brand new Apple Silicon under the hood... I will seriously consider it.
 
-{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook-pile.jpg"
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/macbook-pile.jpg"
 caption="From bottom to top: 2013 15'' Macbook Pro, 2021 M1 MacBook Pro, 2017 12'' Macbook" imageposition="right"
 title="Size comparison"
 %}
@@ -138,6 +155,11 @@ title="Size comparison"
 ## 2020/2021 - MacBook Pro 16'' - The "hybrid car" of Apple Computers
 
 This one left me with mixed feelings. You spend years enjoying and praising Macs for their stability, and all of a sudden... you are disappointed. I used 2 distinct machines of this type, and faced issues like freezing/lagging Touch Bars or frequent crashes / Kernel panics[^macbook-pro-16-kernel-panics] when connecting/disconnecting the LG Ultrafine 5k display. 
+
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/macbook-pro-16.jpg"
+caption="MacBook Pro 16'', Apple Magic Keyboard in Space Gray and Logitech MX Master 3. In the background you would constantly hear the fans blasting." imageposition="left"
+title="MacBook Pro 16'' in clamshell mode"
+%}
 
 This laptop felt like a product of Intel's failures in delivering a proper 10nm CPU in time for the new MacBook Pro enclosure. It looked like Apple was promised cooler and faster CPUs by Intel way before they launched the Touch Bar MacBook Pros in 2016, Apple designed a super-slim laptop under those assumptions, and then Intel did not deliver. The result? A super hot chip inside a very thin laptop, with noise, [overheating](https://www.slrlounge.com/apple-i9-macbook-pro-overheating-fix-from-apple-useless-or-useful/) and crashes galore. 
 
@@ -156,9 +178,9 @@ From my experience as a developer, the 16'' MacBook Pro was heavy, blistering ho
 
 ### One cable on each side
 
-On the 16'' MacBook Pro there was an annoying quirk. When you plug in display with a resolution larger than 4k (like the LG Ultrafine 5k) to one of the Thunderbolt ports, you could not drive another display via the Thunderbolt port on the same side of the laptop. Instead, you had to connect the second display to one of the ports on the opposite side[^apple-macbook-pro-connect-displays].
+On the 16'' MacBook Pro there was is a quirk for those lucky few that own a couple of LG's 5k Ultrafine monitors. When you plug in a display with a resolution larger than 4k (like the LG Ultrafine 5k) into one of the Thunderbolt ports, you could not drive another display larger than 4k via the Thunderbolt port on the same side of the laptop. Instead, you had to connect the second display to one of the ports on the opposite side[^apple-macbook-pro-connect-displays]. 
 
-This meant that when running a dual monitor setup, you had to either have the laptop in front of you when in clamshell position with one cable out each side of it, or have cables hanging out the sides of your desk. 
+This meant that when running a dual 5k monitor setup, you had to either have the laptop in front of you when in clamshell position with one cable out each side of it, or have cables hanging out the sides of your desk. 
 
 ## 2021 - MacBook Air M1 13'' - The best value in any laptop in recent years
 
@@ -170,7 +192,7 @@ For the first time in a MacBook Air, the design is fanless, but that does not me
 
 Performance per watt is crucial in enabling Apple to continue making innovative products, be it in the battery life, thinness of the design, or reduced weight. When performance per watt stagnates, so does Apple's product lineup, and they shift to the next architecture that enables them to keep innovating. 
 
-{% include image.html src="/assets/images/post-images/2022-03-10-my-history-with-mac-computers/macbook-air-13-m1/macbook-12-transfer.JPG"
+{% include image.html src="/assets/images/post-images/2022-03-10-review-my-mac-computers-since-2007-present/macbook-air-13-m1/macbook-12-transfer.JPG"
 caption="Out with the old, in with the new. Migrating MacBook 12 to a brand new 13'' Macbook Air M1" imageposition="left"
 title="Using the Apple Migration Assistant to transfer data between MacBooks"
 %}

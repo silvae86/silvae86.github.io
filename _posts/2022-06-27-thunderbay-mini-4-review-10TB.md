@@ -3,7 +3,7 @@ layout: post
 title:  "OWC Thunderbay 4 Mini review: 20TB, RAID, Thunderbolt 3 for less than €800"
 date: 2022-06-26 16:20:000 +0100
 tags: mac storage owc thunderbay thunderbolt harddrive shucking seagate hardware review
-published: false 
+published: true
 ---
 
 {% include image.html src="/assets/images/post-images/2022-06-27-thunderbay-mini-4-review-10TB/IMG_0129.jpeg"

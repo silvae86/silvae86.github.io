@@ -2,8 +2,8 @@
 layout: post
 title:  "iCloud always full? AirDrop your media to a cleanly organised folder in minutes"
 date: 2022-06-30 22:36:000 +0100
-tags: mac storage icloud full 
-published: false
+tags: mac storage icloud full media organisation open source automatic duplicates videos pictures 
+published: true
 comments_id: 49
 ---
 

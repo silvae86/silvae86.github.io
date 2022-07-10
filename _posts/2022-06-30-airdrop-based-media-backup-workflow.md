@@ -29,6 +29,10 @@ Is the image above a familiar sight? To me it is, and I today I am showing you h
 
 ## Selecting a media organisation software
 
+Like I said, I want to avoid closed-source, large applications by big names like Apple and Adobe, since they tend to need periodic upgrades. In the case of Adobe, such upgrades will ultimately force you into a subscription. In the case of Apple, you may be forced to spend money on a more modern computer as your current one is removed from the list of supported machines. Recently, with the presentation of macOS Ventura we saw an [extreme example of this](https://osxdaily.com/2022/06/22/macos-ventura-compatible-mac-list/), with my 2018 Mac Mini barely escaping the axe. 
+
+What one needs to understand is that pictures and videos are long-lasting digital assets. The iPhoto library where you archived your photos 10 years ago will need to be migrated into the most recent Apple Photos version. For that, you may need to buy an old MacBook, just to pry out the pictures from the library file. And with it, there are no assurances that the metadata (dates, locations, etc.) will be correctly migrated! We should only rely on [EXIF metadata](https://en.wikipedia.org/wiki/Exif) and a simple structure of folders and files for our long-term preservation. 
+
 ## Setting up phockup on a Mac
 
 ## The synchronisation script

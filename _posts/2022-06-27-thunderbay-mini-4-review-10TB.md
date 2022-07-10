@@ -14,7 +14,7 @@ title="Thunderbay 4 Packaging"
 
 The OWC Thunderbay 4 Mini is a pretty unique value proposition due to its dimensions and flexibility. It sports a tiny footprint, fitting perfectly in a minimalistic desktop, and achieves it by using 2.5'' hard drives instead of 3.5''.  
 
-Despite being quite expensive for an enclosure at around €350, its Thunderbolt 4 interface  When combined with some hard drive shucking it can become an attractive proposal from a cost/benefit perspective.
+Despite being quite expensive for an enclosure at around €350, its Thunderbolt 4 interface makes it very fast, and the 4 SATA bays make it very flexible: you can use SSDs for maximum speed, allowing you to edit video straight off the Thunderbay, or HDDs to cope with some big storage needs. When combined with some hard drive shucking it can become an attractive proposal from a cost/benefit perspective.
 
 ## Design and dimensions
 

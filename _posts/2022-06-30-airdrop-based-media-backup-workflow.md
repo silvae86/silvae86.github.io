@@ -25,13 +25,15 @@ Is the image above a familiar sight? To me it is, and I today I am showing you h
 6. Duplicates will be detected and deleted from the target folder to save space.
 7. The script shall run continuously in the background, monitoring the folder for new media files, so that I do not need to perform any manual actions. 
 8. The script shall use efficient OS mechanisms like `fswatch` (which I previously combined with rsync [here](/2022/05/20/remote-synchronization-using-fswatch-and-rsync/) to avoid having to scan the whole folder continuously. Event handling instead of _polling_, to minimise resource usage.
-9. All this has to use free software, because I need money to pay for the gasoline (€2.30/l in Portugal at time of writing). 
+9. All this has to use free software, because I need money to pay for petrol (€2.30/l in my country at time of writing). 
 
 ## Selecting a media organisation software
 
 Like I said, I want to avoid closed-source, large applications by big names like Apple and Adobe, since they tend to need periodic upgrades. In the case of Adobe, such upgrades will ultimately force you into a subscription. In the case of Apple, you may be forced to spend money on a more modern computer as your current one is removed from the list of supported machines. Recently, with the presentation of macOS Ventura we saw an [extreme example of this](https://osxdaily.com/2022/06/22/macos-ventura-compatible-mac-list/), with my 2018 Mac Mini barely escaping the axe. 
 
 What one needs to understand is that pictures and videos are long-lasting digital assets. The iPhoto library where you archived your photos 10 years ago will need to be migrated into the most recent Apple Photos version. For that, you may need to buy an old MacBook, just to pry out the pictures from the library file. And with it, there are no assurances that the metadata (dates, locations, etc.) will be correctly migrated! We should only rely on [EXIF metadata](https://en.wikipedia.org/wiki/Exif) and a simple structure of folders and files for our long-term preservation. 
+
+After a search on GitHub for `media organization`, I selected [phockup](https://github.com/ivandokov/phockup) for this job. It is written in Python and uses [exiftool](https://exiftool.org/), an open-source[^github-exiftool] and platform-independent tool, to extract EXIF data from the pictures and videos. It is also quite easy to install on a Mac using [Homebrew](https://brew.sh/).
 
 ## Setting up phockup on a Mac
 
@@ -43,3 +45,5 @@ What one needs to understand is that pictures and videos are long-lasting digita
 
 
 [^github-phockup]: "Phockup - Media sorting tool to organize photos and videos from your camera in folders by year, month and day." [Link](https://github.com/ivandokov/phockup)
+
+[^github-exiftool]: "Exiftool on GitHub" [Link](https://github.com/exiftool/exiftool)

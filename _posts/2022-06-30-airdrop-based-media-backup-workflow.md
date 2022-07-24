@@ -37,9 +37,35 @@ After a search on GitHub for `media organization`, I selected [phockup](https://
 
 ## Setting up phockup on a Mac
 
-## The synchronisation script
+After Homebrew is installed, install phockup's Python `tqdm` dependency:
 
-## Adding the LaunchDaemon
+```bash
+pip3 install tqdm
+```
+
+Install phockup itself:
+
+```bash
+brew tap ivandokov/homebrew-contrib
+brew install phockup
+```
+
+Try running `phockup`. You should see this:
+
+{% include image.html src="/assets/images/post-images/2022-06-30-automatic-media-organisation-and-backup-from-airdrop/phockup-start.png"
+caption="Starting up phockup" imageposition="center"
+title="Starting up phockup in the Terminal"
+%}
+
+## A synchronisation script
+
+
+
+## Making the synchronisation script run in the background and on startup 
+
+### Building a `.plist` file
+
+### Adding the LaunchDaemon
 
 ## Testing it out
 

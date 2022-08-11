@@ -57,13 +57,23 @@ caption="Starting up phockup" imageposition="center"
 title="Starting up phockup in the Terminal"
 %}
 
-## A synchronisation script
+### Note for macOS Ventura
+
+For macOS Ventura, you may need to install Python from source.
+
+```bash
+brew install --build-from-source python@3.9
+pip3 install tqdm
+brew install phockup
+```
+
+## The synchronisation script
 
 
 
 ## Making the synchronisation script run in the background and on startup 
 
-### Building a `.plist` file
+### Building a _.plist_ file
 
 ### Adding the LaunchDaemon
 

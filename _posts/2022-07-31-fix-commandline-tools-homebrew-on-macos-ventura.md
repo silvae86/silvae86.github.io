@@ -10,7 +10,10 @@ comments_id: 50
 1. Install XCode Beta 14.0 from Apple's Developer website.
 2. Open XCode, set path to command line tools using XCode GUI
 
-![Commandline Tools](/assets/images/post-images/2022-07-31-fix-commandline-tools-homebrew-on-macos-ventura/commandline-tools.png)
+{% include image.html src="/assets/images/post-images/2022-07-31-fix-commandline-tools-homebrew-on-macos-ventura/commandline-tools.png"
+caption="Preferences dialog in XCode 14.0 - Setting up the Command Line Tools home" imageposition="center"
+title="Commandline Tools - XCode Preferences"
+%}
 
 3. Download the homebrew install script, disable check for command line tools
 
@@ -36,4 +39,7 @@ should_install_command_line_tools() {
 
 4. Homebrew will stop complaining and casks will install now:
 
-![Disable Commandline Tools Install](/assets/images/post-images/2022-07-31-fix-commandline-tools-homebrew-on-macos-ventura/disable-commandline-tools-install.jpg)
+{% include image.html src="/assets/images/post-images/2022-07-31-fix-commandline-tools-homebrew-on-macos-ventura/disable-commandline-tools-install.jpg"
+caption="Modifying the homebrew install script not to install Commandline Tools" imageposition="center"
+title="Disable Commandline Tools Install"
+%}

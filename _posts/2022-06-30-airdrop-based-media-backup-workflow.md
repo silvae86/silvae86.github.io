@@ -69,15 +69,28 @@ brew install phockup
 
 ## The synchronisation script
 
+The basic requirements are:
 
+- Monitor a folder for new files using efficient techniques instead of polling (e.g. macOS's `fsnotify`)
+- When new files are detected, call `phockup` to organise them to a target folder.
+- Only one synchronisation process can execute at any given point in time, to avoid synchronisation conflicts. 
+  - We will be using a simple file `.pid` file in the temporary file directory `/tmp` for this.
+- If a synchronisation process crashes, the next run should know that the original process crashed and try again.
+
+```bash
+
+```
 
 ## Making the synchronisation script run in the background and on startup 
 
-### Building a _.plist_ file
+We will use the init system of macOS for starting our synchronisation script in the background whenever the machine starts. 
 
-### Adding the LaunchDaemon
+### Building a _.plist_ file to configure the daemon
+
+### Adding the LaunchDaemon to initctl
 
 ## Testing it out
+
 
 
 [^github-phockup]: "Phockup - Media sorting tool to organize photos and videos from your camera in folders by year, month and day." [Link](https://github.com/ivandokov/phockup)

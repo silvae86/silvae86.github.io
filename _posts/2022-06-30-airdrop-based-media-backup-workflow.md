@@ -71,13 +71,20 @@ brew install phockup
 
 The basic requirements are:
 
-- Monitor a folder for new files using efficient techniques instead of polling (e.g. macOS's `fsnotify`)
 - When new files are detected, call `phockup` to organise them to a target folder.
 - Only one synchronisation process can execute at any given point in time, to avoid synchronisation conflicts. 
   - We will be using a simple file `.pid` file in the temporary file directory `/tmp` for this.
 - If a synchronisation process crashes, the next run should know that the original process crashed and try again.
 
+
+@see https://superuser.com/questions/28384/what-should-i-do-about-com-apple-quarantine
+
 ```bash
+#!/usr/bin/env bash
+
+SOURCE_FOLDER="$HOME/Downloads/"
+
+# Monitor a folder for new files using efficient techniques instead of polling (e.g. macOS's `fswatch`)
 
 ```
 

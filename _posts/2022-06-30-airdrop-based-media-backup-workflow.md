@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "iCloud always full? AirDrop your media to a cleanly organised folder in minutes"
+title:  "iCloud always full? Organise your AirDrop photos and old hard drives in minutes"
 date: 2022-06-30 22:36:000 +0100
 tags: mac storage icloud full media organisation open source automatic duplicates videos pictures 
 published: true
@@ -35,37 +35,34 @@ What one needs to understand is that pictures and videos are long-lasting digita
 
 After a search on GitHub for `media organization`, I selected [phockup](https://github.com/ivandokov/phockup) for this job. It is written in Python and uses [exiftool](https://exiftool.org/), an open-source[^github-exiftool] and platform-independent tool, to extract EXIF data from the pictures and videos. It is also quite easy to install on a Mac using [Homebrew](https://brew.sh/).
 
-## Setting up phockup on a Mac
+## Setting up your Mac
 
-After Homebrew is installed, install phockup's Python `tqdm` dependency:
 
-```bash
-pip3 install tqdm
-```
-
-Install phockup itself:
-
-```bash
-brew tap ivandokov/homebrew-contrib
-brew install phockup
-```
-
+1. Install [Homebrew](https://brew.sh).
+2. For macOS Ventura, you may need to install Python from source.
+    ```bash
+   brew install --build-from-source python@3.9
+    ```
+3. Install `phockup`'s Python `tqdm` dependency:
+    ```bash
+    pip3 install tqdm
+    ```
+4. Install `fswatch` :
+    ```bash
+    brew install fswatch
+    ```
+5. Install `phockup` :
+    ```bash
+    brew tap ivandokov/homebrew-contrib
+    brew install phockup
+    ```
+   
 Try running `phockup`. You should see this:
 
 {% include image.html src="/assets/images/post-images/2022-06-30-automatic-media-organisation-and-backup-from-airdrop/phockup-start.png"
 caption="Starting up phockup" imageposition="center"
 title="Starting up phockup in the Terminal"
 %}
-
-### Note for macOS Ventura
-
-For macOS Ventura, you may need to install Python from source.
-
-```bash
-brew install --build-from-source python@3.9
-pip3 install tqdm
-brew install phockup
-```
 
 ## The synchronisation script
 
@@ -82,9 +79,54 @@ The basic requirements are:
 ```bash
 #!/usr/bin/env bash
 
-SOURCE_FOLDER="$HOME/Downloads/"
+# Set up two folders to monitor. 
+# 
+# - Downloads folder will be monitored for files sent via AirDrop only
+# - DropFolder will be monitored for any files 
+AIRDROP_FOLDER="$HOME/Downloads"
+DROP_FOLDER="$HOME/Pictures/DropFolder"
+TARGET_FOLDER="/Volumes/Backups/Pictures"
 
-# Monitor a folder for new files using efficient techniques instead of polling (e.g. macOS's `fswatch`)
+echo "Monitoring files AirDropped into $AIRDROP_FOLDER and copied into $DROP_FOLDER...."
+echo "Media files will be organised into $TARGET_FOLDER."
+
+# Print lines to Mac's system log Console app
+function print_lines_to_system_log() {
+  while IFS= read -r line
+    syslog -s -k Facility com.apple.console \
+             Level Notice \
+             Sender Photo Sync Script by silvae86\
+             Message "$line"
+  done 
+}
+
+# Run phockup instance on a folder. Will print logs to 
+function organise_folder() {
+  local FOLDER_TO_ORGANISE=$1
+  phockup "$FOLDER_TO_ORGANISE" "$OUTPUT_FOLDER" --verbose >> print_lines_to_system_log
+} 
+
+# Monitor folder for new files using OS-fired events instead of polling (e.g. macOS's `fswatch`)
+
+function monitor_folder() {
+  local FOLDER_TO_MONITOR=$1
+  fswatch \
+    --one-per-batch \
+    --recursive \
+    --verbose \
+    "$FOLDER_TO_MONITOR" | \
+    
+}
+
+# Filter files based on their quarantine status, including only those sent via AirDrop. This will ignore files downloaded from the internet
+
+# Need to detect a file with a WhereFroms metadata attribute, but the attribute does not include a web address (http://....)
+FILE="/Users/joaorocha/Downloads/camphoto_1144747756.JPG" 
+xattr -px com.apple.metadata:kMDItemWhereFroms "$FILE" | xxd -r -p | plutil -p -
+
+# Organise all files in the DropFolder. Requires manual copying into it, but is useful for organisation of old hard drives, for example.  
+
+monitor_folder()
 
 ```
 
@@ -99,6 +141,11 @@ We will use the init system of macOS for starting our synchronisation script in 
 ## Testing it out
 
 
+[^airdrop-forensics]: "AirDrop Forensics 2 | by Kinga Kięczkowska" [Link](https://eforensicsmag.com/airdrop-forensics-2-by-kinga-kieczkowska/)
+
+[^stackoverflow-print-all-extended-attriburtes]: "Can you show/list all extended-attributes and how?" [Link](https://superuser.com/questions/858210/can-you-show-list-all-extended-attributes-and-how)
+
+[^parse-binary-property-lists]: "Parse Binary Property Lists in Finder Metadata" [Link](https://scriptingosx.com/2017/08/parse-binary-property-lists-in-finder-metadata/)
 
 [^github-phockup]: "Phockup - Media sorting tool to organize photos and videos from your camera in folders by year, month and day." [Link](https://github.com/ivandokov/phockup)
 

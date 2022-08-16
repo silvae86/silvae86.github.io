@@ -106,22 +106,23 @@ The basic requirements are:
 # 
 # - Downloads folder will be monitored for files sent via AirDrop only
 # - DropFolder will be monitored for any files 
-AIRDROP_FOLDER="$HOME/Downloads/Test"
-DROP_FOLDER="$HOME/Pictures/DropFolder"
+AIRDROP_FOLDER="$HOME/Downloads"
+SOURCE_FOLDER="$HOME/Pictures/DropFolder"
 TARGET_FOLDER="/Volumes/Backups/Pictures"
 PIDFILE="/tmp/photo_organiser.pid"
 
 # Print lines to Mac's system log Console app
 function print_lines_to_system_log() {
-  while IFS= read -r line
+  while IFS= read -r line;
+  do
     syslog -s -k Facility com.apple.console \
              Level Notice \
-             Sender Photo Sync Script by silvae86\
+             Sender "Photo Sync Script by @silvae86"\
              Message "$line"
   done 
 }
 
-echo "Monitoring files AirDropped into $AIRDROP_FOLDER and copied into $DROP_FOLDER...." | print_lines_to_system_log
+echo "Monitoring files AirDropped into $AIRDROP_FOLDER and copied into $SOURCE_FOLDER...." | print_lines_to_system_log
 echo "Media files will be organised into $TARGET_FOLDER." | print_lines_to_system_log
 
 # Run phockup instance on a folder. Will print logs to system log
@@ -139,19 +140,26 @@ function organise_folder() {
 # Moves detected files, only if they were AirDropped but not downloads
 function move_to_source_folder_if_airdropped() {
   local FILE="$1"
+  echo "Checking file $FILE..."
   
-  # Filter files based on their macos extended attributes, including only those sent via AirDrop. 
+  	# Filter files based on their macos extended attributes, including only those sent via AirDrop. 
    # This will ignore files downloaded from the internet
    
    # Need to detect a file with a WhereFroms metadata attribute, but the attribute does not include a web address (http://....)
-   FILE="/Users/joaorocha/Downloads/camphoto_1144747756.JPG"
+   xattr -p com.apple.metadata:kMDItemWhereFroms "$FILE" | grep "No such xattr"
+   AIRDROPPED_OR_DOWNLOADED=$?
+   if (( $AIRDROPPED_OR_DOWNLOADED == 1 )); then
+	   return 0
+   fi
    
-   AIRDROPPED=[[ $(xattr -px com.apple.metadata:kMDItemWhereFroms "$FILE" | xxd -r -p | plutil -convert xml1 - -o - | sed -n -E 's/^.*<string>(.*)<\/string>$/\1/p') -ne "" ]] 
-   DOWNLOADED=[[ $(xattr -px com.apple.metadata:kMDItemWhereFroms "$FILE" | xxd -r -p | plutil -convert xml1 - -o - | sed -n -E 's/^.*<string>(.*)<\/string>$/\1/p' | grep http) -eq "" ]]
+   xattr -px com.apple.metadata:kMDItemWhereFroms "$FILE" | xxd -r -p | plutil -convert xml1 - -o - | sed -n -E 's/^.*<string>(.*)<\/string>$/\1/p' | grep --quiet http
+   DOWNLOADED=$?
    
-   if [[ "$AIRDROPPED" && ! "$DOWNLOADED" ]]; then
-      echo "Detected airdropped file $FILE. Moving to $DROP_FOLDER to be organised." | print_lines_to_system_log -
-      # mv "$FILE" $DROP_FOLDER
+   echo "Airdropped: $AIRDROPPED_OR_DOWNLOADED ++++ Downloaded: $DOWNLOADED"
+   
+   if (( $DOWNLOADED == 1 )); then
+      echo "Airdropped file $FILE detected. Moving to $SOURCE_FOLDER to be organised." | print_lines_to_system_log -
+      # mv "$FILE" $SOURCE_FOLDER
    fi
 }
 
@@ -165,8 +173,17 @@ function monitor_folder() {
 }
 
 # Try to move any folders from the source folder
-function initial_scan() {
-  ls $SOURCE_FOLDER | move_to_source_folder_if_airdropped -
+function scan_and_move() {
+	local FOLDER_TO_SCAN="$1"
+	# find all files recursively, run 'file0 command on each. 
+	# Run 'awk' to match for mimetypes with video or image
+	# Then, pipe only those filenames to a while loop
+	# to move each file into the $SOURCE_FOLDER
+	
+	find "$FOLDER_TO_SCAN" -type f -print0 -exec file --mime-type {} \+ | awk -F: '{if ($2 ~/image|video\//) print $1}' | while read file;
+	do
+		move_to_source_folder_if_airdropped "$file"
+	done
 }
 
 # Remove PID file if phockup process died
@@ -189,18 +206,19 @@ function try_to_unlock() {
 
 # Perform initial scan
 echo "Photo organiser performing initial scan...." | print_lines_to_system_log -
-initial_scan
+scan_and_move $AIRDROP_FOLDER
+exit 0
 
 # After initial scan, monitor folder for new files
-monitor_folder $DROP_FOLDER & 
+monitor_folder $AIRDROP_FOLDER &
+monitor_folder $SOURCE_FOLDER &
 
 # Call organisation script if an organisation script is not running already
 while :
 do
-  try_to_unlock && organise_folder $DROP_FOLDER
+  try_to_unlock && organise_folder $SOURCE_FOLDER
   sleep 1
 done
-
 ```
 
 ## Making the synchronisation script run in the background and on startup
@@ -225,6 +243,10 @@ Metadata" [Link](https://scriptingosx.com/2017/08/parse-binary-property-lists-in
 
 [^sed-ignore-non-matching-lines] "Have sed ignore non-matching lines (
 StackOverflow)" [Link](https://stackoverflow.com/questions/1665549/have-sed-ignore-non-matching-lines)
+
+[^loop-filenames-spaces] "BASH Shell: For Loop File Names With Spaces" [Link](https://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html)
+
+[^list-graphic-images] "BASH Shell: For Loop File Names With Spaces" [Link](https://stackoverflow.com/a/24879385)
 
 [^github-phockup]: "Phockup - Media sorting tool to organize photos and videos from your camera in folders by year,
 month and day." [Link](https://github.com/ivandokov/phockup)

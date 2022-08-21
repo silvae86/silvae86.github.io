@@ -101,6 +101,7 @@ The basic requirements are:
 ```bash
 #!/usr/bin/env bash
 
+# NOT WORKING YET!
 
 # Set up two folders to monitor. 
 # 
@@ -115,7 +116,8 @@ PIDFILE="/tmp/photo_organiser.pid"
 function print_lines_to_system_log() {
   while IFS= read -r line;
   do
-    syslog -s -k Facility com.apple.console \
+	  echo "$line"
+	  syslog -s -k Facility com.apple.console \
              Level Notice \
              Sender "Photo Sync Script by @silvae86"\
              Message "$line"
@@ -132,31 +134,35 @@ echo "Media files will be organised into $TARGET_FOLDER." | print_lines_to_syste
 # move_to_source_folder_if_airdropped will move airdropped 
 function organise_folder() {
   local FOLDER_TO_ORGANISE=$1
+  local PIDFILE=$2
   echo "Starting organisation of folder $FOLDER_TO_ORGANISE."
-  phockup "$FOLDER_TO_ORGANISE" "$OUTPUT_FOLDER" --verbose | print_lines_to_system_log - &
-  echo $! >> "$PIDFILE"
+  # phockup "$FOLDER_TO_ORGANISE" "$OUTPUT_FOLDER" --verbose | print_lines_to_system_log - &
+  yes > /dev/null &
+  echo $! > "$PIDFILE"
+  echo "yes running"
+  echo "$(cat $PIDFILE)"
+  sleep 5
+  cat "$PIDFILE" | xargs -I{} kill -9 {}
 } 
 
 # Moves detected files, only if they were AirDropped but not downloads
 function move_to_source_folder_if_airdropped() {
   local FILE="$1"
-  echo "Checking file $FILE..."
   
   	# Filter files based on their macos extended attributes, including only those sent via AirDrop. 
    # This will ignore files downloaded from the internet
    
    # Need to detect a file with a WhereFroms metadata attribute, but the attribute does not include a web address (http://....)
-   xattr -p com.apple.metadata:kMDItemWhereFroms "$FILE" | grep "No such xattr"
+   xattr -p com.apple.metadata:kMDItemWhereFroms "$FILE" > /dev/null 2>&1
    AIRDROPPED_OR_DOWNLOADED=$?
    if (( $AIRDROPPED_OR_DOWNLOADED == 1 )); then
+	   echo "File $FILE does not have WhereFrom metadata at all. Skipping."
 	   return 0
    fi
    
-   xattr -px com.apple.metadata:kMDItemWhereFroms "$FILE" | xxd -r -p | plutil -convert xml1 - -o - | sed -n -E 's/^.*<string>(.*)<\/string>$/\1/p' | grep --quiet http
+   xattr -px com.apple.metadata:kMDItemWhereFroms "$FILE" | xxd -r -p | plutil -convert xml1 - -o - | sed -n -E 's/^.*<string>(.*)<\/string>$/\1/p' | awk '/http/{print}' | grep . > /dev/null
    DOWNLOADED=$?
-   
-   echo "Airdropped: $AIRDROPPED_OR_DOWNLOADED ++++ Downloaded: $DOWNLOADED"
-   
+      
    if (( $DOWNLOADED == 1 )); then
       echo "Airdropped file $FILE detected. Moving to $SOURCE_FOLDER to be organised." | print_lines_to_system_log -
       # mv "$FILE" $SOURCE_FOLDER
@@ -166,10 +172,9 @@ function move_to_source_folder_if_airdropped() {
 # Monitor folder for new files using OS-fired events instead of polling (e.g. macOS's `fswatch`)
 function monitor_folder() {
   local FOLDER_TO_MONITOR=$1
-  fswatch \
-    --recursive \
-    --verbose \
-    "$FOLDER_TO_MONITOR" | move_to_source_folder_if_airdropped - 
+  echo "Monitoring $FOLDER_TO_MONITOR...to move any Airdropped files into $SOURCE_FOLDER" | print_lines_to_system_log -
+  
+  fswatch --recursive "$FOLDER_TO_MONITOR" | move_to_source_folder_if_airdropped - &
 }
 
 # Try to move any folders from the source folder
@@ -188,37 +193,44 @@ function scan_and_move() {
 
 # Remove PID file if phockup process died
 function try_to_unlock() {
-  local PID=""
-  if [ -f "$PIDFILE" ]; then
+  local PIDFILE="$1"
+  if [ -f "$PIDFILE" ]; 
+  then
     PID=$(cat "$PIDFILE")
-    if ps -p "$PID" > /dev/null
-    then
-      echo "Process $PID is running, waiting for organiser to end." | print_lines_to_system_log -
-      return 1
+	ps -p "$PID" | awk "/$PID/{print}" | grep . > /dev/null 2&>1
+	PROCESS_RUNNING=$?
+	echo "Process running? $PROCESS_RUNNING"
+	
+    if (( $PROCESS_RUNNING != 0 )); 
+	then
+		echo "Process $PID died. Unlocking so a new session can start..." | print_lines_to_system_log -
+        rm -f "$PIDFILE" && echo "Deleted pidfile at $PIDFILE. New session can start " | print_lines_to_system_log -
+		return 0
     else
-      echo "Process $PID died. Unlocking so a new session can start..." | print_lines_to_system_log -
-      rm -f "$PIDFILE" && echo "Deleted pidfile at $PIDFILE. New session can start " | print_lines_to_system_log -
-      return 0
+		echo "Organiser process still running (PID $PID)..."
+      	return 1
     fi
+  else
+	  echo "no pid file found"
   fi
   return 0
 }
 
 # Perform initial scan
 echo "Photo organiser performing initial scan...." | print_lines_to_system_log -
-scan_and_move $AIRDROP_FOLDER
-exit 0
+scan_and_move "$AIRDROP_FOLDER"
 
 # After initial scan, monitor folder for new files
-monitor_folder $AIRDROP_FOLDER &
-monitor_folder $SOURCE_FOLDER &
+monitor_folder "$AIRDROP_FOLDER"
 
 # Call organisation script if an organisation script is not running already
 while :
 do
-  try_to_unlock && organise_folder $SOURCE_FOLDER
+  try_to_unlock "$PIDFILE" && organise_folder "$SOURCE_FOLDER" "$PIDFILE" &
   sleep 1
-done
+done &
+
+wait 
 ```
 
 ## Making the synchronisation script run in the background and on startup
@@ -247,6 +259,8 @@ StackOverflow)" [Link](https://stackoverflow.com/questions/1665549/have-sed-igno
 [^loop-filenames-spaces] "BASH Shell: For Loop File Names With Spaces" [Link](https://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html)
 
 [^list-graphic-images] "BASH Shell: For Loop File Names With Spaces" [Link](https://stackoverflow.com/a/24879385)
+
+[^awk-grep-dot] "AWK Return Codes - Grep dot trick" [Link](https://unix.stackexchange.com/questions/308838/awk-exit-code-if-regular-expression-did-not-match)
 
 [^github-phockup]: "Phockup - Media sorting tool to organize photos and videos from your camera in folders by year,
 month and day." [Link](https://github.com/ivandokov/phockup)

@@ -52,13 +52,28 @@ configure: error: internal configure error for the platform triplet, please file
 make: *** No targets specified and no makefile found.  Stop.
 ```
 
-To fix it, I first selected the version I wanted to install with `pyenv install --list`. Then, I installed GCC from homebrew, and tried installing again, this time specifying the path to the C++ compiler:
+To fix it, I first selected the version I wanted to install with `pyenv install --list`. Then, I installed GCC from homebrew, and tried installing again, this time specifying the path to the C++ compiler. 
+
+I the following script, replace `gcc-12` with a newer version if necessary. Type `cd /opt/homebrew/bin/gcc<Press Tab key>` in the Terminal and see what version you have installed.
 
 ````bash
 brew install gcc
-CC=/opt/homebrew/bin/gcc-11 pyenv install 3.8.12
-CC=/opt/homebrew/bin/gcc-11 pyenv install 2.7.18
-```
+CC=/opt/homebrew/bin/gcc-12 pyenv install 3.8.12 
+CC=/opt/homebrew/bin/gcc-12 pyenv install 2.7.18
+````
+
+### Note for macOS Ventura Beta!
+
+When running `xcode-select --install` you may face this error:
+
+````
+Can't install the software because it is not
+currently available from the Software
+Update server
+````
+
+To fix it, download command line tools from Apple's [More Downloads](https://developer.apple.com/download/all/) page on Apple Developer before running `brew install gcc`.
+
 
 I then set them as the default python versions globally:
 
@@ -67,3 +82,4 @@ pyenv global 3.9.12 2.7.18
 ```
 
 Done! Bash Beautify works in Visual Studio Code now.
+

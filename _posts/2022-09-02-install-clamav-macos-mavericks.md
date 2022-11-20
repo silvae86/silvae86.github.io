@@ -4,7 +4,7 @@ title:  "Installing clamav (open-source antivirus) for Mac using macports"
 date: 2022-09-01 23:20:000 +0100
 tags: osx macports antivirus vintage retro
 published: true
-comments_id: 52
+comments_id: 53
 ---
 
 Using a vintage Mac requires hardening, such as enabling the Firewall's Stealth Mode, disabling File Sharing options in the System settings, and installing an anti-virus and being overall mindful of which parts of the web you visit. Here is how to install clamav, a free and open-source alternative for older Apple hardware still stuck on older OS's. We will be using [MacPorts](https://www.macports.org/) for this short tutorial.

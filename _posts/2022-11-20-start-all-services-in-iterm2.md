@@ -67,19 +67,18 @@ async def open_pane_and_start_service(
 ):
     tab = window.current_tab
     session = tab.current_session
+    pane = session
 
     if pane_to_split is not None:
-        await session.async_split_pane(pane_to_split)
-
-    new_split_pane = await session.async_split_pane(vertical)
-    await new_split_pane.async_activate()
+        pane = await session.async_split_pane(vertical)
+        await pane.async_activate()
 
     async def run_fs():
-        await new_split_pane.async_send_text('cd ' + fs_path + '\n')
-        await new_split_pane.async_send_text(command + '\n')
+        await pane.async_send_text('cd ' + fs_path + '\n')
+        await pane.async_send_text(command + '\n')
 
         finished = False
-        async with new_split_pane.get_screen_streamer() as streamer:
+        async with pane.get_screen_streamer() as streamer:
             while not finished:
                 stringified_string_contents = ""
                 screen_output = await streamer.async_get()
@@ -90,13 +89,13 @@ async def open_pane_and_start_service(
                                          string=stringified_string_contents,
                                          flags=re.IGNORECASE) is not None
             print("Found string [ " + string_to_detect_to_finish + " ] , service is started.")
-        return new_split_pane
+        return pane
 
     loop = asyncio.get_event_loop()
     f_task = loop.create_task(run_fs())
 
     await f_task
-    return new_split_pane
+    return pane
 
 
 async def main(connection):

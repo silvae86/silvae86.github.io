@@ -40,6 +40,7 @@ brew install --cask sensiblesidebuttons
 brew install --cask htop
 brew install --cask wget
 brew install --cask curl
+brew install zsh-completions
 
 # nvm
 brew install nvm

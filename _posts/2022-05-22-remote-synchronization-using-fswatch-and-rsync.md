@@ -21,7 +21,7 @@ REMOTE_FOLDER=/tmp/silvae86.github.io
 LOCAL_FOLDER=$(pwd)
 
 # initial sync step
-rsync -af --progress . "$REMOTE_HOST:REMOTE_FOLDER"
+rsync -af --progress . "$REMOTE_HOST:$REMOTE_FOLDER"
 
 # initial check may take some time, later changes may be instant
 fswatch \
@@ -29,7 +29,7 @@ fswatch \
 --recursive \
 --latency 1 \
 --verbose \
-"$LOCAL_FOLDER" | xargs -I{} rsync -a --progress "$LOCAL_FOLDER" "$REMOTE_HOST:REMOTE_FOLDER"
+"$LOCAL_FOLDER" | xargs -I{} rsync -a --progress "$LOCAL_FOLDER" "$REMOTE_HOST:$REMOTE_FOLDER"
 ```
 
 Explained: 
@@ -41,4 +41,4 @@ Explained:
 
 Next, a piped command calls `rsync` to sync the local dir to the remote one:
 
-- `rsync -a --progress "$LOCAL_FOLDER" "$REMOTE_HOST:REMOTE_FOLDER"` &rarr; call rsync to synchronize $LOCAL_FOLDER to $REMOTE_FOLDER on $REMOTE_HOST, via SSH.
+- `rsync -a --progress "$LOCAL_FOLDER" "$REMOTE_HOST:$REMOTE_FOLDER"` &rarr; call rsync to synchronize $LOCAL_FOLDER to $REMOTE_FOLDER on $REMOTE_HOST, via SSH.

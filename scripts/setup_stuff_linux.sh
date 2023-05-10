@@ -1,40 +1,48 @@
 #!/usr/bin/env bash
 
-# If you use XCode Beta...
-# sudo xcode-select --switch /Applications/Xcode-beta.app/Contents/Developer
-# I had the same issue and I solved by doing the following:
-
-# removing the old tools ($ rm -rf /Library/Developer/CommandLineTools)
-# install xcode command line tools again ($ xcode-select --install).
-
-# return to old XCode libraries?
-# sudo xcode-select -s /Library/Developer/CommandLineTools
-
-
-# /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libxml2
-
-# brew reinstall python@2
-# brew reinstall libxml2
-
-# SOLUTION!
-# Mojave Headers:
-# https://forums.developer.apple.com/thread/104296
-# cp /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg ~/Desktop
-
 RUBY_VERSION="2.7.2"
-BUNDLER_VERSION="1.16.2"
+BUNDLER_VERSION="1.16.6"
+
+echo "Installing Ruby $RUBY_VERSION and bundler $BUNDLER_VERSION..."
+
+add_ppa() {
+  PPA=$1
+  FILE=$2
+  grep -h "^deb.*$PPA" /etc/apt/sources.list.d/* > /dev/null 2>&1
+  if [ $? -ne 0 ]
+  then
+    echo "Adding $1 to /etc/apt/sources.list.d/$FILE"
+    echo "$1" | sudo tee -a "/etc/apt/sources.list.d/$FILE"
+    return 0
+  fi
+
+  echo "deb:$PPA already exists"
+  return 1
+}
+
+activate_rvm() {
+  #activate rvm
+  [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+}
+
+# https://askubuntu.com/questions/293838/shell-script-to-conditionally-add-apt-repository
+# add_ppa "deb [trusted=yes] http://security.ubuntu.com/ubuntu bionic-security main" "old-bionic-security-for-old-ruby.list"
+
+# https://www.garron.me/en/linux/install-ruby-2-3-3-ubuntu.html
+# sudo apt update && apt-cache policy libssl1.0-dev
+# sudo apt-get install -y libssl1.0-dev
 
 sudo apt-get update
-
 curl -sSL https://get.rvm.io | bash
 
-#activate rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-source ~/.rvm/scripts/rvm
-/bin/bash --login
 
 #install latest ruby
-rvm install "$RUBY_VERSION"
+rvm get stable
+rvm autolibs enable
+rvm pkg install openssl
+rvm install "$RUBY_VERSION" --force --with-openssl-dir="$rvm_path/usr"
+
+activate_rvm
 
 #use latest ruby
 rvm use "$RUBY_VERSION"
@@ -45,7 +53,10 @@ rvm default "$RUBY_VERSION"
 # install dependencies for responsive imagess
 sudo apt-get install libmagickwand-dev imagemagick exiftool
 
+activate_rvm
+
 #install jekyll and bundle
+gem update --system
 gem install jekyll bundle
 gem install rmagick
 gem install "bundler:$BUNDLER_VERSION"

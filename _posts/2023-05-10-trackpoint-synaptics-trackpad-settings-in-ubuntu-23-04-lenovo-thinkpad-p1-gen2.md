@@ -4,7 +4,7 @@ title:  "Lenovo P1 Gen 2 - My settings for the TrackPoint and Synaptics Touchpad
 date: 2022-11-19 14:04:000 +0100
 tags: [lenovo, trackpoint, synaptics, thinkpad, p1 gen 2, settings, ubuntu, linux]
 published: true
-comments_id: 53
+comments_id: 57
 ---
 
 This post explains how to install the Synaptics driver on Ubuntu 23.04 and how to tune the sensitivity settings on a Lenovo P1 Gen 2. 

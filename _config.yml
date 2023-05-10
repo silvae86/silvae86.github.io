@@ -63,7 +63,6 @@ breadcrumbs:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji

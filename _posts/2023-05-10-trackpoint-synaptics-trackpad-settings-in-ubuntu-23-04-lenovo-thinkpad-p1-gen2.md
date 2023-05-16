@@ -37,9 +37,9 @@ Section "InputClass"
        	Option "PalmDetect" "1"
        	Option "PalmMinWidth" "10"
        	Option "PalmMinZ" "50"
-       	Option "HorizTwoFingerScroll" "on"
+       	Option "HorizTwoFingerScroll" "1"
 	Option "MinSpeed"              "0.6"
-        Option "MaxSpeed"              "1.7"
+        Option "MaxSpeed"              "2.3"
         Option "AccelFactor"           "0.11"
         Option "TapButton1"            "1"
         Option "TapButton2"            "2"     # multitouch
@@ -93,8 +93,8 @@ Section "InputClass"
     MatchIsPointer "on"  
     MatchDevicePath "/dev/input/event*"  
     Driver "libinput"  
-    Option "AccelSpeed" "-1.20"  
-EndSection  
+    Option "AccelSpeed" "-1.25"  
+EndSection   
 ````
 
 `sudo vim /etc/udev/rules.d/10-trackpoint.rules`

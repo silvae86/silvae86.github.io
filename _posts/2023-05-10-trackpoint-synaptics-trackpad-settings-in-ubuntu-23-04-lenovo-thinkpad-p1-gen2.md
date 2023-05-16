@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lenovo P1 Gen 2 - My settings for the TrackPoint and Synaptics Touchpad"
-date: 2022-11-19 14:04:000 +0100
+date: 2023-05-10 22:00:000 +0100
 tags: [lenovo, trackpoint, synaptics, thinkpad, p1 gen 2, settings, ubuntu, linux]
 published: true
 comments_id: 57

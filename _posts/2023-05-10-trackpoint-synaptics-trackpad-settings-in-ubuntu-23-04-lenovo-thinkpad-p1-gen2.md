@@ -1,19 +1,35 @@
 ---
 layout: post
-title:  "Lenovo P1 Gen 2 - My settings for the TrackPoint and Synaptics Touchpad"
+title:  "Lenovo P1 Gen 2 - My settings for the TrackPoint and Synaptics Trackpad"
 date: 2023-05-10 22:00:000 +0100
-tags: [lenovo, trackpoint, synaptics, thinkpad, p1 gen 2, settings, ubuntu, linux]
+tags: [lenovo, trackpoint, trackpad, synaptics, thinkpad, p1 gen 2, settings, ubuntu, linux, evdev]
 published: true
 comments_id: 57
 ---
 
 This post explains how to install the Synaptics driver on Ubuntu 23.04 and how to tune the sensitivity settings on a Lenovo P1 Gen 2. 
 
+## Replace libinput touchpad driver with the Synaptics driver
+
+I find that the Synaptics touchpad driver for the P1 performs better than the default one. If you are happy with it, skip everything regarding the Trackpad.  
+
 First, go [here](https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu) and install the synaptics driver for the touchpad. You will be prompted for a password that you need to enter again on a blue screen that will show up after the first reboot, since this driver lives in the UEFI.
+
+## Install Event Device driver for the TrackPoint
+
+We will be replacing libinput with evdev driver for the trackpoint. It has been around since the IBM laptop days, so this guarantees an even more _Vintage_ experience:
+
+```shell
+sudo apt-get install evdev
+```
 
 ## Configuration files
 
-You then need to place a few files in certain locations. Every time you make changes to these files, you will have to  log out and login again for settings to be applied.
+You now need to place a few files in certain locations. 
+
+{% include warning.html content="Every time you make changes to these files, you will have to  log out and login again for settings to be applied." %}
+
+
 
 `sudo vim /etc/X11/xorg.conf.d/70-synaptics.conf`
 
@@ -88,25 +104,38 @@ EndSection
 `sudo vim /etc/X11/xorg.conf.d/90-trackpoint.conf`
 
 ````conf
-Section "InputClass"  
-    Identifier "libinput pointer catchall"  
-    MatchIsPointer "on"  
-    MatchDevicePath "/dev/input/event*"  
-    Driver "libinput"  
-    Option "AccelSpeed" "-1.25"  
-EndSection   
-````
+# Section "InputClass"  
+#    Identifier "libinput pointer catchall"  
+#    MatchIsPointer "on"  
+#    MatchDevicePath "/dev/input/event*"  
+#    Driver "libinput"  
+#    Option "AccelSpeed" "-1.25"  
+# EndSection  
 
-`sudo vim /etc/udev/rules.d/10-trackpoint.rules`
+Section "InputClass"
+    Identifier "Trackpoint Settings"
+    MatchProduct "TPPS/2 Elan TrackPoint"
+    MatchDevicePath "/dev/input/event*"
+    Driver "evdev"
+    Option "EmulateWheel" "true"
+    Option "EmulateWheelButton" "2"
+    Option "Emulate3Buttons" "true"
+    Option "EmulateWheelInertia"  "10'
+    Option "EmulateWheelTimeOut" "200"
+    Option "Emulate3Timeout" "50"
+    Option "XAxisMapping" "6 7"
+    Option "YAxisMapping" "4 5"
 
-````conf
-ACTION=="add",  
-SUBSYSTEM=="input",  
-ATTR{name}=="TPPS/2 IBM TrackPoint",  
-ATTR{device/sensitivity}="135",  
-ATTR{device/speed}="120",  
-ATTR{device/inertia}="4",  
-ATTR{device/press_to_select}="0"
+# Set up an acceleration config
+    Option   "VelocityScale"           "5"
+    Option   "AccelerationProfile"     "7"
+    Option   "AccelerationNumerator"   "16"
+    Option   "AccelerationDenominator" "3"
+    Option   "ConstantDeceleration"  "1"
+    option   "AdaptiveDeceleration"  "2"
+    Option   "AccelerationScheme" "predictable"
+    Option   "AccelerationThreshold" "5"
+EndSection 
 ````
 
 ## Gnome settings
@@ -116,5 +145,7 @@ ATTR{device/press_to_select}="0"
 
 ## References
 
-[How to get the perfect TrackPoint experience on Linux](https://www.reddit.com/r/thinkpad/comments/5rcwlq/heres_how_to_get_the_perfect_trackpoint/)
+[How do I set acceleration on “TPPS/2 IBM TrackPoint” ?](https://forums.opensuse.org/t/how-do-i-set-acceleration-on-tpps-2-ibm-trackpoint/122699/16).
+
+[How to get the perfect TrackPoint experience on Linux](https://www.reddit.com/r/thinkpad/comments/5rcwlq/heres_how_to_get_the_perfect_trackpoint/).
 

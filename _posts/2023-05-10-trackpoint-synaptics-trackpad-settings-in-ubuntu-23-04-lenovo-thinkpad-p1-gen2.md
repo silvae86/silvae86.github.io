@@ -119,23 +119,26 @@ Section "InputClass"
     Driver "evdev"
     Option "EmulateWheel" "true"
     Option "EmulateWheelButton" "2"
-    Option "Emulate3Buttons" "true"
+    # Option "Emulate3Buttons" "true"
     Option "EmulateWheelInertia"  "10'
     Option "EmulateWheelTimeOut" "200"
     Option "Emulate3Timeout" "50"
     Option "XAxisMapping" "6 7"
     Option "YAxisMapping" "4 5"
+    Option "ButtonMapping" "1 0 3 4 5 6 7"
+
 
 # Set up an acceleration config
     Option   "VelocityScale"           "5"
     Option   "AccelerationProfile"     "7"
-    Option   "AccelerationNumerator"   "16"
+    Option   "AccelerationNumerator"   "14"
     Option   "AccelerationDenominator" "3"
-    Option   "ConstantDeceleration"  "1"
-    option   "AdaptiveDeceleration"  "2"
+    Option   "ConstantDeceleration"  "2"
+    option   "AdaptiveDeceleration"  "3"
     Option   "AccelerationScheme" "predictable"
-    Option   "AccelerationThreshold" "5"
-EndSection 
+    Option   "AccelerationThreshold" "6"
+EndSection
+ 
 ````
 
 ## Gnome settings

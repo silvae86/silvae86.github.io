@@ -23,6 +23,7 @@ add_ppa() {
 activate_rvm() {
   #activate rvm
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+  source "$HOME/.zshrc"
 }
 
 # https://askubuntu.com/questions/293838/shell-script-to-conditionally-add-apt-repository
@@ -38,9 +39,8 @@ curl -sSL https://get.rvm.io | bash
 
 #install latest ruby
 rvm get stable
-rvm autolibs enable
 rvm pkg install openssl
-rvm install "$RUBY_VERSION" --force --with-openssl-dir="$rvm_path/usr"
+rvm reinstall "$RUBY_VERSION" --force --with-openssl-dir="$HOME/.rvm/usr"
 
 activate_rvm
 
@@ -51,7 +51,7 @@ rvm use "$RUBY_VERSION"
 rvm default "$RUBY_VERSION"
 
 # install dependencies for responsive imagess
-sudo apt-get install libmagickwand-dev imagemagick exiftool
+sudo apt-get install -y libmagickwand-dev imagemagick exiftool
 
 activate_rvm
 

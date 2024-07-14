@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  jekyll-silvae86-blog:
+    build:
+      context: .
+      labels: 
+        - 'latest'
+    restart: unless-stopped
+    volumes:
+      - './:/blog'
+    ports:
+    - "54050:4000"
+    environment:
+      - PAGES_REPO_NWO=silvae86/silvae86.github.io.git

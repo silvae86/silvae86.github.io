@@ -13,3 +13,5 @@ cd silvae86.github.io
 ./setup.sh
 ./serve.sh
 ```
+
+Go to your browser at `http://127.0.0.1:54050`

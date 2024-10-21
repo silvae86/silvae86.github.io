@@ -60,17 +60,18 @@ Router will be at [http://192.168.0.1](http://192.168.0.1) when you are connecte
 
 1. Put router in router mode (physical slider)
 2. Put ethernet cable in LAN port and connect to linux host ethernet port
-3. Network tab will show error, never mind that
-4. Internet tab
+3. Access [http://192.168.0.1](http://192.168.0.1)
+4. Network tab will show error, never mind that
+5. Internet tab
  	- Type: Router (Current)
  	- Internet connection type -> Dynamic IP
  	- Use Default MAC address
-5. Wifi configure how you want (SSID + PASS)
-6. Advanced
+6. Wifi configure how you want (SSID + PASS)
+7. Advanced
  	- Internet Connection Type -> Click Renew lease
   	- LAN - IP Address -> 192.168.0.1
  
-7. DHCP Server 
+8. DHCP Server 
         - Enable
  	- IP Address pool - 192.168.0.2 - 192.168.0.100
  	- Default Gateway - 192.168.0.253 (Static IP in Linux Machine's ethernet port)

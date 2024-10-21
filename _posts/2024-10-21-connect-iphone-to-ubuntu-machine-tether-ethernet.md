@@ -7,6 +7,11 @@ published: true
 comments_id: 58
 ---
 
+{% include image.html src="/assets/images/post-images/2024-10-21-connect-iphone-to-ubuntu-machine-tether-ethernet/setup.jpg"
+caption="Picture of the setup" imageposition="center"
+title="Picture of the setup"
+%}
+
 Travelling with an iPhone as a hotspot is good enough in a pinch, but the signal is weak and will cause disconnections if used as the main Access Point in a home.
 
 This post explains how to connect an iPhone to a Ubuntu machine via usb and then share the internet connection to a wifi router via the ethernet port of that machine.

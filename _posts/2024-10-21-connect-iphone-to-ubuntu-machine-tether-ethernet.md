@@ -11,7 +11,7 @@ Travelling with an iPhone as a hotspot is good enough in a pinch, but the signal
 
 This post explains how to connect an iPhone to a Ubuntu machine via usb and then share the internet connection to a wifi router via the ethernet port of that machine.
 
-I am using a TP-Link WR1502X Travel Router. The router is supposed to have built-in USB tethering, but it did not work with my iPhone 15 pro running iOS 17. An older iPhone SE 2020 with iOS 16 works, so it goes to show how reliable these USB tethering things are. Putting an HP T630 Thin Client to act as our Gateway via ethernet will fix this.
+I am using a [TP-Link WR1502X Travel Router](https://www.tp-link.com/in/home-networking/wifi-router/tl-wr1502x/). The router is supposed to have built-in USB tethering, but it did not work with my iPhone 15 Pro running iOS 17. An older iPhone SE 2020 with iOS 16 works, so it goes to show how reliable these USB tethering things are. Putting an [HP T630 Thin Client](https://support.hp.com/id-en/product/details/hp-t630-thin-client/10522151) to act as our Gateway via ethernet will fix this.
 
 ## Configuring the Linux PC
 
